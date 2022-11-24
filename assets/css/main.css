@@ -950,7 +950,7 @@ section {
 .hero-fullscreen {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-fullscreen-bg.jpg") center center;
+  background: url("../img/bg.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
@@ -958,7 +958,7 @@ section {
 
 .hero-fullscreen:before {
   content: "";
-  background: rgba(var(--color-white-rgb), 0.85);
+  background: rgba(var(--color-white-rgb), 0.80);
   position: absolute;
   inset: 0;
 }
