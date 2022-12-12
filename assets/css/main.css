@@ -233,12 +233,18 @@ section {
 .header {
   padding: 15px 0;
   transition: all 0.5s;
+  background-color: #fff;
+  /* opacity: 0.9; */
   z-index: 997;
 }
 
 .header.sticked {
   background: var(--color-white);
   box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
+}
+
+.opace {
+  opacity: 0.8 !important;
 }
 
 .header .logo img {
@@ -392,10 +398,10 @@ section {
 
   .navbar .dropdown ul a {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: none;
-    font-weight: 400;
-    color: rgba(var(--color-white-rgb), 0.5);
+    font-weight: 500;
+    color: rgba(var(--color-white-rgb), 0.7);
   }
 
   .navbar .dropdown ul a i {
@@ -950,15 +956,15 @@ section {
 .hero-fullscreen {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/bg.jpg") center center;
-  background-size: cover;
+  /* background: url("../img/bg.jpg") center center;
+  background-size: cover; */
   position: relative;
   padding: 120px 0 60px;
 }
 
 .hero-fullscreen:before {
   content: "";
-  background: rgba(var(--color-white-rgb), 0.80);
+  /* background: rgba(var(--color-white-rgb), 1); */
   position: absolute;
   inset: 0;
 }
@@ -972,8 +978,9 @@ section {
 .hero-fullscreen h2 {
   margin: 0 0 10px 0;
   font-size: 48px;
-  font-weight: 300;
-  color: var(--color-secondary);
+  font-weight: 500;
+  /* color: var(--color-secondary); */
+  color: azure;
   font-family: var(--font-secondary);
 }
 
@@ -982,15 +989,16 @@ section {
 }
 
 .hero-fullscreen p {
-  color: rgba(var(--color-secondary-rgb), 0.8);
+  /* color: rgba(var(--color-secondary-rgb), 0.8); */
+  color: aliceblue;
   margin: 0 0 30px 0;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .hero-fullscreen .btn-get-started {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   display: inline-block;
   padding: 10px 28px;
   border-radius: 4px;
@@ -3280,4 +3288,20 @@ section {
 .footer .footer-legal .social-links a:hover {
   background: var(--color-primary);
   text-decoration: none;
+}
+
+.landingPageHead{
+  padding: 25px;
+  /* border: 2px solid black; */
+  background-color: black;
+  opacity: 0.5 !important;
+}
+
+#myVideo {
+  position: absolute;
+  object-fit: cover;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
