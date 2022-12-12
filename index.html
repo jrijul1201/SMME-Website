@@ -53,7 +53,7 @@
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+      <a href="index.php" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>SMME<span>.</span></h1>
@@ -64,16 +64,16 @@
 
           <li class="dropdown"><a href="#"><span>Home</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="index.html" class="active">Home 1 - index.html</a></li>
+              <li><a href="index.php" class="active">Home 1 - index.php</a></li>
               <li><a href="index-2.html">Home 2 - index-2.html</a></li>
               <li><a href="index-3.html">Home 3 - index-3.html</a></li>
               <li><a href="index-4.html">Home 4 - index-4.html</a></li>
             </ul>
           </li>
 
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Impact</a></li>
-          <!-- <li><a class="nav-link scrollto" href="index.html#services">Education</a></li> -->
+          <li><a class="nav-link scrollto" href="index.php#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.php#services">Impact</a></li>
+          <!-- <li><a class="nav-link scrollto" href="index.php#services">Education</a></li> -->
           <li class="dropdown"><a href="#"><span>Programmes</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -91,9 +91,9 @@
               <li><a href="phd.html">PHD</a></li>
             </ul>
           </li>
-          <!-- <li><a class="nav-link scrollto" href="index.html#team">People</a> -->
+          <!-- <li><a class="nav-link scrollto" href="index.php#team">People</a> -->
           </li>
-          <li><a class="nav-link scrollto" href="index.html#portfolio">News</a></li>
+          <li><a class="nav-link scrollto" href="index.php#portfolio">News</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown megamenu"><a href="#"><span>Research</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -139,15 +139,45 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="index.php#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="index.html#about">Get Started</a>
+      <button type="button" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm"> Login </button>
 
     </div>
+
   </header><!-- End Header -->
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Faculty Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="px-4 py-3" action="validation.php" method="post">
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label for="usernameLabel">Username</label>
+              <input type="text" class="form-control" id="usernameLabel" placeholder="Username" name="user_name" required>
+            </div>
+            <div class="form-group">
+              <label for="passwordLabel" style="padding-top: 1em;">Password</label>
+              <input type="password" class="form-control" id="passwordLabel" placeholder="Password" name="user_password" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary mx-auto d-block">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>    
+
 
   <section id="hero-fullscreen" class="hero-fullscreen d-flex flex-column-reverse">
     <video autoplay muted loop id="myVideo">
