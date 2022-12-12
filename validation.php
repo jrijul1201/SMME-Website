@@ -1,12 +1,9 @@
 <?php
-
 session_start();
-$con = mysqli_connect('localhost','root');
-if($con)
-{
 
-}
-else{
+mysqli_report(MYSQLI_REPORT_OFF);
+$con = @mysqli_connect('localhost','root');
+if (!$con) {
     header('location:index.html');
     exit();
 }
