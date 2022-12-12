@@ -4,11 +4,11 @@ session_start();
 $con = mysqli_connect('localhost','root');
 if($con)
 {
-    echo "Connection Successful";
+
 }
 else{
-    $_SESSION['validation_status'] = false;
-    echo "no connection";
+    header('location:index.html');
+    exit();
 }
 
 mysqli_select_db($con, 'signup');
@@ -25,14 +25,15 @@ $row = mysqli_fetch_assoc($result);
 if ($num == 1) {
 
     $_SESSION['user_name'] = $user_name;
-    $_SESSION['validation_status'] = true;
     
     header('location:loggedinpage.php');
     exit();
 
 }
 else{
-    $_SESSION['validation_status'] = false;
+    echo "<script>alert('Incorrect username or password!!');
+    window.location.href='index.html';
+    </script>";
     exit();
 }
 
