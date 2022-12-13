@@ -2,7 +2,7 @@
 session_start();
 
 mysqli_report(MYSQLI_REPORT_OFF);
-$con = @mysqli_connect('localhost','root');
+$con = @mysqli_connect('localhost', 'root');
 if (!$con) {
     header('location:index.html');
     exit();
@@ -22,12 +22,11 @@ $row = mysqli_fetch_assoc($result);
 if ($num == 1) {
 
     $_SESSION['user_name'] = $user_name;
-    
+
     header('location:loggedinpage.php');
     exit();
 
-}
-else{
+} else {
     echo "<script>alert('Incorrect username or password!!');
     window.location.href='index.html';
     </script>";
