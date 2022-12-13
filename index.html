@@ -137,10 +137,40 @@
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="index.html#about">Get Started</a>
+      <button type="button" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm"> Login </button>
 
     </div>
+
   </header><!-- End Header -->
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Faculty Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="px-4 py-3" action="validation.php" method="post">
+          <div class="modal-body">
+
+            <div class="form-group">
+              <label for="usernameLabel">Username</label>
+              <input type="text" class="form-control" id="usernameLabel" placeholder="Username" name="user_name" required>
+            </div>
+            <div class="form-group">
+              <label for="passwordLabel" style="padding-top: 1em;">Password</label>
+              <input type="password" class="form-control" id="passwordLabel" placeholder="Password" name="user_password" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary mx-auto d-block">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>    
+
 
   <section id="hero-fullscreen" class="hero-fullscreen d-flex flex-column-reverse">
     <video autoplay muted loop id="myVideo">
