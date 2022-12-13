@@ -22,8 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const selectHeader = document.querySelector('#header');
   if (selectHeader) {
+    window.addEventListener('load', ()=>{
+      selectHeader.classList.add('opace');
+    });
     document.addEventListener('scroll', () => {
       window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
+      window.scrollY > 0 ? selectHeader.classList.remove('opace') : selectHeader.classList.add('opace');
     });
   }
 
