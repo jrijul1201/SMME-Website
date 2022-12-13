@@ -46,14 +46,15 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-   <!-- Partials loading script -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-   <script>
-     $(function () {
-       $("#footer").load("footer.html");
-       $("#hero").load("hero.html");
-     });
-   </script>
+  <!-- Partials loading script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+      $("#hero").load("hero.html");
+      $("#login-modal").load("login-modal.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -141,10 +142,13 @@
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="index.html#about">Get Started</a>
+      <button type="button" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+        Login </button>
 
     </div>
   </header><!-- End Header -->
+
+  <div id="login-modal"></div>
 
   <div id="hero"></div>
 
@@ -299,7 +303,7 @@
                 <h6 style="color:var(--color-secondary-light);">Assistant Professor<br>
                   Specialization: Engineering Seismology<br>
                   PhD from IIT Madras
-                 </h6>
+                </h6>
               </div>
             </div>
           </div>
@@ -319,8 +323,8 @@
                 <h6 style="color:var(--color-secondary-light);">Assistant Professor<br>
                   Specialization: Solid Mechanics and Design<br>
                   PhD from IIT Kanpur
-                  
-                 </h6>
+
+                </h6>
               </div>
             </div>
           </div>
@@ -339,9 +343,10 @@
                 <h4>Gajendra Singh</h4>
                 <h6 style="color:var(--color-secondary-light);">Assistant Professor<br>
                   Assistant Professor
-                  Specialization: Experimental Fluid Dynamics, Spray Atomization & Combustion, Advance Laser Diagnostics & Image Processing
-                  
-                 </h6>
+                  Specialization: Experimental Fluid Dynamics, Spray Atomization & Combustion, Advance Laser Diagnostics
+                  & Image Processing
+
+                </h6>
               </div>
             </div>
           </div>

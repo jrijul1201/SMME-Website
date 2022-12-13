@@ -46,14 +46,15 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-   <!-- Partials loading script -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-   <script>
-     $(function () {
-       $("#footer").load("footer.html");
-       $("#hero").load("hero.html");
-     });
-   </script>
+  <!-- Partials loading script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+      $("#hero").load("hero.html");
+      $("#login-modal").load("login-modal.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -107,7 +108,7 @@
           <li class="dropdown megamenu"><a href="#"><span>Research Areas</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              
+
               <li>
                 <a href="#">Smart Structure and system</a>
                 <a href="#">Design against failure and fracture</a>
@@ -142,10 +143,13 @@
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="index.html#about">Get Started</a>
+      <button type="button" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+        Login </button>
 
     </div>
   </header><!-- End Header -->
+
+  <div id="login-modal"></div>
 
   <div id="hero"></div>
 
@@ -215,15 +219,24 @@
                   Structural Engineering.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);" href="https://iitmandi.ac.in/academics/files/mtech_energy.pdf">M.Tech. in Mechanical Engineering with
+                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);"
+                      href="https://iitmandi.ac.in/academics/files/mtech_energy.pdf">M.Tech. in Mechanical Engineering
+                      with
                       specialization in Energy Systems (MES)</a></li>
-                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);" href="https://iitmandi.ac.in/academics/files/eem.pdf">M. Tech. in Materials, Energy Engineering
+                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);"
+                      href="https://iitmandi.ac.in/academics/files/eem.pdf">M. Tech. in Materials, Energy Engineering
                       (MEE)</a></li>
-                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);" href="https://iitmandi.ac.in/academics/files/Mtech_Str.Engg.pdf">M.Tech. in Structural Engineering (STE)</a>
+                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);"
+                      href="https://iitmandi.ac.in/academics/files/Mtech_Str.Engg.pdf">M.Tech. in Structural Engineering
+                      (STE)</a>
                   </li>
-                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);" href="https://iitmandi.ac.in/academics/files/M.Tech%20in%20FTE.pdf">M.Tech. in Fluid Thermal Engineering
+                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);"
+                      href="https://iitmandi.ac.in/academics/files/M.Tech%20in%20FTE.pdf">M.Tech. in Fluid Thermal
+                      Engineering
                       (FTE)</a></li>
-                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);" href="https://iitmandi.ac.in/academics/files/Electric_Transportation.pdf">M.Tech. in Electric Transportation (ET)</a>
+                  <li><i class="bi bi-check-circle-fill"></i> <a style="color:var(--color-secondary-dark);"
+                      href="https://iitmandi.ac.in/academics/files/Electric_Transportation.pdf">M.Tech. in Electric
+                      Transportation (ET)</a>
                   </li>
                 </ul>
                 <!-- <p>
