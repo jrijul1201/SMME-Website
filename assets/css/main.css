@@ -115,7 +115,7 @@ section {
 .section-header h2 {
   font-size: 48px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: var(--color-secondary);
 }
 
@@ -1177,6 +1177,9 @@ section {
 
 .featured-services .service-item:hover h4 a {
   color: var(--color-primary);
+}
+.features .research-content {
+  padding: 3%;
 }
 
 /*--------------------------------------------------------------
