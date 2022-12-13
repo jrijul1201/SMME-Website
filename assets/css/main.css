@@ -3273,6 +3273,9 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary-light);
 }
+.footer .copyright{
+  text-align: center;
+}
 
 .footer .footer-legal .social-links a {
   font-size: 18px;
