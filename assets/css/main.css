@@ -3316,3 +3316,36 @@ section {
   width: 100%;
   height: 100%;
 }
+
+.dropdownNew {
+  position: relative;
+  display: none;
+  background-color: rgb(248, 240, 240);
+  color: #fff;
+}
+
+.dropdownNew ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+.dropdownNew li {
+  margin: 2px;
+  padding: 2px;
+}
+
+.dropdownNew li a {
+  color: black;
+  font-size: 15px;
+}
+
+.dept:hover .dropdownNew {
+  display: block;
+  margin-top: 0px;
+}
