@@ -2466,6 +2466,98 @@ section {
   background: rgba(var(--color-primary-rgb), 0.85);
 }
 
+.login .login-form {
+  width: 100%;
+  background: var(--color-white);
+}
+
+.login .login-form .form-group {
+  padding-bottom: 8px;
+}
+
+.login .login-form .error-message {
+  display: none;
+  color: var(--color-white);
+  background: var(--color-red);
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.login .login-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.login .login-form .sent-message {
+  display: none;
+  color: var(--color-white);
+  background: var(--color-green);
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.login .login-form .loading {
+  display: none;
+  background: var(--color-white);
+  text-align: center;
+  padding: 15px;
+}
+
+.login .login-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--color-green);
+  border-top-color: var(--color-white);
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.login .login-form input[type=text],
+.login .login-form input[type=password],
+.login .login-form input[type=email],
+.login .login-form textarea {
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.login .login-form input[type=text]:focus,
+.login .login-form input[type=password]:focus,
+.login .login-form input[type=email]:focus,
+.login .login-form textarea:focus {
+  border-color: var(--color-secondary-light);
+}
+
+.login .login-form input[type=text],
+.login .login-form input[type=password],
+.login .login-form input[type=email] {
+  height: 48px;
+  padding: 10px 15px;
+}
+
+.login .login-form textarea {
+  padding: 10px 12px;
+  height: 290px;
+}
+
+.login .login-form button[type=submit] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 13px 50px;
+  color: var(--color-white);
+  transition: 0.4s;
+  border-radius: 0;
+}
+
+.login .login-form button[type=submit]:hover {
+  background: rgba(var(--color-primary-rgb), 0.85);
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
