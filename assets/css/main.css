@@ -398,7 +398,7 @@ section {
 
   .navbar .dropdown ul a {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: none;
     font-weight: 500;
     color: rgba(var(--color-white-rgb), 0.7);
