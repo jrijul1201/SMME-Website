@@ -3300,8 +3300,10 @@ section {
 .landingPageHead{
   padding: 25px;
   /* border: 2px solid black; */
-  background-color: black;
-  opacity: 0.65 !important;
+  /* background-color: black; */
+  /* background: var(--color-secondary-dark-rgb); */
+  /* opacity: 0.65 !important; */
+  background: rgba(var(--color-secondary-dark-rgb), 0.7);
   text-align: center;
 }
 
