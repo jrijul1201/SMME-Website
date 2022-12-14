@@ -1,0 +1,66 @@
+[
+    {
+        "name":"Atul Dhar",
+       "post":"Associate Professor(Chairperson)",
+       "speciality":"Alternative Fuels, IC Engines, Emissions Control",
+       "img": "atuldhar.jpeg"
+
+    },
+    {
+        "name":"Arpan Gupta",
+       "post":"Associate Professor",
+       "speciality":"Acoustics, Vibration, Bio-mechanics",
+       "img":"agupta.jpg"
+
+    },
+    {
+        "name":"Amit Shukla",
+       "post":"Assistant Professor",
+       "speciality":"RoboticsControl Systems, Mechatronics, Artificial Intelligence, Electric Vehicle",
+       "img":"amitshukla.jpg"
+
+    },
+    {
+       "name":"Ashutosh Kumar",
+       "post":"Assistant Professor",
+       "speciality":"Geotechnical Engineering\\nPhD from IIT Bombay",
+       "img":"ashutosh.png"
+
+    },
+    {
+        "name":"Deepak Swami",
+        "post":"Associate Professor",
+        "speciality":"Groundwater and Water Resources",
+        "img":"deepak.png"
+ 
+     },
+     {
+        "name":"Dericks P Shukla",
+        "post":"Associate Professor",
+        "speciality":"Remote Sensing, GIS, Environmental-Hydro-geochemistry",
+        "img":"dericks.jpg"
+ 
+     },
+     {
+        "name":"Dhanya J",
+        "post":"Assistant Professor",
+        "speciality":"Engineering Seismology PhD from IIT Madras",
+        "img":"dhanya.jpg"
+ 
+     },
+     {
+        "name":"Deepak Sachan",
+        "post":"Assistant Professor",
+        "speciality":" Solid Mechanics and Design",
+        "img":"dsachan.jpg"
+ 
+     },
+     {
+        "name":"Gajendra Singh",
+        "post":" Assistant Professor",
+        "speciality":"Experimental Fluid Dynamics, Spray Atomization & Combustion, Advance Laser Diagnostics & Image Processing",
+        "img":"gajendra.jpg"
+ 
+     }
+
+]
