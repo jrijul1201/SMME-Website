@@ -1188,7 +1188,7 @@ section {
   color: var(--color-primary);
 }
 .features .research-content {
-  padding: 3%;
+  padding: 3% 0%;
 }
 .features .img-fluid{
   height: 90%;
