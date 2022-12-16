@@ -62,7 +62,7 @@
         $.each(data, function (i, f) {
           var src1=`assets/img/team/${f.img}`
           var comp =
-            '<div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200"> ' +
+            '<div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200"> ' +
             "<div class='team-member'>" +
             "<div class= 'member-img' >" +
             "<img src="+src1+ " class='img-fluid' alt=''></img>"+
@@ -76,10 +76,12 @@
             "<h4>" + f.name + "</h4>" +
             "<h6 style='color:var(--color - secondary - light); '>" +
             f.post + "<br>" + "Specialization:" + f.speciality + "</p>" +
+            `<a href='dedicated.html?data=${i}'}>link text</a>`+
             "</div>" +
             " </div > " +
             "</div > "
           $(comp).appendTo("#faculty-info");
+          // $(comp).appendTo("#dedicated");
         });
       });
     });
