@@ -185,9 +185,7 @@
            
                 const urlParams = new URLSearchParams(window.location.search);
                 const idx = urlParams.get('data');
-                console.log("idx", idx)
                 $.getJSON('faculty.json', function (data) {
-                    console.log("data", data[idx])
                     const f = data[idx];
                     var src1 = `assets/img/team/${f.img}`
                     var comp =
@@ -202,7 +200,7 @@
                         '<ul class="nav nav-pills mb-3">' +
                         '<li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a></li>' +
                         '<li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Voluptates</a></li>' +
-                        '<li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Corrupti</a></li>' +
+                        '<li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Publications</a></li>' +
                         "</ul>" +
 
                         '<div class="tab-content">' +
@@ -230,7 +228,8 @@
                         '<p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut al.</p>' +
 
                         '</div>' +
-                        '<div class="tab-pane fade show active" id="tab2">' +
+
+                        '<div class="tab-pane fade" id="tab2">' +
 
                         '<p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel e</p>' +
 
@@ -254,38 +253,23 @@
 
                         '</div>' +
 
-                        '<div class="tab-pane fade show active" id="tab3">' +
+                        '<div class="tab-pane fade" id="tab3">' 
 
-                        '<p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel e</p>' +
+                        if (f.irins_pub.length > 0) {
+                            comp += '<p class="fst-italic">IRINS Publications: </p>' 
+                        }
 
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Repudiandae rerum velit modi et officia quasi facilis</h4>' +
-                        '</div>' +
-                        '<p>Laborum omnis voluptates voluptas qui sit aliquam blanditiist.</p>' +
+                        for (let i=0; i<f.irins_pub.length;i++) {
+                            if (!(f.irins_pub[i].isHidden)) {
+                                comp += '<div class="d-flex align-items-center mt-4">' +
+                                        '<i class="bi bi-check2"></i>' +
+                                        '<h4>' + f.irins_pub[i].title + '</h4>' +
+                                        '</div>' 
+                            }
+                            
+                        }
 
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Incidunt non veritatis illum ea ut nisi</h4>' +
-                        '</div>' +
-                        '<p>Non quod totam minus repellendus autem sint velit. dis.</p>' +
-
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>' +
-                        '</div>' +
-                        '<p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut al.</p>' +
-
-                        '</div>' +
-
-                        '</div>' +
-
-                        '</div>' +
-
-                        '</div>' +
-
-                        '</div>' +
-                        '</section>' 
+                        comp += '</div>' +'</div>' +'</div>' +'</div>' +'</section>' 
                         $(comp).appendTo("#dedicated");
                 });
             });
