@@ -261,10 +261,17 @@
 
                         for (let i=0; i<f.irins_pub.length;i++) {
                             if (!(f.irins_pub[i].isHidden)) {
+                                if (f.irins_pub[i].year != 'NA') {
+                                    yearDOI = '&emsp;&emsp;' + 'Year : ' + f.irins_pub[i].year 
+                                }
+                                if (f.irins_pub[i].DOI != 'NA') {
+                                    yearDOI += '&emsp;&emsp;' + "DOI : " + f.irins_pub[i].DOI
+                                }
                                 comp += '<div class="d-flex align-items-center mt-4">' +
                                         '<i class="bi bi-check2"></i>' +
                                         '<h4>' + f.irins_pub[i].title + '</h4>' +
-                                        '</div>' 
+                                        '</div>' +
+                                        '<p>' + yearDOI + '</p>'
                             }
                             
                         }
