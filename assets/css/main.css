@@ -3444,3 +3444,7 @@ section {
   display: block;
   margin-top: 0px;
 }
+
+.textRight {
+  text-align: right;
+}
