@@ -4,6 +4,22 @@
     "post": "Associate Professor (Chairperson)",
     "speciality": "Alternative Fuels, IC Engines, Emissions Control",
     "img": "atuldhar.jpeg",
+    "phone": "+91-1905-267143",
+    "email": "add@iitmandi.ac.in",
+    "education": [
+      {
+        "degree": "PhD.",
+        "duration": "(Dec'06 - June'13)",
+        "place": "Kanpur",
+        "thesisTitle": "Gibberish..."
+      },
+      {
+        "degree": "MTech.",
+        "duration": "(July'06 - June'04)",
+        "place": "Kanpur",
+        "thesisTitle": "Gibberish..."
+      }
+    ],
     "irins_pub": [
       {
         "title": "Performance of Zr/CeO<sub>2-</sub>Al<sub>2</sub>O<sub>3</sub>Catalyst towards Oxidation of Diesel Soot",

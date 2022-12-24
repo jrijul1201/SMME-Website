@@ -3448,3 +3448,83 @@ section {
 .textRight {
   text-align: right;
 }
+
+.faculty-page-desc {
+  /* border: 2px solid black; */
+  height: 90%;
+  width: 90%;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+
+.faculty-page-desc::-webkit-scrollbar {
+  display: none;
+}
+
+.faculty-page-right-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-tag-faculty {
+  margin: 0px;
+  font-family: var(--font-primary);
+}
+
+.margin-tagi-faculty {
+  margin: 0px;
+  display: inline !important;
+}
+
+.pub-faculty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pubs {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.plates {
+  display: inline !important;
+  width: 45%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+.plate-child {
+  height: 250px;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+
+.plate-child::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .pubs {
+    display: flex;
+    width: 90%;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+  .plates {
+    width: 90%;
+  }
+  .plate-child {
+    height: 170px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+  }
+}
+

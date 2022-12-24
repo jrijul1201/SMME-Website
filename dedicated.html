@@ -190,74 +190,47 @@
                     var src1 = `assets/img/team/${f.img}`
                     var comp =
                         '<section class="about">' +
-                        '<div class="container" data-aos="fade-up">' +
                         '<div class="section-header"><h2>' + f.name + '</h2></div> ' +
                         '<div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">' +
                         '<div class="col-lg-5"><div class="about-img">' +
                         "<img src=" + src1 + " class='img-fluid' alt=''></img>" +
-                        '</div></div>' +
-                        '<div class="col-lg-7">' +
-                        '<ul class="nav nav-pills mb-3">' +
-                        '<li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a></li>' +
-                        '<li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Voluptates</a></li>' +
-                        '<li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Publications</a></li>' +
-                        "</ul>" +
+                        '</div></div>' + 
+                        '<div class="col-lg-7 faculty-page-right-parent">' +
+                        '<div class="faculty-page-desc">' + 
+                        '<hr class="margin-tag-faculty"><h4 class="margin-tag-faculty">'+ f.name +'</h4> <hr class="margin-tag-faculty">' +
+                        '<p class="margin-tag-faculty">' + (f.post==undefined?'  --':f.post) + '</p> <p class="margin-tag-faculty">' + (f.speciality==undefined?('  --'):(f.speciality)) + '</p>' +
+                        '<hr class="margin-tag-faculty">  <h4 class="margin-tag-faculty"> Address: </h4>   <hr class="margin-tag-faculty">' +
+                        '<p class="margin-tag-faculty"> ' + (f.address==undefined?'  --':f.address) + '</p>' +
+                        '<hr class="margin-tag-faculty"><div><h4 class="margin-tagi-faculty">Phone: </h4> <p class="margin-tagi-faculty">' + (f.phone==undefined?'--':f.phone) + '</p></div> <div><h4 class="margin-tagi-faculty">Email: </h4> <p class="margin-tagi-faculty">' + (f.email==undefined?'--':f.email) + '</p></div><hr class="margin-tag-faculty">' +
+                        '<h4 class="margin-tag-faculty">Education: </h4> <hr class="margin-tag-faculty">';
 
-                        '<div class="tab-content">' +
+                    if(f.education == undefined){
+                        comp+='<p> Not Educated </p>'        // isko change krdena
+                    }else{
+                        comp += '<ul>';
 
-                        '<div class="tab-pane fade show active" id="tab1">' +
+                        for(var i=0;i<f.education.length;i++){
+                            comp += '<li> '+
+                            '<h5 class="margin-tag-faculty" style="font-size:17px"> '+ f.education[i].degree +' ' + (f.education[i].duration==undefined?'':f.education[i].duration) + ' ' + '<span style="font-size:13px">' + (f.education[i].place==undefined?'':('from ' + f.education[i].place)) + '</span> </h5>'+
+                            '<p class="margin-tag-faculty"> Thesis Title: ' + (f.education[i].thesisTitle==undefined?'--':f.education[i].thesisTitle) + '</p>'+
+                            ' </li>';
+                        }  
+                        comp += '</ul>';
+                    }
+                     comp+='<hr class="margin-tag-faculty"></div></div>';
 
-                        '<p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel e</p>' +
+                        
+                    comp += '</div>' + '<hr> <br> <br>'+
 
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Repudiandae rerum velit modi et officia quasi facilis</h4>' +
-                        '</div>' +
-                        '<p>Laborum omnis voluptates voluptas qui sit aliquam blanditiist.</p>' +
-
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Incidunt non veritatis illum ea ut nisi</h4>' +
-                        '</div>' +
-                        '<p>Non quod totam minus repellendus autem sint velit. dis.</p>' +
-
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>' +
-                        '</div>' +
-                        '<p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut al.</p>' +
-
-                        '</div>' +
-
-                        '<div class="tab-pane fade" id="tab2">' +
-
-                        '<p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel e</p>' +
-
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Repudiandae rerum velit modi et officia quasi facilis</h4>' +
-                        '</div>' +
-                        '<p>Laborum omnis voluptates voluptas qui sit aliquam blanditiist.</p>' +
-
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Incidunt non veritatis illum ea ut nisi</h4>' +
-                        '</div>' +
-                        '<p>Non quod totam minus repellendus autem sint velit. dis.</p>' +
-
-                        '<div class="d-flex align-items-center mt-4">' +
-                        '<i class="bi bi-check2"></i>' +
-                        '<h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>' +
-                        '</div>' +
-                        '<p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut al.</p>' +
-                        '</div>' +
-                        '<div class="tab-pane fade" id="tab3">'
+                    '<div class="row-lg-7 pub-faculty">'       // Publication starts
+                        
+                        
 
                     if (f.irins_pub.length > 0) {
-                        comp += '<p class="fst-italic">IRINS Publications: </p>'
+                        comp += '<p class="fst-italic" style="font-size:30px">IRINS Publications: </p>'
                     }
 
-
+                    comp+='<div class="pubs">'
                     for (let i = 0; i < f.irins_pub.length; i++) {
                         if (!(f.irins_pub[i].isHidden)) {
                             publicationType = ''
@@ -280,9 +253,9 @@
                             if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
 
 
-                            comp += '<div class="col-md-12">' +
+                            comp += '<div class="col-md-12 plates">' +
                                 '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">' +
-                                '<div class="col p-4 d-flex flex-column position-static">' +
+                                '<div class="col p-4 d-flex flex-column position-static plate-child">' +
                                 '<strong class="d-inline-block mb-2 text-primary">' +
                                 publicationType +
                                 '</strong>' +
@@ -316,8 +289,7 @@
                         }
 
                     }
-
-                    comp += '</div>' + '</div>' + '</div>' + '</div>' + '</section>'
+                    comp+='</div>'+'</section>'
                     $(comp).appendTo("#dedicated");
                 });
             });
