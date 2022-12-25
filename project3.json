@@ -1,0 +1,107 @@
+[
+    {
+      "sno": 1,
+      "title": "CFD modelling of free surface flow on complex topography",
+      "student": "Divesh Bharti",
+      "rollno": "T17001",
+      "guide": "Dr.Gaurav Bhutani/Dr.Sandip Saha"
+    },
+    {
+      "sno": 2,
+      "title": "Thermal management of micro electronics via pool boiling",
+      "student": "Anand Singh",
+      "rollno": "T17001",
+      "guide": "Dr.Sumit Sinha Ray"
+    },
+    {
+      "sno": 3,
+      "title": "Synthesis and energy storage applications ofComposite materials based on Ni, Fe,Mn ,Co nanomaterials and conducting polymers",
+      "student": "Saumya Pandey",
+      "rollno": "T17003",
+      "guide": "Dr Rik Rani Koner"
+    },
+    {
+      "sno": 4,
+      "title": "Modelling & Analysis of thermoacoustic effect across the stack",
+      "student": "Dikshita Joshi",
+      "rollno": "T17006",
+      "guide": "Dr.Arpan Gupta"
+    },
+    {
+      "sno": 5,
+      "title": "Energy Harvesting through Reverse Electrowetting on Dielectric",
+      "student": "Diwakar Singh",
+      "rollno": "T17008",
+      "guide": "Dr Gaurav Bhutani and Dr Satinder Sharma"
+    },
+    {
+      "sno": 6,
+      "title": "Carrier selective contacts of solar cell",
+      "student": "Tarun Kumar",
+      "rollno": "T17011",
+      "guide": "Dr.Pradeep Kumar"
+    },
+    {
+      "sno": 7,
+      "title": "Analysis of Solar Vortex Engine",
+      "student": "Roshan Lal",
+      "rollno": "T17009",
+      "guide": "Dr.Ankush Bag"
+    },
+    {
+      "sno": 8,
+      "title": "Thin layer mathematical modeling of Himalayan fruits",
+      "student": "Ashutosh Chauhan",
+      "rollno": "T17012",
+      "guide": "Dr.Atul Dhar/Dr.Satvasheel Powar"
+    },
+    {
+      "sno": 9,
+      "title": "Design of gas turbine blade using FGM material",
+      "student": "Karanveer Singh",
+      "rollno": "T17011",
+      "guide": "Dr.Pradeep Kumar"
+    },
+    {
+      "sno": 10,
+      "title": "Solar assisted gasifier",
+      "student": "GouravSaraswat",
+      "rollno": "T17013",
+      "guide": "Dr. Mohammad Talha"
+    },
+    {
+      "sno": 11,
+      "title": "Stator inter turn fault of permanent magnet synchronous motor",
+      "student": "Nikhil Doiphode",
+      "rollno": "T17016",
+      "guide": "Dr. Bharat Singh Rajpurohit"
+    },
+    {
+      "sno": 12,
+      "title": "Design optimization of heat exchanger for latent heat application",
+      "student": "Hani Chaudhary",
+      "rollno": "T17017",
+      "guide": "Dr. P. Anil Kishan"
+    },
+    {
+      "sno": 13,
+      "title": "Investigation on slurry erosion performance of microwave clads for hydro turbine application",
+      "student": "Minhaj",
+      "rollno": "T17018",
+      "guide": "Dr.Sunny Zafar"
+    },
+    {
+      "sno": 14,
+      "title": "Nox emission reduction through SCR technique in diesel engine",
+      "student": "Sandeep Yadav",
+      "rollno": "T17019",
+      "guide": "Dr.AtulDhar; Dr.ViswanathBalakrishnan"
+    },
+    {
+      "sno": 15,
+      "title": "Use of electrocatalysis for improving efficiency of anaerobic digester",
+      "student": "Shashank Prabhakar",
+      "rollno": "T17020",
+      "guide": "Dr.Atul Dhar/Dr.Satvasheel Powar"
+    }
+   ]

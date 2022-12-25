@@ -81,6 +81,25 @@ h6 {
   }
 }
 
+.table-css td {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  table-layout: fixed;
+  padding: 5px 15px;
+  width: 100vw;
+  text-align: left;
+}
+.table-css th{
+  /* border-bottom: 1px solid black;  */
+  /* border-top: 1px solid black;  */
+  padding: 5px 15px;
+}
+.table-css tr:nth-child(even) { 
+    background-color: #d5d5d5; 
+} 
+
+
 @keyframes animate-preloader {
   0% {
     width: 10px;
@@ -1187,13 +1206,16 @@ section {
 .featured-services .service-item:hover h4 a {
   color: var(--color-primary);
 }
+
 .features .research-content {
   padding: 3% 0%;
 }
-.features .img-fluid{
+
+.features .img-fluid {
   height: 90%;
   width: 100%;
 }
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -3368,7 +3390,8 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary-light);
 }
-.footer .copyright{
+
+.footer .copyright {
   text-align: center;
 }
 
@@ -3392,7 +3415,7 @@ section {
   text-decoration: none;
 }
 
-.landingPageHead{
+.landingPageHead {
   padding: 25px;
   /* border: 2px solid black; */
   /* background-color: black; */
@@ -3454,8 +3477,9 @@ section {
   height: 90%;
   width: 90%;
   overflow: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
 }
 
 .faculty-page-desc::-webkit-scrollbar {
@@ -3502,8 +3526,9 @@ section {
 .plate-child {
   height: 250px;
   overflow: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
 }
 
 .plate-child::-webkit-scrollbar {
@@ -3517,14 +3542,16 @@ section {
     /* flex-wrap: wrap; */
     flex-direction: column;
   }
+
   .plates {
     width: 90%;
   }
+
   .plate-child {
     height: 170px;
     overflow: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
   }
 }
-
