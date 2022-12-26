@@ -60,26 +60,33 @@
     $(function () {
       $.getJSON('faculty.json', function (data) {
         $.each(data, function (i, f) {
-          var src1=`assets/img/team/${f.img}`
+          var src1 = `assets/img/team/${f.img}`
+          var irins = `https://iitmandi.irins.org/profile/${f.irins}`
+          var phone = `tel:+91-1905-${f.phone}`
+          var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}@iitmandi.ac.in`
           var comp =
             '<div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200"> ' +
             "<div class='team-member'>" +
             "<div class= 'member-img' >" +
-            "<img src="+src1+ " class='img-fluid' alt=''></img>"+
+            `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
+            "<img src=" + src1 + " class='img-fluid' alt=''></img>" +
+            '</a>' +
             "</div>" +
-            "<div class='member-info'>" +
+            "<div style = 'height: 28vh' class='member-info'>" +
             "<div class='social'>" +
-            "<a href=''>" + "<i class='bi bi-twitter'></i>" + "</a>" +
-            "<a href=''>" + "<i class='bi bi-facebook'></i>" + "</a>" +
-            "<a href=''>" + "<i class='bi bi-instagram'></i>" + "</a>" +
-            "<a href=''>" + "<i class='bi bi-linkedin'></i>" + "</a>" + "</div>" +
+            "<a target='_blank' href=" + irins + "><i class='bi bi-lightbulb'></i>" + "</a>" +
+            "<a target='_blank' href=" + f.gs + " ><i class='bi bi-mortarboard'></i>" + "</a>" +
+            "<a href=" + phone + " ><i class='bi bi-telephone'></i>" + "</a>" +
+            "<a target='_blank' href=" + mail + " ><i class='bi bi-envelope'></i>" + "</a>" + "</div>" +
             "<h4>" + f.name + "</h4>" +
             "<h6 style='color:var(--color - secondary - light); '>" +
             f.post + "<br>" + "Specialization:" + f.speciality + "</p>" +
-            `<a href='dedicated.html?data=${i}'}>Other Details</a>`+
             "</div>" +
+
             " </div > " +
+
             "</div > "
+
           $(comp).appendTo("#faculty-info");
           // $(comp).appendTo("#dedicated");
         });
@@ -141,7 +148,7 @@
               </li>
             </ul>
           </li>
-          
+          <li><a class="nav-link scrollto" href="project.html">Projects</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
