@@ -3547,8 +3547,8 @@ section {
 }
 
 .plate-child {
-  height: 250px;
-  overflow: scroll;
+  /* height: 300px;
+  overflow: scroll; */
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -3571,8 +3571,8 @@ section {
   }
 
   .plate-child {
-    height: 170px;
-    overflow: scroll;
+    /* height: 170px;
+    overflow: scroll; */
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;

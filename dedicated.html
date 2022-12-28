@@ -261,6 +261,9 @@
                     }
 
                     comp += '<div class="pubs">'
+                    f.irins_pub = f.irins_pub.sort((a1,a2) => {
+                        return (a1.title.length>a2.title.length)?1:-1;
+                    });
                     for (let i = 0; i < f.irins_pub.length; i++) {
                         if (!(f.irins_pub[i].isHidden)) {
                             publicationType = ''
