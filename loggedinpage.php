@@ -24,21 +24,21 @@ $userName = $_SESSION['user_name'];
 <body>
     <?php
 
-        $data = file_get_contents('faculty.json');
-        $arr = json_decode($data, true);
-        $index  = 0;
-        foreach($arr as $key => $value) {
-            if($value["mail"]==$userName) {
-                $index = $key;
-                break;
-            }
+    $data = file_get_contents('faculty.json');
+    $arr = json_decode($data, true);
+    $index = 0;
+    foreach ($arr as $key => $value) {
+        if ($value["mail"] == $userName) {
+            $index = $key;
+            break;
         }
-        $_SESSION['faculty_index'] = $index;
-    
+    }
+    $_SESSION['faculty_index'] = $index;
+
     ?>
     <div class="background">
         <h1 style="text-align:center;"> Welcome,
-        <?php echo $arr[$index]["name"]; ?>. You are successfully logged in
+            <?php echo $arr[$index]["name"]; ?>. You are successfully logged in
         </h1>
         <center><a href="logout.php"
                 style="cursor:pointer;padding:10px 20px; color:white; background:black; border-radius:3px; text-decoration:none;">LOGOUT</a>

@@ -1,30 +1,30 @@
 [
-    {
-      "S. No.": 1,
-      "title": "Heavy Metal Pick-Up from Water Using Nanofiber Filter Membrane",
-      "heads": "Dr. Sumit Sinha Ray",
-      "amount": "10 lakhs",
-      "duration": "3 Years"
-    },
-    {
-      "S. No.": 2,
-      "title": "Development, characterisations and mathematical modelling of microwave cured porous composites for biomedical applications",
-      "heads": "Dr. Sunny Zafar (PI) and Dr. Mohmmad Talha (Co-PI)",
-      "amount": "14.5 lakhs",
-      "duration": "3 Years"
-    },
-    {
-      "S. No.": 3,
-      "title": "Development and Implementation of Extended Finite Element (XFEM) Model for Ductile Crack Growth in Structural Engineering Applications",
-      "heads": "Dr. Himanshu Pathak (PI)",
-      "amount": "5.12 lakhs",
-      "duration": "3 years"
-    },
-    {
-      "S. No.": 4,
-      "title": "Determination of Fracture Properties of Bone for diabetic and non-diabetic Patients: Experimental and Numerical Investigations",
-      "heads": "Dr. Rajesh Ghosh & Dr. Arpan Gupta",
-      "amount": "12 lakhs",
-      "duration": "3 Years"
-    }
-   ]
+  {
+    "S. No.": 1,
+    "title": "Heavy Metal Pick-Up from Water Using Nanofiber Filter Membrane",
+    "heads": "Dr. Sumit Sinha Ray",
+    "amount": "10 lakhs",
+    "duration": "3 Years"
+  },
+  {
+    "S. No.": 2,
+    "title": "Development, characterisations and mathematical modelling of microwave cured porous composites for biomedical applications",
+    "heads": "Dr. Sunny Zafar (PI) and Dr. Mohmmad Talha (Co-PI)",
+    "amount": "14.5 lakhs",
+    "duration": "3 Years"
+  },
+  {
+    "S. No.": 3,
+    "title": "Development and Implementation of Extended Finite Element (XFEM) Model for Ductile Crack Growth in Structural Engineering Applications",
+    "heads": "Dr. Himanshu Pathak (PI)",
+    "amount": "5.12 lakhs",
+    "duration": "3 years"
+  },
+  {
+    "S. No.": 4,
+    "title": "Determination of Fracture Properties of Bone for diabetic and non-diabetic Patients: Experimental and Numerical Investigations",
+    "heads": "Dr. Rajesh Ghosh & Dr. Arpan Gupta",
+    "amount": "12 lakhs",
+    "duration": "3 Years"
+  }
+]

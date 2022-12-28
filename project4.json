@@ -1,68 +1,68 @@
 [
-    {
-      "sno": 1,
-      "students": "Aditya Sharma (B15301), Shekhar Shubham(B15333)",
-      "title": "Development of health monitoring and early warning system for suspended bridges",
-      "guide": "Dr.SubhamoySen"
-    },
-    {
-      "sno": 2,
-      "students": "Atul Yadav(B15308),Udit Soni(B15337)",
-      "title": "CAD design of new rope way system for river crossing.",
-      "guide": "Dr. Rajneesh Sharma"
-    },
-    {
-      "sno": 3,
-      "students": "Kanikaram Sai Sandeep(B15318),Vishwajeet Patel(B15341)",
-      "title": "Shoe embedded triboelectric energy harvester.",
-      "guide": "Dr. Rajeev Kumar"
-    },
-    {
-      "sno": 4,
-      "students": "Pradeep Kumar(B15326),Wasim Salih.T(B15342)",
-      "title": "Modeling of visco - elastic materials for biomedical applications.",
-      "guide": "Dr. M. Talha"
-    },
-    {
-      "sno": 5,
-      "students": "Rushil Singhal(B15330),Amit Kumar(B15403)",
-      "title": "Industry 4.0.",
-      "guide": "Dr. Sunny Zafar & Dr.VarunDutt"
-    },
-    {
-      "sno": 6,
-      "students": "V Sai Subba Rao(B15339)",
-      "title": "Control of swarm robots",
-      "guide": "Dr.Tushar Jain & Dr.Arpan Gupta"
-    },
-    {
-      "sno": 7,
-      "students": "Aman Choudhary(B15306), Divya Ranjan(B15315)",
-      "title": "E - Rickshaw",
-      "guide": "Dr.Arpan Gupta & Dr.Narsa Reddy"
-    },
-    {
-      "sno": 8,
-      "students": "Preeti M. Kannapan(B15327)",
-      "title": "On Modelling and control of UAV",
-      "guide": "Dr.Tushar Jain & Dr.Gaurav Bhutani"
-    },
-    {
-      "sno": 9,
-      "students": "Anand Mohan Tiwari(B15307), Manoj Kumar Jangid(B15320)",
-      "title": "Design and fabrication of evaporative cooler for better cooling",
-      "guide": "Dr. Rahul Vaish"
-    },
-    {
-      "sno": 10,
-      "students": "Avinash Kumar(B15309)",
-      "title": "Characteristics of impeller using open form computation",
-      "guide": "Dr.Pradeep Kumar"
-    },
-    {
-      "sno": 11,
-      "students": "Utkarsh Kunwar(B15338)",
-      "title": "Physical and cognitive modelling of multiphase dispersed flow",
-      "guide": "Dr.GauravBhutani & Dr.Mousumi"
-    }
-   ]
+  {
+    "sno": 1,
+    "students": "Aditya Sharma (B15301), Shekhar Shubham(B15333)",
+    "title": "Development of health monitoring and early warning system for suspended bridges",
+    "guide": "Dr.SubhamoySen"
+  },
+  {
+    "sno": 2,
+    "students": "Atul Yadav(B15308),Udit Soni(B15337)",
+    "title": "CAD design of new rope way system for river crossing.",
+    "guide": "Dr. Rajneesh Sharma"
+  },
+  {
+    "sno": 3,
+    "students": "Kanikaram Sai Sandeep(B15318),Vishwajeet Patel(B15341)",
+    "title": "Shoe embedded triboelectric energy harvester.",
+    "guide": "Dr. Rajeev Kumar"
+  },
+  {
+    "sno": 4,
+    "students": "Pradeep Kumar(B15326),Wasim Salih.T(B15342)",
+    "title": "Modeling of visco - elastic materials for biomedical applications.",
+    "guide": "Dr. M. Talha"
+  },
+  {
+    "sno": 5,
+    "students": "Rushil Singhal(B15330),Amit Kumar(B15403)",
+    "title": "Industry 4.0.",
+    "guide": "Dr. Sunny Zafar & Dr.VarunDutt"
+  },
+  {
+    "sno": 6,
+    "students": "V Sai Subba Rao(B15339)",
+    "title": "Control of swarm robots",
+    "guide": "Dr.Tushar Jain & Dr.Arpan Gupta"
+  },
+  {
+    "sno": 7,
+    "students": "Aman Choudhary(B15306), Divya Ranjan(B15315)",
+    "title": "E - Rickshaw",
+    "guide": "Dr.Arpan Gupta & Dr.Narsa Reddy"
+  },
+  {
+    "sno": 8,
+    "students": "Preeti M. Kannapan(B15327)",
+    "title": "On Modelling and control of UAV",
+    "guide": "Dr.Tushar Jain & Dr.Gaurav Bhutani"
+  },
+  {
+    "sno": 9,
+    "students": "Anand Mohan Tiwari(B15307), Manoj Kumar Jangid(B15320)",
+    "title": "Design and fabrication of evaporative cooler for better cooling",
+    "guide": "Dr. Rahul Vaish"
+  },
+  {
+    "sno": 10,
+    "students": "Avinash Kumar(B15309)",
+    "title": "Characteristics of impeller using open form computation",
+    "guide": "Dr.Pradeep Kumar"
+  },
+  {
+    "sno": 11,
+    "students": "Utkarsh Kunwar(B15338)",
+    "title": "Physical and cognitive modelling of multiphase dispersed flow",
+    "guide": "Dr.GauravBhutani & Dr.Mousumi"
+  }
+]
