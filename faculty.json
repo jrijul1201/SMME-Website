@@ -7,7 +7,7 @@
     "mail": "add",
     "post": "Associate Professor (Chairperson)",
     "speciality": "Alternative Fuels, IC Engines, Emissions Control",
-    "img": "atuldhar.jpeg",
+    "img": "add.jpg",
     "education": [
       {
         "degree": "PhD.",
@@ -1868,7 +1868,7 @@
     "mail": "gaurav",
     "post": "Assistant Professor",
     "speciality": "Fluid and thermal sciences",
-    "img": "team-1.jpg",
+    "img": "gaurav.jpg",
     "irins_pub": [
       {
         "title": "A framework for polydisperse pulp phase modelling in flotation",
@@ -1964,7 +1964,7 @@
     "mail": "himanshu",
     "post": "Associate Professor",
     "speciality": "Computational Solid Mechanics, Fracture Mechanics, Functionally Graded Materials",
-    "img": "team-1.jpg",
+    "img": "himanshu.jpg",
     "irins_pub": [
       {
         "title": "Crashworthiness of automobile made of HDPE/kenaf and HDPE/MWCNT polymer composites",
@@ -2214,7 +2214,7 @@
     "mail": "jagadeesh",
     "post": "Assistant Professor",
     "speciality": "Marine robotics, Bioinspired robots, Ocean observations and underwater intervention applications, Hydrodynamics, Dynamics and control.",
-    "img": "team-1.jpg",
+    "img": "jagadeesh.jpg",
     "irins_pub": []
   },
   {
@@ -2225,7 +2225,7 @@
     "mail": "jaspreet",
     "post": "Associate Professor",
     "speciality": "Drug Delivery System",
-    "img": "team-1.jpg",
+    "img": "jaspreet.jpg",
     "irins_pub": [
       {
         "title": "Systematic spectroscopic investigation of structural changes and corona formation of bovine serum albumin over magneto-fluorescent nanoparticles",
@@ -2377,7 +2377,7 @@
     "mail": "talha",
     "post": "Associate Professor",
     "speciality": "Computational Solid Mechanics, High Technology Materials and Structures",
-    "img": "team-1.jpg",
+    "img": "talha.jpg",
     "irins_pub": [
       {
         "title": "Geometry Independent Direct and Converse Flexoelectric Effects in Functionally Graded Dielectrics: An Isogeometric Analysis",
@@ -2543,7 +2543,7 @@
     "mail": "mrityunjay",
     "post": "Associate Professor",
     "speciality": "Additive Manufacturing, Syntactic Foams",
-    "img": "team-1.jpg",
+    "img": "mrityunjay.jpg",
     "irins_pub": [
       {
         "title": "A comprehensive review on 3D printing advancements in polymer composites: technologies, materials, and applications",
@@ -2695,7 +2695,7 @@
     "mail": "kishan",
     "post": "Assistant Professor",
     "speciality": "Thermal Science",
-    "img": "team-1.jpg",
+    "img": "kishan.jpg",
     "irins_pub": [
       {
         "title": "Numerical investigation of pressure and temperature influence on flame speed in CH<sub>4</sub>-H<sub>2</sub> premixed combustion",
@@ -2805,7 +2805,7 @@
     "mail": "parmod",
     "post": "Assistant Professor",
     "speciality": "Thermal Engineering",
-    "img": "team-1.jpg",
+    "img": "parmod.jpg",
     "irins_pub": [
       {
         "title": "Numerical Understanding of Free Surface Vortex Driven by Rotational Field Inside Viscous Liquid",
@@ -2859,7 +2859,7 @@
     "mail": "pradeepkumar",
     "post": "Associate Professor",
     "speciality": "Fluid and Thermal Science",
-    "img": "team-1.jpg",
+    "img": "pradeepkumar.jpg",
     "irins_pub": []
   },
   {
@@ -2870,7 +2870,7 @@
     "mail": "prateek",
     "post": "Assistant Professor",
     "speciality": "Additive manufacturing",
-    "img": "team-1.jpg",
+    "img": "prateek.jpg",
     "irins_pub": [
       {
         "title": "Effect of Low Concentration of SiO<sub>2</sub> Nanoparticles on Grape Seed Essential Oil/PBAT Composite Films for Sustainable Food Packaging Application",
@@ -2952,7 +2952,7 @@
     "mail": "rahul",
     "post": "Professor",
     "speciality": "Materials Engineering",
-    "img": "team-1.jpg",
+    "img": "rahul.jpg",
     "irins_pub": [
       {
         "title": "Waste Paper Pulp Derived Reduced Graphene Oxide for Antimicrobial Cement Composites",
@@ -6982,7 +6982,7 @@
     "mail": "rajeev",
     "post": "Professor",
     "speciality": "Machine Design, Vibration",
-    "img": "team-1.jpg",
+    "img": "rajeev.jpg",
     "irins_pub": [
       {
         "title": "Toxicity profiling of metallosurfactant based ruthenium and ruthenium oxide nanoparticles towards the eukaryotic model organism Saccharomyces cerevisiae",
@@ -7036,7 +7036,7 @@
     "mail": "rajesh",
     "post": "Associate Professor",
     "speciality": "Solid Mechanics, Biomechanics",
-    "img": "team-1.jpg",
+    "img": "rajesh.jpg",
     "irins_pub": [
       {
         "title": "Fracture mechanism and fracture toughness at the interface between cortical and cancellous bone",
@@ -7356,7 +7356,7 @@
     "mail": "ranbir",
     "post": "Assistant Professor",
     "speciality": "Smart Materials and Devices for Energy Harvesting",
-    "img": "team-1.jpg",
+    "img": "ranbir.jpg",
     "irins_pub": [
       {
         "title": "Effect of AFM and FM exchange interaction on magnetic anisotropy properties of single domain SmFeO<sub>3</sub> at nanoscale",
@@ -7424,7 +7424,7 @@
     "mail": "rik",
     "post": "Associate Professor",
     "speciality": "Hybrid Materials",
-    "img": "team-1.jpg",
+    "img": "rik.jpg",
     "irins_pub": [
       {
         "title": "Highly Directional 1D Supramolecular Assembly of New Diketopyrrolopyrrole-Based Gel for Organic Solar Cell Applications",
@@ -7520,7 +7520,7 @@
     "mail": "sarthak",
     "post": "Assistant Professor",
     "speciality": "Thermal Engineering, Experimental Nanofluidics, Liquid Phase Electron Microscopy",
-    "img": "team-1.jpg",
+    "img": "sarthak.jpg",
     "irins_pub": [
       {
         "title": "Evaluation of acaricidal resistance status of Rhipicephalus microplus ticks from the hilly state (Uttarakhand) of India and evaluation of efficacy of a natural formulation for the management of resistant ticks",
@@ -7672,7 +7672,7 @@
     "mail": "satvasheel",
     "post": "Assistant Professor",
     "speciality": "Solar Energy",
-    "img": "team-1.jpg",
+    "img": "satvasheel.jpg",
     "irins_pub": [
       {
         "title": "Parametric optimization of a cesaro fins employed latent heat storage system for melting performance enhancement",
@@ -7950,7 +7950,7 @@
     "mail": "sudhir",
     "post": "Assistant Professor",
     "speciality": "Condensed Matter Physics and Materials Science",
-    "img": "team-1.jpg",
+    "img": "sudhir.jpg",
     "irins_pub": [
       {
         "title": "Exploring the suitable theoretical approach for understanding the electronic and magnetic properties of ?-Iron",
@@ -9180,7 +9180,7 @@
     "mail": "sunnyzafar",
     "post": "Assistant Professor",
     "speciality": "Manufacturing Engineering",
-    "img": "team-1.jpg",
+    "img": "sunnyzafar.jpg",
     "irins_pub": [
       {
         "title": "Slurry Erosion Performance of Ni + xCr<sub>7</sub>C<sub>3</sub> Microwave Composite Clad with [10-30 wt%] Cr<sub>7</sub>C<sub>3</sub> Content",
@@ -10018,7 +10018,7 @@
     "mail": "swati",
     "post": "Assistant Professor",
     "speciality": "Materials and Manufacturing",
-    "img": "team-1.jpg",
+    "img": "swati.jpg",
     "irins_pub": [
       {
         "title": "Energy Harvesting Through a Low-Cost Device Using Reverse Electrowetting on Dielectric (REWOD)",
@@ -10366,7 +10366,7 @@
     "mail": "vsc",
     "post": "Associate Professor",
     "speciality": "Mechanical Engineering",
-    "img": "team-1.jpg",
+    "img": "vsc.jpg",
     "irins_pub": [
       {
         "title": "Shape control of spacecraft antenna reflector using lead-free piezoelectric actuators",
@@ -11050,7 +11050,7 @@
     "mail": "viswa",
     "post": "Associate Professor",
     "speciality": "Materials Engineering",
-    "img": "team-1.jpg",
+    "img": "viswa.jpg",
     "irins_pub": [
       {
         "title": "WS<sub>2</sub>Monolayer for Piezo-Phototronic Dye Degradation and Bacterial Disinfection",
@@ -11538,7 +11538,7 @@
     "mail": "satish",
     "post": "Emeritus Professor",
     "speciality": "Vibration, Noise,Tribology and Computer Aided Design",
-    "img": "team-1.jpg",
+    "img": "satish.jpg",
     "irins_pub": []
   }
 ]

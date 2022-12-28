@@ -2192,7 +2192,9 @@ section {
 --------------------------------------------------------------*/
 .team .team-member .member-img {
   border-radius: 8px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  height: 300px;
+  width:300px;
 }
 
 .team .team-member .social {
