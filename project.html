@@ -214,135 +214,114 @@
                     <div class="tab-pane" id="tab-2">
                         <div class="row gy-4">
                             <div data-aos="fade-up" data-aos-delay="100">
-
-                                <div class="scrollable">
-                                    <ul class="space listing">
-                                        <li class="clear">
-
-                                            <table class="table-css">
-                                                <thead>
-                                                    <tr>
-                                                        <th>S. No.</th>
-                                                        <th>Project Title</th>
-                                                        <th>Principal Investigator &amp; Co-ordinator(s)</th>
-                                                        <th>Amount Sanctioned</th>
-                                                        <th>Duration of Project</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody2">
-                                                    <script>
-                                                        $(function () {
-                                                            $.getJSON('project2.json', function (data) {
-                                                                $.each(data, function (i, f) {
-                                                                    var row = '<tr>' +
-                                                                        '<td>' + f.sno + '</th>' +
-                                                                        '<td>' + f.title + '</th>' +
-                                                                        '<td>' + f.heads + '</th>' +
-                                                                        '<td>' + f.amount + '</th>' +
-                                                                        '<td>' + f.duration + '</th>' +
-                                                                        '</tr>'
-                                                                    $(row).appendTo("#tbody2");
-                                                                })
-                                                            })
+                                <div class="table-responsive">
+                                    <table class="table table-css">
+                                        <thead>
+                                            <tr>
+                                                <th>S. No.</th>
+                                                <th>Project Title</th>
+                                                <th>Principal Investigator &amp; Co-ordinator(s)</th>
+                                                <th>Amount Sanctioned</th>
+                                                <th>Duration of Project</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody2">
+                                            <script>
+                                                $(function () {
+                                                    $.getJSON('project2.json', function (data) {
+                                                        $.each(data, function (i, f) {
+                                                            var row = '<tr>' +
+                                                                '<td>' + f.sno + '</th>' +
+                                                                '<td>' + f.title + '</th>' +
+                                                                '<td>' + f.heads + '</th>' +
+                                                                '<td>' + f.amount + '</th>' +
+                                                                '<td>' + f.duration + '</th>' +
+                                                                '</tr>'
+                                                            $(row).appendTo("#tbody2");
                                                         })
-                                                    </script>
-                                                </tbody>
-                                            </table>
-                                        </li>
-                                    </ul>
+                                                    })
+                                                })
+                                            </script>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-
                         </div>
                     </div><!-- End Tab Content 2 -->
 
                     <div class="tab-pane" id="tab-3">
                         <div class="row gy-4">
                             <div data-aos="fade-up" data-aos-delay="100">
+                                <div class="table-responsive">
+                                    <table class="table table-css">
+                                        <thead>
+                                            <tr>
+                                                <th>S. No.</th>
+                                                <th>Project Title</th>
+                                                <th>Name of Student</th>
+                                                <th>Roll No.</th>
+                                                <th>Guide</th>
 
-                                <div class="scrollable">
-                                    <ul class="space listing">
-                                        <li class="clear">
-
-                                            <table class="table-css">
-                                                <thead>
-                                                    <tr>
-                                                        <th>S. No.</th>
-                                                        <th>Project Title</th>
-                                                        <th>Name of Student</th>
-                                                        <th>Roll No.</th>
-                                                        <th>Guide</th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody3">
-                                                    <script>
-                                                        $(function () {
-                                                            $.getJSON('project3.json', function (data) {
-                                                                $.each(data, function (i, f) {
-                                                                    var row = '<tr>' +
-                                                                        '<td>' + f.sno + '</th>' +
-                                                                        '<td>' + f.title + '</th>' +
-                                                                        '<td>' + f.student + '</th>' +
-                                                                        '<td>' + f.rollno + '</th>' +
-                                                                        '<td>' + f.guide + '</th>' +
-                                                                        '</tr>'
-                                                                    $(row).appendTo("#tbody3");
-                                                                })
-                                                            })
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody3">
+                                            <script>
+                                                $(function () {
+                                                    $.getJSON('project3.json', function (data) {
+                                                        $.each(data, function (i, f) {
+                                                            var row = '<tr>' +
+                                                                '<td>' + f.sno + '</th>' +
+                                                                '<td>' + f.title + '</th>' +
+                                                                '<td>' + f.student + '</th>' +
+                                                                '<td>' + f.rollno + '</th>' +
+                                                                '<td>' + f.guide + '</th>' +
+                                                                '</tr>'
+                                                            $(row).appendTo("#tbody3");
                                                         })
-                                                    </script>
-                                                </tbody>
-                                            </table>
-                                        </li>
-                                    </ul>
+                                                    })
+                                                })
+                                            </script>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-
                         </div>
                     </div><!-- End Tab Content 3 -->
 
                     <div class="tab-pane" id="tab-4">
                         <div class="row gy-4">
                             <div data-aos="fade-up" data-aos-delay="100">
+                                <div class="table-responsive">
+                                    <table class="table table-css">
+                                        <thead>
+                                            <tr>
+                                                <th>S. No.</th>
+                                                <th>Roll No./Name of Students</th>
+                                                <th>Project Title</th>
+                                                <th>Guide</th>
 
-                                <div class="scrollable">
-                                    <ul class="space listing">
-                                        <li class="clear">
-
-                                            <table class="table-css">
-                                                <thead>
-                                                    <tr>
-                                                        <th>S. No.</th>
-                                                        <th>Roll No./Name of Students</th>
-                                                        <th>Project Title</th>
-                                                        <th>Guide</th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody4">
-                                                    <script>
-                                                        $(function () {
-                                                            $.getJSON('project4.json', function (data) {
-                                                                $.each(data, function (i, f) {
-                                                                    var row = '<tr>' +
-                                                                        '<td>' + f.sno + '</th>' +
-                                                                        '<td>' + f.students + '</th>' +
-                                                                        '<td>' + f.title + '</th>' +
-                                                                        '<td>' + f.guide + '</th>' +
-                                                                        '</tr>'
-                                                                    $(row).appendTo("#tbody4");
-                                                                })
-                                                            })
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody4">
+                                            <script>
+                                                $(function () {
+                                                    $.getJSON('project4.json', function (data) {
+                                                        $.each(data, function (i, f) {
+                                                            var row = '<tr>' +
+                                                                '<td>' + f.sno + '</th>' +
+                                                                '<td>' + f.students + '</th>' +
+                                                                '<td>' + f.title + '</th>' +
+                                                                '<td>' + f.guide + '</th>' +
+                                                                '</tr>'
+                                                            $(row).appendTo("#tbody4");
                                                         })
-                                                    </script>
-                                                </tbody>
-                                            </table>
-                                        </li>
-                                    </ul>
+                                                    })
+                                                })
+                                            </script>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-
                         </div>
                     </div><!-- End Tab Content 4 -->
 
