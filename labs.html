@@ -69,22 +69,22 @@
             "<div class='team-member'>" +
             "<div class= 'member-img' >" +
             `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
-            "<img src=" + src1 + " style='width: 100%; height: 100%;' alt=''></img>" +
+            "<img src=" + src1 + " class='img-fluid' alt=''></img>" +
             '</a>' +
             "</div>" +
-            "<div style = 'height: 18vh' class='member-info'>" +
+            "<div style = 'height: 28vh' class='member-info'>" +
             "<div class='social'>" +
-            "<a target='_blank' href=" + irins + " ><i class='bi bi-lightbulb'></i>" + "</a>" +
+            "<a target='_blank' href=" + irins + "><i class='bi bi-lightbulb'></i>" + "</a>" +
             "<a target='_blank' href=" + f.gs + " ><i class='bi bi-mortarboard'></i>" + "</a>" +
             "<a href=" + phone + " ><i class='bi bi-telephone'></i>" + "</a>" +
             "<a target='_blank' href=" + mail + " ><i class='bi bi-envelope'></i>" + "</a>" + "</div>" +
-            `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
             "<h4>" + f.name + "</h4>" +
-            "<span >" + f.post + "</span>" +
-            '</a>' +
+            "<h6 style='color:var(--color - secondary - light); '>" +
+            f.post + "<br>" + "Specialization:" + f.speciality + "</p>" +
             "</div>" +
+
             " </div > " +
-            "</div > " +
+
             "</div > "
 
           $(comp).appendTo("#faculty-info");
@@ -111,7 +111,7 @@
       <nav id="navbar" class="navbar navbar-collapse justify-content-center">
         <ul>
 
-          <li><a class="nav-link scrollto" href="index.html" class="active">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li class="dropdown"><a href="#"><span>Programmes</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -132,7 +132,7 @@
           </li>
           </li>
           <li><a class="nav-link scrollto" href="index.html#portfolio">News</a></li>
-          <li><a class="nav-link scrollto" href="labs.html">Labs</a></li>
+          <li><a class="nav-link scrollto" href="labs.html" class="active">Labs</a></li>
           <li><a class="nav-link scrollto" href="project.html">Projects</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
@@ -158,14 +158,61 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <br>
-          <h2>Faculties</h2>
+          <h2>Labs</h2>
           <!-- <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p> -->
         </div>
 
-        <div class="row gy-5" id="faculty-info">
-        </div>
+        <div class="container" style="font-size: 120%" align="justify">
+          <div class="row">
+            <div class="faculty">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Teaching Labs</h3>
+                  <h4>The School offers the following teaching labs:</h4><br />
+                  <ul class="arrow">
+                    <li><a href="mechanical_workshop.php"> Central Workshop</a></li>
+                    <li><a href="design_lab.php">Design Lab</a></li>
+                    <li><a href="thermo_fluid.php">Thermo – Fluids Laboratory</a></li>
+                    <li><a href="energy_engg.php">Energy Engineering Lab</a></li>
+                    <!--<li><a href="asel.php">Advanced Structural Engineering Laboratory</a></li>-->
+                    <li><a href="geotech_engg.php">Geotechnical Engineering Laboratory (extension)</a></li>
+                    <!--<li><a href="construction.php">Construction Materials Lab</a></li>-->
+                    <li><a href="env_engg.php">Environment Engineering Lab</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h3>Research Labs</h3>
+                  <h4>The School offers the following research labs:</h4><br />
+                  <ul class="arrow">
+                    <li><a href="nanofabrication.php">Nanofabrication for Energy Materials</a></li>
+                    <li><a href="avl.php">Acoustics and Vibration Lab (AVL)</a></li>
+                    <li><a href="biomechanics_research.php">Biomechanics Research Lab</a></li>
+                    <li><a href="geohazard.php">Geohazard Studies Lab</a></li>
+                    <li><a href="nanoscale.php">Nanoscale Materials & Devices Lab</a></li>
+                    <li><a href="numerical_exp.php">Numerical Experiment Laboratory</a></li>
+                    <li><a href="cdmr.php">Composite Design and Manufacturing Research lab</a></li>
+                    <li><a href="smsr.php">Smart Material & Structure Research Laboratory</a></li>
+                    <li><a href="solar_thermal.php">Solar thermal utilization and thermal energy storage lab</a></li>
+                    <li><a href="biosensor_biomaterial.php">Biosensor and Biomaterial Lab</a></li>
+                    <li><a href="thermoelectric_material.php">Thermoelectric Materials Laboratory</a></li>
+                    <li><a href="advance_landslide.php ">Advanced Landslides Studies Lab</a></li>
+                    <!--<li><a href="building_phy_adv_mat.php">Building Physics and Advanced Material Mechanics Lab</a></li>-->
+                    <li><a href="functional_ceramics.php">Functional Ceramics Laboratory</a></li>
+                    <li><a href="https://www.i4siitmandi.com">Team i4S</a></li>
 
+                    <li><a href="https://ac3group.wixsite.com/ac3group">Atmospheric Chemistry and Climate Change</a>
+                    </li>
+
+
+
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section><!-- End Team Section -->
 

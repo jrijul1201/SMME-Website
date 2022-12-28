@@ -3509,8 +3509,6 @@ section {
 
 .faculty-page-right-parent {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .margin-tag-faculty {
@@ -3575,4 +3573,10 @@ section {
     /* IE and Edge */
     scrollbar-width: none;
   }
+}
+
+.bi-my {
+  font-size: 20px !important;
+  margin-right: 8px !important;
+  color: var(--color-primary);
 }
