@@ -3416,16 +3416,34 @@ section {
   text-decoration: none;
 }
 
-.landingPageHead {
-  padding: 25px;
-  /* border: 2px solid black; */
-  /* background-color: black; */
-  /* background: var(--color-secondary-dark-rgb); */
-  /* opacity: 0.65 !important; */
-  background: rgba(var(--color-secondary-dark-rgb), 0.7);
+.landingPageHead{
+  padding: 7% 4% ;
+  /* margin-left: 3%; */
+  border: 3px solid var(black);
+  /* background: linear-gradient(0deg, black, #444444); */
+  background-color: rgb(114, 108, 108);
+  box-shadow: 20px 20px 50px 15px rgb(87, 79, 79);
+  width: 350px;
+  height: 100%;
   text-align: center;
 }
-
+@media (min-width: 1280px) {
+  .landingPageHead{
+    margin-right: 70%;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 700px){
+  .landingPageHead{
+    margin: 10%;
+    padding: 7% 3%;
+  }
+}
+@media(max-width: 700px){
+  .landingPageHead{
+    justify-content: center;
+    padding: 5% 2%;
+  }
+}
 #myVideo {
   position: absolute;
   display: block;

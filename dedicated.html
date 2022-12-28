@@ -160,7 +160,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="project.html">Projects</a></li>
+                    <li><a class="nav-link scrollto" href="project.html">Projects</a></li>
                     <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
@@ -176,7 +176,7 @@
 
     <div id="login-modal"></div>
 
-    <div ><br></div>
+    <div><br></div>
 
 
     <main id="main">
@@ -195,43 +195,43 @@
                         '<div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">' +
                         '<div class="col-lg-5"><div class="about-img">' +
                         "<img src=" + src1 + " class='img-fluid' alt=''></img>" +
-                        '</div></div>' + 
+                        '</div></div>' +
                         '<div class="col-lg-7 faculty-page-right-parent">' +
-                        '<div class="faculty-page-desc">' + 
-                        '<hr class="margin-tag-faculty"><h4 class="margin-tag-faculty">'+ f.name +'</h4> <hr class="margin-tag-faculty">' +
-                        '<p class="margin-tag-faculty">' + (f.post==undefined?'  --':f.post) + '</p> <p class="margin-tag-faculty">' + (f.speciality==undefined?('  --'):(f.speciality)) + '</p>' +
+                        '<div class="faculty-page-desc">' +
+                        '<hr class="margin-tag-faculty"><h4 class="margin-tag-faculty">' + f.name + '</h4> <hr class="margin-tag-faculty">' +
+                        '<p class="margin-tag-faculty">' + (f.post == undefined ? '  --' : f.post) + '</p> <p class="margin-tag-faculty">' + (f.speciality == undefined ? ('  --') : (f.speciality)) + '</p>' +
                         '<hr class="margin-tag-faculty">  <h4 class="margin-tag-faculty"> Address: </h4>   <hr class="margin-tag-faculty">' +
-                        '<p class="margin-tag-faculty"> ' + (f.address==undefined?'  --':f.address) + '</p>' +
-                        '<hr class="margin-tag-faculty"><div><h4 class="margin-tagi-faculty">Phone: </h4> <p class="margin-tagi-faculty">' + (f.phone==undefined?'--':f.phone) + '</p></div> <div><h4 class="margin-tagi-faculty">Email: </h4> <p class="margin-tagi-faculty">' + (f.email==undefined?'--':f.email) + '</p></div><hr class="margin-tag-faculty">' +
+                        '<p class="margin-tag-faculty"> ' + (f.address == undefined ? '  --' : f.address) + '</p>' +
+                        '<hr class="margin-tag-faculty"><div><h4 class="margin-tagi-faculty">Phone: </h4> <p class="margin-tagi-faculty">' + (f.phone == undefined ? '--' : f.phone) + '</p></div> <div><h4 class="margin-tagi-faculty">Email: </h4> <p class="margin-tagi-faculty">' + (f.email == undefined ? '--' : f.email) + '</p></div><hr class="margin-tag-faculty">' +
                         '<h4 class="margin-tag-faculty">Education: </h4> <hr class="margin-tag-faculty">';
 
-                    if(f.education == undefined){
-                        comp+='<p> Not Educated </p>'        // isko change krdena
-                    }else{
+                    if (f.education == undefined) {
+                        comp += '<p> Not Educated </p>'        // isko change krdena
+                    } else {
                         comp += '<ul>';
 
-                        for(var i=0;i<f.education.length;i++){
-                            comp += '<li> '+
-                            '<h5 class="margin-tag-faculty" style="font-size:17px"> '+ f.education[i].degree +' ' + (f.education[i].duration==undefined?'':f.education[i].duration) + ' ' + '<span style="font-size:13px">' + (f.education[i].place==undefined?'':('from ' + f.education[i].place)) + '</span> </h5>'+
-                            '<p class="margin-tag-faculty"> Thesis Title: ' + (f.education[i].thesisTitle==undefined?'--':f.education[i].thesisTitle) + '</p>'+
-                            ' </li>';
-                        }  
+                        for (var i = 0; i < f.education.length; i++) {
+                            comp += '<li> ' +
+                                '<h5 class="margin-tag-faculty" style="font-size:17px"> ' + f.education[i].degree + ' ' + (f.education[i].duration == undefined ? '' : f.education[i].duration) + ' ' + '<span style="font-size:13px">' + (f.education[i].place == undefined ? '' : ('from ' + f.education[i].place)) + '</span> </h5>' +
+                                '<p class="margin-tag-faculty"> Thesis Title: ' + (f.education[i].thesisTitle == undefined ? '--' : f.education[i].thesisTitle) + '</p>' +
+                                ' </li>';
+                        }
                         comp += '</ul>';
                     }
-                     comp+='<hr class="margin-tag-faculty"></div></div>';
+                    comp += '<hr class="margin-tag-faculty"></div></div>';
 
-                        
-                    comp += '</div>' + '<hr> <br> <br>'+
 
-                    '<div class="row-lg-7 pub-faculty">'       // Publication starts
-                        
-                        
+                    comp += '</div>' + '<hr> <br> <br>' +
+
+                        '<div class="row-lg-7 pub-faculty">'       // Publication starts
+
+
 
                     if (f.irins_pub.length > 0) {
                         comp += '<p class="fst-italic" style="font-size:30px">IRINS Publications: </p>'
                     }
 
-                    comp+='<div class="pubs">'
+                    comp += '<div class="pubs">'
                     for (let i = 0; i < f.irins_pub.length; i++) {
                         if (!(f.irins_pub[i].isHidden)) {
                             publicationType = ''
@@ -290,7 +290,7 @@
                         }
 
                     }
-                    comp+='</div>'+'</section>'
+                    comp += '</div>' + '</section>'
                     $(comp).appendTo("#dedicated");
                 });
             });
