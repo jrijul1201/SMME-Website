@@ -12,6 +12,6 @@ $arr[$facultyIndex]["irins"] = $_POST['irinsid'];
 $arr[$facultyIndex]["phone"] = $_POST['phone'];
 $arr[$facultyIndex]["post"] = $_POST['post'];
 $arr[$facultyIndex]["speciality"] = $_POST['speciality'];
-file_put_contents("faculty.json", json_encode($arr))
+file_put_contents("faculty.json", json_encode($arr));
 header('location:faculty.html');
 ?>
