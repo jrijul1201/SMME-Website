@@ -3512,6 +3512,7 @@ section {
 
 .faculty-page-right-parent {
   display: flex;
+  align-items: flex-end;
 }
 
 .margin-tag-faculty {
@@ -3546,8 +3547,8 @@ section {
 }
 
 .plate-child {
-  height: 250px;
-  overflow: scroll;
+  /* height: 300px;
+  overflow: scroll; */
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -3570,8 +3571,8 @@ section {
   }
 
   .plate-child {
-    height: 170px;
-    overflow: scroll;
+    /* height: 170px;
+    overflow: scroll; */
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -3582,4 +3583,8 @@ section {
   font-size: 20px !important;
   margin-right: 8px !important;
   color: var(--color-primary);
+}
+
+.info-my {
+  font-size: 12px;
 }
