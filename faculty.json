@@ -8,6 +8,7 @@
     "post": "Associate Professor (Chairperson)",
     "speciality": "Alternative Fuels, IC Engines, Emissions Control",
     "img": "add.jpg",
+    "address": "A4-209, South Campus, IIT Mandi",
     "education": [
       {
         "degree": "PhD.",
@@ -1084,17 +1085,19 @@
     "post": "Assistant Professor",
     "speciality": "RoboticsControl Systems, Mechatronics, Artificial Intelligence, Electric Vehicle",
     "img": "amitshukla.jpg",
+    "address": "A6-11, South Campus, IIT Mandi",
     "irins_pub": []
   },
   {
     "name": "Arpan Gupta",
     "gs": "https://scholar.google.com/citations?hl=en&user=fAtc4OIAAAAJ",
     "irins": "113353",
-    "phone": "",
+    "phone": "7922",
     "mail": "agupta",
     "post": "Associate Professor",
     "speciality": "Acoustics, Vibration, Bio-mechanics",
     "img": "agupta.jpg",
+    "address": "A11-04-35, IIT Mandi",
     "irins_pub": [
       {
         "title": "Fracture mechanism and fracture toughness at the interface between cortical and cancellous bone",
@@ -1667,6 +1670,7 @@
     "post": "Assistant Professor",
     "speciality": " Solid Mechanics and Design",
     "img": "dsachan.jpg",
+    "address": "A11, 4.51, North Campus, IIT Mandi",
     "irins_pub": []
   },
   {
@@ -1678,6 +1682,7 @@
     "post": "",
     "speciality": "",
     "img": "team-1.jpg",
+    "address": "",
     "irins_pub": []
   },
   {
@@ -1689,6 +1694,7 @@
     "post": " Assistant Professor",
     "speciality": "Experimental Fluid Dynamics, Spray Atomization & Combustion, Advance Laser Diagnostics & Image Processing",
     "img": "gajendra.jpg",
+    "address": "A11.02.28, North Campus, IIT Mandi",
     "irins_pub": [
       {
         "title": "Diesel soot coated non-woven fabric for oil-water separation and adsorption applications",
@@ -1869,6 +1875,7 @@
     "post": "Assistant Professor",
     "speciality": "Fluid and thermal sciences",
     "img": "gaurav.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "A framework for polydisperse pulp phase modelling in flotation",
@@ -1960,11 +1967,12 @@
     "name": "Himanshu Pathak",
     "gs": "https://scholar.google.com/citations?hl=en&user=spxQSGgAAAAJ",
     "irins": "113373",
-    "phone": "267224",
+    "phone": "267947",
     "mail": "himanshu",
     "post": "Associate Professor",
     "speciality": "Computational Solid Mechanics, Fracture Mechanics, Functionally Graded Materials",
     "img": "himanshu.jpg",
+    "address": "A11-04-28, IIT Mandi, North Campus",
     "irins_pub": [
       {
         "title": "Crashworthiness of automobile made of HDPE/kenaf and HDPE/MWCNT polymer composites",
@@ -2215,6 +2223,7 @@
     "post": "Assistant Professor",
     "speciality": "Marine robotics, Bioinspired robots, Ocean observations and underwater intervention applications, Hydrodynamics, Dynamics and control.",
     "img": "jagadeesh.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": []
   },
   {
@@ -2226,6 +2235,7 @@
     "post": "Associate Professor",
     "speciality": "Drug Delivery System",
     "img": "jaspreet.jpg",
+    "address": "A1 Building, Kamand Campus",
     "irins_pub": [
       {
         "title": "Systematic spectroscopic investigation of structural changes and corona formation of bovine serum albumin over magneto-fluorescent nanoparticles",
@@ -2378,6 +2388,7 @@
     "post": "Associate Professor",
     "speciality": "Computational Solid Mechanics, High Technology Materials and Structures",
     "img": "talha.jpg",
+    "address": "A4 - 306, IIT Mandi",
     "irins_pub": [
       {
         "title": "Geometry Independent Direct and Converse Flexoelectric Effects in Functionally Graded Dielectrics: An Isogeometric Analysis",
@@ -2544,6 +2555,7 @@
     "post": "Associate Professor",
     "speciality": "Additive Manufacturing, Syntactic Foams",
     "img": "mrityunjay.jpg",
+    "address": "A11.04.49, IIT Mandi",
     "irins_pub": [
       {
         "title": "A comprehensive review on 3D printing advancements in polymer composites: technologies, materials, and applications",
@@ -2696,6 +2708,7 @@
     "post": "Assistant Professor",
     "speciality": "Thermal Science",
     "img": "kishan.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Numerical investigation of pressure and temperature influence on flame speed in CH<sub>4</sub>-H<sub>2</sub> premixed combustion",
@@ -2806,6 +2819,7 @@
     "post": "Assistant Professor",
     "speciality": "Thermal Engineering",
     "img": "parmod.jpg",
+    "address": "G1-110, IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Numerical Understanding of Free Surface Vortex Driven by Rotational Field Inside Viscous Liquid",
@@ -2860,6 +2874,7 @@
     "post": "Associate Professor",
     "speciality": "Fluid and Thermal Science",
     "img": "pradeepkumar.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": []
   },
   {
@@ -2871,6 +2886,7 @@
     "post": "Assistant Professor",
     "speciality": "Additive manufacturing",
     "img": "prateek.jpg",
+    "address": "A11.4.26, North campus, IIT Mandi",
     "irins_pub": [
       {
         "title": "Effect of Low Concentration of SiO<sub>2</sub> Nanoparticles on Grape Seed Essential Oil/PBAT Composite Films for Sustainable Food Packaging Application",
@@ -2953,6 +2969,7 @@
     "post": "Professor",
     "speciality": "Materials Engineering",
     "img": "rahul.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Waste Paper Pulp Derived Reduced Graphene Oxide for Antimicrobial Cement Composites",
@@ -6983,6 +7000,7 @@
     "post": "Professor",
     "speciality": "Machine Design, Vibration",
     "img": "rajeev.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Toxicity profiling of metallosurfactant based ruthenium and ruthenium oxide nanoparticles towards the eukaryotic model organism Saccharomyces cerevisiae",
@@ -7032,11 +7050,12 @@
     "name": "Rajesh Ghosh",
     "gs": "https://scholar.google.com/citations?hl=en&user=hd4sfNkAAAAJ",
     "irins": "113356",
-    "phone": "",
+    "phone": "267903",
     "mail": "rajesh",
     "post": "Associate Professor",
     "speciality": "Solid Mechanics, Biomechanics",
     "img": "rajesh.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Fracture mechanism and fracture toughness at the interface between cortical and cancellous bone",
@@ -7357,6 +7376,7 @@
     "post": "Assistant Professor",
     "speciality": "Smart Materials and Devices for Energy Harvesting",
     "img": "team-1.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Effect of AFM and FM exchange interaction on magnetic anisotropy properties of single domain SmFeO<sub>3</sub> at nanoscale",
@@ -7425,6 +7445,7 @@
     "post": "Associate Professor",
     "speciality": "Hybrid Materials",
     "img": "rik.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Highly Directional 1D Supramolecular Assembly of New Diketopyrrolopyrrole-Based Gel for Organic Solar Cell Applications",
@@ -7521,6 +7542,7 @@
     "post": "Assistant Professor",
     "speciality": "Thermal Engineering, Experimental Nanofluidics, Liquid Phase Electron Microscopy",
     "img": "sarthak.jpg",
+    "address": "A11-04-57, North Campus, IIT Mandi",
     "irins_pub": [
       {
         "title": "Evaluation of acaricidal resistance status of Rhipicephalus microplus ticks from the hilly state (Uttarakhand) of India and evaluation of efficacy of a natural formulation for the management of resistant ticks",
@@ -7673,6 +7695,7 @@
     "post": "Assistant Professor",
     "speciality": "Solar Energy",
     "img": "satvasheel.jpg",
+    "address": "A4 - 203, IIT Mandi",
     "irins_pub": [
       {
         "title": "Parametric optimization of a cesaro fins employed latent heat storage system for melting performance enhancement",
@@ -7951,6 +7974,7 @@
     "post": "Assistant Professor",
     "speciality": "Condensed Matter Physics and Materials Science",
     "img": "sudhir.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Exploring the suitable theoretical approach for understanding the electronic and magnetic properties of ?-Iron",
@@ -9181,6 +9205,7 @@
     "post": "Assistant Professor",
     "speciality": "Manufacturing Engineering",
     "img": "sunnyzafar.jpg",
+    "address": "A11.5.13, IIT Mandi",
     "irins_pub": [
       {
         "title": "Slurry Erosion Performance of Ni + xCr<sub>7</sub>C<sub>3</sub> Microwave Composite Clad with [10-30 wt%] Cr<sub>7</sub>C<sub>3</sub> Content",
@@ -10014,11 +10039,12 @@
     "name": "Swati Sharma",
     "gs": "",
     "irins": "113407",
-    "phone": "267113",
+    "phone": "267830",
     "mail": "swati",
     "post": "Assistant Professor",
     "speciality": "Materials and Manufacturing",
     "img": "swati.jpg",
+    "address": "A8-F9, IIT Mandi",
     "irins_pub": [
       {
         "title": "Energy Harvesting Through a Low-Cost Device Using Reverse Electrowetting on Dielectric (REWOD)",
@@ -10367,6 +10393,7 @@
     "post": "Associate Professor",
     "speciality": "Mechanical Engineering",
     "img": "vsc.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": [
       {
         "title": "Shape control of spacecraft antenna reflector using lead-free piezoelectric actuators",
@@ -11051,6 +11078,7 @@
     "post": "Associate Professor",
     "speciality": "Materials Engineering",
     "img": "viswa.jpg",
+    "address": "A1 Building, Kamand Campus",
     "irins_pub": [
       {
         "title": "WS<sub>2</sub>Monolayer for Piezo-Phototronic Dye Degradation and Bacterial Disinfection",
@@ -11539,6 +11567,7 @@
     "post": "Emeritus Professor",
     "speciality": "Vibration, Noise,Tribology and Computer Aided Design",
     "img": "satish.jpg",
+    "address": "IIT Mandi, Kamand Campus",
     "irins_pub": []
   }
 ]
