@@ -11,16 +11,22 @@
     "address": "A4-209, South Campus, IIT Mandi",
     "education": [
       {
-        "degree": "PhD.",
+        "degree": "Ph.D.",
         "duration": "(Dec'06 - June'13)",
-        "place": "Kanpur",
-        "thesisTitle": "Gibberish..."
+        "place": "IIT Kanpur",
+        "thesisTitle": "Combustion, Performance, Emissions, Durability and Lubricating Oil Tribology Investigations of Biodiesel (Karanja) Fuelled Compression Ignition Engine"
       },
       {
-        "degree": "MTech.",
-        "duration": "(July'06 - June'04)",
-        "place": "Kanpur",
-        "thesisTitle": "Gibberish..."
+        "degree": "M.Tech.",
+        "duration": "(July'04 - June'06)",
+        "place": "IIT Kanpur",
+        "thesisTitle": "Development of Capacitive Micro Sensors for Measurement of Lubricating Oil Film Thickness between Piston Ring and Liner of an Engine Simulator"
+      },
+      {
+        "degree": "B.Tech.",
+        "duration": "(July'00 - June'04)",
+        "place": "HBTI Kanpur",
+        "thesisTitle": ""
       }
     ],
     "irins_pub": [
@@ -1086,6 +1092,26 @@
     "speciality": "RoboticsControl Systems, Mechatronics, Artificial Intelligence, Electric Vehicle",
     "img": "amitshukla.jpg",
     "address": "A6-11, South Campus, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "Imperial College London, United Kingdom",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Tech. in Mechanical Engineering",
+        "duration": "",
+        "place": "IIT Kanpur",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. in Mechanical Engineering",
+        "duration": "",
+        "place": "IIT Kanpur",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": []
   },
   {
@@ -1098,6 +1124,20 @@
     "speciality": "Acoustics, Vibration, Bio-mechanics",
     "img": "agupta.jpg",
     "address": "A11-04-35, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "National University of Singapore",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. in Mechanical Engineering",
+        "duration": "",
+        "place": "IIT Delhi",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Fracture mechanism and fracture toughness at the interface between cortical and cancellous bone",
@@ -1671,6 +1711,26 @@
     "speciality": " Solid Mechanics and Design",
     "img": "dsachan.jpg",
     "address": "A11, 4.51, North Campus, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "(2014-2022)",
+        "place": "IIT Kanpur",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.S.",
+        "duration": "(2008-2010)",
+        "place": "ETH Zürich, Switzerland",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech",
+        "duration": "(2002-2006)",
+        "place": "IIT Kanpur",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": []
   },
   {
@@ -1683,6 +1743,14 @@
     "speciality": "",
     "img": "team-1.jpg",
     "address": "",
+    "education": [
+      {
+        "degree": "",
+        "duration": "",
+        "place": "",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": []
   },
   {
@@ -1695,6 +1763,20 @@
     "speciality": "Experimental Fluid Dynamics, Spray Atomization & Combustion, Advance Laser Diagnostics & Image Processing",
     "img": "gajendra.jpg",
     "address": "A11.02.28, North Campus, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "(2020)",
+        "place": "The University of Sydney, Australia ",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Tech.",
+        "duration": "(2012)",
+        "place": "IIT Kanpur",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Diesel soot coated non-woven fabric for oil-water separation and adsorption applications",
@@ -1858,7 +1940,7 @@
         "publicationType": "Article",
         "pages": "1771-1775",
         "volume": "31",
-        "authors": "Singgh G.;Sharma M.;Vaish R.",
+        "authors": "Singh G.;Sharma M.;Vaish R.",
         "journal": "Advanced Powder Technology",
         "scopusCitations": "38.0",
         "crossrefCitations": "38.0",
@@ -1876,6 +1958,20 @@
     "speciality": "Fluid and thermal sciences",
     "img": "gaurav.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "PhD & the diploma of Imperial College (DIC)",
+        "duration": "(2012-2016)",
+        "place": "Imperial College London",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "BTech - MTech (dual) degree",
+        "duration": "(2002-2007)",
+        "place": "IIT Kanpur",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "A framework for polydisperse pulp phase modelling in flotation",
@@ -1973,6 +2069,20 @@
     "speciality": "Computational Solid Mechanics, Fracture Mechanics, Functionally Graded Materials",
     "img": "himanshu.jpg",
     "address": "A11-04-28, IIT Mandi, North Campus",
+    "education": [
+      {
+        "degree": "Ph.D. in Mechanical Engineering",
+        "duration": "(2015)",
+        "place": "IIT Patna",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. in Mechanical Engineering",
+        "duration": "(2009)",
+        "place": "Nagpur University, Nagpur",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Crashworthiness of automobile made of HDPE/kenaf and HDPE/MWCNT polymer composites",
@@ -2224,6 +2334,14 @@
     "speciality": "Marine robotics, Bioinspired robots, Ocean observations and underwater intervention applications, Hydrodynamics, Dynamics and control.",
     "img": "jagadeesh.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "IIT Indore",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": []
   },
   {
@@ -2236,6 +2354,20 @@
     "speciality": "Drug Delivery System",
     "img": "jaspreet.jpg",
     "address": "A1 Building, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D. (Chemistry)",
+        "duration": "",
+        "place": "Deen Dayal Upadaya University.",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M. Sc. (Polymer Chemistry)",
+        "duration": "",
+        "place": "North Maharashtra University, Jalgoan Maharashtra",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Systematic spectroscopic investigation of structural changes and corona formation of bovine serum albumin over magneto-fluorescent nanoparticles",
@@ -2389,6 +2521,26 @@
     "speciality": "Computational Solid Mechanics, High Technology Materials and Structures",
     "img": "talha.jpg",
     "address": "A4 - 306, IIT Mandi",
+    "education": [
+      {
+        "degree": "PhD in Aerospace Engineering",
+        "duration": "(2012)",
+        "place": "IIT Kharagpur",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "Masters in Mechanical Engineering, (Machine Design)",
+        "duration": "(2006)",
+        "place": "AMU, Aligarh",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "Bachelors in Mechanical Engineering",
+        "duration": "(2003)",
+        "place": "AMU, Aligarh",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Geometry Independent Direct and Converse Flexoelectric Effects in Functionally Graded Dielectrics: An Isogeometric Analysis",
@@ -2556,6 +2708,14 @@
     "speciality": "Additive Manufacturing, Syntactic Foams",
     "img": "mrityunjay.jpg",
     "address": "A11.04.49, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "NITK Surathkal",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "A comprehensive review on 3D printing advancements in polymer composites: technologies, materials, and applications",
@@ -2709,6 +2869,14 @@
     "speciality": "Thermal Science",
     "img": "kishan.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "IIT Kharagpur",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Numerical investigation of pressure and temperature influence on flame speed in CH<sub>4</sub>-H<sub>2</sub> premixed combustion",
@@ -2820,6 +2988,26 @@
     "speciality": "Thermal Engineering",
     "img": "parmod.jpg",
     "address": "G1-110, IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D. in Mechanical Engineering",
+        "duration": "",
+        "place": "",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.E, in Thermal Engineering",
+        "duration": "",
+        "place": "",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. in Mechanical Engineering",
+        "duration": "",
+        "place": "",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Numerical Understanding of Free Surface Vortex Driven by Rotational Field Inside Viscous Liquid",
@@ -2875,6 +3063,20 @@
     "speciality": "Fluid and Thermal Science",
     "img": "pradeepkumar.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "(2009)",
+        "place": "IIT Kanpur",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Tech.",
+        "duration": "(2003)",
+        "place": "Motilal Nehru National Institute of Technology, Allahabad",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": []
   },
   {
@@ -2887,6 +3089,26 @@
     "speciality": "Additive manufacturing",
     "img": "prateek.jpg",
     "address": "A11.4.26, North campus, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D. (Manufacturing)",
+        "duration": "(2015-2019)",
+        "place": "Technical University of Denmark",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Tech. (Industrial Tribology and Maintenance Engineering)",
+        "duration": "(2013-2015)",
+        "place": "IIT Delhi",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. (Mechanical Engineering)",
+        "duration": "(2008-2012)",
+        "place": "PDPM Indian Institute of Information Technology, Design & Manufacturing Jabalpur",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Effect of Low Concentration of SiO<sub>2</sub> Nanoparticles on Grape Seed Essential Oil/PBAT Composite Films for Sustainable Food Packaging Application",
@@ -2970,6 +3192,26 @@
     "speciality": "Materials Engineering",
     "img": "rahul.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph. D (Engg.)",
+        "duration": "",
+        "place": "IISc Bangalore",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Tech. Materials Science",
+        "duration": "",
+        "place": "MNNIT, Allahabad",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. in Mechanical Engineering",
+        "duration": "(2002)",
+        "place": "",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Waste Paper Pulp Derived Reduced Graphene Oxide for Antimicrobial Cement Composites",
@@ -7001,6 +7243,26 @@
     "speciality": "Machine Design, Vibration",
     "img": "rajeev.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D. (Machine Design)",
+        "duration": "",
+        "place": "",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Tech. (Computer Aided Design)",
+        "duration": "",
+        "place": "",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. (Mechanical Engineering)",
+        "duration": "",
+        "place": "",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Toxicity profiling of metallosurfactant based ruthenium and ruthenium oxide nanoparticles towards the eukaryotic model organism Saccharomyces cerevisiae",
@@ -7056,6 +7318,38 @@
     "speciality": "Solid Mechanics, Biomechanics",
     "img": "rajesh.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D. (Mechanical Engineering)",
+        "duration": "(2013)",
+        "place": "IIT Kharagpur",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "Masters (Applied Mechanics, Department of Mechanical Engineering)",
+        "duration": "(2009)",
+        "place": "Jadavpur University",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. (Mechanical Engineering)",
+        "duration": "(2007)",
+        "place": "Kalyani Government Engineering College",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "Visiting Researcher",
+        "duration": "(June-August 2011)",
+        "place": "University of Southampton, England, UK",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "Visiting Researcher",
+        "duration": "(June-September 2010)",
+        "place": "University of Southampton, England, UK",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Fracture mechanism and fracture toughness at the interface between cortical and cancellous bone",
@@ -7377,6 +7671,14 @@
     "speciality": "Smart Materials and Devices for Energy Harvesting",
     "img": "team-1.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "Politecnico di Milano, Italy",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Effect of AFM and FM exchange interaction on magnetic anisotropy properties of single domain SmFeO<sub>3</sub> at nanoscale",
@@ -7446,6 +7748,26 @@
     "speciality": "Hybrid Materials",
     "img": "rik.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D. (Chemistry)",
+        "duration": "(2009)",
+        "place": "IIT Guwahati",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Sc.",
+        "duration": "(2004)",
+        "place": "Visva Bharati University.",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Sc.",
+        "duration": "(2002)",
+        "place": "The University of Burdwan",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Highly Directional 1D Supramolecular Assembly of New Diketopyrrolopyrrole-Based Gel for Organic Solar Cell Applications",
@@ -7543,6 +7865,14 @@
     "speciality": "Thermal Engineering, Experimental Nanofluidics, Liquid Phase Electron Microscopy",
     "img": "sarthak.jpg",
     "address": "A11-04-57, North Campus, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "Kyushu University, Japan",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Evaluation of acaricidal resistance status of Rhipicephalus microplus ticks from the hilly state (Uttarakhand) of India and evaluation of efficacy of a natural formulation for the management of resistant ticks",
@@ -7696,6 +8026,32 @@
     "speciality": "Solar Energy",
     "img": "satvasheel.jpg",
     "address": "A4 - 203, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "(2013)",
+        "place": "Monash University, Australia",
+        "thesisTitle": "Advancing the performance of photocathode dye-sensitized solar cells for their application in tandem solar cells. under <b> Prof. Udo Bach and Prof. Leone Spiccia</b>"
+      },
+      {
+        "degree": "<b>Stanford Ignite:</b> Stanford Institute for Entrepreneurship",
+        "duration": "(2011)",
+        "place": "Stanford Business School, Stanford University, USA",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "Master of Mechanical Engineering (Solar Energy)",
+        "duration": "(2005)",
+        "place": "Dalarna University, Borlänge, Sweden.",
+        "thesisTitle": "thesis @ EPFL (Supervisor: Prof. Michael Grätzel)"
+      },
+      {
+        "degree": "Bachelor of Production Engineering",
+        "duration": "(2003)",
+        "place": "Shivaji University, Kolhapur, India",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Parametric optimization of a cesaro fins employed latent heat storage system for melting performance enhancement",
@@ -7975,6 +8331,20 @@
     "speciality": "Condensed Matter Physics and Materials Science",
     "img": "sudhir.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D.(Physics)",
+        "duration": "(2007)",
+        "place": "UGC - DAE Consortium for Scientific Research, Indore, India",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M. Sc. (Physics)",
+        "duration": "(2002)",
+        "place": "School of Physical Sciences, Jawaharlal Nehru University, New Delhi",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Exploring the suitable theoretical approach for understanding the electronic and magnetic properties of ?-Iron",
@@ -9206,6 +9576,26 @@
     "speciality": "Manufacturing Engineering",
     "img": "sunnyzafar.jpg",
     "address": "A11.5.13, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D. (Manufacturing Engineering)",
+        "duration": "(2016)",
+        "place": "IIT Roorkee",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M.Tech. in Mechanical Engineering",
+        "duration": "(2013)",
+        "place": "",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.Tech. in Mechanical Engineering",
+        "duration": "(2011)",
+        "place": "",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Slurry Erosion Performance of Ni + xCr<sub>7</sub>C<sub>3</sub> Microwave Composite Clad with [10-30 wt%] Cr<sub>7</sub>C<sub>3</sub> Content",
@@ -10045,6 +10435,20 @@
     "speciality": "Materials and Manufacturing",
     "img": "swati.jpg",
     "address": "A8-F9, IIT Mandi",
+    "education": [
+      {
+        "degree": "Ph.D/ M.S. Materials and Manufacturing Technology",
+        "duration": "",
+        "place": "University of California, Irvine, CA, USA",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B.E. (Hons) Chemical and M.Sc. (Hons) Chemistry",
+        "duration": "",
+        "place": "BITS, Pilani, Rajasthan, India",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Energy Harvesting Through a Low-Cost Device Using Reverse Electrowetting on Dielectric (REWOD)",
@@ -10394,6 +10798,14 @@
     "speciality": "Mechanical Engineering",
     "img": "vsc.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D",
+        "duration": "",
+        "place": "BIT Mesra, Ranchi",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Shape control of spacecraft antenna reflector using lead-free piezoelectric actuators",
@@ -11079,6 +11491,26 @@
     "speciality": "Materials Engineering",
     "img": "viswa.jpg",
     "address": "A1 Building, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "Indian Institute of Science, India.",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "M. Sc. Materials Science",
+        "duration": "",
+        "place": "Anna University, India",
+        "thesisTitle": ""
+      },
+      {
+        "degree": "B. Sc. Physics",
+        "duration": "",
+        "place": "Madras University, India",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "WS<sub>2</sub>Monolayer for Piezo-Phototronic Dye Degradation and Bacterial Disinfection",
@@ -11568,6 +12000,14 @@
     "speciality": "Vibration, Noise,Tribology and Computer Aided Design",
     "img": "satish.jpg",
     "address": "IIT Mandi, Kamand Campus",
+    "education": [
+      {
+        "degree": "Ph.D.",
+        "duration": "",
+        "place": "IIT Roorkee",
+        "thesisTitle": ""
+      }
+    ],
     "irins_pub": []
   }
 ]
