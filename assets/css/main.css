@@ -1173,6 +1173,8 @@ section {
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
+  width: 100%;
+  z-index: 10000000 !important;
 }
 
 .featured-services .service-item .icon {
@@ -1233,7 +1235,7 @@ section {
 .about .about-img:before {
   position: absolute;
   inset: -30px 0 0 -30px;
-  z-index: -1;
+  z-index: -100 !important;
   content: "";
   background: url("../img/about-bg.png") top left;
   background-repeat: no-repeat;
@@ -3642,3 +3644,17 @@ section {
   font-size: 14px;
   color: var(--color-secondary-light);
 }
+
+
+
+.service-item-unactive {
+  display: none;
+}
+
+.service-item-active:hover ~ .service-item-unactive {
+  display: block;
+} 
+
+/* .service-item-unactive p {
+  z-index: 10000000000 !important;
+} */
