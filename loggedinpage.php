@@ -44,7 +44,7 @@ $userName = $_SESSION['user_name'];
                 style="cursor:pointer;padding:10px 20px; color:white; background:black; border-radius:3px; text-decoration:none;">LOGOUT</a>
         </center>
     </div>
-    <form action="data_update.php" method="post">
+    <form action="data_update.php" method="post" enctype="multipart/form-data">
         <label for="fname">Name:</label>
         <input type="text" id="fname" name="name" value="<?php echo $arr[$index]["name"]; ?>"><br><br>
         <label for="gslink">Google Scholar Link:</label>
@@ -57,7 +57,8 @@ $userName = $_SESSION['user_name'];
         <input type="text" id="post" name="post" value="<?php echo $arr[$index]["post"]; ?>"><br><br>
         <label for="speciality">Speciality:</label>
         <input type="text" id="speciality" name="speciality" value="<?php echo $arr[$index]["speciality"]; ?>"><br><br>
-
+        <label for="photo">Select a file to upload:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" size="1000000"><br><br>
         <input type="submit" value="Update Changes">
     </form>
 </body>
