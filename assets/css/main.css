@@ -2275,8 +2275,8 @@ section {
   color: var(--color-gray);
 }
 
-.team .team-member:hover .social {
-  opacity: 1;
+.social {
+  opacity: 1 !important;
 }
 
 /*--------------------------------------------------------------
