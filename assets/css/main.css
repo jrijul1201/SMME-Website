@@ -99,7 +99,7 @@ h6 {
 
 .table-css tr:nth-child(even) {
   background-color: #d5d5d5;
-    background-color: #d5d5d5; 
+  background-color: #d5d5d5;
   background-color: #d5d5d5;
 }
 
@@ -1695,6 +1695,105 @@ section {
     opacity: 1;
   }
 }
+
+.quick-links .nav-tabs {
+  border: 0;
+}
+
+.quick-links .nav-item {
+  padding: 0;
+}
+
+.quick-links .nav-link {
+  border: 0;
+  padding: 15px 10px;
+  color: var(--color-secondary);
+  box-shadow: 3px 3px 15px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.quick-links .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.quick-links .nav-link h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.quick-links .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.quick-links .nav-link.active {
+  transition: 0.3s;
+  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  border-color: var(--color-primary);
+}
+
+.quick-links .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.quick-links .nav-link.active i {
+  color: var(--color-white) !important;
+}
+
+.quick-links .tab-content {
+  margin-top: 30px;
+}
+
+.quick-links .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.quick-links .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.quick-links .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.quick-links .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.quick-links .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -3652,9 +3751,9 @@ section {
   display: none;
 }
 
-.service-item-active:hover ~ .service-item-unactive {
+.service-item-active:hover~.service-item-unactive {
   display: block;
-} 
+}
 
 /* .service-item-unactive p {
   z-index: 10000000000 !important;

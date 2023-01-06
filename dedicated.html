@@ -60,7 +60,7 @@
             //   $("#cta").load("cta.html");
             //   $("#faq").load("faq.html");
             //   $("#featured-services").load("featured-services.html");
-            //   $("#features").load("features.html");
+            $("#features").load("quick-links.html");
             $("#index").load("index.html");
             //   $("#on-focus").load("on-focus.html");
             //   $("#portfolio").load("portfolio.html");
@@ -210,7 +210,7 @@
                         '<h4>Address:</h4>' +
                         '<p>' + (f.address == undefined ? ' --' : f.address) + '</p>' +
                         '</div>' +
-                        '</div><!-- End Info Item -->  '+
+                        '</div><!-- End Info Item -->    '+
                         '<div class="info-item d-flex">' +
                         '<i class="bi bi-envelope flex-shrink-0"></i>' +
                         '<div>' +
@@ -230,14 +230,14 @@
                         '<div>' +
                         '<h4>Education:</h4>';
                     if (f.education == undefined) {
-                        comp += '<p> -- </p>'        
+                        comp += '<p> -- </p>'
                     } else {
                         comp += '<ul>';
 
                         for (var i = 0; i < f.education.length; i++) {
                             comp += '<li> ' +
                                 '<h5 class="margin-tag-faculty" style="font-size:14px"> ' + f.education[i].degree + ' ' + (f.education[i].duration ? f.education[i].duration : '') + ' ' + '<span style="font-size:13px">' + (f.education[i].place ? ('from ' + f.education[i].place) : '') + '</span> </h5>' +
-                                (f.education[i].thesisTitle ? '<p class="margin-tag-faculty"> Thesis Title: '+ f.education[i].thesisTitle + '</p>' : '') +
+                                (f.education[i].thesisTitle ? '<p class="margin-tag-faculty"> Thesis Title: ' + f.education[i].thesisTitle + '</p>' : '') +
                                 ' </li>';
                         }
                         comp += '</ul>';
@@ -328,6 +328,7 @@
             });
         </script>
         <div id="dedicated"></div>
+        <div id="features"></div>
 
     </main><!-- End #main -->
 
