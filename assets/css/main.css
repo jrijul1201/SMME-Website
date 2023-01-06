@@ -131,11 +131,12 @@ section {
 }
 
 .section-header {
-  text-align: center;
+  text-align: justify;
   padding-bottom: 40px;
 }
 
 .section-header h2 {
+  text-align: center;
   font-size: 48px;
   font-weight: 300;
   margin-bottom: 40px;
@@ -144,7 +145,7 @@ section {
 
 .section-header p {
   margin: 0 auto;
-  color: var(--color-secondary-light);
+  color: var(--color-secondary-dark);
 }
 
 @media (min-width: 1280px) {
