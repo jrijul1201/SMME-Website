@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Mr. Rakesh Kumar",
+        "position": "Jr. Technical Superintendent",
+        "mobile":"+91-86996-66497",
+        "phone":"267018",
+        "mail": "rakeshkumar@iitmandi.ac.in",
+        "img": "rakesh.jpeg"
+    },
+    {
+        "name": "Mr. Ankush Kapil",
+        "position": "Jr. Technical Superintendent",
+        "mobile":"+91-94595-10629",
+        "phone":"267018",
+        "mail": "ankush@iitmandi.ac.in",
+        "img": "ankush.jpg"
+    },
+    {
+        "name": "Mr. Amit Sharma",
+        "position": "Sr. Lab Assistant",
+        "mobile":"+91-97363-18448",
+        "phone":" 267178",
+        "mail": "amits@iitmandi.ac.in",
+        "img": "amit.jpg"
+    },
+    {
+        "name": "Mr. Anish Dhiman",
+        "position": "Technical Assistant",
+        "mobile":"+91-94594-77449",
+        "phone":"267018",
+        "mail": "anishd60@gmail.com",
+        "img": "anish.jpg"
+    },
+    {
+        "name":"Mr. Dharampaul Singh",
+        "position": "Technical Assistant",
+        "mobile":" +91-94597-78507",
+        "phone":"267018",
+        "mail": "palsinghdharm40@gmail.com",
+        "img": "dharampal.jpg"
+    },
+    {
+        "name": "Mr. Raj Kumar",
+        "position": "Technician",
+        "mobile":"+91-98055-77014",
+        "phone":" 267018",
+        "mail": "rajkumaruk1970@gmail.com",
+        "img": "rajkumar.jpg"
+    },
+    {
+        "name": "Mr. Dinesh Thakur",
+        "position": "Junior Lab Asst.",
+        "mobile":"+91-9418169227",
+        "phone":"267241",
+        "mail": "dinesh_thakur@iitmandi.ac.in",
+        "img": "dinesh.jpg"
+    },
+    {
+        "name": "Mr. Bhuri Singh",
+        "position": "Mach. Lab Attendant",
+        "mobile":"+91-98052-95316",
+        "phone":"267018",
+        "mail": "bhuri.iitmandi@gmail.com        ",
+        "img": "bhuri.jpg"
+    },
+    {
+        "name": "Mr. Sanjeev Sharma",
+        "position": "Civil Lab Assistant",
+        "mobile":"+91-7018283395",
+        "phone":"",
+        "mail": "cmlab@iitmandi.ac.in",
+        "img": "sanjeev.jpg"
+    },
+    {
+        "name": "Mr. Ram Singh",
+        "position": "Civil Lab Attendant",
+        "mobile":"+91-9882403748",
+        "phone":"",
+        "mail": "",
+        "img": "ram.jpg"
+    },
+    {
+        "name": "Mr. Sunil Kumar",
+        "position": "Carpenter",
+        "mobile":"+91-98822-76516",
+        "phone":"267018",
+        "mail": "kumarsuniliitmandi@gmail.com",
+        "img": "suneel.jpg"
+    },
+    {
+        "name": "Mr. Sunil Kumar",
+        "position": "Geo Tech Lab",
+        "mobile":" +91-9882690412",
+        "phone":"",
+        "mail": "sunilk@iitmandi.ac.in",
+        "img": "suni.jpeg"
+    },
+    {
+        "name": "Mr. Duni Chand",
+        "position": "Civil Lab Attendant",
+        "mobile":"",
+        "phone":"",
+        "mail": "",
+        "img": "Dunichand.jpg"
+    },
+    {
+        "name": "Mr. Dalvinder kumar",
+        "position": "Turner Mechanical workshop",
+        "mobile":"+917988076620",
+        "phone":"",
+        "mail": "",
+        "img": "Dalvinder.jpg"
+    }
+]

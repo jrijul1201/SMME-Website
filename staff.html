@@ -55,6 +55,43 @@
       $("#login-modal").load("login-modal.html");
     });
   </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <script>
+    $(function () {
+      $.getJSON('staff.json', function (data) {
+        $.each(data, function (i, f) {
+          var src1 = `assets/img/Tech_Staff/${f.img}`
+          var phone = `tel:+91-1905-${f.phone}`
+          var mobile = `${f.mobile}`
+          var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}`
+          var comp =
+            '<div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200"> ' +
+            "<div class='team-member'>" +
+            "<div class= 'member-img' >" +
+            `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
+            "<img src=" + src1 + " class='img-fluid' alt=''></img>" +
+            '</a>' +
+            "</div>" +
+            "<div style = 'height: 28vh' class='member-info'>" +
+            "<div class='social'>" +
+            "<a href=" + phone + " ><i class='bi bi-telephone'></i>" + "</a>" +
+            "<a href=" + mobile + " ><i class='bi bi-phone'></i>" + "</a>" +
+            "<a target='_blank' href=" + mail + " ><i class='bi bi-envelope'></i>" + "</a>" + "</div>" +
+            "<h4>" + f.name + "</h4>" +
+            "<h6 style='color:var(--color - secondary - light); '>" +
+            f.position + "<br>" + "School of Engineering "  + "</p>" +
+            "</div>" +
+
+            " </div > " +
+
+            "</div > "
+
+          $(comp).appendTo("#faculty-info");
+          // $(comp).appendTo("#dedicated");
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -72,7 +109,7 @@
 
       <nav id="navbar" class="navbar navbar-collapse justify-content-center">
         <ul>
-
+         
           <li><a class="nav-link scrollto" href="index.html" class="active">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li class="dropdown"><a href="#"><span>Programmes</span> <i
@@ -89,13 +126,28 @@
               <li><a href="faculty.html">Faculty</a></li>
               <li><a href="staff.html">Staff</a></li>
               <li><a href="students.html">Students</a></li>
-              <li><a href="alumni.html">Alumni</a></li>
+              <li><a href="scholars.html">Scholars</a></li>
             </ul>
           </li>
           </li>
           <li><a class="nav-link scrollto" href="index.html#portfolio">News</a></li>
-          <li><a class="nav-link scrollto" href="labs.html">Labs</a></li>
-          <!-- <li><a class="nav-link scrollto" href="project.html">Projects</a></li> -->
+          <li class="dropdown megamenu"><a href="index.html#features"><span>Research Areas</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+
+              <li>
+                <a href="index.html#tab-1">Smart Structure and system</a>
+                <a href="index.html#features">Design against failure and fracture</a>
+                <a href="index.html#features">Composite design and manufacturing</a>
+              </li>
+              <li>
+                <a href="index.html#features">Advanced material mechanics</a>
+                <a href="index.html#features">Advanced manufacturing</a>
+                <a href="index.html#features">Understading flow of mass and fluid</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="project.html">Projects</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
@@ -104,6 +156,8 @@
     </div>
 
   </header><!-- End Header -->
+
+  <div id="login-modal"></div>
 
   <!-- <div id="hero"></div> -->
 
@@ -117,68 +171,11 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Staff</h2>
+          <h2>Technical Staff</h2>
           <!-- <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p> -->
         </div>
 
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/atuldhar.jpeg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-                <h4>Atul Dhar</h4>
-                <span>Associate Professor (Chairperson)</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/agupta.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-                <h4>Arpan Gupta</h4>
-                <span>Associate Professor<br>
-                  Specialization: Acoustics, Vibration, Bio-mechanics
-                </span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
+        <div class="row gy-5" id="faculty-info">
         </div>
 
       </div>
