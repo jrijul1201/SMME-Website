@@ -14,19 +14,22 @@
         "degree": "Ph.D.",
         "duration": "(Dec'06 - June'13)",
         "place": "IIT Kanpur",
-        "thesisTitle": "Combustion, Performance, Emissions, Durability and Lubricating Oil Tribology Investigations of Biodiesel (Karanja) Fuelled Compression Ignition Engine"
+        "thesisTitle": "Combustion, Performance, Emissions, Durability and Lubricating Oil Tribology Investigations of Biodiesel (Karanja) Fuelled Compression Ignition Engine",
+        "isHidden": false
       },
       {
         "degree": "M.Tech.",
         "duration": "(July'04 - June'06)",
         "place": "IIT Kanpur",
-        "thesisTitle": "Development of Capacitive Micro Sensors for Measurement of Lubricating Oil Film Thickness between Piston Ring and Liner of an Engine Simulator"
+        "thesisTitle": "Development of Capacitive Micro Sensors for Measurement of Lubricating Oil Film Thickness between Piston Ring and Liner of an Engine Simulator",
+        "isHidden": false
       },
       {
         "degree": "B.Tech.",
         "duration": "(July'00 - June'04)",
         "place": "HBTI Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -1097,19 +1100,22 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "Imperial College London, United Kingdom",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Tech. in Mechanical Engineering",
         "duration": "",
         "place": "IIT Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. in Mechanical Engineering",
         "duration": "",
         "place": "IIT Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": []
@@ -1129,13 +1135,15 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "National University of Singapore",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. in Mechanical Engineering",
         "duration": "",
         "place": "IIT Delhi",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -1716,19 +1724,22 @@
         "degree": "Ph.D.",
         "duration": "(2014-2022)",
         "place": "IIT Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.S.",
         "duration": "(2008-2010)",
-        "place": "ETH Zürich, Switzerland",
-        "thesisTitle": ""
+        "place": "ETH ZÃ¼rich, Switzerland",
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech",
         "duration": "(2002-2006)",
         "place": "IIT Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": []
@@ -1748,7 +1759,8 @@
         "degree": "",
         "duration": "",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": []
@@ -1768,13 +1780,15 @@
         "degree": "Ph.D.",
         "duration": "(2020)",
         "place": "The University of Sydney, Australia ",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Tech.",
         "duration": "(2012)",
         "place": "IIT Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -1963,13 +1977,15 @@
         "degree": "PhD & the diploma of Imperial College (DIC)",
         "duration": "(2012-2016)",
         "place": "Imperial College London",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "BTech - MTech (dual) degree",
         "duration": "(2002-2007)",
         "place": "IIT Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -2074,13 +2090,15 @@
         "degree": "Ph.D. in Mechanical Engineering",
         "duration": "(2015)",
         "place": "IIT Patna",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. in Mechanical Engineering",
         "duration": "(2009)",
         "place": "Nagpur University, Nagpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -2339,7 +2357,8 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "IIT Indore",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": []
@@ -2359,13 +2378,15 @@
         "degree": "Ph.D. (Chemistry)",
         "duration": "",
         "place": "Deen Dayal Upadaya University.",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M. Sc. (Polymer Chemistry)",
         "duration": "",
         "place": "North Maharashtra University, Jalgoan Maharashtra",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -2526,19 +2547,22 @@
         "degree": "PhD in Aerospace Engineering",
         "duration": "(2012)",
         "place": "IIT Kharagpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "Masters in Mechanical Engineering, (Machine Design)",
         "duration": "(2006)",
         "place": "AMU, Aligarh",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "Bachelors in Mechanical Engineering",
         "duration": "(2003)",
         "place": "AMU, Aligarh",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -2713,7 +2737,8 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "NITK Surathkal",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -2874,7 +2899,8 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "IIT Kharagpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -2993,19 +3019,22 @@
         "degree": "Ph.D. in Mechanical Engineering",
         "duration": "",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.E, in Thermal Engineering",
         "duration": "",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. in Mechanical Engineering",
         "duration": "",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -3068,13 +3097,15 @@
         "degree": "Ph.D.",
         "duration": "(2009)",
         "place": "IIT Kanpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Tech.",
         "duration": "(2003)",
         "place": "Motilal Nehru National Institute of Technology, Allahabad",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": []
@@ -3094,19 +3125,22 @@
         "degree": "Ph.D. (Manufacturing)",
         "duration": "(2015-2019)",
         "place": "Technical University of Denmark",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Tech. (Industrial Tribology and Maintenance Engineering)",
         "duration": "(2013-2015)",
         "place": "IIT Delhi",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. (Mechanical Engineering)",
         "duration": "(2008-2012)",
         "place": "PDPM Indian Institute of Information Technology, Design & Manufacturing Jabalpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -3197,19 +3231,22 @@
         "degree": "Ph. D (Engg.)",
         "duration": "",
         "place": "IISc Bangalore",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Tech. Materials Science",
         "duration": "",
         "place": "MNNIT, Allahabad",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. in Mechanical Engineering",
         "duration": "(2002)",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -7248,19 +7285,22 @@
         "degree": "Ph.D. (Machine Design)",
         "duration": "",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Tech. (Computer Aided Design)",
         "duration": "",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. (Mechanical Engineering)",
         "duration": "",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -7323,31 +7363,36 @@
         "degree": "Ph.D. (Mechanical Engineering)",
         "duration": "(2013)",
         "place": "IIT Kharagpur",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "Masters (Applied Mechanics, Department of Mechanical Engineering)",
         "duration": "(2009)",
         "place": "Jadavpur University",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. (Mechanical Engineering)",
         "duration": "(2007)",
         "place": "Kalyani Government Engineering College",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "Visiting Researcher",
         "duration": "(June-August 2011)",
         "place": "University of Southampton, England, UK",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "Visiting Researcher",
         "duration": "(June-September 2010)",
         "place": "University of Southampton, England, UK",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -7676,7 +7721,8 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "Politecnico di Milano, Italy",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -7753,19 +7799,22 @@
         "degree": "Ph.D. (Chemistry)",
         "duration": "(2009)",
         "place": "IIT Guwahati",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Sc.",
         "duration": "(2004)",
         "place": "Visva Bharati University.",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Sc.",
         "duration": "(2002)",
         "place": "The University of Burdwan",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -7870,7 +7919,8 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "Kyushu University, Japan",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -8031,25 +8081,29 @@
         "degree": "Ph.D.",
         "duration": "(2013)",
         "place": "Monash University, Australia",
-        "thesisTitle": "Advancing the performance of photocathode dye-sensitized solar cells for their application in tandem solar cells. under <b> Prof. Udo Bach and Prof. Leone Spiccia</b>"
+        "thesisTitle": "Advancing the performance of photocathode dye-sensitized solar cells for their application in tandem solar cells. under <b> Prof. Udo Bach and Prof. Leone Spiccia</b>",
+        "isHidden": false
       },
       {
         "degree": "<b>Stanford Ignite:</b> Stanford Institute for Entrepreneurship",
         "duration": "(2011)",
         "place": "Stanford Business School, Stanford University, USA",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "Master of Mechanical Engineering (Solar Energy)",
         "duration": "(2005)",
-        "place": "Dalarna University, Borlänge, Sweden.",
-        "thesisTitle": "thesis @ EPFL (Supervisor: Prof. Michael Grätzel)"
+        "place": "Dalarna University, BorlÃ¤nge, Sweden.",
+        "thesisTitle": "thesis @ EPFL (Supervisor: Prof. Michael GrÃ¤tzel)",
+        "isHidden": false
       },
       {
         "degree": "Bachelor of Production Engineering",
         "duration": "(2003)",
         "place": "Shivaji University, Kolhapur, India",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -8336,13 +8390,15 @@
         "degree": "Ph.D.(Physics)",
         "duration": "(2007)",
         "place": "UGC - DAE Consortium for Scientific Research, Indore, India",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M. Sc. (Physics)",
         "duration": "(2002)",
         "place": "School of Physical Sciences, Jawaharlal Nehru University, New Delhi",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -9581,19 +9637,22 @@
         "degree": "Ph.D. (Manufacturing Engineering)",
         "duration": "(2016)",
         "place": "IIT Roorkee",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M.Tech. in Mechanical Engineering",
         "duration": "(2013)",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.Tech. in Mechanical Engineering",
         "duration": "(2011)",
         "place": "",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -10440,13 +10499,15 @@
         "degree": "Ph.D/ M.S. Materials and Manufacturing Technology",
         "duration": "",
         "place": "University of California, Irvine, CA, USA",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B.E. (Hons) Chemical and M.Sc. (Hons) Chemistry",
         "duration": "",
         "place": "BITS, Pilani, Rajasthan, India",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -10803,7 +10864,8 @@
         "degree": "Ph.D",
         "duration": "",
         "place": "BIT Mesra, Ranchi",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -11496,19 +11558,22 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "Indian Institute of Science, India.",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "M. Sc. Materials Science",
         "duration": "",
         "place": "Anna University, India",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       },
       {
         "degree": "B. Sc. Physics",
         "duration": "",
         "place": "Madras University, India",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": [
@@ -12005,7 +12070,8 @@
         "degree": "Ph.D.",
         "duration": "",
         "place": "IIT Roorkee",
-        "thesisTitle": ""
+        "thesisTitle": "",
+        "isHidden": false
       }
     ],
     "irins_pub": []

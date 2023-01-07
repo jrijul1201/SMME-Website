@@ -51,7 +51,7 @@ $userName = $_SESSION['user_name'];
         </center>
     </div>
     <h3>Personal Information</h3>
-    <form action="data_update.php" method="post" enctype="multipart/form-data">
+    <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data">
         <label for="photo">
             <img src="assets/img/team/<?php echo $arr[$index]["img"]; ?>" title="Click to upload new photo" alt="<?php echo $arr[$index]["img"]; ?>" style="width:15%;height:15%;border-radius:50%;cursor:pointer";><br>
         </label>
@@ -78,8 +78,65 @@ $userName = $_SESSION['user_name'];
         <label for="irinsid">IRINS ID:</label>
         <input type="text" id="irinsid" name="irinsid" size="8" value="<?php echo $arr[$index]["irins"]; ?>"><br><br>
         
+        <h3>Education Details:</h3><br>
+        <table id="education-table">
+            <tr>
+                <th>Degree</th>
+                <th>Duration</th>
+                <th>Place</th>
+                <th>Thesis Title (if any)</th>
+                <th>To Hide</th>
+            </tr>
+            <tbody>
+                <?php
+                foreach ($arr[$index]["education"] as $ed) {
+                    echo "<tr>";
+                    echo "<td><input type='text' name='degree[]' value='{$ed['degree']}'></td>";
+                    echo "<td><input type='text' name='duration[]' value='{$ed['duration']}'></td>";
+                    echo "<td><input type='text' name='place[]' value='{$ed['place']}'></td>";
+                    echo "<td><input type='text' name='thesisTitle[]' value='{$ed['thesisTitle']}'></td>";
+                    echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") ."></td>";  
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+        <button type="button" onclick="addEducation()">Add Education</button><br><br>
         <input type="submit" value="Update Changes">
     </form>
+
+    <script>
+        function addEducation() {
+            var table = document.getElementById("education-table");
+            var row = table.insertRow(-1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            cell1.innerHTML = `<input type="text" name="degree[]">`;
+            cell2.innerHTML = `<input type="text" name="duration[]">`;
+            cell3.innerHTML = `<input type="text" name="place[]">`;
+            cell4.innerHTML = `<input type="text" name="thesisTitle[]">`;
+            cell5.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
+        }
+
+        // this is for getting the info of all the To_Hide checkboxes
+
+        document.getElementById('faculty_update').addEventListener('submit', function(event) {
+            var checkboxes = this.querySelectorAll('input#edCheckBox');
+
+            // Add a hidden field for each checkbox
+            for (var i = 0; i < checkboxes.length; i++) {
+                var hiddenField = document.createElement('input');
+                hiddenField.setAttribute('type', 'hidden');
+                hiddenField.setAttribute('name', 'educationIsHidden[]');
+                hiddenField.setAttribute('value', checkboxes[i].checked ? 'on' : 'off');
+                this.appendChild(hiddenField);
+            }
+        });
+    </script>
+
 </body>
 
 </html>

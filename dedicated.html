@@ -235,10 +235,12 @@
                         comp += '<ul>';
 
                         for (var i = 0; i < f.education.length; i++) {
-                            comp += '<li> ' +
+                            if (!(f.education[i].isHidden)) {
+                                comp += '<li> ' +
                                 '<h5 class="margin-tag-faculty" style="font-size:14px"> ' + f.education[i].degree + ' ' + (f.education[i].duration ? f.education[i].duration : '') + ' ' + '<span style="font-size:13px">' + (f.education[i].place ? ('from ' + f.education[i].place) : '') + '</span> </h5>' +
                                 (f.education[i].thesisTitle ? '<p class="margin-tag-faculty"> Thesis Title: ' + f.education[i].thesisTitle + '</p>' : '') +
                                 ' </li>';
+                            }
                         }
                         comp += '</ul>';
                     }

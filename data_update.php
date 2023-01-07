@@ -6,6 +6,8 @@ if (!isset($_SESSION['faculty_index'])) {
 $facultyIndex = $_SESSION['faculty_index'];
 $data = file_get_contents('faculty.json');
 $arr = json_decode($data, true);
+
+// Updating Personal Info
 $arr[$facultyIndex]["name"] = $_POST['name'];
 $arr[$facultyIndex]["phone"] = $_POST['phone'];
 $arr[$facultyIndex]["address"] = $_POST['address'];
@@ -13,6 +15,22 @@ $arr[$facultyIndex]["post"] = $_POST['post'];
 $arr[$facultyIndex]["speciality"] = $_POST['speciality'];
 $arr[$facultyIndex]["gs"] = $_POST['gslink'];
 $arr[$facultyIndex]["irins"] = $_POST['irinsid'];
+
+//  Updating Education Info
+$educationInfo = [];
+if (isset($_POST['degree'])) {
+    foreach ($_POST['degree'] as $index => $degree) {
+
+      $duration = $_POST['duration'][$index];
+      $place = $_POST['place'][$index];
+      $thesisTitle = $_POST['thesisTitle'][$index];
+      $edIsHidden = ($_POST['educationIsHidden'][$index] == "on") ? true : false;
+      $temp = array('degree' => $degree, 'duration' => $duration, 'place' => $place, 'thesisTitle' => $thesisTitle, 'isHidden' => $edIsHidden);
+      $educationInfo[] =  $temp;
+    }
+}
+
+$arr[$facultyIndex]["education"] = $educationInfo;
 file_put_contents("faculty.json", json_encode($arr));
 
 //code for changing the photo
