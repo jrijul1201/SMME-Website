@@ -20,6 +20,8 @@ $userName = $_SESSION['user_name'];
     <link href="assets/img/download.png" rel="icon">
     <link href="assets/img/download.png" rel="apple-touch-icon">
 
+    <script src="ckeditor/ckeditor.js"></script>
+
     <style>
         input[type="file"]::-webkit-file-upload-button {
             display:none;
@@ -101,11 +103,18 @@ $userName = $_SESSION['user_name'];
                 ?>
             </tbody>
         </table>
-        <button type="button" onclick="addEducation()">Add Education</button><br><br>
+        <button type="button" onclick="addEducation()">Add</button>
+        <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br>
+
+        <h3>Publications:</h3>
+        <textarea name="publications"><?php echo $arr[$index]["publications"]; ?></textarea>
+
         <input type="submit" value="Update Changes">
     </form>
 
     <script>
+        CKEDITOR.replace("publications");
+
         function addEducation() {
             var table = document.getElementById("education-table");
             var row = table.insertRow(-1);
@@ -119,6 +128,20 @@ $userName = $_SESSION['user_name'];
             cell3.innerHTML = `<input type="text" name="place[]">`;
             cell4.innerHTML = `<input type="text" name="thesisTitle[]">`;
             cell5.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
+            if(table.rows.length >=1) {
+                document.getElementById("delEB").disabled = false;
+            }
+    
+        }
+        function deleteEducation() {
+            var table = document.getElementById("education-table");
+            var rows = table.rows;
+            var lastRow = rows[rows.length - 1];
+            table.deleteRow(lastRow.rowIndex);
+            if (rows.length == 1) {
+                document.getElementById("delEB").disabled = true;
+            }
+    
         }
 
         // this is for getting the info of all the To_Hide checkboxes
