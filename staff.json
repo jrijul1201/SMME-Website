@@ -1,6 +1,6 @@
 [
     {
-        "name": "Mr. Rakesh Kumar",
+        "name": " Rakesh Kumar",
         "position": "Jr. Technical Superintendent",
         "mobile":"+91-86996-66497",
         "phone":"267018",
@@ -8,7 +8,7 @@
         "img": "rakesh.jpeg"
     },
     {
-        "name": "Mr. Ankush Kapil",
+        "name": " Ankush Kapil",
         "position": "Jr. Technical Superintendent",
         "mobile":"+91-94595-10629",
         "phone":"267018",
@@ -16,7 +16,7 @@
         "img": "ankush.jpg"
     },
     {
-        "name": "Mr. Amit Sharma",
+        "name": " Amit Sharma",
         "position": "Jr. Technical Superintendent ",
         "mobile":"+91-97363-18448",
         "phone":" 267178",
@@ -24,7 +24,7 @@
         "img": "amit.jpg"
     },
     {
-        "name": "Mr. Anish Dhiman",
+        "name": " Anish Dhiman",
         "position": "Technical Assistant",
         "mobile":"+91-94594-77449",
         "phone":"267018",
@@ -32,7 +32,7 @@
         "img": "anish.jpg"
     },
     {
-        "name":"Mr. Dharampaul Singh",
+        "name":" Dharampaul Singh",
         "position": "Technical Assistant",
         "mobile":" +91-94597-78507",
         "phone":"267018",
@@ -40,7 +40,7 @@
         "img": "dharampal.jpg"
     },
     {
-        "name": "Mr. Raj Kumar",
+        "name": " Raj Kumar",
         "position": "Technician",
         "mobile":"+91-98055-77014",
         "phone":" 267018",
@@ -48,7 +48,7 @@
         "img": "rajkumar.jpg"
     },
     {
-        "name": "Mr. Dinesh Thakur",
+        "name": " Dinesh Thakur",
         "position": "Sr. Lab Assistant",
         "mobile":"+91-9418169227",
         "phone":"267241",
@@ -56,7 +56,7 @@
         "img": "dinesh.jpg"
     },
     {
-        "name": "Mr. Bhuri Singh",
+        "name": " Bhuri Singh",
         "position": "Mach. Lab Attendant",
         "mobile":"+91-98052-95316",
         "phone":"267018",
@@ -64,7 +64,7 @@
         "img": "bhuri.jpg"
     },
     {
-        "name": "Mr. Sunil Kumar",
+        "name": " Sunil Kumar",
         "position": "Carpenter",
         "mobile":"+91-98822-76516",
         "phone":"267018",
@@ -72,19 +72,19 @@
         "img": "suneel.jpg"
     },
     {
-        "name": "Mr. Dalvinder kumar",
+        "name": " Dalvinder kumar",
         "position": "Turner Mechanical workshop",
         "mobile":"+917988076620",
-        "phone":"",
-        "mail": "",
+        "phone":"XXXXXX",
+        "mail": "abc@gmail.com",
         "img": "Dalvinder.jpg"
     },
     {
-        "name": "Mr. Satish kumar",
+        "name": " Satish kumar",
         "position": "Welder",
         "mobile":"+91XXXXXXXXXX",
-        "phone":"",
-        "mail": "",
+        "phone":"XXXXXX",
+        "mail": "abc@gmail.com",
         "img": "Dummy.jfif"
     }
 ]
