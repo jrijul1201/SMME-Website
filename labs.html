@@ -50,6 +50,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script>
     $(function () {
+      $("#head").load("header.html");
       $("#footer").load("footer.html");
       $("#hero").load("hero.html");
       $("#login-modal").load("login-modal.html");
@@ -97,53 +98,8 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top" data-scrollto-offset="0">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="IIT Mandi Logo">
-        <h1>SMME</h1>
-        <!-- <h1>SMME<span>.</span></h1> -->
-      </a>
-
-      <nav id="navbar" class="navbar navbar-collapse justify-content-center">
-        <ul>
-
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li class="dropdown"><a href="#"><span>Programmes</span> <i
-                class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="Btech.html">BTech</a></li>
-              <li><a href="MTech.html">Mtech</a></li>
-              <li><a href="MS.html">MS</a></li>
-              <li><a href="phd.html">PHD</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>People</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="faculty.html">Faculty</a></li>
-              <li><a href="Tech-staff.html">Technical Staff</a></li>
-              <li><a href="sup-staff.html">Supporting Staff</a></li>
-              <li><a href="Scholars.html">Scholars</a></li>
-            </ul>
-          </li>
-          </li>
-          <li><a class="nav-link scrollto" href="index.html#portfolio">News</a></li>
-          <li><a class="nav-link scrollto" href="labs.html" class="active">Labs</a></li>
-          <!-- <li><a class="nav-link scrollto" href="project.html">Projects</a></li> -->
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle d-none"></i>
-      </nav><!-- .navbar -->
-      <button type="button" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
-        Login </button>
-    </div>
-
-  </header><!-- End Header -->
-
+  <div id="head"></div>
   <div id="login-modal"></div>
 
   <!-- <div id="hero"></div> -->
@@ -162,7 +118,7 @@
           <!-- <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p> -->
         </div>
 
-        <div class="container" style="font-size: 120%" align="justify">
+        <div class="container" style="font-size: 120%; text-align:justify">
           <div class="row">
             <div class="faculty">
               <div class="row">

@@ -50,6 +50,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script>
     $(function () {
+      $("#head").load("header.html");
       $("#footer").load("footer.html");
       $("#hero").load("hero.html");
       $("#login-modal").load("login-modal.html");
@@ -75,15 +76,14 @@
 
 <body>
 
+  <div id="head"></div>
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+  <!-- <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.png" alt="IIT Mandi Logo">
         <h1>SMME</h1>
-        <!-- <h1>SMME<span>.</span></h1> -->
       </a>
 
       <nav id="navbar" class="navbar navbar-collapse justify-content-center">
@@ -111,16 +111,16 @@
           </li>
           <li><a class="nav-link scrollto" href="index.html#portfolio">News</a></li>
           <li><a class="nav-link scrollto" href="labs.html">Labs</a></li>
-          <!-- <li><a class="nav-link scrollto" href="project.html">Projects</a></li> -->
 
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
 
-  </header><!-- End Header -->
+  </header> -->
+  
 
   <div id="login-modal"></div>
 
