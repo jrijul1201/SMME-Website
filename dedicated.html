@@ -109,14 +109,15 @@
                         '<h3>' + (f.name == undefined ? '--' : f.name) + '</h3>' +
                         '</div>' +
                         '<p>' + (f.post == undefined ? ' --' : f.post) + '<br>' +
-                        (f.speciality == undefined ? ' --' : f.speciality) + '</p>' +
+                        // (f.speciality == undefined ? ' --' : f.speciality) + 
+                        '</p>' +
                         '<div class="info-item d-flex">' +
                         '<i class="bi bi-geo-alt flex-shrink-0"></i>' +
                         '<div>' +
                         '<h4>Address:</h4>' +
                         '<p>' + (f.address == undefined ? ' --' : f.address) + '</p>' +
                         '</div>' +
-                        '</div><!-- End Info Item -->      '+
+                        '</div><!-- End Info Item -->        '+
                         '<div class="info-item d-flex">' +
                         '<i class="bi bi-envelope flex-shrink-0"></i>' +
                         '<div>' +
@@ -128,7 +129,7 @@
                         '<i class="bi bi-phone flex-shrink-0"></i>' +
                         '<div>' +
                         '<h4>Phone:</h4>' +
-                        '<p>' + (f.phone == undefined ? '--' : f.phone) + '</p>' +
+                        '<p>' + (f.phone == undefined ? '--' : "01905-" + f.phone) + '</p>' +
                         '</div>' +
                         '</div><!-- End Info Item -->' +
                         '<div class="info-item d-flex">' +
@@ -189,7 +190,7 @@
                             if (f.irins_pub[i].authors && f.irins_pub[i].authors != 'NA') { authors = f.irins_pub[i].authors }
                             if (f.irins_pub[i].volume && f.irins_pub[i].year != 'NA') { journal += f.irins_pub[i].year + '; ' }
                             if (f.irins_pub[i].year && f.irins_pub[i].volume != 'NA') { journal += f.irins_pub[i].volume + ': ' }
-                            if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += '(' + f.irins_pub[i].pages + ')' }
+                            if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += f.irins_pub[i].pages}
                             if (f.irins_pub[i].DOI && f.irins_pub[i].DOI != 'NA') { DOI = f.irins_pub[i].DOI }
                             if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
                             if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
@@ -201,8 +202,8 @@
                                 publicationType +
                                 '</strong>' +
                                 '<h4 class="mb-1">' +
-                                title +
-                                '<span style="font-size:14px; font-style: italic;" class="text-muted">' +
+                                title + '<br/>' +
+                                '<span style="font-size:15px; font-style: italic;" class="text-muted">' +
                                 subtitle +
                                 '</h4>' +
 
@@ -219,12 +220,12 @@
                                 '<div class="row">' +
                                 '<div class="col-md-4 text-primary">' +
                                 '</div>' +
-                                '<div class="col-md-4 textRight">' +
-                                crossrefCitations +
-                                '</div>' +
-                                '<div class="col-md-4 textRight">' +
-                                scopusCitations +
-                                '</div>' +
+                                // '<div class="col-md-4 textRight">' +
+                                // crossrefCitations +
+                                // '</div>' +
+                                // '<div class="col-md-4 textRight">' +
+                                // scopusCitations +
+                                // '</div>' +
                                 '</div>' +
                                 '</div>' +
                                 '</div>' +
