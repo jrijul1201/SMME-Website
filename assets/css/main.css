@@ -3775,7 +3775,7 @@ section {
 }
 
 .faculty-details .info {
-  width: 80vh;
+  width: auto;
   padding: 40px;
   margin-left: 10px;
   margin-right: 10px;
