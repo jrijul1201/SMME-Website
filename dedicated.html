@@ -51,6 +51,7 @@
     <script>
         $(function () {
             $("#footer").load("footer.html");
+            $("#head").load("header.html");
             $("#hero").load("hero.html");
             $("#login-modal").load("login-modal.html");
             //   $("#about").load("about.html");
@@ -76,103 +77,8 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top" data-scrollto-offset="0">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-
-            <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="assets/img/logo.png" alt="IIT Mandi Logo">
-                <h1>SMME</h1>
-                <!-- <h1>SMME<span>.</span></h1> -->
-            </a>
-
-            <nav id="navbar" class="navbar navbar-collapse justify-content-center">
-                <ul>
-                    <!-- 
-          <li class="dropdown"><a href="#"><span>Home</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="index.html" class="active">Home 1 - index.html</a></li>
-              <li><a href="index-2.html">Home 2 - index-2.html</a></li>
-              <li><a href="index-3.html">Home 3 - index-3.html</a></li>
-              <li><a href="index-4.html">Home 4 - index-4.html</a></li>
-            </ul>
-          </li> -->
-                    <li><a class="nav-link scrollto" href="index.html" class="active">Home</a></li>
-
-
-                    <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-                    <!-- <li><a class="nav-link scrollto" href="index.html#services">Impact</a></li> -->
-                    <!-- <li><a class="nav-link scrollto" href="index.html#services">Education</a></li> -->
-                    <li class="dropdown"><a href="#"><span>Programmes</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li><a href="Btech.html">BTech</a></li>
-                            <li><a href="MTech.html">Mtech</a></li>
-                            <li><a href="MS.html">MS</a></li>
-                            <li><a href="phd.html">PHD</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#"><span>People</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li><a href="faculty.html">Faculty</a></li>
-                            <li><a href="Tech-staff.html">Technical Staff</a></li>
-                            <li><a href="sup-staff.html">Supporting Staff</a></li>
-                            <li><a href="Scholars.html">Scholars</a></li>
-                        </ul>
-                    </li>
-                    <!-- <li><a class="nav-link scrollto" href="index.html#team">People</a> -->
-                    </li>
-                    <li><a class="nav-link scrollto" href="index.html#portfolio">News</a></li>
-                    <!-- <li><a href="blog.html">Blog</a></li> -->
-                    <li class="dropdown megamenu"><a href="index.html#features"><span>Research Areas</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-
-                            <li>
-                                <a href="index.html#tab-1">Smart Structure and system</a>
-                                <a href="index.html#features">Design against failure and fracture</a>
-                                <a href="index.html#features">Composite design and manufacturing</a>
-                            </li>
-                            <li>
-                                <a href="index.html#features">Advanced material mechanics</a>
-                                <a href="index.html#features">Advanced manufacturing</a>
-                                <a href="index.html#features">Understading flow of mass and fluid</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i
-                class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                    class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-                    <!-- <li><a class="nav-link scrollto" href="project.html">Projects</a></li> -->
-                    <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle d-none"></i>
-            </nav><!-- .navbar -->
-
-            <button type="button" class="btn btn-getstarted scrollto" data-bs-toggle="modal"
-                data-bs-target="#modalLoginForm">
-                Login </button>
-
-        </div>
-
-    </header><!-- End Header -->
+    <div id="head"></div>
+    <!-- End Header -->
 
     <div id="login-modal"></div>
 
@@ -210,7 +116,7 @@
                         '<h4>Address:</h4>' +
                         '<p>' + (f.address == undefined ? ' --' : f.address) + '</p>' +
                         '</div>' +
-                        '</div><!-- End Info Item -->     '+
+                        '</div><!-- End Info Item -->      '+
                         '<div class="info-item d-flex">' +
                         '<i class="bi bi-envelope flex-shrink-0"></i>' +
                         '<div>' +
@@ -278,7 +184,7 @@
                             // if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
                             // if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
                             if (f.irins_pub[i].publicationType && f.irins_pub[i].publicationType != 'NA') { publicationType = f.irins_pub[i].publicationType }
-                            if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { title = f.irins_pub[i].title+" " }
+                            if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { title = f.irins_pub[i].title + " " }
                             if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { subtitle = f.irins_pub[i].journal.toUpperCase() }
                             if (f.irins_pub[i].authors && f.irins_pub[i].authors != 'NA') { authors = f.irins_pub[i].authors }
                             if (f.irins_pub[i].volume && f.irins_pub[i].year != 'NA') { journal += f.irins_pub[i].year + '; ' }
@@ -296,10 +202,10 @@
                                 '</strong>' +
                                 '<h4 class="mb-1">' +
                                 title +
-                               '<span style="font-size:14px; font-style: italic;" class="text-muted">' +
+                                '<span style="font-size:14px; font-style: italic;" class="text-muted">' +
                                 subtitle +
-                                '</h4>'+
-                            
+                                '</h4>' +
+
                                 '<p class="card-text mb-auto">' +
                                 authors +
                                 '</p>' +
