@@ -255,7 +255,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  padding: 15px 0;
+  padding: 5px 0;
   transition: all 0.5s;
   background-color: #fff;
   /* opacity: 0.9; */
@@ -277,7 +277,10 @@ section {
 }
 
 .header .logo h1 {
-  font-size: 32px;
+  align-items: center;
+  margin: 0px;
+  display: flex;
+  font-size: 30px;
   font-weight: 300;
   color: var(--color-secondary);
   font-family: var(--font-secondary);
@@ -533,6 +536,7 @@ section {
     left: 100%;
     visibility: visible;
   }
+
   .navbar .dropdown .dropdown .dropdown-inner:hover>ul {
     opacity: 1;
     top: 0;
@@ -545,12 +549,15 @@ section {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
+
   .navbar .dropdown .dropdown .dropdown-inner ul {
     top: -90%;
   }
+
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
+
   .navbar .dropdown .dropdown .dropdown-inner:hover>ul {
     top: -100%;
   }
