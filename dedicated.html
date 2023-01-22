@@ -78,13 +78,10 @@
 
     <!-- ======= Header ======= -->
     <div id="head"></div>
+    <div style="height:90px"> </div>
     <!-- End Header -->
 
     <div id="login-modal"></div>
-
-    <div><br></div>
-
-
     <main id="main">
 
         <script>
@@ -117,7 +114,7 @@
                         '<h4>Address:</h4>' +
                         '<p>' + (f.address == undefined ? ' --' : f.address) + '</p>' +
                         '</div>' +
-                        '</div><!-- End Info Item -->        '+
+                        '</div><!-- End Info Item -->         '+
                         '<div class="info-item d-flex">' +
                         '<i class="bi bi-envelope flex-shrink-0"></i>' +
                         '<div>' +
@@ -190,7 +187,7 @@
                             if (f.irins_pub[i].authors && f.irins_pub[i].authors != 'NA') { authors = f.irins_pub[i].authors }
                             if (f.irins_pub[i].volume && f.irins_pub[i].year != 'NA') { journal += f.irins_pub[i].year + '; ' }
                             if (f.irins_pub[i].year && f.irins_pub[i].volume != 'NA') { journal += f.irins_pub[i].volume + ': ' }
-                            if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += f.irins_pub[i].pages}
+                            if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += f.irins_pub[i].pages }
                             if (f.irins_pub[i].DOI && f.irins_pub[i].DOI != 'NA') { DOI = f.irins_pub[i].DOI }
                             if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
                             if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
