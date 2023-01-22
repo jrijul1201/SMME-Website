@@ -1299,7 +1299,7 @@ section {
 .about .about-img {
   position: relative;
   height: 65vh;
-  width: 65vh;
+  /* width: 65vh; */
   box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
 }
 
@@ -2422,6 +2422,7 @@ section {
   margin: -50px 20px 0 20px;
   position: relative;
   border-radius: 8px;
+  width: 260px;
 }
 
 .team .team-member .member-info h4 {
