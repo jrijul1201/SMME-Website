@@ -3841,3 +3841,7 @@ section {
 /* .service-item-unactive p {
   z-index: 10000000000 !important;
 } */
+
+.orange {
+  color: var(--color-primary);
+}
