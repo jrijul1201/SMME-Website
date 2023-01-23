@@ -207,7 +207,7 @@ $userName = $_SESSION['user_name'];
 
         <h3>Publications:</h3>
         <textarea name="publications"><?php echo $arr[$index]["publications"]; ?></textarea>
-        <h3>Reasearch Interests:</h3>
+        <h3>Research Interests:</h3>
         <textarea name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
         <h3>Current Projects:</h3>
         <textarea name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
@@ -222,7 +222,9 @@ $userName = $_SESSION['user_name'];
         <h3>Other Activities:</h3>
         <textarea name="activity"><?php echo $arr[$index]["activity"]; ?></textarea>
 
-        <h3>IRINS Publications Details:</h3><br>
+        <h3>IRINS Publications Details:</h3>
+        <small><i> <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?> </i></small><br>
+        
         <table id="irins-pub-table">
             <tr>
                 <th>Title</th>
