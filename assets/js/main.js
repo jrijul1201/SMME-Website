@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
-        this.nextElementSibling.classList.toggle('dropdown-active');
+        this.nextElementSibling.classList.toggle('outer-list');
 
         let dropDownIndicator = this.querySelector('.dropdown-indicator');
         dropDownIndicator.classList.toggle('bi-chevron-up');
@@ -139,6 +139,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   });
+
+  const navDropdownInner = document.querySelectorAll('.dropdown-inner > a');
+  const navI = document.querySelectorAll('.dropdown-indicator-inner');
+
+  // navI.forEach(el => {
+  //   if(document.querySelector('.mobile-nav-active')){
+  //     el.classList.remove('bi-chevron-right');
+  //     el.classList.add('bi-chevron-down');
+  //   }
+  // });
+
+  navDropdownInner.forEach(el => {
+    el.addEventListener('click', function(event) {
+      if (document.querySelector('.mobile-nav-active')) {
+        event.preventDefault();
+        this.nextElementSibling.classList.toggle('inner-list');
+        let dropDownIndicator = this.querySelector('.dropdown-indicator-inner');
+        dropDownIndicator.classList.toggle('bi-chevron-right');
+        dropDownIndicator.classList.toggle('bi-chevron-down');
+      }
+    })
+  })
 
   /**
    * Auto generate the hero carousel indicators
