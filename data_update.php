@@ -50,13 +50,14 @@ if (isset($_POST['ititle'])) {
       $pubDate = $_POST['ipubDate'][$index];
       $pubType = $_POST['ipubType'][$index];
       $pages = $_POST['ipages'][$index];
+      $pages_v2 = str_replace('-', '&#8211;', $pages);
       $volume = $_POST['ivolume'][$index];
       $authors = $_POST['iauthors'][$index];
       $journal = $_POST['ijournal'][$index];
       $scopusC = $_POST['iscopusC'][$index];
       $crossrefC = $_POST['icrossrefC'][$index];
       $irinsIsHidden = ($_POST['irinsIsHidden'][$index] == "on") ? true : false;
-      $temp = array('title' => $title, 'DOI' => $doi, 'year' => $year, 'publicationDate' => $pubDate, 'publicationType' => $pubType, 'pages' => $pages, 'volume' => $volume, 'authors' => $authors, 'journal' => $journal, 'scopusCitations' => $scopusC, 'crossrefCitations' => $crossrefC, 'isHidden' => $irinsIsHidden);
+      $temp = array('title' => $title, 'DOI' => $doi, 'year' => $year, 'publicationDate' => $pubDate, 'publicationType' => $pubType, 'pages' => $pages_v2, 'volume' => $volume, 'authors' => $authors, 'journal' => $journal, 'scopusCitations' => $scopusC, 'crossrefCitations' => $crossrefC, 'isHidden' => $irinsIsHidden);
       $irinsPubInfo[] =  $temp;
     }
 }
