@@ -107,62 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
-   * Mobile nav toggle
-   */
-  const mobileNavToogle = document.querySelector('.mobile-nav-toggle');
-  if (mobileNavToogle) {
-    mobileNavToogle.addEventListener('click', function(event) {
-      event.preventDefault();
-
-      document.querySelector('body').classList.toggle('mobile-nav-active');
-
-      this.classList.toggle('bi-list');
-      this.classList.toggle('bi-x');
-    });
-  }
-
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
-
-  navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
-      if (document.querySelector('.mobile-nav-active')) {
-        event.preventDefault();
-        this.classList.toggle('active');
-        this.nextElementSibling.classList.toggle('outer-list');
-
-        let dropDownIndicator = this.querySelector('.dropdown-indicator');
-        dropDownIndicator.classList.toggle('bi-chevron-up');
-        dropDownIndicator.classList.toggle('bi-chevron-down');
-      }
-    })
-  });
-
-  const navDropdownInner = document.querySelectorAll('.dropdown-inner > a');
-  const navI = document.querySelectorAll('.dropdown-indicator-inner');
-
-  // navI.forEach(el => {
-  //   if(document.querySelector('.mobile-nav-active')){
-  //     el.classList.remove('bi-chevron-right');
-  //     el.classList.add('bi-chevron-down');
-  //   }
-  // });
-
-  navDropdownInner.forEach(el => {
-    el.addEventListener('click', function(event) {
-      if (document.querySelector('.mobile-nav-active')) {
-        event.preventDefault();
-        this.nextElementSibling.classList.toggle('inner-list');
-        let dropDownIndicator = this.querySelector('.dropdown-indicator-inner');
-        dropDownIndicator.classList.toggle('bi-chevron-right');
-        dropDownIndicator.classList.toggle('bi-chevron-down');
-      }
-    })
-  })
-
-  /**
    * Auto generate the hero carousel indicators
    */
   let heroCarouselIndicators = document.querySelector('#hero .carousel-indicators');
