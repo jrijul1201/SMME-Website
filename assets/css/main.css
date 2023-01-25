@@ -3950,3 +3950,27 @@ section {
 .orange {
   color: var(--color-primary);
 }
+
+.hr-theme-slash-2 {
+  display: flex;
+  margin: -40px 0px 20px 0px;
+}
+
+.hr-theme-slash-2 .hr-line {
+  width: 100%;
+  position: relative;
+  margin: 15px;
+  border-bottom: 1px solid var(--color-secondary-dark);
+}
+
+.hr-theme-slash-2 .hr-icon {
+  position: relative;
+  top: 3px;
+  color: var(--color-primary);
+}
+
+.hr-theme-slash-2 .hr-text {
+  position: relative;
+  top: 3px;
+  color: var(--color-primary);
+}
