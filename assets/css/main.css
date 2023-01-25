@@ -1073,7 +1073,7 @@ section {
   font-size: 30px;
   font-weight: 300;
   /* color: var(--color-secondary); */
-  color:var(--color-white);
+  color: var(--color-white);
   font-family: var(--font-secondary);
 }
 
@@ -1385,6 +1385,18 @@ section {
 /*--------------------------------------------------------------
 # Chairperson's Message Section
 --------------------------------------------------------------*/
+.chairperson-message {
+  background-color: var(--color-primary);
+}
+
+.chairperson-message .section-header p {
+  color: var(--color-white);
+}
+
+.chairperson-message .section-header h2 {
+  color: var(--color-white);
+}
+
 .chairperson-message .chairperson-message-img {
   position: relative;
   height: 65vh;
