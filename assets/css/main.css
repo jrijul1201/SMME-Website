@@ -1930,7 +1930,7 @@ section {
 }
 
 .quick-links .tab-content {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .quick-links .tab-pane.active {
