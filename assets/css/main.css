@@ -1299,8 +1299,8 @@ section {
 --------------------------------------------------------------*/
 .about .about-img {
   position: relative;
-  height: 65vh;
-  /* width: 65vh; */
+  height: 50vh;
+  width: 50vh;
   box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
   /* border: var(--color-primary) solid 5px; */
   /* border-radius: 1px; */
@@ -3889,7 +3889,7 @@ section {
 }
 
 .faculty-details .info {
-  width: 80%;
+  /* width: 90%; */
   padding: 40px;
   margin: 20px 10px;
   box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
@@ -3898,7 +3898,7 @@ section {
 
 .faculty-details .info h3 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .faculty-details .info p {
@@ -3908,6 +3908,12 @@ section {
 }
 
 .faculty-details .info-item+.info-item {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
+}
+
+.faculty-details .info-item {
   padding-top: 20px;
   margin-top: 20px;
   border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
