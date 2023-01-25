@@ -92,65 +92,57 @@
                 $.getJSON('faculty.json', function (data) {
                     const f = data[idx];
                     var src1 = `assets/img/team/${f.img}`
-                    var comp =
-                        '<section class="about" style="padding-bottom: 0px">' +
-                        '<div class="row" data-aos="fade-up" data-aos-delay="200">' +
-                        '<div class="col-lg-6 d-flex justify-content-center align-items-center"><div class="about-img">' +
-                        "<img src=" + src1 + " style='width: 100%; height: 100%;' alt=''></img>" +
-                        '</div></div>' +
-                        '<div class="col-lg-6 d-flex justify-content-center align-items-center">' +
-                        '<div class="container faculty-details">' +
-                        '<div class="row d-flex justify-content-center">' +
-                        '<div class="info">' +
-                        // '<div class="mb-3">' +
-                        '<h3 style="margin-bottom: 0px !important">' + (f.name == undefined ? '--' : f.name) + '</h3>' +
-                        // '</div>' +
-                        '<p>' + (f.post == undefined ? ' --' : f.post) + '<br>' +
-                        // (f.speciality == undefined ? ' --' : f.speciality) + 
-                        '</p>' +
-                        '<div class="info-item d-flex">' +
-                        '<i class="bi bi-geo-alt flex-shrink-0"></i>' +
-                        '<div>' +
-                        '<h4>Address:</h4>' +
-                        '<p>' + (f.address == undefined ? ' --' : f.address) + '</p>' +
-                        '</div>' +
-                        '</div><!-- End Info Item -->                '+
-                        '<div class="info-item d-flex">' +
-                        '<i class="bi bi-envelope flex-shrink-0"></i>' +
-                        '<div>' +
-                        '<h4>Email:</h4>' +
-                        '<p>' + (f.mail == undefined ? '--' : f.mail + '@iitmandi.ac.in') + '</p>' +
-                        '</div>' +
-                        '</div><!-- End Info Item -->' +
-                        '<div class="info-item d-flex">' +
-                        '<i class="bi bi-phone flex-shrink-0"></i>' +
-                        '<div>' +
-                        '<h4>Phone:</h4>' +
-                        '<p>' + (f.phone == undefined ? '--' : "01905-" + f.phone) + '</p>' +
-                        '</div>' +
-                        '</div><!-- End Info Item -->';
-                    if (f.interests == undefined || f.interests == "") {
-                        // comp += '<p> -- </p>';
-                    } else {
-                        comp += '<div class="info-item d-flex">' +
-                            '<i class="bi bi-book flex-shrink-0"></i>' +
-                            '<div>' +
-                            '<h4>Research Interests:</h4>' +
-                            f.interests;
-                    }
-                    comp += '</div>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>';
-                    comp += '</div></div>';
-                    // comp += '<hr class="margin-tag-faculty"></div></div>';
-
-
-                    comp += '</div>' + '<br> <br>' +
-
-                        '<div class="row-lg-7 pub-faculty mt-30">'       // Publication starts
-
-
+                    var comp = `<section class="about" style="padding-bottom: 0px">
+                                    <div class="row" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                                            <div class="about-img">
+                                                <img src=${src1} style='width: 100%; height: 100%;' alt=''></img>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                                            <div class="container faculty-details">
+                                                <div class="row d-flex justify-content-center">
+                                                    <div class="info">
+                                                        <h3 style="margin-bottom: 0px !important"> ${(f.name == undefined ? '--' : f.name)}</h3>
+                                                        <p>${(f.post == undefined ? ' --' : f.post)}<br>
+                                                        </p>
+                                                        <div class="info-item d-flex">
+                                                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                                            <div>
+                                                                <h4>Address:</h4>
+                                                                <p>${(f.address == undefined ? ' --' : f.address)}</p>
+                                                            </div>
+                                                        </div><!-- End Info Item -->
+                                                        <div class="info-item d-flex">
+                                                            <i class="bi bi-envelope flex-shrink-0"></i>
+                                                            <div>
+                                                                <h4>Email:</h4>
+                                                                <p>${(f.mail == undefined ? '--' : f.mail + '@iitmandi.ac.in')}</p>
+                                                            </div>
+                                                        </div><!-- End Info Item -->
+                                                        <div class="info-item d-flex">
+                                                            <i class="bi bi-phone flex-shrink-0"></i>
+                                                            <div>
+                                                                <h4>Phone:</h4>
+                                                                <p>${(f.phone == undefined ? '--' : "01905-" + f.phone)}</p>
+                                                            </div>
+                                                        </div>
+                                                        ${f.interests == undefined || f.interests == "" ? '' :
+                                                        `<div class="info-item d-flex">
+                                                            <i class="bi bi-book flex-shrink-0"></i>
+                                                            <div>
+                                                                <h4>Research Interests:</h4>${f.interests}`}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="row-lg-7 pub-faculty mt-30">`;
+                    // Publication starts
 
                     if (f.irins_pub.length > 0) {
                         comp += '<p style="font-size:30px">Publications: </p>'
@@ -192,46 +184,39 @@
                             if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
                             if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
 
-                            comp += '<div class="col-md-12 plates">' +
-                                '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">' +
-                                '<div class="col p-4 d-flex flex-column position-static plate-child">' +
-                                '<strong class="d-inline-block mb-2 text-primary">' +
-                                publicationType +
-                                '</strong>' +
-                                '<h4 class="mb-1">' +
-                                title + '<br/>' +
-                                '<span style="font-size:15px; font-style: italic;" class="text-muted">' +
-                                subtitle +
-                                '</h4>' +
-
-                                '<p class="card-text mb-auto">' +
-                                authors +
-                                '</p>' +
-                                '<div class="mb-auto text-muted">' +
-                                journal +
-                                '</div>' +
-                                '<div class="mb-3 text-primary">' +
-                                DOI +
-                                '</div>' +
-                                '<div class="mb-auto">' +
-                                '<div class="row">' +
-                                '<div class="col-md-4 text-primary">' +
-                                '</div>' +
-                                // '<div class="col-md-4 textRight">' +
-                                // crossrefCitations +
-                                // '</div>' +
-                                // '<div class="col-md-4 textRight">' +
-                                // scopusCitations +
-                                // '</div>' +
-                                '</div>' +
-                                '</div>' +
-                                '</div>' +
-                                '</div>' +
-                                '</div>';
+                            comp += `<div class="col-md-12 plates">
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                            <div class="col p-4 d-flex flex-column position-static plate-child">
+                                                <strong class="d-inline-block mb-2 text-primary">
+                                                    ${publicationType}
+                                                </strong>
+                                                <h4 class="mb-1">
+                                                    ${title} <br />
+                                                    <span style="font-size:15px; font-style: italic;" class="text-muted">
+                                                        ${subtitle}
+                                                </h4>
+                                                <p class="card-text mb-auto">
+                                                    ${authors}
+                                                </p>
+                                                <div class="mb-auto text-muted">
+                                                    ${journal}
+                                                </div>
+                                                <div class="mb-3 text-primary">
+                                                    ${DOI}
+                                                </div>
+                                                <div class="mb-auto">
+                                                    <div class="row">
+                                                        <div class="col-md-4 text-primary">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
                         }
-
                     }
-                    comp += '</div>' + '</section>'
+                    comp += `   </div>
+                            </section>`;
                     $(comp).appendTo("#dedicated");
                 });
             });
