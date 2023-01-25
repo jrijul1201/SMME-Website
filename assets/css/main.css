@@ -1921,6 +1921,14 @@ section {
   color: var(--color-white) !important;
 }
 
+.quick-links .nav-link.spaced {
+  margin: 0px 10px;
+}
+
+.quick-links .nav-link.spaced h4 {
+  font-size: 16px;
+}
+
 .quick-links .tab-content {
   margin-top: 30px;
 }
