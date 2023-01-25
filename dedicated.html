@@ -114,7 +114,7 @@
                         '<h4>Address:</h4>' +
                         '<p>' + (f.address == undefined ? ' --' : f.address) + '</p>' +
                         '</div>' +
-                        '</div><!-- End Info Item -->          '+
+                        '</div><!-- End Info Item -->               '+
                         '<div class="info-item d-flex">' +
                         '<i class="bi bi-envelope flex-shrink-0"></i>' +
                         '<div>' +
@@ -128,15 +128,15 @@
                         '<h4>Phone:</h4>' +
                         '<p>' + (f.phone == undefined ? '--' : "01905-" + f.phone) + '</p>' +
                         '</div>' +
-                        '</div><!-- End Info Item -->' +
-                        '<div class="info-item d-flex">' +
-                        '<i class="bi bi-book flex-shrink-0"></i>' +
-                        '<div>' +
-                        '<h4>Research Interests:</h4>';
-                    if (f.interests == undefined) {
-                        comp += '<p> -- </p>'
+                        '</div><!-- End Info Item -->';
+                    if (f.interests == undefined || f.interests == "") {
+                        // comp += '<p> -- </p>';
                     } else {
-                        comp += f.interests
+                        comp += '<div class="info-item d-flex">' +
+                            '<i class="bi bi-book flex-shrink-0"></i>' +
+                            '<div>' +
+                            '<h4>Research Interests:</h4>' +
+                            f.interests;
                     }
                     comp += '</div>' +
                         '</div>' +
