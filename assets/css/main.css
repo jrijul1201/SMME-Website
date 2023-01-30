@@ -1393,6 +1393,7 @@ section {
 
 .chairperson-message .section-header p {
   color: var(--color-white);
+  line-height: 1.5em;
 }
 
 .chairperson-message .section-header h2 {
