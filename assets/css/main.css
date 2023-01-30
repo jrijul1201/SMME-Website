@@ -1285,13 +1285,10 @@ section {
   color: var(--color-primary);
 }
 
-.features .research-content {
-  padding: 3% 0%;
-}
-
 .features .img-fluid {
-  height: 90%;
-  width: 100%;
+  height: 40vh;
+  width: 30vw;
+  margin-bottom: 3%;
 }
 
 /*--------------------------------------------------------------
@@ -1827,7 +1824,8 @@ section {
 }
 
 .features .tab-content {
-  margin-top: 30px;
+  margin-top: 2%;
+  text-align: center;
 }
 
 .features .tab-pane.active {
