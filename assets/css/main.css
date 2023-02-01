@@ -3981,3 +3981,7 @@ section {
   top: 3px;
   color: var(--color-primary);
 }
+
+.faq .accordion-button:after{
+  display: none;
+}
