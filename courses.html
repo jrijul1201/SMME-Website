@@ -87,10 +87,10 @@
                                     <table class="table table-css">
                                         <thead>
                                             <tr>
-                                                <th>S. No.</th>
-                                                <th>Course Code</th>
-                                                <th>Course Name</th>
-                                                <th>Credit Distribution</th>
+                                                <!-- <th>S. No.</th> -->
+                                                <th style="text-align:left">Course Code</th>
+                                                <th style="text-align:left">Course Name</th>
+                                                <th style="text-align:right">Credit Distribution</th>
                                             </tr>
                                         </thead>
                                         <tbody id="tbody1">
@@ -99,10 +99,10 @@
                                                     $.getJSON('course.json', function (data) {
                                                         $.each(data, function (i, f) {
                                                             var row = '<tr>' +
-                                                                '<td>' + parseInt(i+1) + '</th>' +
+                                                                // '<td>' + parseInt(i+1) + '</th>' +
                                                                 '<td>' + f.code + '</th>' +
                                                                 '<td>' + f.name + '</th>' +
-                                                                '<td>' + f.credit + '</th>' +
+                                                                '<td style="text-align:right">' + f.credit + '</th>' +
                                                                 '</tr>'
                                                             $(row).appendTo("#tbody1");
                                                         })

@@ -1,326 +1,397 @@
 [
-    {
-      "code": "IC 240(3)",
-      "name": "Mechanics of Rigid Bodies",
-      "credit": "1.5-1.5-0-3"
-    },
-    {
-      "code": "IC 241(3)",
-      "name": "Material Science for Engineers",
-      "credit": "3-0-0-3"
-    },
-    { "code": "IC 242(3)", "name": "Continuum Mechanics", "credit": "3-0-0-3" },
-    {
-      "code": "ME-204(3)",
-      "name": "Material Science for Engineers",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-205(3)", "name": "Machine Drawing", "credit": "1-0-4-3" },
-    {
-      "code": "ME-206(3)",
-      "name": "Mechanics of Solids",
-      "credit": "2.5-0.5-0-3"
-    },
-    { "code": "ME-208(3)", "name": "Fluid Mechanics", "credit": "2.5-0.5-0-3" },
-    { "code": "ME-210(3)", "name": "Fluid Mechanics", "credit": "3-0-0-3" },
-    { "code": "ME-303(3)", "name": "Heat Transfer", "credit": "2.5-0.5-0-3" },
-    {
-      "code": "ME-305(4)",
-      "name": "Design of Machine Elements",
-      "credit": "3-1-0-4"
-    },
-    {
-      "code": "ME-307(3)",
-      "name": "Energy Conversion Devices",
-      "credit": "2.5-0.5-0-3"
-    },
-    {
-      "code": "ME-308(3)",
-      "name": "Manufacturing Engineering",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-309(4)", "name": "Theory of Machines", "credit": "3-1-0-4" },
-    {
-      "code": "ME-309P(1)",
-      "name": "Theory of Machines Lab.",
-      "credit": "0-0-2-1"
-    },
-    { "code": "ME-310P(2)", "name": "Thermo-Fluids Laboratory", "credit": "2" },
-    { "code": "ME-311P(1)", "name": "Design Lab \u2013 I", "credit": "0-0-2-1" },
-    { "code": "ME-312P(1)", "name": "Design Lab -II", "credit": "0-0-2-1" },
-    {
-      "code": "ME-351(3)",
-      "name": "Management of Manufacturing and Logistics Systems (NKN)",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-352(3)",
-      "name": "Finite Element Methods in Engg.",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-353(3)",
-      "name": "Electronic Materials and Their Applications",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-355(3)",
-      "name": "Internal Combustion Engines",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-356(4)",
-      "name": "Principles of Energy Conversion",
-      "credit": "4"
-    },
-    {
-      "code": "ME-451(3)",
-      "name": "Refrigeration and Air Conditioning",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-452(3)", "name": "Robotics and control", "credit": "2-1-0-3" },
-    {
-      "code": "ME-501(3)",
-      "name": "Materials Science for Failure Analysis",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-504(3)",
-      "name": "Numerical Methods for Engineering Computation",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-505(3)",
-      "name": "Applied Finite Element Method",
-      "credit": "2-0-2-3"
-    },
-    {
-      "code": "ME-506(3)",
-      "name": "Fundamentals of Fracture Mechanics",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-507(3)",
-      "name": "Micro and Nanoscale Fluid Mechaincs",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-509(3)", "name": "Nanomanufacturing", "credit": "3-0-0-3" },
-    {
-      "code": "ME 510(3)",
-      "name": "Advanced Manufacturing Processes",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME 522",
-      "name": "High-Performance Scientific Computing",
-      "credit": "2-0-1-3"
-    },
-    {
-      "code": "ME 5XX",
-      "name": "Additive Manufacturing",
-      "credit": "2.5-0.5-0-3"
-    },
-    {
-      "code": "ME-601(3)",
-      "name": "Finite Element Method in Engineering",
-      "credit": "2.5-0.5-0-3"
-    },
-    {
-      "code": "ME-602(3)",
-      "name": "Mechanical Vibration",
-      "credit": "2.5-0.5-0-3"
-    },
-    {
-      "code": "ME-603(3)",
-      "name": "Advanced Fluid Mechanics",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-604(3)",
-      "name": "Experimental Methods in Thermal Engineering",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-605(3)",
-      "name": "Air Conditioning and Ventilation",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-606(3)",
-      "name": "Advanced Solid Mechanics",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-607(3)",
-      "name": "Materials Science for Failure Analysis",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-609(3)", "name": "Functional Materials", "credit": "4" },
-    {
-      "code": "ME-610(4)",
-      "name": "Advanced Thermodynamics",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-611(3)",
-      "name": "Design and Optimization of Thermal Systems",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-613(3)", "name": "Thermal Radiation", "credit": "2.5-0.5-0-3" },
-    {
-      "code": "ME-614(3)",
-      "name": "Compressible Flow and Gas Dynamics",
-      "credit": "2.5-0.5-0-3"
-    },
-    {
-      "code": "ME-615(3)",
-      "name": "Applied Computational Fluid Dynamics",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-616(3)",
-      "name": "Convective Heat and mass Transfer",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-617(3)",
-      "name": "Mechanics of Composite Materials",
-      "credit": "2-1-0-3"
-    },
-    {
-      "code": "ME-618(3)",
-      "name": "Stealth Technology:Infrared Signatures",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-619(3)",
-      "name": "Experiments in Materials Science",
-      "credit": "2-0-2-3"
-    },
-    {
-      "code": "ME-620(3)",
-      "name": "Modelling and Simulations",
-      "credit": "2-1-0-3"
-    },
-    { "code": "ME-621(3)", "name": "Aircraft Propulsion", "credit": "3-0-0-3" },
-    {
-      "code": "ME-622(3)",
-      "name": "Biomechanics of Musculoskeletal System",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-625(3)",
-      "name": "Introduction to Turbulence and its Modelling",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-626(3)", "name": "Acoustics", "credit": "3-0-0-3" },
-    {
-      "code": "ME-631(3)",
-      "name": "Heat Transfer and Fluid flow in Energy Systems",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-632(3)",
-      "name": "Mechanics for Energy Systems",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-633(3)",
-      "name": "Design of Energy Systems",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-634(3)",
-      "name": "Thermodynamics of Energy Systems",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-635(3)",
-      "name": "Manufacturing for energy Systems",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-636(3)", "name": "Combustion Technology", "credit": "3-0-0-3" },
-    { "code": "ME-637(3)", "name": "Wind Power Plant", "credit": "3-0-0-3" },
-    {
-      "code": "ME-638(3)",
-      "name": "Solar Thermal Power Plant",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-639(3)",
-      "name": "Thermal Power Plant Engineering",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "ME-640(3)",
-      "name": "Solar Power Utilization",
-      "credit": "3-0-0-3"
-    },
-    { "code": "ME-641(3)", "name": "Finite Element Method", "credit": "" },
-    {
-      "code": "EM-504(4)",
-      "name": "Materials for Energy Applications",
-      "credit": "4"
-    },
-    {
-      "code": "EM-505(3)",
-      "name": "Alternative Energy Sources for Transportation",
-      "credit": "3"
-    },
-    {
-      "code": "EM-651 (3)",
-      "name": "Photovoltaic Materials and Fabrication",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "EN-501(3)",
-      "name": "Energy Sources and Power Plants",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "EN-502(3)",
-      "name": "Emerging Energy Sources",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "EN-503(3)",
-      "name": "Energy Storage Technologies",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "EN-504(3)",
-      "name": "Energy:Environment Policy and Law",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "EN-505P(2)",
-      "name": "Energy Systems Laboratory",
-      "credit": "0-0-4-2"
-    },
-    {
-      "code": "EN-513(3)",
-      "name": "Life Extension Engineering",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "EN-605(3)",
-      "name": "Modeling and simulation for Energy Systems",
-      "credit": "2-0-2-3"
-    },
-    {
-      "code": "EN-611(3)",
-      "name": "Durability Behavior of Energy Materials",
-      "credit": "3-0-0-3"
-    },
-    {
-      "code": "EN-612(3)",
-      "name": "Structure-Property correlation in materials for Energy Applications",
-      "credit": "2-0-2-3"
-    },
-    {
-      "code": "EN-613(3)",
-      "name": "Creep-Fatigue Interaction",
-      "credit": "3-0-0-3"
-    }
-  ]
-  
+  {
+    "code": "IC240",
+    "name": "Mechanics of Rigid Bodies",
+    "credit": "1.5-1.5-0-3"
+  },
+  {
+    "code": "IC241",
+    "name": "Material Science for Engineers",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "IC242",
+    "name": "Continuum Mechanics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME204",
+    "name": "Material Science for Engineers",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME205",
+    "name": "Machine Drawing",
+    "credit": "1-0-4-3"
+  },
+  {
+    "code": "ME206",
+    "name": "Mechanics of Solids",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME208",
+    "name": "Fluid Mechanics",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME210",
+    "name": "Fluid Mechanics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME303",
+    "name": "Heat Transfer",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME305",
+    "name": "Design of Machine Elements",
+    "credit": "3-1-0-4"
+  },
+  {
+    "code": "ME307",
+    "name": "Energy Conversion Devices",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME308",
+    "name": "Manufacturing Engineering",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME309",
+    "name": "Theory of Machines",
+    "credit": "3-1-0-4"
+  },
+  {
+    "code": "ME309P",
+    "name": "Theory of Machines Lab.",
+    "credit": "0-0-2-1"
+  },
+  {
+    "code": "ME310P",
+    "name": "Thermo-Fluids Laboratory",
+    "credit": "2"
+  },
+  {
+    "code": "ME311P",
+    "name": "Design Lab \u2013 I",
+    "credit": "0-0-2-1"
+  },
+  {
+    "code": "ME312P",
+    "name": "Design Lab -II",
+    "credit": "0-0-2-1"
+  },
+  {
+    "code": "ME351",
+    "name": "Management of Manufacturing and Logistics Systems (NKN)",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME352",
+    "name": "Finite Element Methods in Engg.",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME353",
+    "name": "Electronic Materials and Their Applications",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME355",
+    "name": "Internal Combustion Engines",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME356",
+    "name": "Principles of Energy Conversion",
+    "credit": "4"
+  },
+  {
+    "code": "ME451",
+    "name": "Refrigeration and Air Conditioning",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME452",
+    "name": "Robotics and control",
+    "credit": "2-1-0-3"
+  },
+  {
+    "code": "ME501",
+    "name": "Materials Science for Failure Analysis",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME504",
+    "name": "Numerical Methods for Engineering Computation",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME505",
+    "name": "Applied Finite Element Method",
+    "credit": "2-0-2-3"
+  },
+  {
+    "code": "ME506",
+    "name": "Fundamentals of Fracture Mechanics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME507",
+    "name": "Micro and Nanoscale Fluid Mechaincs",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME509",
+    "name": "Nanomanufacturing",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME 510",
+    "name": "Advanced Manufacturing Processes",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME 522",
+    "name": "High-Performance Scientific Computing",
+    "credit": "2-0-1-3"
+  },
+  {
+    "code": "ME 5XX",
+    "name": "Additive Manufacturing",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME601",
+    "name": "Finite Element Method in Engineering",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME602",
+    "name": "Mechanical Vibration",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME603",
+    "name": "Advanced Fluid Mechanics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME604",
+    "name": "Experimental Methods in Thermal Engineering",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME605",
+    "name": "Air Conditioning and Ventilation",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME606",
+    "name": "Advanced Solid Mechanics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME607",
+    "name": "Materials Science for Failure Analysis",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME609",
+    "name": "Functional Materials",
+    "credit": "4"
+  },
+  {
+    "code": "ME610",
+    "name": "Advanced Thermodynamics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME611",
+    "name": "Design and Optimization of Thermal Systems",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME613",
+    "name": "Thermal Radiation",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME614",
+    "name": "Compressible Flow and Gas Dynamics",
+    "credit": "2.5-0.5-0-3"
+  },
+  {
+    "code": "ME615",
+    "name": "Applied Computational Fluid Dynamics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME616",
+    "name": "Convective Heat and mass Transfer",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME617",
+    "name": "Mechanics of Composite Materials",
+    "credit": "2-1-0-3"
+  },
+  {
+    "code": "ME618",
+    "name": "Stealth Technology:Infrared Signatures",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME619",
+    "name": "Experiments in Materials Science",
+    "credit": "2-0-2-3"
+  },
+  {
+    "code": "ME620",
+    "name": "Modelling and Simulations",
+    "credit": "2-1-0-3"
+  },
+  {
+    "code": "ME621",
+    "name": "Aircraft Propulsion",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME622",
+    "name": "Biomechanics of Musculoskeletal System",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME625",
+    "name": "Introduction to Turbulence and its Modelling",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME626",
+    "name": "Acoustics",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME631",
+    "name": "Heat Transfer and Fluid flow in Energy Systems",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME632",
+    "name": "Mechanics for Energy Systems",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME633",
+    "name": "Design of Energy Systems",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME634",
+    "name": "Thermodynamics of Energy Systems",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME635",
+    "name": "Manufacturing for energy Systems",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME636",
+    "name": "Combustion Technology",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME637",
+    "name": "Wind Power Plant",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME638",
+    "name": "Solar Thermal Power Plant",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME639",
+    "name": "Thermal Power Plant Engineering",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME640",
+    "name": "Solar Power Utilization",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "ME641",
+    "name": "Finite Element Method",
+    "credit": ""
+  },
+  {
+    "code": "EM-504",
+    "name": "Materials for Energy Applications",
+    "credit": "4"
+  },
+  {
+    "code": "EM-505",
+    "name": "Alternative Energy Sources for Transportation",
+    "credit": "3"
+  },
+  {
+    "code": "EM-651 ",
+    "name": "Photovoltaic Materials and Fabrication",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "EN-501",
+    "name": "Energy Sources and Power Plants",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "EN-502",
+    "name": "Emerging Energy Sources",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "EN-503",
+    "name": "Energy Storage Technologies",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "EN-504",
+    "name": "Energy:Environment Policy and Law",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "EN-505P",
+    "name": "Energy Systems Laboratory",
+    "credit": "0-0-4-2"
+  },
+  {
+    "code": "EN-513",
+    "name": "Life Extension Engineering",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "EN-605",
+    "name": "Modeling and simulation for Energy Systems",
+    "credit": "2-0-2-3"
+  },
+  {
+    "code": "EN-611",
+    "name": "Durability Behavior of Energy Materials",
+    "credit": "3-0-0-3"
+  },
+  {
+    "code": "EN-612",
+    "name": "Structure-Property correlation in materials for Energy Applications",
+    "credit": "2-0-2-3"
+  },
+  {
+    "code": "EN-613",
+    "name": "Creep-Fatigue Interaction",
+    "credit": "3-0-0-3"
+  }
+]
