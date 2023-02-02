@@ -97,78 +97,39 @@
                                         <div class="container faculty-details">
                                             <div class="info">
                                                 <div class="row d-flex justify-content-center">
-                                                    <div class="col d-flex justify-content-center align-items-center">
-                                                        <div class="about-img">
+                                                    <div class="col d-flex ">
+                                                        <div class="about-img" style='width: 100%; height: 100%;'>
                                                             <img src=${src1} style='width: 100%; height: 100%;' alt=''></img>
                                                         </div>
                                                     </div>
-                                                    <div class="col d-flex justify-content-center align-items-center">
-                                                        <div class="row">
-                                                            <h3> ${(f.name == undefined ? '--' : f.name)}</h3>
-                                                            <p>${(f.post == undefined ? '--' : f.post)}<br>
+                                                    <div class="col d-flex justify-content-center align-items-center ">
+                                                        <div class="row ">
+                                                            <h3 class="text-center"> ${(f.name == undefined ? '--' : f.name)}</h3>
+                                                            <p class="text-center">${(f.post == undefined ? '--' : f.post)}<br>
                                                             </p>
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <div class="info-item d-flex">
-                                                                        <i class="bi bi-geo-alt flex-shrink-0"></i>
-                                                                        <div>
-                                                                            <h4>Address:</h4>
-                                                                            <p>${(f.address == undefined ? '--' : f.address)}</p>
-                                                                        </div>
+                                                            <div class=" col-lg-6 col-md-12">
+                                                                <div class="info-item d-flex">
+                                                                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                                                    <div>
+                                                                        <h4>Address:</h4>
+                                                                        <p>${(f.address == undefined ? '--' : f.address)}</p>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-6">
-                                                                    <div class="info-item d-flex">
-                                                                        <i class="bi bi-envelope flex-shrink-0"></i>
-                                                                        <div>
-                                                                            <h4>Email:</h4>
-                                                                            <p>${(f.mail == undefined ? '--' : f.mail + '@iitmandi.ac.in')}</p>
-                                                                        </div>
+                                                                <div class="info-item d-flex">
+                                                                    <i class="bi bi-person-lines-fill flex-shrink-0"></i>
+                                                                    <div>
+                                                                        <h4>Contact:</h4>
+                                                                        <p>${(f.mail == undefined ? '--' : f.mail + '@iitmandi.ac.in')}</p>
+                                                                        <p>${(f.phone == undefined ? '--' : "01905-" + f.phone)}</p>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-6">
-                                                                    <div class="info-item d-flex">
-                                                                        <i class="bi bi-phone flex-shrink-0"></i>
-                                                                        <div>
-                                                                            <h4>Phone:</h4>
-                                                                            <p>${(f.phone == undefined ? '--' : "01905-" + f.phone)}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6">
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-12">
                                                                     ${f.interests == undefined || f.interests == "" ? '' :
-                                                                    `<div class="info-item d-flex">
-                                                                        <i class="bi bi-book flex-shrink-0"></i>
-                                                                        <div>
-                                                                            <h4>Research Interests:</h4>${f.interests}`}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    ${f.irins == undefined || f.irins == "" ? '' :
-                                                                    `<div class="info-item d-flex">
-                                                                        <i class="bi bi-book flex-shrink-0"></i>
-                                                                        <div>
-                                                                            <h4>IRINS Profile:</h4>${f.irins}`}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    ${f.gs == undefined || f.gs == "" ? '' :
-                                                                    `<div class="info-item d-flex">
-                                                                        <i class="bi bi-book flex-shrink-0"></i>
-                                                                        <div>
-                                                                            <h4>Google Scholar:</h4>${f.gs}`}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    ${f.personal_page_link == undefined || f.personal_page_link == "" ? '' :
-                                                                    `<div class="info-item d-flex">
-                                                                        <i class="bi bi-book flex-shrink-0"></i>
-                                                                        <div>
-                                                                            <h4><a href=${f.personal_page_link}>Personal Page </a></h4>`}
-                                                                        </div>
+                        `<div class="info-item d-flex">
+                                                                    <i class="bi bi-book flex-shrink-0"></i>
+                                                                    <div>
+                                                                        <h4>Research Interests:</h4>${f.interests}`}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -228,9 +189,9 @@
                                             <div class="col p-4 d-flex flex-column position-static plate-child">
                                                 <strong class="d-inline-block mb-2 text-primary">
                                                     ${
-                                                        //publicationType
-                                                        ''
-                                                    }
+                                //publicationType
+                                ''
+                                }
                                                 </strong>
                                                 <h4 class="mb-1">
                                                     ${title} <br />
