@@ -38,7 +38,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
     <!-- =======================================================
   * Template Name: HeroBiz - v2.3.1
   * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
@@ -137,7 +137,7 @@
                                                                 </div>
                                                                 <div class="col-6">
                                                                     ${f.interests == undefined || f.interests == "" ? '' :
-                                                                    `<div class="info-item d-flex">
+                            `<div class="info-item d-flex">
                                                                         <i class="bi bi-book flex-shrink-0"></i>
                                                                         <div>
                                                                             <h4>Research Interests:</h4>${f.interests}`}
@@ -146,7 +146,7 @@
                                                                 </div>
                                                                 <div class="col-6">
                                                                     ${f.irins == undefined || f.irins == "" ? '' :
-                                                                    `<div class="info-item d-flex">
+                            `<div class="info-item d-flex">
                                                                         <i class="bi bi-book flex-shrink-0"></i>
                                                                         <div>
                                                                             <h4>IRINS Profile:</h4>${f.irins}`}
@@ -155,7 +155,7 @@
                                                                 </div>
                                                                 <div class="col-6">
                                                                     ${f.gs == undefined || f.gs == "" ? '' :
-                                                                    `<div class="info-item d-flex">
+                            `<div class="info-item d-flex">
                                                                         <i class="bi bi-book flex-shrink-0"></i>
                                                                         <div>
                                                                             <h4>Google Scholar:</h4>${f.gs}`}
@@ -164,7 +164,7 @@
                                                                 </div>
                                                                 <div class="col-6">
                                                                     ${f.personal_page_link == undefined || f.personal_page_link == "" ? '' :
-                                                                    `<div class="info-item d-flex">
+                            `<div class="info-item d-flex">
                                                                         <i class="bi bi-book flex-shrink-0"></i>
                                                                         <div>
                                                                             <h4><a href=${f.personal_page_link}>Personal Page </a></h4>`}
@@ -183,81 +183,83 @@
                                     <div class="row-lg-7 pub-faculty mt-30">`;
                     // Publication starts
 
-                    if (f.irins_pub.length > 0) {
-                        comp += '<p style="font-size:30px">Publications: </p>'
-                    }
+                    // if (f.irins_pub.length > 0) {
+                    //     comp += '<p style="font-size:30px">Publications: </p>'
+                    // }
 
-                    comp += '<div class="pubs">'
-                    f.irins_pub = f.irins_pub.sort((a1, a2) => {
-                        return (a1.title.length > a2.title.length) ? 1 : -1;
-                    });
-                    for (let i = 0; i < f.irins_pub.length; i++) {
-                        if (!(f.irins_pub[i].isHidden)) {
-                            publicationType = ''
-                            title = ''
-                            subtitle = ''
-                            authors = ''
-                            journal = ''
-                            DOI = ''
-                            crossrefCitations = ''
-                            scopusCitations = ''
+                    // comp += '<div class="pubs">'
+                    // f.irins_pub = f.irins_pub.sort((a1, a2) => {
+                    //     return (a1.title.length > a2.title.length) ? 1 : -1;
+                    // });
 
-                            // if (f.irins_pub[i].publicationType && f.irins_pub[i].publicationType != 'NA') { publicationType = f.irins_pub[i].publicationType }
-                            // if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { title = f.irins_pub[i].title }
-                            // if (f.irins_pub[i].authors && f.irins_pub[i].authors != 'NA') { authors = f.irins_pub[i].authors }
-                            // if (f.irins_pub[i].journal && f.irins_pub[i].journal != 'NA') { journal = f.irins_pub[i].journal }
-                            // if (f.irins_pub[i].volume && f.irins_pub[i].volume != 'NA') { journal += ', Volume ' + f.irins_pub[i].volume }
-                            // if (f.irins_pub[i].year && f.irins_pub[i].year != 'NA') { journal += ', Year ' + f.irins_pub[i].year }
-                            // if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += ', Pages ' + f.irins_pub[i].pages }
-                            // if (f.irins_pub[i].DOI && f.irins_pub[i].DOI != 'NA') { DOI = f.irins_pub[i].DOI }
-                            // if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
-                            // if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
-                            if (f.irins_pub[i].publicationType && f.irins_pub[i].publicationType != 'NA') { publicationType = f.irins_pub[i].publicationType }
-                            if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { title = f.irins_pub[i].title + " " }
-                            if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { subtitle = f.irins_pub[i].journal.toUpperCase() }
-                            if (f.irins_pub[i].authors && f.irins_pub[i].authors != 'NA') { authors = f.irins_pub[i].authors }
-                            if (f.irins_pub[i].volume && f.irins_pub[i].year != 'NA') { journal += f.irins_pub[i].year + '; ' }
-                            if (f.irins_pub[i].year && f.irins_pub[i].volume != 'NA') { journal += f.irins_pub[i].volume + ': ' }
-                            if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += f.irins_pub[i].pages }
-                            if (f.irins_pub[i].DOI && f.irins_pub[i].DOI != 'NA') { DOI = f.irins_pub[i].DOI }
-                            if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
-                            if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
+                    // console.log(pubs['Article']);
+                    // for (let i = 0; i < f.irins_pub.length; i++) {
+                    //     if (!(f.irins_pub[i].isHidden)) {
+                    //         publicationType = ''
+                    //         title = ''
+                    //         subtitle = ''
+                    //         authors = ''
+                    //         journal = ''
+                    //         DOI = ''
+                    //         crossrefCitations = ''
+                    //         scopusCitations = ''
 
-                            comp += `<div class="col-md-12 plates">
-                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                                            <div class="col p-4 d-flex flex-column position-static plate-child">
-                                                <strong class="d-inline-block mb-2 text-primary">
-                                                    ${
-                                                        //publicationType
-                                                        ''
-                                                    }
-                                                </strong>
-                                                <h4 class="mb-1">
-                                                    ${title} <br />
-                                                    <span style="font-size:15px; font-style: italic;" class="text-muted">
-                                                        ${subtitle}
-                                                </h4>
-                                                <p class="card-text mb-auto">
-                                                    ${authors}
-                                                </p>
-                                                <div class="mb-auto text-muted">
-                                                    ${journal}
-                                                </div>
-                                                <div class="mb-3 text-primary">
-                                                    ${DOI}
-                                                </div>
-                                                <div class="mb-auto">
-                                                    <div class="row">
-                                                        <div class="col-md-4 text-primary">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>`;
-                        }
-                    }
-                    comp += `   </div>
+                    //         // if (f.irins_pub[i].publicationType && f.irins_pub[i].publicationType != 'NA') { publicationType = f.irins_pub[i].publicationType }
+                    //         // if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { title = f.irins_pub[i].title }
+                    //         // if (f.irins_pub[i].authors && f.irins_pub[i].authors != 'NA') { authors = f.irins_pub[i].authors }
+                    //         // if (f.irins_pub[i].journal && f.irins_pub[i].journal != 'NA') { journal = f.irins_pub[i].journal }
+                    //         // if (f.irins_pub[i].volume && f.irins_pub[i].volume != 'NA') { journal += ', Volume ' + f.irins_pub[i].volume }
+                    //         // if (f.irins_pub[i].year && f.irins_pub[i].year != 'NA') { journal += ', Year ' + f.irins_pub[i].year }
+                    //         // if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += ', Pages ' + f.irins_pub[i].pages }
+                    //         // if (f.irins_pub[i].DOI && f.irins_pub[i].DOI != 'NA') { DOI = f.irins_pub[i].DOI }
+                    //         // if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
+                    //         // if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
+                    //         if (f.irins_pub[i].publicationType && f.irins_pub[i].publicationType != 'NA') { publicationType = f.irins_pub[i].publicationType }
+                    //         if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { title = f.irins_pub[i].title + " " }
+                    //         if (f.irins_pub[i].title && f.irins_pub[i].title != 'NA') { subtitle = f.irins_pub[i].journal.toUpperCase() }
+                    //         if (f.irins_pub[i].authors && f.irins_pub[i].authors != 'NA') { authors = f.irins_pub[i].authors }
+                    //         if (f.irins_pub[i].volume && f.irins_pub[i].year != 'NA') { journal += f.irins_pub[i].year + '; ' }
+                    //         if (f.irins_pub[i].year && f.irins_pub[i].volume != 'NA') { journal += f.irins_pub[i].volume + ': ' }
+                    //         if (f.irins_pub[i].pages && f.irins_pub[i].pages != 'NA') { journal += f.irins_pub[i].pages }
+                    //         if (f.irins_pub[i].DOI && f.irins_pub[i].DOI != 'NA') { DOI = f.irins_pub[i].DOI }
+                    //         if (f.irins_pub[i].crossrefCitations && f.irins_pub[i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + f.irins_pub[i].crossrefCitations }
+                    //         if (f.irins_pub[i].scopusCitations && f.irins_pub[i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + f.irins_pub[i].scopusCitations }
+
+                    //         comp += `<div class="col-md-12 plates">
+                    //                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    //                         <div class="col p-4 d-flex flex-column position-static plate-child">
+                    //                             <strong class="d-inline-block mb-2 text-primary">
+                    //                                 ${
+                    //             //publicationType
+                    //             ''
+                    //             }
+                    //                             </strong>
+                    //                             <h4 class="mb-1">
+                    //                                 ${title} <br />
+                    //                                 <span style="font-size:15px; font-style: italic;" class="text-muted">
+                    //                                     ${subtitle}
+                    //                             </h4>
+                    //                             <p class="card-text mb-auto">
+                    //                                 ${authors}
+                    //                             </p>
+                    //                             <div class="mb-auto text-muted">
+                    //                                 ${journal}
+                    //                             </div>
+                    //                             <div class="mb-3 text-primary">
+                    //                                 ${DOI}
+                    //                             </div>
+                    //                             <div class="mb-auto">
+                    //                                 <div class="row">
+                    //                                     <div class="col-md-4 text-primary">
+                    //                                     </div>
+                    //                                 </div>
+                    //                             </div>
+                    //                         </div>
+                    //                     </div>
+                    //                 </div>`;
+                    //     }
+                    // }
+                    comp += `
                             </section>`;
                     $(comp).appendTo("#dedicated");
                 });

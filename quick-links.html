@@ -1,12 +1,94 @@
 <script>
+
+
     $(function () {
+
         const urlParams = new URLSearchParams(window.location.search);
         const idx = urlParams.get('data');
         $.getJSON('faculty.json', function (data) {
             const f = data[idx];
-            var comp = '<div>' + f.name + '</div>';
-            console.log(comp);
-            $(comp).appendTo("#test");
+            var comp1 = '<div>' + f.name + '</div>';
+            console.log(comp1);
+            $(comp1).appendTo("#test");
+            var src1 = `assets/img/team/${f.img}`
+            var comp = ``
+
+
+            // Publication starts
+
+
+            f.irins_pub = f.irins_pub.sort((a1, a2) => {
+                return (a1.title.length > a2.title.length) ? 1 : -1;
+            });
+            const pubs = _.groupBy(f.irins_pub, pub => pub.publicationType);
+
+            console.log(pubs);
+            console.log(Object.keys(pubs))
+            for (pub of Object.keys(pubs)) {
+                var comp = ''
+                for (let i = 0; i < pubs[pub].length; i++) {
+                    if (!(pubs[pub].isHidden)) {
+                        publicationType = ''
+                        title = ''
+                        subtitle = ''
+                        authors = ''
+                        journal = ''
+                        DOI = ''
+                        crossrefCitations = ''
+                        scopusCitations = ''
+                        if (pubs[pub][i].publicationType && pubs[pub][i].publicationType != 'NA') { publicationType = pubs[pub][i].publicationType }
+                        if (pubs[pub][i].title && pubs[pub][i].title != 'NA') { title = pubs[pub][i].title + " " }
+                        if (pubs[pub][i].title && pubs[pub][i].title != 'NA') { subtitle = pubs[pub][i].journal.toUpperCase() }
+                        if (pubs[pub][i].authors && pubs[pub][i].authors != 'NA') { authors = pubs[pub][i].authors }
+                        if (pubs[pub][i].volume && pubs[pub][i].year != 'NA') { journal += pubs[pub][i].year + '; ' }
+                        if (pubs[pub][i].year && pubs[pub][i].volume != 'NA') { journal += pubs[pub][i].volume + ': ' }
+                        if (pubs[pub][i].pages && pubs[pub][i].pages != 'NA') { journal += pubs[pub][i].pages }
+                        if (pubs[pub][i].DOI && pubs[pub][i].DOI != 'NA') { DOI = pubs[pub][i].DOI }
+                        if (pubs[pub][i].crossrefCitations && pubs[pub][i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + pubs[pub][i].crossrefCitations }
+                        if (pubs[pub][i].scopusCitations && pubs[pub][i].scopusCitations != 'NA') { scopusCitations = 'Scopus Citations: ' + pubs[pub][i].scopusCitations }
+
+                        comp +=
+                            `<div class="col-md-12 plates">
+                                                                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                                                        <div class="col p-4 d-flex flex-column position-static plate-child">
+                                                                            <strong class="d-inline-block mb-2 text-primary">
+                                                                                ${publicationType}
+                                                                            </strong>
+                                                                            <h4 class="mb-1">
+                                                                                ${title} <br />
+                                                                                <span style="font-size:15px; font-style: italic;" class="text-muted">
+                                                                                    ${subtitle}
+                                                                            </h4>
+                                                                            <p class="card-text mb-auto">
+                                                                                ${authors}
+                                                                            </p>
+                                                                            <div class="mb-auto text-muted">
+                                                                                ${journal}
+                                                                            </div>
+                                                                            <div class="mb-3 text-primary">
+                                                                                ${DOI}
+                                                                            </div>
+                                                                            <div class="mb-auto">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4 text-primary">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>`;
+                    }
+                }
+                if (pub == "Conference Paper") { $(comp).appendTo("#pub-conference"); }
+                if (pub == "Article" || pub == "Erratum") { $(comp).appendTo("#pub-journal"); }
+                if (pub == "Review") { $(comp).appendTo("#pub-review"); }
+                if (pub == "Book Chapter") { $(comp).appendTo("#pub-book-chapter"); }
+                if (pub == "Editorial") { $(comp).appendTo("#pub-editorial"); }
+
+            }
+
+
+
         });
     });
 </script>
@@ -124,68 +206,51 @@
                         <div data-aos="fade-up" data-aos-delay="100">
                             <ul class="nav nav-tabs row gy-2 d-flex">
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced" data-bs-toggle="tab"
-                                        data-bs-target="#publications-journal">
+                                    <a class="nav-link spaced" data-bs-toggle="tab" data-bs-target="#pub-journal">
                                         <h4>Journal</h4>
                                     </a>
                                 </li><!-- End Tab 7 Nav -->
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
                                     <a class="nav-link spaced active show" data-bs-toggle="tab"
-                                        data-bs-target="#publications-book-chapter">
+                                        data-bs-target="#pub-book-chapter">
                                         <h4>Book Chapter</h4>
                                     </a>
                                 </li><!-- End Tab 1 Nav -->
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced" data-bs-toggle="tab"
-                                        data-bs-target="#publications-review">
+                                    <a class="nav-link spaced" data-bs-toggle="tab" data-bs-target="#pub-review">
                                         <h4>Review</h4>
                                     </a>
                                 </li><!-- End Tab 8 Nav -->
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced" data-bs-toggle="tab"
-                                        data-bs-target="#publications-conference">
+                                    <a class="nav-link spaced" data-bs-toggle="tab" data-bs-target="#pub-conference">
                                         <h4>Conference</h4>
                                     </a>
                                 </li><!-- End Tab 2 Nav -->
 
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced" data-bs-toggle="tab"
-                                        data-bs-target="#publications-editorial">
+                                    <a class="nav-link spaced" data-bs-toggle="tab" data-bs-target="#pub-editorial">
                                         <h4>Editorial</h4>
                                     </a>
                                 </li>
                             </ul>
-                            <h3>Design against failure and fracture</h3>
-                            <p class="fst-italic">
-                                <b> Faculty members : </b> Dr. Himanshu Pathak Dr. Rajesh Ghosh, Dr. M. Talha, Dr.
-                                Arpan
-                                Gupta
-                            </p>
-                            <div class="research-content">
-                                <ul>
-                                    <li> <b> Vision:</b> </li>
-                                    <li>To be known worldwide for the expertise in design and fabrication of smart
-                                        structure and system.
-                                    <li> <b> Mission:</b></li>
-                                    <ul>
-                                        <li><i class="bi bi-check-circle-fill"></i>To propose new designs for active
-                                            vibration control and shape control for
-                                            smart structure.
-                                        </li>
-                                        <li><i class="bi bi-check-circle-fill"></i> To develop active-sensing based
-                                            structural heath monitoring.</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Development of smart sensors &
-                                            actuators
-                                        </li>
-                                        <li><i class="bi bi-check-circle-fill"></i> To develop piezoelectric and
-                                            tribolelectric energy harvesters </li>
-                                        <li><i class="bi bi-check-circle-fill"></i> To impart education to produce
-                                            professionals capable of leading efforts
-                                            towards innovative
-                                            product </li>
-                                    </ul>
-                                </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="pub-journal">
+                                </div>
+
+                                <div class="tab-pane" id="pub-book-chapter">
+                                </div>
+
+                                <div class="tab-pane" id="pub-review">
+                                </div>
+
+                                <div class="tab-pane" id="pub-conference">
+                                </div>
+
+                                <div class="tab-pane" id="pub-editorial">
+                                </div>
                             </div>
+
                         </div>
                     </div><!-- End Tab Content 2 -->
 
