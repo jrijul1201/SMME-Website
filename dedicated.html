@@ -98,14 +98,14 @@
                                             <div class="info">
                                                 <div class="row d-flex justify-content-center">
                                                     <div class="col d-flex ">
-                                                        <div class="about-img" style='width: 100%; height: 100%;'>
+                                                        <div class="about-img" style='width: 100%; height: 100%; margin-right: 60px;'>
                                                             <img src=${src1} style='width: 100%; height: 100%;' alt=''></img>
                                                         </div>
                                                     </div>
                                                     <div class="col d-flex justify-content-center align-items-center ">
                                                         <div class="row ">
-                                                            <h3 class="text-center"> ${(f.name == undefined ? '--' : f.name)}</h3>
-                                                            <p class="text-center">${(f.post == undefined ? '--' : f.post)}<br>
+                                                            <h3> ${(f.name == undefined ? '--' : f.name)}</h3>
+                                                            <p>${(f.post == undefined ? '--' : f.post)}<br>
                                                             </p>
                                                             <div class=" col-lg-6 col-md-12">
                                                                 <div class="info-item d-flex">
@@ -125,11 +125,11 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-6 col-md-12">
-                                                                    ${f.interests == undefined || f.interests == "" ? '' :
+                                                                    ${f.speciality == undefined || f.speciality == "" ? '' :
                         `<div class="info-item d-flex">
                                                                     <i class="bi bi-book flex-shrink-0"></i>
                                                                     <div>
-                                                                        <h4>Research Interests:</h4>${f.interests}`}
+                                                                        <h4>Specialization:</h4>${f.speciality}`}
                                                                     </div>
                                                                 </div>
                                                             </div>
