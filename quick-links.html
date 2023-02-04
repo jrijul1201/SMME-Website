@@ -1,8 +1,5 @@
 <script>
-
-
     $(function () {
-
         const urlParams = new URLSearchParams(window.location.search);
         const idx = urlParams.get('data');
         $.getJSON('faculty.json', function (data) {
@@ -49,25 +46,25 @@
 
                         comp +=
                             `<div class="col-md-12 plates">
-                                                                    <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
-                                                                        <div class="col d-flex flex-column position-static plate-child">
-                                                                            <h4 class="mb-1">
-                                                                                ${title} <br />
-                                                                                <span style="font-size:15px; font-style: italic;" class="text-muted">
-                                                                                    ${subtitle}
-                                                                            </h4>
-                                                                            <p class="card-text mb-auto">
-                                                                                ${authors}
-                                                                            </p>
-                                                                            <div class="mb-auto text-muted">
-                                                                                ${journal}
-                                                                            </div>
-                                                                            <div class="text-primary">
-                                                                                <a href=${`https://doi.org/${DOI}`} target="_blank">${DOI}</a>
-                                                                            </div>
-                                                                        </div>
+                                                            <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
+                                                                <div class="col d-flex flex-column position-static plate-child">
+                                                                    <h4 class="mb-1">
+                                                                        ${title} <br />
+                                                                        <span style="font-size:15px; font-style: italic;" class="text-muted">
+                                                                            ${subtitle}
+                                                                    </h4>
+                                                                    <p class="card-text mb-auto">
+                                                                        ${authors}
+                                                                    </p>
+                                                                    <div class="mb-auto text-muted">
+                                                                        ${journal}
                                                                     </div>
-                                                                </div>`;
+                                                                    <div class="text-primary">
+                                                                        <a href=${`https://doi.org/${DOI}`} target="_blank">${DOI}</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>`;
                     }
                 }
                 if (pub == "Conference Paper") { $(comp).appendTo("#pub-conference"); }
@@ -77,11 +74,39 @@
                 if (pub == "Editorial") { $(comp).appendTo("#pub-editorial"); }
 
             }
-
-
-
         });
     });
+    $(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const idx = urlParams.get('data');
+        $.getJSON('faculty.json', function (data) {
+            const f = data[idx];
+            var eduData = "";
+            for (let i = 0; i < f.education.length; i++) {
+                let edu = f.education[i];
+                eduData += `<div class="col-md-12 plates">
+                        <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
+                            <div class="col d-flex flex-column position-static plate-child">
+                                <strong class="d-inline-block mb-2 text-primary">
+                                    ${edu.degree}
+                                </strong>
+                                <h4 class="mb-1">
+                                    ${title} <br />
+                                </h4>
+                                <div class="mb-auto text-muted">
+                                    ${edu.otherInfo}
+                                </div>
+                                <div class="text-primary">
+                                    <a href=${`https://doi.org/${DOI}`} target="_blank">${DOI}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+            }
+            $(eduData).appendTo("#education-data");
+        });
+    });
+
 </script>
 <!-- ======= Quick Link Section ======= -->
 <section id="features" class="quick-links">
@@ -153,42 +178,8 @@
 
                     <div class="tab-pane" id="education">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Smart Structure & System:</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr. Rajeev Kumar, Dr. Vishal S. Chauhan, Dr. Rahul Vaish,
-                                    Dr
-                                    Subhamoy Sen
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>To be known worldwide for the expertise in design and fabrication of smart
-                                            structure and system.
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> To propose new designs for
-                                                active
-                                                vibration control and shape control for
-                                                smart structure.
-                                            </li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To develop active-sensing based
-                                                structural heath monitoring.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of smart sensors &
-                                                actuators
-                                            </li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To develop piezoelectric and
-                                                tribolelectric energy harvesters </li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To impart education to produce
-                                                professionals capable of leading efforts
-                                                towards innovative
-                                                product </li>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-1.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="education-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 1 -->
@@ -197,13 +188,13 @@
                         <div data-aos="fade-up" data-aos-delay="100">
                             <ul class="nav nav-tabs row gy-2 d-flex">
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced active show" data-bs-toggle="tab" data-bs-target="#pub-journal">
+                                    <a class="nav-link spaced active show" data-bs-toggle="tab"
+                                        data-bs-target="#pub-journal">
                                         <h4>Journal</h4>
                                     </a>
                                 </li><!-- End Tab 7 Nav -->
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced" data-bs-toggle="tab"
-                                        data-bs-target="#pub-book-chapter">
+                                    <a class="nav-link spaced" data-bs-toggle="tab" data-bs-target="#pub-book-chapter">
                                         <h4>Book Chapter</h4>
                                     </a>
                                 </li><!-- End Tab 1 Nav -->
