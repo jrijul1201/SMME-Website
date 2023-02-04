@@ -13,21 +13,21 @@
     "education": [
       {
         "degree": "PhD",
-        "duration": "(Dec'06 - June'13)",
+        "duration": "(2006 - 2013)",
         "place": "IIT Kanpur",
         "otherInfo": "Combustion, Performance, Emissions, Durability and Lubricating Oil Tribology Investigations of Biodiesel (Karanja) Fuelled Compression Ignition Engine",
         "isHidden": false
       },
       {
         "degree": "MTech",
-        "duration": "(July'04 - June'06)",
+        "duration": "(2004 - 2006)",
         "place": "IIT Kanpur",
         "otherInfo": "Development of Capacitive Micro Sensors for Measurement of Lubricating Oil Film Thickness between Piston Ring and Liner of an Engine Simulator",
         "isHidden": false
       },
       {
         "degree": "BTech",
-        "duration": "(July'00 - June'04)",
+        "duration": "(2000 - 2004)",
         "place": "HBTI Kanpur",
         "otherInfo": "",
         "isHidden": false
@@ -1115,14 +1115,16 @@
         "isHidden": false
       },
       {
-        "degree": "MTech in Mechanical Engineering",
+        "degree": "MTech",
+        "in": "Mechanical Engineering",
         "duration": "",
         "place": "IIT Kanpur",
         "otherInfo": "",
         "isHidden": false
       },
       {
-        "degree": "BTech in Mechanical Engineering",
+        "degree": "BTech",
+        "in": "Mechanical Engineering",
         "duration": "",
         "place": "IIT Kanpur",
         "otherInfo": "",
@@ -1160,7 +1162,8 @@
         "isHidden": false
       },
       {
-        "degree": "BTech in Mechanical Engineering",
+        "degree": "BTech",
+        "in": "Mechanical Engineering",
         "duration": "",
         "place": "IIT Delhi",
         "otherInfo": "",
@@ -1761,7 +1764,7 @@
       {
         "degree": "M.S.",
         "duration": "(2008-2010)",
-        "place": "ETH ZÃ¼rich, Switzerland",
+        "place": "ETH Zürich, Switzerland",
         "otherInfo": "",
         "isHidden": false
       },
@@ -2156,7 +2159,8 @@
         "isHidden": false
       },
       {
-        "degree": "BTech in Mechanical Engineering",
+        "degree": "BTech",
+        "in": "Mechanical Engineering",
         "duration": "(2009)",
         "place": "Nagpur University, Nagpur",
         "otherInfo": "",
@@ -3152,7 +3156,8 @@
         "isHidden": false
       },
       {
-        "degree": "BTech in Mechanical Engineering",
+        "degree": "BTech",
+        "in": "Mechanical Engineering",
         "duration": "",
         "place": "",
         "otherInfo": "",
@@ -3394,7 +3399,8 @@
         "isHidden": false
       },
       {
-        "degree": "BTech in Mechanical Engineering",
+        "degree": "BTech",
+        "in": "Mechanical Engineering",
         "duration": "(2002)",
         "place": "",
         "otherInfo": "",
@@ -9864,14 +9870,16 @@
         "isHidden": false
       },
       {
-        "degree": "MTech in Mechanical Engineering",
+        "degree": "MTech",
+        "in": "Mechanical Engineering",
         "duration": "(2013)",
         "place": "",
         "otherInfo": "",
         "isHidden": false
       },
       {
-        "degree": "BTech in Mechanical Engineering",
+        "degree": "BTech",
+        "in": "Mechanical Engineering",
         "duration": "(2011)",
         "place": "",
         "otherInfo": "",

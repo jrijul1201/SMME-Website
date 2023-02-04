@@ -87,18 +87,29 @@
                 eduData += `<div class="col-md-12 plates">
                         <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
                             <div class="col d-flex flex-column position-static plate-child">
-                                <strong class="d-inline-block mb-2 text-primary">
-                                    ${edu.degree}
+                                <strong class="d-inline-block mb-auto text-primary">
+                                    <h4>${edu.degree}</h4>
                                 </strong>
-                                <h4 class="mb-1">
-                                    ${title} <br />
-                                </h4>
-                                <div class="mb-auto text-muted">
+                                ${edu.duration !== undefined && edu.duration !== "" ?
+                                `<div class="mb-1">
+                                    ${edu.duration.replace('(','').replace(')','').replace('-','&#8211;')}
+                                </div>`
+                                :``}
+                                ${edu.in !== undefined && edu.in !== "" ?
+                                `<div class="mb-1">
+                                    ${edu.in} <br />
+                                </div>`
+                                :``}
+                                ${edu.place !== undefined && edu.place !== "" ?
+                                `<div class="mb-1">
+                                    ${edu.place}
+                                </div>`
+                                :``}      
+                                ${edu.otherInfo !== undefined && edu.otherInfo !== "" ?
+                                `<div class="mb-auto text-muted">
                                     ${edu.otherInfo}
-                                </div>
-                                <div class="text-primary">
-                                    <a href=${`https://doi.org/${DOI}`} target="_blank">${DOI}</a>
-                                </div>
+                                </div>`
+                                :``}                           
                             </div>
                         </div>
                     </div>`;
@@ -128,13 +139,13 @@
             <div class="col-md-2">
                 <ul class="nav nav-tabs row gy-2 d-flex">
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#education">
+                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#education">
                             <h4>Education</h4>
                         </a>
                     </li><!-- End Tab 1 Nav -->
 
                     <li class="nav-item">
-                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#publications">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#publications">
                             <h4>Publications</h4>
                         </a>
                     </li><!-- End Tab 2 Nav -->
@@ -176,7 +187,7 @@
             <div class="col-md-10">
                 <div class="tab-content">
 
-                    <div class="tab-pane" id="education">
+                    <div class="tab-pane active show" id="education">
                         <div class="row gy-4">
                             <div data-aos="fade-up" data-aos-delay="100">
                                 <div id="education-data"></div>
@@ -184,7 +195,7 @@
                         </div>
                     </div><!-- End Tab Content 1 -->
 
-                    <div class="tab-pane active show" id="publications">
+                    <div class="tab-pane" id="publications">
                         <div data-aos="fade-up" data-aos-delay="100">
                             <ul class="nav nav-tabs row gy-2 d-flex">
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
