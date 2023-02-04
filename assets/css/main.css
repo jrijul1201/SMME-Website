@@ -4094,3 +4094,39 @@ section {
 .faq .accordion-button:after{
   display: none;
 }
+
+.tool-tip {
+  position: relative;
+  display: inline-block;
+}
+
+.tool-tip .tool-tip-text {
+  position: absolute;
+  visibility: hidden;
+  width: 320px;
+  background-color: black;
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 10px 10px;
+  z-index: 1000;
+  top: 150%;
+  left: 50%;
+  margin-left: -160px;
+}
+
+.tool-tip .tool-tip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1000;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tool-tip:hover .tool-tip-text {
+  visibility: visible;
+}
