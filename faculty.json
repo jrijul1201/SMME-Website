@@ -8,6 +8,7 @@
     "post": "Associate Professor (Chairperson)",
     "speciality": "Alternative Fuels, IC Engines, Emissions Control",
     "img": "add.jpg",
+    "phd": "IIT Kanpur",
     "address": "A4-209, South Campus, IIT Mandi",
     "education": [
       {
@@ -1103,6 +1104,7 @@
     "post": "Assistant Professor",
     "speciality": "RoboticsControl Systems, Mechatronics, Artificial Intelligence, Electric Vehicle",
     "img": "amitshukla.jpg",
+    "phd": "Imperial College London, United Kingdom",
     "address": "A6-11, South Campus, IIT Mandi",
     "education": [
       {
@@ -1147,6 +1149,7 @@
     "post": "Associate Professor",
     "speciality": "Acoustics, Vibration, Bio-mechanics",
     "img": "agupta.jpg",
+    "phd": "NUS Singapore",
     "address": "A11-04-35, IIT Mandi",
     "education": [
       {
@@ -1745,6 +1748,7 @@
     "post": "Assistant Professor",
     "speciality": " Solid Mechanics and Design",
     "img": "dsachan.jpg",
+    "phd": "IIT Kanpur",
     "address": "A11, 4.51, North Campus, IIT Mandi",
     "education": [
       {
@@ -1789,6 +1793,7 @@
     "post": "",
     "speciality": "",
     "img": "dhirajdube.jpg",
+    "phd": "",
     "address": "",
     "education": [
       {
@@ -1810,6 +1815,7 @@
     "post": " Assistant Professor",
     "speciality": "Experimental Fluid Dynamics, Spray Atomization & Combustion, Advance Laser Diagnostics & Image Processing",
     "img": "gajendra.jpg",
+    "phd": "The University of Sydney, Australia",
     "address": "A11.02.28, North Campus, IIT Mandi",
     "education": [
       {
@@ -2016,6 +2022,7 @@
     "post": "Assistant Professor",
     "speciality": "Fluid and thermal sciences",
     "img": "gaurav.jpg",
+    "phd": "Imperial College London",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -2138,6 +2145,7 @@
     "post": "Associate Professor",
     "speciality": "Computational Solid Mechanics, Fracture Mechanics, Functionally Graded Materials",
     "img": "himanshu.jpg",
+    "phd": "IIT Patna",
     "address": "A11-04-28, IIT Mandi, North Campus",
     "education": [
       {
@@ -2414,6 +2422,7 @@
     "post": "Assistant Professor",
     "speciality": "Marine robotics, Bioinspired robots, Ocean observations and underwater intervention applications, Hydrodynamics, Dynamics and control.",
     "img": "jagadeesh.jpg",
+    "phd": "Indian Institute of Technology Indore",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -2444,6 +2453,7 @@
     "post": "Associate Professor",
     "speciality": "Drug Delivery System",
     "img": "jaspreet.jpg",
+    "phd": "Deen Dayal Upadaya University",
     "address": "A1 Building, Kamand Campus",
     "education": [
       {
@@ -2622,6 +2632,7 @@
     "post": "Associate Professor",
     "speciality": "Computational Solid Mechanics, High Technology Materials and Structures",
     "img": "talha.jpg",
+    "phd": "IIT Kharagpur",
     "address": "A4 - 306, IIT Mandi",
     "education": [
       {
@@ -2821,6 +2832,7 @@
     "post": "Associate Professor",
     "speciality": "Additive Manufacturing, Syntactic Foams",
     "img": "mrityunjay.jpg",
+    "phd": "",
     "address": "A11.04.49, IIT Mandi",
     "education": [
       {
@@ -2992,6 +3004,7 @@
     "post": "Assistant Professor",
     "speciality": "Thermal Science",
     "img": "kishan.jpg",
+    "phd": "IIT Kharagpur",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -3121,6 +3134,7 @@
     "post": "Assistant Professor",
     "speciality": "Thermal Engineering",
     "img": "parmod.jpg",
+    "phd": "",
     "address": "G1-110, IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -3208,6 +3222,7 @@
     "post": "Associate Professor",
     "speciality": "Fluid and Thermal Science",
     "img": "pradeepkumar.jpg",
+    "phd": "IIT Kanpur",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -3245,6 +3260,7 @@
     "post": "Assistant Professor",
     "speciality": "Additive manufacturing",
     "img": "prateek.jpg",
+    "phd": "Technical University of Denmark",
     "address": "A11.4.26, North campus, IIT Mandi",
     "education": [
       {
@@ -3360,6 +3376,7 @@
     "post": "Professor",
     "speciality": "Materials Engineering",
     "img": "rahul.jpg",
+    "phd": "IISc, Bangalore",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -7423,6 +7440,7 @@
     "post": "Professor",
     "speciality": "Machine Design, Vibration",
     "img": "rajeev.jpg",
+    "phd": "IIT Roorkee",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -7510,6 +7528,7 @@
     "post": "Associate Professor",
     "speciality": "Solid Mechanics, Biomechanics",
     "img": "rajesh.jpg",
+    "phd": "IIT Kharagpur",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -7877,6 +7896,7 @@
     "post": "Assistant Professor",
     "speciality": "Smart Materials and Devices for Energy Harvesting",
     "img": "ranbir.jpg",
+    "phd": "",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -7955,6 +7975,7 @@
     "post": "Associate Professor",
     "speciality": "Hybrid Materials",
     "img": "rik.jpg",
+    "phd": "IIT Guwahati",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -8084,6 +8105,7 @@
     "post": "Assistant Professor",
     "speciality": "Thermal Engineering, Experimental Nanofluidics, Liquid Phase Electron Microscopy",
     "img": "sarthak.jpg",
+    "phd": "",
     "address": "A11-04-57, North Campus, IIT Mandi",
     "education": [
       {
@@ -8255,6 +8277,7 @@
     "post": "Assistant Professor",
     "speciality": "Solar Energy",
     "img": "satvasheel.jpg",
+    "phd": "Monash University, Australia",
     "address": "A4 - 203, IIT Mandi",
     "education": [
       {
@@ -8573,6 +8596,7 @@
     "post": "Assistant Professor",
     "speciality": "Condensed Matter Physics and Materials Science",
     "img": "sudhir.jpg",
+    "phd": "UGC - DAE Consortium for Scientific Research, Indore, India",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -9829,6 +9853,7 @@
     "post": "Assistant Professor",
     "speciality": "Manufacturing Engineering",
     "img": "sunnyzafar.jpg",
+    "phd": "Indian Institute of Technology Roorkee",
     "address": "A11.5.13, IIT Mandi",
     "education": [
       {
@@ -10700,6 +10725,7 @@
     "post": "Assistant Professor",
     "speciality": "Materials and Manufacturing",
     "img": "swati.jpg",
+    "phd": "University of California, Irvine",
     "address": "A8-F9, IIT Mandi",
     "education": [
       {
@@ -11074,6 +11100,7 @@
     "post": "Associate Professor",
     "speciality": "Mechanical Engineering",
     "img": "vsc.jpg",
+    "phd": "BIT Mesra Ranchi",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
@@ -11777,6 +11804,7 @@
     "post": "Associate Professor",
     "speciality": "Materials Engineering",
     "img": "viswa.jpg",
+    "phd": "Indian Institute of Science",
     "address": "A1 Building, Kamand Campus",
     "education": [
       {
@@ -12298,6 +12326,7 @@
     "post": "Emeritus Professor",
     "speciality": "Vibration, Noise,Tribology and Computer Aided Design",
     "img": "satish.jpg",
+    "phd": "IIT Roorkee",
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
