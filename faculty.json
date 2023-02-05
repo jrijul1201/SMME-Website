@@ -12,23 +12,29 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "(Dec'06 - June'13)",
+        "specialization": "",
+        "start_year": "2006",
+        "end_year": "2013",
         "place": "IIT Kanpur",
-        "thesisTitle": "Combustion, Performance, Emissions, Durability and Lubricating Oil Tribology Investigations of Biodiesel (Karanja) Fuelled Compression Ignition Engine",
+        "other_info": "Combustion, Performance, Emissions, Durability and Lubricating Oil Tribology Investigations of Biodiesel (Karanja) Fuelled Compression Ignition Engine",
         "isHidden": false
       },
       {
         "degree": "M.Tech.",
-        "duration": "(July'04 - June'06)",
+        "specialization": "",
+        "start_year": "2004",
+        "end_year": "2006",
         "place": "IIT Kanpur",
-        "thesisTitle": "Development of Capacitive Micro Sensors for Measurement of Lubricating Oil Film Thickness between Piston Ring and Liner of an Engine Simulator",
+        "other_info": "Development of Capacitive Micro Sensors for Measurement of Lubricating Oil Film Thickness between Piston Ring and Liner of an Engine Simulator",
         "isHidden": false
       },
       {
         "degree": "B.Tech.",
-        "duration": "(July'00 - June'04)",
+        "specialization": "",
+        "start_year": "2000",
+        "end_year": "2004",
         "place": "HBTI Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -1107,23 +1113,29 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "Imperial College London, United Kingdom",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M.Tech. in Mechanical Engineering",
-        "duration": "",
+        "degree": "M.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "",
         "place": "IIT Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. in Mechanical Engineering",
-        "duration": "",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "",
         "place": "IIT Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -1151,16 +1163,20 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "National University of Singapore",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. in Mechanical Engineering",
-        "duration": "",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "",
         "place": "IIT Delhi",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -1749,23 +1765,29 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "(2014-2022)",
+        "specialization": "",
+        "start_year": "2014",
+        "end_year": "2022",
         "place": "IIT Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
         "degree": "M.S.",
-        "duration": "(2008-2010)",
+        "specialization": "",
+        "start_year": "2008",
+        "end_year": "2010",
         "place": "ETH ZÃ¼rich, Switzerland",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech",
-        "duration": "(2002-2006)",
+        "degree": "B.Tech.",
+        "specialization": "",
+        "start_year": "2002",
+        "end_year": "2006",
         "place": "IIT Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -1793,9 +1815,11 @@
     "education": [
       {
         "degree": "",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -1814,16 +1838,20 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "(2020)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2020",
         "place": "The University of Sydney, Australia ",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
         "degree": "M.Tech.",
-        "duration": "(2012)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2012",
         "place": "IIT Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -2019,17 +2047,21 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "PhD & the diploma of Imperial College (DIC)",
-        "duration": "(2012-2016)",
+        "degree": "Ph.D.",
+        "specialization": "",
+        "start_year": "2012",
+        "end_year": "2016",
         "place": "Imperial College London",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "BTech - MTech (dual) degree",
-        "duration": "(2002-2007)",
+        "degree": "B.Tech. - M.Tech. (Dual)",
+        "specialization": "",
+        "start_year": "2002",
+        "end_year": "2007",
         "place": "IIT Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -2141,17 +2173,21 @@
     "address": "A11-04-28, IIT Mandi, North Campus",
     "education": [
       {
-        "degree": "Ph.D. in Mechanical Engineering",
-        "duration": "(2015)",
+        "degree": "Ph.D.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2015",
         "place": "IIT Patna",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. in Mechanical Engineering",
-        "duration": "(2009)",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2009",
         "place": "Nagpur University, Nagpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -2418,9 +2454,11 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "IIT Indore",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -2447,17 +2485,21 @@
     "address": "A1 Building, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D. (Chemistry)",
-        "duration": "",
+        "degree": "Ph.D.",
+        "specialization": "Chemistry",
+        "start_year": "",
+        "end_year": "",
         "place": "Deen Dayal Upadaya University.",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M. Sc. (Polymer Chemistry)",
-        "duration": "",
+        "degree": "M.Sc.",
+        "specialization": "Polymer Chemistry",
+        "start_year": "",
+        "end_year": "",
         "place": "North Maharashtra University, Jalgoan Maharashtra",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -2625,24 +2667,30 @@
     "address": "A4 - 306, IIT Mandi",
     "education": [
       {
-        "degree": "PhD in Aerospace Engineering",
-        "duration": "(2012)",
+        "degree": "Ph.D.",
+        "specialization": "Aerospace Engineering",
+        "start_year": "",
+        "end_year": "2012",
         "place": "IIT Kharagpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "Masters in Mechanical Engineering, (Machine Design)",
-        "duration": "(2006)",
+        "degree": "M.Tech.",
+        "specialization": "Mechanical Engineering, (Machine Design)",
+        "start_year": "",
+        "end_year": "2006",
         "place": "AMU, Aligarh",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "Bachelors in Mechanical Engineering",
-        "duration": "(2003)",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2003",
         "place": "AMU, Aligarh",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -2825,9 +2873,11 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "NITK Surathkal",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -2996,9 +3046,11 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "IIT Kharagpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -3124,24 +3176,30 @@
     "address": "G1-110, IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D. in Mechanical Engineering",
-        "duration": "",
+        "degree": "Ph.D.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M.E, in Thermal Engineering",
-        "duration": "",
+        "degree": "M.E.",
+        "specialization": "Thermal Engineering",
+        "start_year": "",
+        "end_year": "",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. in Mechanical Engineering",
-        "duration": "",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -3212,16 +3270,20 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "(2009)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2009",
         "place": "IIT Kanpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
         "degree": "M.Tech.",
-        "duration": "(2003)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2003",
         "place": "Motilal Nehru National Institute of Technology, Allahabad",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -3248,24 +3310,30 @@
     "address": "A11.4.26, North campus, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D. (Manufacturing)",
-        "duration": "(2015-2019)",
+        "degree": "Ph.D.",
+        "specialization": "Manufacturing",
+        "start_year": "2015",
+        "end_year": "2019",
         "place": "Technical University of Denmark",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M.Tech. (Industrial Tribology and Maintenance Engineering)",
-        "duration": "(2013-2015)",
+        "degree": "M.Tech.",
+        "specialization": "Industrial Tribology and Maintenance Engineering",
+        "start_year": "2013",
+        "end_year": "2015",
         "place": "IIT Delhi",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. (Mechanical Engineering)",
-        "duration": "(2008-2012)",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "2008",
+        "end_year": "2012",
         "place": "PDPM Indian Institute of Information Technology, Design & Manufacturing Jabalpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -3363,24 +3431,30 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph. D (Engg.)",
-        "duration": "",
+        "degree": "Ph.D.",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "IISc Bangalore",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M.Tech. Materials Science",
-        "duration": "",
+        "degree": "M.Tech.",
+        "specialization": "Materials Science",
+        "start_year": "",
+        "end_year": "",
         "place": "MNNIT, Allahabad",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. in Mechanical Engineering",
-        "duration": "(2002)",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2002",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -7426,24 +7500,30 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D. (Machine Design)",
-        "duration": "",
+        "degree": "Ph.D.",
+        "specialization": "Machine Design",
+        "start_year": "",
+        "end_year": "",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M.Tech. (Computer Aided Design)",
-        "duration": "",
+        "degree": "M.Tech.",
+        "specialization": "Computer Aided Design",
+        "start_year": "",
+        "end_year": "",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. (Mechanical Engineering)",
-        "duration": "",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -7513,38 +7593,48 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D. (Mechanical Engineering)",
-        "duration": "(2013)",
+        "degree": "Ph.D.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2013",
         "place": "IIT Kharagpur",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "Masters (Applied Mechanics, Department of Mechanical Engineering)",
-        "duration": "(2009)",
+        "degree": "Masters",
+        "specialization": "Applied Mechanics, Department of Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2009",
         "place": "Jadavpur University",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. (Mechanical Engineering)",
-        "duration": "(2007)",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2007",
         "place": "Kalyani Government Engineering College",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
         "degree": "Visiting Researcher",
-        "duration": "(June-August 2011)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2011",
         "place": "University of Southampton, England, UK",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
         "degree": "Visiting Researcher",
-        "duration": "(June-September 2010)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2010",
         "place": "University of Southampton, England, UK",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -7881,9 +7971,11 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "Politecnico di Milano, Italy",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -7958,24 +8050,30 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D. (Chemistry)",
-        "duration": "(2009)",
+        "degree": "Ph.D.",
+        "specialization": "Chemistry",
+        "start_year": "",
+        "end_year": "2009",
         "place": "IIT Guwahati",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
         "degree": "M.Sc.",
-        "duration": "(2004)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2004",
         "place": "Visva Bharati University.",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
         "degree": "B.Sc.",
-        "duration": "(2002)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2002",
         "place": "The University of Burdwan",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -8088,9 +8186,11 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "Kyushu University, Japan",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -8259,30 +8359,38 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "(2013)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2013",
         "place": "Monash University, Australia",
-        "thesisTitle": "Advancing the performance of photocathode dye-sensitized solar cells for their application in tandem solar cells. under <b> Prof. Udo Bach and Prof. Leone  Spiccia</b>",
+        "other_info": "Advancing the performance of photocathode dye-sensitized solar cells for their application in tandem solar cells. under <b> Prof. Udo Bach and Prof. Leone  Spiccia</b>",
         "isHidden": false
       },
       {
         "degree": "<b>Stanford Ignite:</b> Stanford Institute for Entrepreneurship",
-        "duration": "(2011)",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "2011",
         "place": "Stanford Business School, Stanford University, USA",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "Master of Mechanical Engineering (Solar Energy)",
-        "duration": "(2005)",
+        "degree": "Masters",
+        "specialization": "Mechanical Engineering (Solar Energy)",
+        "start_year": "",
+        "end_year": "2005",
         "place": "Dalarna University, BorlÃ¤nge, Sweden.",
-        "thesisTitle": "thesis @ EPFL (Supervisor: Prof. Michael GrÃ¤tzel)",
+        "other_info": "thesis @ EPFL (Supervisor: Prof. Michael GrÃ¤tzel)",
         "isHidden": false
       },
       {
-        "degree": "Bachelor of Production Engineering",
-        "duration": "(2003)",
+        "degree": "Bachelors",
+        "specialization": "Production Engineering",
+        "start_year": "",
+        "end_year": "2003",
         "place": "Shivaji University, Kolhapur, India",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -8576,17 +8684,21 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.(Physics)",
-        "duration": "(2007)",
+        "degree": "Ph.D.",
+        "specialization": "Physics",
+        "start_year": "",
+        "end_year": "2007",
         "place": "UGC - DAE Consortium for Scientific Research, Indore, India",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M. Sc. (Physics)",
-        "duration": "(2002)",
+        "degree": "M.Sc.",
+        "specialization": "Physics",
+        "start_year": "",
+        "end_year": "2002",
         "place": "School of Physical Sciences, Jawaharlal Nehru University, New Delhi",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -9832,24 +9944,30 @@
     "address": "A11.5.13, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D. (Manufacturing Engineering)",
-        "duration": "(2016)",
+        "degree": "Ph.D.",
+        "specialization": "Manufacturing Engineering",
+        "start_year": "",
+        "end_year": "2016",
         "place": "IIT Roorkee",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M.Tech. in Mechanical Engineering",
-        "duration": "(2013)",
+        "degree": "M.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2013",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.Tech. in Mechanical Engineering",
-        "duration": "(2011)",
+        "degree": "B.Tech.",
+        "specialization": "Mechanical Engineering",
+        "start_year": "",
+        "end_year": "2011",
         "place": "",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -10703,17 +10821,39 @@
     "address": "A8-F9, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D/ M.S. Materials and Manufacturing Technology",
-        "duration": "",
+        "degree": "Ph.D.",
+        "specialization": "Materials and Manufacturing Technology",
+        "start_year": "",
+        "end_year": "",
         "place": "University of California, Irvine, CA, USA",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B.E. (Hons) Chemical and M.Sc. (Hons) Chemistry",
-        "duration": "",
+        "degree": "M.S.",
+        "specialization": "Materials and Manufacturing Technology",
+        "start_year": "",
+        "end_year": "",
+        "place": "University of California, Irvine, CA, USA",
+        "other_info": "",
+        "isHidden": false
+      },
+      {
+        "degree": "M.Sc.",
+        "specialization": "Chemistry",
+        "start_year": "",
+        "end_year": "",
         "place": "BITS, Pilani, Rajasthan, India",
-        "thesisTitle": "",
+        "other_info": "",
+        "isHidden": false
+      },
+      {
+        "degree": "B.E.",
+        "specialization": "Chemical",
+        "start_year": "",
+        "end_year": "",
+        "place": "BITS, Pilani, Rajasthan, India",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -11077,10 +11217,12 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D",
-        "duration": "",
+        "degree": "Ph.D.",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "BIT Mesra, Ranchi",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -11781,23 +11923,29 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "Indian Institute of Science, India.",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "M. Sc. Materials Science",
-        "duration": "",
+        "degree": "M.Sc.",
+        "specialization": "Materials Science",
+        "start_year": "",
+        "end_year": "",
         "place": "Anna University, India",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       },
       {
-        "degree": "B. Sc. Physics",
-        "duration": "",
+        "degree": "B.Sc.",
+        "specialization": "Physics",
+        "start_year": "",
+        "end_year": "",
         "place": "Madras University, India",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
@@ -12302,9 +12450,11 @@
     "education": [
       {
         "degree": "Ph.D.",
-        "duration": "",
+        "specialization": "",
+        "start_year": "",
+        "end_year": "",
         "place": "IIT Roorkee",
-        "thesisTitle": "",
+        "other_info": "",
         "isHidden": false
       }
     ],
