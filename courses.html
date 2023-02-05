@@ -78,7 +78,9 @@
                     <h2>List of Courses</h2>
                 </div>
                 <p style="width: 80%; margin: auto;">
-                    Following is the list of all courses offered in the School of Mechanical and Materials Engineering. You may get a more detailed information about a particular course by clicking on the corresponding row.
+                    Following is the list of all courses offered in the School of Mechanical and Materials Engineering.
+                    You may get a more detailed information about a particular course by clicking on the corresponding
+                    row.
                 </p>
                 <div class="tab-content">
 
@@ -92,20 +94,57 @@
                                                 <!-- <th>S. No.</th> -->
                                                 <th style="text-align:left">Course Code</th>
                                                 <th style="text-align:left">Course Name</th>
-                                                <th style="text-align:right">Credit Distribution</th>
+                                                <th style="text-align:right">
+                                                    <div class="tool-tip"><i class="bi bi-info-circle-fill"></i>
+                                                        <span class="tool-tip-text">
+                                                            <p style="font-size: 12px;">L-T-P-C =>
+                                                                <br>
+                                                                Lecture – Tutorial – Practicum/Practicals – Credits
+
+                                                            </p>
+                                                            <p style="font-size: 12px;">
+                                                                Credit structure of each course is given in L-T-P-C form
+                                                                (e.g. 2–1–0–3). The
+                                                                numbers corresponding to L, T and P denote the contact
+                                                                hours per week for
+                                                                Lecture, Tutorial and Practicum/Practical respectively,
+                                                                and that of C denotes
+                                                                the total number of credits for that course in a
+                                                                semester.
+                                                            </p>
+                                                        </span>
+                                                    </div> Credit Distribution
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody id="tbody1">
                                             <script>
+
                                                 $(function () {
                                                     $.getJSON('course.json', function (data) {
                                                         $.each(data, function (i, f) {
-                                                            var row = '<tr>' +
-                                                                // '<td>' + parseInt(i+1) + '</th>' +
-                                                                '<td>' + f.code + '</th>' +
+                                                            // var course = `https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf`
+                                                            // $.get(course).done(function () {
+                                                            //     concole.log("success");
+                                                            // }).fail(function () {
+                                                            //     console.log("failed.");
+                                                            // });
+                                                            var row =
+                                                                // `<a href='https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf' class='fill-div' target ='_blank'>` +
+                                                                '<tr>' +
+                                                                // '<td>' + parseInt(i+1) + '</th>' + 
+                                                                '<td>' +
+                                                                f.code
+                                                                + '</th>' +
                                                                 '<td>' + f.name + '</th>' +
                                                                 '<td style="text-align:right">' + f.credit + '</th>' +
                                                                 '</tr>'
+                                                            // +
+                                                            // '</a>'
+                                                            $("tr").click(function () {
+                                                                //    window.open(`https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf `,"_blank");
+                                                                window.location = `https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf`, target = "_blank";
+                                                            });
                                                             $(row).appendTo("#tbody1");
                                                         })
                                                     })

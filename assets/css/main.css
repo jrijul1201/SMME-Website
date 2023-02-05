@@ -20,6 +20,8 @@ a {
   text-decoration: none;
 }
 
+
+
 a:hover {
   color: var(--color-links-hover);
   text-decoration: none;
@@ -95,6 +97,7 @@ h6 {
   /* border-bottom: 1px solid black;  */
   /* border-top: 1px solid black;  */
   padding: 5px 15px;
+  font-size: 18px;
 }
 
 .table-css tr:nth-child(even) {
@@ -102,6 +105,10 @@ h6 {
   background-color: #d5d5d5;
   background-color: #d5d5d5;
 }
+/* .table-css tr{
+  padding: 15px;
+  margin-bottom: 20px; 
+} */
 
 
 @keyframes animate-preloader {
@@ -1599,7 +1606,7 @@ section {
 
 .chairperson-message2 .container {
   padding: 80px;
-  background: var(--color-primary);
+  background: #f58754;
   border-radius: 15px;
 }
 
@@ -1980,7 +1987,7 @@ section {
   padding: 15px 10px;
   color: var(--color-secondary);
   box-shadow: 3px 3px 15px rgba(var(--color-secondary-rgb), 0.15);
-  border-radius: 0;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2009,11 +2016,20 @@ section {
 
 .quick-links .nav-link.active {
   transition: 0.3s;
-  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  background: var(--color-primary);
   border-color: var(--color-primary);
 }
 
+.quick-links .nav-link:hover {
+  background: var(--color-primary);
+  /* background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6)); */
+}
+
 .quick-links .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.quick-links .nav-link:hover h4 {
   color: var(--color-white);
 }
 
@@ -2060,6 +2076,102 @@ section {
 }
 
 .quick-links .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+.pg-overview .nav-tabs {
+  border: 0;
+}
+
+.pg-overview .nav-item {
+  padding: 5;
+}
+
+.pg-overview .nav-link {
+  border: 0;
+  padding: 15px 10px;
+  color: var(--color-secondary);
+  box-shadow: 3px 3px 15px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.pg-overview .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.pg-overview .nav-link h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.pg-overview .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.pg-overview .nav-link.active {
+  transition: 0.3s;
+  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  border-color: var(--color-primary);
+}
+
+.pg-overview .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.pg-overview .nav-link.active i {
+  color: var(--color-white) !important;
+}
+
+.pg-overview .nav-link.spaced {
+  margin: 0px 10px;
+}
+
+.pg-overview .nav-link.spaced h4 {
+  font-size: 16px;
+}
+
+.pg-overview .tab-content {
+  margin-top: 0px;
+}
+
+.pg-overview .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.pg-overview .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.pg-overview .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pg-overview .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.pg-overview .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.pg-overview .tab-pane p:last-child {
   margin-bottom: 0;
 }
 
@@ -2374,6 +2486,11 @@ section {
   color: var(--color-white);
 }
 
+.faq-overview{
+    padding: 20px 0;
+    overflow: hidden;
+
+}
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
@@ -4084,4 +4201,40 @@ section {
 
 .faq .accordion-button:after{
   display: none;
+}
+
+.tool-tip {
+  position: relative;
+  display: inline-block;
+}
+
+.tool-tip .tool-tip-text {
+  position: absolute;
+  visibility: hidden;
+  width: 320px;
+  background-color: black;
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 10px 10px;
+  z-index: 1000;
+  top: 150%;
+  left: 50%;
+  margin-left: -160px;
+}
+
+.tool-tip .tool-tip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1000;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tool-tip:hover .tool-tip-text {
+  visibility: visible;
 }

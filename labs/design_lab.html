@@ -1,360 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8" />
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="istp,iit mandi, iit projects, iit himachal" />
-	<meta name="author" content="Gopal Krishan Aggarwal and Naman Gupta" />
-	<meta name="description" content="Interactive Socio-Technical Practicum at IIT Mandi">
-	<link rel="shortcut icon" href="./favicon.ico">
-	<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="istp,iit mandi, iit projects, iit himachal" />
+    <meta name="author" content="Gopal Krishan Aggarwal and Naman Gupta" />
+    <meta name="description" content="Interactive Socio-Technical Practicum at IIT Mandi">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 
-	<title>School of Engineering | IIT Mandi</title>
+    <title>School of Engineering | IIT Mandi</title>
 
-	<script src="jquery-2.1.4.min.js"></script>
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-	<style>
-		.dropdown {
-    position: relative;
-    display: inline-block;
-}
+    <script src="jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 172px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 172px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-	
-.dae_sidebar ul li {
-    list-style: none;
-    width: 100%;
-    text-align: center;
-    background: #eee;
-    margin-bottom: 10px;
-    padding: 7px;
-    border: 1px solid #ccc;
-}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-.box {
-    width: 400px;
-    height: 80px;
-    background-color: white;
-    box-shadow: 7px 7px 3px #cccccc;
-	border: 1px solid #eee; text-align:center; float:left; margin-left:120px;
-}
- h5 {
-    border-bottom: 1px solid #337ab7; color:#049a0b;
-    margin: 5px 15px 15px;
-    padding: 0 0 10px;
-    text-align: center; font-size:14px;
-} footer{ width:100%; float:left;}	
-	
-</style>
+        .dae_sidebar ul li {
+            list-style: none;
+            width: 100%;
+            text-align: center;
+            background: #eee;
+            margin-bottom: 10px;
+            padding: 7px;
+            border: 1px solid #ccc;
+        }
 
-<!-- Gallery Files -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/styles_gallery.css">
-  <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
-  
-  <script type="text/javascript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" charset="utf-8" src="js/jquery.lightbox-0.5.min.js"></script>
-	<!-- Gallery Files -->
+        .box {
+            width: 400px;
+            height: 80px;
+            background-color: white;
+            box-shadow: 7px 7px 3px #cccccc;
+            border: 1px solid #eee;
+            text-align: center;
+            float: left;
+            margin-left: 120px;
+        }
+
+        h5 {
+            border-bottom: 1px solid #337ab7;
+            color: #049a0b;
+            margin: 5px 15px 15px;
+            padding: 0 0 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer {
+            width: 100%;
+            float: left;
+        }
+    </style>
+
+    <!-- Gallery Files -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/styles_gallery.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.lightbox-0.5.min.js"></script>
+    <!-- Gallery Files -->
 </head>
 
 <body>
-	<div class="container">
-		<div class="row">
-			<!--Row for header-->
-			<div class="col-xs-4 col-sm-2">
-				<a href="../../index.php" title="IIT Mandi Home"><img src="logo.jpg" class="img-responsive" alt="logo" ></a>
-			</div>
-			<div class="col-xs-8 col-sm-7 col-sm-offset-1" align="left">	
-				<h2> School of   
-						 Engineering
-				</h2>
-			</div>	
-		</div>
-		<div class="row">
-			<!--Row for navigation bar-->
-			<div class="col-md-12">
-				<nav class="navbar">
-					<hr style="margin: 0"/>
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar" style="background-color: black"></span>
-							<span class="icon-bar" style="background-color: black"></span>
-							<span class="icon-bar" style="background-color: black"></span> 
-						</button>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav nav-justified nav-pills" style="font-weight: bold; font-size: 120%">
-        					<li class=""><a href="index.php">Home</a></li>
-        					<li class=" dropdown"><a href="#">People</a>
-								<div class="dropdown-content">
-								  <p><a href="faculty.php">Faculty </a></p>
-								  <p><a href="astaff.php">Technical Staff </a></p>
-								  <p><a href="sstaff.php">Supporting Staff </a></p>
-								  <p><a href="scholars.php">Scholars</a></p>
-								</div>
-							</li>
-        					<!--<li class=""><a href="students.php">Students</a></li>-->
-        					<li class=""><a href="program.php">Programme</a></li>
-							<li class=""><a href="research_areas.php">Research Areas</a></li>
-							<li class=""><a href="projects.php">Projects</a></li>
-							
-							<!--<li class=""><a href="courses.php">Courses</a></li>-->
-							<li class=""><a href="labs.php">Labs</a></li>
-    					</ul>
-					</div>
-					<hr style="margin: 0"/>
-				</nav>
-			</div>
-		</div>
+    <div class="container">
+        <div class="row">
+            <!--Row for header-->
+            <div class="col-xs-4 col-sm-2">
+                <a href="../../index.php" title="IIT Mandi Home"><img src="logo.jpg" class="img-responsive"
+                        alt="logo"></a>
+            </div>
+            <div class="col-xs-8 col-sm-7 col-sm-offset-1" align="left">
+                <h2> School of
+                    Engineering
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <!--Row for navigation bar-->
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <hr style="margin: 0" />
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar" style="background-color: black"></span>
+                            <span class="icon-bar" style="background-color: black"></span>
+                            <span class="icon-bar" style="background-color: black"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav nav-justified nav-pills" style="font-weight: bold; font-size: 120%">
+                            <li class=""><a href="index.php">Home</a></li>
+                            <li class=" dropdown"><a href="#">People</a>
+                                <div class="dropdown-content">
+                                    <p><a href="faculty.php">Faculty </a></p>
+                                    <p><a href="astaff.php">Technical Staff </a></p>
+                                    <p><a href="sstaff.php">Supporting Staff </a></p>
+                                    <p><a href="scholars.php">Scholars</a></p>
+                                </div>
+                            </li>
+                            <!--<li class=""><a href="students.php">Students</a></li>-->
+                            <li class=""><a href="program.php">Programme</a></li>
+                            <li class=""><a href="research_areas.php">Research Areas</a></li>
+                            <li class=""><a href="projects.php">Projects</a></li>
 
-<style>
-	
-img.img-responsive {
-    width: 400px;
-    height: auto;
-}
+                            <!--<li class=""><a href="courses.php">Courses</a></li>-->
+                            <li class=""><a href="labs.php">Labs</a></li>
+                        </ul>
+                    </div>
+                    <hr style="margin: 0" />
+                </nav>
+            </div>
+        </div>
 
-</style>
-<div class="container" style="font-size: 120%" align="justify">
-	<div class="row">
-		<div class="faculty">
-			<h2>Design Lab</h2>
-			.
-<h4>Lab intended for: </h4>UG/PG Teaching
-<h4>Academic programs to be supported:  </h4>B.Tech in Mechanical Engineering, Further, It
-is planned to start M.Tech in Mechanical Engineering with specialization in Machine
-Design. The lab will be used for this upcoming M.Tech course teaching and training
-purpose.
-<br><br>
-<h4>Brief details of lab: </h4> At present, Design Lab facilitates hands-on learning of Solid Mechanics (ME206)
-concepts to 5th semester Mechanical UG students, The lab experiments are related to
-destructive testing of materials to predict mechanical properties.
-<br>It facilitate hands-on learning of Theory of machines (ME309) concepts
-to 6th semester Mechanical UG students, The lab experiments validates the concepts
-of kinematic and dynamic theories of machine components under motion condition.
-Students can be able to validate and extend the theoretical knowledge into practical
-machine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts of
-machinery systems to UG students, The lab experiments validates the concepts of
-vibration under forced and damped condition. Students can be able to validate and
-extend the theoretical knowledge into practical machine applications.
-The structural analysis laboratory section  has been designed to facilitate the practical study of structural response of basic structural elements, namely,
-the beam, column, rigid and pin jointed frames. The experiments are partly conducted
-on laboratory scale models and partly using virtual simulation. The computational
-facility available with the lab supports Structural engineering MS & Ph.D. students as
-well<br><br>
-<h4>Faculty In-charge:  </h4><a href="http://se.iitmandi.ac.in/facprofile.php?user=vsc">Dr. Vishal S. Chauhan</a> & </h4><a href="http://se.iitmandi.ac.in/facprofile.php?user=himanshu">Dr. Himanshu Pathak (In charge) </a>
-<br><br>
-<h4>Contact Person</h4>
-Dinesh Thakur, Junior Lab Asst. <br>
-Contact No. 267241, 9418169227<br>
+        <style>
+            img.img-responsive {
+                width: 400px;
+                height: auto;
+            }
+        </style>
+        <div class="container" style="font-size: 120%" align="justify">
+            <div class="row">
+                <div class="faculty">
+                    <h2>Design Lab</h2>
+                    .
+                    <h4>Lab intended for: </h4>UG/PG Teaching
+                    <h4>Academic programs to be supported: </h4>B.Tech in Mechanical Engineering, Further, It
+                    is planned to start M.Tech in Mechanical Engineering with specialization in Machine
+                    Design. The lab will be used for this upcoming M.Tech course teaching and training
+                    purpose.
+                    <br><br>
+                    <h4>Brief details of lab: </h4> At present, Design Lab facilitates hands-on learning of Solid
+                    Mechanics (ME206)
+                    concepts to 5th semester Mechanical UG students, The lab experiments are related to
+                    destructive testing of materials to predict mechanical properties.
+                    <br>It facilitate hands-on learning of Theory of machines (ME309) concepts
+                    to 6th semester Mechanical UG students, The lab experiments validates the concepts
+                    of kinematic and dynamic theories of machine components under motion condition.
+                    Students can be able to validate and extend the theoretical knowledge into practical
+                    machine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts of
+                    machinery systems to UG students, The lab experiments validates the concepts of
+                    vibration under forced and damped condition. Students can be able to validate and
+                    extend the theoretical knowledge into practical machine applications.
+                    The structural analysis laboratory section has been designed to facilitate the practical study of
+                    structural response of basic structural elements, namely,
+                    the beam, column, rigid and pin jointed frames. The experiments are partly conducted
+                    on laboratory scale models and partly using virtual simulation. The computational
+                    facility available with the lab supports Structural engineering MS & PhD students as
+                    well<br><br>
+                    <h4>Faculty In-charge: </h4><a href="http://se.iitmandi.ac.in/facprofile.php?user=vsc">Dr. Vishal S.
+                        Chauhan</a> & </h4><a href="http://se.iitmandi.ac.in/facprofile.php?user=himanshu">Dr. Himanshu
+                        Pathak (In charge) </a>
+                    <br><br>
+                    <h4>Contact Person</h4>
+                    Dinesh Thakur, Junior Lab Asst. <br>
+                    Contact No. 267241, 9418169227<br>
 
-  <h4><a href   = "images/files/DL I  Experiments Objective.pdf" >  List of Experiments for Design Lab I (ME 311P) </a></h4><br>
-  <h4><a href   = "images/files/DL II  Experiments Objective.pdf" > List of Experiments for Design Lab II (ME 312P)</a></h4>
+                    <h4><a href="images/files/DL I  Experiments Objective.pdf"> List of Experiments for Design Lab I (ME
+                            311P) </a></h4><br>
+                    <h4><a href="images/files/DL II  Experiments Objective.pdf"> List of Experiments for Design Lab II
+                            (ME 312P)</a></h4>
 
-<h4 style="
+                    <h4 style="
     float: right;
-"><a href = "images/files/designlab_tests.pdf">User form for design lab equipment</a></h4>
-</br>
-<h4 style="
+"><a href="images/files/designlab_tests.pdf">User form for design lab equipment</a></h4>
+                    </br>
+                    <h4 style="
     float: right;
-"><a href = "https://research.iitmandi.ac.in/designlab/">Click here to  book online </a></h4>
+"><a href="https://research.iitmandi.ac.in/designlab/">Click here to book online </a></h4>
 
-<h3>List of existing facility in lab</h3>
+                    <h3>List of existing facility in lab</h3>
 
 
-<section id="main" class="wrapper">
-				<div class="inner">				
-			
-<div id="homesec"></div>
-<section id="one" class="wrapper">
-				<div class="inner">
+                    <section id="main" class="wrapper">
+                        <div class="inner">
 
-					<div class="flex flex-2">
-						
-						
-				<h4>1.	Tensometer</h4>
-				<p><img src="images/tensometer.jpg" class="img-responsive" alt="Project Title"></p>
-				 A device for evaluating various tensile properties of a material, such <a href = "https://en.wiktionary.org/wiki/Young's_modulus">Young's modulus</a>,<a href = "https://en.wiktionary.org/wiki/ultimate_tensile_strength">ultimate tensile strengt </a> and Poisson's ratio.<br><br>
- 
-				<h4>2.Rockwell Hardness Tester</h4>
-				<p><img src="images/rockwell_hardness.jpg" class="img-responsive" alt="Project Title"></p>
-				Rockwell hardness tester is used to determine the surface hardness of the materials.Provisions to apply a major load of 60kgf,100kgf,and 150kgf are available in this machine.Itdirectly calculates the rockwell hardness value upon completion of the test.			
-<br><br>
-                <h4>3. Impact Tester</h4>
-				<p><img src="images/impact_testing.jpg" class="img-responsive" alt="Project Title"></p>
-				This is used to study the toughness or energy absorbing properties of various materials under two types of impact tests i.e Izod and charpy impact tests.
-<br><br>
-                <h4>4.Simply Supported Beam setup</h4>
-				<p><img src="images/supported beam.jpg" class="img-responsive" alt="Project Title"></p>
-				A simply supported beam is hinged at two ends and the load is applied at a point between the two hinges.
- <br><br>
-			    <h4>5.Cantilever setup</h4>
-				<p><img src="images/fixed_beam.jpg" class="img-responsive" alt="Project Title"></p>
-				It is a type of cantilever beam setup.
-<br><br>				
-				 <h4>6. Compression Tester for Spring</h4>
-				<p><img src="images/compression_spring.jpg" class="img-responsive" alt="Project Title"></p>
-				This tester is used to obtain spring stiffness and their mechanical properties.
-<br><br>				
-				<h4>7. Surface Roughness Tester</h4>
-				<p><img src="images/designlab/Surface Roughness Tester.jpg" class="img-responsive" alt="Project Title"></p>
-			Roughness tester shows the measured roughness depth as well as the mean roughness value in micrometers or microns.
-<br><br>
-                <h4>8.Static UTM</h4>
-				<p><img src="images/utm.jpg" class="img-responsive" alt="Project Title"></p>
-		This machine is used to perform tensile,compression,shear and bend test.Capacity of model is 50KN
-<br><br>
-                <h4>9. Torsion Tester</h4>
-				<p><img src="images/torison_tester.jpg" class="img-responsive" alt="Project Title"></p>
-			This tester is used to obtain twisting moment-twist relationship of a specimen and to determine shear modulus G,yield stress in pure shear,experimental ultimate torque.
- <br><br>           
- 
- <h4>10. Euler Buckling Apparatus</h4>
-				<p><img src="images/euler_bulking.jpg" class="img-responsive" alt="Project Title"></p>
-			To determine the euler buckling load experimentally and compare it to the eulertheory.Also to study the effect of end conditions on the buckling load.
-<br><br>
-						<h4>11. Dynamic UTM</h4>
-				<p><img src="images/designlab/Dynamic utm.jpg" class="img-responsive" alt="Project Title"></p>
-			This test instruments cover a broad range of fatigue, dynamic, and static testing applications. These applications include high-cycle fatigue, low-cycle fatigue, thermo-mechanical fatigue, fracture mechanics, crack propagation and growth studies, fracture toughness, bi-axial, axial-torsional, multi-axial, high strain rate, quasi-static, creep, stress-relaxation, and other types of dynamic and static tests.Capacity of model is 250KN
-<br><br>
+                            <div id="homesec"></div>
+                            <section id="one" class="wrapper">
+                                <div class="inner">
 
-			<h4>12. Diffused light Polariscope</h4>
-				<p><img src="images/designlab/Diffused Research Polariscope.jpg" class="img-responsive" alt="Project Title"></p>
-			This equipment is used to view and measure the principal stress components and directions of principal stresses by the photoelastic method for the plane stress condition at any given point in a photoelastic sample.
-<br><br>
-			<h4>13. Stress Analysis on Thin Cylinder</h4>
-				<p><img src="images/stress_analysis.jpg" class="img-responsive" alt="Project Title"></p>
-			To show the linearity of strain gauges in the open end condition in a thin cylinder,to fine the hoop stress and strain relationship for the cylinder material and to fine the longitudinal and hoop strain relationship.
-<br><br>
-			<h4>14. Cam-Follower Apparatus</h4>
-				<p><img src="images/cam_follower.jpg" class="img-responsive" alt="Project Title"></p>
-			A cam follower, also known as a track follower,[1] is a specialized type of roller or needle bearing designed to follow cam lobe profiles. Cam followers come in a vast array of different configurations, however the most defining characteristic is how the cam follower mounts to its mating part; stud style cam followers use a stud while the yoke style has a hole through the middle.
-<br><br>
-			<h4>15. Universal Governor</h4>
-				<p><img src="images/universal_governor.jpg" class="img-responsive" alt="Project Title"></p>
-			A governor, or speed limiter or controller, is a device used to measure and regulate the speed of a machine, such as an engine.
-<br><br>			
-			<h4>16. Gyroscope</h4>
-				<p><img src="images/gyroscope.jpg" class="img-responsive" alt="Project Title"></p>
-			Applications of gyroscopes include inertial navigation systems, such as in the Hubble Telescope, or inside the steel hull of a submerged submarine. Due to their precision, gyroscopes are also used in gyrotheodolites to maintain direction in tunnel mining.[4] Gyroscopes can be used to construct gyrocompasses, which complement or replace magnetic compasses (in ships, aircraft and spacecraft, vehicles in general), to assist in stability (bicycles, motorcycles, and ships) or be used as part of an inertial guidance system.
-<br><br>			
-			<!--<h4>17. Kinematic Models</h4>
+                                    <div class="flex flex-2">
+
+
+                                        <h4>1. Tensometer</h4>
+                                        <p><img src="images/tensometer.jpg" class="img-responsive" alt="Project Title">
+                                        </p>
+                                        A device for evaluating various tensile properties of a material, such <a
+                                            href="https://en.wiktionary.org/wiki/Young's_modulus">Young's modulus</a>,<a
+                                            href="https://en.wiktionary.org/wiki/ultimate_tensile_strength">ultimate
+                                            tensile strengt </a> and Poisson's ratio.<br><br>
+
+                                        <h4>2.Rockwell Hardness Tester</h4>
+                                        <p><img src="images/rockwell_hardness.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        Rockwell hardness tester is used to determine the surface hardness of the
+                                        materials.Provisions to apply a major load of 60kgf,100kgf,and 150kgf are
+                                        available in this machine.Itdirectly calculates the rockwell hardness value upon
+                                        completion of the test.
+                                        <br><br>
+                                        <h4>3. Impact Tester</h4>
+                                        <p><img src="images/impact_testing.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        This is used to study the toughness or energy absorbing properties of various
+                                        materials under two types of impact tests i.e Izod and charpy impact tests.
+                                        <br><br>
+                                        <h4>4.Simply Supported Beam setup</h4>
+                                        <p><img src="images/supported beam.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        A simply supported beam is hinged at two ends and the load is applied at a point
+                                        between the two hinges.
+                                        <br><br>
+                                        <h4>5.Cantilever setup</h4>
+                                        <p><img src="images/fixed_beam.jpg" class="img-responsive" alt="Project Title">
+                                        </p>
+                                        It is a type of cantilever beam setup.
+                                        <br><br>
+                                        <h4>6. Compression Tester for Spring</h4>
+                                        <p><img src="images/compression_spring.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        This tester is used to obtain spring stiffness and their mechanical properties.
+                                        <br><br>
+                                        <h4>7. Surface Roughness Tester</h4>
+                                        <p><img src="images/designlab/Surface Roughness Tester.jpg"
+                                                class="img-responsive" alt="Project Title"></p>
+                                        Roughness tester shows the measured roughness depth as well as the mean
+                                        roughness value in micrometers or microns.
+                                        <br><br>
+                                        <h4>8.Static UTM</h4>
+                                        <p><img src="images/utm.jpg" class="img-responsive" alt="Project Title"></p>
+                                        This machine is used to perform tensile,compression,shear and bend test.Capacity
+                                        of model is 50KN
+                                        <br><br>
+                                        <h4>9. Torsion Tester</h4>
+                                        <p><img src="images/torison_tester.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        This tester is used to obtain twisting moment-twist relationship of a specimen
+                                        and to determine shear modulus G,yield stress in pure shear,experimental
+                                        ultimate torque.
+                                        <br><br>
+
+                                        <h4>10. Euler Buckling Apparatus</h4>
+                                        <p><img src="images/euler_bulking.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        To determine the euler buckling load experimentally and compare it to the
+                                        eulertheory.Also to study the effect of end conditions on the buckling load.
+                                        <br><br>
+                                        <h4>11. Dynamic UTM</h4>
+                                        <p><img src="images/designlab/Dynamic utm.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        This test instruments cover a broad range of fatigue, dynamic, and static
+                                        testing applications. These applications include high-cycle fatigue, low-cycle
+                                        fatigue, thermo-mechanical fatigue, fracture mechanics, crack propagation and
+                                        growth studies, fracture toughness, bi-axial, axial-torsional, multi-axial, high
+                                        strain rate, quasi-static, creep, stress-relaxation, and other types of dynamic
+                                        and static tests.Capacity of model is 250KN
+                                        <br><br>
+
+                                        <h4>12. Diffused light Polariscope</h4>
+                                        <p><img src="images/designlab/Diffused Research Polariscope.jpg"
+                                                class="img-responsive" alt="Project Title"></p>
+                                        This equipment is used to view and measure the principal stress components and
+                                        directions of principal stresses by the photoelastic method for the plane stress
+                                        condition at any given point in a photoelastic sample.
+                                        <br><br>
+                                        <h4>13. Stress Analysis on Thin Cylinder</h4>
+                                        <p><img src="images/stress_analysis.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        To show the linearity of strain gauges in the open end condition in a thin
+                                        cylinder,to fine the hoop stress and strain relationship for the cylinder
+                                        material and to fine the longitudinal and hoop strain relationship.
+                                        <br><br>
+                                        <h4>14. Cam-Follower Apparatus</h4>
+                                        <p><img src="images/cam_follower.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        A cam follower, also known as a track follower,[1] is a specialized type of
+                                        roller or needle bearing designed to follow cam lobe profiles. Cam followers
+                                        come in a vast array of different configurations, however the most defining
+                                        characteristic is how the cam follower mounts to its mating part; stud style cam
+                                        followers use a stud while the yoke style has a hole through the middle.
+                                        <br><br>
+                                        <h4>15. Universal Governor</h4>
+                                        <p><img src="images/universal_governor.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        A governor, or speed limiter or controller, is a device used to measure and
+                                        regulate the speed of a machine, such as an engine.
+                                        <br><br>
+                                        <h4>16. Gyroscope</h4>
+                                        <p><img src="images/gyroscope.jpg" class="img-responsive" alt="Project Title">
+                                        </p>
+                                        Applications of gyroscopes include inertial navigation systems, such as in the
+                                        Hubble Telescope, or inside the steel hull of a submerged submarine. Due to
+                                        their precision, gyroscopes are also used in gyrotheodolites to maintain
+                                        direction in tunnel mining.[4] Gyroscopes can be used to construct
+                                        gyrocompasses, which complement or replace magnetic compasses (in ships,
+                                        aircraft and spacecraft, vehicles in general), to assist in stability (bicycles,
+                                        motorcycles, and ships) or be used as part of an inertial guidance system.
+                                        <br><br>
+                                        <!--<h4>17. Kinematic Models</h4>
 				<p><img src="images/kinematic.jpg" class="img-responsive" alt="Project Title"></p>
 			These are the small models of various mechanical equipments.<br><br>-->
-			
-			<h4>18. Journal Bearing Apparatus</h4>
-				<p><img src="images/journal_bearing.jpg" class="img-responsive" alt="Project Title"></p>
-			A self-contained floor standing apparatus to fully investigate the effects of speed viscosity and load on the pressure distribution in a journal bearing.
-			<br><br>
-			<h4>19. Forces at reciprocating masses setup</h4>
 
-				<p><img src="images/force_reciprocating.jpg" class="img-responsive" alt="Project Title"></p>
-				This model  is used to determine the primary and secondary unbalanced forces of reciprocating mass<br><br>
-			
-			<h4>20. Epicyclic Gear Train</h4>
-				<p><img src="images/Epicyclic Gear Train.jpg" class="img-responsive" alt="Project Title"></p>
-			Epicyclic gearing or planetary gearing is a gear system consisting of one or more outer gears, or planet gears, revolving about a central, or sun gear. Typically, the planet gears are mounted on a movable arm or carrier, which itself may rotate relative to the sun gear. Epicyclic gearing systems also incorporate the use of an outer ring gear or annulus, which meshes with the planet gears. 
-<br><br>
-			<h4>21. Fatigue Testing Machine</h4>
-				<p><img src="images/fatigue_testing.jpg" class="img-responsive" alt="Project Title"></p>
-			Fatigue test machines use static, dynamic, and fatigue tests to evaluate the sturdiness of raw materials, components or finished products.Fatigue tests help to determine a test sample's life expectancy under actual service loads in real-world applications.
-<br><br>			
-			<h4>22. Static & dynamic Balancing</h4>
-				<p><img src="images/static_dynamic_balancing.jpg" class="img-responsive" alt="Project Title"></p>
-			This is suitable for conducting experiments on static balancing and dynamic balancing with different weights. This consists of rectangular frame of steel perfectly balance with four different blocks. A protractor scale of the disc is provided to reach exact angular position of each weight to be measured. A linear scale provided below the frame provides the measurement of each weight along the shaft. The unit is hanging from a rigid steel frame through chain for dynamic balancing and can be fixed rigidly for static balancing.specified .
-<br><br>			
-			<h4>23. Pin & Disc Wear Apparatus</h4>
-				<p><img src="images/pin_disc.jpg" class="img-responsive" alt="Project Title"></p>
-			Pin on disk wear testing is a method of characterizing the coefficient of friction,frictional force and rate of wear between two materials.This testing can simulate multiple modes of wear,includingunideirectional,bidirectional,omni directional and quasi rotational.
-<br><br>			
-			<h4>24. Slip & Creep Measurement Apparatus</h4>
-				<p><img src="images/slip_creep.jpg" class="img-responsive" alt="Project Title"></p>
-			Slip & Creep Measurement Apparatus. This apparatus is useful for measurement of power transmitted for various input power conditions with varied belt tension. Belt slip or creepalso can be measured. The apparatus consists of a variable speed motor, driving pulley and driven pulley of equal diameters.
-<br><br>			
-			<h4>25.Whirling Shaft Apparatus</h4>
-				<p><img src="images/Whirling Shaft.jpg" class="img-responsive" alt="Project Title"></p>
-			Whirling of Shaft apparatus is used to determine the whirling speed of the shaft. The  apparatus  shows how shafts vibrate transversely and ‘whirl’ at a certain rotation frequency. This helps engineers understand possible problems with long shafts and allow for them in their designs.
-The Equipment shall have the following test facility:<br>
-1) To measure co-efficient of friction between pulley material and different belt materials.<br>
-2) To measure power transmitted with varied belt tension and plotting a graph of “Tension Characteristics”.<br><br>
+                                        <h4>18. Journal Bearing Apparatus</h4>
+                                        <p><img src="images/journal_bearing.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        A self-contained floor standing apparatus to fully investigate the effects of
+                                        speed viscosity and load on the pressure distribution in a journal bearing.
+                                        <br><br>
+                                        <h4>19. Forces at reciprocating masses setup</h4>
 
-			
-			<h4>26.Universal vibration apparatus</h34>
-				<p><img src="images/designlab/Universal Vibration Apparatus.jpg" class="img-responsive" alt="Project Title"></p>
-			This machine is used to<br>
-1) Equivalent spring mass system to study the undamped free vibration.<br>
-2) Equivalent spring mass system to study forced calibration.<br><br>
+                                        <p><img src="images/force_reciprocating.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        This model is used to determine the primary and secondary unbalanced forces of
+                                        reciprocating mass<br><br>
 
-			<h4>27.Vibration Fundamental Trainer</h4>
-				<p><img src="images/vibration_fundamental.jpg" class="img-responsive" alt="Project Title"></p>
-		The VFT is designed to perform both free and forced vibration experiments with and without damping. The pendulum vibration module includes a rod on which one or more mass can be attached. This basic module is designed to teach the fundamental principles such as frequency and period, and the concept of equivalent mass.
-		<br><br>	
-			<h4>28. Vibration Shaker</h4>
-				<p><img src="images/vibration_shaker.jpg" class="img-responsive" alt="Project Title"></p>
-			Shakers are used to determine product or component performance under vibration or shock loads, detect flaws through modal analysis, verify product designs.
-		<br><br>	
-			<h4>29.Piezo Actuation Unit</h4>
-				<p><img src="images/peizo_actuation.jpg" class="img-responsive" alt="Project Title"></p>
-			A piezo actuator can beused to control hydraulic valves, act as a small-volume pump or special-purpose motor, and in other applications requiring movement or force
-		<br><br>	
-	
-			
-			
-			
-			
-			
-			
-			
-			
-			<!--<h4>The members of the School are involved in the following areas of research:</h4><br>
+                                        <h4>20. Epicyclic Gear Train</h4>
+                                        <p><img src="images/Epicyclic Gear Train.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        Epicyclic gearing or planetary gearing is a gear system consisting of one or
+                                        more outer gears, or planet gears, revolving about a central, or sun gear.
+                                        Typically, the planet gears are mounted on a movable arm or carrier, which
+                                        itself may rotate relative to the sun gear. Epicyclic gearing systems also
+                                        incorporate the use of an outer ring gear or annulus, which meshes with the
+                                        planet gears.
+                                        <br><br>
+                                        <h4>21. Fatigue Testing Machine</h4>
+                                        <p><img src="images/fatigue_testing.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        Fatigue test machines use static, dynamic, and fatigue tests to evaluate the
+                                        sturdiness of raw materials, components or finished products.Fatigue tests help
+                                        to determine a test sample's life expectancy under actual service loads in
+                                        real-world applications.
+                                        <br><br>
+                                        <h4>22. Static & dynamic Balancing</h4>
+                                        <p><img src="images/static_dynamic_balancing.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        This is suitable for conducting experiments on static balancing and dynamic
+                                        balancing with different weights. This consists of rectangular frame of steel
+                                        perfectly balance with four different blocks. A protractor scale of the disc is
+                                        provided to reach exact angular position of each weight to be measured. A linear
+                                        scale provided below the frame provides the measurement of each weight along the
+                                        shaft. The unit is hanging from a rigid steel frame through chain for dynamic
+                                        balancing and can be fixed rigidly for static balancing.specified .
+                                        <br><br>
+                                        <h4>23. Pin & Disc Wear Apparatus</h4>
+                                        <p><img src="images/pin_disc.jpg" class="img-responsive" alt="Project Title">
+                                        </p>
+                                        Pin on disk wear testing is a method of characterizing the coefficient of
+                                        friction,frictional force and rate of wear between two materials.This testing
+                                        can simulate multiple modes of wear,includingunideirectional,bidirectional,omni
+                                        directional and quasi rotational.
+                                        <br><br>
+                                        <h4>24. Slip & Creep Measurement Apparatus</h4>
+                                        <p><img src="images/slip_creep.jpg" class="img-responsive" alt="Project Title">
+                                        </p>
+                                        Slip & Creep Measurement Apparatus. This apparatus is useful for measurement of
+                                        power transmitted for various input power conditions with varied belt tension.
+                                        Belt slip or creepalso can be measured. The apparatus consists of a variable
+                                        speed motor, driving pulley and driven pulley of equal diameters.
+                                        <br><br>
+                                        <h4>25.Whirling Shaft Apparatus</h4>
+                                        <p><img src="images/Whirling Shaft.jpg" class="img-responsive"
+                                                alt="Project Title"></p>
+                                        Whirling of Shaft apparatus is used to determine the whirling speed of the
+                                        shaft. The apparatus shows how shafts vibrate transversely and ‘whirl’ at a
+                                        certain rotation frequency. This helps engineers understand possible problems
+                                        with long shafts and allow for them in their designs.
+                                        The Equipment shall have the following test facility:<br>
+                                        1) To measure co-efficient of friction between pulley material and different
+                                        belt materials.<br>
+                                        2) To measure power transmitted with varied belt tension and plotting a graph of
+                                        “Tension Characteristics”.<br><br>
+
+
+                                        <h4>26.Universal vibration apparatus</h34>
+                                            <p><img src="images/designlab/Universal Vibration Apparatus.jpg"
+                                                    class="img-responsive" alt="Project Title"></p>
+                                            This machine is used to<br>
+                                            1) Equivalent spring mass system to study the undamped free vibration.<br>
+                                            2) Equivalent spring mass system to study forced calibration.<br><br>
+
+                                            <h4>27.Vibration Fundamental Trainer</h4>
+                                            <p><img src="images/vibration_fundamental.jpg" class="img-responsive"
+                                                    alt="Project Title"></p>
+                                            The VFT is designed to perform both free and forced vibration experiments
+                                            with and without damping. The pendulum vibration module includes a rod on
+                                            which one or more mass can be attached. This basic module is designed to
+                                            teach the fundamental principles such as frequency and period, and the
+                                            concept of equivalent mass.
+                                            <br><br>
+                                            <h4>28. Vibration Shaker</h4>
+                                            <p><img src="images/vibration_shaker.jpg" class="img-responsive"
+                                                    alt="Project Title"></p>
+                                            Shakers are used to determine product or component performance under
+                                            vibration or shock loads, detect flaws through modal analysis, verify
+                                            product designs.
+                                            <br><br>
+                                            <h4>29.Piezo Actuation Unit</h4>
+                                            <p><img src="images/peizo_actuation.jpg" class="img-responsive"
+                                                    alt="Project Title"></p>
+                                            A piezo actuator can beused to control hydraulic valves, act as a
+                                            small-volume pump or special-purpose motor, and in other applications
+                                            requiring movement or force
+                                            <br><br>
+
+
+
+
+
+
+
+
+
+                                            <!--<h4>The members of the School are involved in the following areas of research:</h4><br>
 			
 				<ul>
 					<div class="row">
 						<div class="col-md-6">
                                                           <li><strong>Analog and Mixed signal VLSI design:</strong></li>
                                                           <!--    <div>-->
-                                                          <!--<ul>
+                                            <!--<ul>
                                                                     <li><a href="https://faculty.iitmandi.ac.in/~hitesh/">Hitesh Shrimali</a> </li>
                                                                     <li><a href="https://faculty.iitmandi.ac.in/~rahul_shrestha/">Rahul Shrestha</a> </li>
                                                           </ul>
 						          <!--    </div>-->
-                                                          <!--<br>
+                                            <!--<br>
 						 
                                                           <li><strong>Artificial intelligence:</strong></li>
                                                           <!--<div>-->
-                                                          <!--<ul>
+                                            <!--<ul>
                                                                    <li>Deepak Khemani</li>
                                                           </ul>
                                                           <!--</div>-->
-                                                          <!--<br>
+                                            <!--<br>
                                                           
                                                           <li><strong>Biomedical systems:</strong></li>
                                                           <!-- <div>-->
-                                                          <!--<ul>
+                                            <!--<ul>
                                                                    <li><a href="http://faculty.iitmandi.ac.in/~src/">Shubhajit Roy Chowdhury</a></li>
                                                                    <!-- <li>Anand Srivastava</li> -->
-                                                          </ul>
-                                                          <!-- </div>-->
-                                                          <!--<br>
+                                            </ul>
+                                            <!-- </div>-->
+                                            <!--<br>
                                                        
                                                           <li><strong>Communication and Networks:</strong></li>
                                                           <!-- <div>-->
-                                                           <!--<ul>
+                                            <!--<ul>
                                                                    <li><a href="http://faculty.iitmandi.ac.in/~samar/" target="_blank"> Samar</a></li>
                                                                    <li><a href="https://sites.google.com/site/satyajitthakor/" target="_blank"> Satyajit Thakor</a></li>
                                                                    <li><a href="http://faculty.iitmandi.ac.in/~siddhartha/index.html" target="_blank">Siddhartha Sarma</a></li>
@@ -362,25 +473,25 @@ The Equipment shall have the following test facility:<br>
                                                                    <li><a href="http://faculty.iitmandi.ac.in/~pooja_vyavahare/" target="_blank">Pooja Vyavahare</a></li>
                                                           </ul>
                                                           <!--</div>-->
-                                                          <!--<br>
+                                            <!--<br>
 
                                                           <li><strong>Computational Science Lab (CSL):</strong></li>
                                                           <!--    <div>-->
-                                                          <!--<ul>
+                                            <!--<ul>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~arti/">Arti Kashyap</a> </li>
                                                                   <!-- <li>Anand Srivastava</li> -->
-                                                          </ul>
-                                                          <!-- </div>-->
-                                                          <br>
+                                            </ul>
+                                            <!-- </div>-->
+                                            <br>
 
-                                                          <!--<li><strong>Control Theory:</strong></li>
+                                            <!--<li><strong>Control Theory:</strong></li>
                                                           <!--<div>-->
-                                                           <!--<ul>
+                                            <!--<ul>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~sd/">Subashish Dutta</a> </li>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~tushar/">Tushar Jain</a></li>   
                                                           </ul>
                                                           <!-- </div>-->
-                                                          <!--<br>
+                                            <!--<br>
 
                                                           <li><strong>Distributed systems:</strong></li>
                                                           <ul>
@@ -410,32 +521,32 @@ The Equipment shall have the following test facility:<br>
                                                           
                                                            <br>-->
 
-                                                           
-                                                           <!--</div>-->
-                                                           
 
-                                                          
-                                             </div><!--End of div "col-md-6" -->
+                                            <!--</div>-->
 
-                                             <!--<div class="col-md-6">
+
+
+                                    </div><!--End of div "col-md-6" -->
+
+                                    <!--<div class="col-md-6">
                                                  
                                                  <li><strong>Formal Verification, Theoretical Computer Science:</strong></li>
                                                            <!--<div>-->
-                                                          <!-- <ul>
+                                    <!-- <ul>
                                                                      <li>Astrid Kiehn</li>
                                                            </ul><br>
                                                            
                                                            <li><strong>Human-computer interaction and cognitive science:</strong></li>
                                                            <!-- <div>-->
-                                                           <!--<ul>
+                                    <!--<ul>
                                                                       <li><a href="http://faculty.iitmandi.ac.in/~varun/">Varun Dutt</a> </li>
                                                            </ul>
                                                            <!-- </div>-->
-                                                           <br>
+                                    <br>
 
-                                                           <!--<li><strong>Machine learning and signal processing:</strong></li>
+                                    <!--<li><strong>Machine learning and signal processing:</strong></li>
                                                            <!--    <div>-->
-                                                           <!--<ul>
+                                    <!--<ul>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~arnav/">Arnav Bhavsar</a> </li>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~anil/">Anil Kumar Sao</a> </li>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~addileep/">Dileep A.D.</a> </li>
@@ -444,61 +555,56 @@ The Equipment shall have the following test facility:<br>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~aditya/">Aditya Nigam</a> </li>
                                                          </ul>
                                                          <!--    </div>-->
-                                                         <br>
+                                    <br>
 
-                                                          <!--<li><strong>Microelectronics and semiconductor devices:</strong></li>
+                                    <!--<li><strong>Microelectronics and semiconductor devices:</strong></li>
                                                           <!--    <div> -->
-                                                          <!--<ul>
+                                    <!--<ul>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~satinder/">Satinder Kumar Sharma</a> </li>
                                                                    <li><a href="http://faculty.iitmandi.ac.in/~ankushbag/">Ankush Bag</a> </li>
                                                                    
                                                                    <li><a href="http://faculty.iitmandi.ac.in/~srikant_srinivasan/">Srikant Srinivasan</a> </li>
                                                          </ul>
                                                          <!-- </div>      -->
-                                                         <br>
+                                    <br>
 
-                                                         <!--<li><strong>Power Engineering (Electric Drives, Power Electronics, Power Systems, Renewable Energy):</strong></li>
+                                    <!--<li><strong>Power Engineering (Electric Drives, Power Electronics, Power Systems, Renewable Energy):</strong></li>
                                                          <!--<div>-->
-                                                         <!--<ul>
+                                    <!--<ul>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~bhakti/">Bhakti Joshi</a></li>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~bsr/">Bharat Singh Rajpurohit</a> </li>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~tummuru/">Narsa Reddy Tummurus</a> </li>
                                                                   <li><a href="http://faculty.iitmandi.ac.in/~ramesho/">Ramesh Oruganti</a> </li>
                                                                   <!-- <li>Anand Srivastava</li> -->
-                                                         </ul>
-                                                         <!--</div>-->
-                                                         <br>
+                                    </ul>
+                                    <!--</div>-->
+                                    <br>
 
-                                                         <!--<li><strong>Software Technology:</strong></li>
+                                    <!--<li><strong>Software Technology:</strong></li>
                                                          <!-- <div>-->
-                                                         <!--<ul>
+                                    <!--<ul>
                                                                      <li>B.D. Chaudhary </li>
                                                                      <li>Dr. Yvonne Dittrich</li>
                                                          </ul>
                                                          <!--</div>-->
-                                                         <br>
-                                                         
-                                                         <!--<li><strong>Solar Photovoltaics:</strong></li>   <!--<div>-->
-                                                         <!--<ul>
+                                    <br>
+
+                                    <!--<li><strong>Solar Photovoltaics:</strong></li>   <!--<div>-->
+                                    <!--<ul>
                                                                      <li><a href="http://faculty.iitmandi.ac.in/~kunal/">Kunal Ghosh</a> </li>
                                                          </ul>
                                                          
                                                               
                                                          <!--    </div>-->
-                                                         <br>
-                                                         
-                                                         
-                                
-        				
-                                     	</div><!--End of div class="col-md-6" -->
-                 </div></ul>		
-			 
+                                    <br>
+
+
+
+
+                                </div><!--End of div class="col-md-6" -->
+                        </div>
+                        </ul>
+
+                </div>
+            </div>
         </div>
-	</div>
-</div>
-	
-
-
-
-
-

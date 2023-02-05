@@ -1,8 +1,5 @@
 <script>
-
-
     $(function () {
-
         const urlParams = new URLSearchParams(window.location.search);
         const idx = urlParams.get('data');
         $.getJSON('faculty.json', function (data) {
@@ -49,25 +46,25 @@
 
                         comp +=
                             `<div class="col-md-12 plates">
-                                                                    <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
-                                                                        <div class="col d-flex flex-column position-static plate-child">
-                                                                            <h4 class="mb-1">
-                                                                                ${title} <br />
-                                                                                <span style="font-size:15px; font-style: italic;" class="text-muted">
-                                                                                    ${subtitle}
-                                                                            </h4>
-                                                                            <p class="card-text mb-auto">
-                                                                                ${authors}
-                                                                            </p>
-                                                                            <div class="mb-auto text-muted">
-                                                                                ${journal}
-                                                                            </div>
-                                                                            <div class="text-primary">
-                                                                                <a href=${`https://doi.org/${DOI}`} target="_blank">${DOI}</a>
-                                                                            </div>
-                                                                        </div>
+                                                            <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
+                                                                <div class="col d-flex flex-column position-static plate-child">
+                                                                    <h4 class="mb-1">
+                                                                        ${title} <br />
+                                                                        <span style="font-size:15px; font-style: italic;" class="text-muted">
+                                                                            ${subtitle}
+                                                                    </h4>
+                                                                    <p class="card-text mb-auto">
+                                                                        ${authors}
+                                                                    </p>
+                                                                    <div class="mb-auto text-muted">
+                                                                        ${journal}
                                                                     </div>
-                                                                </div>`;
+                                                                    <div class="text-primary">
+                                                                        <a href=${`https://doi.org/${DOI}`} target="_blank">${DOI}</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>`;
                     }
                 }
                 if (pub == "Conference Paper") { $(comp).appendTo("#pub-conference"); }
@@ -77,11 +74,63 @@
                 if (pub == "Editorial") { $(comp).appendTo("#pub-editorial"); }
 
             }
-
-
-
         });
     });
+    $(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const idx = urlParams.get('data');
+        $.getJSON('faculty.json', function (data) {
+            const f = data[idx];
+            var eduData = "";
+            for (let i = 0; i < f.education.length; i++) {
+                let edu = f.education[i];
+                eduData += `<div class="col-md-12 plates">
+                        <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
+                            <div class="col d-flex flex-column position-static plate-child">
+                                <strong class="d-inline-block mb-auto text-primary">
+                                    <h4>${edu.degree}</h4>
+                                </strong>
+                                ${edu.duration !== undefined && edu.duration !== "" ?
+                        `<div class="mb-1">
+                                    ${edu.duration.replace('(', '').replace(')', '').replace('-', '&#8211;')}
+                                </div>`
+                        : ``}
+                                ${edu.in !== undefined && edu.in !== "" ?
+                        `<div class="mb-1">
+                                    ${edu.in} <br />
+                                </div>`
+                        : ``}
+                                ${edu.place !== undefined && edu.place !== "" ?
+                        `<div class="mb-1">
+                                    ${edu.place}
+                                </div>`
+                        : ``}      
+                                ${edu.otherInfo !== undefined && edu.otherInfo !== "" ?
+                        `<div class="mb-auto text-muted">
+                                    ${edu.otherInfo}
+                                </div>`
+                        : ``}                           
+                            </div>
+                        </div>
+                    </div>`;
+            }
+            $(eduData).appendTo("#education-data");
+        });
+    });
+    $(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const idx = urlParams.get('data');
+        $.getJSON('faculty.json', function (data) {
+            const f = data[idx];
+            var resData = f.interests;
+            $(resData).appendTo("#research-interests-data");
+            var coData = f.openings;
+            $(coData).appendTo("#current-openings-data");
+            var peData = f.experiences;
+            $(peData).appendTo("#professional-experience-data");
+        });
+    });
+
 </script>
 <!-- ======= Quick Link Section ======= -->
 <section id="features" class="quick-links">
@@ -103,13 +152,19 @@
             <div class="col-md-2">
                 <ul class="nav nav-tabs row gy-2 d-flex">
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#education">
+                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#education">
                             <h4>Education</h4>
                         </a>
                     </li><!-- End Tab 1 Nav -->
 
                     <li class="nav-item">
-                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#publications">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#research-interests">
+                            <h4>Research Interests</h4>
+                        </a>
+                    </li><!-- End Tab 1 Nav -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#publications">
                             <h4>Publications</h4>
                         </a>
                     </li><!-- End Tab 2 Nav -->
@@ -151,59 +206,33 @@
             <div class="col-md-10">
                 <div class="tab-content">
 
-                    <div class="tab-pane" id="education">
+                    <div class="tab-pane active show" id="education">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Smart Structure & System:</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr. Rajeev Kumar, Dr. Vishal S. Chauhan, Dr. Rahul Vaish,
-                                    Dr
-                                    Subhamoy Sen
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>To be known worldwide for the expertise in design and fabrication of smart
-                                            structure and system.
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> To propose new designs for
-                                                active
-                                                vibration control and shape control for
-                                                smart structure.
-                                            </li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To develop active-sensing based
-                                                structural heath monitoring.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of smart sensors &
-                                                actuators
-                                            </li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To develop piezoelectric and
-                                                tribolelectric energy harvesters </li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To impart education to produce
-                                                professionals capable of leading efforts
-                                                towards innovative
-                                                product </li>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-1.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="education-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 1 -->
 
-                    <div class="tab-pane active show" id="publications">
+                    <div class="tab-pane" id="research-interests">
+                        <div class="row gy-4">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="research-interests-data"></div>
+                            </div>
+                        </div>
+                    </div><!-- End Tab Content 1 -->
+
+                    <div class="tab-pane" id="publications">
                         <div data-aos="fade-up" data-aos-delay="100">
                             <ul class="nav nav-tabs row gy-2 d-flex">
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced active show" data-bs-toggle="tab" data-bs-target="#pub-journal">
+                                    <a class="nav-link spaced active show" data-bs-toggle="tab"
+                                        data-bs-target="#pub-journal">
                                         <h4>Journal</h4>
                                     </a>
                                 </li><!-- End Tab 7 Nav -->
                                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                                    <a class="nav-link spaced" data-bs-toggle="tab"
-                                        data-bs-target="#pub-book-chapter">
+                                    <a class="nav-link spaced" data-bs-toggle="tab" data-bs-target="#pub-book-chapter">
                                         <h4>Book Chapter</h4>
                                     </a>
                                 </li><!-- End Tab 1 Nav -->
@@ -247,84 +276,16 @@
 
                     <div class="tab-pane" id="patents">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Composite design and manufacturing</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr. Sunny Zafar Dr. Himanshu Pathak, Dr Satvasheel Powar,
-                                    Dr.
-                                    Prateek Saxena
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>To provide research platform for composite structures for engineering
-                                            applications through energy efficient sustainable manufacturing processes
-                                            and
-                                            advanced design analyses.
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> To be a pioneer in design and
-                                                manufacturing of sustainable composite
-                                                structure/materials.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To develop energy efficient
-                                                manufacturing processes to fabricate composite
-                                                for engineering applications</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To develop advanced
-                                                computational
-                                                packages for efficient designing of
-                                                composite structures.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To collaborate with leading
-                                                international research groups working on
-                                                similar research domain(s)</li>
-
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-3.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="patents-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 3 -->
 
                     <div class="tab-pane" id="awards-and-honours">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3> Building Physics and Advanced Material Mechanics</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr Kaustav Sarkar, , Dr Sandip Saha, Dr Subhamoy Sen
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>To establish a team with expertise in the domains of structural engineering
-                                            and
-                                            the science of construction materials that would work towards the design of
-                                            materials and components for optimal structural and thermal performance in
-                                            buildings and other structures.
-
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> To set up a lab dedicated to the
-                                                testing
-                                                of mechanical, hygrothermal and
-                                                durability characteristics of structural materials.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To attract sponsored research
-                                                projects
-                                                for the continuing development of
-                                                research infrastructure available with the lab.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To work towards the solution of
-                                                engineering problems specific to mountains
-                                                in partnership with local stakeholders.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> To nurture R&D in the design and
-                                                development of efficient products and
-                                                systems for a sustainable habitat</li>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-4.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="awards-and-honours-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 4 -->
@@ -332,192 +293,44 @@
                     <div class="tab-pane" id="research-projects">
                         <div data-aos="fade-up" data-aos-delay="100">
                             <ul class="nav nav-tabs row gy-2 d-flex">
-                                <li class="nav-item col-4 col-md-3 col-lg-2 offset-lg-3 offset-md-2 offset-1">
+                                <li class="nav-item col-4 col-md-3 col-lg-2">
                                     <a class="nav-link spaced active show" data-bs-toggle="tab"
                                         data-bs-target="#research-projects-current">
                                         <h4>Current</h4>
                                     </a>
                                 </li><!-- End Tab 1 Nav -->
 
-                                <li class="nav-item col-4 col-md-3 col-lg-2 offset-lg-2 offset-md-2 offset-2">
+                                <li class="nav-item col-4 col-md-3 col-lg-2">
                                     <a class="nav-link spaced" data-bs-toggle="tab"
                                         data-bs-target="#research-projects-completed">
                                         <h4>Completed</h4>
                                     </a>
                                 </li><!-- End Tab 2 Nav -->
                             </ul>
-                            <h3>
-                                Advance manufacturing from functional material to devices</h3>
-                            <p class="fst-italic">
-                                <b> Faculty members : </b>Dr Viswanath Balakrishnan, Dr Rahul Vaish, Dr. Sudhir
-                                Kumar
-                                Pandey, Dr. Jaspreert Kaur Randhawa, Dr Satvasheel Powar, Dr Rik Rani Koner, Dr
-                                Sumit
-                                Sinha Ray
-                            </p>
-                            <div class="research-content">
-                                <ul>
-                                    <li> <b> Vision:</b> </li>
-                                    <li>The research group consisting of faculties, students and post-doctoral
-                                        researchers strives to achieve excellence in advanced manufacturing from
-                                        functional material to devices by bridging the materials science concepts
-                                        and
-                                        latest advancement in both “top down” and “bottom up” approaches to overcome
-                                        fundamental challenges with aid of complementary expertise that we have from
-                                        engineering, chemistry, physics and materials.
-
-
-                                    <li> <b> Mission:</b></li>
-                                    Advanced manufacturing from functional material to devices group actively
-                                    engages
-                                    research in some of the thrust areas of advanced materials which includes
-                                    <ul>
-                                        <li><i class="bi bi-check-circle-fill"></i> Nanomaterials like carbon
-                                            nanotubes,
-                                            polymer fibers, and metal organic
-                                            framework</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> 2D materials like Graphene,
-                                            transition
-                                            metal dichalcogenides.</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Functional ceramics like
-                                            ferroelectrics,
-                                            thermoelectrics, transition and
-                                            post-transition metal oxides.</li>
-                                    </ul>
-                                </ul>
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="awards-and-honours-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 5 -->
 
                     <div class="tab-pane" id="professional-experience">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Thermo-Fluid</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr Atul Dhar Dr Pradeep Kumar,, Dr Gaurav Bhutani,, Dr
-                                    Sumit
-                                    Sinha Ray, Dr Parmod Kumar
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>Thermo- Fluid research theme of the IIT Mandi focuses on understanding basic
-                                            concepts of heat and mass flow through the numerical and experimental
-                                            studies
-                                            with strong focus on their application on improving the performance and
-                                            sustainability of real systems.
-
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of strong numerical
-                                                experiment and computational capability for
-                                                exploring the basic concepts of heat transfer and fluid flow and energy
-                                                conversion.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of experimental
-                                                facilities
-                                                for understating the applied
-                                                concepts of heat transfer and fluid flow and energy conversion in
-                                                identified
-                                                focus areas</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Implementation of basic
-                                                understating of
-                                                concepts for improving the
-                                                performance and sustainability of real systems.</li>
-
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-6.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="professional-experience-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 6 -->
                     <div class="tab-pane" id="current-openings">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Thermo-Fluid</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr Atul Dhar Dr Pradeep Kumar,, Dr Gaurav Bhutani,, Dr
-                                    Sumit
-                                    Sinha Ray, Dr Parmod Kumar
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>Thermo- Fluid research theme of the IIT Mandi focuses on understanding basic
-                                            concepts of heat and mass flow through the numerical and experimental
-                                            studies
-                                            with strong focus on their application on improving the performance and
-                                            sustainability of real systems.
-
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of strong numerical
-                                                experiment and computational capability for
-                                                exploring the basic concepts of heat transfer and fluid flow and energy
-                                                conversion.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of experimental
-                                                facilities
-                                                for understating the applied
-                                                concepts of heat transfer and fluid flow and energy conversion in
-                                                identified
-                                                focus areas</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Implementation of basic
-                                                understating of
-                                                concepts for improving the
-                                                performance and sustainability of real systems.</li>
-
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-6.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="current-openings-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 6 -->
                     <div class="tab-pane" id="administrative-contributions">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Thermo-Fluid</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr Atul Dhar Dr Pradeep Kumar,, Dr Gaurav Bhutani,, Dr
-                                    Sumit
-                                    Sinha Ray, Dr Parmod Kumar
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>Thermo- Fluid research theme of the IIT Mandi focuses on understanding basic
-                                            concepts of heat and mass flow through the numerical and experimental
-                                            studies
-                                            with strong focus on their application on improving the performance and
-                                            sustainability of real systems.
-
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of strong numerical
-                                                experiment and computational capability for
-                                                exploring the basic concepts of heat transfer and fluid flow and energy
-                                                conversion.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of experimental
-                                                facilities
-                                                for understating the applied
-                                                concepts of heat transfer and fluid flow and energy conversion in
-                                                identified
-                                                focus areas</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Implementation of basic
-                                                understating of
-                                                concepts for improving the
-                                                performance and sustainability of real systems.</li>
-
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-6.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="administrative-contributions-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 6 -->
