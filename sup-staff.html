@@ -63,8 +63,8 @@
         $.each(data, function (i, f) {
           var src1 = `assets/img/Sup_Staff/${f.img}`
           var phone = `tel:+91-1905-${f.phone}`
-          var mobile = `${f.mobile}`
           var add = `${f.add}`
+          var mobile = `${f.mobile}`
           var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}`
           var comp =
             '<div class="col-xl-2 col-md-6 d-flex"> </div> ' +
@@ -73,17 +73,17 @@
             "<div class= 'member-img' >" +
             "<img src=" + src1 + " style='width: 100%; height: 100%;' alt=''></img>" +
             "</div>" +
-            "<div style = 'height: 20vh' class='member-info'>" +
+            "<div class='member-info'>" +
             "<div class='social'>" +
             // "<a href=" + phone + " ><i class='bi bi-telephone'></i>" + "</a>" +
             // "<a target='_blank' href=" + mail + " ><i class='bi bi-envelope'></i>" + "</a>" +
             "</div>" +
             "<h4 style='color:var(--color-primary);'>" + f.name + "</h4>" +
-            "<p style='color:var(--color - secondary - light); margin:0px;'> Office Assistant</p>" +
+            "<p style='color:var(--color - secondary - light);'> Office Assistant</p>" +
 
-            "<h6 style='color:var(--color - secondary - light); margin:0px;'>" + f.mail + "</h6>" +
-            "<h6 style='color:var(--color - secondary - light); margin:0px;'>" + add + "</h6>" +
-            "<h6 style='color:var(--color - secondary - light); margin:0px;'>" + mobile + "</h6>" +
+            "<h6 style='color:var(--color - secondary - light);'>" + f.mail + "</h6>" +
+            "<h6 style='color:var(--color - secondary - light);'>" + mobile + "</h6>" +
+            "<h6 style='color:var(--color - secondary - light);'>" + add + "</h6>" +
 
             "</div>" +
 
