@@ -117,6 +117,15 @@
             $(eduData).appendTo("#education-data");
         });
     });
+    $(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const idx = urlParams.get('data');
+        $.getJSON('faculty.json', function (data) {
+            const f = data[idx];
+            var resData = f.interests;
+            $(resData).appendTo("#research-interests-data");
+        });
+    });
 
 </script>
 <!-- ======= Quick Link Section ======= -->
@@ -141,6 +150,12 @@
                     <li class="nav-item">
                         <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#education">
                             <h4>Education</h4>
+                        </a>
+                    </li><!-- End Tab 1 Nav -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#research-interests">
+                            <h4>Research Interests</h4>
                         </a>
                     </li><!-- End Tab 1 Nav -->
 
@@ -191,6 +206,14 @@
                         <div class="row gy-4">
                             <div data-aos="fade-up" data-aos-delay="100">
                                 <div id="education-data"></div>
+                            </div>
+                        </div>
+                    </div><!-- End Tab Content 1 -->
+
+                    <div class="tab-pane" id="research-interests">
+                        <div class="row gy-4">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="research-interests-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 1 -->
