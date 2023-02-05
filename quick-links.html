@@ -124,6 +124,10 @@
             const f = data[idx];
             var resData = f.interests;
             $(resData).appendTo("#research-interests-data");
+            var coData = f.openings;
+            $(coData).appendTo("#current-openings-data");
+            var peData = f.experiences;
+            $(peData).appendTo("#professional-experience-data");
         });
     });
 
@@ -416,89 +420,15 @@
 
                     <div class="tab-pane" id="professional-experience">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Thermo-Fluid</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr Atul Dhar Dr Pradeep Kumar,, Dr Gaurav Bhutani,, Dr
-                                    Sumit
-                                    Sinha Ray, Dr Parmod Kumar
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>Thermo- Fluid research theme of the IIT Mandi focuses on understanding basic
-                                            concepts of heat and mass flow through the numerical and experimental
-                                            studies
-                                            with strong focus on their application on improving the performance and
-                                            sustainability of real systems.
-
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of strong numerical
-                                                experiment and computational capability for
-                                                exploring the basic concepts of heat transfer and fluid flow and energy
-                                                conversion.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of experimental
-                                                facilities
-                                                for understating the applied
-                                                concepts of heat transfer and fluid flow and energy conversion in
-                                                identified
-                                                focus areas</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Implementation of basic
-                                                understating of
-                                                concepts for improving the
-                                                performance and sustainability of real systems.</li>
-
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-6.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="professional-experience-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 6 -->
                     <div class="tab-pane" id="current-openings">
                         <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Thermo-Fluid</h3>
-                                <p class="fst-italic">
-                                    <b> Faculty members : </b> Dr Atul Dhar Dr Pradeep Kumar,, Dr Gaurav Bhutani,, Dr
-                                    Sumit
-                                    Sinha Ray, Dr Parmod Kumar
-                                </p>
-                                <div class="research-content">
-                                    <ul>
-                                        <li> <b> Vision:</b> </li>
-                                        <li>Thermo- Fluid research theme of the IIT Mandi focuses on understanding basic
-                                            concepts of heat and mass flow through the numerical and experimental
-                                            studies
-                                            with strong focus on their application on improving the performance and
-                                            sustainability of real systems.
-
-                                        <li> <b> Mission:</b></li>
-                                        <ul>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of strong numerical
-                                                experiment and computational capability for
-                                                exploring the basic concepts of heat transfer and fluid flow and energy
-                                                conversion.</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Development of experimental
-                                                facilities
-                                                for understating the applied
-                                                concepts of heat transfer and fluid flow and energy conversion in
-                                                identified
-                                                focus areas</li>
-                                            <li><i class="bi bi-check-circle-fill"></i> Implementation of basic
-                                                understating of
-                                                concepts for improving the
-                                                performance and sustainability of real systems.</li>
-
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/research-6.jpg" alt="" class="img-fluid">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <div id="current-openings-data"></div>
                             </div>
                         </div>
                     </div><!-- End Tab Content 6 -->
