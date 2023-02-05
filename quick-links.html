@@ -91,25 +91,25 @@
                                     <h4>${edu.degree}</h4>
                                 </strong>
                                 ${edu.duration !== undefined && edu.duration !== "" ?
-                                `<div class="mb-1">
-                                    ${edu.duration.replace('(','').replace(')','').replace('-','&#8211;')}
+                        `<div class="mb-1">
+                                    ${edu.duration.replace('(', '').replace(')', '').replace('-', '&#8211;')}
                                 </div>`
-                                :``}
+                        : ``}
                                 ${edu.in !== undefined && edu.in !== "" ?
-                                `<div class="mb-1">
+                        `<div class="mb-1">
                                     ${edu.in} <br />
                                 </div>`
-                                :``}
+                        : ``}
                                 ${edu.place !== undefined && edu.place !== "" ?
-                                `<div class="mb-1">
+                        `<div class="mb-1">
                                     ${edu.place}
                                 </div>`
-                                :``}      
+                        : ``}      
                                 ${edu.otherInfo !== undefined && edu.otherInfo !== "" ?
-                                `<div class="mb-auto text-muted">
+                        `<div class="mb-auto text-muted">
                                     ${edu.otherInfo}
                                 </div>`
-                                :``}                           
+                        : ``}                           
                             </div>
                         </div>
                     </div>`;
