@@ -1987,7 +1987,7 @@ section {
   padding: 15px 10px;
   color: var(--color-secondary);
   box-shadow: 3px 3px 15px rgba(var(--color-secondary-rgb), 0.15);
-  border-radius: 8px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
