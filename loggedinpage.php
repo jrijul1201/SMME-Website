@@ -85,6 +85,51 @@ $userName = $_SESSION['user_name'];
         }
     </style>
 
+<!-- show a textbox when other degree is selected in education section -->
+<script>
+    function showDegreeOther() {
+        let educationTable = document.getElementById("education-table");
+        let degreeSelections = educationTable.getElementsByTagName("select");
+        for (let i = 0; i < degreeSelections.length; i++) {
+            let degreeSelection = degreeSelections[i];
+            let degreeOther = degreeSelection.nextElementSibling;
+            degreeSelection.addEventListener("change", function() {
+                if (degreeSelection.value === "Other") {
+                    degreeOther.style.display = "inline";
+                    degreeOther.required = true;
+                } else {
+                    degreeOther.style.display = "none";
+                }
+            });
+        }
+    }
+
+    function autoSelectOption(value,ind) {
+        var found = false;
+        var id = "eduDegree".concat(ind);
+        var select = document.getElementById(id);
+        var options = select.options;
+        for (var i = 0; i < options.length; i++) {
+          if (options[i].value === value) {
+            select.selectedIndex = i;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+            var id2 = "degreeOther".concat(ind);
+            var input = document.getElementById(id2);
+            input.value = value;
+            input.style.display = "inline";
+            select.selectedIndex = options.length - 1;
+        }
+    }
+
+    window.addEventListener("load", function() {
+        showDegreeOther();
+    });
+</script>
+
 </head>
 
 <body>
@@ -184,19 +229,39 @@ $userName = $_SESSION['user_name'];
         <table id="education-table">
             <tr>
                 <th>Degree</th>
-                <th>Duration</th>
+                <th>Specialization</th>
+                <th>Start Year</th>
+                <th>End Year</th>
                 <th>Place</th>
-                <th>Thesis Title (if any)</th>
+                <th>Other Info</th>
                 <th>To Hide</th>
             </tr>
             <tbody>
                 <?php
-                foreach ($arr[$index]["education"] as $ed) {
+                foreach ($arr[$index]["education"] as $ind => $ed) {
                     echo "<tr>";
-                    echo "<td><input type='text' name='degree[]' value='{$ed['degree']}' required></td>";
-                    echo "<td><input type='text' name='duration[]' value='{$ed['duration']}'></td>";
-                    echo "<td><input type='text' name='place[]' value='{$ed['place']}'></td>";
-                    echo "<td><input type='text' name='thesisTitle[]' value='{$ed['thesisTitle']}'></td>";
+                    echo "<td><select id='eduDegree" . "$ind' name='degree[]' required>
+                                <option value='' disabled selected>Select a Degree</option>
+                                <option value='B.Tech.'>B.Tech.</option>
+                                <option value='B.Tech. - M.Tech. (Dual)'>B.Tech. - M.Tech. (Dual)</option>
+                                <option value='B.Sc.'>B.Sc.</option>
+                                <option value='M.Tech.'>M.Tech.</option>
+                                <option value='M.Sc.'>M.Sc.</option>
+                                <option value='M.S.'>M.S.</option>
+                                <option value='M.Tech. - Ph.D.'>M.Tech. - Ph.D.</option>
+                                <option value='Ph.D.'>Ph.D.</option>
+                                <option value='Masters'>Masters</option>
+                                <option value='Bachelors'>Bachelors</option>
+                                <option value='M.E.'>M.E.</option>
+                                <option value='B.E.'>B.E.</option>
+                                <option value='Other'>Other</option>
+                            </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
+                    echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
+                    echo "<td><input type='text' name='specialization[]' value='{$ed['specialization']}'></td>";
+                    echo "<td><input type='text' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                    echo "<td><input type='text' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                    echo "<td><input type='text' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
+                    echo "<td><input type='text' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
                     echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
                     echo "</tr>";
                 }
@@ -212,7 +277,7 @@ $userName = $_SESSION['user_name'];
         <textarea name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
         <h3>Current Projects:</h3>
         <textarea name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
-        <h3>Current Openings for Reasearch:</h3>
+        <h3>Current Openings for research:</h3>
         <textarea name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
         <h3>Work Experiences:</h3>
         <textarea name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
@@ -330,7 +395,7 @@ $userName = $_SESSION['user_name'];
                         method: 'POST',
                         data: { image: base64data },
                         success: function (data) {
-                            console.log(data);
+                            // console.log(data);
                             $modal.modal('hide');
                             $('#uploaded_image').attr('src', data);
                         }
@@ -360,14 +425,35 @@ $userName = $_SESSION['user_name'];
         var cell3 = row.insertCell(2);
         var cell4 = row.insertCell(3);
         var cell5 = row.insertCell(4);
-        cell1.innerHTML = `<input type="text" name="degree[]" required>`;
-        cell2.innerHTML = `<input type="text" name="duration[]">`;
-        cell3.innerHTML = `<input type="text" name="place[]">`;
-        cell4.innerHTML = `<input type="text" name="thesisTitle[]">`;
-        cell5.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
+        var cell6 = row.insertCell(5);
+        var cell7 = row.insertCell(6);
+        cell1.innerHTML = `<select name="degree[]" required>
+                        <option value="" disabled selected>Select a Degree</option>
+                        <option value="B.Tech.">B.Tech.</option>
+                        <option value="B.Tech. - M.Tech. (Dual)">B.Tech. - M.Tech. (Dual)</option>
+                        <option value="B.Sc.">B.Sc.</option>
+                        <option value="M.Tech.">M.Tech.</option>
+                        <option value="M.Sc.">M.Sc.</option>
+                        <option value="M.S.">M.S.</option>
+                        <option value="M.Tech. - Ph.D.">M.Tech. - Ph.D.</option>
+                        <option value="Ph.D.">Ph.D.</option>
+                        <option value="Masters">Masters</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="M.E.">M.E.</option>
+                        <option value="B.E.">B.E.</option>
+                        <option value="Other">Other</option>
+                    </select><input type="text" name="degreeOther[]" value="" style="display:none">`;
+        cell2.innerHTML = `<input type="text" name="specialization[]">`;
+        cell3.innerHTML = `<input type="text" name="start_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
+        cell4.innerHTML = `<input type="text" name="end_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
+        cell5.innerHTML = `<input type="text" name="place[]" placeholder="University/College Name">`;
+        cell6.innerHTML = `<input type="text" name="other_info[]" placeholder="Thesis Title or Supervisor etc.">`;
+        cell7.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
+        
         if (table.rows.length >= 1) {
             document.getElementById("delEB").disabled = false;
         }
+        showDegreeOther();
 
     }
     function deleteEducation() {
@@ -398,7 +484,7 @@ $userName = $_SESSION['user_name'];
         var cell12 = row.insertCell(11);
         cell1.innerHTML = `<input type="text" name="ititle[]" required>`;
         cell2.innerHTML = `<input type="text" name="idoi[]">`;
-        cell3.innerHTML = `<input type="text" name="iyear[]" pattern="\d{4}" title="Enter valid year (4-digit)">`;
+        cell3.innerHTML = `<input type="text" name="iyear[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
         cell4.innerHTML = `<input type="text" name="ipubDate[]">`;
         cell5.innerHTML = `<input type="text" name="ipubType[]">`;
         cell6.innerHTML = `<input type="text" name="ipages[]">`;
