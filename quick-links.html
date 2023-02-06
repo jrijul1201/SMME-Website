@@ -140,6 +140,10 @@
             $(coData).appendTo("#current-openings-data");
             var peData = f.experiences;
             $(peData).appendTo("#professional-experience-data");
+            var ahData = f.awards;
+            $(ahData).appendTo("#awards-and-honours-data");
+            var rpData = f.projects;
+            $(rpData).appendTo("#research-projects-data");
         });
     });
 
@@ -320,9 +324,7 @@
                                     </a>
                                 </li><!-- End Tab 2 Nav -->
                             </ul>
-                            <div data-aos="fade-up" data-aos-delay="100">
-                                <div id="awards-and-honours-data"></div>
-                            </div>
+                            <div id="research-projects-data"></div>
                         </div>
                     </div><!-- End Tab Content 5 -->
 
