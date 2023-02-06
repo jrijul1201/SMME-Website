@@ -1088,7 +1088,7 @@ section {
 .hero-fullscreen h2 span {
   font-weight: 500;
   font-size: 40px;
-  color: var(--color-primary-dark);
+  /* color: var(--color-primary-dark); */
 }
 
 .hero-fullscreen p {
