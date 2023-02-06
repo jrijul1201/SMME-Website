@@ -107,7 +107,14 @@
                                                             <h3> ${(f.name == undefined ? '--' : f.name)}</h3>
                                                             <p>${(f.post == undefined ? '--' : f.post)}<br>
                                                             </p>
-                                                            <div class=" col-lg-6 col-md-12">
+                                                            <div class="info-item d-flex">
+                                                                    <i class="bi bi-book flex-shrink-0"></i>
+                                                                    <div>
+                                                                        <h4>Specialization:</h4>
+                                                                        <p>${f.speciality}</p>
+                                                                    </div>
+                                                                </div>
+                                                            <div class=" col-lg-12 col-md-12">
                                                                 <div class="info-item d-flex">
                                                                     <i class="bi bi-geo-alt flex-shrink-0"></i>
                                                                     <div>
@@ -123,15 +130,7 @@
                                                                         <p>${(f.phone == undefined ? '--' : "01905-" + f.phone)}</p>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-lg-6 col-md-12">
-                                                                    ${f.speciality == undefined || f.speciality == "" ? '' :
-                            `<div class="info-item d-flex">
-                                                                    <i class="bi bi-book flex-shrink-0"></i>
-                                                                    <div>
-                                                                        <h4>Specialization:</h4>${f.speciality}`}
-                                                                    </div>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
