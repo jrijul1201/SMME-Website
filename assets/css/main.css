@@ -4245,3 +4245,10 @@ section {
 .tool-tip:hover .tool-tip-text {
   visibility: visible;
 }
+
+.faculties-banner {
+  background-color: var(--color-primary);
+  object-fit: cover;
+  height: 15vh;
+  width: 100%;
+}
