@@ -105,6 +105,7 @@ h6 {
   background-color: #d5d5d5;
   background-color: #d5d5d5;
 }
+
 /* .table-css tr{
   padding: 15px;
   margin-bottom: 20px; 
@@ -1293,9 +1294,10 @@ section {
 }
 
 .features .img-fluid {
-  height: 40vh;
-  width: 30vw;
+  height: 100%;
+  width: 100%;
   margin-bottom: 3%;
+  object-fit: cover;
 }
 
 /*--------------------------------------------------------------
@@ -1612,7 +1614,7 @@ section {
 
 @media (max-width: 992px) {
   .chairperson-message2 .container {
-      padding: 60px;
+    padding: 60px;
   }
 }
 
@@ -2486,11 +2488,12 @@ section {
   color: var(--color-white);
 }
 
-.faq-overview{
-    padding: 20px 0;
-    overflow: hidden;
+.faq-overview {
+  padding: 20px 0;
+  overflow: hidden;
 
 }
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
@@ -3941,7 +3944,7 @@ section {
   height: 100%;
   text-align: center;
   border-radius: 0.3rem;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 1280px) {
@@ -4104,7 +4107,7 @@ section {
   font-size: 12px;
 }
 
-.faculty-img{
+.faculty-img {
   height: 100%;
   width: 100%;
 }
@@ -4203,7 +4206,7 @@ section {
   color: var(--color-primary);
 }
 
-.faq .accordion-button:after{
+.faq .accordion-button:after {
   display: none;
 }
 
