@@ -73,7 +73,7 @@
   </script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>
-    const solid_mech = [1, 2, 3, 4, 7, 8, 10, 16, 17, 18, 26];
+    const solid_mech = [1, 2, 3, 4, 7, 8, 10, 16, 17, 18, 26, 28];
     const fluid_mech = [0, 5, 6, 12, 13, 14, 21];
     const manufacturing = [7, 11, 15, 22, 24];
     const material = [4, 9, 16, 19, 20, 22, 23, 25, 27];
@@ -87,16 +87,16 @@
             var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}@iitmandi.ac.in`;
             if (solid_mech.includes(i)) {
               var comp =
-                '<div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200"> ' +
+                '<div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200" style="marin-left:35px !important;"> ' +
                 "<div class='team-member'>" +
-                "<div class= 'member-img' >" +
+                "<div class= 'member-img-spec' >" +
                 `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
                 "<img src=" +
                 src1 +
                 " style='width: 100%; height: 100%; object-fit: cover;' alt=''></img>" +
                 "</a>" +
                 "</div>" +
-                "<div class='member-info'>" +
+                "<div class='member-info-spec'>" +
                 "<div class='social'>" +
                 // "<a target='_blank' href=" + irins + " ><i class='bi bi-lightbulb'></i>" + "</a>" +
                 // "<a target='_blank' href=" + f.gs + " ><i class='bi bi-mortarboard'></i>" + "</a>" +
@@ -134,16 +134,16 @@
             var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}@iitmandi.ac.in`;
             if (fluid_mech.includes(i)) {
               var comp =
-                '<div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200"> ' +
+              '<div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200" style="marin-left:35px !important;"> ' +
                 "<div class='team-member'>" +
-                "<div class= 'member-img' >" +
+                "<div class= 'member-img-spec' >" +
                 `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
                 "<img src=" +
                 src1 +
                 " style='width: 100%; height: 100%; object-fit: cover;' alt=''></img>" +
                 "</a>" +
                 "</div>" +
-                "<div class='member-info'>" +
+                "<div class='member-info-spec'>" +
                 "<div class='social'>" +
                 // "<a target='_blank' href=" + irins + " ><i class='bi bi-lightbulb'></i>" + "</a>" +
                 // "<a target='_blank' href=" + f.gs + " ><i class='bi bi-mortarboard'></i>" + "</a>" +
@@ -181,16 +181,16 @@
             var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}@iitmandi.ac.in`;
             if (manufacturing.includes(i)) {
               var comp =
-                '<div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200"> ' +
+              '<div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200" style="marin-left:35px !important;"> ' +
                 "<div class='team-member'>" +
-                "<div class= 'member-img' >" +
+                "<div class= 'member-img-spec' >" +
                 `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
                 "<img src=" +
                 src1 +
                 " style='width: 100%; height: 100%; object-fit: cover;' alt=''></img>" +
                 "</a>" +
                 "</div>" +
-                "<div class='member-info'>" +
+                "<div class='member-info-spec'>" +
                 "<div class='social'>" +
                 // "<a target='_blank' href=" + irins + " ><i class='bi bi-lightbulb'></i>" + "</a>" +
                 // "<a target='_blank' href=" + f.gs + " ><i class='bi bi-mortarboard'></i>" + "</a>" +
@@ -228,16 +228,16 @@
             var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}@iitmandi.ac.in`;
             if (material.includes(i)) {
               var comp =
-                '<div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200"> ' +
+              '<div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200" style="marin-left:35px !important;"> ' +
                 "<div class='team-member'>" +
-                "<div class= 'member-img' >" +
+                "<div class= 'member-img-spec' >" +
                 `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
                 "<img src=" +
                 src1 +
                 " style='width: 100%; height: 100%; object-fit: cover;' alt=''></img>" +
                 "</a>" +
                 "</div>" +
-                "<div class='member-info'>" +
+                "<div class='member-info-spec'>" +
                 "<div class='social'>" +
                 // "<a target='_blank' href=" + irins + " ><i class='bi bi-lightbulb'></i>" + "</a>" +
                 // "<a target='_blank' href=" + f.gs + " ><i class='bi bi-mortarboard'></i>" + "</a>" +
@@ -271,8 +271,6 @@
 
 <body>
   <div id="head"></div>
-
-  <!-- <!-- <div id="login-modal"></div> --> -->
 
   <!-- <div id="hero"></div> -->
 
