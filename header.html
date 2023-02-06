@@ -81,7 +81,7 @@
       </ul>
       <i class="bi bi-list mobile-nav-toggle d-none"></i>
     </nav><!-- .navbar -->
-    <button type="button" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+    <button type="button" id="toggleHideShow" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
       Login </button>
   </div>
 
@@ -129,5 +129,14 @@
         dropDownIndicator.classList.toggle('bi-chevron-down');
       }
     })
-  });
+  }); 
+
+  const toggleHideShow = document.getElementById("toggleHideShow");
+  console.log(window.location.pathname);
+  if(window.location.pathname === '/faculty.html' || window.location.pathname === '/dedicated.html'){
+    toggleHideShow.style.display = "block";
+  }else{
+    toggleHideShow.style.display = "none";
+  }
+
 </script>
