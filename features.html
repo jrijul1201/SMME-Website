@@ -73,10 +73,10 @@
   </script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>
-    const solid_mech = [7, 15, 22, 24];
-    const fluid_mech = [];
-    const manufacturing = [2, 7, 10, 18];
-    const material = [16, 17, 26];
+    const solid_mech = [1, 2, 3, 4, 7, 8, 10, 16, 17, 18, 26];
+    const fluid_mech = [0, 5, 6, 12, 13, 14, 21];
+    const manufacturing = [7, 11, 15, 22, 24];
+    const material = [4, 9, 16, 19, 20, 22, 23, 25, 27];
     if (specialization === "solid_mech") {
       $(function () {
         $.getJSON("faculty.json", function (data) {
