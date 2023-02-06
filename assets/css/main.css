@@ -4104,6 +4104,11 @@ section {
   font-size: 12px;
 }
 
+.faculty-img{
+  height: 100%;
+  width: 100%;
+}
+
 .faculty-details .info {
   /* width: 90%; */
   padding: 40px;
@@ -4113,8 +4118,9 @@ section {
 }
 
 .faculty-details .info h3 {
-  font-weight: 600;
-  font-size: 34px;
+  padding-top: 2vh;
+  font-weight: 800;
+  font-size: 2em;
 }
 
 .faculty-details .info p {
@@ -4156,8 +4162,6 @@ section {
   font-size: 14px;
   color: var(--color-secondary-light);
 }
-
-
 
 .service-item-unactive {
   display: none;

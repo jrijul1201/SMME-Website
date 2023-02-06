@@ -97,15 +97,15 @@
                                         <div class="container faculty-details">
                                             <div class="info">
                                                 <div class="row d-flex justify-content-center">
-                                                    <div class="col d-flex ">
-                                                        <div class="about-img" style='width: 100%; height: 100%; margin-right: 60px;'>
+                                                    <div class="col-lg-6 col-md-12  d-flex ">
+                                                        <div  style='width: 100%; height: 100%; '>
                                                             <img src=${src1} style='width: 100%; height: 100%;' alt=''></img>
                                                         </div>
                                                     </div>
-                                                    <div class="col d-flex justify-content-center align-items-center ">
+                                                    <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center" style='padding-left:5vw;'>
                                                         <div class="row ">
                                                             <h3> ${(f.name == undefined ? '--' : f.name)} </h3>
-                                                            <p>${(f.post == undefined ? '--' : f.post)}<br> PhD, ${(f.education[0].place==undefined ? "": f.education[0].place)}
+                                                            <p>${(f.post == undefined ? '--' : f.post)}<br> PhD, ${(f.education[0].place == undefined ? "" : f.education[0].place)}
                                                             </p>
                                                             <div class="info-item d-flex">
                                                                     <i class="bi bi-book flex-shrink-0"></i>
@@ -130,8 +130,7 @@
                                                                         <p>${(f.phone == undefined ? '--' : "01905-" + f.phone)}</p>
                                                                     </div>
                                                                 </div>
-                                                                
-                                                            </div>
+                                                               </div>
                                                         </div>
                                                     </div>
                                                 </div>
