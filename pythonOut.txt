@@ -1,29 +1,856 @@
-Atul Dhar    IIT Kanpur
-Amit Shukla    Imperial College London, United Kingdom
-Arpan Gupta    NUS Singapore 
-Deepak Sachan    IIT Kanpur
-Dhiraj Dube    
-Gajendra Singh    The University of Sydney, Australia
-Gaurav Bhutani    Imperial College London
-Himanshu Pathak    IIT Patna
-Jagadeesh Kadiyam    Indian Institute of Technology Indore
-Jaspreert Kaur Randhawa    Deen Dayal Upadaya University
-Mohammad Talha    IIT Kharagpur
-Mrityunjay Doddamani    
-P. Anil Kishan    IIT Kharagpur
-Parmod Kumar    
-Pradeep Kumar    IIT Kanpur
-Prateek Saxena    Technical University of Denmark
-Rahul Vaish    IISc, Bangalore
-Rajeev Kumar    IIT Roorkee
-Rajesh Ghosh    IIT Kharagpur
-Ranbir Singh    
-Rik Rani Koner    IIT Guwahati
-Sarthak Nag    
-Satvasheel Powar    Monash University, Australia
-Sudhir Kumar Pandey    UGC - DAE Consortium for Scientific Research, Indore, India
-Sunny Zafar    Indian Institute of Technology Roorkee
-Swati Sharma    University of California, Irvine
-Vishal Singh Chauhan    BIT Mesra Ranchi
-Viswanath Balakrishnan    Indian Institute of Science
-Satish Chandra Jain    IIT Roorkee
+Atul Dhar   <ul>
+	<li>
+	<p>Solar Thermal Assisted Gasification, Sponsor: IIT Mandi, Project Duration: 3 years (Oct 2016 &ndash; July 2020)</p>
+	</li>
+	<li>
+	<p>Study of Synergistic Use of Hydrogen and other Alternative Fuels in a Dual Fuel Engine for Emissions Reduction, Science and Engineering Research Board (SERB), Government of India. (Aug 2016-Jan 2020).</p>
+	</li>
+	<li>
+	<p>Sustainable waste water treatment through bio-photoelectro catalysis and biofuel production, Sponsor: IMPRINT, Duration: 3 years, (July 2017-March 2021).</p>
+	</li>
+	<li>
+	<p>Design and development of efficient solar assisted corrugated box dryer, Sponsor: State Council for Science, Technology &amp; Environment, Himachal Pradesh, Duration (April 2017 &ndash; March 2019)</p>
+	</li>
+</ul>
+
+Amit Shukla   
+Arpan Gupta   <h2><em>Metamaterial walls for improved acoustic performance in green building</em></h2>
+
+Deepak Sachan   
+Dhiraj Dube   
+Gajendra Singh   
+Gaurav Bhutani   <ol>
+	<li>Computational modelling of full-scale snow avalanches using Non-Newtonian flow models</li>
+</ol>
+
+Himanshu Pathak   <h3><strong>&nbsp; 01.&nbsp;DST Startup Research Grant (Young Scientist), SERB Govt. of India</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Title: &ldquo;<strong>Fracture Analysis of Functionally Graded Materials (FGMs) by coupled FE-Meshfree Method</strong>&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 16.78 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status: Completed</h3>
+
+<h3>&nbsp;&nbsp;<strong>02.&nbsp;Consultancy Project, Motiprabha Infratech Pvt Ltd. for IOCL</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Title: &ldquo;<strong>Design of oil storage tank</strong>&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 75, 600&nbsp;INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status: Completed</h3>
+
+<h3><strong>&nbsp;</strong><strong>03.&nbsp;COVID-19 Project, IIT Mandi</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Title: &ldquo;Design and fabrication of low-cost Disinfection Tunnel for courier packages against SARS-CoV-2 virus&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 15, 000&nbsp;INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status: Completed</h3>
+
+<h3><strong>&nbsp;04.&nbsp;Seed Research Grant, IIT Mandi</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Title: &ldquo;<strong>Development and Implementation of Extended Finite Element (XFEM) Model for Ductile Crack Growth in Structural Engineering Applications</strong>&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Amount: 5.2 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status: Completed</h3>
+
+<h3>&nbsp;<strong>05.&nbsp;FIST, SERB Govt. of Indiaâ€‹</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Title: &ldquo;<strong>Centre for Design, Manufacturing and Testing of the System</strong>&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Amount: 209 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status: On-Going</h3>
+
+<h3>&nbsp;<strong>06.&nbsp;ARDB Extramural Research Grant, DRDO Govt. of Indiaâ€‹</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Title: &ldquo;<strong>Design analysis of adhesively bonded composite patch repair of cracked aluminum aircraft panels</strong>&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 14.34 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status: Completed</h3>
+
+<h3>&nbsp;&nbsp;<strong>07.&nbsp;ARDB Extramural Research Grant, DRDO Govt. of India</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Title: &ldquo;<strong>Development of carbon fiber reinforced polymer composites using microwave curing</strong>&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 15.528 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status: Completed</h3>
+
+<h3>&nbsp;&nbsp;<strong>08.&nbsp; Extramural Research Grant, Satluj Jal Vidyut Nigam Limited&nbsp;</strong></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Title: &ldquo;<strong>Optimum height of lift for mass concreting in concrete dam structures</strong>&rdquo;.</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 32.40 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status:&nbsp;On-Going</h3>
+
+<h3>&nbsp;&nbsp;<strong>09.&nbsp; ARDB Extramural Research Grant, DRDO Govt. of India</strong></h3>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Title: &ldquo;<big><strong>Thermo-mechanical fatigue analyses of carbon fibre reinforced polymer composites for aerospace applications: experimental and&nbsp; modelling approach</strong></big>&rdquo;.</p>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 25.42 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status:&nbsp;On-Going</h3>
+
+<h3>&nbsp;&nbsp;<strong>10.&nbsp;&nbsp;ARDB Extramural Research Grant, DRDO Govt. of India</strong></h3>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <big>Title: &ldquo;<strong>A rapid method to manufacture carbon nanotubes on recycled carbon fibers to enhance mechanical performance composites thereofâ€‹</strong>&rdquo;.</big></p>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 20.64 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status:&nbsp;On-Going</h3>
+
+<h3>&nbsp;&nbsp;<strong>11.&nbsp;&nbsp;ARDB Extramural Research Grant, DRDO Govt. of India</strong></h3>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<big>Title: &ldquo;<strong>Digital twin development employing Bayseian filters with sub-structured predictor models for aerospace structures applications</strong>&rdquo;.</big></p>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount: 34.68 lac INR</h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Status:&nbsp;On-Going</h3>
+
+Jagadeesh Kadiyam   <pre>
+Project Title: Bio-inspired Hybrid Underwater Vehicle for Ocean Observations (CRG/2018/000400).
+
+Role: Co-principal Investigator
+
+Funding Agency: Science and Engineering Research Board (SERB), India
+
+Duration: 2019-2023.
+
+Budget: Rs. 28.38 Lacs.
+
+Project Title Design and Development of an Intervention-class Underwater Robotic Vehicle with Tilting Thrusters for Marine Applications (IPTIF/TD/IP/#008).
+
+Role: Co-principal Investigator
+
+Funding Agency: IIT Palakkad Technology IHub Foundation, India
+
+Duration: 2021-2024.
+
+Budget: Rs. 25 Lacs.</pre>
+
+Jaspreert Kaur Randhawa   <p>&nbsp;</p>
+
+<table border="1" cellpadding="0" cellspacing="0" style="width:649px">
+	<tbody>
+		<tr>
+			<td style="width:180px">
+			<p><strong>Project Title &amp; Project No.</strong></p>
+			</td>
+			<td style="width:97px">
+			<p><strong>Sponsoring Agency</strong></p>
+			</td>
+			<td style="width:122px">
+			<p><strong>Investigators</strong></p>
+			</td>
+			<td style="width:98px">
+			<p><strong>Project Cost</strong></p>
+
+			<p><strong>&nbsp; (In Rs.)</strong></p>
+			</td>
+			<td style="width:153px">
+			<p><strong>Duration of Project with starting date &amp; End&nbsp; date</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:180px">
+			<p>Spring Rejuvenation for Water</p>
+
+			<p>Security in Himalaya;</p>
+			</td>
+			<td style="width:97px">
+			<p>&nbsp;NMHS</p>
+			</td>
+			<td style="width:122px">
+			<p>&nbsp;Jaspreet Kaur Randhawa</p>
+			</td>
+			<td style="width:98px">
+			<p>&nbsp;33,71,280</p>
+			</td>
+			<td style="width:153px">
+			<p>&nbsp;15/07/2020 (3yrs)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:180px">
+			<p>Jal Abhyaranya&rdquo;</p>
+
+			<p>IHR State: Himachal Pradesh</p>
+
+			<p>Aspirational District: Chamba</p>
+			</td>
+			<td style="width:97px">
+			<p>NMHS</p>
+			</td>
+			<td style="width:122px">
+			<p>Jaspreet Kaur Randhawa</p>
+			</td>
+			<td style="width:98px">
+			<p>20,84,210</p>
+			</td>
+			<td style="width:153px">
+			<p>&nbsp;2-8-2019</p>
+
+			<p>10 Months.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:180px">
+			<p>Development of Low Cost Accelerated Water Purification Systems with Added Mineralization for Himalayan Region</p>
+			</td>
+			<td style="width:97px">
+			<p>NMHS</p>
+			</td>
+			<td style="width:122px">
+			<p>Jaspreet Kaur Randhawa,</p>
+
+			<p>&nbsp;Bharat Singh Rajpuorhit(CoPI) &amp; Samar Agnihotri(CoPI)</p>
+			</td>
+			<td style="width:98px">
+			<p>40,66,000</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:153px">
+			<p>Ongoing (3 years)</p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:180px">
+			<p>Spatial distribution of uranium and associated water quality parameters in Una, Bilaspur, Solan and sirmaur</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:97px">
+			<p>BRNS</p>
+			</td>
+			<td style="width:122px">
+			<p>Subrata Ghosh $ Jaspreet Kaur Randhawa(Co-PI)</p>
+			</td>
+			<td style="width:98px">
+			<p>29,00,000</p>
+			</td>
+			<td style="width:153px">
+			<p>Ongoing (3 years)</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="5" style="width:649px">
+			<p><strong>Completed projects</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:180px">
+			<p><em>Novel Routes For Nano Crystallisation Of Energetic Compounds</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+			</td>
+			<td style="width:97px">
+			<p>ARMREB, DRDO</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:122px">
+			<p><em>Prem Felix Siril</em><em> Jaspreet Kaur Randhawa &amp; Prasanth Jose</em></p>
+			</td>
+			<td style="width:98px">
+			<p>68,48,250</p>
+			</td>
+			<td style="width:153px">
+			<p>Complete, 13.02.2013 to 12.02.2017 (4 years)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:180px">
+			<p><em>Nano Structured Metal Oxides: Application to Biosensing</em></p>
+			</td>
+			<td style="width:97px">
+			<p><em>ICMR, New Delhi</em></p>
+			</td>
+			<td style="width:122px">
+			<p><em>Jaspreet Kaur Randhawa</em></p>
+			</td>
+			<td style="width:98px">
+			<p><em>27,00,000</em>&nbsp;</p>
+			</td>
+			<td style="width:153px">
+			<p><em>Complete (2012-2016)</em></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:180px">
+			<p><em>Development of solid lipid nanoparticles as nanocarrier for drug delivery </em></p>
+			</td>
+			<td style="width:97px">
+			<p><em>Seed grant</em></p>
+			</td>
+			<td style="width:122px">
+			<p><em>Jaspreet Kaur Randhawa</em></p>
+			</td>
+			<td style="width:98px">
+			<p><em>6,50,000</em></p>
+			</td>
+			<td style="width:153px">
+			<p><em>Complete Jan 2021</em></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong>Project staff</strong></p>
+
+<p>Dr. Mohit Chawla,</p>
+
+<p>Mr. Manish Kumar,</p>
+
+<p>Mr. Siddhant Kumar,</p>
+
+Mohammad Talha   <h2>&nbsp;</h2>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:37px">
+			<p><strong>Sr. No.</strong></p>
+			</td>
+			<td style="width:180px">
+			<p><strong>Project</strong></p>
+			</td>
+			<td style="width:86px">
+			<p><strong>Sponsoring Agency</strong></p>
+			</td>
+			<td style="width:122px">
+			<p><strong>Investigators</strong></p>
+			</td>
+			<td style="width:98px">
+			<p><strong>Project Cost </strong></p>
+
+			<p><strong>&nbsp; (in Rs.)</strong></p>
+			</td>
+			<td style="width:104px">
+			<p><strong>Duration of Project</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><strong>1</strong></p>
+			</td>
+			<td style="width:180px">
+			<p>Imperfection Sensitivity Analysis of Functionally Graded Structures Featuring Parameter Uncertainties.</p>
+			</td>
+			<td style="width:86px">
+			<p>AR&amp;DB,</p>
+
+			<p>DRDO, Govt. of India</p>
+			</td>
+			<td style="width:122px">
+			<p>Mohammad Talha (PI)</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:98px">
+			<p>10,14,000/</p>
+			</td>
+			<td style="width:104px">
+			<p>2 years</p>
+
+			<p>(In progress)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p>&nbsp;</p>
+
+			<p><strong>2</strong></p>
+			</td>
+			<td style="width:180px">
+			<p>Nonlinear thermo-electro-elasticity analysis of geometrically imperfect functionally graded curved panels with material uncertainties,</p>
+			</td>
+			<td style="width:86px">
+			<p>SERB- DST,</p>
+
+			<p>Govt. of India</p>
+			</td>
+			<td style="width:122px">
+			<p>Mohammad Talha (PI)</p>
+			</td>
+			<td style="width:98px">
+			<p>14,85,000/-</p>
+			</td>
+			<td style="width:104px">
+			<p>3 years</p>
+
+			<p>(In progress)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><strong>3</strong></p>
+			</td>
+			<td style="width:180px">
+			<p>Investigation of phase change nanocomposite for high strain rate resistant armor applications</p>
+			</td>
+			<td style="width:86px">
+			<p>TBRL, DRDO,</p>
+
+			<p>Govt. of India</p>
+			</td>
+			<td style="width:122px">
+			<p>Mohammad Talha (Co-PI)</p>
+
+			<p>Viswanath B (PI)</p>
+			</td>
+			<td style="width:98px">
+			<p>26,86,400/-</p>
+			</td>
+			<td style="width:104px">
+			<p>3 years</p>
+
+			<p>(In progress)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><strong>4</strong></p>
+			</td>
+			<td style="width:180px">
+			<p>Non-Linear Active Shape and Vibration Control of Functionally Graded Structure using Functionally Graded Piezo Electric Material</p>
+			</td>
+			<td style="width:86px">
+			<p>AR&amp;DB,</p>
+
+			<p>DRDO, Govt. of India</p>
+			</td>
+			<td style="width:122px">
+			<p>Mohammad Talha (Co-PI)</p>
+
+			<p>Rajeev Kumar (PI)</p>
+			</td>
+			<td style="width:98px">
+			<p>25,00,000/-</p>
+			</td>
+			<td style="width:104px">
+			<p>3 years</p>
+
+			<p>(In progress)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><strong>5</strong></p>
+			</td>
+			<td style="width:180px">
+			<p>Development, Characterisations and Mathematical Modelling of Porous Composites for Biomedical Applications</p>
+			</td>
+			<td style="width:86px">
+			<p>IIT Mandi</p>
+			</td>
+			<td style="width:122px">
+			<p>Mohammad Talha (Co- PI)</p>
+
+			<p>Sunny Zafar (PI)</p>
+			</td>
+			<td style="width:98px">
+			<p>14,50,500/-</p>
+			</td>
+			<td style="width:104px">
+			<p>3 years</p>
+
+			<p>(In progress)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><strong>6</strong></p>
+			</td>
+			<td style="width:180px">
+			<p>Determination of Mechanical and Biological Properties of Osteoporotic Bone for Indian Patients.</p>
+			</td>
+			<td style="width:86px">
+			<p>IIT Mandi/IIT Ropar/PGI Chandigarh</p>
+			</td>
+			<td style="width:122px">
+			<p>Mohammad Talha (Co- PI),</p>
+
+			<p>Rajesh Ghosh (PI)</p>
+			</td>
+			<td style="width:98px">
+			<p>8,00,000/-</p>
+			</td>
+			<td style="width:104px">
+			<p>2 years</p>
+
+			<p>(In progress)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="width:180px">&nbsp;</td>
+			<td style="width:86px">&nbsp;</td>
+			<td style="width:122px">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+Mrityunjay Doddamani   <table align="center" border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Sr. No.</th>
+			<th scope="col">Status</th>
+			<th scope="col">No. of Projects</th>
+			<th scope="col">Area</th>
+			<th scope="col">Funding Agency</th>
+			<th scope="col">Total Amount (Rs. Lakhs)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>01</td>
+			<td>Recomended</td>
+			<td>01</td>
+			<td>Additive Manufacturing</td>
+			<td>DST-TDP</td>
+			<td>98.15</td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>Ongoing</td>
+			<td>06</td>
+			<td>Additive Manufacturing</td>
+			<td>DST, SERB, ISHRAE, MoE</td>
+			<td>438.71</td>
+		</tr>
+		<tr>
+			<td>03</td>
+			<td>Completed</td>
+			<td>03</td>
+			<td>Additive Manufacturing</td>
+			<td>DST, VGST</td>
+			<td>88.91</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+P. Anil Kishan   
+Parmod Kumar   
+Pradeep Kumar   <p><big><samp><strong>Ongoing</strong></samp></big></p>
+
+<p><big><samp><strong>1. Estimation of Thermal Load on Rocket Base Plate</strong></samp></big></p>
+
+<p><big><samp>The rocket base plate is heated by emission of thermal radiation from gases and particles emanating from the convergent-divergent (CD) nozzle. These gases are at high pressure, temperature, mixture of species and contains particles. Thus, accurate estimation of radiation properties of gases and particles, and also efficient solver are necessary to estimation of thermal load on rocket base plate. (<strong>MS Thesis: Estimation of Thermal Load on Rocket Base Plate From Exhaust Plume</strong>)</samp></big></p>
+
+<p><big><samp><strong>2. Estimation of Radiation Losses/Emissions in Combustion Systems</strong></samp></big></p>
+
+<p><big><samp>The participating species that are generated during the combustion process emit the radiation energy. This energy leaves the combustion region by radiation mode of heat transfer, i.e., loss of energy, thus causes the reduction in temperature which affects performance of the combustion system. Therefore, emission from each and every species must be accounted for the efficient working of the combustion system (<strong>MS Thesis: Estimation of Realistic Radiation Losses/Emissions in Combustion System</strong>)</samp></big></p>
+
+<p><big><samp>3. <strong>Collimated Beam Radiation</strong></samp></big></p>
+
+<p><big><samp>In many applications, the energy is transferred in a single direction by radiation mode of heat transfer like, solar energy incident on solar receiver cavity after reflecting from heliostat field. This energy is further traveled from the optical window of the solar receiver cavity through fluid medium to incident on the porous medium. The fluid absorbs-emits and/or scatters radiation energy before energy incident on porous medium. In another application, the solar energy incident on ocean, lakes, ponds travels in the water, gets absorb within water or reaches to the bottom, thus, affects the aquatic life. In another situation, the solar energy incident on the top clouds may affecting its dynamics. Therefore, collimated beam feature developed in our lab could be tuned to study these applications. (<strong>PhD Thesis: Interaction of Collimated Beam Radiation with Natural Convection in an Enclosure</strong>)</samp></big></p>
+
+<p><big><samp><strong>Completed</strong></samp></big></p>
+
+<p><big><samp><strong><em>1. Development of Adaptive Unstructured Angular Discretisation Grid for the Finite Volume Method of Radiative Transfer Equation for Collimated Beam Radiation</em></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</samp></big></p>
+
+<p><big><samp>It is a general myth that the radiation heat transfer is only important at very high-temperature applications, however, This is not true. In general, the radiation plays equally important role in the natural convection problems. The radiation heat transfer problems are treated in two ways (1) Surface to Surface radiation (2) Radiation in participating medium. The former way of analysis is relatively simple whereas later one is complex in all aspects, i.e.., mathematically, numerically, physics, etc. Furthermore, the radiation problems can also be categories as diffuse and collimated beam radiation. The radiation problem from elevated temperature can be treated as diffuse radiation problem, whereas radiation energy traveling in a single direction belongs to collimated beam radiation category. The radiation problems from optics to biomedical field belong to collimated beam problem. The solar radiation is also an example of collimated beam radiation.&nbsp;</samp></big></p>
+
+<p><big><samp>The radiation heat transfer is modeled by an integrodifferential equation known as Radiative Transfer Equation (RTE). This equation represents radiation energy conservation in a direction. To achieve an accurate solution, one need to solve RTE numerically in many directions but need to limit the number of directions by keeping the computational resource in mind. Many numerical techniques have been developed to solve the RTE. The most popular technique is finite volume discrete ordinate method (FVDOM). Along with the CFD domain discretization, FVDOM also discretizes the angular domain of 4Pi. The angular domain discretization is regular using the spherical coordinate system with unit radius. This kind of angular discretization produces acceptable results for the diffuse radiation; however, getting right direction for the collimated beam radiation problems is little problematic. Thus FVDOM can not be used for the collimated beam problem in the present form. It is required to improve the angular discretization technique for the collimated beam problems. This project deals to improve the angular discretization so that FVDOM can be used with collimated beam radiation problems.</samp></big></p>
+
+Prateek Saxena   <ol>
+	<li>
+	<h3>Cost effective Metal AM using Fused Filament Fabrication</h3>
+	</li>
+	<li>
+	<h3>Continous fiber reinforced AM</h3>
+	</li>
+	<li>
+	<h3>AM of Metamaterials</h3>
+	</li>
+</ol>
+
+Rahul Vaish   
+Rajeev Kumar   <table><tbody><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;"><strong>Project Name</strong></span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Sponsor Agency</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Cost (Rs)</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;"><strong>Duration</strong></span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;"><strong>Remark</strong></span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Active Control of Vibration using Fuzzy Logic Controller for Smart Structure and its Experimental validation</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Department of Science & Technology, India</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">3.03 Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2013-2016</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Principal Investigator</span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Stability Analysis of Pick and Carry Crane</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Indo farm equipment limited, Baddi, HP, India</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">1.5 Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2014-2015</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Principal Investigator</span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Deformation induced electromagnetic radiation from metals and alloys under low temperature conditions. </span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Department of Science & Technology, India</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">18.4 Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2013-2017</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Co- Principal Investigator</span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Development of analytical method to determine transient torques developed under various faults and its grid interaction effects on turbine generator shaft system</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">BHEL Haridwar, India</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">17.87 Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2016-2017</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Principal Investigator</span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Design & Development of High Performance Synchronous Machine (PMSM) based Drives for Motion Control</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Naval research board</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">25 Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2015-2018</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Co- Principal Investigator</span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Non-linear shape & vibration control of functional graded structure using functional graded piezo electric sectors and actuators</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Aeronautical research board</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">21.53 Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2017-2020</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Principal Investigator</span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Design and Analysis of manual operated Ropeway for river crossing</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><p>Society for Technology & Development, Mandi</p><p><br><br data-cke-filler="true"></p></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">1.75Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2017-2020</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Co- Principal Investigator</span></td></tr><tr><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Design, Manufacturing and Testing of the Energy Systems</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Department of Science & Technology, India</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">209.5 Lakh</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">2018-2021</span></td><td class="ck-editor__editable ck-editor__nested-editable" contenteditable="true"><span style="display:inline-block;">Principal Investigator</span></td></tr></tbody></table>
+
+<div class="ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="en" dir="ltr" role="textbox" aria-label="Rich Text Editor, main" contenteditable="true"><p><strong>Industry Project&nbsp;</strong></p><p>Worked on following different system of Aircraft Engine at General Electric (John&nbsp;F.&nbsp;Welch technology center Bangalore INDIA)</p><p><strong>DEVELOPMENT PROJECTS</strong>&nbsp;</p><p>CF34-10 Surface Cooler : Designed and analyzed the cross section of surface cooler in order to minimize weight and satisfy proof and burst pressure requirement.</p><p>Bleed Bias System: Modify existing system in order to meet fast sensitive system.&nbsp;</p><p>Environment Control System: Developed Finite Element Model of the system and did vibration analysis (Harmonic analysis) to meet HCF requirement.&nbsp;</p><p>Core Fire Suppression System: Developed Finite Element Model of the system and did vibration analysis (Harmonic analysis) to meet HCF requirement.&nbsp;</p><p>IDG Cooling System: Developed Finite Element Model of the system and did static analysis in order to meet LCF requirement and vibration analysis (Harmonic analysis) to meet HCF requirement.&nbsp;</p><p>VFSG Oil Tube System: Developed Finite Element Model of the system and did static analysis in order to meet LCF requirement and vibration analysis (Harmonic analysis) to meet HCF requirement.&nbsp;</p><p><br><br data-cke-filler="true"></p><p><strong>PRODUCTIVITY PROJECTS</strong>&nbsp;</p><p>Developed MACROS (ANSYS) for stress analysis</p><p>Developed Correlation for damping estimation of ball joint</p><p>Developed a tool for predicting stress in bolt hole</p><p>Wrote Best practices (Best practice for HCF, Best practice for LCF, Best practice for thermal analysis)</p><p>Working on Fluid damping estimation project</p><p><br><br data-cke-filler="true"></p><p><strong>PERFORMED ANALYSIS</strong></p><p>Stress Analysis (Linear &amp; Nonlinear)</p><p>Modal Analysis</p><p>Fatigue Analysis (HCF &amp; LCF)</p><p>Damage Tolerance Analysis</p><p>Vibration Analysis (Harmonic Analysis &amp; Spectrum Analysis)&nbsp;</p><p>Thermal Analysis</p></div>
+Rajesh Ghosh   
+Ranbir Singh   
+Rik Rani Koner   <table align="left" style="width:700px">
+	<thead>
+		<tr>
+			<th style="text-align:left; vertical-align:bottom">S.no.</th>
+			<th style="text-align:left; vertical-align:bottom">Project Title</th>
+			<th style="text-align:left; vertical-align:bottom">Source</th>
+			<th style="text-align:left; vertical-align:bottom">Amount</th>
+			<th style="text-align:left; vertical-align:bottom">Duration</th>
+			<th style="text-align:left; vertical-align:bottom">Status</th>
+			<th style="text-align:left; vertical-align:bottom">Role</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="vertical-align:top">1</td>
+			<td style="vertical-align:top">Metal-Organic Material (MOM) Embedded Electrospun Carbon Nanofiber (CNF) for Symmetric and Asymmetric Supercapacitor</td>
+			<td style="vertical-align:top">DST-MES</td>
+			<td style="vertical-align:top">Recommended. Awaiting financial sanction</td>
+			<td style="vertical-align:top">3 year</td>
+			<td style="vertical-align:top">To be started soon</td>
+			<td style="vertical-align:top">PI</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">2</td>
+			<td style="vertical-align:top">Sustainable waste water treatment through bio-photoelectro catalysis and bio production</td>
+			<td style="vertical-align:top">MHRD-IMPRINT</td>
+			<td style="vertical-align:top">3,84,34,000</td>
+			<td style="vertical-align:top">3 years</td>
+			<td style="vertical-align:top">On going</td>
+			<td style="vertical-align:top">Co-PI</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">3</td>
+			<td style="vertical-align:top">New metal-organic networks as promising electro-active species for energy storage application: from materials developments to prototype fabrication</td>
+			<td style="vertical-align:top">SERB</td>
+			<td style="vertical-align:top">30,51,000</td>
+			<td style="vertical-align:top">3 year</td>
+			<td style="vertical-align:top">On going</td>
+			<td style="vertical-align:top">PI</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">4</td>
+			<td style="vertical-align:top">Development of indigenous chemical mechanical polishing slurries for microelectronics application at semiconductor laboratory (SCL)</td>
+			<td style="vertical-align:top">SCL Mohali</td>
+			<td style="vertical-align:top">69,60,000</td>
+			<td style="vertical-align:top">3 year</td>
+			<td style="vertical-align:top">On going</td>
+			<td style="vertical-align:top">Co-PI</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">5</td>
+			<td style="vertical-align:top">Spatial distribution of uranium and associated water quality parameters in Shimla and Kinnaur</td>
+			<td style="vertical-align:top">DAE-BRNS</td>
+			<td style="vertical-align:top">29,24,300</td>
+			<td style="vertical-align:top">2 years</td>
+			<td style="vertical-align:top">On going</td>
+			<td style="vertical-align:top">Co-PI</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">6</td>
+			<td style="vertical-align:top">Chiral Metal &ndash; Organic Frameworks : Rational Synthesis, Characterization and Novel Applications</td>
+			<td style="vertical-align:top">DST</td>
+			<td style="vertical-align:top">25,75,000</td>
+			<td style="vertical-align:top">3 Years</td>
+			<td style="vertical-align:top">Completed</td>
+			<td style="vertical-align:top">PI</td>
+		</tr>
+	</tbody>
+</table>
+
+Sarthak Nag   
+Satvasheel Powar   <h3><strong>On-going Projects</strong></h3>
+
+<ul>
+	<li>
+	<p>Solar thermal assisted gasification, Sponsor: IIT Mandi, Project Duration: 3 years (Oct 2016 &ndash; Sept 2019)</p>
+	</li>
+	<li>
+	<p>Design and development of efficient solar assisted corrugated box dryer, Sponsor: State Council for Science, Technology &amp; Environment, Himachal Pradesh, Duration (April 2017 &ndash; March 2019)</p>
+	</li>
+	<li>
+	<p>Sustainable waste water treatment through bio-photoelectro catalysis and biofuel production, Sponsor: IMPRINT, Duration: 3 years (Sept 2017 &ndash; Aug 2020) - (Co-PI)</p>
+	</li>
+	<li>
+	<p>Snow Mapping and its Parameter Estimation from Geospatial (AVIRIS-NG) and Field data, Duration: 2 years (Nov 2017 &ndash; Oct 2019) -&nbsp;(Co-PI)</p>
+	</li>
+	<li>
+	<p>Scalable manufacturing of asymmetric micro supercapacitors for next generation energy storage devices, Duration: 3 years (April 2018 - March 2021)&nbsp;-&nbsp;(Co-PI)</p>
+	</li>
+</ul>
+
+<hr />
+<h3><strong>Completed Projects</strong>&nbsp;</h3>
+
+<ul>
+	<li>
+	<p>Development of Industrially scalable and commercially feasible solutions for solid-state dye-sensitized solar cells and variants, Sponsor: NTU, Singapore - Dyesol, Australia, Project Duration: 2.5 years (Dec 2012 &ndash; May 2015)</p>
+	</li>
+</ul>
+
+Sudhir Kumar Pandey   
+Sunny Zafar   <table border="1" cellpadding="0" cellspacing="0" style="width:654px">
+	<tbody>
+		<tr>
+			<td style="width:66px">
+			<h3><code><strong>S.No.</strong></code></h3>
+			</td>
+			<td style="width:238px">
+			<h3><code><strong>Project Title</strong></code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code><strong>Funding Agency</strong></code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code><strong>Amount </strong></code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+			<td style="width:113px">
+			<h3><code><strong>Status</strong></code></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px">
+			<ol>
+				<li>
+				<h3>&nbsp;</h3>
+				</li>
+			</ol>
+			</td>
+			<td style="width:238px">
+			<h3><code>Thermo-mechanical fatigue analyses of carbon fibre reinforced polymer composites for aerospace applications: experimental and modelling approach</code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code>AR&amp;DB, DRDO</code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code>â‚¹ 25,42,320/-</code></h3>
+			</td>
+			<td style="width:113px">
+			<h3><code>On-going</code></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px">
+			<h3><code>2.</code></h3>
+			</td>
+			<td style="width:238px">
+			<h3><code>A rapid method to manufacture carbon nanotubes on recycled carbon fibres to enhance mechanical performance composites thereof</code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code>AR&amp;DB, DRDO</code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code>â‚¹ 20,64,180/-</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+			<td style="width:113px">
+			<h3><code>On-going</code></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px">
+			<h3><code>3.</code></h3>
+			</td>
+			<td style="width:238px">
+			<h3><code>â€‹Design and development of disinfection tunnel for courier Packages against SARS-CoV-2 (COVID-19) virus</code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code>IIT Mandi</code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code>â‚¹ 15,000/-</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+			<td style="width:113px">
+			<h3><code>Completed</code></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px">
+			<h3><code>4.</code></h3>
+			</td>
+			<td style="width:238px">
+			<h3><code>Vetting of drawing and design calculations of cylindrical MS tanks</code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code>Motiprabha Infratech Pvt. Ltd.</code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code>â‚¹ 82,600/-</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+			<td style="width:113px">
+			<h3><code>Completed</code></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px">
+			<h3><code>5.</code></h3>
+			</td>
+			<td style="width:238px">
+			<h3><code>Development of carbon fibre reinforced polymer composites through microwave curing</code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code>AR&amp;DB, DRDO</code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code>â‚¹ 15,25,800/-</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+			<td style="width:113px">
+			<h3><code>Completed</code></h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px">
+			<h3><code><a name="_Hlk512594945"></a>6.</code></h3>
+			</td>
+			<td style="width:238px">
+			<h3><code>Development, characterisations and mathematical modelling of microwave cured porous composites for biomedical applications</code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code>IIT Mandi</code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code>â‚¹ 14,50,000/-</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+			<td style="width:113px">
+			<h3><code>Completed</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px">
+			<h3><code>7.</code></h3>
+			</td>
+			<td style="width:238px">
+			<h3><code>Development of nanostructured wear resistant microwave clads to minimise slurry erosion in hydro turbines</code></h3>
+			</td>
+			<td style="width:104px">
+			<h3><code>SERB, DST</code></h3>
+			</td>
+			<td style="width:132px">
+			<h3><code>â‚¹ 53,30,750/-</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+			<td style="width:113px">
+			<h3><code>Completed</code></h3>
+
+			<h3>&nbsp;</h3>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+Swati Sharma   
+Vishal Singh Chauhan   
+Viswanath Balakrishnan   
+Satish Chandra Jain   
