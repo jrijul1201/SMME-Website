@@ -29,13 +29,18 @@ $arr[$facultyIndex]["activity"] = $_POST['activity'];
 $educationInfo = [];
 if (isset($_POST['degree'])) {
   foreach ($_POST['degree'] as $index => $degree) {
-
-    $duration = $_POST['duration'][$index];
+    $degreeOther = ($degree == "Other") ? $_POST['degreeOther'][$index] : $degree;
+    $specialization = $_POST['specialization'][$index];
+    $start_year = $_POST['start_year'][$index];
+    $end_year = $_POST['end_year'][$index];
+    $start_year = ($start_year == $end_year) ? "" : $start_year;
     $place = $_POST['place'][$index];
-    $thesisTitle = $_POST['thesisTitle'][$index];
+    $other_info = $_POST['other_info'][$index];
     $edIsHidden = ($_POST['educationIsHidden'][$index] == "on") ? true : false;
-    $temp = array('degree' => $degree, 'duration' => $duration, 'place' => $place, 'thesisTitle' => $thesisTitle, 'isHidden' => $edIsHidden);
-    $educationInfo[] = $temp;
+    $temp = array('degree' => $degreeOther, 'specialization' => $specialization, 'start_year' => $start_year, 'end_year' => $end_year, 'place' => $place, 'other_info' => $other_info, 'isHidden' => $edIsHidden);
+    if($specialization != "" || $start_year != "" || $end_year != "" || $place != "") {
+      $educationInfo[] = $temp;
+    }
   }
 }
 $arr[$facultyIndex]["education"] = $educationInfo;
