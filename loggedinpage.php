@@ -212,7 +212,7 @@ $userName = $_SESSION['user_name'];
         <textarea name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
         <h3>Current Projects:</h3>
         <textarea name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
-        <h3>Current Openings for Reasearch:</h3>
+        <h3>Current Openings for research:</h3>
         <textarea name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
         <h3>Work Experiences:</h3>
         <textarea name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
