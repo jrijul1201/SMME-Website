@@ -17,6 +17,9 @@
             f.irins_pub = f.irins_pub.sort((a1, a2) => {
                 return (a1.title.length > a2.title.length) ? 1 : -1;
             });
+            f.irins_pub = f.irins_pub.sort((a1,a2) => {
+                return (parseInt(a1.year) < parseInt(a2.year) ? 1 : -1);
+            })
             const pubs = _.groupBy(f.irins_pub, pub => pub.publicationType);
 
             console.log(pubs);
