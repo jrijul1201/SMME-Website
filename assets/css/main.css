@@ -2123,7 +2123,8 @@ section {
 
 .pg-overview .nav-link.active {
   transition: 0.3s;
-  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  background: var(--color-primary);
+  /* background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6)); */
   border-color: var(--color-primary);
 }
 
@@ -2140,7 +2141,7 @@ section {
 }
 
 .pg-overview .nav-link.spaced h4 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .pg-overview .tab-content {
