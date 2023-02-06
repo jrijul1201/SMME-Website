@@ -3961,14 +3961,14 @@ section {
     margin: 6% 1%;
     padding: 7% 3%;
   }
-}
+} */
 
 @media(max-width: 700px) {
   .landingPageHead {
-    justify-content: center;
-    padding: 5% 2%;
+    /* justify-content: center; */
+    margin-top: 15%;
   }
-} */
+}
 
 #myVideo {
   position: absolute;
