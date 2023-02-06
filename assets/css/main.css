@@ -1088,7 +1088,7 @@ section {
 .hero-fullscreen h2 span {
   font-weight: 500;
   font-size: 40px;
-  /* color: var(--color-secondary-dark); */
+  color: var(--color-primary-dark);
 }
 
 .hero-fullscreen p {
@@ -3932,8 +3932,8 @@ section {
 }
 
 .landingPageHead {
-  padding: 7% 4%;
-  /* margin-left: 3%; */
+  padding: 2%;
+  margin: 6% 1%;
   border: 3px solid var(black);
   /* background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6)); */
   /* background: linear-gradient(45deg, var(--color-primary-light), var(--color-primary)); */
@@ -3941,13 +3941,16 @@ section {
   /* box-shadow: 4px 4px 20px 2px rgb(87 79 79); */
   box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
   width: 350px;
-  height: 100%;
-  text-align: center;
+  /* height: 100%; */
+  /* text-align: center; */
   border-radius: 0.3rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  top:0;
+  left:0;
+  position: absolute;
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .landingPageHead {
     margin-right: 70%;
   }
@@ -3955,7 +3958,7 @@ section {
 
 @media only screen and (max-width: 1280px) and (min-width: 700px) {
   .landingPageHead {
-    margin: 10%;
+    margin: 6% 1%;
     padding: 7% 3%;
   }
 }
@@ -3965,7 +3968,7 @@ section {
     justify-content: center;
     padding: 5% 2%;
   }
-}
+} */
 
 #myVideo {
   position: absolute;
