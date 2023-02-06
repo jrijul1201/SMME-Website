@@ -84,20 +84,32 @@
             var eduData = "";
             for (let i = 0; i < f.education.length; i++) {
                 let edu = f.education[i];
+                let duration = "";
+                if (edu.start_year === undefined || edu.start_year === "") {
+                    if (edu.end_year === undefined || edu.end_year === "") {
+                        duration = "";
+                    } else {
+                        duration = edu.end_year;
+                    }
+                } else {
+                    if (edu.end_year === undefined || edu.end_year === "") {
+                        duration = edu.start_year;
+                    } else {
+                        duration = edu.start_year + '&#8211;' + edu.end_year;
+                    }
+                }
                 eduData += `<div class="col-md-12 plates">
                         <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
                             <div class="col d-flex flex-column position-static plate-child">
                                 <strong class="d-inline-block mb-auto text-primary">
                                     <h4>${edu.degree}</h4>
                                 </strong>
-                                ${edu.duration !== undefined && edu.duration !== "" ?
+                               ${duration !== "" ? `<div class="mb-1">
+                                    ${duration} <br />
+                                </div>`: ""}
+                                ${edu.specialization !== undefined && edu.specialization !== "" ?
                         `<div class="mb-1">
-                                    ${edu.duration.replace('(', '').replace(')', '').replace('-', '&#8211;')}
-                                </div>`
-                        : ``}
-                                ${edu.in !== undefined && edu.in !== "" ?
-                        `<div class="mb-1">
-                                    ${edu.in} <br />
+                                    ${edu.specialization} <br />
                                 </div>`
                         : ``}
                                 ${edu.place !== undefined && edu.place !== "" ?
@@ -105,9 +117,9 @@
                                     ${edu.place}
                                 </div>`
                         : ``}      
-                                ${edu.otherInfo !== undefined && edu.otherInfo !== "" ?
+                                ${edu.other_info !== undefined && edu.other_info !== "" ?
                         `<div class="mb-auto text-muted">
-                                    ${edu.otherInfo}
+                                    ${edu.other_info}
                                 </div>`
                         : ``}                           
                             </div>

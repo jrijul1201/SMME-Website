@@ -12,7 +12,7 @@
     "address": "A4-209, South Campus, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "2006",
         "end_year": "2013",
@@ -21,7 +21,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "",
         "start_year": "2004",
         "end_year": "2006",
@@ -30,7 +30,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "",
         "start_year": "2000",
         "end_year": "2004",
@@ -1114,7 +1114,7 @@
     "address": "A6-11, South Campus, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -1123,7 +1123,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "",
@@ -1132,7 +1132,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "",
@@ -1165,7 +1165,7 @@
     "address": "A11-04-35, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -1174,7 +1174,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "",
@@ -1768,7 +1768,7 @@
     "address": "A11, 4.51, North Campus, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "2014",
         "end_year": "2022",
@@ -1777,7 +1777,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.S.",
+        "degree": "MS",
         "specialization": "",
         "start_year": "2008",
         "end_year": "2010",
@@ -1786,7 +1786,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "",
         "start_year": "2002",
         "end_year": "2006",
@@ -1843,7 +1843,7 @@
     "address": "A11.02.28, North Campus, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "2020",
@@ -1852,7 +1852,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "",
         "start_year": "",
         "end_year": "2012",
@@ -2054,7 +2054,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "2012",
         "end_year": "2016",
@@ -2063,7 +2063,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech. - M.Tech. (Dual)",
+        "degree": "BTech - MTech (Dual)",
         "specialization": "",
         "start_year": "2002",
         "end_year": "2007",
@@ -2181,7 +2181,7 @@
     "address": "A11-04-28, IIT Mandi, North Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2015",
@@ -2190,7 +2190,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2009",
@@ -2462,7 +2462,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -2495,7 +2495,7 @@
     "address": "A1 Building, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Chemistry",
         "start_year": "",
         "end_year": "",
@@ -2678,7 +2678,7 @@
     "address": "A4 - 306, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Aerospace Engineering",
         "start_year": "",
         "end_year": "2012",
@@ -2687,7 +2687,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "Mechanical Engineering, (Machine Design)",
         "start_year": "",
         "end_year": "2006",
@@ -2696,7 +2696,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2003",
@@ -2884,7 +2884,7 @@
     "address": "A11.04.49, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -3058,7 +3058,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -3190,7 +3190,7 @@
     "address": "G1-110, IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "",
@@ -3208,7 +3208,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "",
@@ -3284,7 +3284,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "2009",
@@ -3293,7 +3293,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "",
         "start_year": "",
         "end_year": "2003",
@@ -3326,7 +3326,7 @@
     "address": "A11.4.26, North campus, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Manufacturing",
         "start_year": "2015",
         "end_year": "2019",
@@ -3335,7 +3335,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "Industrial Tribology and Maintenance Engineering",
         "start_year": "2013",
         "end_year": "2015",
@@ -3344,7 +3344,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "2008",
         "end_year": "2012",
@@ -3404,7 +3404,7 @@
         "publicationType": "Review",
         "pages": "NA",
         "volume": "40",
-        "authors": "Sivarupan T.; Balasubramani N.; Saxena P.; Nagarajan D.; El Mansori M.; Salonitis K.; Jolly M.; Dargusch M.S.",
+        "authors": "Sivarupan T.; Balasubramani N.; Saxena P.; Nagarajan D.; El Mansori M.; Salonitis K.; Jolly M.; Dargusch MS",
         "journal": "Additive Manufacturing",
         "scopusCitations": "33.0",
         "crossrefCitations": "18.0",
@@ -3448,7 +3448,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -3457,7 +3457,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "Materials Science",
         "start_year": "",
         "end_year": "",
@@ -3466,7 +3466,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2002",
@@ -6088,7 +6088,7 @@
         "publicationType": "Article",
         "pages": "NA",
         "volume": "15",
-        "authors": "Gaur A.; Elqahtani Z.M.; Ahmed S.b.; Al-Buriahi M.S.A.; Vaish R.; Chauvhan V.S.",
+        "authors": "Gaur A.; Elqahtani Z.M.; Ahmed S.b.; Al-Buriahi MSA.; Vaish R.; Chauvhan V.S.",
         "journal": "Materials",
         "scopusCitations": "0.0",
         "crossrefCitations": "0.0",
@@ -6928,7 +6928,7 @@
         "publicationType": "Article",
         "pages": "NA",
         "volume": "12",
-        "authors": "Alfryyan N.; Kumar S.; Ahmed S.B.; Kebaili I.; Boukhris I.; Azad P.; Al-Buriahi M.S.; Vaish R.",
+        "authors": "Alfryyan N.; Kumar S.; Ahmed S.B.; Kebaili I.; Boukhris I.; Azad P.; Al-Buriahi MS; Vaish R.",
         "journal": "Catalysts",
         "scopusCitations": "0.0",
         "crossrefCitations": "0.0",
@@ -7518,7 +7518,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Machine Design",
         "start_year": "",
         "end_year": "",
@@ -7527,7 +7527,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "Computer Aided Design",
         "start_year": "",
         "end_year": "",
@@ -7536,7 +7536,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "",
@@ -7612,7 +7612,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2013",
@@ -7630,7 +7630,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2007",
@@ -7990,7 +7990,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -8071,7 +8071,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Chemistry",
         "start_year": "",
         "end_year": "2009",
@@ -8207,7 +8207,7 @@
     "address": "A11-04-57, North Campus, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -8295,7 +8295,7 @@
         "publicationType": "Review",
         "pages": "NA",
         "volume": "40",
-        "authors": "Sivarupan T.; Balasubramani N.; Saxena P.; Nagarajan D.; El Mansori M.; Salonitis K.; Jolly M.; Dargusch M.S.",
+        "authors": "Sivarupan T.; Balasubramani N.; Saxena P.; Nagarajan D.; El Mansori M.; Salonitis K.; Jolly M.; Dargusch MS",
         "journal": "Additive Manufacturing",
         "scopusCitations": "33.0",
         "crossrefCitations": "18.0",
@@ -8381,7 +8381,7 @@
     "address": "A4 - 203, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "2013",
@@ -8708,7 +8708,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Physics",
         "start_year": "",
         "end_year": "2007",
@@ -9969,7 +9969,7 @@
     "address": "A11.5.13, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Manufacturing Engineering",
         "start_year": "",
         "end_year": "2016",
@@ -9978,7 +9978,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2013",
@@ -9987,7 +9987,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Tech.",
+        "degree": "BTech",
         "specialization": "Mechanical Engineering",
         "start_year": "",
         "end_year": "2011",
@@ -10847,7 +10847,7 @@
     "address": "A8-F9, IIT Mandi",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "Materials and Manufacturing Technology",
         "start_year": "",
         "end_year": "",
@@ -10856,7 +10856,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.S.",
+        "degree": "MS",
         "specialization": "Materials and Manufacturing Technology",
         "start_year": "",
         "end_year": "",
@@ -11244,7 +11244,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -11528,7 +11528,7 @@
         "publicationType": "Article",
         "pages": "NA",
         "volume": "15",
-        "authors": "Gaur A.; Elqahtani Z.M.; Ahmed S.b.; Al-Buriahi M.S.A.; Vaish R.; Chauvhan V.S.",
+        "authors": "Gaur A.; Elqahtani Z.M.; Ahmed S.b.; Al-Buriahi MSA.; Vaish R.; Chauvhan V.S.",
         "journal": "Materials",
         "scopusCitations": "0.0",
         "crossrefCitations": "0.0",
@@ -11950,7 +11950,7 @@
     "address": "A1 Building, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
@@ -12455,7 +12455,7 @@
         "isHidden": false
       }
     ],
-    "publications": "<p><strong>International peer reviewed papers:</strong></p>\r\n\r\n<p>&nbsp;  &nbsp;  &nbsp; 1. Pawan Kumar, Kartikey Thakar, Navneet Verma, Jayeeta Biswas, Takuya Maeda, Ahin Roy, Kenji Kaneko, Chayan Nandi, Saurabh Lodha and B.&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Viswanath, Coherent Polymorphic Heterostructures Tunes the Exceptional Opto-electronic Properties of WS2 Monolayer, <strong>under review</strong></p>\r\n\r\n<p>&nbsp;  &nbsp;  2. Pawan Kumar, Davinder Singh, B.Viswanath, Thermally Driven Reversible Photoluminescence Modulation in WS2/VO2 Heterostructure,&nbsp;  <strong>Applied&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  Surface Science, </strong>in press(2019)</p>\r\n\r\n<p>&nbsp;  &nbsp; 3. Piyush Avasthi, B.Viswanath, Tuning the Wettability of Vertically Aligned CNT&ndash; TiO2 Hybrid Electrodes for Enhanced Supercapacitor Performance,&nbsp;  &nbsp;  &nbsp; <strong>Advanced Materials Interfaces</strong>, 1801842 (2019) IF: 4.8</p>\r\n\r\n<p>&nbsp;  4. Piyush Avasthi, Akash Kumar, B.Viswanath, Aligned CNT forests on stainless steel mesh for flexible supercapacitor electrode with high capacitance and&nbsp;  &nbsp;  power density, <strong>ACS Applied nanomaterials</strong>, accepted (2019)</p>\r\n\r\n<p>&nbsp;  5. Manasi R Mulay, Aditya Chauhan, Satyanarayan Patel, B. Viswanath, Aditi Halder, Rahul Vaish, Candle soot;  journey from pollutant to a functional&nbsp;  &nbsp;  &nbsp;  &nbsp; materials, <strong>Carbon</strong>, 144, 684-712 (2019) IF: 7.1</p>\r\n\r\n<p>&nbsp;  6. Pawan Kumar,Birender Singh, Pradeep Kumar&nbsp;  and&nbsp;  B. Viswanath, Competing thermal expansion mismatch and lattice strain engineered growth of&nbsp;  &nbsp; crack free WS2 in-plane heterostructures, <strong>Journal of Materials Chemistry C</strong>, 6, 11407 (2018) IF: 6.0</p>\r\n\r\n<p>&nbsp; 7. Pawan Kumar, Dipanwita Chatterjee, Takuya Maeda, Ahin Roy, Kenji Kaneko and B. Viswanath, Scalable faceted voids with luminescence enhanced&nbsp;  &nbsp; edges in WS2 monolayers, <strong>Nanoscale</strong>, 10 (34), 16321-16331 (2018) IF: 7.3</p>\r\n\r\n<p>&nbsp; 8. Pawan Kumar, B. Viswanath, Nanosculpting of Atomically Thin 2D Materials for Site-Specific Photoluminescence Modulation, <strong>Advanced Optical&nbsp;  &nbsp; Materials</strong>,1701284 (2018) IF: 7.3</p>\r\n\r\n<p>&nbsp; 9. Pawan Kumar and B.Viswanath, Growth and microstructural evolution of WS2 nanostructures with tunable field and light modulated electrical transport,&nbsp;  &nbsp; <strong>Applied Surface Science</strong>, 436, 846-853 (2018) IF: 4.4</p>\r\n\r\n<p>&nbsp; 10. Pawan Kumar, Navneet Chandra Verma, Natasha Goyal, Jayeeta Biswas, Saurabh Lodha, Chayan Kanti Nandi, B.Viswanath, Phase engineering of&nbsp;  &nbsp; seamless heterophase homojunctions with co-existing 3R and 2H phases in WS2 monolayers, <strong>Nanoscale</strong>,10, 3320-3330 (2018) IF: 7.3</p>\r\n\r\n<p>&nbsp; 11. D Singh, B. Viswanath, In situ thermo-mechanical bending behavior of VO2 microcantilevers across the phase transition, <strong>Journal of Micromechanics&nbsp;  &nbsp; and Microengineering</strong> 29 (1), 015002 (2018)&nbsp; </p>\r\n\r\n<p>&nbsp; 12. D Verma, D Singh, P Kumar, P Avasthi, B.Viswanath, Gram scale synthesis of monoclinic VO2 microcrystals by hydrothermal and argon annealing&nbsp;  &nbsp; treatment, <strong>Ceramics International</strong>, 45(3), 3554-3562 (2018) IF: 3.1</p>\r\n\r\n<p>&nbsp; 13. Pawan Kumar, Shivangi Kataria, Shounak Roy, Amit Jaiswal and B.Viswanath, Photocatalytic Water Disinfection of CVD Grown WS2 Monolayer&nbsp;  &nbsp; Decorated with Ag Nanoparticles, <strong>ChemistrySelect</strong>, 3 (26), 7648-7655 (2018)</p>\r\n\r\n<p>&nbsp; 14. Sri Balaji, Davinder Singh, Viswanath.B, Anup Kumar Keshri, A New Insight on the Role of 1-D and 2-D Reinforcements in TiC during High&nbsp;  &nbsp; Temperature&nbsp;  Plastic Deformation, <strong>Ceramics International</strong>, 44 (15), 18389-18399 (2018) IF: 3.1</p>\r\n\r\n<p>&nbsp;  15. B Raju Naik, Pawan Kumar and Viswanath B, Controlled sulfurization of DC sputtered Mo and W thin films for CVD growth of MoS2/WS2&nbsp;  &nbsp; heterostructures, <strong>Materials Research Express</strong>,&nbsp;  5 (8), 086405 (2018)</p>\r\n\r\n<p>&nbsp;  16. Piyush Avasthi, B.Viswanath, Electroless Growth of High Surface Area Au Dendrites with Corrugated Edge Structure for Hybrid Supercapacitor&nbsp;  &nbsp;  &nbsp;  &nbsp; Applications, <strong>ChemistrySelect</strong>, 3, 3866 -3870 (2018)</p>\r\n\r\n<p>&nbsp;  17. Davinder Singh, B. Viswanath, Direct measurement of nanomechanical actuation across phase transition in VO2 crystals, <strong>Scripta Materialia</strong>, 141, 24-&nbsp;  &nbsp;  27 (2017) IF: 3.7</p>\r\n\r\n<p>&nbsp;  18. Pawan Kumar, B. Viswanath, Horizontally and vertically aligned growth of strained MoS2 layers with dissimilar wetting and catalytic behavior,&nbsp;  &nbsp; <strong>CrysEngComm</strong>, 19(34), 5068-5078 (2017)&nbsp; </p>\r\n\r\n<p>&nbsp;  19. Davinder Singh, C.S. Yadav, B. Viswanath, Magnetoresistance across metal&ndash; insulator transition in VO2 micro crystals, <strong>Materials Letters</strong>, 196, 248-&nbsp;  &nbsp;  &nbsp; 251 (2017)&nbsp; </p>\r\n\r\n<p>&nbsp;  20. Davinder Singh, B. Viswanath, In situ nanomechanical behavior of co-existing insulating and metallic domains in VO2 microbeams. <strong>Journal of&nbsp;  &nbsp; Materials Science</strong>, 52(10), 5589&ndash; 5599 (2017) IF: 3.0</p>\r\n\r\n<p>&nbsp;  21. Pawan Kumar, B. Viswanath, Atomic Ledge Controlled CVD Growth of MoS2 with High Step Density on Si Substrate for Hydrogen Evolution Reaction,&nbsp;  &nbsp; <strong>Crystal Growth &amp;  Design</strong> 16 (12), 7145-7154 (2016) IF: 4.0</p>\r\n\r\n<p>&nbsp;  22. B.Viswanath, Mostafa Bedewy, Eric Meshot, Sebastian Pattinson, Dmitri&nbsp;  &nbsp;  &nbsp; Zakharov, Eric Stach, A. John Hart, Real-time TEM observation of self-&nbsp;  &nbsp; organization and mechanical competition in carbon nanotube population growth, <strong>ACS Nano</strong>, 10 (12), 11496&ndash; 11504 (2016). IF: 13.9</p>\r\n\r\n<p>&nbsp;  23. M Bedewy,&nbsp;  B. Viswanath, ER Meshot, DN Zakharov, EA Stach, AJ Hart. Measurement of the Dewetting, Nucleation, and Deactivation Kinetics of&nbsp;  &nbsp; Carbon Nanotube Population Growth by Environmental Transmission Electron Microscopy, <strong>Chemistry of Materials</strong>,28 (11), 3804&ndash; 3813 (2016) IF: 9.8</p>\r\n\r\n<p>&nbsp;  24. B Mallesham, B Viswanath, R Ranjith, Effect of crystal structure and cationic order on phonon modes across ferroelectric phase transformation in Pb&nbsp;  &nbsp; (Fe0. 5-xScxNb0. 5) O3 bulk ceramics, <strong>AIP Advances</strong> 6, 015116 (2016)&nbsp; </p>\r\n\r\n<p>&nbsp;  25. S. Pattinson, B. Viswanath, D. Zakharov, J. Li, E.A. Stach, A.J. Hart. Mechanism and enhanced yield of carbon nanotube growth on stainless steel by&nbsp;  &nbsp; oxygen-induced surface reconstruction, <strong>Chemistry of Materials</strong> 27(3),932 (2015) IF: 9.8</p>\r\n\r\n<p>&nbsp;  26. ES Polsen, DQ McNerny, B Viswanath, SW Pattinson, AJ Hart, High-speed roll-to-roll manufacturing of graphene using a concentric tube CVD reactor,&nbsp;  &nbsp; <strong>Scientific Reports</strong> 5, 10257 (2015) IF: 4.1</p>\r\n\r\n<p>&nbsp;  27. Daniel Q.Mcnerny, B.Viswanath, Davor Copic, Fabrice R. Laye, Christophor Prohoda, Anna C.Brieland-Shoultz, Erik S.Polsen, Vijayen S.Veerasamy,&nbsp;  &nbsp;  &nbsp; A.John Hart, Direct fabrication of graphene on SiO2 via thin film stress engineering, <strong>Scientific Reports</strong>, 4, 5049 (2014) IF: 4.1</p>\r\n\r\n<p>&nbsp; 28. B.Viswanath and S.Ramanathan, Direct in-situ observation of structural transition driven actuation in VO2 utilizing electron transparent cantilevers,&nbsp;  &nbsp; <strong>Nanoscale</strong>, 5, 7484(2013) IF: 7.3</p>\r\n\r\n<p>&nbsp;  29. A. Podpirka, B.Viswanath and S. Ramanathan, Heteroepitaxy and crystallographic orientation transition in&nbsp;  La1.875Sr0.125NiO4 thin films on single&nbsp;  &nbsp; crystal SrTiO3, <strong>Journal of Materials Research</strong>, 28, 1420 (2013)&nbsp; </p>\r\n\r\n<p>&nbsp; 30. Sieu H.Da, B.Viswanath,&nbsp;  and S.Ramanathan, Electrothermal actuation of&nbsp;  metal insulator transition in SmNiO3 thin film devices at room temperature,&nbsp;  &nbsp; <strong>Journal of Applied Physics</strong>,111, 124501 (2012)</p>\r\n\r\n<p>&nbsp; 31. B.Viswanath, C.Ko and S.Ramanathan, In situ studies on twinning and cracking proximal to insulator-metal transition in self-supported VO2/Si3N4&nbsp;  &nbsp; membranes, <strong>Journal of Materials Research</strong>, 27, 1476&nbsp;  (2012)&nbsp; </p>\r\n\r\n<p>&nbsp;  32. B.Viswanath, G.Aydogdu, S.Ha and S.Ramanathan, In situ stress relaxation and diffraction studies across the metal insulator transition in epitaxial and&nbsp;  &nbsp;  polycrystalline SmNiO3 thin films, <strong>Scripta Materialia</strong>, 66(7),463-466 (2012) IF: 3.7</p>\r\n\r\n<p>&nbsp;  33. M.Abazari, Jai S. Sim, B.Viswanath and S.Ramanathan, Fabrication and physical&nbsp;  properties of TiXOY membranes from single crystal TiO2, <strong>Journal&nbsp;  &nbsp;  &nbsp; of&nbsp;  &nbsp; Vacuum Science and Technology A</strong>, 30, 021601,(2012)</p>\r\n\r\n<p>&nbsp;  34. C.Nethravathi, B.Viswanath, M.Rajamathi: Hydrothermal synthesis of monoclinic VO2 nanotube-graphene hybrid for use as cathode material for&nbsp;  &nbsp;  &nbsp;  &nbsp; lithium&nbsp;  &nbsp; ion batteries, <strong>Carbon</strong>, 50(13),4839 (2012) IF: 7.1</p>\r\n\r\n<p>&nbsp;  35. B.Viswanath, C.Ko and S.Ramanathan, Thickness dependent orientation evolution in Ni films grown on YSZ (100) single crystals, <strong>Philosophical&nbsp;  &nbsp;  &nbsp; Magazine</strong>, 91, 4311 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp; 36. B.Viswanath, C.Ko, Z.Yang and S.Ramanathan, Geometric confinement effects on the metal-insulator transition temperature and stress relaxation in&nbsp;  &nbsp; VO2 thin films grown on Si, <strong>Journal of Applied Physics</strong>, 109, 063512 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp; 37. B.Viswanath, C.Ko, S.Ramanathan;  Thermoelastic Switching with controlled actuation in VO2 thin films, <strong>Scripta Materialia</strong>, 64(6), 490-493 (2011) IF:&nbsp;  &nbsp;  &nbsp; 3.7</p>\r\n\r\n<p>&nbsp; 38. B.Viswanath, C.Ko, S.Ramanathan;  Size effects on stress relaxation across the metal insulator transition in VO2 thin films, <strong>Journal of Materials&nbsp;  &nbsp; Research</strong>, 26, 1384 ( 2011)</p>\r\n\r\n<p>&nbsp; 39. G.Aydogdu, S.Ha, B.Viswanath and S.Ramanathan;  Epitaxy, strain and compositional effects on metal-insulator transition characteristics of SmNiO3&nbsp;  &nbsp; thin films, <strong>Journal of Applied Physics</strong>, 109, 124110 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp; 40. S.Ha, G.Aydogdu, B.Viswanath and S.Ramanathan;  Electrically driven metal insulator transition with tunable threshold voltage in VO2-SmNiO3&nbsp;  &nbsp; heterostructure on silicon, <strong>Journal of Applied Physics</strong>, 110, 026110 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp;  41. E.A. Anumol, Aditi Halder, C.Nethravathi, B.Viswanath and N.Ravishankar, Nanoporous Alloy Aggregates;  Synthesis and Electrocatalytic Activity,&nbsp; <strong>Journal of Materials Chemistry</strong>, 21, 8721-8726 (2011) IF: 6.6</p>\r\n\r\n<p>42. Aditi Halder, S.Patra, B. Viswanath, N.Munichandraiah and N Ravishankar: Porous catalytically active palladium nanostructures by tuning nanoparticle interactions in an organic medium, <strong>Nanoscale</strong>, 3, 725-730 (2011) IF: 7.3</p>\r\n\r\n<p>43. Z.Yang, C.Ko, B.Viswanath and S.Ramanathan, Dielectric and carrier transport properties of vanadium oxide thin films across the phase transition utilizing gated capacitor devices, <strong>Physical Review B</strong>, 82,205101 (2010) IF : 3.8</p>\r\n\r\n<p>&nbsp; 44. A.Podpirka, B.Viswanath&nbsp;  and Shriram Ramanathan, Active low temperature oxidation as a Route to minimize electrode-oxide interface reactions in&nbsp;  &nbsp; nanoscale capacitors, <strong>Journal of Applied Physics</strong>, 108, 024106 (2010)&nbsp; </p>\r\n\r\n<p>&nbsp; 45. B.Viswanath, V.Shastry, U.Ramamurty, N Ravishankar, Effect of Calcium Deficiency on the Mechanical Properties of Calcium Deficient Hydroxyapatite&nbsp;  &nbsp; Crystals, <strong>Acta Materialia</strong>, 58 (14), 4841-4848 (2010)&nbsp;  IF: 5.3</p>\r\n\r\n<p>&nbsp; 46. S.Patra, B.Viswanath, K. Barai, N. Ravishankar, N. Munichandraiah;  High surface step density on dendritic Pd leads to exceptional catalytic activity for&nbsp;  &nbsp; formic acid oxidation, <strong>ACS Applied Materials and Interfaces</strong>,&nbsp;  2(11), 2965-2969 (2010) IF: 8.1</p>\r\n\r\n<p>&nbsp; 47. B.Mukherjee, B.Viswanath&nbsp;  and N Ravishankar : A General Strategy for Functional Nanoporous Structures by Partial Sintering of Nanorod Assemblies,&nbsp;  &nbsp; <strong>Journal of Physics D: Applied Physics</strong>, 43,455301 (2010)&nbsp; </p>\r\n\r\n<p>&nbsp; 48. E.A.Anumol, B.Viswanath, Yunfeng Shi, Ganpathi Ramanath, N Ravishankar, Surface Diffusion Driven Nanoshell Formation by Controlled Sintering of&nbsp;  &nbsp; Mesoporous Nanoparticle Aggregates, <strong>Nanoscale</strong>, 2,1423-1425 (2010) IF: 7.3</p>\r\n\r\n<p>&nbsp; 49. C.Nethravathi, B.Viswanath,C.Shivakumara, Mency Sebastian, M.Rajamathi, Exfoliation of &alpha; -Hydroxides of Nickel and Cobalt in Water, <strong>Journal of&nbsp;  &nbsp; Colloid and Interface Science</strong>, 345(1),109-115 (2010) IF: 5.1</p>\r\n\r\n<p>&nbsp; 50. Aditi Halder, Paromita Kundu, B.Viswanath, N.Ravishankar, Symmetry and Shape Issues in Nanostructure Growth, <strong>Journal of Materials Chemistry</strong>,&nbsp;  &nbsp;  &nbsp; Feature Article, 20, 4763-4772 (2010) IF: 6.6</p>\r\n\r\n<p>&nbsp;  51. Paromita Kundu, Aditi Halder, B.Viswanath, N Ravishankar : Nanoscale Hetrostructures with Molecular Scale Single Crystal Wires, <strong>Journal of the&nbsp;  &nbsp; American Chemical Society</strong>,132(1),20-21(2010) IF: 14.3</p>\r\n\r\n<p>&nbsp;  52. B.Viswanath, Paromita Kundu, Aditi Halder, N.Ravishankar: Mechanistic Aspects of Shape Selection during Nanostructure Growth by Wet-Chemical&nbsp;  &nbsp; Methods,&nbsp;  <strong>Journal of Physical Chemistry C</strong>, Cover page Feature Article, 113(39), 16866-16883 (2009) IF: 4.4</p>\r\n\r\n<p>&nbsp;  53. B.Viswanath, S.Patra, N.Munichandraiah, N Ravishankar: Nanoporous Pt with High&nbsp;  Surface Area by Reaction Limited Aggregation of Nanoparticles,&nbsp;  &nbsp; <strong>Langmuir</strong>, 25(5), 3115-3121 (2009) IF: 3.7</p>\r\n\r\n<p>&nbsp;  54. B.Viswanath, Paromita Kundu, N Ravishankar : Formation of Two-Dimensional Structures by Tuning the Driving Force of Reactions: An Interpretation&nbsp;  &nbsp;  &nbsp; of Kinetic Control, <strong>Journal of Colloid and Interface Science</strong>, 330(1),211-219 (2009) IF : 5.1</p>\r\n\r\n<p>&nbsp;  55. B.Viswanath, N.Ravishankar: Controlled Synthesis of Plate Shaped Hydroxyapatite and Implication for the Morphology of Apatite Phase in Bone,&nbsp;  &nbsp; <strong>Biomaterials</strong>, 29, 4855-4863 (2008) IF: 8.4</p>\r\n\r\n<p>&nbsp;  56. C.Nethravathi, B.Viswanath, C.Shivakumara, N.Mahadevaiah, M.Rajamathi: The Production of Smectite Clay/Graphene Composites Through&nbsp;  &nbsp;  &nbsp;  &nbsp; Delamination and Co-Stacking,<strong> Carbon</strong>, 46(13), 1773-1781 (2008) IF: 6.3</p>\r\n\r\n<p>&nbsp;  57. B.Viswanath, Paromita Kundu, B.Mukherjee, N.Ravishankar: Predicting the Growth of Two-Dimensional Nanostructures , <strong>Nanotechnology</strong>, 19,&nbsp;  &nbsp;  &nbsp; 195603 (2008) IF: 3.4</p>\r\n\r\n<p>&nbsp;  58. B.Viswanath, R.Raghavan, N.P.Gurao, U.Ramamurty, N.Ravishankar: Mechanical Properties of Tricalcium Phosphate Single Crystals Grown by&nbsp;  &nbsp;  &nbsp; Molten&nbsp; Salt Synthesis, <strong>Acta Biomaterialia</strong>, 4, 1448-1454 (2008) IF: 6</p>\r\n\r\n<p>&nbsp;  59. Sounak Roy, B.Viswanath, M.S.Hegde, Giridhar Madras: Low Temperature Selective Reduction of NO with NH3 Over Ti0.9M0.1O2-&delta; (M: Cr, Mn, Fe,&nbsp;  &nbsp;  &nbsp; Co, Cu), <strong>Journal of Physical Chemistry C</strong>, 112, 6002-6012 (2008) IF: 4.4</p>\r\n\r\n<p>&nbsp;  60. B.Viswanath, N.Ravishankar: Porous Biphasic Scaffolds and Coatings for Biomedical Applications via Morphology Transition of Nanorods,&nbsp;  &nbsp; <strong>Nanotechnology</strong>, 18, 47, 475604 (2007) IF: 3.4</p>\r\n\r\n<p>&nbsp;  61. B.Viswanath, R.Raghavan, U.Ramamurty, N.Ravishankar: Mechanical Properties and Anisotropy in Hydroxyapatite Single Crystals, <strong>Scripta&nbsp;  &nbsp; Materialia</strong>,&nbsp; 57, 361-364 (2007) IF: 3.7</p>\r\n\r\n<p>&nbsp;  62. B.Viswanath, N.Ravishankar: Interfacial Reactions in Hydroxyapatite/Alumina Nanocomposites, <strong>Scripta Materialia</strong>, 55, 863-866 (2006) IF:3.7</p>\r\n\r\n<p>&nbsp; </p>\r\n",
+    "publications": "<p><strong>International peer reviewed papers:</strong></p>\r\n\r\n<p>&nbsp;  &nbsp;  &nbsp; 1. Pawan Kumar, Kartikey Thakar, Navneet Verma, Jayeeta Biswas, Takuya Maeda, Ahin Roy, Kenji Kaneko, Chayan Nandi, Saurabh Lodha and B.&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Viswanath, Coherent Polymorphic Heterostructures Tunes the Exceptional Opto-electronic Properties of WS2 Monolayer, <strong>under review</strong></p>\r\n\r\n<p>&nbsp;  &nbsp;  2. Pawan Kumar, Davinder Singh, B.Viswanath, Thermally Driven Reversible Photoluminescence Modulation in WS2/VO2 Heterostructure,&nbsp;  <strong>Applied&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  Surface Science, </strong>in press(2019)</p>\r\n\r\n<p>&nbsp;  &nbsp; 3. Piyush Avasthi, B.Viswanath, Tuning the Wettability of Vertically Aligned CNT&ndash; TiO2 Hybrid Electrodes for Enhanced Supercapacitor Performance,&nbsp;  &nbsp;  &nbsp; <strong>Advanced Materials Interfaces</strong>, 1801842 (2019) IF: 4.8</p>\r\n\r\n<p>&nbsp;  4. Piyush Avasthi, Akash Kumar, B.Viswanath, Aligned CNT forests on stainless steel mesh for flexible supercapacitor electrode with high capacitance and&nbsp;  &nbsp;  power density, <strong>ACS Applied nanomaterials</strong>, accepted (2019)</p>\r\n\r\n<p>&nbsp;  5. Manasi R Mulay, Aditya Chauhan, Satyanarayan Patel, B. Viswanath, Aditi Halder, Rahul Vaish, Candle soot;  journey from pollutant to a functional&nbsp;  &nbsp;  &nbsp;  &nbsp; materials, <strong>Carbon</strong>, 144, 684-712 (2019) IF: 7.1</p>\r\n\r\n<p>&nbsp;  6. Pawan Kumar,Birender Singh, Pradeep Kumar&nbsp;  and&nbsp;  B. Viswanath, Competing thermal expansion mismatch and lattice strain engineered growth of&nbsp;  &nbsp; crack free WS2 in-plane heterostructures, <strong>Journal of Materials Chemistry C</strong>, 6, 11407 (2018) IF: 6.0</p>\r\n\r\n<p>&nbsp; 7. Pawan Kumar, Dipanwita Chatterjee, Takuya Maeda, Ahin Roy, Kenji Kaneko and B. Viswanath, Scalable faceted voids with luminescence enhanced&nbsp;  &nbsp; edges in WS2 monolayers, <strong>Nanoscale</strong>, 10 (34), 16321-16331 (2018) IF: 7.3</p>\r\n\r\n<p>&nbsp; 8. Pawan Kumar, B. Viswanath, Nanosculpting of Atomically Thin 2D Materials for Site-Specific Photoluminescence Modulation, <strong>Advanced Optical&nbsp;  &nbsp; Materials</strong>,1701284 (2018) IF: 7.3</p>\r\n\r\n<p>&nbsp; 9. Pawan Kumar and B.Viswanath, Growth and microstructural evolution of WS2 nanostructures with tunable field and light modulated electrical transport,&nbsp;  &nbsp; <strong>Applied Surface Science</strong>, 436, 846-853 (2018) IF: 4.4</p>\r\n\r\n<p>&nbsp; 10. Pawan Kumar, Navneet Chandra Verma, Natasha Goyal, Jayeeta Biswas, Saurabh Lodha, Chayan Kanti Nandi, B.Viswanath, Phase engineering of&nbsp;  &nbsp; seamless heterophase homojunctions with co-existing 3R and 2H phases in WS2 monolayers, <strong>Nanoscale</strong>,10, 3320-3330 (2018) IF: 7.3</p>\r\n\r\n<p>&nbsp; 11. D Singh, B. Viswanath, In situ thermo-mechanical bending behavior of VO2 microcantilevers across the phase transition, <strong>Journal of Micromechanics&nbsp;  &nbsp; and Microengineering</strong> 29 (1), 015002 (2018)&nbsp; </p>\r\n\r\n<p>&nbsp; 12. D Verma, D Singh, P Kumar, P Avasthi, B.Viswanath, Gram scale synthesis of monoclinic VO2 microcrystals by hydrothermal and argon annealing&nbsp;  &nbsp; treatment, <strong>Ceramics International</strong>, 45(3), 3554-3562 (2018) IF: 3.1</p>\r\n\r\n<p>&nbsp; 13. Pawan Kumar, Shivangi Kataria, Shounak Roy, Amit Jaiswal and B.Viswanath, Photocatalytic Water Disinfection of CVD Grown WS2 Monolayer&nbsp;  &nbsp; Decorated with Ag Nanoparticles, <strong>ChemistrySelect</strong>, 3 (26), 7648-7655 (2018)</p>\r\n\r\n<p>&nbsp; 14. Sri Balaji, Davinder Singh, Viswanath.B, Anup Kumar Keshri, A New Insight on the Role of 1-D and 2-D Reinforcements in TiC during High&nbsp;  &nbsp; Temperature&nbsp;  Plastic Deformation, <strong>Ceramics International</strong>, 44 (15), 18389-18399 (2018) IF: 3.1</p>\r\n\r\n<p>&nbsp;  15. B Raju Naik, Pawan Kumar and Viswanath B, Controlled sulfurization of DC sputtered Mo and W thin films for CVD growth of MoS2/WS2&nbsp;  &nbsp; heterostructures, <strong>Materials Research Express</strong>,&nbsp;  5 (8), 086405 (2018)</p>\r\n\r\n<p>&nbsp;  16. Piyush Avasthi, B.Viswanath, Electroless Growth of High Surface Area Au Dendrites with Corrugated Edge Structure for Hybrid Supercapacitor&nbsp;  &nbsp;  &nbsp;  &nbsp; Applications, <strong>ChemistrySelect</strong>, 3, 3866 -3870 (2018)</p>\r\n\r\n<p>&nbsp;  17. Davinder Singh, B. Viswanath, Direct measurement of nanomechanical actuation across phase transition in VO2 crystals, <strong>Scripta Materialia</strong>, 141, 24-&nbsp;  &nbsp;  27 (2017) IF: 3.7</p>\r\n\r\n<p>&nbsp;  18. Pawan Kumar, B. Viswanath, Horizontally and vertically aligned growth of strained MoS2 layers with dissimilar wetting and catalytic behavior,&nbsp;  &nbsp; <strong>CrysEngComm</strong>, 19(34), 5068-5078 (2017)&nbsp; </p>\r\n\r\n<p>&nbsp;  19. Davinder Singh, C.S. Yadav, B. Viswanath, Magnetoresistance across metal&ndash; insulator transition in VO2 micro crystals, <strong>Materials Letters</strong>, 196, 248-&nbsp;  &nbsp;  &nbsp; 251 (2017)&nbsp; </p>\r\n\r\n<p>&nbsp;  20. Davinder Singh, B. Viswanath, In situ nanomechanical behavior of co-existing insulating and metallic domains in VO2 microbeams. <strong>Journal of&nbsp;  &nbsp; Materials Science</strong>, 52(10), 5589&ndash; 5599 (2017) IF: 3.0</p>\r\n\r\n<p>&nbsp;  21. Pawan Kumar, B. Viswanath, Atomic Ledge Controlled CVD Growth of MoS2 with High Step Density on Si Substrate for Hydrogen Evolution Reaction,&nbsp;  &nbsp; <strong>Crystal Growth &amp;  Design</strong> 16 (12), 7145-7154 (2016) IF: 4.0</p>\r\n\r\n<p>&nbsp;  22. B.Viswanath, Mostafa Bedewy, Eric Meshot, Sebastian Pattinson, Dmitri&nbsp;  &nbsp;  &nbsp; Zakharov, Eric Stach, A. John Hart, Real-time TEM observation of self-&nbsp;  &nbsp; organization and mechanical competition in carbon nanotube population growth, <strong>ACS Nano</strong>, 10 (12), 11496&ndash; 11504 (2016). IF: 13.9</p>\r\n\r\n<p>&nbsp;  23. M Bedewy,&nbsp;  B. Viswanath, ER Meshot, DN Zakharov, EA Stach, AJ Hart. Measurement of the Dewetting, Nucleation, and Deactivation Kinetics of&nbsp;  &nbsp; Carbon Nanotube Population Growth by Environmental Transmission Electron Microscopy, <strong>Chemistry of Materials</strong>,28 (11), 3804&ndash; 3813 (2016) IF: 9.8</p>\r\n\r\n<p>&nbsp;  24. B Mallesham, B Viswanath, R Ranjith, Effect of crystal structure and cationic order on phonon modes across ferroelectric phase transformation in Pb&nbsp;  &nbsp; (Fe0. 5-xScxNb0. 5) O3 bulk ceramics, <strong>AIP Advances</strong> 6, 015116 (2016)&nbsp; </p>\r\n\r\n<p>&nbsp;  25. S. Pattinson, B. Viswanath, D. Zakharov, J. Li, E.A. Stach, A.J. Hart. Mechanism and enhanced yield of carbon nanotube growth on stainless steel by&nbsp;  &nbsp; oxygen-induced surface reconstruction, <strong>Chemistry of Materials</strong> 27(3),932 (2015) IF: 9.8</p>\r\n\r\n<p>&nbsp;  26. ES Polsen, DQ McNerny, B Viswanath, SW Pattinson, AJ Hart, High-speed roll-to-roll manufacturing of graphene using a concentric tube CVD reactor,&nbsp;  &nbsp; <strong>Scientific Reports</strong> 5, 10257 (2015) IF: 4.1</p>\r\n\r\n<p>&nbsp;  27. Daniel Q.Mcnerny, B.Viswanath, Davor Copic, Fabrice R. Laye, Christophor Prohoda, Anna C.Brieland-Shoultz, Erik S.Polsen, Vijayen S.Veerasamy,&nbsp;  &nbsp;  &nbsp; A.John Hart, Direct fabrication of graphene on SiO2 via thin film stress engineering, <strong>Scientific Reports</strong>, 4, 5049 (2014) IF: 4.1</p>\r\n\r\n<p>&nbsp; 28. B.Viswanath and S.Ramanathan, Direct in-situ observation of structural transition driven actuation in VO2 utilizing electron transparent cantilevers,&nbsp;  &nbsp; <strong>Nanoscale</strong>, 5, 7484(2013) IF: 7.3</p>\r\n\r\n<p>&nbsp;  29. A. Podpirka, B.Viswanath and S. Ramanathan, Heteroepitaxy and crystallographic orientation transition in&nbsp;  La1.875Sr0.125NiO4 thin films on single&nbsp;  &nbsp; crystal SrTiO3, <strong>Journal of Materials Research</strong>, 28, 1420 (2013)&nbsp; </p>\r\n\r\n<p>&nbsp; 30. Sieu H.Da, B.Viswanath,&nbsp;  and S.Ramanathan, Electrothermal actuation of&nbsp;  metal insulator transition in SmNiO3 thin film devices at room temperature,&nbsp;  &nbsp; <strong>Journal of Applied Physics</strong>,111, 124501 (2012)</p>\r\n\r\n<p>&nbsp; 31. B.Viswanath, C.Ko and S.Ramanathan, In situ studies on twinning and cracking proximal to insulator-metal transition in self-supported VO2/Si3N4&nbsp;  &nbsp; membranes, <strong>Journal of Materials Research</strong>, 27, 1476&nbsp;  (2012)&nbsp; </p>\r\n\r\n<p>&nbsp;  32. B.Viswanath, G.Aydogdu, S.Ha and S.Ramanathan, In situ stress relaxation and diffraction studies across the metal insulator transition in epitaxial and&nbsp;  &nbsp;  polycrystalline SmNiO3 thin films, <strong>Scripta Materialia</strong>, 66(7),463-466 (2012) IF: 3.7</p>\r\n\r\n<p>&nbsp;  33. M.Abazari, Jai S. Sim, B.Viswanath and S.Ramanathan, Fabrication and physical&nbsp;  properties of TiXOY membranes from single crystal TiO2, <strong>Journal&nbsp;  &nbsp;  &nbsp; of&nbsp;  &nbsp; Vacuum Science and Technology A</strong>, 30, 021601,(2012)</p>\r\n\r\n<p>&nbsp;  34. C.Nethravathi, B.Viswanath, M.Rajamathi: Hydrothermal synthesis of monoclinic VO2 nanotube-graphene hybrid for use as cathode material for&nbsp;  &nbsp;  &nbsp;  &nbsp; lithium&nbsp;  &nbsp; ion batteries, <strong>Carbon</strong>, 50(13),4839 (2012) IF: 7.1</p>\r\n\r\n<p>&nbsp;  35. B.Viswanath, C.Ko and S.Ramanathan, Thickness dependent orientation evolution in Ni films grown on YSZ (100) single crystals, <strong>Philosophical&nbsp;  &nbsp;  &nbsp; Magazine</strong>, 91, 4311 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp; 36. B.Viswanath, C.Ko, Z.Yang and S.Ramanathan, Geometric confinement effects on the metal-insulator transition temperature and stress relaxation in&nbsp;  &nbsp; VO2 thin films grown on Si, <strong>Journal of Applied Physics</strong>, 109, 063512 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp; 37. B.Viswanath, C.Ko, S.Ramanathan;  Thermoelastic Switching with controlled actuation in VO2 thin films, <strong>Scripta Materialia</strong>, 64(6), 490-493 (2011) IF:&nbsp;  &nbsp;  &nbsp; 3.7</p>\r\n\r\n<p>&nbsp; 38. B.Viswanath, C.Ko, S.Ramanathan;  Size effects on stress relaxation across the metal insulator transition in VO2 thin films, <strong>Journal of Materials&nbsp;  &nbsp; Research</strong>, 26, 1384 ( 2011)</p>\r\n\r\n<p>&nbsp; 39. G.Aydogdu, S.Ha, B.Viswanath and S.Ramanathan;  Epitaxy, strain and compositional effects on metal-insulator transition characteristics of SmNiO3&nbsp;  &nbsp; thin films, <strong>Journal of Applied Physics</strong>, 109, 124110 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp; 40. S.Ha, G.Aydogdu, B.Viswanath and S.Ramanathan;  Electrically driven metal insulator transition with tunable threshold voltage in VO2-SmNiO3&nbsp;  &nbsp; heterostructure on silicon, <strong>Journal of Applied Physics</strong>, 110, 026110 (2011)&nbsp; </p>\r\n\r\n<p>&nbsp;  41. E.A. Anumol, Aditi Halder, C.Nethravathi, B.Viswanath and N.Ravishankar, Nanoporous Alloy Aggregates;  Synthesis and Electrocatalytic Activity,&nbsp; <strong>Journal of Materials Chemistry</strong>, 21, 8721-8726 (2011) IF: 6.6</p>\r\n\r\n<p>42. Aditi Halder, S.Patra, B. Viswanath, N.Munichandraiah and N Ravishankar: Porous catalytically active palladium nanostructures by tuning nanoparticle interactions in an organic medium, <strong>Nanoscale</strong>, 3, 725-730 (2011) IF: 7.3</p>\r\n\r\n<p>43. Z.Yang, C.Ko, B.Viswanath and S.Ramanathan, Dielectric and carrier transport properties of vanadium oxide thin films across the phase transition utilizing gated capacitor devices, <strong>Physical Review B</strong>, 82,205101 (2010) IF : 3.8</p>\r\n\r\n<p>&nbsp; 44. A.Podpirka, B.Viswanath&nbsp;  and Shriram Ramanathan, Active low temperature oxidation as a Route to minimize electrode-oxide interface reactions in&nbsp;  &nbsp; nanoscale capacitors, <strong>Journal of Applied Physics</strong>, 108, 024106 (2010)&nbsp; </p>\r\n\r\n<p>&nbsp; 45. B.Viswanath, V.Shastry, U.Ramamurty, N Ravishankar, Effect of Calcium Deficiency on the Mechanical Properties of Calcium Deficient Hydroxyapatite&nbsp;  &nbsp; Crystals, <strong>Acta Materialia</strong>, 58 (14), 4841-4848 (2010)&nbsp;  IF: 5.3</p>\r\n\r\n<p>&nbsp; 46. S.Patra, B.Viswanath, K. Barai, N. Ravishankar, N. Munichandraiah;  High surface step density on dendritic Pd leads to exceptional catalytic activity for&nbsp;  &nbsp; formic acid oxidation, <strong>ACS Applied Materials and Interfaces</strong>,&nbsp;  2(11), 2965-2969 (2010) IF: 8.1</p>\r\n\r\n<p>&nbsp; 47. B.Mukherjee, B.Viswanath&nbsp;  and N Ravishankar : A General Strategy for Functional Nanoporous Structures by Partial Sintering of Nanorod Assemblies,&nbsp;  &nbsp; <strong>Journal of Physics D: Applied Physics</strong>, 43,455301 (2010)&nbsp; </p>\r\n\r\n<p>&nbsp; 48. E.A.Anumol, B.Viswanath, Yunfeng Shi, Ganpathi Ramanath, N Ravishankar, Surface Diffusion Driven Nanoshell Formation by Controlled Sintering of&nbsp;  &nbsp; Mesoporous Nanoparticle Aggregates, <strong>Nanoscale</strong>, 2,1423-1425 (2010) IF: 7.3</p>\r\n\r\n<p>&nbsp; 49. C.Nethravathi, B.Viswanath,C.Shivakumara, Mency Sebastian, M.Rajamathi, Exfoliation of &alpha; -Hydroxides of Nickel and Cobalt in Water, <strong>Journal of&nbsp;  &nbsp; Colloid and Interface Science</strong>, 345(1),109-115 (2010) IF: 5.1</p>\r\n\r\n<p>&nbsp; 50. Aditi Halder, Paromita Kundu, B.Viswanath, N.Ravishankar, Symmetry and Shape Issues in Nanostructure Growth, <strong>Journal of Materials Chemistry</strong>,&nbsp;  &nbsp;  &nbsp; Feature Article, 20, 4763-4772 (2010) IF: 6.6</p>\r\n\r\n<p>&nbsp;  51. Paromita Kundu, Aditi Halder, B.Viswanath, N Ravishankar : Nanoscale Hetrostructures with Molecular Scale Single Crystal Wires, <strong>Journal of the&nbsp;  &nbsp; American Chemical Society</strong>,132(1),20-21(2010) IF: 14.3</p>\r\n\r\n<p>&nbsp;  52. B.Viswanath, Paromita Kundu, Aditi Halder, N.Ravishankar: Mechanistic Aspects of Shape Selection during Nanostructure Growth by Wet-Chemical&nbsp;  &nbsp; Methods,&nbsp;  <strong>Journal of Physical Chemistry C</strong>, Cover page Feature Article, 113(39), 16866-16883 (2009) IF: 4.4</p>\r\n\r\n<p>&nbsp;  53. B.Viswanath, S.Patra, N.Munichandraiah, N Ravishankar: Nanoporous Pt with High&nbsp;  Surface Area by Reaction Limited Aggregation of Nanoparticles,&nbsp;  &nbsp; <strong>Langmuir</strong>, 25(5), 3115-3121 (2009) IF: 3.7</p>\r\n\r\n<p>&nbsp;  54. B.Viswanath, Paromita Kundu, N Ravishankar : Formation of Two-Dimensional Structures by Tuning the Driving Force of Reactions: An Interpretation&nbsp;  &nbsp;  &nbsp; of Kinetic Control, <strong>Journal of Colloid and Interface Science</strong>, 330(1),211-219 (2009) IF : 5.1</p>\r\n\r\n<p>&nbsp;  55. B.Viswanath, N.Ravishankar: Controlled Synthesis of Plate Shaped Hydroxyapatite and Implication for the Morphology of Apatite Phase in Bone,&nbsp;  &nbsp; <strong>Biomaterials</strong>, 29, 4855-4863 (2008) IF: 8.4</p>\r\n\r\n<p>&nbsp;  56. C.Nethravathi, B.Viswanath, C.Shivakumara, N.Mahadevaiah, M.Rajamathi: The Production of Smectite Clay/Graphene Composites Through&nbsp;  &nbsp;  &nbsp;  &nbsp; Delamination and Co-Stacking,<strong> Carbon</strong>, 46(13), 1773-1781 (2008) IF: 6.3</p>\r\n\r\n<p>&nbsp;  57. B.Viswanath, Paromita Kundu, B.Mukherjee, N.Ravishankar: Predicting the Growth of Two-Dimensional Nanostructures , <strong>Nanotechnology</strong>, 19,&nbsp;  &nbsp;  &nbsp; 195603 (2008) IF: 3.4</p>\r\n\r\n<p>&nbsp;  58. B.Viswanath, R.Raghavan, N.P.Gurao, U.Ramamurty, N.Ravishankar: Mechanical Properties of Tricalcium Phosphate Single Crystals Grown by&nbsp;  &nbsp;  &nbsp; Molten&nbsp; Salt Synthesis, <strong>Acta Biomaterialia</strong>, 4, 1448-1454 (2008) IF: 6</p>\r\n\r\n<p>&nbsp;  59. Sounak Roy, B.Viswanath, MSHegde, Giridhar Madras: Low Temperature Selective Reduction of NO with NH3 Over Ti0.9M0.1O2-&delta; (M: Cr, Mn, Fe,&nbsp;  &nbsp;  &nbsp; Co, Cu), <strong>Journal of Physical Chemistry C</strong>, 112, 6002-6012 (2008) IF: 4.4</p>\r\n\r\n<p>&nbsp;  60. B.Viswanath, N.Ravishankar: Porous Biphasic Scaffolds and Coatings for Biomedical Applications via Morphology Transition of Nanorods,&nbsp;  &nbsp; <strong>Nanotechnology</strong>, 18, 47, 475604 (2007) IF: 3.4</p>\r\n\r\n<p>&nbsp;  61. B.Viswanath, R.Raghavan, U.Ramamurty, N.Ravishankar: Mechanical Properties and Anisotropy in Hydroxyapatite Single Crystals, <strong>Scripta&nbsp;  &nbsp; Materialia</strong>,&nbsp; 57, 361-364 (2007) IF: 3.7</p>\r\n\r\n<p>&nbsp;  62. B.Viswanath, N.Ravishankar: Interfacial Reactions in Hydroxyapatite/Alumina Nanocomposites, <strong>Scripta Materialia</strong>, 55, 863-866 (2006) IF:3.7</p>\r\n\r\n<p>&nbsp; </p>\r\n",
     "interests": "<ul> \t<li><strong>Nanomanufacturing for Electronics, Sensor and Microsupercapacitor applications</strong></li> \t<li><strong>Vapor Phase Growth(CVD, PVD &amp;  ALD) of Functional Nanostructures and Thin films</strong></li> \t<li><strong>Phase Transition in Functional Oxide Materials and Thin Films</strong></li> \t<li><strong>Nanomechanics of Phase Change Materials and 2D Materials</strong></li> \t<li><strong>Analytical Microscopy and Imaging (SEM, TEM, Light, Fluorescence/Luminescence)&nbsp; </strong></li> </ul>",
     "projects": "",
     "openings": null,
@@ -12478,7 +12478,7 @@
     "address": "IIT Mandi, Kamand Campus",
     "education": [
       {
-        "degree": "Ph.D.",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
