@@ -1302,7 +1302,18 @@ section {
   margin-bottom: 3%;
   object-fit: cover;
 }
-
+.research-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content : center;
+}
+.research-content p{
+  padding: 5vh 0;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: justify;
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
