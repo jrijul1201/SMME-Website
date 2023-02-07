@@ -2438,7 +2438,7 @@ section {
 }
 
 .faq .content p {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--color-gray);
 }
 
@@ -3780,7 +3780,7 @@ section {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .footer .footer-content .footer-links ul {
