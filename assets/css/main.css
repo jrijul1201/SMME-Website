@@ -335,6 +335,9 @@ section {
     padding: 0;
     position: relative;
   }
+  .nav-img{
+    position: absolute;
+  }
 
   .navbar ul {
     margin: 0;
@@ -3729,6 +3732,7 @@ section {
 
 .footer .footer-content .footer-info {
   margin-bottom: 30px;
+  margin-left: 5vw;
 }
 
 .footer .footer-content .footer-info h3 {

@@ -71,7 +71,7 @@
   },
   {
     "code": "ME310P",
-    "name": "Thermo &#8211 Fluids Laboratory",
+    "name": "Thermo&#8211Fluids Laboratory",
     "credit": "0-0-3-2"
   },
   {
@@ -150,17 +150,17 @@
     "credit": "3-0-0-3"
   },
   {
-    "code": "ME 510",
+    "code": "ME510",
     "name": "Advanced Manufacturing Processes",
     "credit": "3-0-0-3"
   },
   {
-    "code": "ME 522",
+    "code": "ME522",
     "name": "High-Performance Scientific Computing",
     "credit": "2-0-1-3"
   },
   {
-    "code": "ME 524",
+    "code": "ME524",
     "name": "Additive Manufacturing",
     "credit": "3-0-0-3"
   },
@@ -386,12 +386,12 @@
   },
   {
     "code": "EN612",
-    "name": "Structure &#8211 Property correlation for capital materials",
+    "name": "Structure&#8211Property correlation for capital Materials",
     "credit": "2-0-2-3"
   },
   {
     "code": "EN613",
-    "name": "Creep-Fatigue Interaction",
+    "name": "Creep&#8211Fatigue Interaction",
     "credit": "3-0-0-3"
   }
 ]
