@@ -4217,3 +4217,15 @@ section {
   height: 15vh;
   width: 100%;
 }
+
+.btech-img {
+  width: 35%;
+}
+
+.pg-nav-item:hover{
+  background-color: var(--color-primary);
+}
+
+.pg-nav-item:hover h4{
+  color: white;
+}
