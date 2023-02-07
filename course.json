@@ -71,17 +71,17 @@
   },
   {
     "code": "ME310P",
-    "name": "Thermo-Fluids Laboratory",
-    "credit": "2"
+    "name": "Thermo &#8211 Fluids Laboratory",
+    "credit": "0-0-3-2"
   },
   {
     "code": "ME311P",
-    "name": "Design Lab \u2013 I",
+    "name": "Design Lab-I",
     "credit": "0-0-2-1"
   },
   {
     "code": "ME312P",
-    "name": "Design Lab -II",
+    "name": "Design Lab-II",
     "credit": "0-0-2-1"
   },
   {
@@ -160,9 +160,9 @@
     "credit": "2-0-1-3"
   },
   {
-    "code": "ME 5XX",
+    "code": "ME 524",
     "name": "Additive Manufacturing",
-    "credit": "2.5-0.5-0-3"
+    "credit": "3-0-0-3"
   },
   {
     "code": "ME601",
@@ -202,7 +202,7 @@
   {
     "code": "ME609",
     "name": "Functional Materials",
-    "credit": "4"
+    "credit": "3-0-0-3"
   },
   {
     "code": "ME610",
@@ -241,7 +241,7 @@
   },
   {
     "code": "ME618",
-    "name": "Stealth Technology:Infrared Signatures",
+    "name": "Stealth Technology: Infrared Signatures",
     "credit": "3-0-0-3"
   },
   {
@@ -327,17 +327,17 @@
   {
     "code": "ME641",
     "name": "Finite Element Method",
-    "credit": ""
+    "credit": "3-0-0-3"
   },
   {
     "code": "EM504",
     "name": "Materials for Energy Applications",
-    "credit": "4"
+    "credit": "3-1-0-4"
   },
   {
     "code": "EM505",
     "name": "Alternative Energy Sources for Transportation",
-    "credit": "3"
+    "credit": "3-0-0-3"
   },
   {
     "code": "EM651 ",
@@ -361,7 +361,7 @@
   },
   {
     "code": "EN504",
-    "name": "Energy:Environment Policy and Law",
+    "name": "Energy: Environment Policy and Law",
     "credit": "3-0-0-3"
   },
   {
@@ -386,7 +386,7 @@
   },
   {
     "code": "EN612",
-    "name": "Structure-Property correlation in materials for Energy Applications",
+    "name": "Structure &#8211 Property correlation for capital materials",
     "credit": "2-0-2-3"
   },
   {

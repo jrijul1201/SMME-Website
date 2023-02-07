@@ -2829,6 +2829,7 @@ section {
 
 .contact .info {
   padding: 40px;
+  margin: 0px 5vw;
   box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
   overflow: hidden;
 }
@@ -3773,6 +3774,9 @@ section {
 
 .footer .footer-content .footer-links {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer .footer-content .footer-links ul {

@@ -5,7 +5,7 @@
     "irins": "113331",
     "phone": "267143",
     "mail": "add",
-    "post": "Associate Professor (Chairperson)",
+    "post": "Associate Professor",
     "speciality": "Alternative Fuels, IC Engines, Emissions Control",
     "img": "add.jpg",
     "phd": "IIT Kanpur",
@@ -1112,7 +1112,7 @@
     "img": "amitshukla.jpg",
     "phd": "Imperial College London, United Kingdom",
     "address": "A6-11, South Campus, IIT Mandi",
-    "education": [
+    "education": [ 
       {
         "degree": "PhD",
         "specialization": "",
@@ -1812,7 +1812,7 @@
     "irins": "",
     "phone": "",
     "mail": "",
-    "post": "",
+    "post": "Assistant Professor",
     "speciality": "",
     "img": "dhirajdube.jpg",
     "phd": "",
