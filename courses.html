@@ -123,7 +123,7 @@
                                                 $(function () {
                                                     $.getJSON('course.json', function (data) {
                                                         $.each(data, function (i, f) {
-                                                            // var course = `https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf`
+                                                            var course = `'https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf'`;
                                                             // $.get(course).done(function () {
                                                             //     concole.log("success");
                                                             // }).fail(function () {
@@ -131,8 +131,7 @@
                                                             // });
                                                             var row =
                                                                 // `<a href='https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf' class='fill-div' target ='_blank'>` +
-                                                                '<tr>' +
-                                                                // '<td>' + parseInt(i+1) + '</th>' + 
+                                                                '<tr onclick="window.location='+ course +' ;">' +
                                                                 '<td>' +
                                                                 f.code
                                                                 + '</th>' +
@@ -141,10 +140,10 @@
                                                                 '</tr>'
                                                             // +
                                                             // '</a>'
-                                                            $("tr").click(function () {
-                                                                //    window.open(`https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf `,"_blank");
-                                                                window.location = `https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf`, target = "_blank";
-                                                            });
+                                                            // $("tr").click(function () {
+                                                            //     //    window.open(`https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf `,"_blank");
+                                                            //     // window.location.href = `https://iitmandi.ac.in/academics/courses/odd_2017/${f.code}.pdf`, target = "_blank";
+                                                            // });
                                                             $(row).appendTo("#tbody1");
                                                         })
                                                     })
