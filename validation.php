@@ -23,7 +23,7 @@ if ($num == 1) {
 
     $_SESSION['user_name'] = $user_name;
 
-    header('location:loggedinpage.php');
+    header('location:dashboard.php');
     exit();
 
 } else {
