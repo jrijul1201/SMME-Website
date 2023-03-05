@@ -85,50 +85,50 @@ $userName = $_SESSION['user_name'];
         }
     </style>
 
-<!-- show a textbox when other degree is selected in education section -->
-<script>
-    function showDegreeOther() {
-        let educationTable = document.getElementById("education-table");
-        let degreeSelections = educationTable.getElementsByTagName("select");
-        for (let i = 0; i < degreeSelections.length; i++) {
-            let degreeSelection = degreeSelections[i];
-            let degreeOther = degreeSelection.nextElementSibling;
-            degreeSelection.addEventListener("change", function() {
-                if (degreeSelection.value === "Other") {
-                    degreeOther.style.display = "inline";
-                    degreeOther.required = true;
-                } else {
-                    degreeOther.style.display = "none";
+    <!-- show a textbox when other degree is selected in education section -->
+    <script>
+        function showDegreeOther() {
+            let educationTable = document.getElementById("education-table");
+            let degreeSelections = educationTable.getElementsByTagName("select");
+            for (let i = 0; i < degreeSelections.length; i++) {
+                let degreeSelection = degreeSelections[i];
+                let degreeOther = degreeSelection.nextElementSibling;
+                degreeSelection.addEventListener("change", function () {
+                    if (degreeSelection.value === "Other") {
+                        degreeOther.style.display = "inline";
+                        degreeOther.required = true;
+                    } else {
+                        degreeOther.style.display = "none";
+                    }
+                });
+            }
+        }
+
+        function autoSelectOption(value, ind) {
+            var found = false;
+            var id = "eduDegree".concat(ind);
+            var select = document.getElementById(id);
+            var options = select.options;
+            for (var i = 0; i < options.length; i++) {
+                if (options[i].value === value) {
+                    select.selectedIndex = i;
+                    found = true;
+                    break;
                 }
-            });
+            }
+            if (!found) {
+                var id2 = "degreeOther".concat(ind);
+                var input = document.getElementById(id2);
+                input.value = value;
+                input.style.display = "inline";
+                select.selectedIndex = options.length - 1;
+            }
         }
-    }
 
-    function autoSelectOption(value,ind) {
-        var found = false;
-        var id = "eduDegree".concat(ind);
-        var select = document.getElementById(id);
-        var options = select.options;
-        for (var i = 0; i < options.length; i++) {
-          if (options[i].value === value) {
-            select.selectedIndex = i;
-            found = true;
-            break;
-          }
-        }
-        if (!found) {
-            var id2 = "degreeOther".concat(ind);
-            var input = document.getElementById(id2);
-            input.value = value;
-            input.style.display = "inline";
-            select.selectedIndex = options.length - 1;
-        }
-    }
-
-    window.addEventListener("load", function() {
-        showDegreeOther();
-    });
-</script>
+        window.addEventListener("load", function () {
+            showDegreeOther();
+        });
+    </script>
 
 </head>
 
@@ -242,18 +242,18 @@ $userName = $_SESSION['user_name'];
                     echo "<tr>";
                     echo "<td><select id='eduDegree" . "$ind' name='degree[]' required>
                                 <option value='' disabled selected>Select a Degree</option>
-                                <option value='B.Tech.'>B.Tech.</option>
-                                <option value='B.Tech. - M.Tech. (Dual)'>B.Tech. - M.Tech. (Dual)</option>
-                                <option value='B.Sc.'>B.Sc.</option>
-                                <option value='M.Tech.'>M.Tech.</option>
-                                <option value='M.Sc.'>M.Sc.</option>
-                                <option value='M.S.'>M.S.</option>
-                                <option value='M.Tech. - Ph.D.'>M.Tech. - Ph.D.</option>
-                                <option value='Ph.D.'>Ph.D.</option>
+                                <option value='BTech'>BTech</option>
+                                <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
+                                <option value='BSc'>BSc</option>
+                                <option value='MTech'>MTech</option>
+                                <option value='MSc'>MSc</option>
+                                <option value='MS'>MS</option>
+                                <option value='MTech - PhD'>MTech - PhD</option>
+                                <option value='PhD'>PhD</option>
                                 <option value='Masters'>Masters</option>
                                 <option value='Bachelors'>Bachelors</option>
-                                <option value='M.E.'>M.E.</option>
-                                <option value='B.E.'>B.E.</option>
+                                <option value='ME'>ME</option>
+                                <option value='BE'>BE</option>
                                 <option value='Other'>Other</option>
                             </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
                     echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
@@ -429,18 +429,18 @@ $userName = $_SESSION['user_name'];
         var cell7 = row.insertCell(6);
         cell1.innerHTML = `<select name="degree[]" required>
                         <option value="" disabled selected>Select a Degree</option>
-                        <option value="B.Tech.">B.Tech.</option>
-                        <option value="B.Tech. - M.Tech. (Dual)">B.Tech. - M.Tech. (Dual)</option>
-                        <option value="B.Sc.">B.Sc.</option>
-                        <option value="M.Tech.">M.Tech.</option>
-                        <option value="M.Sc.">M.Sc.</option>
-                        <option value="M.S.">M.S.</option>
-                        <option value="M.Tech. - Ph.D.">M.Tech. - Ph.D.</option>
-                        <option value="Ph.D.">Ph.D.</option>
+                        <option value="BTech">BTech</option>
+                        <option value="BTech - MTech (Dual)">BTech - MTech (Dual)</option>
+                        <option value="BSc">BSc</option>
+                        <option value="MTech">MTech</option>
+                        <option value="MSc">MSc</option>
+                        <option value="MS">MS</option>
+                        <option value="MTech - PhD">MTech - PhD</option>
+                        <option value="PhD">PhD</option>
                         <option value="Masters">Masters</option>
                         <option value="Bachelors">Bachelors</option>
-                        <option value="M.E.">M.E.</option>
-                        <option value="B.E.">B.E.</option>
+                        <option value="ME">ME</option>
+                        <option value="BE">BE</option>
                         <option value="Other">Other</option>
                     </select><input type="text" name="degreeOther[]" value="" style="display:none">`;
         cell2.innerHTML = `<input type="text" name="specialization[]">`;
@@ -449,7 +449,7 @@ $userName = $_SESSION['user_name'];
         cell5.innerHTML = `<input type="text" name="place[]" placeholder="University/College Name">`;
         cell6.innerHTML = `<input type="text" name="other_info[]" placeholder="Thesis Title or Supervisor etc.">`;
         cell7.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
-        
+
         if (table.rows.length >= 1) {
             document.getElementById("delEB").disabled = false;
         }

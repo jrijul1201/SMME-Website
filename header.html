@@ -24,7 +24,7 @@
               class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul class="outer-list">
             <li class="dropdown-inner"><a href="ug-overview.html"><span>Undergraduate</span>
-              <!-- <i
+                <!-- <i
                   class="bi bi-chevron-right dropdown-indicator-inner"></i> -->
               </a>
               <!-- <ul class="inner-list">
@@ -34,7 +34,7 @@
               </ul> -->
             </li>
             <li class="dropdown-inner"><a href="pg-overview.html"><span>Postgraduate</span>
-              <!-- <i
+                <!-- <i
                   class="bi bi-chevron-right dropdown-indicator-inner"></i> -->
               </a>
               <!-- <ul class="inner-list">
@@ -83,7 +83,8 @@
       </ul>
       <i class="bi bi-list mobile-nav-toggle d-none"></i>
     </nav><!-- .navbar -->
-    <button type="button" id="toggleHideShow" class="btn btn-getstarted scrollto" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+    <button type="button" id="toggleHideShow" class="btn btn-getstarted scrollto" data-bs-toggle="modal"
+      data-bs-target="#modalLoginForm">
       Login </button>
   </div>
 
@@ -131,13 +132,13 @@
         dropDownIndicator.classList.toggle('bi-chevron-down');
       }
     })
-  }); 
+  });
 
   const toggleHideShow = document.getElementById("toggleHideShow");
   console.log(window.location.pathname);
-  if(window.location.pathname === '/faculty.html' || window.location.pathname === '/dedicated.html'){
+  if (window.location.pathname.indexOf('/faculty.html') !== -1 || window.location.pathname.indexOf('/dedicated.html') !== -1) {
     toggleHideShow.style.display = "block";
-  }else{
+  } else {
     toggleHideShow.style.display = "none";
   }
 

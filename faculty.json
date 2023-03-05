@@ -6,7 +6,7 @@
     "phone": "267143",
     "mail": "add",
     "post": "Associate Professor (Chairperson)",
-    "chair":"true",
+    "chair": "true",
     "speciality": "Alternative Fuels, IC Engines, Emissions Control",
     "img": "add.jpg",
     "phd": "IIT Kanpur",
@@ -1113,7 +1113,7 @@
     "img": "amitshukla.jpg",
     "phd": "Imperial College London, United Kingdom",
     "address": "A6-11, South Campus, IIT Mandi",
-    "education": [ 
+    "education": [
       {
         "degree": "PhD",
         "specialization": "",
@@ -2506,7 +2506,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Sc.",
+        "degree": "MSc",
         "specialization": "Polymer Chemistry",
         "start_year": "",
         "end_year": "",
@@ -3201,7 +3201,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.E.",
+        "degree": "ME",
         "specialization": "Thermal Engineering",
         "start_year": "",
         "end_year": "",
@@ -3802,7 +3802,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Tech.",
+        "degree": "MTech",
         "specialization": "",
         "start_year": "",
         "end_year": "2003",
@@ -9098,7 +9098,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Sc.",
+        "degree": "MSc",
         "specialization": "",
         "start_year": "",
         "end_year": "2004",
@@ -9107,7 +9107,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Sc.",
+        "degree": "BSc",
         "specialization": "",
         "start_year": "",
         "end_year": "2002",
@@ -9735,7 +9735,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Sc.",
+        "degree": "MSc",
         "specialization": "Physics",
         "start_year": "",
         "end_year": "2002",
@@ -11883,7 +11883,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Sc.",
+        "degree": "MSc",
         "specialization": "Chemistry",
         "start_year": "",
         "end_year": "",
@@ -11892,7 +11892,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.E.",
+        "degree": "BE",
         "specialization": "Chemical",
         "start_year": "",
         "end_year": "",
@@ -12977,7 +12977,7 @@
         "isHidden": false
       },
       {
-        "degree": "M.Sc.",
+        "degree": "MSc",
         "specialization": "Materials Science",
         "start_year": "",
         "end_year": "",
@@ -12986,7 +12986,7 @@
         "isHidden": false
       },
       {
-        "degree": "B.Sc.",
+        "degree": "BSc",
         "specialization": "Physics",
         "start_year": "",
         "end_year": "",
