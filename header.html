@@ -86,6 +86,9 @@
     <button type="button" id="toggleHideShow" class="btn btn-getstarted scrollto" data-bs-toggle="modal"
       data-bs-target="#modalLoginForm">
       Login </button>
+    <form action="logout.php" method="post">
+      <button type="submit" class="btn btn-getstarted scrollto" id="toggleHideShowLogout">Logout</button>
+    </form>
   </div>
 
 </header><!-- End Header -->
@@ -140,6 +143,13 @@
     toggleHideShow.style.display = "block";
   } else {
     toggleHideShow.style.display = "none";
+  }
+  
+  const toggleHideShowLogout = document.getElementById("toggleHideShowLogout");
+  if (window.location.pathname.indexOf('/dashboard') !== -1) {
+    toggleHideShowLogout.style.display = "block";
+  } else {
+    toggleHideShowLogout.style.display = "none";
   }
 
 </script>
