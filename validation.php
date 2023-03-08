@@ -8,7 +8,7 @@ if (!$con) {
     exit();
 }
 
-mysqli_select_db($con, 'signup');
+mysqli_select_db($con, 'signupdata');
 
 $user_name = $_POST['user_name'];
 $user_password = $_POST['user_password'];

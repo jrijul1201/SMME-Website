@@ -134,6 +134,10 @@ $userName = $_SESSION['user_name'];
             transform: translate(-50%, -50%);
             text-align: center;
         }
+
+        .dashboard{
+            overflow: scroll;
+        }
     </style>
 
     <!-- show a textbox when other degree is selected in education section -->
@@ -288,48 +292,51 @@ $userName = $_SESSION['user_name'];
                         </div>
                         <h2>Education Details:</h3>
                             <div class="row">
-                                <table id="education-table">
-                                    <tr>
-                                        <th>Degree</th>
-                                        <th>Specialization</th>
-                                        <th>Start Year</th>
-                                        <th>End Year</th>
-                                        <th>Place</th>
-                                        <th>Other Info</th>
-                                        <th>To Hide</th>
-                                    </tr>
-                                    <tbody>
-                                        <?php
-                                        foreach ($arr[$index]["education"] as $ind => $ed) {
-                                            echo "<tr class='edutablerow'>";
-                                            echo "<td class='col-md-2'><select id='eduDegree" . "$ind' name='degree[]' required>
-                                <option value='' disabled selected>Select a Degree</option>
-                                <option value='BTech'>BTech</option>
-                                <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
-                                <option value='BSc'>BSc</option>
-                                <option value='MTech'>MTech</option>
-                                <option value='MSc'>MSc</option>
-                                <option value='MS'>MS</option>
-                                <option value='MTech - PhD'>MTech - PhD</option>
-                                <option value='PhD'>PhD</option>
-                                <option value='Masters'>Masters</option>
-                                <option value='Bachelors'>Bachelors</option>
-                                <option value='ME'>ME</option>
-                                <option value='BE'>BE</option>
-                                <option value='Other'>Other</option>
-                            </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
-                                            echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
-                                            echo "<td class='col-md-2'><input type='text' name='specialization[]' value='{$ed['specialization']}'></td>";
-                                            echo "<td class='col-md-2'><input type='text' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                            echo "<td class='col-md-2'><input type='text' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                            echo "<td class='col-md-2'><input type='text' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
-                                            echo "<td class='col-md-2'><input type='text' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
-                                            echo "<td class='col-md-2'><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
-                                            echo "</tr>";
-                                        }
-                                        ?>
-                                    </tbody>
-                                </table>
+                                <div style="width: 1000px">
+                                    <table id="education-table">
+                                        <tr>
+                                            <th>Degree</th>
+                                            <th>Specialization</th>
+                                            <th>Start Year</th>
+                                            <th>End Year</th>
+                                            <th>Place</th>
+                                            <th>Other Info</th>
+                                            <th>To Hide</th>
+                                        </tr>
+                                        <tbody>
+                                            <?php
+                                            foreach ($arr[$index]["education"] as $ind => $ed) {
+                                                echo "<tr class='edutablerow'>";
+                                                echo "<td><select id='eduDegree" . "$ind' name='degree[]' required>
+                                    <option value='' disabled selected>Select a Degree</option>
+                                    <option value='BTech'>BTech</option>
+                                    <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
+                                    <option value='BSc'>BSc</option>
+                                    <option value='MTech'>MTech</option>
+                                    <option value='MSc'>MSc</option>
+                                    <option value='MS'>MS</option>
+                                    <option value='MTech - PhD'>MTech - PhD</option>
+                                    <option value='PhD'>PhD</option>
+                                    <option value='Masters'>Masters</option>
+                                    <option value='Bachelors'>Bachelors</option>
+                                    <option value='ME'>ME</option>
+                                    <option value='BE'>BE</option>
+                                    <option value='Other'>Other</option>
+                                </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
+                                                echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
+                                                echo "<td><input type='text' name='specialization[]' value='{$ed['specialization']}'></td>";
+                                                echo "<td><input type='text' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                                                echo "<td><input type='text' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                                                echo "<td><input type='text' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
+                                                echo "<td><input type='text' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
+                                                echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
+                                                echo "</tr>";
+                                            }
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
                                 <div class="text-center"><button type="submit" class="edubtn" onclick="addEducation()">Add</button><button type="submit" id="delEB" class="edubtn" onclick="deleteEducation()">Delete</button></div>
                                 <!-- <button type="button" onclick="addEducation()">Add</button>
                 <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br> -->
@@ -369,18 +376,18 @@ $userName = $_SESSION['user_name'];
                                     <textarea class="form-control" name="activity"><?php echo $arr[$index]["activity"]; ?></textarea>
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
+                            <!-- <div class="form-group mt-3">
                                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                             </div>
                             <div class="form-group mt-3">
                                 <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="my-3">
+                            </div> -->
+                            <!-- <div class="my-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit">Send Message</button></div> -->
                 </form>
             </div>
 
