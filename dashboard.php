@@ -135,8 +135,41 @@ $userName = $_SESSION['user_name'];
             text-align: center;
         }
 
-        .dashboard{
+        .dashboard {
             overflow: scroll;
+        }
+
+        /* table{
+            position: absolute;
+        } */
+        td,
+        th {
+            /* position: absolute; */
+            width: 200px !important;
+            height: 30px !important;
+            border: 0.5px solid gray !important;
+        }
+
+        .input-css {
+            border: none !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .php-email-form {
+            width: 90% !important;
+            margin: auto;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+
+        .profile-section{
+            padding: 10px;
+        }
+        .edubtn{
+            margin: 10px !important;
         }
     </style>
 
@@ -253,149 +286,193 @@ $userName = $_SESSION['user_name'];
                 </div>
             </div>
             <!-- start here -->
-            <div class="col-lg-8">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <h2>Personal Information:</h3>
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label for="fname">Name:</label>
-                                <input type="text" name="fname" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="phone">Phone:</label> +91-1905-
-                                <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>" required>
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="address">Address:</label>
-                                <input type="text" name="address" class="form-control" id="address" value="<?php echo $arr[$index]["address"]; ?>" required>
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="post">Designation:</label>
-                                <input type="text" name="post" class="form-control" id="post" value="<?php echo $arr[$index]["post"]; ?>" required>
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="speciality">Specialisation:</label>
-                                <input type="text" name="speciality" class="form-control" id="speciality" value="<?php echo $arr[$index]["speciality"]; ?>" required>
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="gslink">Google Scholar Link:</label>
-                                <input type="text" name="gslink" class="form-control" id="gslink" value="<?php echo $arr[$index]["gs"]; ?>">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="irinsid">IRINS ID:</label>
-                                <input type="text" name="irinsid" class="form-control" id="irinsid" value="<?php echo $arr[$index]["irins"]; ?>">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="pplink">Personal Page Link(if any):</label>
-                                <input type="text" name="pplink" class="form-control" id="pplink" value="<?php echo $arr[$index]["personal_page_link"]; ?>">
-                            </div>
-                        </div>
-                        <h2>Education Details:</h3>
-                            <div class="row">
-                                <div style="width: 1000px">
-                                    <table id="education-table">
-                                        <tr>
-                                            <th>Degree</th>
-                                            <th>Specialization</th>
-                                            <th>Start Year</th>
-                                            <th>End Year</th>
-                                            <th>Place</th>
-                                            <th>Other Info</th>
-                                            <th>To Hide</th>
-                                        </tr>
-                                        <tbody>
-                                            <?php
-                                            foreach ($arr[$index]["education"] as $ind => $ed) {
-                                                echo "<tr class='edutablerow'>";
-                                                echo "<td><select id='eduDegree" . "$ind' name='degree[]' required>
-                                    <option value='' disabled selected>Select a Degree</option>
-                                    <option value='BTech'>BTech</option>
-                                    <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
-                                    <option value='BSc'>BSc</option>
-                                    <option value='MTech'>MTech</option>
-                                    <option value='MSc'>MSc</option>
-                                    <option value='MS'>MS</option>
-                                    <option value='MTech - PhD'>MTech - PhD</option>
-                                    <option value='PhD'>PhD</option>
-                                    <option value='Masters'>Masters</option>
-                                    <option value='Bachelors'>Bachelors</option>
-                                    <option value='ME'>ME</option>
-                                    <option value='BE'>BE</option>
-                                    <option value='Other'>Other</option>
-                                </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
-                                                echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
-                                                echo "<td><input type='text' name='specialization[]' value='{$ed['specialization']}'></td>";
-                                                echo "<td><input type='text' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                                echo "<td><input type='text' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                                echo "<td><input type='text' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
-                                                echo "<td><input type='text' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
-                                                echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
-                                                echo "</tr>";
-                                            }
-                                            ?>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
-                                <div class="text-center"><button type="submit" class="edubtn" onclick="addEducation()">Add</button><button type="submit" id="delEB" class="edubtn" onclick="deleteEducation()">Delete</button></div>
-                                <!-- <button type="button" onclick="addEducation()">Add</button>
-                <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br> -->
-                            </div>
-                            <div class="row">
-                                <div class="form-group mt-3 md-6">
-                                    <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required> -->
-                                    <h3>Publications:</h3>
-                                    <textarea class="form-control" name="publications"><?php echo $arr[$index]["publications"]; ?></textarea>
-                                </div>
-                                <div class="form-group mt-3 md-6">
-                                    <h3>Research Interests:</h3>
-                                    <textarea class="form-control" name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
-                                </div>
-                                <div class="form-group mt-3 md-6">
-                                    <h3>Current Projects:</h3>
-                                    <textarea class="form-control" name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
-                                </div>
-                                <div class="form-group mt-3 md-6">
-                                    <h3>Current Openings for research:</h3>
-                                    <textarea class="form-control" name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
-                                </div>
-                                <div class="form-group mt-3 md-6">
-                                    <h3>Work Experiences:</h3>
-                                    <textarea class="form-control" name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
-                                </div>
-                                <div class="form-group mt-3 md-6">
-                                    <h3>Conferences:</h3>
-                                    <textarea class="form-control" name="conferences"><?php echo $arr[$index]["conferences"]; ?></textarea>
-                                </div>
-                                <div class="form-group mt-3 md-6">
-                                    <h3>Scholarships, Awards, Honors, and Invited Talks:</h3>
-                                    <textarea class="form-control" name="awards"><?php echo $arr[$index]["awards"]; ?></textarea>
-                                </div>
-                                <div class="form-group mt-3 md-6">
-                                    <h3>Other Activities:</h3>
-                                    <textarea class="form-control" name="activity"><?php echo $arr[$index]["activity"]; ?></textarea>
-                                </div>
-                            </div>
-                            <!-- <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                            </div> -->
-                            <!-- <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div> -->
-                </form>
+            <!-- Personal info -->
+            
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="profile-section">
+                <h2>Personal Information:</h2>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="fname">Name:</label>
+                        <input type="text" name="fname" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="phone">Phone:</label> +91-1905-
+                        <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" class="form-control" id="address" value="<?php echo $arr[$index]["address"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="post">Designation:</label>
+                        <input type="text" name="post" class="form-control" id="post" value="<?php echo $arr[$index]["post"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="speciality">Specialisation:</label>
+                        <input type="text" name="speciality" class="form-control" id="speciality" value="<?php echo $arr[$index]["speciality"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="gslink">Google Scholar Link:</label>
+                        <input type="text" name="gslink" class="form-control" id="gslink" value="<?php echo $arr[$index]["gs"]; ?>">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="irinsid">IRINS ID:</label>
+                        <input type="text" name="irinsid" class="form-control" id="irinsid" value="<?php echo $arr[$index]["irins"]; ?>">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pplink">Personal Page Link(if any):</label>
+                        <input type="text" name="pplink" class="form-control" id="pplink" value="<?php echo $arr[$index]["personal_page_link"]; ?>">
+                    </div>
+                </div>
             </div>
+            <!-- Educational Details -->
+            <div style="overflow: scroll;" class="profile-section">
+                <h2>Education Details:</h3>
+                    <div class="row">
+                        <table id="education-table">
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialization</th>
+                                <th>Start Year</th>
+                                <th>End Year</th>
+                                <th>Place</th>
+                                <th>Other Info</th>
+                                <th>To Hide</th>
+                            </tr>
+                            <tbody>
+                                <?php
+                                foreach ($arr[$index]["education"] as $ind => $ed) {
+                                    echo "<tr class='edutablerow'>";
+                                    echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
+                            <option value='' disabled selected>Select a Degree</option>
+                            <option value='BTech'>BTech</option>
+                            <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
+                            <option value='BSc'>BSc</option>
+                            <option value='MTech'>MTech</option>
+                            <option value='MSc'>MSc</option>
+                            <option value='MS'>MS</option>
+                            <option value='MTech - PhD'>MTech - PhD</option>
+                            <option value='PhD'>PhD</option>
+                            <option value='Masters'>Masters</option>
+                            <option value='Bachelors'>Bachelors</option>
+                            <option value='ME'>ME</option>
+                            <option value='BE'>BE</option>
+                            <option value='Other'>Other</option>
+                        </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
+                                    echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
+                                    echo "<td><input type='text' class='input-css' name='specialization[]' value='{$ed['specialization']}'></td>";
+                                    echo "<td><input type='text' class='input-css' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                                    echo "<td><input type='text' class='input-css' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                                    echo "<td><input type='text' class='input-css' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
+                                    echo "<td><input type='text' class='input-css' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
+                                    echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
+                                    echo "</tr>";
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                        <div class="text-center"><button type="submit" class="edubtn" onclick="addEducation()">Add</button><button type="submit" id="delEB" class="edubtn" onclick="deleteEducation()">Delete</button></div>
+                        <!-- <button type="button" onclick="addEducation()">Add</button>
+        <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br> -->
+                    </div>
+            </div>
+            <!-- Text Areas -->
+            <div class="profile-section">
+                <div class="row">
+                    <div class="form-group mt-3 md-6">
+                        <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required> -->
+                        <h3>Publications:</h3>
+                        <textarea class="form-control" name="publications"><?php echo $arr[$index]["publications"]; ?></textarea>
+                    </div>
+                    <div class="form-group mt-3 md-6">
+                        <h3>Research Interests:</h3>
+                        <textarea class="form-control" name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
+                    </div>
+                    <div class="form-group mt-3 md-6">
+                        <h3>Current Projects:</h3>
+                        <textarea class="form-control" name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
+                    </div>
+                    <div class="form-group mt-3 md-6">
+                        <h3>Current Openings for research:</h3>
+                        <textarea class="form-control" name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
+                    </div>
+                    <div class="form-group mt-3 md-6">
+                        <h3>Work Experiences:</h3>
+                        <textarea class="form-control" name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
+                    </div>
+                    <div class="form-group mt-3 md-6">
+                        <h3>Conferences:</h3>
+                        <textarea class="form-control" name="conferences"><?php echo $arr[$index]["conferences"]; ?></textarea>
+                    </div>
+                    <div class="form-group mt-3 md-6">
+                        <h3>Scholarships, Awards, Honors, and Invited Talks:</h3>
+                        <textarea class="form-control" name="awards"><?php echo $arr[$index]["awards"]; ?></textarea>
+                    </div>
+                    <div class="form-group mt-3 md-6">
+                        <h3>Other Activities:</h3>
+                        <textarea class="form-control" name="activity"><?php echo $arr[$index]["activity"]; ?></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- IRINS Publications -->
+            <div style="overflow: scroll;" class="profile-section">
+                <h2>IRINS Publications Details:</h2>
+                <small><i>
+                        <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
+                    </i></small><br>
+                <div class="row">
+                    <table id="irins-pub-table">
+                        <tr>
+                            <th>Title</th>
+                            <th>DOI</th>
+                            <th>Year</th>
+                            <th>Publication Date</th>
+                            <th>Publication Type</th>
+                            <th>Pages</th>
+                            <th>Volume</th>
+                            <th>Authors</th>
+                            <th>Journal</th>
+                            <th>Scopus Citations</th>
+                            <th>Cross Ref Citations</th>
+                            <th>To Hide</th>
+                        </tr>
+                        <tbody>
+                            <?php
+                            foreach ($arr[$index]["irins_pub"] as $ipub) {
+                                echo "<tr>";
+                                echo "<td><input type='text' class='input-css' name='ititle[]' value='{$ipub['title']}' required></td>";
+                                echo "<td><input type='text' class='input-css' name='idoi[]' value='{$ipub['DOI']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='iyear[]' pattern='\d{4}' title='Enter valid year (4-digit)' value='{$ipub['year']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='ipubDate[]' value='{$ipub['publicationDate']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='ipubType[]' value='{$ipub['publicationType']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='ipages[]' value='{$ipub['pages']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='ivolume[]' value='{$ipub['volume']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='iauthors[]' value='{$ipub['authors']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='ijournal[]' value='{$ipub['journal']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='iscopusC[]' value='{$ipub['scopusCitations']}'></td>";
+                                echo "<td><input type='text' class='input-css' name='icrossrefC[]' value='{$ipub['crossrefCitations']}'></td>";
+                                echo "<td><input type='checkbox' id='iCheckBox' name='iIsHidden[]' " . ($ipub['isHidden'] ? "checked" : "") . "></td>";
+                                echo "</tr>";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
 
-            <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data">
+                </div>
+                <div class="text-center"><button type="submit" class="edubtn" onclick="addIRINSPub()">Add</button><button type="submit" id="delIPB" class="edubtn" onclick="deleteIRINSPub()">Delete</button></div>
+                <!-- <button type="button" onclick="addIRINSPub()">Add</button>
+                <button type="button" id="delIPB" onclick="deleteIRINSPub()">Delete</button><br><br> -->
+                <!-- <input type="submit" value="Update Changes"> -->
+            </div>
+            <div class="text-center"><button type="submit" class="edubtn">Update Changes</button></div>
+            </form>
+
+            <!-- <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data"> -->
 
 
-                <!-- <h3>Education Details:</h3><br> -->
-                <!-- <table id="education-table">
+            <!-- <h3>Education Details:</h3><br> -->
+            <!-- <table id="education-table">
                     <tr>
                         <th>Degree</th>
                         <th>Specialization</th>
@@ -406,70 +483,75 @@ $userName = $_SESSION['user_name'];
                         <th>To Hide</th>
                     </tr>
                     <tbody> -->
-                        <!-- <?php
-                        // foreach ($arr[$index]["education"] as $ind => $ed) {
-                        //     echo "<tr>";
-                        //     echo "<td><select id='eduDegree" . "$ind' name='degree[]' required>
-                        //         <option value='' disabled selected>Select a Degree</option>
-                        //         <option value='BTech'>BTech</option>
-                        //         <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
-                        //         <option value='BSc'>BSc</option>
-                        //         <option value='MTech'>MTech</option>
-                        //         <option value='MSc'>MSc</option>
-                        //         <option value='MS'>MS</option>
-                        //         <option value='MTech - PhD'>MTech - PhD</option>
-                        //         <option value='PhD'>PhD</option>
-                        //         <option value='Masters'>Masters</option>
-                        //         <option value='Bachelors'>Bachelors</option>
-                        //         <option value='ME'>ME</option>
-                        //         <option value='BE'>BE</option>
-                        //         <option value='Other'>Other</option>
-                        //     </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
-                        //     echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
-                        //     echo "<td><input type='text' name='specialization[]' value='{$ed['specialization']}'></td>";
-                        //     echo "<td><input type='text' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                        //     echo "<td><input type='text' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                        //     echo "<td><input type='text' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
-                        //     echo "<td><input type='text' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
-                        //     echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
-                        //     echo "</tr>";
-                        // }
-                       ?> -->
-                    <!-- </tbody>
+            <!-- <?php
+                    // foreach ($arr[$index]["education"] as $ind => $ed) {
+                    //     echo "<tr>";
+                    //     echo "<td><select id='eduDegree" . "$ind' name='degree[]' required>
+                    //         <option value='' disabled selected>Select a Degree</option>
+                    //         <option value='BTech'>BTech</option>
+                    //         <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
+                    //         <option value='BSc'>BSc</option>
+                    //         <option value='MTech'>MTech</option>
+                    //         <option value='MSc'>MSc</option>
+                    //         <option value='MS'>MS</option>
+                    //         <option value='MTech - PhD'>MTech - PhD</option>
+                    //         <option value='PhD'>PhD</option>
+                    //         <option value='Masters'>Masters</option>
+                    //         <option value='Bachelors'>Bachelors</option>
+                    //         <option value='ME'>ME</option>
+                    //         <option value='BE'>BE</option>
+                    //         <option value='Other'>Other</option>
+                    //     </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
+                    //     echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
+                    //     echo "<td><input type='text' name='specialization[]' value='{$ed['specialization']}'></td>";
+                    //     echo "<td><input type='text' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                    //     echo "<td><input type='text' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                    //     echo "<td><input type='text' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
+                    //     echo "<td><input type='text' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
+                    //     echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
+                    //     echo "</tr>";
+                    // }
+                    ?> -->
+            <!-- </tbody>
                 </table>
                 <button type="button" onclick="addEducation()">Add</button>
                 <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br> -->
-<!-- 
+            <!-- 
                 <h3>Publications:</h3>
                 <textarea name="publications"><?php
-                //  echo $arr[$index]["publications"]; 
-                 ?></textarea>
+                                                //  echo $arr[$index]["publications"]; 
+                                                ?></textarea>
                 <h3>Research Interests:</h3>
                 <textarea name="interests"><?php
-                //  echo $arr[$index]["interests"]; 
-                 ?></textarea>
+                                            //  echo $arr[$index]["interests"]; 
+                                            ?></textarea>
                 <h3>Current Projects:</h3>
-                <textarea name="projects"><?php 
-                // echo $arr[$index]["projects"];
-                 ?></textarea>
+                <textarea name="projects"><?php
+                                            // echo $arr[$index]["projects"];
+                                            ?></textarea>
                 <h3>Current Openings for research:</h3>
                 <textarea name="openings"><?php
-                //  echo $arr[$index]["openings"]; ?></textarea>
+                                            //  echo $arr[$index]["openings"]; 
+                                            ?></textarea>
                 <h3>Work Experiences:</h3>
                 <textarea name="experiences"><?php
-                //  echo $arr[$index]["experiences"]; ?></textarea>
+                                                //  echo $arr[$index]["experiences"]; 
+                                                ?></textarea>
                 <h3>Conferences:</h3>
                 <textarea name="conferences"><?php
-                //  echo $arr[$index]["conferences"]; ?></textarea>
+                                                //  echo $arr[$index]["conferences"]; 
+                                                ?></textarea>
                 <h3>Scholarships, Awards, Honors, and Invited Talks:</h3>
-                <textarea name="awards"><?php 
-                // echo $arr[$index]["awards"]; ?></textarea>
+                <textarea name="awards"><?php
+                                        // echo $arr[$index]["awards"]; 
+                                        ?></textarea>
                 <h3>Other Activities:</h3>
                 <textarea name="activity"><?php
-                //  echo $arr[$index]["activity"]; ?></textarea> -->
+                                            //  echo $arr[$index]["activity"]; 
+                                            ?></textarea> -->
 
-                <!-- <h3>IRINS Publications Details:</h3> -->
-                <small><i>
+            <!-- <h3>IRINS Publications Details:</h3> -->
+            <!-- <small><i>
                         <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
                     </i></small><br>
 
@@ -512,9 +594,9 @@ $userName = $_SESSION['user_name'];
                 <button type="button" onclick="addIRINSPub()">Add</button>
                 <button type="button" id="delIPB" onclick="deleteIRINSPub()">Delete</button><br><br>
 
-                <input type="submit" value="Update Changes">
-            </form>
-            <div class="col-lg-8">
+                <input type="submit" value="Update Changes"> -->
+            <!-- </form> -->
+            <!-- <div class="col-lg-8">
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                     <div class="row">
                         <div class="col-md-6 form-group">
@@ -538,6 +620,7 @@ $userName = $_SESSION['user_name'];
                     <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
             </div>
+         -->
         </section>
 
     </main><!-- End #main -->
@@ -655,7 +738,7 @@ $userName = $_SESSION['user_name'];
         var cell5 = row.insertCell(4);
         var cell6 = row.insertCell(5);
         var cell7 = row.insertCell(6);
-        cell1.innerHTML = `<select name="degree[]" required>
+        cell1.innerHTML = `<select name="degree[]" class='input-css' required>
                         <option value="" disabled selected>Select a Degree</option>
                         <option value="BTech">BTech</option>
                         <option value="BTech - MTech (Dual)">BTech - MTech (Dual)</option>
@@ -671,11 +754,11 @@ $userName = $_SESSION['user_name'];
                         <option value="BE">BE</option>
                         <option value="Other">Other</option>
                     </select><input type="text" name="degreeOther[]" value="" style="display:none">`;
-        cell2.innerHTML = `<input type="text" name="specialization[]">`;
-        cell3.innerHTML = `<input type="text" name="start_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
-        cell4.innerHTML = `<input type="text" name="end_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
-        cell5.innerHTML = `<input type="text" name="place[]" placeholder="University/College Name">`;
-        cell6.innerHTML = `<input type="text" name="other_info[]" placeholder="Thesis Title or Supervisor etc.">`;
+        cell2.innerHTML = `<input type="text" class='input-css' name="specialization[]">`;
+        cell3.innerHTML = `<input type="text" class='input-css' name="start_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
+        cell4.innerHTML = `<input type="text" class='input-css' name="end_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
+        cell5.innerHTML = `<input type="text" class='input-css' name="place[]" placeholder="University/College Name">`;
+        cell6.innerHTML = `<input type="text" class='input-css' name="other_info[]" placeholder="Thesis Title or Supervisor etc.">`;
         cell7.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
 
         if (table.rows.length >= 1) {
@@ -711,17 +794,17 @@ $userName = $_SESSION['user_name'];
         var cell10 = row.insertCell(9);
         var cell11 = row.insertCell(10);
         var cell12 = row.insertCell(11);
-        cell1.innerHTML = `<input type="text" name="ititle[]" required>`;
-        cell2.innerHTML = `<input type="text" name="idoi[]">`;
-        cell3.innerHTML = `<input type="text" name="iyear[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
-        cell4.innerHTML = `<input type="text" name="ipubDate[]">`;
-        cell5.innerHTML = `<input type="text" name="ipubType[]">`;
-        cell6.innerHTML = `<input type="text" name="ipages[]">`;
-        cell7.innerHTML = `<input type="text" name="ivolume[]">`;
-        cell8.innerHTML = `<input type="text" name="iauthors[]">`;
-        cell9.innerHTML = `<input type="text" name="ijournal[]">`;
-        cell10.innerHTML = `<input type="text" name="iscopusC[]">`;
-        cell11.innerHTML = `<input type="text" name="icrossrefC[]">`;
+        cell1.innerHTML = `<input type="text" class='input-css' name="ititle[]" required>`;
+        cell2.innerHTML = `<input type="text" class='input-css' name="idoi[]">`;
+        cell3.innerHTML = `<input type="text" class='input-css' name="iyear[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
+        cell4.innerHTML = `<input type="text" class='input-css' name="ipubDate[]">`;
+        cell5.innerHTML = `<input type="text" class='input-css' name="ipubType[]">`;
+        cell6.innerHTML = `<input type="text" class='input-css' name="ipages[]">`;
+        cell7.innerHTML = `<input type="text" class='input-css' name="ivolume[]">`;
+        cell8.innerHTML = `<input type="text" class='input-css' name="iauthors[]">`;
+        cell9.innerHTML = `<input type="text" class='input-css' name="ijournal[]">`;
+        cell10.innerHTML = `<input type="text" class='input-css' name="iscopusC[]">`;
+        cell11.innerHTML = `<input type="text" class='input-css' name="icrossrefC[]">`;
         cell12.innerHTML = `<input type="checkbox" id="iCheckBox" name="iIsHidden[]">`;
         if (table.rows.length >= 1) {
             document.getElementById("delIPB").disabled = false;
