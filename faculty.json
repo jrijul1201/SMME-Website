@@ -1808,23 +1808,23 @@
     "personal_page_link": ""
   },
   {
-    "name": "Dhiraj Dube",
+    "name": "Dube Dheeraj Prakashchand",
     "gs": "",
     "irins": "",
     "phone": "",
-    "mail": "",
+    "mail": "dheeraj",
     "post": "Assistant Professor",
-    "speciality": "",
-    "img": "dhirajdube.jpg",
-    "phd": "",
+    "speciality": "Molecular Dynamics Simulation, Computational Biophysics",
+    "img": "dheeraj.jpeg",
+    "phd": " ",
     "address": "A-11.04.58, North Campus, IIT Mandi    ",
     "education": [
       {
-        "degree": "",
+        "degree": "PhD",
         "specialization": "",
         "start_year": "",
         "end_year": "",
-        "place": "",
+        "place": "TIFR Hyderabad",
         "other_info": "",
         "isHidden": false
       }
