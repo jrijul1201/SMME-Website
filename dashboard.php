@@ -247,7 +247,7 @@ $userName = $_SESSION['user_name'];
             </form> -->
 
             <div class="image_area">
-                <form method="post">
+                <form method="post" action="upload.php">
                     <label for="upload_image">
                         <img src="assets/img/team/<?php echo $arr[$index]["img"]; ?>" id="uploaded_image"
                             class="img-responsive img-circle" />
@@ -292,72 +292,64 @@ $userName = $_SESSION['user_name'];
             </div>
             <!-- start here -->
             <!-- Personal info -->
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="profile-section">
-                    <h2>Personal Information:</h2>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="fname">Name:</label>
-                            <input type="text" name="fname" class="form-control" id="fname"
-                                value="<?php echo $arr[$index]["name"]; ?>" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="phone">Phone:</label> +91-1905-
-                            <input type="text" name="phone" class="form-control" id="phone"
-                                value="<?php echo $arr[$index]["phone"]; ?>" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="address">Address:</label>
-                            <input type="text" name="address" class="form-control" id="address"
-                                value="<?php echo $arr[$index]["address"]; ?>" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="post">Designation:</label>
-                            <input type="text" name="post" class="form-control" id="post"
-                                value="<?php echo $arr[$index]["post"]; ?>" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="speciality">Specialisation:</label>
-                            <input type="text" name="speciality" class="form-control" id="speciality"
-                                value="<?php echo $arr[$index]["speciality"]; ?>" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="gslink">Google Scholar Link:</label>
-                            <input type="text" name="gslink" class="form-control" id="gslink"
-                                value="<?php echo $arr[$index]["gs"]; ?>">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="irinsid">IRINS ID:</label>
-                            <input type="text" name="irinsid" class="form-control" id="irinsid"
-                                value="<?php echo $arr[$index]["irins"]; ?>">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pplink">Personal Page Link(if any):</label>
-                            <input type="text" name="pplink" class="form-control" id="pplink"
-                                value="<?php echo $arr[$index]["personal_page_link"]; ?>">
-                        </div>
+            
+            <form action="data_update.php" method="post" role="form" class="php-email-form">
+            <div class="profile-section">
+                <h2>Personal Information:</h2>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="fname">Name:</label>
+                        <input type="text" name="fname" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="phone">Phone:</label> +91-1905-
+                        <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" class="form-control" id="address" value="<?php echo $arr[$index]["address"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="post">Designation:</label>
+                        <input type="text" name="post" class="form-control" id="post" value="<?php echo $arr[$index]["post"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="speciality">Specialisation:</label>
+                        <input type="text" name="speciality" class="form-control" id="speciality" value="<?php echo $arr[$index]["speciality"]; ?>" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="gslink">Google Scholar Link:</label>
+                        <input type="text" name="gslink" class="form-control" id="gslink" value="<?php echo $arr[$index]["gs"]; ?>">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="irinsid">IRINS ID:</label>
+                        <input type="text" name="irinsid" class="form-control" id="irinsid" value="<?php echo $arr[$index]["irins"]; ?>">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pplink">Personal Page Link(if any):</label>
+                        <input type="text" name="pplink" class="form-control" id="pplink" value="<?php echo $arr[$index]["personal_page_link"]; ?>">
                     </div>
                 </div>
-                <!-- Educational Details -->
-                <div style="overflow: scroll;" class="profile-section">
-                    <h2>Education Details:</h3>
-                        <div class="row">
-                            <table id="education-table">
-                                <tr>
-                                    <th>Degree</th>
-                                    <th>Specialization</th>
-                                    <th>Start Year</th>
-                                    <th>End Year</th>
-                                    <th>Place</th>
-                                    <th>Other Info</th>
-                                    <th>To Hide</th>
-                                </tr>
-                                <tbody>
-                                    <?php
-                                    foreach ($arr[$index]["education"] as $ind => $ed) {
-                                        echo "<tr class='edutablerow'>";
-                                        echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
+            </div>
+            <!-- Educational Details -->
+            <div style="overflow: scroll;" class="profile-section">
+                <h2>Education Details:</h3>
+                    <div class="row">
+                        <table id="education-table">
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialization</th>
+                                <th>Start Year</th>
+                                <th>End Year</th>
+                                <th>Place</th>
+                                <th>Other Info</th>
+                                <th>To Hide</th>
+                            </tr>
+                            <tbody>
+                                <?php
+                                foreach ($arr[$index]["education"] as $ind => $ed) {
+                                    echo "<tr class='edutablerow'>";
+                                    echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
                             <option value='' disabled selected>Select a Degree</option>
                             <option value='BTech'>BTech</option>
                             <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
