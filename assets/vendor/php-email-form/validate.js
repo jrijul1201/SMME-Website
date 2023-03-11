@@ -21,9 +21,19 @@
         displayError(thisForm, 'The form action property is not set!')
         return;
       }
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
+      var loadingElement = thisForm.querySelector('.loading');
+      var errorMessageElement = thisForm.querySelector('.error-message');
+      var sentMessageElement = thisForm.querySelector('.sent-message');
+
+      if (loadingElement !== null) {
+        loadingElement.classList.add('d-block');
+      }
+      if (errorMessageElement !== null) {
+        errorMessageElement.classList.remove('d-block');
+      }
+      if (sentMessageElement !== null) {
+        sentMessageElement.classList.remove('d-block');
+      }
 
       let formData = new FormData( thisForm );
 
@@ -73,9 +83,18 @@
   }
 
   function displayError(thisForm, error) {
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    var loadingElement = thisForm.querySelector('.loading');
+    var errorMessageElement = thisForm.querySelector('.error-message');
+    if(loadingElement !== null) {
+      loadingElement.classList.remove('d-block');
+    }
+    if(errorMessageElement !== null) {
+      errorMessageElement.innerHTML = error;
+      errorMessageElement.classList.add('d-block');
+    }
+    // thisForm.querySelector('.loading').classList.remove('d-block');
+    // thisForm.querySelector('.error-message').innerHTML = error;
+    // thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
 })();

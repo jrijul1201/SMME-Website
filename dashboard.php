@@ -13,7 +13,7 @@ $userName = $_SESSION['user_name'];
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>SMME - IIT Mandi</title>
+    <title>Update Dashboard</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -35,6 +35,8 @@ $userName = $_SESSION['user_name'];
     <!-- <link rel="stylesheet" href="https://unpkg.com/dropzone/dist/dropzone.css" /> -->
     <link href="https://unpkg.com/cropperjs/dist/cropper.css" rel="stylesheet" />
     <!-- <script src="https://unpkg.com/dropzone"></script> -->
+    <script src="https://unpkg.com/cropperjs"></script>
+
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -54,7 +56,6 @@ $userName = $_SESSION['user_name'];
     <!-- ctalate Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
-    <script src="https://unpkg.com/cropperjs"></script>
     <!-- Partials loading script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>
@@ -239,67 +240,71 @@ $userName = $_SESSION['user_name'];
     $_SESSION['faculty_index'] = $index;
 
     ?>
+
+    <h1 style="text-align:center">Faculty Profile Form</h1>
+    <div class="image_area">
+        <form method="post">
+            <label for="upload_image">
+                <img src="assets/img/team/<?php echo $arr[$index]["img"]; ?>" id="uploaded_image"
+                    class="img-responsive img-circle" />
+                <div class="overlay">
+                    <div class="text">Click to Change Profile Image</div>
+                </div>
+                <input type="file" name="image" class="image" id="upload_image" style="display:none" />
+            </label>
+        </form>
+    </div>
+
+    <!-- Crop Modal Code -->
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crop Image Before Upload</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="img-container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img src="" id="sample_image" />
+                            </div>
+                            <div class="col-md-4">
+                                <div class="preview"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="crop" class="btn btn-primary">Crop</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <main id="main">
         <section id="dashboard" class="dashboard">
-            <h1 style="text-align:center">Faculty Profile Form</h1>
+            
             <!-- <form action="logout.php" method="post">
                 <button type="submit">Logout</button>
             </form> -->
 
-            <div class="image_area">
-                <form method="post" action="upload.php">
-                    <label for="upload_image">
-                        <img src="assets/img/team/<?php echo $arr[$index]["img"]; ?>" id="uploaded_image"
-                            class="img-responsive img-circle" />
-                        <div class="overlay">
-                            <div class="text">Click to Change Profile Image</div>
-                        </div>
-                        <input type="file" name="image" class="image" id="upload_image" style="display:none" />
-                    </label>
-                </form>
-            </div>
-
-            <!-- Crop Modal Code -->
-
-            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Crop Image Before Upload</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="img-container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <img src="" id="sample_image" />
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="preview"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id="crop" class="btn btn-primary">Crop</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- start here -->
             <!-- Personal info -->
             
-            <form action="data_update.php" method="post" role="form" class="php-email-form">
+            <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data" role="form" class="php-email-form">
             <div class="profile-section">
                 <h2>Personal Information:</h2>
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label for="fname">Name:</label>
-                        <input type="text" name="fname" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
+                        <input type="text" name="name" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
                     </div>
                     <div class="col-md-6 form-group">
                         <label for="phone">Phone:</label> +91-1905-
@@ -377,8 +382,8 @@ $userName = $_SESSION['user_name'];
                                     ?>
                                 </tbody>
                             </table>
-                            <div class="text-center"><button type="submit" class="edubtn"
-                                    onclick="addEducation()">Add</button><button type="submit" id="delEB" class="edubtn"
+                            <div class="text-center"><button type="button" class="edubtn"
+                                    onclick="addEducation()">Add</button><button type="button" id="delEB" class="edubtn"
                                     onclick="deleteEducation()">Delete</button></div>
                             <!-- <button type="button" onclick="addEducation()">Add</button>
         <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br> -->
@@ -475,230 +480,17 @@ $userName = $_SESSION['user_name'];
                         </table>
 
                     </div>
-                    <div class="text-center"><button type="submit" class="edubtn"
-                            onclick="addIRINSPub()">Add</button><button type="submit" id="delIPB" class="edubtn"
+                    <div class="text-center"><button type="button" class="edubtn"
+                            onclick="addIRINSPub()">Add</button><button type="button" id="delIPB" class="edubtn"
                             onclick="deleteIRINSPub()">Delete</button></div>
                     <!-- <button type="button" onclick="addIRINSPub()">Add</button>
                     <button type="button" id="delIPB" onclick="deleteIRINSPub()">Delete</button><br><br> -->
                     <!-- <input type="submit" value="Update Changes"> -->
                 </div>
 
-                <div class="profile-section">
-                    <h2>IRINS Publications Details:</h2>
-                    <small><i>
-                            <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
-                        </i></small><br>
-                    <div class="row">
-                        <?php
-                        foreach ($arr[$index]["irins_pub"] as $ipub) {
-                            $publicationType = '';
-                            $title = '';
-                            $subtitle = '';
-                            $authors = '';
-                            $journal = '';
-                            $DOI = '';
-                            if (isset($ipub['title']) && $ipub['title'] != 'NA') {
-                                $title = $ipub['title'] . " ";
-                            }
-                            if (isset($ipub['title']) && $ipub['title'] != 'NA') {
-                                $subtitle = strtoupper($ipub['journal']);
-                            }
-                            if (isset($ipub['authors']) && $ipub['authors'] != 'NA') {
-                                $authors = $ipub['authors'];
-                            }
-                            if (isset($ipub['volume']) && $ipub['year'] != 'NA') {
-                                $journal = $journal . $ipub['year'] . '; ';
-                            }
-                            if (isset($ipub['year']) && $ipub['volume'] != 'NA') {
-                                $journal = $journal . $ipub['volume'] . ': ';
-                            }
-                            if (isset($ipub['pages']) && $ipub['pages'] != 'NA') {
-                                $journal = $journal . $ipub['pages'];
-                            }
-                            if (isset($ipub['DOI']) && $ipub['DOI'] != 'NA') {
-                                $DOI = $ipub['DOI'];
-                            }
-                            $comp = "<div class='col-md-12 plates'>
-                                        <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
-                                            <div class='col d-flex flex-column position-static plate-child'>
-                                                <h4 class='mb-1'>
-                                                    $title <br />
-                                                    <span style='font-size:15px; font-style: italic;' class='text-muted'>
-                                                        $subtitle
-                                                </h4>
-                                                <p class='card-text mb-auto'>
-                                                    $authors
-                                                </p>
-                                                <div class='mb-auto text-muted'>
-                                                    $journal
-                                                </div>
-                                                <div class='text-primary'>
-                                                    <a href='https://doi.org/$DOI' target='_blank'>$DOI</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>";
-                            echo $comp;
-                        }
-                        ?>
-                    </div>
-                </div>
                 <div class="text-center"><button type="submit" class="edubtn">Update Changes</button></div>
             </form>
 
-            <!-- <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data"> -->
-
-
-            <!-- <h3>Education Details:</h3><br> -->
-            <!-- <table id="education-table">
-                    <tr>
-                        <th>Degree</th>
-                        <th>Specialization</th>
-                        <th>Start Year</th>
-                        <th>End Year</th>
-                        <th>Place</th>
-                        <th>Other Info</th>
-                        <th>To Hide</th>
-                    </tr>
-                    <tbody> -->
-            <!-- <?php
-            // foreach ($arr[$index]["education"] as $ind => $ed) {
-            //     echo "<tr>";
-            //     echo "<td><select id='eduDegree" . "$ind' name='degree[]' required>
-            //         <option value='' disabled selected>Select a Degree</option>
-            //         <option value='BTech'>BTech</option>
-            //         <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
-            //         <option value='BSc'>BSc</option>
-            //         <option value='MTech'>MTech</option>
-            //         <option value='MSc'>MSc</option>
-            //         <option value='MS'>MS</option>
-            //         <option value='MTech - PhD'>MTech - PhD</option>
-            //         <option value='PhD'>PhD</option>
-            //         <option value='Masters'>Masters</option>
-            //         <option value='Bachelors'>Bachelors</option>
-            //         <option value='ME'>ME</option>
-            //         <option value='BE'>BE</option>
-            //         <option value='Other'>Other</option>
-            //     </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
-            //     echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
-            //     echo "<td><input type='text' name='specialization[]' value='{$ed['specialization']}'></td>";
-            //     echo "<td><input type='text' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-            //     echo "<td><input type='text' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-            //     echo "<td><input type='text' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
-            //     echo "<td><input type='text' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
-            //     echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
-            //     echo "</tr>";
-            // }
-            ?> -->
-            <!-- </tbody>
-                </table>
-                <button type="button" onclick="addEducation()">Add</button>
-                <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br> -->
-            <!-- 
-                <h3>Publications:</h3>
-                <textarea name="publications"><?php
-                //  echo $arr[$index]["publications"]; 
-                ?></textarea>
-                <h3>Research Interests:</h3>
-                <textarea name="interests"><?php
-                //  echo $arr[$index]["interests"]; 
-                ?></textarea>
-                <h3>Current Projects:</h3>
-                <textarea name="projects"><?php
-                // echo $arr[$index]["projects"];
-                ?></textarea>
-                <h3>Current Openings for research:</h3>
-                <textarea name="openings"><?php
-                //  echo $arr[$index]["openings"]; 
-                ?></textarea>
-                <h3>Work Experiences:</h3>
-                <textarea name="experiences"><?php
-                //  echo $arr[$index]["experiences"]; 
-                ?></textarea>
-                <h3>Conferences:</h3>
-                <textarea name="conferences"><?php
-                //  echo $arr[$index]["conferences"]; 
-                ?></textarea>
-                <h3>Scholarships, Awards, Honors, and Invited Talks:</h3>
-                <textarea name="awards"><?php
-                // echo $arr[$index]["awards"]; 
-                ?></textarea>
-                <h3>Other Activities:</h3>
-                <textarea name="activity"><?php
-                //  echo $arr[$index]["activity"]; 
-                ?></textarea> -->
-
-            <!-- <h3>IRINS Publications Details:</h3> -->
-            <!-- <small><i>
-                        <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
-                    </i></small><br>
-
-                <table id="irins-pub-table">
-                    <tr>
-                        <th>Title</th>
-                        <th>DOI</th>
-                        <th>Year</th>
-                        <th>Publication Date</th>
-                        <th>Publication Type</th>
-                        <th>Pages</th>
-                        <th>Volume</th>
-                        <th>Authors</th>
-                        <th>Journal</th>
-                        <th>Scopus Citations</th>
-                        <th>Cross Ref Citations</th>
-                        <th>To Hide</th>
-                    </tr>
-                    <tbody>
-                        <?php
-                        foreach ($arr[$index]["irins_pub"] as $ipub) {
-                            echo "<tr>";
-                            echo "<td><input type='text' name='ititle[]' value='{$ipub['title']}' required></td>";
-                            echo "<td><input type='text' name='idoi[]' value='{$ipub['DOI']}'></td>";
-                            echo "<td><input type='text' name='iyear[]' pattern='\d{4}' title='Enter valid year (4-digit)' value='{$ipub['year']}'></td>";
-                            echo "<td><input type='text' name='ipubDate[]' value='{$ipub['publicationDate']}'></td>";
-                            echo "<td><input type='text' name='ipubType[]' value='{$ipub['publicationType']}'></td>";
-                            echo "<td><input type='text' name='ipages[]' value='{$ipub['pages']}'></td>";
-                            echo "<td><input type='text' name='ivolume[]' value='{$ipub['volume']}'></td>";
-                            echo "<td><input type='text' name='iauthors[]' value='{$ipub['authors']}'></td>";
-                            echo "<td><input type='text' name='ijournal[]' value='{$ipub['journal']}'></td>";
-                            echo "<td><input type='text' name='iscopusC[]' value='{$ipub['scopusCitations']}'></td>";
-                            echo "<td><input type='text' name='icrossrefC[]' value='{$ipub['crossrefCitations']}'></td>";
-                            echo "<td><input type='checkbox' id='iCheckBox' name='iIsHidden[]' " . ($ipub['isHidden'] ? "checked" : "") . "></td>";
-                            echo "</tr>";
-                        }
-                        ?>
-                    </tbody>
-                </table>
-                <button type="button" onclick="addIRINSPub()">Add</button>
-                <button type="button" id="delIPB" onclick="deleteIRINSPub()">Delete</button><br><br>
-
-                <input type="submit" value="Update Changes"> -->
-            <!-- </form> -->
-            <!-- <div class="col-lg-8">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
-                </form>
-            </div>
-         -->
         </section>
 
     </main><!-- End #main -->
