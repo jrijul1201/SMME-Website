@@ -43,6 +43,26 @@ if (isset($_POST['degree'])) {
     }
   }
 }
+
+// if degrees are same then the latest entry of that education persists and other removed
+
+$last_indexes = []; // store index of last occurrence of each degree
+
+foreach ($educationInfo as $i => $degree) {
+    if (isset($last_indexes[$degree["degree"]])) {
+        $marked_for_deletion[] = $last_indexes[$degree["degree"]];
+    }
+    $last_indexes[$degree["degree"]] = $i;
+}
+
+// remove marked elements in reverse order to avoid index issues
+if (isset($marked_for_deletion)) {
+    rsort($marked_for_deletion);
+    foreach ($marked_for_deletion as $index) {
+        unset($educationInfo[$index]);
+    }
+}
+$educationInfo = array_values($educationInfo);
 $arr[$facultyIndex]["education"] = $educationInfo;
 
 //  Updating IRINS Publications Info

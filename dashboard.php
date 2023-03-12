@@ -395,22 +395,21 @@ $userName = $_SESSION['user_name'];
                 <!-- Text Areas -->
                 <div class="profile-section">
                     <div class="row">
-                        <div class="form-group mt-3 md-6">
-                            <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required> -->
+                        <!-- <div class="form-group mt-3 md-6">
                             <h3>Publications:</h3>
                             <textarea class="form-control"
                                 name="publications"><?php echo $arr[$index]["publications"]; ?></textarea>
-                        </div>
+                        </div> -->
                         <div class="form-group mt-3 md-6">
                             <h3>Research Interests:</h3>
                             <textarea class="form-control"
                                 name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
                         </div>
-                        <div class="form-group mt-3 md-6">
+                        <!-- <div class="form-group mt-3 md-6">
                             <h3>Current Projects:</h3>
                             <textarea class="form-control"
                                 name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
-                        </div>
+                        </div> -->
                         <div class="form-group mt-3 md-6">
                             <h3>Current Openings for research:</h3>
                             <textarea class="form-control"
@@ -421,21 +420,21 @@ $userName = $_SESSION['user_name'];
                             <textarea class="form-control"
                                 name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
                         </div>
-                        <div class="form-group mt-3 md-6">
+                        <!-- <div class="form-group mt-3 md-6">
                             <h3>Conferences:</h3>
                             <textarea class="form-control"
                                 name="conferences"><?php echo $arr[$index]["conferences"]; ?></textarea>
-                        </div>
+                        </div> -->
                         <div class="form-group mt-3 md-6">
                             <h3>Scholarships, Awards, Honors, and Invited Talks:</h3>
                             <textarea class="form-control"
                                 name="awards"><?php echo $arr[$index]["awards"]; ?></textarea>
                         </div>
-                        <div class="form-group mt-3 md-6">
+                        <!-- <div class="form-group mt-3 md-6">
                             <h3>Other Activities:</h3>
                             <textarea class="form-control"
                                 name="activity"><?php echo $arr[$index]["activity"]; ?></textarea>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- IRINS Publications -->
