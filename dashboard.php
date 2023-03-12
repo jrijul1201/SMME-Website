@@ -175,6 +175,10 @@ $userName = $_SESSION['user_name'];
         .edubtn {
             margin: 10px !important;
         }
+        .delete-icon {
+            color: red;
+            cursor: pointer;
+        }
     </style>
 
     <!-- show a textbox when other degree is selected in education section -->
@@ -349,6 +353,7 @@ $userName = $_SESSION['user_name'];
                                 <th>Place</th>
                                 <th>Other Info</th>
                                 <th>To Hide</th>
+                                <th>Delete Action</th>
                             </tr>
                             <tbody>
                                 <?php
@@ -377,16 +382,14 @@ $userName = $_SESSION['user_name'];
                                         echo "<td><input type='text' class='input-css' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
                                         echo "<td><input type='text' class='input-css' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
                                         echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
+                                        echo "<td><i class='fa fa-trash delete-icon' onclick='deleteEducation()'></i></td>";
                                         echo "</tr>";
                                     }
                                     ?>
                                 </tbody>
                             </table>
                             <div class="text-center"><button type="button" class="edubtn"
-                                    onclick="addEducation()">Add</button><button type="button" id="delEB" class="edubtn"
-                                    onclick="deleteEducation()">Delete</button></div>
-                            <!-- <button type="button" onclick="addEducation()">Add</button>
-        <button type="button" id="delEB" onclick="deleteEducation()">Delete</button><br><br> -->
+                                    onclick="addEducation()">Add</button></div>
                         </div>
                 </div>
                 <!-- Text Areas -->
@@ -609,6 +612,7 @@ $userName = $_SESSION['user_name'];
         var cell5 = row.insertCell(4);
         var cell6 = row.insertCell(5);
         var cell7 = row.insertCell(6);
+        var cell8 = row.insertCell(7);
         cell1.innerHTML = `<select name="degree[]" class='input-css' required>
                         <option value="" disabled selected>Select a Degree</option>
                         <option value="BTech">BTech</option>
@@ -631,23 +635,22 @@ $userName = $_SESSION['user_name'];
         cell5.innerHTML = `<input type="text" class='input-css' name="place[]" placeholder="University/College Name">`;
         cell6.innerHTML = `<input type="text" class='input-css' name="other_info[]" placeholder="Thesis Title or Supervisor etc.">`;
         cell7.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
-
-        if (table.rows.length >= 1) {
-            document.getElementById("delEB").disabled = false;
-        }
+        cell8.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteEducation()"></i>`;
         showDegreeOther();
 
     }
 
     function deleteEducation() {
         var table = document.getElementById("education-table");
-        var rows = table.rows;
-        var lastRow = rows[rows.length - 1];
-        table.deleteRow(lastRow.rowIndex);
-        if (rows.length == 1) {
-            document.getElementById("delEB").disabled = true;
-        }
 
+        table.addEventListener('click', event => {
+        // Check if the clicked element is a delete button
+            if (event.target.classList.contains('delete-icon')) {
+                // Get the row to delete
+                var row = event.target.closest('tr');
+                row.remove();
+            }
+        });
     }
 
     function addIRINSPub() {
@@ -719,4 +722,5 @@ $userName = $_SESSION['user_name'];
             this.appendChild(hiddenField2);
         }
     });
+
 </script>
