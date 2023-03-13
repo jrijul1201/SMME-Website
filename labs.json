@@ -91,7 +91,7 @@
             {
                 "name": "Mr. Rakesh Kumar (JTS)",
                 "post": "",
-                "phone": "1905 267018",
+                "phone": "267018",
                 "mobile": "7814406509"
             }
         ]
@@ -245,7 +245,8 @@
             {
                 "name":"Dinesh Thakur",
                 "post": "Junior Lab Asst.",
-                "phone": "267241, 9418169227"
+                "phone": "267241",
+                "mobile":"9418169227"
             }
         ]
     },
@@ -353,7 +354,8 @@
             {
                 "name": "Amit Sharma",
                 "post": "Senior Lab Asst.",
-                "phone": "267178, 9736318448"
+                "phone": "267178",
+                "mobile": "9736318448"
             }
         ]
     },
@@ -426,7 +428,8 @@
             {
                 "name": "Amit Sharma",
                 "post": "Senior Lab Asst.",
-                "phone": "267178, 9736318448"
+                "phone": "267178",
+                "mobile":"9736318448"
             }
         ]
     }
