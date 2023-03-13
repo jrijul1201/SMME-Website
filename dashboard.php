@@ -175,6 +175,7 @@ $userName = $_SESSION['user_name'];
         .edubtn {
             margin: 10px !important;
         }
+
         .delete-icon {
             color: red;
             cursor: pointer;
@@ -262,8 +263,7 @@ $userName = $_SESSION['user_name'];
 
     <!-- Crop Modal Code -->
 
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -295,72 +295,81 @@ $userName = $_SESSION['user_name'];
 
     <main id="main">
         <section id="dashboard" class="dashboard">
-            
+
             <!-- <form action="logout.php" method="post">
                 <button type="submit">Logout</button>
             </form> -->
 
             <!-- start here -->
             <!-- Personal info -->
-            
-            <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data" role="form" class="php-email-form">
-            <div class="profile-section">
-                <h2>Personal Information:</h2>
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <label for="fname">Name:</label>
-                        <input type="text" name="name" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label for="phone">Phone:</label> +91-1905-
-                        <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>" required>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label for="address">Address:</label>
-                        <input type="text" name="address" class="form-control" id="address" value="<?php echo $arr[$index]["address"]; ?>" required>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label for="post">Designation:</label>
-                        <input type="text" name="post" class="form-control" id="post" value="<?php echo $arr[$index]["post"]; ?>" required>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label for="speciality">Specialisation:</label>
-                        <input type="text" name="speciality" class="form-control" id="speciality" value="<?php echo $arr[$index]["speciality"]; ?>" required>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label for="gslink">Google Scholar Link:</label>
-                        <input type="text" name="gslink" class="form-control" id="gslink" value="<?php echo $arr[$index]["gs"]; ?>">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label for="irinsid">IRINS ID:</label>
-                        <input type="text" name="irinsid" class="form-control" id="irinsid" value="<?php echo $arr[$index]["irins"]; ?>">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label for="pplink">Personal Page Link(if any):</label>
-                        <input type="text" name="pplink" class="form-control" id="pplink" value="<?php echo $arr[$index]["personal_page_link"]; ?>">
+
+            <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data" role="form"
+                class="php-email-form">
+                <div class="profile-section">
+                    <h2>Personal Information:</h2>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="fname">Name:</label>
+                            <input type="text" name="name" class="form-control" id="fname"
+                                value="<?php echo $arr[$index]["name"]; ?>" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="phone">Phone:</label> +91-1905-
+                            <input type="text" name="phone" class="form-control" id="phone"
+                                value="<?php echo $arr[$index]["phone"]; ?>" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" name="address" class="form-control" id="address"
+                                value="<?php echo $arr[$index]["address"]; ?>" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="post">Designation:</label>
+                            <input type="text" name="post" class="form-control" id="post"
+                                value="<?php echo $arr[$index]["post"]; ?>" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="speciality">Specialisation:</label>
+                            <input type="text" name="speciality" class="form-control" id="speciality"
+                                value="<?php echo $arr[$index]["speciality"]; ?>" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="gslink">Google Scholar Link:</label>
+                            <input type="text" name="gslink" class="form-control" id="gslink"
+                                value="<?php echo $arr[$index]["gs"]; ?>">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="irinsid">IRINS ID:</label>
+                            <input type="text" name="irinsid" class="form-control" id="irinsid"
+                                value="<?php echo $arr[$index]["irins"]; ?>">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="pplink">Personal Page Link(if any):</label>
+                            <input type="text" name="pplink" class="form-control" id="pplink"
+                                value="<?php echo $arr[$index]["personal_page_link"]; ?>">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Educational Details -->
-            <div style="overflow: scroll;" class="profile-section">
-                <h2>Education Details:</h3>
-                    <div class="row">
-                        <table id="education-table">
-                            <tr>
-                                <th>Degree</th>
-                                <th>Specialization</th>
-                                <th>Start Year</th>
-                                <th>End Year</th>
-                                <th>Place</th>
-                                <th>Other Info</th>
-                                <th>To Hide</th>
-                                <th>Delete Action</th>
-                            </tr>
-                            <tbody>
-                                <?php
-                                foreach ($arr[$index]["education"] as $ind => $ed) {
-                                    echo "<tr class='edutablerow'>";
-                                    echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
+                <!-- Educational Details -->
+                <div style="overflow: scroll;" class="profile-section">
+                    <h2>Education Details:</h3>
+                        <div class="row">
+                            <table id="education-table">
+                                <tr>
+                                    <th>Degree</th>
+                                    <th>Specialization</th>
+                                    <th>Start Year</th>
+                                    <th>End Year</th>
+                                    <th>Place</th>
+                                    <th>Other Info</th>
+                                    <th>To Hide</th>
+                                    <th>Delete Action</th>
+                                </tr>
+                                <tbody>
+                                    <?php
+                                    foreach ($arr[$index]["education"] as $ind => $ed) {
+                                        echo "<tr class='edutablerow'>";
+                                        echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
                             <option value='' disabled selected>Select a Degree</option>
                             <option value='BTech'>BTech</option>
                             <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
@@ -393,21 +402,21 @@ $userName = $_SESSION['user_name'];
                                     onclick="addEducation()">Add</button></div>
                         </div>
                 </div>
-            <!-- Recognition Details -->
-            <div style="overflow: scroll;" class="profile-section">
-                <h2>Recognition Details:</h3>
-                    <div class="row">
-                        <table id="recognition-table">
-                            <tr>
-                                <th>Achievement</th>
-                                <th>Description</th>
-                                <th>Delete Action</th>
-                            </tr>
-                            <tbody>
-                                <?php
-                                foreach ($arr[$index]["recognition"] as $ind => $rg) {
-                                    echo "<tr class='edutablerow'>";
-                                    echo "<td><select class='input-css' id='recAchieve" . "$ind' name='achievement[]' required>
+                <!-- Recognition Details -->
+                <div style="overflow: scroll;" class="profile-section">
+                    <h2>Recognition Details:</h3>
+                        <div class="row">
+                            <table id="recognition-table">
+                                <tr>
+                                    <th>Achievement</th>
+                                    <th>Description</th>
+                                    <th>Delete Action</th>
+                                </tr>
+                                <tbody>
+                                    <?php
+                                    foreach ($arr[$index]["recognition"] as $ind => $rg) {
+                                        echo "<tr class='edutablerow'>";
+                                        echo "<td><select class='input-css' id='recAchieve" . "$ind' name='achievement[]' required>
                             <option value='' disabled selected>Select an Achievement</option>
                             <option value='Scholarships'>Scholarships</option>
                             <option value='Awards'>Awards</option>
@@ -523,8 +532,67 @@ $userName = $_SESSION['user_name'];
                     <button type="button" id="delIPB" onclick="deleteIRINSPub()">Delete</button><br><br> -->
                     <!-- <input type="submit" value="Update Changes"> -->
                 </div>
+                <div class="profile-section">
+                    <h2>IRINS Publications Details:</h2>
+                    <small><i>
+                            <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
+                        </i></small><br>
+                    <div class="row">
+                        <?php
+                        foreach ($arr[$index]["irins_pub"] as $ipub) {
+                            $publicationType = '';
+                            $title = '';
+                            $subtitle = '';
+                            $authors = '';
+                            $journal = '';
+                            $DOI = '';
+                            if (isset($ipub['title']) && $ipub['title'] != 'NA') {
+                                $title = $ipub['title'] . " ";
+                            }
+                            if (isset($ipub['title']) && $ipub['title'] != 'NA') {
+                                $subtitle = strtoupper($ipub['journal']);
+                            }
+                            if (isset($ipub['authors']) && $ipub['authors'] != 'NA') {
+                                $authors = $ipub['authors'];
+                            }
+                            if (isset($ipub['volume']) && $ipub['year'] != 'NA') {
+                                $journal = $journal . $ipub['year'] . '; ';
+                            }
+                            if (isset($ipub['year']) && $ipub['volume'] != 'NA') {
+                                $journal = $journal . $ipub['volume'] . ': ';
+                            }
+                            if (isset($ipub['pages']) && $ipub['pages'] != 'NA') {
+                                $journal = $journal . $ipub['pages'];
+                            }
+                            if (isset($ipub['DOI']) && $ipub['DOI'] != 'NA') {
+                                $DOI = $ipub['DOI'];
+                            }
+                            $comp = "<div class='col-md-12 plates'>
+                                        <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
+                                            <div class='col d-flex flex-column position-static plate-child'>
+                                                <h4 class='mb-1'>
+                                                    $title <br />
+                                                    <span style='font-size:15px; font-style: italic;' class='text-muted'>
+                                                        $subtitle
+                                                </h4>
+                                                <p class='card-text mb-auto'>
+                                                    $authors
+                                                </p>
+                                                <div class='mb-auto text-muted'>
+                                                    $journal
+                                                </div>
+                                                <div class='text-primary'>
+                                                    <a href='https://doi.org/$DOI' target='_blank'>$DOI</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>";
+                            echo $comp;
+                        }
+                        ?>
+                    </div>
 
-                <div class="text-center"><button type="submit" class="edubtn">Update Changes</button></div>
+                    <div class="text-center"><button type="submit" class="edubtn">Update Changes</button></div>
             </form>
 
         </section>
@@ -677,7 +745,7 @@ $userName = $_SESSION['user_name'];
         var table = document.getElementById("education-table");
 
         table.addEventListener('click', event => {
-        // Check if the clicked element is a delete button
+            // Check if the clicked element is a delete button
             if (event.target.classList.contains('delete-icon')) {
                 // Get the row to delete
                 var row = event.target.closest('tr');
@@ -692,7 +760,7 @@ $userName = $_SESSION['user_name'];
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
-    
+
         cell1.innerHTML = `<select name="achievement[]" class='input-css' required>
                         <option value="" disabled selected>Select an Achievement</option>
                         <option value="Scholarships">Scholarships</option>
@@ -710,7 +778,7 @@ $userName = $_SESSION['user_name'];
         var table = document.getElementById("recognition-table");
 
         table.addEventListener('click', event => {
-        // Check if the clicked element is a delete button
+            // Check if the clicked element is a delete button
             if (event.target.classList.contains('delete-icon')) {
                 // Get the row to delete
                 var row = event.target.closest('tr');
