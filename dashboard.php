@@ -183,8 +183,8 @@ $userName = $_SESSION['user_name'];
 
     <!-- show a textbox when other degree is selected in education section -->
     <script>
-        function showDegreeOther() {
-            let educationTable = document.getElementById("education-table");
+        function showOther(id) {
+            let educationTable = document.getElementById(id);
             let degreeSelections = educationTable.getElementsByTagName("select");
             for (let i = 0; i < degreeSelections.length; i++) {
                 let degreeSelection = degreeSelections[i];
@@ -200,9 +200,9 @@ $userName = $_SESSION['user_name'];
             }
         }
 
-        function autoSelectOption(value, ind) {
+        function autoSelectOption(value, ind, first, other) {
             var found = false;
-            var id = "eduDegree".concat(ind);
+            var id = first.concat(ind);
             var select = document.getElementById(id);
             var options = select.options;
             for (var i = 0; i < options.length; i++) {
@@ -213,7 +213,7 @@ $userName = $_SESSION['user_name'];
                 }
             }
             if (!found) {
-                var id2 = "degreeOther".concat(ind);
+                var id2 = other.concat(ind);
                 var input = document.getElementById(id2);
                 input.value = value;
                 input.style.display = "inline";
@@ -222,7 +222,8 @@ $userName = $_SESSION['user_name'];
         }
 
         window.addEventListener("load", function () {
-            showDegreeOther();
+            showOther("education-table");
+            showOther("recognition-table");
         });
     </script>
 
@@ -375,7 +376,7 @@ $userName = $_SESSION['user_name'];
                             <option value='BE'>BE</option>
                             <option value='Other'>Other</option>
                         </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
-                                        echo "<script>autoSelectOption('{$ed['degree']}', '$ind');</script>";
+                                        echo "<script>autoSelectOption('{$ed['degree']}', '$ind', 'eduDegree', 'degreeOther' );</script>";
                                         echo "<td><input type='text' class='input-css' name='specialization[]' value='{$ed['specialization']}'></td>";
                                         echo "<td><input type='text' class='input-css' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
                                         echo "<td><input type='text' class='input-css' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
@@ -390,6 +391,39 @@ $userName = $_SESSION['user_name'];
                             </table>
                             <div class="text-center"><button type="button" class="edubtn"
                                     onclick="addEducation()">Add</button></div>
+                        </div>
+                </div>
+            <!-- Recognition Details -->
+            <div style="overflow: scroll;" class="profile-section">
+                <h2>Recognition Details:</h3>
+                    <div class="row">
+                        <table id="recognition-table">
+                            <tr>
+                                <th>Achievement</th>
+                                <th>Description</th>
+                                <th>Delete Action</th>
+                            </tr>
+                            <tbody>
+                                <?php
+                                foreach ($arr[$index]["recognition"] as $ind => $rg) {
+                                    echo "<tr class='edutablerow'>";
+                                    echo "<td><select class='input-css' id='recAchieve" . "$ind' name='achievement[]' required>
+                            <option value='' disabled selected>Select an Achievement</option>
+                            <option value='Scholarships'>Scholarships</option>
+                            <option value='Awards'>Awards</option>
+                            <option value='Honours'>Honours</option>
+                            <option value='Other'>Other</option>
+                        </select><input type='text' id='achieveOther" . "$ind' name='achieveOther[]' value='' style='display:none'></td>";
+                                        echo "<script>autoSelectOption('{$rg['achievement']}', '$ind', 'recAchieve', 'achieveOther');</script>";
+                                        echo "<td><input type='text' class='input-css' name='description[]' value='{$rg['description']}'></td>";
+                                        echo "<td><i class='fa fa-trash delete-icon' onclick='deleteRecognition()'></i></td>";
+                                        echo "</tr>";
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
+                            <div class="text-center"><button type="button" class="edubtn"
+                                    onclick="addRecognition()">Add</button></div>
                         </div>
                 </div>
                 <!-- Text Areas -->
@@ -425,11 +459,11 @@ $userName = $_SESSION['user_name'];
                             <textarea class="form-control"
                                 name="conferences"><?php echo $arr[$index]["conferences"]; ?></textarea>
                         </div> -->
-                        <div class="form-group mt-3 md-6">
-                            <h3>Scholarships, Awards, Honors, and Invited Talks:</h3>
+                        <!-- <div class="form-group mt-3 md-6">
+                            <h3>Scholarships, Awards, Honours, and Invited Talks:</h3>
                             <textarea class="form-control"
                                 name="awards"><?php echo $arr[$index]["awards"]; ?></textarea>
-                        </div>
+                        </div> -->
                         <!-- <div class="form-group mt-3 md-6">
                             <h3>Other Activities:</h3>
                             <textarea class="form-control"
@@ -592,14 +626,14 @@ $userName = $_SESSION['user_name'];
 </script>
 
 <script>
-    CKEDITOR.replace("publications");
+    // CKEDITOR.replace("publications");
     CKEDITOR.replace("interests");
-    CKEDITOR.replace("projects");
+    // CKEDITOR.replace("projects");
     CKEDITOR.replace("openings");
     CKEDITOR.replace("experiences");
-    CKEDITOR.replace("conferences");
-    CKEDITOR.replace("awards");
-    CKEDITOR.replace("activity");
+    // CKEDITOR.replace("conferences");
+    // CKEDITOR.replace("awards");
+    // CKEDITOR.replace("activity");
 
     function addEducation() {
         var table = document.getElementById("education-table");
@@ -635,12 +669,45 @@ $userName = $_SESSION['user_name'];
         cell6.innerHTML = `<input type="text" class='input-css' name="other_info[]" placeholder="Thesis Title or Supervisor etc.">`;
         cell7.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
         cell8.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteEducation()"></i>`;
-        showDegreeOther();
+        showOther("education-table");
 
     }
 
     function deleteEducation() {
         var table = document.getElementById("education-table");
+
+        table.addEventListener('click', event => {
+        // Check if the clicked element is a delete button
+            if (event.target.classList.contains('delete-icon')) {
+                // Get the row to delete
+                var row = event.target.closest('tr');
+                row.remove();
+            }
+        });
+    }
+
+    function addRecognition() {
+        var table = document.getElementById("recognition-table");
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+    
+        cell1.innerHTML = `<select name="achievement[]" class='input-css' required>
+                        <option value="" disabled selected>Select an Achievement</option>
+                        <option value="Scholarships">Scholarships</option>
+                        <option value="Awards">Awards</option>
+                        <option value="Honours">Honours</option>
+                        <option value="Other">Other</option>
+                    </select><input type="text" name="achieveOther[]" value="" style="display:none">`;
+        cell2.innerHTML = `<input type="text" class='input-css' name="description[]">`;
+        cell3.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteRecognition()"></i>`;
+        showOther("recognition-table");
+
+    }
+
+    function deleteRecognition() {
+        var table = document.getElementById("recognition-table");
 
         table.addEventListener('click', event => {
         // Check if the clicked element is a delete button
