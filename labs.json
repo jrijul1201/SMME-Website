@@ -85,6 +85,349 @@
                 "description-para": "The guide WELD welding simulator is a virtual reality welding simulator that enables students to rapidly refine basic welding skills, learn proper welding technique and explore welding career paths in a safe, virtual environment, without the need for consumables like metal and gas."
             }
         ],
-        "venue": "xyz"
+        "venue": "xyz",
+        "contact-person": 
+        [
+            {
+                "name": "Mr. Rakesh Kumar (JTS)",
+                "post": "",
+                "phone": "1905 267018",
+                "mobile": "7814406509"
+            }
+        ]
+    },
+    {
+        "type": "teaching-lab",
+        "name": "Design Lab",
+        "description": "<p>At present, Design Lab facilitates hands-on learning of SolidMechanics (ME206)concepts to 5th semester Mechanical UG students, The lab experiments are related todestructive testing of materials to predict mechanical properties.<br>It facilitate hands-on learning of Theory of machines (ME309) conceptsto 6th semester Mechanical UG students, The lab experiments validates the conceptsof kinematic and dynamic theories of machine components under motion condition.Students can be able to validate and extend the theoretical knowledge into practicalmachine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts ofmachinery systems to UG students, The lab experiments validates the concepts ofvibration under forced and damped condition. Students can be able to validate andextend the theoretical knowledge into practical machine applications.The structural analysis laboratory section has been designed to facilitate the practical study ofstructural response of basic structural elements, namely,the beam, column, rigid and pin jointed frames. The experiments are partly conductedon laboratory scale models and partly using virtual simulation. The computationalfacility available with the lab supports Structural engineering MS & PhD students aswell<br></p>",
+        "faculty-in-charge": [7, 26],
+        "research-areas": "",
+        "facility": [
+            {
+                "title": "Tensometer",
+                "image": "images/tensometer.jpg",
+                "description-para": "A device for evaluating various tensile properties of a material, such <a href='https://en.wiktionary.org/wiki/Young's_modulus'>Young's modulus</a>,<a href='https://en.wiktionary.org/wiki/ultimate_tensile_strength'>ultimatetensile strengt </a> and Poisson's ratio.<br>"
+            },
+            {
+              "title": "Rockwell Hardness Tester",
+              "image": "images/rockwell_hardness.jpg",
+              "description-para": "Rockwell hardness tester is used to determine the surface hardness of thematerials.Provisions to apply a major load of 60kgf,100kgf,and 150kgf areavailable in this machine.Itdirectly calculates the rockwell hardness value uponcompletion of the test."
+            },
+            {
+              "title": "Impact Tester",
+              "image": "images/impact_testing.jpg",
+              "description-para": "This is used to study the toughness or energy absorbing properties of variousmaterials under two types of impact tests i.e Izod and charpy impact tests."
+            },
+            {
+              "title": "Simply Supported Beam setup",
+              "image": "images/supported beam.jpg",
+              "description-para": "A simply supported beam is hinged at two ends and the load is applied at a pointbetween the two hinges."
+            },
+            {
+              "title": "Cantilever setup",
+              "image": "images/fixed_beam.jpg",
+              "description-para": "It is a type of cantilever beam setup."
+            },
+            {
+              "title": "Compression Tester for Spring",
+              "image": "images/compression_spring.jpg",
+              "description-para": "This tester is used to obtain spring stiffness and their mechanical properties."
+            },
+            {
+              "title": "Surface Roughness Tester",
+              "image": "images/designlab/Surface Roughness Tester.jpg",
+              "description-para": "Roughness tester shows the measured roughness depth as well as the meanroughness value in micrometers or microns."
+            },
+            {
+              "title": "Static UTM",
+              "image": "images/utm.jpg",
+              "description-para": "This machine is used to perform tensile,compression,shear and bend test.Capacityof model is 50KN"
+            },
+            {
+              "title": "Torsion Tester",
+              "image": "images/torison_tester.jpg",
+              "description-para": "This tester is used to obtain twisting moment-twist relationship of a specimenand to determine shear modulus G,yield stress in pure shear,experimentalultimate torque."
+            },
+            {
+              "title": "Euler Buckling Apparatus",
+              "image": "images/euler_bulking.jpg",
+              "description-para": "To determine the euler buckling load experimentally and compare it to theeulertheory.Also to study the effect of end conditions on the buckling load."
+            },
+            {
+              "title": "Dynamic UTM",
+              "image": "images/designlab/Dynamic utm.jpg",
+              "description-para": "This test instruments cover a broad range of fatigue, dynamic, and statictesting applications. These applications include high-cycle fatigue, low-cyclefatigue, thermo-mechanical fatigue, fracture mechanics, crack propagation andgrowth studies, fracture toughness, bi-axial, axial-torsional, multi-axial, highstrain rate, quasi-static, creep, stress-relaxation, and other types of dynamicand static tests.Capacity of model is 250KN"
+            },
+            {
+              "title": "Diffused light Polariscope",
+              "image": "images/designlab/Diffused Research Polariscope.jpg",
+              "description-para": "This equipment is used to view and measure the principal stress components anddirections of principal stresses by the photoelastic method for the plane stresscondition at any given point in a photoelastic sample."
+            },
+            {
+              "title": "Stress Analysis on Thin Cylinder",
+              "image": "images/stress_analysis.jpg",
+              "description-para": "To show the linearity of strain gauges in the open end condition in a thincylinder,to fine the hoop stress and strain relationship for the cylindermaterial and to fine the longitudinal and hoop strain relationship."
+            },
+            {
+              "title": "Cam-Follower Apparatus",
+              "image": "images/cam_follower.jpg",
+              "description-para": "A cam follower, also known as a track follower,[1] is a specialized type ofroller or needle bearing designed to follow cam lobe profiles. Cam followerscome in a vast array of different configurations, however the most definingcharacteristic is how the cam follower mounts to its mating part; stud style camfollowers use a stud while the yoke style has a hole through the middle."
+            },
+            {
+              "title": "Universal Governor",
+              "image": "images/universal_governor.jpg",
+              "description-para": "A governor, or speed limiter or controller, is a device used to measure andregulate the speed of a machine, such as an engine."
+            },
+            {
+              "title": "Gyroscope",
+              "image": "images/gyroscope.jpg",
+              "description-para": "Applications of gyroscopes include inertial navigation systems, such as in theHubble Telescope, or inside the steel hull of a submerged submarine. Due totheir precision, gyroscopes are also used in gyrotheodolites to maintaindirection in tunnel mining.[4] Gyroscopes can be used to constructgyrocompasses, which complement or replace magnetic compasses (in ships,aircraft and spacecraft, vehicles in general), to assist in stability (bicycles,motorcycles, and ships) or be used as part of an inertial guidance system."
+            },
+            {
+              "title": "Journal Bearing Apparatus",
+              "image": "images/journal_bearing.jpg",
+              "description-para": "A self-contained floor standing apparatus to fully investigate the effects ofspeed viscosity and load on the pressure distribution in a journal bearing."
+            },
+            {
+              "title": "Forces at reciprocating masses setup",
+              "image": "images/force_reciprocating.jpg",
+              "description-para": "This model is used to determine the primary and secondary unbalanced forces ofreciprocating mass"
+            },
+            {
+              "title": "Epicyclic Gear Train",
+              "image": "images/Epicyclic Gear Train.jpg",
+              "description-para": "Epicyclic gearing or planetary gearing is a gear system consisting of one ormore outer gears, or planet gears, revolving about a central, or sun gear.Typically, the planet gears are mounted on a movable arm or carrier, whichitself may rotate relative to the sun gear. Epicyclic gearing systems alsoincorporate the use of an outer ring gear or annulus, which meshes with theplanet gears."
+            },
+            {
+              "title": "Fatigue Testing Machine",
+              "image": "images/fatigue_testing.jpg",
+              "description-para": "Fatigue test machines use static, dynamic, and fatigue tests to evaluate thesturdiness of raw materials, components or finished products.Fatigue tests helpto determine a test sample's life expectancy under actual service loads inreal-world applications."
+            },
+            {
+              "title": "Static & dynamic Balancing",
+              "image": "images/static_dynamic_balancing.jpg",
+              "description-para": "This is suitable for conducting experiments on static balancing and dynamicbalancing with different weights. This consists of rectangular frame of steelperfectly balance with four different blocks. A protractor scale of the disc isprovided to reach exact angular position of each weight to be measured. A linearscale provided below the frame provides the measurement of each weight along theshaft. The unit is hanging from a rigid steel frame through chain for dynamicbalancing and can be fixed rigidly for static balancing.specified ."
+            },
+            {
+              "title": "Pin & Disc Wear Apparatus",
+              "image": "images/pin_disc.jpg",
+              "description-para": "Pin on disk wear testing is a method of characterizing the coefficient offriction,frictional force and rate of wear between two materials.This testingcan simulate multiple modes of wear,includingunideirectional,bidirectional,omnidirectional and quasi rotational."
+            },
+            {
+              "title": "Slip & Creep Measurement Apparatus",
+              "image": "images/slip_creep.jpg",
+              "description-para": "Slip & Creep Measurement Apparatus. This apparatus is useful for measurement ofpower transmitted for various input power conditions with varied belt tension.Belt slip or creepalso can be measured. The apparatus consists of a variablespeed motor, driving pulley and driven pulley of equal diameters."
+            },
+            {
+              "title": "Universal vibration apparatus",
+              "image": "images/designlab/Universal Vibration Apparatus.jpg",
+              "description-para": "Whirling of Shaft apparatus is\u00a0used to determine the whirling speed of theshaft. The apparatus shows how shafts vibrate transversely and \u2018whirl\u2019 at acertain rotation frequency. This helps engineers understand possible problemswith long shafts and allow for them in their designs.The Equipment shall have the following test facility:<br>1) To measure co-efficient of friction between pulley material and differentbelt materials.<br>2) To measure power transmitted with varied belt tension and plotting a graph of\u201cTension Characteristics\u201d.<br><br>This machine is used to<br>1) Equivalent spring mass system to study the undamped free vibration.<br>2) Equivalent spring mass system to study forced calibration."
+            },
+            {
+              "title": "Vibration Fundamental Trainer",
+              "image": "images/vibration_fundamental.jpg",
+              "description-para": "The VFT is designed to perform both free and forced vibration experimentswith and without damping. The pendulum vibration module includes a rod onwhich one or more mass can be attached. This basic module is designed toteach the fundamental principles such as frequency and period, and theconcept of equivalent mass."
+            },
+            {
+              "title": "Vibration Shaker",
+              "image": "images/vibration_shaker.jpg",
+              "description-para": "Shakers are used to determine product or component performance undervibration or shock loads, detect flaws through modal analysis, verifyproduct designs."
+            },
+            {
+              "title": "Piezo Actuation Unit",
+              "image": "images/peizo_actuation.jpg",
+              "description-para": "A piezo actuator can beused to control hydraulic valves, act as asmall-volume pump or special-purpose motor, and in other applicationsrequiring movement or force"
+            }
+          ],
+        "venue": "xyz",
+        "contact-person": 
+        [
+            {
+                "name":"Dinesh Thakur",
+                "post": "Junior Lab Asst.",
+                "phone": "267241, 9418169227"
+            }
+        ]
+    },
+    {
+        "type": "teaching-lab",
+        "name": "Thermo – Fluids Laboratory",
+        "description": "Thermo – fluids laboratory is intended for B. Tech Mechanical Engineering and Civil Engineering Students. <li> There are three main specializations in Mechanical Engineering – Mechanical Design, Manufacturing, Thermal – Fluids. In this laboratory, the students will perform experiments related to the Thermodynamics, Fluids Mechanics, Heat Transfer and the applied part of the above subjects. The experiments are chosen in a way that the students will perform the verification of facts, finding of the performance of devices, application of the concepts in components. </li> <li> In the Civil Engineering, Water Resources and Hydrology is one of the main branch. Some of the experiments in the laboratory will be performed by the Civil Engineering Students. Some more experiments, exclusive for the Civil Engineering Students, are under planning phase. </li>",
+        "faculty-in-charge": [12, 14],
+        "research-areas": "",
+        "facility": [
+            {
+              "title": "Bomb Calorimeter Experiment",
+              "image": "images/bomb_calorimtr.jpg",
+              "description-para": "Purpose of Bomb Calorimetry Experimentis used to determine the enthalpy ofcombustion"
+            },
+            {
+              "title": "Pipe losses experiment",
+              "image": "images/pipe_loses.jpg",
+              "description-para": "Major and minor losses associated with pipe flow in piping networks helps indetermining the pumping power requirements, material and fittings selection. Agood understanding of such losses helps engineers in designing optimum fluiddistribution systems, process plants etc. This apparatus is designed tointroduce students to major flow losses (Frictional) in Pipes."
+            },
+            {
+              "title": "Centrifugal pump characteristics experiment \u2013 parallel and series",
+              "image": "images/Centrifugal_pump.jpg",
+              "description-para": "The apparatus aims to study various Centrifugal pump Characteristics such asHead against Flow, Efficiency against Flow, Speed against Flow etc."
+            },
+            {
+              "title": "Lift and drag force measurements using a wind tunnel",
+              "image": "images/lift&drag.jpg",
+              "description-para": "The Wind tunnel was developed forexperimentation and demonstration purposes inthe fields of aerodynamics and fluid mechanics. It is a subsonic, open windtunnel with a square measurement section profile. Overall length is 4.5 mtrswith 1 mtr test section."
+            },
+            {
+              "title": "Variable speed centrifugal pump characteristics.",
+              "image": "images/Centrifugal_pump.jpg",
+              "description-para": "The apparatus aims to study various Centrifugal pump Characteristics such asHead against Flow, Efficiency against Flow, Speed against Flow etc."
+            },
+            {
+              "title": "Reynolds Experiment",
+              "image": "images/reynold.jpg",
+              "description-para": "Apparatus consists of a constant head tank and a small \u2018dye\u2019 tank. The constanthead tank has a horizontal/vertical transparent tube with a and a flow controlvalve at the discharge side. The velocity of water is varied by the flow controlvalve. When the dye is introduced then laminar or turbulent nature of the flowcan be visualized."
+            },
+            {
+              "title": "Bernoulli Experiment",
+              "image": "images/bernouli.jpg",
+              "description-para": "The apparatus consists of converging diverging circular test section. StaticPressure tapings are provided across the length of the section and velocity headis measured with the help of measuring tank. Inlet tank is made of Perspex anddischarge valve allows reading for various flow rates."
+            },
+            {
+              "title": "Concentric tube heat exchanger experiment",
+              "image": "images/concentric_tube.jpg",
+              "description-para": "The objective of this experiment is to study the working principles of aconcentric tube heat exchanger operating under parallel and counter flow."
+            },
+            {
+              "title": "Natural convection experiment",
+              "image": "images/natural_convention.jpg",
+              "description-list": ["Used to determine the overall heat transfer coefficient at the surface of agiven vertical metal cylinder by the natural convection method.","Used to determine the value of Nusselt number"]
+            },
+            {
+              "title": "Critical Heat Flux Apparatus",
+              "image": "images/critical_heat_flux.jpg",
+              "description-para": "This apparatus is used to study the boiling heat transfer phenomena anddetermine critical heat flux in pool boiling of water."
+            },
+            {
+              "title": "Pin Fin Apparatus",
+              "image": "images/pin_fin.jpg",
+              "description-para": "This apparatus is used to determine the variation of temperature along thelength of the pin fin under forced convection"
+            },
+            {
+              "title": "Energy Balance of IC engine",
+              "image": "images/enery_balance_ic.jpg",
+              "description-para": "The main objective of the experiment is to measure the energy contributions tothe diesel engine, which is treated as a thermodynamics system. The energycontributions that are not measured may then be estimated from an energybalance."
+            },
+            {
+              "title": "Emission characteristics of IC engine",
+              "image": "images/Emission characteristics of IC engine.jpg",
+              "description-para": "It is used to determine the effect of compression Ratio on the performance andemissions of the engine. The objective is to determine the optimum compressionratio for the better performance and lowering the emissions."
+            },
+            {
+              "title": "Two Phase Heat Transfer",
+              "image": "images/two_phase_heat.jpg",
+              "description-para": "A two-phase heat transfer experimental setup was built for this study and atotal of many two-phase heat transfer data with different flow patterns wereobtained."
+            },
+            {
+              "title": "Unsteady State Heat Transfer",
+              "image": "images/Unsteady State Heat Transfer.jpg",
+              "description-para": "The objective of this experiment is to study unsteady state heat transfer by thelumped capacitance method and to determine and compare heat transfercoefficients with expected values."
+            },
+            {
+              "title": "Refrigerator performance experiment",
+              "image": "images/Refrigerator performance experiment.jpg",
+              "description-list": ["Used to demonstrate the basic Vapour Compression Cycle of Refrigeration.","Used to study theoretical cycles and plotting of T- and P.H. charts.", "Used to study the properties of refrigerant at salient point s of thecycle"]
+            },
+            {
+              "title": "Recirculating air conditioner experiment",
+              "image": "images/Recirculating air conditioner.jpg",
+              "description-list": ["Demonstration of heating, cooling, humidification and dehumidification forconditioning of air.","Demonstration of constant enthalpy mixing of two air streams.","Study of working of re-circulating air conditioning.", "Used to study compressor efficiency at varying functioning condition."]
+            },
+            {
+              "title": "Cooling Tower Experiment",
+              "image": "images/Cooling Tower.jpg",
+              "description-para": "This experiment is used to determine thesp.humidity,relative humidity on theincoming air."
+            }
+          ],
+        "venue": "xyz",
+        "contact-person": 
+        [
+            {
+                "name": "Amit Sharma",
+                "post": "Senior Lab Asst.",
+                "phone": "267178, 9736318448"
+            }
+        ]
+    },
+    {
+        "type": "teaching-lab",
+        "name": "Energy Engineering Lab",
+        "description": "<p>This is the only lab for M Tech students</p>",
+        "faculty-in-charge": [13, 20],
+        "research-areas": "",
+        "facility": [
+            {
+              "title": "Solar Parabolic trough collector",
+              "image": "images/Solar Parabolic trough.jpg",
+              "description-para": "The parabolic trough reflector when used as a solar thermal energy collector isconstructed as a long parabolic reflecting mirror which is usually painted areflective silver, or made from polished aluminium, or uses mirrors whichextends linearly into the trough shape."
+            },
+            {
+              "title": "1kW Solar PV off grid system",
+              "image": "images/1kW Solar PV.jpg",
+              "description-list": ["Used to study influence of the workload on the efficiency of components","Used to study influence of fluctuations in solar energy and/or electricity usage on theoverall system efficiency"]
+            },
+            {
+              "title": "1 kW solar PV on-grid system",
+              "image": "images/1 kW solar PV on-grid.jpg",
+              "description-list": ["Used to study application aspects of electrical components for photovoltaic systems", " Used to study efficiency and dynamic behaviour of system components in grid-connected andstand-alone operation"]
+            },
+            {
+              "title": "Electrochemical workstation to test batteries, super capacitors, Fuel",
+              "image": "images/Electrochemical workstation.jpg",
+              "description-para": "Super-capacitors are energy storage devices similar to secondary batteries.Unlike batteries, which use chemical reactions to store energy, super-capacitorsgenerally store energy through the physical separation of electrical charges.Allsuper-capacitors consist of two electrodes immersed in a conductive liquid orconductive polymer called the electrolyte. The electrodes are separated by anionic-conducting separator that prevents shorts."
+            },
+            {
+              "title": "Bomb calorimeter",
+              "image": "images/bomb_calorimtr.jpg",
+              "description-para": "Purpose of Bomb Calorimetry Experimentis used to determine the enthalpy ofcombustion"
+            },
+            {
+              "title": "Gas calorimeter",
+              "image": "images/gas_calorimtr.jpg",
+              "description-list": ["Used for determination of exhaust gas thermal output power given up", "Used for determination of specific heat capacity of exhaust gas"]
+            },
+            {
+              "title": "Radiation measurement equipment",
+              "image": "images/Radiation measurement equipment.jpg",
+              "description-para": "This experiment setup is used to verify stefanslaw,lamberts cosine law,lambertsdistance law."
+            },
+            {
+              "title": "Solar still",
+              "image": "images/Solar still.jpg",
+              "description-para": "A solar stilldistills water, using the heat of the Sun to evaporate water sothat it may be cooled and collected, thereby purifying it. They are used inareas where drinking water is unavailable, so that clean water is obtained fromdirty water or from plants by exposing them to sunlight."
+            },
+            {
+              "title": "Flat plate and evacuated tube solar collector",
+              "image": "images/Flat plate.jpg",
+              "description-para": "Solar Flat-Plate Collector Based system is a replica of the solar water heatingsystem designed in a form of experimental setup to help students learn andexperience different parameters of performance of Flat Plate Collector System.This system helps students in practical understanding of various technicalparameters such as Overall Heat Loss Co-efficient, Heat Removal Factor andEfficiency at different flexible input parameters like radiation, wind speedetc. The system has in built sensors which measure parameters like pressure,temperature, flow rate etc, mounted on a control unit."
+            },
+            {
+              "title": "Thermal energy storage test",
+              "image": "images/Thermal energy storage.jpg",
+              "description-para": "This system has been designed to perform TES related experiment by using PCMmaterials. As there are several types of PCM, the system has been design toperform experiment with at least two PCM separately. Provision is also kept toexamine the combine (known as cascading) effect of two PCMs in thermal energystorage. To visualize the phase changes in the material another set ofarrangement are there in the system."
+            },
+            {
+              "title": "I-V Tracer",
+              "image": "images/iv_tracer.jpg",
+              "description-list": ["Study of properties of fuel oils & biomass, calorific value of Biomasssamples","Testing of Gasifier: Effect of feedstock on heat output and pollutants","Energy conservation study of IC Engine","Fabrication of photovoltaic solar cell","Performance assessment of PV modules: I-V Characteristics and Efficiency ofa Solar PV cell","Measurement of Solar Radiation and study of efficiency of a Flat PlateSolarCollector", "Piezo-electric energy harvesting: comparison of conversion efficiency ofdifferent materials and effect of vibration frequency on conversionefficiency","Electrical machines characteristics","Pollutant level measurement","Boiler, Pump & motor efficiency testing","Characterization of Refrigeration system","Study of fuel cells and measurement of their efficiency", "Implementation of a solar powered pump", "Design and implementation of a solar powered home with 24/7 availability ofelectricity", "Visit of Hydro-electric power plant<br>o Visit of Thermal power plant."]
+            }
+          ],
+        "venue": "xyz",
+        "contact-person": 
+        [
+            {
+                "name": "Amit Sharma",
+                "post": "Senior Lab Asst.",
+                "phone": "267178, 9736318448"
+            }
+        ]
     }
 ]
