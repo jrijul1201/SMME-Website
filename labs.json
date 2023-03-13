@@ -4,7 +4,6 @@
         "name": "Central Workshop",
         "description": "<p>Mechanical workshop is a place where students acquire knowledge on the operation of various processes involved in manufacturing and production. The workshop is intended for training as well as prototyping for students and research labs. The workshop makes students competent in handling practical work in engineering environment by learning by doing. The workshop has various shops with state-of-theart equipment such as machine shop, foundry shop, CNC shop, welding shop and 3D printing to name a few. The workshop is supported by well-trained technical staff in their respective trades. The engineering performed in the mechanical workshop focuses on producing specialized, high-precision low-volume parts for laboratory and research work.</p>",
         "faculty-in-charge": [13, 24],
-        "research-areas": "",
         "facility": [
             {
                 "title": "CNC Lathe machine",
@@ -27,14 +26,14 @@
             },
             {
                 "title": "CNC Trainmaster Milling Machine",
-                "image": "images/CNC_Trainmaster_Millin_ machine.jpg",
+                "image": "images/CNC_Trainmaster_Millin_machine.jpg",
                 "description-list": [
                     "Rectangular box construction made of weldment with sufficient ribbing for rigidity", "Cross beam generously ribbed to take up extreme cutting loads.", "AC Spindle motor for main drive.", "LM Guides.", "Compound slide comprising of Y axis and Z axis integral to the milling head is driven by AC servomotors coupled to the ballscrews through timer belt and pulleys."
                 ]
             },
             {
                 "title": "Conventional Lathe Machine",
-                "image": "images/Conventional_ lathe_ machine.jpg",
+                "image": "images/Conventional_lathe_machine.jpg",
                 "description-para": "A lathe machine is a machine tool which is used to remove metals from a workpiece to give a desired shape and size. In other words it is a machine that is used to hold the workpiece to perform various metal removing operations such as turning, grooving, chamfering, knurling, facing, forming etc with the help of tools."
             },
             {
@@ -44,14 +43,14 @@
             },
             {
                 "title": "Column and knee type milling machine",
-                "image": "images/Column& knee.jpg",
+                "image": "images/Column&knee.jpg",
                 "description-list": [
                     "<b>1. Base:</b> It gives support and rigidity to the machine and also acts as a reservoir for the cutting fluids.", "<b>2. Column: </b>The column is the main supporting frame mounted vertically on the base. The column is box shaped, heavily ribbed inside and houses all the driving mechanisms for the spindle and table feed.", "<b>3. Knee:</b> The knee is a rigid casting mounted on the front face of the column. The knee moves vertically along the guide ways and this movement enables to adjust the distance between the cutter and the job mounted on the table. The adjustment is obtained manually or automatically by operating the elevating screw provided below the knee.", "<b>4. Saddle:</b> The saddle rests on the knee and constitutes the intermediate part between the knee and the table. The saddle moves transversely, i.e., crosswise (in or out) on guide ways provided on the knee."
                 ]
             },
             {
                 "title": "Surface grinding machine",
-                "image": "images/Surface_grinding_ machine.jpg",
+                "image": "images/Surface_grinding_machine.jpg",
                 "description-para": "Surface grinding machine is used to produce a smooth finish on flat surfaces. It is a widely used abrasive machining process in which a spinning wheel covered in rough particles cuts chips of metallic or nonmetallic substance from a workpiece, making a face of it flat or smooth."
             },
             {
@@ -87,21 +86,18 @@
         ],
         "venue": "xyz",
         "contact-person": 
-        [
             {
                 "name": "Mr. Rakesh Kumar (JTS)",
                 "post": "",
                 "phone": "267018",
                 "mobile": "7814406509"
             }
-        ]
     },
     {
         "type": "teaching-lab",
         "name": "Design Lab",
         "description": "<p>At present, Design Lab facilitates hands-on learning of SolidMechanics (ME206)concepts to 5th semester Mechanical UG students, The lab experiments are related todestructive testing of materials to predict mechanical properties.<br>It facilitate hands-on learning of Theory of machines (ME309) conceptsto 6th semester Mechanical UG students, The lab experiments validates the conceptsof kinematic and dynamic theories of machine components under motion condition.Students can be able to validate and extend the theoretical knowledge into practicalmachine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts ofmachinery systems to UG students, The lab experiments validates the concepts ofvibration under forced and damped condition. Students can be able to validate andextend the theoretical knowledge into practical machine applications.The structural analysis laboratory section has been designed to facilitate the practical study ofstructural response of basic structural elements, namely,the beam, column, rigid and pin jointed frames. The experiments are partly conductedon laboratory scale models and partly using virtual simulation. The computationalfacility available with the lab supports Structural engineering MS & PhD students aswell<br></p>",
         "faculty-in-charge": [7, 26],
-        "research-areas": "",
         "facility": [
             {
                 "title": "Tensometer",
@@ -120,7 +116,7 @@
             },
             {
               "title": "Simply Supported Beam setup",
-              "image": "images/supported beam.jpg",
+              "image": "images/supported_beam.jpg",
               "description-para": "A simply supported beam is hinged at two ends and the load is applied at a pointbetween the two hinges."
             },
             {
@@ -135,7 +131,7 @@
             },
             {
               "title": "Surface Roughness Tester",
-              "image": "images/designlab/Surface Roughness Tester.jpg",
+              "image": "images/Surface_Roughness_Tester.jpg",
               "description-para": "Roughness tester shows the measured roughness depth as well as the meanroughness value in micrometers or microns."
             },
             {
@@ -155,12 +151,12 @@
             },
             {
               "title": "Dynamic UTM",
-              "image": "images/designlab/Dynamic utm.jpg",
+              "image": "images/Dynamic_utm.jpg",
               "description-para": "This test instruments cover a broad range of fatigue, dynamic, and statictesting applications. These applications include high-cycle fatigue, low-cyclefatigue, thermo-mechanical fatigue, fracture mechanics, crack propagation andgrowth studies, fracture toughness, bi-axial, axial-torsional, multi-axial, highstrain rate, quasi-static, creep, stress-relaxation, and other types of dynamicand static tests.Capacity of model is 250KN"
             },
             {
               "title": "Diffused light Polariscope",
-              "image": "images/designlab/Diffused Research Polariscope.jpg",
+              "image": "images/Diffused_Research_Polariscope.jpg",
               "description-para": "This equipment is used to view and measure the principal stress components anddirections of principal stresses by the photoelastic method for the plane stresscondition at any given point in a photoelastic sample."
             },
             {
@@ -220,7 +216,7 @@
             },
             {
               "title": "Universal vibration apparatus",
-              "image": "images/designlab/Universal Vibration Apparatus.jpg",
+              "image": "images/Universal Vibration Apparatus.jpg",
               "description-para": "Whirling of Shaft apparatus is\u00a0used to determine the whirling speed of theshaft. The apparatus shows how shafts vibrate transversely and \u2018whirl\u2019 at acertain rotation frequency. This helps engineers understand possible problemswith long shafts and allow for them in their designs.The Equipment shall have the following test facility:<br>1) To measure co-efficient of friction between pulley material and differentbelt materials.<br>2) To measure power transmitted with varied belt tension and plotting a graph of\u201cTension Characteristics\u201d.<br><br>This machine is used to<br>1) Equivalent spring mass system to study the undamped free vibration.<br>2) Equivalent spring mass system to study forced calibration."
             },
             {
@@ -241,21 +237,18 @@
           ],
         "venue": "xyz",
         "contact-person": 
-        [
             {
                 "name":"Dinesh Thakur",
                 "post": "Junior Lab Asst.",
                 "phone": "267241",
                 "mobile":"9418169227"
             }
-        ]
     },
     {
         "type": "teaching-lab",
         "name": "Thermo – Fluids Laboratory",
-        "description": "Thermo – fluids laboratory is intended for B. Tech Mechanical Engineering and Civil Engineering Students. <li> There are three main specializations in Mechanical Engineering – Mechanical Design, Manufacturing, Thermal – Fluids. In this laboratory, the students will perform experiments related to the Thermodynamics, Fluids Mechanics, Heat Transfer and the applied part of the above subjects. The experiments are chosen in a way that the students will perform the verification of facts, finding of the performance of devices, application of the concepts in components. </li> <li> In the Civil Engineering, Water Resources and Hydrology is one of the main branch. Some of the experiments in the laboratory will be performed by the Civil Engineering Students. Some more experiments, exclusive for the Civil Engineering Students, are under planning phase. </li>",
+        "description": "Thermo – fluids laboratory is intended for B. Tech Mechanical Engineering and Civil Engineering Students. <br>There are three main specializations in Mechanical Engineering – Mechanical Design, Manufacturing, Thermal – Fluids. In this laboratory, the students will perform experiments related to the Thermodynamics, Fluids Mechanics, Heat Transfer and the applied part of the above subjects. The experiments are chosen in a way that the students will perform the verification of facts, finding of the performance of devices, application of the concepts in components. <br> In the Civil Engineering, Water Resources and Hydrology is one of the main branch. Some of the experiments in the laboratory will be performed by the Civil Engineering Students. Some more experiments, exclusive for the Civil Engineering Students, are under planning phase.",
         "faculty-in-charge": [12, 14],
-        "research-areas": "",
         "facility": [
             {
               "title": "Bomb Calorimeter Experiment",
@@ -350,25 +343,22 @@
           ],
         "venue": "xyz",
         "contact-person": 
-        [
             {
                 "name": "Amit Sharma",
                 "post": "Senior Lab Asst.",
                 "phone": "267178",
                 "mobile": "9736318448"
             }
-        ]
     },
     {
         "type": "teaching-lab",
         "name": "Energy Engineering Lab",
         "description": "<p>This is the only lab for M Tech students</p>",
         "faculty-in-charge": [13, 20],
-        "research-areas": "",
         "facility": [
             {
               "title": "Solar Parabolic trough collector",
-              "image": "images/Solar Parabolic trough.jpg",
+              "image": "images/Solar_Parabolic_trough.jpg",
               "description-para": "The parabolic trough reflector when used as a solar thermal energy collector isconstructed as a long parabolic reflecting mirror which is usually painted areflective silver, or made from polished aluminium, or uses mirrors whichextends linearly into the trough shape."
             },
             {
@@ -424,13 +414,11 @@
           ],
         "venue": "xyz",
         "contact-person": 
-        [
             {
                 "name": "Amit Sharma",
                 "post": "Senior Lab Asst.",
                 "phone": "267178",
                 "mobile":"9736318448"
             }
-        ]
     }
 ]

@@ -48,6 +48,8 @@
 
     <!-- Partials loading script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
@@ -57,10 +59,208 @@
             $("#head").load("header.html");
             $("#footer").load("footer.html");
             $("#hero").load("hero.html");
-            $("#labs").load("labs/" + labs + ".html");
         });
+        $.getJSON('labs.json', function (data) {
+            const f = data[labs];
+            console.log(f);
+            var contactOrResearch = "";
+            if (f["contact-person"]) {
+                contactOrResearch += `<i class="bi bi-phone flex-shrink-0"></i>
+                                        <div>
+                                            <h4>Contact Person:</h4>
+                                            <p>${f["contact-person"].name}, ${f["contact-person"].post}, 01905-${f["contact-person"].phone}, +91-${f["contact-person"].mobile}</p>
+                                        </div>`;
+            }
+            if (f["research-areas"]) {
+                contactOrResearch += `<i class="bi bi-pencil-square flex-shrink-0"></i>
+                                        <div>
+                                            <h4>Research Areas:</h4>
+                                            <p>${f["research-areas"]}</p>
+                                        </div>`;
+            }
+            var comp = `<!-- ======= Lab Section ======= -->
+                        <section id="lab-section" class="lab-section" style="margin-top: -60px;">
+                            <!-- ======= Testimonials Section ======= -->
+                            <div id="testimonials" class="testimonials">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="testimonials-slider swiper">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-item">
+                                                    <h2>${f.name}</h2>
+                                                </div>
+                                            </div><!-- End testimonial item -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- End Testimonials Section -->
+
+                            <div class="container" data-aos="fade-up">
+
+                                <div class="section-header" style="margin-top:50px;">
+                                    <!-- <h2>Design Lab</h2> -->
+                                    <h2>About</h2>
+                                    <p>${f.description}
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- ======= Contact Us Section ======= -->
+                            <div id="contact" class="contact" data-aos="fade-up">
+                                <!-- <div class="container">
+                            
+                                    <div class="section-header">
+                                        <h2>Contact Us</h2>
+                                        <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores
+                                            adipisci aliquam.</p>
+                                    </div>
+                            
+                                </div> -->
+                                <div class="container" style="margin-bottom: 30px;">
+                                    <div class="info">
+                                        <div class="row gy-5 gx-lg-5">
+                                            <div class="col-lg-4">
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-person flex-shrink-0"></i>
+                                                    <div>
+                                                        <h4>Faculty-in-charge:</h4>
+                                                        <p>
+                                                            <a href="/faculty.html"> Himanshu Pathak
+                                                            </a>
+                                                        </p>
+                                                        <p>
+                                                            <a href="/faculty.html"> Vishal Singh Chauhan
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- End Info Item -->
+                                            <div class="col-lg-4">
+
+                                                <div class="info-item d-flex">
+                                                    ${contactOrResearch}
+                                                </div>
+                                            </div><!-- End Info Item -->
+                                            <div class="col-lg-4">
+
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                                    <div>
+                                                        <h4>Venue:</h4>
+                                                        <p>${f.venue}</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- End Info Item -->
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- End Contact Section -->
+
+                            <!-- ======= Contact Us Section ======= -->
+                            <!-- <div id="contact" class="contact" data-aos="fade-up">
+
+                                <div class="container" style="margin-bottom: 30px;">
+                                    <div class="info">
+                                        <div class="row gy-5 gx-lg-5">
+
+                                            <div class="col-lg-6">
+
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-phone flex-shrink-0"></i>
+                                                    <div style="border-right: 3px;">
+                                                        <h4>Contact Person:</h4>
+                                                        <p>Dinesh Thakur, Junior Lab Asst. </p>
+                                                        <p> Contact No: 267241, 9418169227</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                                    <div>
+                                                        <h4>Venue:</h4>
+                                                        <p>Hello, This, is, the Venue</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <!-- End Contact Section -->
+
+                            <!-- List of existing facility section -->
+                            <div class="container" data-aos="fade-up">
+                                <div class="section-header">
+                                    <h2 style="margin-bottom: 20px; margin-top: 50px;">Instruments</h2>
+                                </div>
+                            </div>`;
+
+            f.facility.forEach((element, id) => {
+                var list = "";
+                var para = "";
+                if (element["description-list"]) {
+                    list += "<p><ul> ";
+                    element["description-list"]?.forEach((pt) => {
+                        list += `<li>${pt}</li>`;
+                    })
+                    list += "</ul></p>";
+                }
+                if (element["description-para"]) {
+                    para += "<p>" + element["description-para"] + "</p>";
+                }
+                if (id % 2 == 0) {
+                    comp += `<div id="existing-facility-lab" class="existing-facility-lab">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="tab-pane active show" id="tab-1">
+                                        <div class="row gy-4">
+                                            <div class="col-lg-6 order-2 order-lg-1 facility" data-aos="fade-up" data-aos-delay="100">
+                                                <h3 style="text-align: left; width: 100%">${element.title}</h3>
+                                                ${para}${list}                                                    
+                                            </div>
+                                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                                <img src=${"labs/" + element["image"]} alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Tab Content 1 -->
+                                </div>
+                            </div>`;
+                } else {
+                    comp += `<div id="existing-facility-lab" class="existing-facility-lab">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="tab-pane active show" id="tab-1">
+                                        <div class="row gy-4">
+                                            <div class="col-lg-6 order-1 order-lg-2 facility" data-aos="fade-up" data-aos-delay="100">
+                                                <h3 style="text-align: right; width: 100%">${element.title}</h3>
+                                                ${para}${list}                                                    
+                                            </div>
+                                            <div class="col-lg-6 order-2 order-lg-1 text-center">
+                                                <img src=${"labs/" + element["image"]} alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Tab Content 1 -->
+                                </div>
+                            </div>`;
+                }
+            });
+            comp += `</section><!-- End About Section -->`;
+            $(comp).appendTo("#labs");
+            console.log(comp)
+        });
+
     </script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 </head>
 
@@ -72,7 +272,7 @@
 
     <main id="main">
         <div id="labs"></div>
-        
+
         <!-- <section id="team" class="team">
             <div class="section-header">
                 <br>

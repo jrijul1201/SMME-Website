@@ -1356,11 +1356,7 @@ section {
   align-items: center;
   justify-content: center;
   color: var(--color-secondary);
-}
-
-.facility h3 {
-  /* position: absolute; */
-  /* top:0; */
+  text-align: justify;
 }
 
 .facility p {
