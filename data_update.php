@@ -65,6 +65,21 @@ if (isset($marked_for_deletion)) {
 $educationInfo = array_values($educationInfo);
 $arr[$facultyIndex]["education"] = $educationInfo;
 
+//  Updating Recognition Info
+$recognitionInfo = [];
+if (isset($_POST['achievement'])) {
+  foreach ($_POST['achievement'] as $index => $achievement) {
+    $achieveOther = ($achievement == "Other") ? $_POST['achieveOther'][$index] : $achievement;
+    $description = $_POST['description'][$index];
+    $temp = array('achievement' => $achieveOther, 'description' => $description);
+    if($description != "") {
+      $recognitionInfo[] = $temp;
+    }
+  }
+}
+
+$arr[$facultyIndex]["recognition"] = $recognitionInfo;
+
 //  Updating IRINS Publications Info
 $irinsPubInfo = [];
 if (isset($_POST['ititle'])) {
