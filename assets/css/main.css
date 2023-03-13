@@ -104,14 +104,15 @@ h6 {
   background-color: #d5d5d5;
 }
 
-.table-css tr{
-  cursor:pointer;
+.table-css tr {
+  cursor: pointer;
   padding: 15px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
-.table-css tr:hover{
+
+.table-css tr:hover {
   background-color: var(--color-primary);
-  color:#fff;
+  color: #fff;
 }
 
 
@@ -151,6 +152,23 @@ section {
   font-size: 48px;
   font-weight: 300;
   margin-bottom: 40px;
+  color: var(--color-secondary);
+}
+
+.section-header h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--color-secondary);
+}
+
+.section-header h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 370;
+  margin-bottom: 30px;
   color: var(--color-secondary);
 }
 
@@ -335,7 +353,8 @@ section {
     padding: 0;
     position: relative;
   }
-  .nav-img{
+
+  .nav-img {
     position: absolute;
   }
 
@@ -1305,18 +1324,51 @@ section {
   margin-bottom: 3%;
   object-fit: cover;
 }
-.research-content{
+
+.existing-facility-lab .img-fluid {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3%;
+  object-fit: cover;
+}
+
+.existing-facility-lab {
+  margin-bottom: 40px;
+}
+
+.research-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content : center;
+  justify-content: center;
 }
-.research-content p{
+
+.research-content p {
   padding: 5vh 0;
   line-height: 1.5;
   font-size: 1.2rem;
   text-align: justify;
 }
+
+.facility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+}
+.facility h3 {
+  /* position: absolute; */
+  /* top:0; */
+}
+
+.facility p {
+  padding: 5vh 0;
+  /* line-height: 1.5; */
+  /* font-size: 1.2rem; */
+  text-align: justify;
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1887,6 +1939,90 @@ section {
   margin-bottom: 0;
 }
 
+.existing-facility-labs .nav-tabs {
+  border: 0;
+}
+
+.existing-facility-labs .nav-link {
+  border: 0;
+  padding: 25px 20px;
+  color: var(--color-secondary);
+  box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.existing-facility-labs .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.existing-facility-labs .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  color: var(--color-secondary);
+}
+
+.existing-facility-labs .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.existing-facility-labs .nav-link.active {
+  transition: 0.3s;
+  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  border-color: var(--color-primary);
+}
+
+.existing-facility-labs .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.existing-facility-labs .nav-link.active i {
+  color: var(--color-white) !important;
+}
+
+.existing-facility-labs .tab-content {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.existing-facility-labs .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.existing-facility-labs .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.existing-facility-labs .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.existing-facility-labs .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.existing-facility-labs .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.existing-facility-labs .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -2189,7 +2325,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/Labs-banner.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -2224,10 +2360,24 @@ section {
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0 20px 0;
   color: var(--color-white);
+}
+
+.testimonials .testimonial-item h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+  color: var(--color-white);
+}
+
+.testimonials .testimonial-item p {
+  /* font-style: italic; */
+  text-align: justify;
+  margin: 0 auto 15px auto;
 }
 
 .testimonials .testimonial-item h4 {
@@ -2266,10 +2416,7 @@ section {
   transform: scale(-1, -1);
 }
 
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
+
 
 .testimonials .swiper-pagination {
   margin-top: 20px;
@@ -4222,13 +4369,14 @@ section {
   width: 35%;
 }
 
-.pg-nav-item:hover{
+.pg-nav-item:hover {
   background-color: var(--color-primary);
 }
 
-.pg-nav-item:hover h4{
+.pg-nav-item:hover h4 {
   color: white;
 }
+
 .dashboard .php-email-form {
   width: 100%;
   background: var(--color-white);
@@ -4336,4 +4484,15 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.existing-facility h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.existing-facility img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
