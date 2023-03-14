@@ -2,7 +2,7 @@
     {
         "type": "teaching-lab",
         "name": "Central Workshop",
-        "description": "<p>Mechanical workshop is a place where students acquire knowledge on the operation of various processes involved in manufacturing and production. The workshop is intended for training as well as prototyping for students and research labs. The workshop makes students competent in handling practical work in engineering environment by learning by doing. The workshop has various shops with state-of-theart equipment such as machine shop, foundry shop, CNC shop, welding shop and 3D printing to name a few. The workshop is supported by well-trained technical staff in their respective trades. The engineering performed in the mechanical workshop focuses on producing specialized, high-precision low-volume parts for laboratory and research work.</p>",
+        "description": "Mechanical workshop is a place where students acquire knowledge on the operation of various processes involved in manufacturing and production. The workshop is intended for training as well as prototyping for students and research labs. The workshop makes students competent in handling practical work in engineering environment by learning by doing. The workshop has various shops with state-of-theart equipment such as machine shop, foundry shop, CNC shop, welding shop and 3D printing to name a few. The workshop is supported by well-trained technical staff in their respective trades. The engineering performed in the mechanical workshop focuses on producing specialized, high-precision low-volume parts for laboratory and research work.",
         "faculty-in-charge": [13, 24],
         "facility": [
             {
@@ -96,7 +96,7 @@
     {
         "type": "teaching-lab",
         "name": "Design Lab",
-        "description": "<p>At present, Design Lab facilitates hands-on learning of SolidMechanics (ME206)concepts to 5th semester Mechanical UG students, The lab experiments are related todestructive testing of materials to predict mechanical properties.<br>It facilitate hands-on learning of Theory of machines (ME309) conceptsto 6th semester Mechanical UG students, The lab experiments validates the conceptsof kinematic and dynamic theories of machine components under motion condition.Students can be able to validate and extend the theoretical knowledge into practicalmachine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts ofmachinery systems to UG students, The lab experiments validates the concepts ofvibration under forced and damped condition. Students can be able to validate andextend the theoretical knowledge into practical machine applications.The structural analysis laboratory section has been designed to facilitate the practical study ofstructural response of basic structural elements, namely,the beam, column, rigid and pin jointed frames. The experiments are partly conductedon laboratory scale models and partly using virtual simulation. The computationalfacility available with the lab supports Structural engineering MS & PhD students aswell<br></p>",
+        "description": "At present, Design Lab facilitates hands-on learning of SolidMechanics (ME206)concepts to 5th semester Mechanical UG students, The lab experiments are related todestructive testing of materials to predict mechanical properties.<br>It facilitate hands-on learning of Theory of machines (ME309) conceptsto 6th semester Mechanical UG students, The lab experiments validates the conceptsof kinematic and dynamic theories of machine components under motion condition.Students can be able to validate and extend the theoretical knowledge into practicalmachine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts ofmachinery systems to UG students, The lab experiments validates the concepts ofvibration under forced and damped condition. Students can be able to validate andextend the theoretical knowledge into practical machine applications.The structural analysis laboratory section has been designed to facilitate the practical study ofstructural response of basic structural elements, namely,the beam, column, rigid and pin jointed frames. The experiments are partly conductedon laboratory scale models and partly using virtual simulation. The computationalfacility available with the lab supports Structural engineering MS & PhD students as well",
         "faculty-in-charge": [7, 26],
         "facility": [
             {
@@ -353,7 +353,7 @@
     {
         "type": "teaching-lab",
         "name": "Energy Engineering Lab",
-        "description": "<p>This is the only lab for M Tech students</p>",
+        "description": "This is the only lab for M Tech students",
         "faculty-in-charge": [13, 20],
         "facility": [
             {
@@ -420,5 +420,384 @@
                 "phone": "267178",
                 "mobile":"9736318448"
             }
+    },
+    {
+      "type": "research-lab",
+      "name": "Nanofabrication for Energy Materials",
+      "description": "Nanofabrication for Energy Materials lab is designed to facilitatemanufacturing of highlyporous 1D or 2D materials for applications pertaining to fuel cell, supercapacitor, battery etc.<br>The students are mentored by two faculties- Dr.Sumit Sinha Ray and Dr. Rik Rani Koner,who bring two differentexpertise- namely, electrospinning of polymers for energy materialsproduction and chemical synthesis of metalorganic materials for further fabrication of activematerials respectively, who are collaborating for theabovementioned purpose, where a facile,cost-effective synthesis of large-scale energy materials is targeted.This lab is so far inbuilding phase with the following instrument present/ in development stage, albeit thecentralfacility, Advance Materials Research Center, is also often used for material synthesis-<br><ul><li>Fume hood</li><li>In house-built electrospinning apparatus</li><li>Analytical weighing balance</li><li>Hot air oven</li><li>Water filtration unit (in development stage)</li><li>Pool boiling set up (in development stage)</li></ul>The students are working on the following domains, some in accord with the vision of IITMandi and our very own Energy centers, however not limited to energy materials only-Development of porous 1D architecture of metal oxide for Hydrogen Evolution andOxygen Reduction studies for fuel cell applications.<br>Large scale synthesis of carbon based nanofibrous composites impregnated with metalorganic materials for energy storage and fuel cell application.Waste water treatment, water filtration and pollutant removal withsynthetic/biopolymer fiber membrane.Heat transfer via pool boiling and microchannel cooling for thermal management ofmicroelectronics.So far 8 students are involved in the said research areas, including both masters and PhDscholars. Theresearch work of this lab is heavily complimented by AMRC facilities likeFESEM, TEM, XRD, UV-Vis, TGA-DSC,FTIR, AAS, Electrochemical Work Station, XPSetc.",
+      "faculty-in-charge": [20, "Dr.Sumit Sinha"],
+      "research-areas": "<ul><li> Fuel cell, batteries and supercapacitor.</li><li> Waste water treatment, water filtration</li><li> Heat transfer via pool boiling and microchannel cooling</li></ul>",
+      "facility": [
+        {
+          "title": "Fume hood",
+          "image": "images/fume_hood.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "In house-built electrospinning apparatus",
+          "image": "images/In house-built.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Analytical weighing balance",
+          "image": "images/Analytical weighing balance.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Hot air oven",
+          "image": "images/hot_air_oven copy.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "In house-built solution-blowing apparatus",
+          "image": "",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Acoustics and Vibration Lab (AVL)",
+      "description": "The Acoustics and Vibration Laboratory is intended to provide state of artteachingand research facility in the area of Acoustics and Vibration. The lab will supplementUG and PG coursesand provide the hands on experience with latest experimentaltechnology used. This exposure will enhancestudent’s skills and also help them todeeply understand the subject. The lab will also provide researchfacility to PG andPhD students for pursuing advanced research topics in this area.",
+      "faculty-in-charge": [2, 28],
+      "research-areas": "<ul><li>Acoustics and Vibration</li></ul>",
+      "facility": [
+        {
+          "title": "Acoustic Enclosure",
+          "image": "images/acoustic_enclosure.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "GRAS microphone \u2013 0.5 inch, 0.25 inch.",
+          "image": "images/GRAS microphone.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Surface Microphone",
+          "image": "images/surface_microphone.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Low noise microphone",
+          "image": "images/lownoise_microphone.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Sound Level Meter \u2013 CESVA",
+          "image": "images/Sound Level Meter.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Accelerometers \u2013 single axis, tri-axial, high temperature",
+          "image": "images/Accelerometers.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Impact hammer",
+          "image": "images/impact_hammer.jpg",
+          "description-para": ""
+        },
+        { "title": "Shaker", "image": "images/shaker.jpg", "description-para": "" },
+        {
+          "title": "Polytech Laser Vibrometer",
+          "image": "images/Polytech Laser Vibrometer.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Data Acquisition \u2013 NI",
+          "image": "",
+          "description-para": ""
+        },
+        { "title": "10 Software \u2013 COMSOL", "image": "", "description-para": "" },
+        { "title": "Speakers", "image": "", "description-para": "" },
+        {
+          "title": "Impedance tube",
+          "image": "images/impedence_tube.jpg",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Biomechanics Research Lab",
+      "description": "Biomechanics is the study of biological structuresuch as human structure,animal structure, cell structure etc. by mean of the method ofthe mechanics. It can be classified in differentfields such as plant biomechanics,sports biomechanics, injury biomechanics. Injury biomechanics is one of themostimportant aspects of the human now days, this injury can be occurred at any time dueto accident, arthritisand post traumatic disorder. The purpose of this biomechanicslaboratory is to develop world class facilities,including experimental andcomputation investigations of the human joints, fracture analysis of the bone due toaccident and designing of orthopaedic implants. Apart from the research thislaboratory also helps to gatherknowledge in biomechanics for UG and PG students.",
+      "faculty-in-charge": [2, 18],
+      "research-areas": "<ul><li>Experimental and computation investigations of the humanjoints, fracture analysis of the bone and designing of orthopaedic implants.</li></ul>",
+      "facility": [
+        {
+          "title": "Computational facilities",
+          "image": "images/computational_facility.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "UTM (100 N) \u2013 PO released",
+          "image": "images/utm.jpg",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Nanoscale Materials & Devices Lab",
+      "description": "The main objective of the nanoscale materials & devices laboratoryat IIT Mandi is to achievecontrolled growth of various 1D, 2D materials and thin films to overcome thefundamentalchallenges in nanomanufacturing and to develop devices. Some of the ongoing projects arefocusedtowards industrial needs in the areas of nanoelectronics, nanomechanics, energy storage,smart materials andsensors. The established research laboratory will target to play a leadershiprole in the scientific communityandindustry by carrying out quality research work towards vaporphase growth of materials and developmentofdevices for optoelectronics, MEMS and sensorapplications.",
+      "faculty-in-charge": [27],
+      "research-areas": "",
+      "facility": [
+        {
+          "title": "Nanoindentation",
+          "image": "images/Nanoindentation.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Chemical Vapor Deposition",
+          "image": "images/chemical_vapour.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "DC/RF Magnetron Sputtering System",
+          "image": "images/DC_RF magnetron.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Atomic Layer Deposition",
+          "image": "images/automatic_layer.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Photocurrent measurement System",
+          "image": "images/photocurrent.jpg",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Numerical Experiment Laboratory",
+      "description": "The computational work in mechanical engineering isplaying a bigrole in many aspects as it helps to reduce the product development cycle,the failure risk, and the cost, and at the same time it improves the quality the product.However, the studentsin mechanical engineering have difficulty in visualising thatcomputational is equally important for them as it is for computer science engineers, thiscould be due to factthat there is no exclusive laboratory dedicated to computational inmechanical engineering. This laboratory would be an example for the importance ofcomputational in themechanical engineering",
+      "faculty-in-charge": [12],
+      "research-areas": "<ul><li>Computatioal Fluid Dynamics and Heat Transfer.</li></ul>",
+      "facility": [
+        {
+          "title": "Desktop Computers",
+          "image": "",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Composite Design and Manufacturing Research lab",
+      "description": "The field of composites is about materials and the way they aremade in to products.Improving manufacturing technology is the greatest challenge in the field ofcomposites.When a composite material is chosen for an application principally because of theirproperties, itis natural to choose manufacturing methods to optimise those properties.The CDML will be working in primarily to work in the areas of designing andmanufacturing of compositematerials. Designing and analysis of composite materialswill be carried out using computation methods, whilethe manufacturing of the compositematerials will be carried out using various manufacturing routes such as compressionmoulding, microwaveprocessing. The CDML will allow School of Engineering, IITMandi to capitalise on its growing relationshipswith composite industry research andeducational partners. Further, with this relationship building and growthin facultyexpertise follows a need to further establish and expand School of Engineering’s coreresearch capability andexpertise to meet research and education demand in the compositeindustry for various engineering applications.",
+      "faculty-in-charge": [24],
+      "research-areas": "<ul><li>Polymer composites, metal matrix composites, microwave, curing, cladding, FEM, mechanical testing.</li></ul>",
+      "facility": [
+        {
+          "title": "High temperature microwave applicator (2.2 kW, up to 1400 \u00b0C)",
+          "image": "images/high_temp_mw.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Polymer curing microwave applicator (1 kW, up to 700 \u00b0C)",
+          "image": "images/polymer_mw.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Multimode microwave applicator (0.9 kW, 300 \u00b0C)-Same as above",
+          "image": "images/polymer_mw.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Low speed diamond saw (200 RPM)",
+          "image": "images/diamond saw.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "High precision weighing balance (up to 0.1 mg)",
+          "image": "images/High precision.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Hot air oven (up to 200 \u00b0C)",
+          "image": "images/hao.jpg",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Smart Material & Structure Research Laboratory",
+      "description": "The design and implementation of smart structures necessitatetheintegration of 1) smart sensors and actuators, 2) structural analysis and design, and 3) intelligentelectronics and control techniques. The field of smart structures is one of several areas of science(i.e.,physics) and engineering where knowledge is distributed in several disciplines and requiresintegrationinto a single functional unit. The aim of Smart Materials and Structures Laboratory (SMSL) is toprovidestate-of-the-art facilities for the teaching, research and development of novel smart materialsandstructures technologies, and to design and implement smart devices for enhancing theadaptability,functionality, and precision of structural systemsCourses to be supported: Mechanics of solid (ME206), Mechanical Vibration (ME602),Introduction to smartmaterial and structure (MEXXX)",
+      "faculty-in-charge": [17],
+      "research-areas": "<ul><li>Polymer composites, metal matrix composites, microwave, curing, cladding, FEM, mechanical testing.</li></ul>",
+      "facility": [
+        {
+          "title": "Piezo Sensing System",
+          "image": "images/piezo-sensing.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Piezoelectric Patches",
+          "image": "images/Piezoelectric Patches.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Active Band Pass Filter System",
+          "image": "images/Active Band Pass.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Piezo Actuation System",
+          "image": "images/Piezo Actuation.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Power Oscillator for driving VibrationGenerator",
+          "image": "images/Power Oscillator.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Charge Amplifier",
+          "image": "images/Charge Amplifier.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Voltage Amplifier",
+          "image": "images/voltage_amplifier.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Creep Testing machine",
+          "image": "images/Creep Testing.jpg",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Solar Thermal Utilization and Thermal EEnergy Storage Lab",
+      "description": "This lab is intended to work on thermal utilization andthermal energy storage research",
+      "faculty-in-charge": [0, 12, 22],
+      "research-areas": "<ul><li>Thermal Energy.</li></ul>",
+      "facility": [
+        {
+          "title": "Solar Parabolic trough collector system",
+          "image": "images/Solar Parabolic.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Pyranometer",
+          "image": "images/Pyranometer.jpg",
+          "description-para": ""
+        },
+        { "title": "Data acquisition system", "image": "", "description-para": "" },
+        {
+          "title": "Pyrheliometer",
+          "image": "images/Pyrheliometer.jpg",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Biosensor and Biomaterial Lab",
+      "description": "The laboratory is involved in the development of novelmaterials forbiological applications such as sensing bioanalytes and drug delivery andtheranostic vehicles. This is ahighly interdisciplinary area and the research is beingdone in collaboration with various experts fromchemistry, biology, biomedicalengineering, electronics and electrical engineering both within the Instituteand outside.",
+      "faculty-in-charge": [9],
+      "research-areas": "<ul><li>Materials Science & Engineering</li></ul>",
+      "facility": [
+        {
+          "title": "Electrochemical Workstation",
+          "image": "images/electrochemical_workstation.jpg",
+          "description-para": ""
+        },
+        { "title": "Furnace", "image": "images/furnace.jpg", "description-para": "" },
+        {
+          "title": "3. pH Meter",
+          "image": "images/phmeter.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Fume hood",
+          "image": "images/fume_hood.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Hot plate",
+          "image": "images/High precision.jpg",
+          "description-para": ""
+        },
+        { "title": "Synthesis setup", "image": "", "description-para": "" },
+        { "title": "Synthesis setup", "image": "", "description-para": "" },
+        { "title": "Incubator", "image": "", "description-para": "" },
+        { "title": "Vortex", "image": "", "description-para": "" }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Thermoelectric Materials Laboratory",
+      "description": "In the past few decades, utilization of energy resources has highlybeen increased due to largeneed. The available natural resources are mostly being used to serve the purpose. Most of the nonrenewablenatural resources (coal, petroleum and natural gases) have limited stock, and due to very fast consumptionrate, it may not be available in next fifty years. Therefore, the need of alternate resources of energy, whichcan fulfill our requirement without affecting the ecological and environmental conditions, are in high demand.Thermoelectric (TE) materials are one of the best source of clean energy, which is efficient in conversion ofheat energy into electrical energy. There are various applications of TE materials such as electroniccomponent cooling, electricity production from waste heat of automobiles, infrared sensor, etc. Thesuitability of any materials for TE applications is decided on the basis of their thermoelectric efficiency.This thermoelectric efficiency is defined in terms of a dimensionless parameter called as thermoelectricfigure of merit ZT=α2σT/κ, where α, σ, κ and T are Seebeck coefficient, electrical conductivity, thermalconductivity and absolute temperature, respectively. Thus in order to characterize the thermoelectricmaterials one needs to know the temperature dependent behaviour of α, σ, and κ of the materials.From past five years our group is actively involve in developing low cost instruments for the characterizationof thermoelectric materials. In this direction we successfully fabricated Seebeck coefficient, resistivity andthermal conductivity measurement setups, which can provide good quality data from 300 to 625 K. We are alsosuccessful in fabricating a Z-meter which can simultaneously measure α, σ, and κ in the temperature range of300 to 625 K. We have filed a patent for this instrument. Our group is also in the process of developingvarious instruments like Vacuum Furnace, Hall-probe, Vacuum based hot-pressing system, etc., which will beuseful in studying the thermoelectric behaviour of materials and their utilization in fabrication of devices.Such efforts of developing the low cost instruments provide students a great opportunity to learn manypractical aspects of science and engineering. It reduces ourdependence to buy high cost commercialinstruments. And in long run, our consistent efforts inthe direction of developing scientific instruments areexpected to benefit the underprivileged61universities and research institutions through the transfer ofknowhow. If such efforts areencouraged, they will help in generating technical man powers in the country whichwill reduceour dependence on purchasing and maintaining the scientific instruments from abroad. Finally,itwill also help in developing useful devices for waste heat recovery and refrigeration.The main aim of thislaboratory is to provide an excellent opportunity to learn magnificence of science and technology bydeveloping scientific equipments and useful engineering devices.",
+      "faculty-in-charge": [0, 23],
+      "research-areas": "<ul><li>Energy Materials</li></ul>",
+      "facility": [
+        {
+          "title": "Thermal conductivity measurement setup",
+          "image": "images/thermal_conductivity.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Seebeck coefficient measurement setup",
+          "image": "images/Seebeck_coefficient.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Resistivity measurement setup",
+          "image": "images/Resistivity_measurement.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Figure-of-merit measurement setup",
+          "image": "",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
+    },
+    {
+      "type": "research-lab",
+      "name": "Functional Ceramics Laboratory",
+      "description": "We work in the area of glasses, glass-ceramicsandpolycrystalline ceramics for energy and clean environment applications. Major areas ofresearch are energystorage, energy harvesting and clean water. We seek materials basedsolutions in above mentioned areas.There are 5-6 PhD and 2-3 MS students who are using research facilities inthis lab at atime. Materials fabricated in this lab have been exploring for different aspects in otherlabssuch as smart materials laboratory, design lab as well as in other school’s labs.",
+      "faculty-in-charge": [16, 17],
+      "research-areas": "<ul><li>Energy storage</li><li>Waste energy harvesting</li><li>Waste water treatment</li><li>Piezoelectric sensing and actuation.</li></ul>",
+      "facility": [
+        {
+          "title": "PE loop tracer",
+          "image": "images/pep_loop.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "DC transformers",
+          "image": "images/dc_transformer.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "Contact angle measurement",
+          "image": "images/contact_angle.jpg",
+          "description-para": ""
+        },
+        {
+          "title": "d33 meter",
+          "image": "images/d33meter.jpg",
+          "description-para": ""
+        }
+      ],
+      "venue": "xyz"
     }
 ]
