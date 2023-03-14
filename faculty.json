@@ -46,6 +46,88 @@
         "description": ""
       }
     ],
+    "patents": [
+      {
+        "applicationNumber": "202011052699",
+        "title": "System For Waste Water Treatment",
+        "inventors": "Atul Dhar, Satvasheel Powar, Hemant Thakur",
+        "granted": "granted",
+        "patentNumber": "386847",
+        "sourceOfFunding": "",
+        "applicationDate": "03/12/2020",
+        "grantDate": "19/01/22"
+      },
+      {
+        "applicationNumber": "201611015638",
+        "title": "Use Of Hydrogen Produced Through Exhaust Heat Recovery For Nox Reduction",
+        "inventors": "Dr. Atul Dhar, Dr. Om Prakash Singh, Gaurav Tripathi, Priybrat Sharma",
+        "granted": "granted",
+        "patentNumber": "379345",
+        "sourceOfFunding": "PDA",
+        "applicationDate": "05/05/2016",
+        "grantDate": "18/10/21"
+      },
+      {
+        "applicationNumber": "201821038197",
+        "title": "System For Drying Articles",
+        "inventors": "Satvasheel Powar, Atul Dhar, Prashant Saini",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "PDA",
+        "applicationDate": "09/10/2018",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "338273-001",
+        "title": "Indian Design: Space Heating Fins",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "338273-001",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "29/01/21",
+        "grantDate": "28/03/22"
+      },
+      {
+        "applicationNumber": "338274-001",
+        "title": "Indian Design: Cookstove Design Without Top Cover",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "338274-001",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "29/01/21",
+        "grantDate": "02/05/2022"
+      },
+      {
+        "applicationNumber": "338275-001",
+        "title": "Indian Design: Cookstove Design With Top Cover",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "338275-001",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "29/01/21",
+        "grantDate": "25/04/22"
+      },
+      {
+        "applicationNumber": "201911051725",
+        "title": "An Apparatus For Heating Or Cooking Ingredients",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "344351",
+        "sourceOfFunding": "Outsider",
+        "applicationDate": "13/12/19",
+        "grantDate": "18/08/20"
+      },
+      {
+        "applicationNumber": "338736-001",
+        "title": "Indian Design: Foldable Solar Thermal Collector",
+        "inventors": "Satvasheel Powar, Atul Dhar, Prashant Saini",
+        "granted": "Hearing scheduled",
+        "patentNumber": "",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "08/02/2021",
+        "grantDate": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Parametric optimization of a cesaro fins employed latent heat storage system for melting performance enhancement",
@@ -1154,6 +1236,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [],
     "publications": "",
     "interests": "",
@@ -1200,6 +1283,28 @@
       {
         "achievement": "",
         "description": ""
+      }
+    ],
+    "patents": [
+      {
+        "applicationNumber": "201811047150",
+        "title": "Acoustic Levitation Of Large Spherical Objects At Low Frequency",
+        "inventors": "Arpan Gupta, Saurabh Yadav",
+        "granted": "Deemed to be withdrawn u/s 11B(4)",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "13/12/18",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "201811024261",
+        "title": "Sonic Crystal For Noise Reduction In Hard Disk Orhigh Performance Computing Cluster",
+        "inventors": "Arpan Gupta, Preeti Gulia",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "29/06/18",
+        "grantDate": ""
       }
     ],
     "irins_pub": [
@@ -1820,6 +1925,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [],
     "publications": "",
     "interests": "",
@@ -1859,6 +1965,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [],
     "projects": ""
   },
@@ -1899,6 +2006,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Diesel soot coated non-woven fabric for oil-water separation and adsorption applications",
@@ -2116,6 +2224,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "A framework for polydisperse pulp phase modelling in flotation",
@@ -2249,6 +2358,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Crashworthiness of automobile made of HDPE/kenaf and HDPE/MWCNT polymer composites",
@@ -2527,6 +2637,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [],
     "publications": "",
     "interests": "",
@@ -2573,6 +2684,38 @@
       {
         "achievement": "",
         "description": ""
+      }
+    ],
+    "patents": [
+      {
+        "applicationNumber": "202111060593",
+        "title": "Functionalized Nanofiber Membrane And Method Of Preparation Thereof",
+        "inventors": "Jaspreet Kaur Randhawa, Manish Kumar",
+        "granted": "granted",
+        "patentNumber": "407409",
+        "sourceOfFunding": "",
+        "applicationDate": "24/12/21",
+        "grantDate": "23/09/22"
+      },
+      {
+        "applicationNumber": "202111003023",
+        "title": "Single Step Hydrothermal Synthesis Of Nitrogen Doped Carbon Coated\n Ultra Small Iron Oxide Core Shell Nanoparticles (Nic) And Nitrogen Doped\n Carbon Dot  Nanoparticles (Ncd)",
+        "inventors": "Jaspreet Kaur Randhawa, Ahish Tiwari, Anup Singh, Satinder Sharma",
+        "granted": "granted",
+        "patentNumber": "401217",
+        "sourceOfFunding": "",
+        "applicationDate": "21/01/21",
+        "grantDate": "13/07/22"
+      },
+      {
+        "applicationNumber": "202011021910",
+        "title": "Single Step Synthesis Of Multimodal Magneto-fluorescent Core-shell Superparamagnetic",
+        "inventors": "Jaspreet Kaur Randhawa, Ahish Tiwari, Chayan Kant Nandi, Anup Singh",
+        "granted": "granted",
+        "patentNumber": "379926",
+        "sourceOfFunding": "",
+        "applicationDate": "26/05/20",
+        "grantDate": "25/10/21"
       }
     ],
     "irins_pub": [
@@ -2773,6 +2916,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Geometry Independent Direct and Converse Flexoelectric Effects in Functionally Graded Dielectrics: An Isogeometric Analysis",
@@ -2967,6 +3111,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "A comprehensive review on 3D printing advancements in polymer composites: technologies, materials, and applications",
@@ -3147,6 +3292,18 @@
         "description": ""
       }
     ],
+    "patents": [
+      {
+        "applicationNumber": "202211003420",
+        "title": "A Thermal Energy Storage Device And A Solar Space Heating Assembly",
+        "inventors": "Pushpendra Kumar Shukla, P Anil Kishan",
+        "granted": "FER issued",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "20/01/22",
+        "grantDate": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Numerical investigation of pressure and temperature influence on flame speed in CH<sub>4</sub>-H<sub>2</sub> premixed combustion",
@@ -3301,6 +3458,18 @@
       {
         "achievement": "",
         "description": ""
+      }
+    ],
+    "patents": [
+      {
+        "applicationNumber": "202111009994",
+        "title": "System And Method For Separating Air From Air-liquid Mixture",
+        "inventors": "Parmod Kumar, Rahul Kumar Mondal",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "10/03/2021",
+        "grantDate": ""
       }
     ],
     "irins_pub": [
@@ -3901,6 +4070,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "The Bacterial Disinfection of Water Using a Galloping Piezoelectric Wind Energy Harvester",
@@ -4466,6 +4636,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Effect of Low Concentration of SiO<sub>2</sub> Nanoparticles on Grape Seed Essential Oil/PBAT Composite Films for Sustainable Food Packaging Application",
@@ -4592,6 +4763,78 @@
       {
         "achievement": "",
         "description": ""
+      }
+    ],
+    "patents": [
+      {
+        "applicationNumber": "202111052858",
+        "title": "An Apparatus For Purifying Water",
+        "inventors": "Rahul Vaish, Pushpendra Kumar",
+        "granted": "FER issued",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "17/11/21",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202111036727",
+        "title": "Method Of Poling For Ferroelectric Materials",
+        "inventors": "Moolchand Sharma, Puneet Azad, Aditi Halder, Rahul Vaish",
+        "granted": "Awaiting request for examination",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "13/08/21",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202111002667",
+        "title": "Antibacterial Opal Glass-ceramics And Method For Producing Antibacterial Opal Glass-ceramics",
+        "inventors": "Rahul Vaish",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "20/01/21",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202111001897",
+        "title": "Antibacterial Construction Materials Using Cao Inclusion",
+        "inventors": "Dikshita Nath, Rajeev Kumar, Rahul Vaish",
+        "granted": "Reply not Filed Deemed to be abandoned U/s 21(1)",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "15/01/21",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202011006402",
+        "title": "A Rapid And Efficient Strategy For Creating Economical Antibacterial Surfaces On Portland Cement Based Structures",
+        "inventors": "Moolchand Sharma, Gurpreet Singh, Dr. Rahul Vaish",
+        "granted": "granted",
+        "patentNumber": "415173",
+        "sourceOfFunding": "",
+        "applicationDate": "14/02/20",
+        "grantDate": "22/12/2022"
+      },
+      {
+        "applicationNumber": "201911045685",
+        "title": "Vibration Induced Waste-water Cleaning And Bacterial Disinfection Using Glass-ceramics Containing Piezoelectric",
+        "inventors": "Gurpreet Singh, Moolchand Sharma, Dr. Rahul Vaish",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "11/11/2019",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "201911044264",
+        "title": "Ceiling Fan Heater",
+        "inventors": "Anuruddha Kumar, Raj Shekhar Srivastava, Dr. Rahul Vaish",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "31/10/19",
+        "grantDate": ""
       }
     ],
     "irins_pub": [
@@ -8670,6 +8913,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Toxicity profiling of metallosurfactant based ruthenium and ruthenium oxide nanoparticles towards the eukaryotic model organism Saccharomyces cerevisiae",
@@ -8786,6 +9030,18 @@
       {
         "achievement": "",
         "description": ""
+      }
+    ],
+    "patents": [
+      {
+        "applicationNumber": "201911040321",
+        "title": "An Ankle Prosthesis",
+        "inventors": "Subrata Mondal, Rajesh Ghosh",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "04/10/2019",
+        "grantDate": ""
       }
     ],
     "irins_pub": [
@@ -9136,6 +9392,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Effect of AFM and FM exchange interaction on magnetic anisotropy properties of single domain SmFeO<sub>3</sub> at nanoscale",
@@ -9242,6 +9499,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Highly Directional 1D Supramolecular Assembly of New Diketopyrrolopyrrole-Based Gel for Organic Solar Cell Applications",
@@ -9366,6 +9624,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Evaluation of acaricidal resistance status of Rhipicephalus microplus ticks from the hilly state (Uttarakhand) of India and evaluation of efficacy of a natural   formulation for the management of resistant ticks",
@@ -9571,6 +9830,128 @@
       {
         "achievement": "",
         "description": ""
+      }
+    ],
+    "patents": [
+      {
+        "applicationNumber": "202221013663",
+        "title": "System And Method Of Fabricating Provskite Based solar Cell",
+        "inventors": "Satvasheel Powar, Mrityunjaydoddamani, Priyanka Kajal, Sunita Doddamani",
+        "granted": "Filed (Provisional)",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "14/03/22",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "201821038197",
+        "title": "System For Drying Articles",
+        "inventors": "Satvasheel Powar, Atul Dhar, Prashant Saini",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "PDA",
+        "applicationDate": "09/10/2018",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202121049476",
+        "title": "Integrated Device For Generating And Storing Electric Energy",
+        "inventors": "Satvasheel Powar, Priyanka Kajal, Shweta Singh, Faruk Kazi",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "Institute",
+        "applicationDate": "29/10/21",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202021031349",
+        "title": "Method For Forming Tio2 Paste At Ambient Temperature",
+        "inventors": "Satvasheel Powar, Priyanka Kajal, Shritu Goswami",
+        "granted": "granted",
+        "patentNumber": "367354",
+        "sourceOfFunding": "",
+        "applicationDate": "22/07/20",
+        "grantDate": "24/05/21"
+      },
+      {
+        "applicationNumber": "201821043971",
+        "title": "Public Information Display System And Method",
+        "inventors": "Amruta Powar, Satvasheel Powar, Dinesh Gawade",
+        "granted": "granted",
+        "patentNumber": "352948",
+        "sourceOfFunding": "Self",
+        "applicationDate": "22/12/18",
+        "grantDate": "03/12/2020"
+      },
+      {
+        "applicationNumber": "201821047020",
+        "title": "A Solar Powered System For Displaying Information",
+        "inventors": "Amruta Powar, Satvasheel Powar, Dinesh Gawade",
+        "granted": "granted",
+        "patentNumber": "342109",
+        "sourceOfFunding": "Outsider",
+        "applicationDate": "12/12/2018",
+        "grantDate": "21/07/20"
+      },
+      {
+        "applicationNumber": "201721024116",
+        "title": "Power Managment System And Method Thereof For Solar Powered Sensor Node",
+        "inventors": "Satvasheel Powar, Vikrant, Tushar Jain, Dinesh Gawade",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "10/09/2017",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "338273-001",
+        "title": "Indian Design: Space Heating Fins",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "338273-001",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "29/01/21",
+        "grantDate": "28/03/22"
+      },
+      {
+        "applicationNumber": "338274-001",
+        "title": "Indian Design: Cookstove Design Without Top Cover",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "338274-001",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "29/01/21",
+        "grantDate": "02/05/2022"
+      },
+      {
+        "applicationNumber": "338275-001",
+        "title": "Indian Design: Cookstove Design With Top Cover",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "338275-001",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "29/01/21",
+        "grantDate": "25/04/22"
+      },
+      {
+        "applicationNumber": "201911051725",
+        "title": "An Apparatus For Heating Or Cooking Ingredients",
+        "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
+        "granted": "granted",
+        "patentNumber": "344351",
+        "sourceOfFunding": "Outsider",
+        "applicationDate": "13/12/19",
+        "grantDate": "18/08/20"
+      },
+      {
+        "applicationNumber": "338736-001",
+        "title": "Indian Design: Foldable Solar Thermal Collector",
+        "inventors": "Satvasheel Powar, Atul Dhar, Prashant Saini",
+        "granted": "Hearing scheduled",
+        "patentNumber": "",
+        "sourceOfFunding": "PDF",
+        "applicationDate": "08/02/2021",
+        "grantDate": ""
       }
     ],
     "irins_pub": [
@@ -9888,6 +10269,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Exploring the suitable theoretical approach for understanding the electronic and magnetic properties of ?-Iron",
@@ -11164,6 +11546,38 @@
         "description": ""
       }
     ],
+    "patents": [
+      {
+        "applicationNumber": "202211022392",
+        "title": "Method For Recovering Fibers From Fiber-reinforced Polymer (Frp) Composites Waste Using Microwaves",
+        "inventors": "Manjeet Rani, Priyanka Choudhary, Venkata Krishnan, Sunny Zafar",
+        "granted": "FER issued",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "14/04/22",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202111033942",
+        "title": "Method For Cladding Internal Cylindrical/curved Surface Via Microwave",
+        "inventors": "Sunny Zafar, Bhupinder Singh",
+        "granted": "FER response submitted",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "28/07/21",
+        "grantDate": ""
+      },
+      {
+        "applicationNumber": "202011008147",
+        "title": "Method For Manufacturing Thermoplastic Composite From Microwave-assisted Compression Moulding",
+        "inventors": "Sunny Zafar, Manoj Kumar Singh, Nishant Verma",
+        "granted": "Awaiting Examination",
+        "patentNumber": "",
+        "sourceOfFunding": "",
+        "applicationDate": "26/02/20",
+        "grantDate": ""
+      }
+    ],
     "irins_pub": [
       {
         "title": "Slurry Erosion Performance of Ni + xCr<sub>7</sub>C<sub>3</sub> Microwave Composite Clad with [10-30 wt%] Cr<sub>7</sub>C<sub>3</sub> Content",
@@ -12057,6 +12471,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Energy Harvesting Through a Low-Cost Device Using Reverse Electrowetting on Dielectric (REWOD)",
@@ -12433,6 +12848,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "Shape control of spacecraft antenna reflector using lead-free piezoelectric actuators",
@@ -13163,6 +13579,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [
       {
         "title": "WS<sub>2</sub>Monolayer for Piezo-Phototronic Dye Degradation and Bacterial Disinfection",
@@ -13679,6 +14096,7 @@
         "description": ""
       }
     ],
+    "patents": [],
     "irins_pub": [],
     "publications": "",
     "interests": "",
