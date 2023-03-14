@@ -4493,3 +4493,160 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+
+.lab-tab .nav-tabs {
+  border: 0;
+}
+
+.lab-tab .nav-item {
+  padding: 5;
+}
+
+.lab-tab .nav-link {
+  border: 0;
+  padding: 15px 10px;
+  color: var(--color-secondary);
+  box-shadow: 3px 3px 15px rgba(var(--color-secondary-rgb), 0.15);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.lab-tab .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.lab-tab .nav-link h4 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.lab-tab .nav-link:hover h4 {
+  color: var(--color-white);
+}
+
+.lab-tab .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.lab-tab .nav-link.active {
+  transition: 0.3s;
+  background: var(--color-primary);
+  /* background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6)); */
+  border-color: var(--color-primary);
+}
+
+.lab-tab .nav-link.active h4 {
+  color: var(--color-white);
+}
+
+.lab-tab .nav-link.active i {
+  color: var(--color-white) !important;
+}
+
+.lab-tab .nav-link.spaced {
+  margin: 0px 10px;
+}
+
+.lab-tab .nav-link.spaced h4 {
+  font-size: 28px;
+}
+
+.lab-tab .tab-content {
+  margin-top: 0px;
+}
+
+.lab-tab .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.lab-tab .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.lab-tab .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lab-tab .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.lab-tab .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.lab-tab .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.lab-card .service-item {
+  padding: 30px;
+  transition: all ease-in-out 0.4s;
+  background: var(--color-white);
+  height: 100%;
+  width: 100%;
+  z-index: 10000000 !important;
+  box-shadow: 0px 0 60px 0 rgba(var(--color-secondary-rgb), 0.1);
+}
+
+.lab-card .service-item .icon {
+  margin-bottom: 10px;
+}
+
+.lab-card .service-item .icon i {
+  color: var(--color-primary);
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.lab-card .service-item h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.lab-card .service-item h4 a {
+  color: var(--color-secondary);
+  transition: ease-in-out 0.3s;
+}
+
+.lab-card .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.lab-card .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0 60px 0 rgba(var(--color-secondary-rgb), 0.1);
+}
+
+.lab-card .service-item:hover h4 a {
+  color: var(--color-primary);
+}
