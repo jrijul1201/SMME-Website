@@ -102,7 +102,7 @@
             {
                 "title": "Tensometer",
                 "image": "images/tensometer.jpg",
-                "description-para": "A device for evaluating various tensile properties of a material, such <a href='https://en.wiktionary.org/wiki/Young's_modulus'>Young's modulus</a>,<a href='https://en.wiktionary.org/wiki/ultimate_tensile_strength'>ultimatetensile strengt </a> and Poisson's ratio.<br>"
+                "description-para": "A device for evaluating various tensile properties of a material, such <a href='https://en.wiktionary.org/wiki/Young's_modulus'>Young's modulus</a>,<a href='https://en.wiktionary.org/wiki/ultimate_tensile_strength'>ultimatetensile strengt </a> and Poisson's ratio.<br>"
             },
             {
               "title": "Rockwell Hardness Tester",
