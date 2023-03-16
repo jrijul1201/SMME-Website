@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-10" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>SMME - IIT Mandi</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/download.png" rel="icon" />
+    <link href="assets/img/download.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+    <!-- <link href="assets/css/variables.css" rel="stylesheet"> -->
+    <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+    <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+    <link href="assets/css/variables-orange.css" rel="stylesheet" />
+    <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+    <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+    <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: HeroBiz - v2.3.1
+  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <!-- Partials loading script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const labs = urlParams.get("labs");
+        // console.log(q);
+        $(function () {
+            $("#head").load("header.html");
+            $("#footer").load("footer.html");
+            $("#hero").load("hero.html");
+        });
+        $.getJSON('labs.json', function (data) {
+            const f = data[labs];
+            console.log(f);
+            var contactOrResearch = "";
+            if (f["contact-person"]) {
+                contactOrResearch += `<i class="bi bi-phone flex-shrink-0"></i>
+                                        <div>
+                                            <h4>Contact Person:</h4>
+                                            <p>${f["contact-person"].name}, ${f["contact-person"].post}, 01905-${f["contact-person"].phone}, +91-${f["contact-person"].mobile}</p>
+                                        </div>`;
+            }
+            if (f["research-areas"]) {
+                contactOrResearch += `<i class="bi bi-pencil-square flex-shrink-0"></i>
+                                        <div>
+                                            <h4>Research Areas:</h4>
+                                            <p>${f["research-areas"]}</p>
+                                        </div>`;
+            }
+            var comp = `<!-- ======= Lab Section ======= -->
+                        <section id="lab-section" class="lab-section" style="margin-top: -60px;">
+                            <!-- ======= Testimonials Section ======= -->
+                            <div id="testimonials" class="testimonials">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="testimonials-slider swiper">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-item">
+                                                    <h2>${f.name}</h2>
+                                                </div>
+                                            </div><!-- End testimonial item -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- End Testimonials Section -->
+
+                            <div class="container" data-aos="fade-up">
+
+                                <div class="section-header" style="margin-top:50px;">
+                                    <!-- <h2>Design Lab</h2> -->
+                                    <h2>About</h2>
+                                    <p>${f.description}
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- ======= Contact Us Section ======= -->
+                            <div id="contact" class="contact" data-aos="fade-up">
+                                <!-- <div class="container">
+                            
+                                    <div class="section-header">
+                                        <h2>Contact Us</h2>
+                                        <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores
+                                            adipisci aliquam.</p>
+                                    </div>
+                            
+                                </div> -->
+                                <div class="container" style="margin-bottom: 30px;">
+                                    <div class="info">
+                                        <div class="row gy-5 gx-lg-5">
+                                            <div class="col-lg-4">
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-person flex-shrink-0"></i>
+                                                    <div>
+                                                        <h4>Faculty-in-charge:</h4>
+                                                        <p>
+                                                            <a href="/faculty.html"> Himanshu Pathak
+                                                            </a>
+                                                        </p>
+                                                        <p>
+                                                            <a href="/faculty.html"> Vishal Singh Chauhan
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- End Info Item -->
+                                            <div class="col-lg-4">
+
+                                                <div class="info-item d-flex">
+                                                    ${contactOrResearch}
+                                                </div>
+                                            </div><!-- End Info Item -->
+                                            <div class="col-lg-4">
+
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                                    <div>
+                                                        <h4>Venue:</h4>
+                                                        <p>${f.venue}</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- End Info Item -->
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- End Contact Section -->
+
+                            <!-- ======= Contact Us Section ======= -->
+                            <!-- <div id="contact" class="contact" data-aos="fade-up">
+
+                                <div class="container" style="margin-bottom: 30px;">
+                                    <div class="info">
+                                        <div class="row gy-5 gx-lg-5">
+
+                                            <div class="col-lg-6">
+
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-phone flex-shrink-0"></i>
+                                                    <div style="border-right: 3px;">
+                                                        <h4>Contact Person:</h4>
+                                                        <p>Dinesh Thakur, Junior Lab Asst. </p>
+                                                        <p> Contact No: 267241, 9418169227</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                                <div class="info-item d-flex">
+                                                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                                    <div>
+                                                        <h4>Venue:</h4>
+                                                        <p>Hello, This, is, the Venue</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <!-- End Contact Section -->
+
+                            <!-- List of existing facility section -->
+                            <div class="container" data-aos="fade-up">
+                                <div class="section-header">
+                                    <h2 style="margin-bottom: 20px; margin-top: 50px;">Instruments</h2>
+                                </div>
+                            </div>`;
+
+            f.facility.forEach((element, id) => {
+                var list = "";
+                var para = "";
+                if (element["description-list"]) {
+                    list += "<p><ul> ";
+                    element["description-list"]?.forEach((pt) => {
+                        list += `<li>${pt}</li>`;
+                    })
+                    list += "</ul></p>";
+                }
+                if (element["description-para"]) {
+                    para += "<p>" + element["description-para"] + "</p>";
+                }
+                if (id % 2 == 0) {
+                    comp += `<div id="existing-facility-lab" class="existing-facility-lab">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="tab-pane active show" id="tab-1">
+                                        <div class="row gy-4">
+                                            <div class="col-lg-6 order-2 order-lg-1 facility" data-aos="fade-up" data-aos-delay="100">
+                                                <h3 style="text-align: left; width: 100%">${element.title}</h3>
+                                                ${para}${list}                                                    
+                                            </div>
+                                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                                <img src=${"labs/" + element["image"]} alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Tab Content 1 -->
+                                </div>
+                            </div>`;
+                } else {
+                    comp += `<div id="existing-facility-lab" class="existing-facility-lab">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="tab-pane active show" id="tab-1">
+                                        <div class="row gy-4">
+                                            <div class="col-lg-6 order-1 order-lg-2 facility" data-aos="fade-up" data-aos-delay="100">
+                                                <h3 style="text-align: right; width: 100%">${element.title}</h3>
+                                                ${para}${list}                                                    
+                                            </div>
+                                            <div class="col-lg-6 order-2 order-lg-1 text-center">
+                                                <img src=${"labs/" + element["image"]} alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Tab Content 1 -->
+                                </div>
+                            </div>`;
+                }
+            });
+            comp += `</section><!-- End About Section -->`;
+            $(comp).appendTo("#labs");
+            console.log(comp)
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div id="head"></div>
+    <div style="height: 90px"></div>
+
+    <!-- <div id="hero"></div> -->
+
+    <main id="main">
+        <div id="labs"></div>
+
+        <!-- <section id="team" class="team">
+            <div class="section-header">
+                <br>
+                <h2>Associated Faculty Members</h2>
+            </div>
+            <div class="container" data-aos="fade-up">
+                <div class="row gy-5" id="faculty-info"></div>
+            </div>
+        </section> -->
+    </main>
+
+    <div id="footer"></div>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

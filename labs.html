@@ -59,40 +59,38 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
   <script>
     $(function () {
-      $.getJSON('faculty.json', function (data) {
-        $.each(data, function (i, f) {
-          var src1 = `assets/img/team/${f.img}`
-          var irins = `https://iitmandi.irins.org/profile/${f.irins}`
-          var phone = `tel:+91-1905-${f.phone}`
-          var mail = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${f.mail}@iitmandi.ac.in`
-          var comp =
-            '<div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200"> ' +
-            "<div class='team-member'>" +
-            "<div class= 'member-img' >" +
-            `<a href='dedicated.html?data=${i}' class='fill-div' target ='_blank'>` +
-            "<img src=" + src1 + " class='img-fluid' alt=''></img>" +
-            '</a>' +
-            "</div>" +
-            "<div style = 'height: 28vh' class='member-info'>" +
-            "<div class='social'>" +
-            "<a target='_blank' href=" + irins + "><i class='bi bi-lightbulb'></i>" + "</a>" +
-            "<a target='_blank' href=" + f.gs + " ><i class='bi bi-mortarboard'></i>" + "</a>" +
-            "<a href=" + phone + " ><i class='bi bi-telephone'></i>" + "</a>" +
-            "<a target='_blank' href=" + mail + " ><i class='bi bi-envelope'></i>" + "</a>" + "</div>" +
-            "<h4>" + f.name + "</h4>" +
-            "<h6 style='color:var(--color - secondary - light); '>" +
-            f.post + "<br>" + "Specialization:" + f.speciality + "</p>" +
-            "</div>" +
 
-            " </div > " +
-
-            "</div > "
-
-          $(comp).appendTo("#faculty-info");
-          // $(comp).appendTo("#dedicated");
-        });
+      $.getJSON('labs.json', function (data) {
+        var teaching = `<div id="lab-card" class="lab-card">
+                          <div class="container">
+                            <div class="row gy-4">`;
+        var research = `<div id="lab-card" class="lab-card">
+                          <div class="container">
+                            <div class="row gy-4">`;
+        data.forEach((element, i) => {
+          var comp = `<div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
+                        <div class="service-item position-relative">
+                          <h4><a href="lab-dedicated.html?labs=${i}" class="stretched-link">${element?.name}</a></h4>
+                        </div>
+                      </div>`;
+          if (element?.type === "teaching-lab") {
+            teaching += comp;
+          } else {
+            research += comp;
+          }
+        });           
+                    
+        teaching += `</div>
+                </div>
+              </div>`;
+        research += `</div>
+                </div>
+              </div>`;
+        $(teaching).appendTo("#teaching-labs");
+        $(research).appendTo("#research-labs");
       });
     });
+
   </script>
 </head>
 
@@ -108,67 +106,61 @@
 
   <main id="main">
 
-
-
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header text-center">
           <h2>Laboratories</h2>
-          <p class="justify-content-center">Following laboratories are associated with the teaching and research work carried out by the members of SMME.</p>
+          <p class="justify-content-center">Following laboratories are associated with the teaching and research work
+            carried out by the members of SMME.</p>
         </div>
 
-        <div class="container" style="text-align:justify">
-          <div class="row">
-            <div class="faculty">
-              <div class="row">
-                <div class="col-md-4 offset-2">
-                  <h3>Teaching Labs</h3>
-                  <!-- <h4>The School offers the following teaching labs:</h4><br /> -->
-                  <ul class="arrow">
-                    <li><a href="labs/mechanical_workshop.html"> Central Workshop</a></li>
-                    <li><a href="labs/design_lab.html">Design Lab</a></li>
-                    <li><a href="labs/thermo_fluid.html">Thermo – Fluids Laboratory</a></li>
-                    <li><a href="labs/energy_engg.html">Energy Engineering Lab</a></li>
-                    <!--<li><a href="labs/asel.html">Advanced Structural Engineering Laboratory</a></li>-->
-                    <!-- <li><a href="labs/geotech_engg.html">Geotechnical Engineering Laboratory (extension)</a></li> -->
-                    <!--<li><a href="labs/construction.html">Construction Materials Lab</a></li>-->
-                    <!-- <li><a href="labs/env_engg.html">Environment Engineering Lab</a></li> -->
-                  </ul>
-                </div>
-                <div class="col-md-4">
-                  <h3>Research Labs</h3>
-                  <!-- <h4>The School offers the following research labs:</h4><br /> -->
-                  <ul class="arrow">
-                    <li><a href="labs/nanofabrication.html">Nanofabrication for Energy Materials</a></li>
-                    <li><a href="labs/avl.html">Acoustics and Vibration Lab (AVL)</a></li>
-                    <li><a href="labs/biomechanics_research.html">Biomechanics Research Lab</a></li>
-                    <!-- <li><a href="labs/geohazard.html">Geohazard Studies Lab</a></li> -->
-                    <li><a href="labs/nanoscale.html">Nanoscale Materials & Devices Lab</a></li>
-                    <li><a href="labs/numerical_exp.html">Numerical Experiment Laboratory</a></li>
-                    <li><a href="labs/cdmr.html">Composite Design and Manufacturing Research lab</a></li>
-                    <li><a href="labs/smsr.html">Smart Material & Structure Research Laboratory</a></li>
-                    <li><a href="labs/solar_thermal.html">Solar thermal utilization and thermal energy storage lab</a>
-                    </li>
-                    <li><a href="labs/biosensor_biomaterial.html">Biosensor and Biomaterial Lab</a></li>
-                    <li><a href="labs/thermoelectric_material.html">Thermoelectric Materials Laboratory</a></li>
-                    <!-- <li><a href="labs/advance_landslide.html">Advanced Landslides Studies Lab</a></li> -->
-                    <!--<li><a href="labs/building_phy_adv_mat.html">Building Physics and Advanced Material Mechanics Lab</a></li>-->
-                    <li><a href="labs/functional_ceramics.html">Functional Ceramics Laboratory</a></li>
-                    <!-- <li><a href="https://www.i4siitmandi.com">Team i4S</a></li> -->
+        <div class="container lab-tab" data-aos="fade-up" data-aos-delay="100">
+          <br>
+          <ul class="nav nav-tabs row gy-2 d-flex justify-content-center">
+            <li class="nav-item col-6">
+              <a class="nav-link pg-nav-item spaced active show" data-bs-toggle="tab" data-bs-target="#research-labs">
+                <h4>Research Labs</h4>
+              </a>
+            </li><!-- End Tab 1 Nav -->
+            <li class="nav-item col-6">
+              <a class="nav-link pg-nav-item spaced" data-bs-toggle="tab" data-bs-target="#teaching-labs">
+                <h4>Teaching Labs</h4>
+              </a>
+            </li><!-- End Tab 2 Nav -->
+          </ul>
+          <br>
 
-                    <!-- <li><a href="https://ac3group.wixsite.com/ac3group">Atmospheric Chemistry and Climate Change</a> -->
-                    </li>
+          <div class="tab-content">
 
-
-
-                  </ul>
-                </div>
-
-
-              </div>
+            <div class="tab-pane active show  mt-4" id="research-labs">
+              <!-- <ul class="arrow">
+                <li><a href="labs/nanofabrication.html">Nanofabrication for Energy Materials</a></li>
+                <li><a href="labs/avl.html">Acoustics and Vibration Lab (AVL)</a></li>
+                <li><a href="labs/biomechanics_research.html">Biomechanics Research Lab</a></li>
+                <li><a href="labs/nanoscale.html">Nanoscale Materials & Devices Lab</a></li>
+                <li><a href="labs/numerical_exp.html">Numerical Experiment Laboratory</a></li>
+                <li><a href="labs/cdmr.html">Composite Design and Manufacturing Research lab</a></li>
+                <li><a href="labs/smsr.html">Smart Material & Structure Research Laboratory</a></li>
+                <li><a href="labs/solar_thermal.html">Solar thermal utilization and thermal energy storage lab</a>
+                </li>
+                <li><a href="labs/biosensor_biomaterial.html">Biosensor and Biomaterial Lab</a></li>
+                <li><a href="labs/thermoelectric_material.html">Thermoelectric Materials Laboratory</a></li>
+                <li><a href="labs/functional_ceramics.html">Functional Ceramics Laboratory</a></li>
+                </li>
+              </ul> -->
             </div>
+
+            <div class="tab-pane mt-2" id="teaching-labs">
+              <!-- <ul class="arrow">
+                <li><a href="labs/mechanical_workshop.html"> Central Workshop</a></li>
+                <li><a href="labs/design_lab.html">Design Lab</a></li>
+                <li><a href="labs/thermo_fluid.html">Thermo – Fluids Laboratory</a></li>
+                <li><a href="labs/energy_engg.html">Energy Engineering Lab</a></li>
+              </ul> -->
+            </div>
+
           </div>
         </div>
       </div>
