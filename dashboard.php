@@ -25,9 +25,7 @@ $userName = $_SESSION['user_name'];
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -59,7 +57,7 @@ $userName = $_SESSION['user_name'];
     <!-- Partials loading script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>
-        $(function () {
+        $(function() {
             $("#head").load("header.html");
             $("#footer").load("footer.html");
             $("#hero").load("hero.html");
@@ -190,7 +188,7 @@ $userName = $_SESSION['user_name'];
             for (let i = 0; i < degreeSelections.length; i++) {
                 let degreeSelection = degreeSelections[i];
                 let degreeOther = degreeSelection.nextElementSibling;
-                degreeSelection.addEventListener("change", function () {
+                degreeSelection.addEventListener("change", function() {
                     if (degreeSelection.value === "Other") {
                         degreeOther.style.display = "inline";
                         degreeOther.required = true;
@@ -222,7 +220,7 @@ $userName = $_SESSION['user_name'];
             }
         }
 
-        window.addEventListener("load", function () {
+        window.addEventListener("load", function() {
             showOther("education-table");
             showOther("recognition-table");
         });
@@ -247,54 +245,56 @@ $userName = $_SESSION['user_name'];
 
     ?>
 
-    <h1 style="text-align:center">Faculty Profile Form</h1>
-    <div class="image_area">
-        <form method="post">
-            <label for="upload_image">
-                <img src="assets/img/team/<?php echo $arr[$index]["img"]; ?>" id="uploaded_image"
-                    class="img-responsive img-circle" />
-                <div class="overlay">
-                    <div class="text">Click to Change Profile Image</div>
-                </div>
-                <input type="file" name="image" class="image" id="upload_image" style="display:none" />
-            </label>
-        </form>
-    </div>
+    <main id="main">
+        <section id="dashboard" class="dashboard">
 
-    <!-- Crop Modal Code -->
+            <div class="section-header" style="margin-top:5vh;padding-bottom:0px;font-weight:700">
+                <h2 style="padding-bottom:0px">Faculty Profile Form</h2>
+            </div>
+            <form method="post">
+                <div class="image_area ">
 
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Crop Image Before Upload</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
+                    <label for="upload_image">
+                        <img src="assets/img/team/<?php echo $arr[$index]["img"]; ?>" id="uploaded_image" class="img-responsive img-circle" />
+                        <div class="overlay">
+                            <div class="text">Click to Change Profile Image</div>
+                        </div>
+                        <input type="file" name="image" class="image" id="upload_image" style="display:none" />
+                    </label>
                 </div>
-                <div class="modal-body">
-                    <div class="img-container">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <img src="" id="sample_image" />
+            </form>
+
+            <!-- Crop Modal Code -->
+
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Crop Image Before Upload</h5>
+                            <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="img-container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <img src="" id="sample_image" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="preview"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="preview"></div>
-                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="crop" class="btn btn-primary">Crop</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" id="crop" class="btn btn-primary">Crop</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                </div>
             </div>
-        </div>
-    </div>
 
-
-    <main id="main">
-        <section id="dashboard" class="dashboard">
 
             <!-- <form action="logout.php" method="post">
                 <button type="submit">Logout</button>
@@ -303,73 +303,64 @@ $userName = $_SESSION['user_name'];
             <!-- start here -->
             <!-- Personal info -->
 
-            <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data" role="form"
-                class="php-email-form">
-                <div class="profile-section">
-                    <h2>Personal Information:</h2>
+            <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data" role="form" class="php-email-form">
+                <div class="profile-section section-header">
+                    <h3>Personal Information</h3>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="fname">Name:</label>
-                            <input type="text" name="name" class="form-control" id="fname"
-                                value="<?php echo $arr[$index]["name"]; ?>" required>
+                            <input type="text" name="name" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="phone">Phone:</label> +91-1905-
-                            <input type="text" name="phone" class="form-control" id="phone"
-                                value="<?php echo $arr[$index]["phone"]; ?>" required>
+                            <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="address">Address:</label>
-                            <input type="text" name="address" class="form-control" id="address"
-                                value="<?php echo $arr[$index]["address"]; ?>" required>
+                            <input type="text" name="address" class="form-control" id="address" value="<?php echo $arr[$index]["address"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="post">Designation:</label>
-                            <input type="text" name="post" class="form-control" id="post"
-                                value="<?php echo $arr[$index]["post"]; ?>" required>
+                            <input type="text" name="post" class="form-control" id="post" value="<?php echo $arr[$index]["post"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="speciality">Specialisation:</label>
-                            <input type="text" name="speciality" class="form-control" id="speciality"
-                                value="<?php echo $arr[$index]["speciality"]; ?>" required>
+                            <input type="text" name="speciality" class="form-control" id="speciality" value="<?php echo $arr[$index]["speciality"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="gslink">Google Scholar Link:</label>
-                            <input type="text" name="gslink" class="form-control" id="gslink"
-                                value="<?php echo $arr[$index]["gs"]; ?>">
+                            <input type="text" name="gslink" class="form-control" id="gslink" value="<?php echo $arr[$index]["gs"]; ?>">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="irinsid">IRINS ID:</label>
-                            <input type="text" name="irinsid" class="form-control" id="irinsid"
-                                value="<?php echo $arr[$index]["irins"]; ?>">
+                            <input type="text" name="irinsid" class="form-control" id="irinsid" value="<?php echo $arr[$index]["irins"]; ?>">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="pplink">Personal Page Link(if any):</label>
-                            <input type="text" name="pplink" class="form-control" id="pplink"
-                                value="<?php echo $arr[$index]["personal_page_link"]; ?>">
+                            <input type="text" name="pplink" class="form-control" id="pplink" value="<?php echo $arr[$index]["personal_page_link"]; ?>">
                         </div>
                     </div>
                 </div>
                 <!-- Educational Details -->
-                <div style="overflow: scroll;" class="profile-section">
-                    <h2>Education Details:</h3>
-                        <div class="row">
-                            <table id="education-table">
-                                <tr>
-                                    <th>Degree</th>
-                                    <th>Specialization</th>
-                                    <th>Start Year</th>
-                                    <th>End Year</th>
-                                    <th>Place</th>
-                                    <th>Other Info</th>
-                                    <th>To Hide</th>
-                                    <th>Delete Action</th>
-                                </tr>
-                                <tbody>
-                                    <?php
-                                    foreach ($arr[$index]["education"] as $ind => $ed) {
-                                        echo "<tr class='edutablerow'>";
-                                        echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
+                <div style="overflow: scroll;" class="profile-section section-header">
+                    <h3>Education Details</h3>
+                    <div class="row">
+                        <table id="education-table" class="text-center">
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialization</th>
+                                <th>Start Year</th>
+                                <th>End Year</th>
+                                <th>Place</th>
+                                <th>Other Info</th>
+                                <th>To Hide</th>
+                                <th>Delete Action</th>
+                            </tr>
+                            <tbody>
+                                <?php
+                                foreach ($arr[$index]["education"] as $ind => $ed) {
+                                    echo "<tr class='edutablerow'>";
+                                    echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
                             <option value='' disabled selected>Select a Degree</option>
                             <option value='BTech'>BTech</option>
                             <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
@@ -385,58 +376,58 @@ $userName = $_SESSION['user_name'];
                             <option value='BE'>BE</option>
                             <option value='Other'>Other</option>
                         </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
-                                        echo "<script>autoSelectOption('{$ed['degree']}', '$ind', 'eduDegree', 'degreeOther' );</script>";
-                                        echo "<td><input type='text' class='input-css' name='specialization[]' value='{$ed['specialization']}'></td>";
-                                        echo "<td><input type='text' class='input-css' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                        echo "<td><input type='text' class='input-css' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                        echo "<td><input type='text' class='input-css' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
-                                        echo "<td><input type='text' class='input-css' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
-                                        echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
-                                        echo "<td><i class='fa fa-trash delete-icon' onclick='deleteEducation()'></i></td>";
-                                        echo "</tr>";
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
-                            <div class="text-center"><button type="button" class="edubtn"
-                                    onclick="addEducation()">Add</button></div>
+                                    echo "<script>autoSelectOption('{$ed['degree']}', '$ind', 'eduDegree', 'degreeOther' );</script>";
+                                    echo "<td><input type='text' class='input-css' name='specialization[]' value='{$ed['specialization']}'></td>";
+                                    echo "<td><input type='text' class='input-css' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                                    echo "<td><input type='text' class='input-css' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
+                                    echo "<td><input type='text' class='input-css' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
+                                    echo "<td><input type='text' class='input-css' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
+                                    echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
+                                    echo "<td><i class='fa fa-trash delete-icon' onclick='deleteEducation()'></i></td>";
+                                    echo "</tr>";
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                        <div class="text-center header">
+                            <button type="button" class="dash-btn btn btn-getstarted " onclick="addEducation()">Add</button>
                         </div>
+                    </div>
                 </div>
                 <!-- Recognition Details -->
-                <div style="overflow: scroll;" class="profile-section">
-                    <h2>Recognition Details:</h3>
-                        <div class="row">
-                            <table id="recognition-table">
-                                <tr>
-                                    <th>Achievement</th>
-                                    <th>Description</th>
-                                    <th>Delete Action</th>
-                                </tr>
-                                <tbody>
-                                    <?php
-                                    foreach ($arr[$index]["recognition"] as $ind => $rg) {
-                                        echo "<tr class='edutablerow'>";
-                                        echo "<td><select class='input-css' id='recAchieve" . "$ind' name='achievement[]' required>
+                <div style="overflow: scroll;" class="profile-section section-header">
+                    <h3>Recognition Details</h3>
+                    <div class="row">
+                        <table id="recognition-table" class="text-center">
+                            <tr>
+                                <th>Achievement</th>
+                                <th>Description</th>
+                                <th>Delete Action</th>
+                            </tr>
+                            <tbody>
+                                <?php
+                                foreach ($arr[$index]["recognition"] as $ind => $rg) {
+                                    echo "<tr class='edutablerow'>";
+                                    echo "<td><select class='input-css' id='recAchieve" . "$ind' name='achievement[]' required>
                             <option value='' disabled selected>Select an Achievement</option>
                             <option value='Scholarships'>Scholarships</option>
                             <option value='Awards'>Awards</option>
                             <option value='Honours'>Honours</option>
                             <option value='Other'>Other</option>
                         </select><input type='text' id='achieveOther" . "$ind' name='achieveOther[]' value='' style='display:none'></td>";
-                                        echo "<script>autoSelectOption('{$rg['achievement']}', '$ind', 'recAchieve', 'achieveOther');</script>";
-                                        echo "<td><input type='text' class='input-css' name='description[]' value='{$rg['description']}'></td>";
-                                        echo "<td><i class='fa fa-trash delete-icon' onclick='deleteRecognition()'></i></td>";
-                                        echo "</tr>";
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
-                            <div class="text-center"><button type="button" class="edubtn"
-                                    onclick="addRecognition()">Add</button></div>
-                        </div>
+                                    echo "<script>autoSelectOption('{$rg['achievement']}', '$ind', 'recAchieve', 'achieveOther');</script>";
+                                    echo "<td><input type='text' class='input-css' name='description[]' value='{$rg['description']}'></td>";
+                                    echo "<td><i class='fa fa-trash delete-icon' onclick='deleteRecognition()'></i></td>";
+                                    echo "</tr>";
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                        <div class="text-center header"><button type="button" class="dash-btn btn btn-getstarted" onclick="addRecognition()">Add</button></div>
+                    </div>
                 </div>
                 <!-- Text Areas -->
-                <div class="profile-section">
+                <div class="profile-section section-header">
                     <div class="row">
                         <!-- <div class="form-group mt-3 md-6">
                             <h3>Publications:</h3>
@@ -444,9 +435,8 @@ $userName = $_SESSION['user_name'];
                                 name="publications"><?php echo $arr[$index]["publications"]; ?></textarea>
                         </div> -->
                         <div class="form-group mt-3 md-6">
-                            <h3>Research Interests:</h3>
-                            <textarea class="form-control"
-                                name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
+                            <h3>Research Interests</h3>
+                            <textarea class="form-control" name="interests"><?php echo $arr[$index]["interests"]; ?></textarea>
                         </div>
                         <!-- <div class="form-group mt-3 md-6">
                             <h3>Current Projects:</h3>
@@ -454,14 +444,12 @@ $userName = $_SESSION['user_name'];
                                 name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
                         </div> -->
                         <div class="form-group mt-3 md-6">
-                            <h3>Current Openings for research:</h3>
-                            <textarea class="form-control"
-                                name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
+                            <h3>Current Openings for research</h3>
+                            <textarea class="form-control" name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
                         </div>
                         <div class="form-group mt-3 md-6">
-                            <h3>Work Experiences:</h3>
-                            <textarea class="form-control"
-                                name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
+                            <h3>Work Experiences</h3>
+                            <textarea class="form-control" name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
                         </div>
                         <!-- <div class="form-group mt-3 md-6">
                             <h3>Conferences:</h3>
@@ -481,62 +469,13 @@ $userName = $_SESSION['user_name'];
                     </div>
                 </div>
                 <!-- IRINS Publications -->
-                <div style="overflow: scroll;" class="profile-section">
-                    <h2>IRINS Publications Details:</h2>
-                    <small><i>
-                            <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
-                        </i></small><br>
-                    <div class="row">
-                        <table id="irins-pub-table">
-                            <tr>
-                                <th>Title</th>
-                                <th>DOI</th>
-                                <th>Year</th>
-                                <th>Publication Date</th>
-                                <th>Publication Type</th>
-                                <th>Pages</th>
-                                <th>Volume</th>
-                                <th>Authors</th>
-                                <th>Journal</th>
-                                <th>Scopus Citations</th>
-                                <th>Cross Ref Citations</th>
-                                <th>To Hide</th>
-                            </tr>
-                            <tbody>
-                                <?php
-                                foreach ($arr[$index]["irins_pub"] as $ipub) {
-                                    echo "<tr>";
-                                    echo "<td><input type='text' class='input-css' name='ititle[]' value='{$ipub['title']}' required></td>";
-                                    echo "<td><input type='text' class='input-css' name='idoi[]' value='{$ipub['DOI']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='iyear[]' pattern='\d{4}' title='Enter valid year (4-digit)' value='{$ipub['year']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='ipubDate[]' value='{$ipub['publicationDate']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='ipubType[]' value='{$ipub['publicationType']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='ipages[]' value='{$ipub['pages']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='ivolume[]' value='{$ipub['volume']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='iauthors[]' value='{$ipub['authors']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='ijournal[]' value='{$ipub['journal']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='iscopusC[]' value='{$ipub['scopusCitations']}'></td>";
-                                    echo "<td><input type='text' class='input-css' name='icrossrefC[]' value='{$ipub['crossrefCitations']}'></td>";
-                                    echo "<td><input type='checkbox' id='iCheckBox' name='iIsHidden[]' " . ($ipub['isHidden'] ? "checked" : "") . "></td>";
-                                    echo "</tr>";
-                                }
-                                ?>
-                            </tbody>
-                        </table>
 
-                    </div>
-                    <div class="text-center"><button type="button" class="edubtn"
-                            onclick="addIRINSPub()">Add</button><button type="button" id="delIPB" class="edubtn"
-                            onclick="deleteIRINSPub()">Delete</button></div>
-                    <!-- <button type="button" onclick="addIRINSPub()">Add</button>
-                    <button type="button" id="delIPB" onclick="deleteIRINSPub()">Delete</button><br><br> -->
-                    <!-- <input type="submit" value="Update Changes"> -->
-                </div>
-                <div class="profile-section">
-                    <h2>IRINS Publications Details:</h2>
-                    <small><i>
+                <div class="profile-section section-header">
+                    <h3>IRINS Publications Details</h3>
+                    <small  style="justify-content:center"><i>
                             <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
                         </i></small><br>
+                        <br/>
                     <div class="row">
                         <?php
                         foreach ($arr[$index]["irins_pub"] as $ipub) {
@@ -569,7 +508,7 @@ $userName = $_SESSION['user_name'];
                             }
                             $comp = "<div class='col-md-12 plates'>
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
-                                            <div class='col d-flex flex-column position-static plate-child'>
+                                            <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
                                                     $title <br />
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
@@ -578,12 +517,12 @@ $userName = $_SESSION['user_name'];
                                                 <p class='card-text mb-auto'>
                                                     $authors
                                                 </p>
-                                                <div class='mb-auto text-muted'>
+                                                <p class='mb-auto text-muted'>
                                                     $journal
-                                                </div>
-                                                <div class='text-primary'>
+                                                </p>
+                                                <p class='text-primary' style='font-size:1rem'>
                                                     <a href='https://doi.org/$DOI' target='_blank'>$DOI</a>
-                                                </div>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>";
@@ -592,7 +531,8 @@ $userName = $_SESSION['user_name'];
                         ?>
                     </div>
 
-                    <div class="text-center"><button type="submit" class="edubtn">Update Changes</button></div>
+                    <div class="text-center header"><button type="submit" class="dash-btn btn btn-getstarted">Update Changes</button></div>
+                </div>
             </form>
 
         </section>
@@ -601,8 +541,7 @@ $userName = $_SESSION['user_name'];
 
     <div id="footer"></div>
 
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <div id="preloader"></div>
 
@@ -626,7 +565,7 @@ $userName = $_SESSION['user_name'];
 
 <!-- Cropping functionality enable script -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
 
         var $modal = $('#modal');
 
@@ -634,45 +573,45 @@ $userName = $_SESSION['user_name'];
 
         var cropper;
 
-        $('#upload_image').change(function (event) {
+        $('#upload_image').change(function(event) {
             var files = event.target.files;
 
-            var done = function (url) {
+            var done = function(url) {
                 image.src = url;
                 $modal.modal('show');
             };
 
             if (files && files.length > 0) {
                 reader = new FileReader();
-                reader.onload = function (event) {
+                reader.onload = function(event) {
                     done(reader.result);
                 };
                 reader.readAsDataURL(files[0]);
             }
         });
 
-        $modal.on('shown.bs.modal', function () {
+        $modal.on('shown.bs.modal', function() {
             cropper = new Cropper(image, {
                 aspectRatio: 1,
                 viewMode: 3,
                 preview: '.preview'
             });
-        }).on('hidden.bs.modal', function () {
+        }).on('hidden.bs.modal', function() {
             cropper.destroy();
             cropper = null;
         });
 
-        $('#crop').click(function () {
+        $('#crop').click(function() {
             canvas = cropper.getCroppedCanvas({
                 width: 400,
                 height: 400
             });
 
-            canvas.toBlob(function (blob) {
+            canvas.toBlob(function(blob) {
                 url = URL.createObjectURL(blob);
                 var reader = new FileReader();
                 reader.readAsDataURL(blob);
-                reader.onloadend = function () {
+                reader.onloadend = function() {
                     var base64data = reader.result;
                     $.ajax({
                         url: 'upload.php',
@@ -680,7 +619,7 @@ $userName = $_SESSION['user_name'];
                         data: {
                             image: base64data
                         },
-                        success: function (data) {
+                        success: function(data) {
                             // console.log(data);
                             $modal.modal('hide');
                             $('#uploaded_image').attr('src', data);
@@ -833,7 +772,7 @@ $userName = $_SESSION['user_name'];
 
     // this is for getting the info of all the To_Hide checkboxes
 
-    document.getElementById('faculty_update').addEventListener('submit', function (event) {
+    document.getElementById('faculty_update').addEventListener('submit', function(event) {
         var edcheckboxes = this.querySelectorAll('input#edCheckBox');
 
         // Add a hidden field for each education block checkbox
@@ -856,5 +795,4 @@ $userName = $_SESSION['user_name'];
             this.appendChild(hiddenField2);
         }
     });
-
 </script>
