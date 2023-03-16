@@ -58,6 +58,38 @@
   </script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
   <script>
+    $(function () {
+
+      $.getJSON('labs.json', function (data) {
+        var teaching = `<div id="lab-card" class="lab-card">
+                          <div class="container">
+                            <div class="row gy-4">`;
+        var research = `<div id="lab-card" class="lab-card">
+                          <div class="container">
+                            <div class="row gy-4">`;
+        data.forEach((element, i) => {
+          var comp = `<div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
+                        <div class="service-item position-relative">
+                          <h4><a href="lab-dedicated.html?labs=${i}" class="stretched-link">${element?.name}</a></h4>
+                        </div>
+                      </div>`;
+          if (element?.type === "teaching-lab") {
+            teaching += comp;
+          } else {
+            research += comp;
+          }
+        });           
+                    
+        teaching += `</div>
+                </div>
+              </div>`;
+        research += `</div>
+                </div>
+              </div>`;
+        $(teaching).appendTo("#teaching-labs");
+        $(research).appendTo("#research-labs");
+      });
+    });
 
   </script>
 </head>
@@ -118,56 +150,15 @@
                 <li><a href="labs/functional_ceramics.html">Functional Ceramics Laboratory</a></li>
                 </li>
               </ul> -->
-              <div id="lab-card" class="lab-card">
-                <div class="container">
-                  <div class="row gy-4">
-                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
-                      <div class="service-item position-relative">
-                        <h4><a href="" class="stretched-link">Nanofabrication for Energy Materials</a></h4>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
-                      <div class="service-item position-relative">
-                        <h4><a href="" class="stretched-link">Acoustics and Vibration Lab (AVL)</a></h4>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
-                      <div class="service-item position-relative">
-                        <h4><a href="" class="stretched-link">Biomechanics Research Lab</a></h4>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
-                      <div class="service-item position-relative">
-                        <h4><a href="" class="stretched-link">Nanoscale Materials & Devices Lab</a></h4>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
-                      <div class="service-item position-relative">
-                        <h4><a href="" class="stretched-link">Numerical Experiment Laboratory</a></h4>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
-                      <div class="service-item position-relative">
-                        <h4><a href="" class="stretched-link">Composite Design and Manufacturing Research lab</a></h4>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
-                      <div class="service-item position-relative">
-                        <h4><a href="" class="stretched-link">Smart Material & Structure Research Laboratory</a></h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div class="tab-pane mt-2" id="teaching-labs">
-              <ul class="arrow">
+              <!-- <ul class="arrow">
                 <li><a href="labs/mechanical_workshop.html"> Central Workshop</a></li>
                 <li><a href="labs/design_lab.html">Design Lab</a></li>
                 <li><a href="labs/thermo_fluid.html">Thermo – Fluids Laboratory</a></li>
                 <li><a href="labs/energy_engg.html">Energy Engineering Lab</a></li>
-              </ul>
+              </ul> -->
             </div>
 
           </div>
