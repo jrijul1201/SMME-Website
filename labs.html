@@ -68,8 +68,11 @@
                           <div class="container">
                             <div class="row gy-4">`;
         data.forEach((element, i) => {
-          var comp = `<div class="col-xl-3 col-md-6 d-flex aos-init aos-animate" data-aos="zoom-out">
+          var comp = `<div class="col-xl-4 col-md-6 d-flex aos-init aos-animate mb-3" data-aos="zoom-out">
                         <div class="service-item position-relative">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <img src="labs/${element?.facility[0]?.image}" alt="" class="img-fluid">
+                          </div>
                           <h4><a href="lab-dedicated.html?labs=${i}" class="stretched-link">${element?.name}</a></h4>
                         </div>
                       </div>`;
@@ -78,8 +81,8 @@
           } else {
             research += comp;
           }
-        });           
-                    
+        });
+
         teaching += `</div>
                 </div>
               </div>`;

@@ -1,803 +1,929 @@
 [
-    {
-        "type": "teaching-lab",
-        "name": "Central Workshop",
-        "description": "Mechanical workshop is a place where students acquire knowledge on the operation of various processes involved in manufacturing and production. The workshop is intended for training as well as prototyping for students and research labs. The workshop makes students competent in handling practical work in engineering environment by learning by doing. The workshop has various shops with state-of-theart equipment such as machine shop, foundry shop, CNC shop, welding shop and 3D printing to name a few. The workshop is supported by well-trained technical staff in their respective trades. The engineering performed in the mechanical workshop focuses on producing specialized, high-precision low-volume parts for laboratory and research work.",
-        "faculty-in-charge": [13, 24],
-        "facility": [
-            {
-                "title": "CNC Lathe machine",
-                "image": "images/cnc_lathe.jpg",
-                "description-list": [
-                    "8-Station bi-directional turret.", "Programmable tailstock.", "Optional C-axis and driven tools.", "Hardened and ground integral guideways.", "Single piece monolithic cast iron bed base structure.", "Direct coupled servomotors.", "Large cross section chip chutes for easy chip flow"
-                ]
-            },
-            {
-                "title": "CNC Milling Machine",
-                "image": "images/cnc_milling.jpg",
-                "description-list": [
-                    "Versatile Tool Room Milling Machine with capability for milling,drilling, tapping & boring at any angle.", "The machine is equipped with 3-axes AC servos and variable frequency drive for spindle with 3-axes AC servos and variable frequency drive for spindle with state-of-the art Siemens 802D CNC system. All axes fitted with LM bearings.", "Equipped with 40-3000 rpm 1.5 kW spindle with variable frequency controlled ball bearings for spindle.", "Can ideally be used for tool room applications and in automobile and auto ancillaries, small industry and educational & training centres."
-                ]
-            },
-            {
-                "title": "CNC Trainmaster Lathe machine",
-                "image": "images/cnc_transmitter.jpg",
-                "description-para": "An economical and user friendly PC based system to meet Training requirements of all Training Centres, Technical and Educational Institutions in CNC machine tools operation &programming. Provides a comprehensive range of CNC functions for both Vertical and Horizontal modes of operation, with a CRT monitor and many more advanced features. PC based CNC system."
-            },
-            {
-                "title": "CNC Trainmaster Milling Machine",
-                "image": "images/CNC_Trainmaster_Millin_machine.jpg",
-                "description-list": [
-                    "Rectangular box construction made of weldment with sufficient ribbing for rigidity", "Cross beam generously ribbed to take up extreme cutting loads.", "AC Spindle motor for main drive.", "LM Guides.", "Compound slide comprising of Y axis and Z axis integral to the milling head is driven by AC servomotors coupled to the ballscrews through timer belt and pulleys."
-                ]
-            },
-            {
-                "title": "Conventional Lathe Machine",
-                "image": "images/Conventional_lathe_machine.jpg",
-                "description-para": "A lathe machine is a machine tool which is used to remove metals from a workpiece to give a desired shape and size. In other words it is a machine that is used to hold the workpiece to perform various metal removing operations such as turning, grooving, chamfering, knurling, facing, forming etc with the help of tools."
-            },
-            {
-                "title": "Universal Milling Machine",
-                "image": "images/umm.jpg",
-                "description-para": "A milling machine having a table fitted with all motions and a dividing head with change gears so that it can perform any type of milling operation."
-            },
-            {
-                "title": "Column and knee type milling machine",
-                "image": "images/Column&knee.jpg",
-                "description-list": [
-                    "<b>1. Base:</b> It gives support and rigidity to the machine and also acts as a reservoir for the cutting fluids.", "<b>2. Column: </b>The column is the main supporting frame mounted vertically on the base. The column is box shaped, heavily ribbed inside and houses all the driving mechanisms for the spindle and table feed.", "<b>3. Knee:</b> The knee is a rigid casting mounted on the front face of the column. The knee moves vertically along the guide ways and this movement enables to adjust the distance between the cutter and the job mounted on the table. The adjustment is obtained manually or automatically by operating the elevating screw provided below the knee.", "<b>4. Saddle:</b> The saddle rests on the knee and constitutes the intermediate part between the knee and the table. The saddle moves transversely, i.e., crosswise (in or out) on guide ways provided on the knee."
-                ]
-            },
-            {
-                "title": "Surface grinding machine",
-                "image": "images/Surface_grinding_machine.jpg",
-                "description-para": "Surface grinding machine is used to produce a smooth finish on flat surfaces. It is a widely used abrasive machining process in which a spinning wheel covered in rough particles cuts chips of metallic or nonmetallic substance from a workpiece, making a face of it flat or smooth."
-            },
-            {
-                "title": "Power Hacksaw",
-                "image": "images/power_hacksaw.jpg",
-                "description-para": "A hacksaw is a fine-toothed saw, originally and mainly made for cutting metal. The equivalent saw for cutting wood is usually called bow saw.<br> Most hacksaws are hand saws with a C-shaped frame that holds a blade under tension. Such hacksaws have a handle, usually a pistol grip, with pins for attaching a narrow disposable blade. The frames may also be adjustable to accommodate blades of different sizes. A screw or other mechanism is used to put the thin blade under tension."
-            },
-            {
-                "title": "Plasma arc cutting machine",
-                "image": "images/plasma_arc.jpg",
-                "description-para": "Plasma cutting is a process that cuts through electrically conductive materials by means of an accelerated jet of hot plasma. Typical materials cut with a plasma torchinclude steel, Stainless steel, aluminum, brass and copper, although other conductive metals may be cut as well. Plasma cutting is often used in fabrication shops,automotive repair and restoration, industrial construction, and salvage and scrapping operations. Due to the high speed and precision cuts combined with low cost, plasma cutting sees widespread use from large-scale industrial CNC applications down to small hobbyist shops."
-            },
-            {
-                "title": "Arc welding machine",
-                "image": "images/arc_welding_machine.jpg",
-                "description-para": ""
-            },
-            {
-                "title": "Spot welding machine",
-                "image": "images/spot_welding.jpg",
-                "description-para": "Spot welding is a process in which contacting metal surface points are joined by the heat obtained from resistance to electric current. It is a subset of electric resistance welding. Work-pieces are held together under pressure exerted by electrodes."
-            },
-            {
-                "title": "MIG Welding Machine",
-                "image": "images/mig_welding.jpg",
-                "description-para": "MIG welding (GMAW – Gas Metal Arc Welding) is the most common process used in home shops, small businesses, manufacturing and metal fabrication applications. Choose from single-phase Millermatic® all-in-one MIG welding machines or more powerful three-phase MIG welding systems that suit an endless variety of applications, including stainless steel and aluminum welding."
-            },
-            {
-                "title": "MIG Welding Stimulator",
-                "image": "images/mws.jpg",
-                "description-para": "The guide WELD welding simulator is a virtual reality welding simulator that enables students to rapidly refine basic welding skills, learn proper welding technique and explore welding career paths in a safe, virtual environment, without the need for consumables like metal and gas."
-            }
-        ],
-        "venue": "xyz",
-        "contact-person": 
-            {
-                "name": "Mr. Rakesh Kumar (JTS)",
-                "post": "",
-                "phone": "267018",
-                "mobile": "7814406509"
-            }
-    },
-    {
-        "type": "teaching-lab",
-        "name": "Design Lab",
-        "description": "At present, Design Lab facilitates hands-on learning of SolidMechanics (ME206)concepts to 5th semester Mechanical UG students, The lab experiments are related todestructive testing of materials to predict mechanical properties.<br>It facilitate hands-on learning of Theory of machines (ME309) conceptsto 6th semester Mechanical UG students, The lab experiments validates the conceptsof kinematic and dynamic theories of machine components under motion condition.Students can be able to validate and extend the theoretical knowledge into practicalmachine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts ofmachinery systems to UG students, The lab experiments validates the concepts ofvibration under forced and damped condition. Students can be able to validate andextend the theoretical knowledge into practical machine applications.The structural analysis laboratory section has been designed to facilitate the practical study ofstructural response of basic structural elements, namely,the beam, column, rigid and pin jointed frames. The experiments are partly conductedon laboratory scale models and partly using virtual simulation. The computationalfacility available with the lab supports Structural engineering MS & PhD students as well",
-        "faculty-in-charge": [7, 26],
-        "facility": [
-            {
-                "title": "Tensometer",
-                "image": "images/tensometer.jpg",
-                "description-para": "A device for evaluating various tensile properties of a material, such <a href='https://en.wiktionary.org/wiki/Young's_modulus'>Young's modulus</a>,<a href='https://en.wiktionary.org/wiki/ultimate_tensile_strength'>ultimatetensile strengt </a> and Poisson's ratio.<br>"
-            },
-            {
-              "title": "Rockwell Hardness Tester",
-              "image": "images/rockwell_hardness.jpg",
-              "description-para": "Rockwell hardness tester is used to determine the surface hardness of thematerials.Provisions to apply a major load of 60kgf,100kgf,and 150kgf areavailable in this machine.Itdirectly calculates the rockwell hardness value uponcompletion of the test."
-            },
-            {
-              "title": "Impact Tester",
-              "image": "images/impact_testing.jpg",
-              "description-para": "This is used to study the toughness or energy absorbing properties of variousmaterials under two types of impact tests i.e Izod and charpy impact tests."
-            },
-            {
-              "title": "Simply Supported Beam setup",
-              "image": "images/supported_beam.jpg",
-              "description-para": "A simply supported beam is hinged at two ends and the load is applied at a pointbetween the two hinges."
-            },
-            {
-              "title": "Cantilever setup",
-              "image": "images/fixed_beam.jpg",
-              "description-para": "It is a type of cantilever beam setup."
-            },
-            {
-              "title": "Compression Tester for Spring",
-              "image": "images/compression_spring.jpg",
-              "description-para": "This tester is used to obtain spring stiffness and their mechanical properties."
-            },
-            {
-              "title": "Surface Roughness Tester",
-              "image": "images/Surface_Roughness_Tester.jpg",
-              "description-para": "Roughness tester shows the measured roughness depth as well as the meanroughness value in micrometers or microns."
-            },
-            {
-              "title": "Static UTM",
-              "image": "images/utm.jpg",
-              "description-para": "This machine is used to perform tensile,compression,shear and bend test.Capacityof model is 50KN"
-            },
-            {
-              "title": "Torsion Tester",
-              "image": "images/torison_tester.jpg",
-              "description-para": "This tester is used to obtain twisting moment-twist relationship of a specimenand to determine shear modulus G,yield stress in pure shear,experimentalultimate torque."
-            },
-            {
-              "title": "Euler Buckling Apparatus",
-              "image": "images/euler_bulking.jpg",
-              "description-para": "To determine the euler buckling load experimentally and compare it to theeulertheory.Also to study the effect of end conditions on the buckling load."
-            },
-            {
-              "title": "Dynamic UTM",
-              "image": "images/Dynamic_utm.jpg",
-              "description-para": "This test instruments cover a broad range of fatigue, dynamic, and statictesting applications. These applications include high-cycle fatigue, low-cyclefatigue, thermo-mechanical fatigue, fracture mechanics, crack propagation andgrowth studies, fracture toughness, bi-axial, axial-torsional, multi-axial, highstrain rate, quasi-static, creep, stress-relaxation, and other types of dynamicand static tests.Capacity of model is 250KN"
-            },
-            {
-              "title": "Diffused light Polariscope",
-              "image": "images/Diffused_Research_Polariscope.jpg",
-              "description-para": "This equipment is used to view and measure the principal stress components anddirections of principal stresses by the photoelastic method for the plane stresscondition at any given point in a photoelastic sample."
-            },
-            {
-              "title": "Stress Analysis on Thin Cylinder",
-              "image": "images/stress_analysis.jpg",
-              "description-para": "To show the linearity of strain gauges in the open end condition in a thincylinder,to fine the hoop stress and strain relationship for the cylindermaterial and to fine the longitudinal and hoop strain relationship."
-            },
-            {
-              "title": "Cam-Follower Apparatus",
-              "image": "images/cam_follower.jpg",
-              "description-para": "A cam follower, also known as a track follower,[1] is a specialized type ofroller or needle bearing designed to follow cam lobe profiles. Cam followerscome in a vast array of different configurations, however the most definingcharacteristic is how the cam follower mounts to its mating part; stud style camfollowers use a stud while the yoke style has a hole through the middle."
-            },
-            {
-              "title": "Universal Governor",
-              "image": "images/universal_governor.jpg",
-              "description-para": "A governor, or speed limiter or controller, is a device used to measure andregulate the speed of a machine, such as an engine."
-            },
-            {
-              "title": "Gyroscope",
-              "image": "images/gyroscope.jpg",
-              "description-para": "Applications of gyroscopes include inertial navigation systems, such as in theHubble Telescope, or inside the steel hull of a submerged submarine. Due totheir precision, gyroscopes are also used in gyrotheodolites to maintaindirection in tunnel mining.[4] Gyroscopes can be used to constructgyrocompasses, which complement or replace magnetic compasses (in ships,aircraft and spacecraft, vehicles in general), to assist in stability (bicycles,motorcycles, and ships) or be used as part of an inertial guidance system."
-            },
-            {
-              "title": "Journal Bearing Apparatus",
-              "image": "images/journal_bearing.jpg",
-              "description-para": "A self-contained floor standing apparatus to fully investigate the effects ofspeed viscosity and load on the pressure distribution in a journal bearing."
-            },
-            {
-              "title": "Forces at reciprocating masses setup",
-              "image": "images/force_reciprocating.jpg",
-              "description-para": "This model is used to determine the primary and secondary unbalanced forces ofreciprocating mass"
-            },
-            {
-              "title": "Epicyclic Gear Train",
-              "image": "images/Epicyclic Gear Train.jpg",
-              "description-para": "Epicyclic gearing or planetary gearing is a gear system consisting of one ormore outer gears, or planet gears, revolving about a central, or sun gear.Typically, the planet gears are mounted on a movable arm or carrier, whichitself may rotate relative to the sun gear. Epicyclic gearing systems alsoincorporate the use of an outer ring gear or annulus, which meshes with theplanet gears."
-            },
-            {
-              "title": "Fatigue Testing Machine",
-              "image": "images/fatigue_testing.jpg",
-              "description-para": "Fatigue test machines use static, dynamic, and fatigue tests to evaluate thesturdiness of raw materials, components or finished products.Fatigue tests helpto determine a test sample's life expectancy under actual service loads inreal-world applications."
-            },
-            {
-              "title": "Static & dynamic Balancing",
-              "image": "images/static_dynamic_balancing.jpg",
-              "description-para": "This is suitable for conducting experiments on static balancing and dynamicbalancing with different weights. This consists of rectangular frame of steelperfectly balance with four different blocks. A protractor scale of the disc isprovided to reach exact angular position of each weight to be measured. A linearscale provided below the frame provides the measurement of each weight along theshaft. The unit is hanging from a rigid steel frame through chain for dynamicbalancing and can be fixed rigidly for static balancing.specified ."
-            },
-            {
-              "title": "Pin & Disc Wear Apparatus",
-              "image": "images/pin_disc.jpg",
-              "description-para": "Pin on disk wear testing is a method of characterizing the coefficient offriction,frictional force and rate of wear between two materials.This testingcan simulate multiple modes of wear,includingunideirectional,bidirectional,omnidirectional and quasi rotational."
-            },
-            {
-              "title": "Slip & Creep Measurement Apparatus",
-              "image": "images/slip_creep.jpg",
-              "description-para": "Slip & Creep Measurement Apparatus. This apparatus is useful for measurement ofpower transmitted for various input power conditions with varied belt tension.Belt slip or creepalso can be measured. The apparatus consists of a variablespeed motor, driving pulley and driven pulley of equal diameters."
-            },
-            {
-              "title": "Universal vibration apparatus",
-              "image": "images/Universal Vibration Apparatus.jpg",
-              "description-para": "Whirling of Shaft apparatus is\u00a0used to determine the whirling speed of theshaft. The apparatus shows how shafts vibrate transversely and \u2018whirl\u2019 at acertain rotation frequency. This helps engineers understand possible problemswith long shafts and allow for them in their designs.The Equipment shall have the following test facility:<br>1) To measure co-efficient of friction between pulley material and differentbelt materials.<br>2) To measure power transmitted with varied belt tension and plotting a graph of\u201cTension Characteristics\u201d.<br><br>This machine is used to<br>1) Equivalent spring mass system to study the undamped free vibration.<br>2) Equivalent spring mass system to study forced calibration."
-            },
-            {
-              "title": "Vibration Fundamental Trainer",
-              "image": "images/vibration_fundamental.jpg",
-              "description-para": "The VFT is designed to perform both free and forced vibration experimentswith and without damping. The pendulum vibration module includes a rod onwhich one or more mass can be attached. This basic module is designed toteach the fundamental principles such as frequency and period, and theconcept of equivalent mass."
-            },
-            {
-              "title": "Vibration Shaker",
-              "image": "images/vibration_shaker.jpg",
-              "description-para": "Shakers are used to determine product or component performance undervibration or shock loads, detect flaws through modal analysis, verifyproduct designs."
-            },
-            {
-              "title": "Piezo Actuation Unit",
-              "image": "images/peizo_actuation.jpg",
-              "description-para": "A piezo actuator can beused to control hydraulic valves, act as asmall-volume pump or special-purpose motor, and in other applicationsrequiring movement or force"
-            }
-          ],
-        "venue": "xyz",
-        "contact-person": 
-            {
-                "name":"Dinesh Thakur",
-                "post": "Junior Lab Asst.",
-                "phone": "267241",
-                "mobile":"9418169227"
-            }
-    },
-    {
-        "type": "teaching-lab",
-        "name": "Thermo – Fluids Laboratory",
-        "description": "Thermo – fluids laboratory is intended for B. Tech Mechanical Engineering and Civil Engineering Students. <br>There are three main specializations in Mechanical Engineering – Mechanical Design, Manufacturing, Thermal – Fluids. In this laboratory, the students will perform experiments related to the Thermodynamics, Fluids Mechanics, Heat Transfer and the applied part of the above subjects. The experiments are chosen in a way that the students will perform the verification of facts, finding of the performance of devices, application of the concepts in components. <br> In the Civil Engineering, Water Resources and Hydrology is one of the main branch. Some of the experiments in the laboratory will be performed by the Civil Engineering Students. Some more experiments, exclusive for the Civil Engineering Students, are under planning phase.",
-        "faculty-in-charge": [12, 14],
-        "facility": [
-            {
-              "title": "Bomb Calorimeter Experiment",
-              "image": "images/bomb_calorimtr.jpg",
-              "description-para": "Purpose of Bomb Calorimetry Experimentis used to determine the enthalpy ofcombustion"
-            },
-            {
-              "title": "Pipe losses experiment",
-              "image": "images/pipe_loses.jpg",
-              "description-para": "Major and minor losses associated with pipe flow in piping networks helps indetermining the pumping power requirements, material and fittings selection. Agood understanding of such losses helps engineers in designing optimum fluiddistribution systems, process plants etc. This apparatus is designed tointroduce students to major flow losses (Frictional) in Pipes."
-            },
-            {
-              "title": "Centrifugal pump characteristics experiment \u2013 parallel and series",
-              "image": "images/Centrifugal_pump.jpg",
-              "description-para": "The apparatus aims to study various Centrifugal pump Characteristics such asHead against Flow, Efficiency against Flow, Speed against Flow etc."
-            },
-            {
-              "title": "Lift and drag force measurements using a wind tunnel",
-              "image": "images/lift&drag.jpg",
-              "description-para": "The Wind tunnel was developed forexperimentation and demonstration purposes inthe fields of aerodynamics and fluid mechanics. It is a subsonic, open windtunnel with a square measurement section profile. Overall length is 4.5 mtrswith 1 mtr test section."
-            },
-            {
-              "title": "Variable speed centrifugal pump characteristics.",
-              "image": "images/Centrifugal_pump.jpg",
-              "description-para": "The apparatus aims to study various Centrifugal pump Characteristics such asHead against Flow, Efficiency against Flow, Speed against Flow etc."
-            },
-            {
-              "title": "Reynolds Experiment",
-              "image": "images/reynold.jpg",
-              "description-para": "Apparatus consists of a constant head tank and a small \u2018dye\u2019 tank. The constanthead tank has a horizontal/vertical transparent tube with a and a flow controlvalve at the discharge side. The velocity of water is varied by the flow controlvalve. When the dye is introduced then laminar or turbulent nature of the flowcan be visualized."
-            },
-            {
-              "title": "Bernoulli Experiment",
-              "image": "images/bernouli.jpg",
-              "description-para": "The apparatus consists of converging diverging circular test section. StaticPressure tapings are provided across the length of the section and velocity headis measured with the help of measuring tank. Inlet tank is made of Perspex anddischarge valve allows reading for various flow rates."
-            },
-            {
-              "title": "Concentric tube heat exchanger experiment",
-              "image": "images/concentric_tube.jpg",
-              "description-para": "The objective of this experiment is to study the working principles of aconcentric tube heat exchanger operating under parallel and counter flow."
-            },
-            {
-              "title": "Natural convection experiment",
-              "image": "images/natural_convention.jpg",
-              "description-list": ["Used to determine the overall heat transfer coefficient at the surface of agiven vertical metal cylinder by the natural convection method.","Used to determine the value of Nusselt number"]
-            },
-            {
-              "title": "Critical Heat Flux Apparatus",
-              "image": "images/critical_heat_flux.jpg",
-              "description-para": "This apparatus is used to study the boiling heat transfer phenomena anddetermine critical heat flux in pool boiling of water."
-            },
-            {
-              "title": "Pin Fin Apparatus",
-              "image": "images/pin_fin.jpg",
-              "description-para": "This apparatus is used to determine the variation of temperature along thelength of the pin fin under forced convection"
-            },
-            {
-              "title": "Energy Balance of IC engine",
-              "image": "images/enery_balance_ic.jpg",
-              "description-para": "The main objective of the experiment is to measure the energy contributions tothe diesel engine, which is treated as a thermodynamics system. The energycontributions that are not measured may then be estimated from an energybalance."
-            },
-            {
-              "title": "Emission characteristics of IC engine",
-              "image": "images/Emission characteristics of IC engine.jpg",
-              "description-para": "It is used to determine the effect of compression Ratio on the performance andemissions of the engine. The objective is to determine the optimum compressionratio for the better performance and lowering the emissions."
-            },
-            {
-              "title": "Two Phase Heat Transfer",
-              "image": "images/two_phase_heat.jpg",
-              "description-para": "A two-phase heat transfer experimental setup was built for this study and atotal of many two-phase heat transfer data with different flow patterns wereobtained."
-            },
-            {
-              "title": "Unsteady State Heat Transfer",
-              "image": "images/Unsteady State Heat Transfer.jpg",
-              "description-para": "The objective of this experiment is to study unsteady state heat transfer by thelumped capacitance method and to determine and compare heat transfercoefficients with expected values."
-            },
-            {
-              "title": "Refrigerator performance experiment",
-              "image": "images/Refrigerator performance experiment.jpg",
-              "description-list": ["Used to demonstrate the basic Vapour Compression Cycle of Refrigeration.","Used to study theoretical cycles and plotting of T- and P.H. charts.", "Used to study the properties of refrigerant at salient point s of thecycle"]
-            },
-            {
-              "title": "Recirculating air conditioner experiment",
-              "image": "images/Recirculating air conditioner.jpg",
-              "description-list": ["Demonstration of heating, cooling, humidification and dehumidification forconditioning of air.","Demonstration of constant enthalpy mixing of two air streams.","Study of working of re-circulating air conditioning.", "Used to study compressor efficiency at varying functioning condition."]
-            },
-            {
-              "title": "Cooling Tower Experiment",
-              "image": "images/Cooling Tower.jpg",
-              "description-para": "This experiment is used to determine thesp.humidity,relative humidity on theincoming air."
-            }
-          ],
-        "venue": "xyz",
-        "contact-person": 
-            {
-                "name": "Amit Sharma",
-                "post": "Senior Lab Asst.",
-                "phone": "267178",
-                "mobile": "9736318448"
-            }
-    },
-    {
-        "type": "teaching-lab",
-        "name": "Energy Engineering Lab",
-        "description": "This is the only lab for M Tech students",
-        "faculty-in-charge": [13, 20],
-        "facility": [
-            {
-              "title": "Solar Parabolic trough collector",
-              "image": "images/Solar_Parabolic_trough.jpg",
-              "description-para": "The parabolic trough reflector when used as a solar thermal energy collector isconstructed as a long parabolic reflecting mirror which is usually painted areflective silver, or made from polished aluminium, or uses mirrors whichextends linearly into the trough shape."
-            },
-            {
-              "title": "1kW Solar PV off grid system",
-              "image": "images/1kW Solar PV.jpg",
-              "description-list": ["Used to study influence of the workload on the efficiency of components","Used to study influence of fluctuations in solar energy and/or electricity usage on theoverall system efficiency"]
-            },
-            {
-              "title": "1 kW solar PV on-grid system",
-              "image": "images/1 kW solar PV on-grid.jpg",
-              "description-list": ["Used to study application aspects of electrical components for photovoltaic systems", " Used to study efficiency and dynamic behaviour of system components in grid-connected andstand-alone operation"]
-            },
-            {
-              "title": "Electrochemical workstation to test batteries, super capacitors, Fuel",
-              "image": "images/Electrochemical workstation.jpg",
-              "description-para": "Super-capacitors are energy storage devices similar to secondary batteries.Unlike batteries, which use chemical reactions to store energy, super-capacitorsgenerally store energy through the physical separation of electrical charges.Allsuper-capacitors consist of two electrodes immersed in a conductive liquid orconductive polymer called the electrolyte. The electrodes are separated by anionic-conducting separator that prevents shorts."
-            },
-            {
-              "title": "Bomb calorimeter",
-              "image": "images/bomb_calorimtr.jpg",
-              "description-para": "Purpose of Bomb Calorimetry Experimentis used to determine the enthalpy ofcombustion"
-            },
-            {
-              "title": "Gas calorimeter",
-              "image": "images/gas_calorimtr.jpg",
-              "description-list": ["Used for determination of exhaust gas thermal output power given up", "Used for determination of specific heat capacity of exhaust gas"]
-            },
-            {
-              "title": "Radiation measurement equipment",
-              "image": "images/Radiation measurement equipment.jpg",
-              "description-para": "This experiment setup is used to verify stefanslaw,lamberts cosine law,lambertsdistance law."
-            },
-            {
-              "title": "Solar still",
-              "image": "images/Solar still.jpg",
-              "description-para": "A solar stilldistills water, using the heat of the Sun to evaporate water sothat it may be cooled and collected, thereby purifying it. They are used inareas where drinking water is unavailable, so that clean water is obtained fromdirty water or from plants by exposing them to sunlight."
-            },
-            {
-              "title": "Flat plate and evacuated tube solar collector",
-              "image": "images/Flat plate.jpg",
-              "description-para": "Solar Flat-Plate Collector Based system is a replica of the solar water heatingsystem designed in a form of experimental setup to help students learn andexperience different parameters of performance of Flat Plate Collector System.This system helps students in practical understanding of various technicalparameters such as Overall Heat Loss Co-efficient, Heat Removal Factor andEfficiency at different flexible input parameters like radiation, wind speedetc. The system has in built sensors which measure parameters like pressure,temperature, flow rate etc, mounted on a control unit."
-            },
-            {
-              "title": "Thermal energy storage test",
-              "image": "images/Thermal energy storage.jpg",
-              "description-para": "This system has been designed to perform TES related experiment by using PCMmaterials. As there are several types of PCM, the system has been design toperform experiment with at least two PCM separately. Provision is also kept toexamine the combine (known as cascading) effect of two PCMs in thermal energystorage. To visualize the phase changes in the material another set ofarrangement are there in the system."
-            },
-            {
-              "title": "I-V Tracer",
-              "image": "images/iv_tracer.jpg",
-              "description-list": ["Study of properties of fuel oils & biomass, calorific value of Biomasssamples","Testing of Gasifier: Effect of feedstock on heat output and pollutants","Energy conservation study of IC Engine","Fabrication of photovoltaic solar cell","Performance assessment of PV modules: I-V Characteristics and Efficiency ofa Solar PV cell","Measurement of Solar Radiation and study of efficiency of a Flat PlateSolarCollector", "Piezo-electric energy harvesting: comparison of conversion efficiency ofdifferent materials and effect of vibration frequency on conversionefficiency","Electrical machines characteristics","Pollutant level measurement","Boiler, Pump & motor efficiency testing","Characterization of Refrigeration system","Study of fuel cells and measurement of their efficiency", "Implementation of a solar powered pump", "Design and implementation of a solar powered home with 24/7 availability ofelectricity", "Visit of Hydro-electric power plant<br>o Visit of Thermal power plant."]
-            }
-          ],
-        "venue": "xyz",
-        "contact-person": 
-            {
-                "name": "Amit Sharma",
-                "post": "Senior Lab Asst.",
-                "phone": "267178",
-                "mobile":"9736318448"
-            }
-    },
-    {
-      "type": "research-lab",
-      "name": "Nanofabrication for Energy Materials",
-      "description": "Nanofabrication for Energy Materials lab is designed to facilitatemanufacturing of highlyporous 1D or 2D materials for applications pertaining to fuel cell, supercapacitor, battery etc.<br>The students are mentored by two faculties- Dr.Sumit Sinha Ray and Dr. Rik Rani Koner,who bring two differentexpertise- namely, electrospinning of polymers for energy materialsproduction and chemical synthesis of metalorganic materials for further fabrication of activematerials respectively, who are collaborating for theabovementioned purpose, where a facile,cost-effective synthesis of large-scale energy materials is targeted.This lab is so far inbuilding phase with the following instrument present/ in development stage, albeit thecentralfacility, Advance Materials Research Center, is also often used for material synthesis-<br><ul><li>Fume hood</li><li>In house-built electrospinning apparatus</li><li>Analytical weighing balance</li><li>Hot air oven</li><li>Water filtration unit (in development stage)</li><li>Pool boiling set up (in development stage)</li></ul>The students are working on the following domains, some in accord with the vision of IITMandi and our very own Energy centers, however not limited to energy materials only-Development of porous 1D architecture of metal oxide for Hydrogen Evolution andOxygen Reduction studies for fuel cell applications.<br>Large scale synthesis of carbon based nanofibrous composites impregnated with metalorganic materials for energy storage and fuel cell application.Waste water treatment, water filtration and pollutant removal withsynthetic/biopolymer fiber membrane.Heat transfer via pool boiling and microchannel cooling for thermal management ofmicroelectronics.So far 8 students are involved in the said research areas, including both masters and PhDscholars. Theresearch work of this lab is heavily complimented by AMRC facilities likeFESEM, TEM, XRD, UV-Vis, TGA-DSC,FTIR, AAS, Electrochemical Work Station, XPSetc.",
-      "faculty-in-charge": [20, "Dr.Sumit Sinha"],
-      "research-areas": "<ul><li> Fuel cell, batteries and supercapacitor.</li><li> Waste water treatment, water filtration</li><li> Heat transfer via pool boiling and microchannel cooling</li></ul>",
-      "facility": [
-        {
-          "title": "Fume hood",
-          "image": "images/fume_hood.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "In house-built electrospinning apparatus",
-          "image": "images/In house-built.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Analytical weighing balance",
-          "image": "images/Analytical weighing balance.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Hot air oven",
-          "image": "images/hot_air_oven copy.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "In house-built solution-blowing apparatus",
-          "image": "",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Acoustics and Vibration Lab (AVL)",
-      "description": "The Acoustics and Vibration Laboratory is intended to provide state of artteachingand research facility in the area of Acoustics and Vibration. The lab will supplementUG and PG coursesand provide the hands on experience with latest experimentaltechnology used. This exposure will enhancestudent’s skills and also help them todeeply understand the subject. The lab will also provide researchfacility to PG andPhD students for pursuing advanced research topics in this area.",
-      "faculty-in-charge": [2, 28],
-      "research-areas": "<ul><li>Acoustics and Vibration</li></ul>",
-      "facility": [
-        {
-          "title": "Acoustic Enclosure",
-          "image": "images/acoustic_enclosure.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "GRAS microphone \u2013 0.5 inch, 0.25 inch.",
-          "image": "images/GRAS microphone.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Surface Microphone",
-          "image": "images/surface_microphone.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Low noise microphone",
-          "image": "images/lownoise_microphone.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Sound Level Meter \u2013 CESVA",
-          "image": "images/Sound Level Meter.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Accelerometers \u2013 single axis, tri-axial, high temperature",
-          "image": "images/Accelerometers.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Impact hammer",
-          "image": "images/impact_hammer.jpg",
-          "description-para": ""
-        },
-        { "title": "Shaker", "image": "images/shaker.jpg", "description-para": "" },
-        {
-          "title": "Polytech Laser Vibrometer",
-          "image": "images/Polytech Laser Vibrometer.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Data Acquisition \u2013 NI",
-          "image": "",
-          "description-para": ""
-        },
-        { "title": "10 Software \u2013 COMSOL", "image": "", "description-para": "" },
-        { "title": "Speakers", "image": "", "description-para": "" },
-        {
-          "title": "Impedance tube",
-          "image": "images/impedence_tube.jpg",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Biomechanics Research Lab",
-      "description": "Biomechanics is the study of biological structuresuch as human structure,animal structure, cell structure etc. by mean of the method ofthe mechanics. It can be classified in differentfields such as plant biomechanics,sports biomechanics, injury biomechanics. Injury biomechanics is one of themostimportant aspects of the human now days, this injury can be occurred at any time dueto accident, arthritisand post traumatic disorder. The purpose of this biomechanicslaboratory is to develop world class facilities,including experimental andcomputation investigations of the human joints, fracture analysis of the bone due toaccident and designing of orthopaedic implants. Apart from the research thislaboratory also helps to gatherknowledge in biomechanics for UG and PG students.",
-      "faculty-in-charge": [2, 18],
-      "research-areas": "<ul><li>Experimental and computation investigations of the humanjoints, fracture analysis of the bone and designing of orthopaedic implants.</li></ul>",
-      "facility": [
-        {
-          "title": "Computational facilities",
-          "image": "images/computational_facility.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "UTM (100 N) \u2013 PO released",
-          "image": "images/utm.jpg",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Nanoscale Materials & Devices Lab",
-      "description": "The main objective of the nanoscale materials & devices laboratoryat IIT Mandi is to achievecontrolled growth of various 1D, 2D materials and thin films to overcome thefundamentalchallenges in nanomanufacturing and to develop devices. Some of the ongoing projects arefocusedtowards industrial needs in the areas of nanoelectronics, nanomechanics, energy storage,smart materials andsensors. The established research laboratory will target to play a leadershiprole in the scientific communityandindustry by carrying out quality research work towards vaporphase growth of materials and developmentofdevices for optoelectronics, MEMS and sensorapplications.",
-      "faculty-in-charge": [27],
-      "research-areas": "",
-      "facility": [
-        {
-          "title": "Nanoindentation",
-          "image": "images/Nanoindentation.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Chemical Vapor Deposition",
-          "image": "images/chemical_vapour.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "DC/RF Magnetron Sputtering System",
-          "image": "images/DC_RF magnetron.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Atomic Layer Deposition",
-          "image": "images/automatic_layer.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Photocurrent measurement System",
-          "image": "images/photocurrent.jpg",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Numerical Experiment Laboratory",
-      "description": "The computational work in mechanical engineering isplaying a bigrole in many aspects as it helps to reduce the product development cycle,the failure risk, and the cost, and at the same time it improves the quality the product.However, the studentsin mechanical engineering have difficulty in visualising thatcomputational is equally important for them as it is for computer science engineers, thiscould be due to factthat there is no exclusive laboratory dedicated to computational inmechanical engineering. This laboratory would be an example for the importance ofcomputational in themechanical engineering",
-      "faculty-in-charge": [12],
-      "research-areas": "<ul><li>Computatioal Fluid Dynamics and Heat Transfer.</li></ul>",
-      "facility": [
-        {
-          "title": "Desktop Computers",
-          "image": "",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Composite Design and Manufacturing Research lab",
-      "description": "The field of composites is about materials and the way they aremade in to products.Improving manufacturing technology is the greatest challenge in the field ofcomposites.When a composite material is chosen for an application principally because of theirproperties, itis natural to choose manufacturing methods to optimise those properties.The CDML will be working in primarily to work in the areas of designing andmanufacturing of compositematerials. Designing and analysis of composite materialswill be carried out using computation methods, whilethe manufacturing of the compositematerials will be carried out using various manufacturing routes such as compressionmoulding, microwaveprocessing. The CDML will allow School of Engineering, IITMandi to capitalise on its growing relationshipswith composite industry research andeducational partners. Further, with this relationship building and growthin facultyexpertise follows a need to further establish and expand School of Engineering’s coreresearch capability andexpertise to meet research and education demand in the compositeindustry for various engineering applications.",
-      "faculty-in-charge": [24],
-      "research-areas": "<ul><li>Polymer composites, metal matrix composites, microwave, curing, cladding, FEM, mechanical testing.</li></ul>",
-      "facility": [
-        {
-          "title": "High temperature microwave applicator (2.2 kW, up to 1400 \u00b0C)",
-          "image": "images/high_temp_mw.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Polymer curing microwave applicator (1 kW, up to 700 \u00b0C)",
-          "image": "images/polymer_mw.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Multimode microwave applicator (0.9 kW, 300 \u00b0C)-Same as above",
-          "image": "images/polymer_mw.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Low speed diamond saw (200 RPM)",
-          "image": "images/diamond saw.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "High precision weighing balance (up to 0.1 mg)",
-          "image": "images/High precision.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Hot air oven (up to 200 \u00b0C)",
-          "image": "images/hao.jpg",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Smart Material & Structure Research Laboratory",
-      "description": "The design and implementation of smart structures necessitatetheintegration of 1) smart sensors and actuators, 2) structural analysis and design, and 3) intelligentelectronics and control techniques. The field of smart structures is one of several areas of science(i.e.,physics) and engineering where knowledge is distributed in several disciplines and requiresintegrationinto a single functional unit. The aim of Smart Materials and Structures Laboratory (SMSL) is toprovidestate-of-the-art facilities for the teaching, research and development of novel smart materialsandstructures technologies, and to design and implement smart devices for enhancing theadaptability,functionality, and precision of structural systemsCourses to be supported: Mechanics of solid (ME206), Mechanical Vibration (ME602),Introduction to smartmaterial and structure (MEXXX)",
-      "faculty-in-charge": [17],
-      "research-areas": "<ul><li>Polymer composites, metal matrix composites, microwave, curing, cladding, FEM, mechanical testing.</li></ul>",
-      "facility": [
-        {
-          "title": "Piezo Sensing System",
-          "image": "images/piezo-sensing.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Piezoelectric Patches",
-          "image": "images/Piezoelectric Patches.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Active Band Pass Filter System",
-          "image": "images/Active Band Pass.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Piezo Actuation System",
-          "image": "images/Piezo Actuation.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Power Oscillator for driving VibrationGenerator",
-          "image": "images/Power Oscillator.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Charge Amplifier",
-          "image": "images/Charge Amplifier.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Voltage Amplifier",
-          "image": "images/voltage_amplifier.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Creep Testing machine",
-          "image": "images/Creep Testing.jpg",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Solar Thermal Utilization and Thermal EEnergy Storage Lab",
-      "description": "This lab is intended to work on thermal utilization andthermal energy storage research",
-      "faculty-in-charge": [0, 12, 22],
-      "research-areas": "<ul><li>Thermal Energy.</li></ul>",
-      "facility": [
-        {
-          "title": "Solar Parabolic trough collector system",
-          "image": "images/Solar Parabolic.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Pyranometer",
-          "image": "images/Pyranometer.jpg",
-          "description-para": ""
-        },
-        { "title": "Data acquisition system", "image": "", "description-para": "" },
-        {
-          "title": "Pyrheliometer",
-          "image": "images/Pyrheliometer.jpg",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Biosensor and Biomaterial Lab",
-      "description": "The laboratory is involved in the development of novelmaterials forbiological applications such as sensing bioanalytes and drug delivery andtheranostic vehicles. This is ahighly interdisciplinary area and the research is beingdone in collaboration with various experts fromchemistry, biology, biomedicalengineering, electronics and electrical engineering both within the Instituteand outside.",
-      "faculty-in-charge": [9],
-      "research-areas": "<ul><li>Materials Science & Engineering</li></ul>",
-      "facility": [
-        {
-          "title": "Electrochemical Workstation",
-          "image": "images/electrochemical_workstation.jpg",
-          "description-para": ""
-        },
-        { "title": "Furnace", "image": "images/furnace.jpg", "description-para": "" },
-        {
-          "title": "3. pH Meter",
-          "image": "images/phmeter.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Fume hood",
-          "image": "images/fume_hood.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Hot plate",
-          "image": "images/High precision.jpg",
-          "description-para": ""
-        },
-        { "title": "Synthesis setup", "image": "", "description-para": "" },
-        { "title": "Synthesis setup", "image": "", "description-para": "" },
-        { "title": "Incubator", "image": "", "description-para": "" },
-        { "title": "Vortex", "image": "", "description-para": "" }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Thermoelectric Materials Laboratory",
-      "description": "In the past few decades, utilization of energy resources has highlybeen increased due to largeneed. The available natural resources are mostly being used to serve the purpose. Most of the nonrenewablenatural resources (coal, petroleum and natural gases) have limited stock, and due to very fast consumptionrate, it may not be available in next fifty years. Therefore, the need of alternate resources of energy, whichcan fulfill our requirement without affecting the ecological and environmental conditions, are in high demand.Thermoelectric (TE) materials are one of the best source of clean energy, which is efficient in conversion ofheat energy into electrical energy. There are various applications of TE materials such as electroniccomponent cooling, electricity production from waste heat of automobiles, infrared sensor, etc. Thesuitability of any materials for TE applications is decided on the basis of their thermoelectric efficiency.This thermoelectric efficiency is defined in terms of a dimensionless parameter called as thermoelectricfigure of merit ZT=α2σT/κ, where α, σ, κ and T are Seebeck coefficient, electrical conductivity, thermalconductivity and absolute temperature, respectively. Thus in order to characterize the thermoelectricmaterials one needs to know the temperature dependent behaviour of α, σ, and κ of the materials.From past five years our group is actively involve in developing low cost instruments for the characterizationof thermoelectric materials. In this direction we successfully fabricated Seebeck coefficient, resistivity andthermal conductivity measurement setups, which can provide good quality data from 300 to 625 K. We are alsosuccessful in fabricating a Z-meter which can simultaneously measure α, σ, and κ in the temperature range of300 to 625 K. We have filed a patent for this instrument. Our group is also in the process of developingvarious instruments like Vacuum Furnace, Hall-probe, Vacuum based hot-pressing system, etc., which will beuseful in studying the thermoelectric behaviour of materials and their utilization in fabrication of devices.Such efforts of developing the low cost instruments provide students a great opportunity to learn manypractical aspects of science and engineering. It reduces ourdependence to buy high cost commercialinstruments. And in long run, our consistent efforts inthe direction of developing scientific instruments areexpected to benefit the underprivileged61universities and research institutions through the transfer ofknowhow. If such efforts areencouraged, they will help in generating technical man powers in the country whichwill reduceour dependence on purchasing and maintaining the scientific instruments from abroad. Finally,itwill also help in developing useful devices for waste heat recovery and refrigeration.The main aim of thislaboratory is to provide an excellent opportunity to learn magnificence of science and technology bydeveloping scientific equipments and useful engineering devices.",
-      "faculty-in-charge": [0, 23],
-      "research-areas": "<ul><li>Energy Materials</li></ul>",
-      "facility": [
-        {
-          "title": "Thermal conductivity measurement setup",
-          "image": "images/thermal_conductivity.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Seebeck coefficient measurement setup",
-          "image": "images/Seebeck_coefficient.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Resistivity measurement setup",
-          "image": "images/Resistivity_measurement.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Figure-of-merit measurement setup",
-          "image": "",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
-    },
-    {
-      "type": "research-lab",
-      "name": "Functional Ceramics Laboratory",
-      "description": "We work in the area of glasses, glass-ceramicsandpolycrystalline ceramics for energy and clean environment applications. Major areas ofresearch are energystorage, energy harvesting and clean water. We seek materials basedsolutions in above mentioned areas.There are 5-6 PhD and 2-3 MS students who are using research facilities inthis lab at atime. Materials fabricated in this lab have been exploring for different aspects in otherlabssuch as smart materials laboratory, design lab as well as in other school’s labs.",
-      "faculty-in-charge": [16, 17],
-      "research-areas": "<ul><li>Energy storage</li><li>Waste energy harvesting</li><li>Waste water treatment</li><li>Piezoelectric sensing and actuation.</li></ul>",
-      "facility": [
-        {
-          "title": "PE loop tracer",
-          "image": "images/pep_loop.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "DC transformers",
-          "image": "images/dc_transformer.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "Contact angle measurement",
-          "image": "images/contact_angle.jpg",
-          "description-para": ""
-        },
-        {
-          "title": "d33 meter",
-          "image": "images/d33meter.jpg",
-          "description-para": ""
-        }
-      ],
-      "venue": "xyz"
+  {
+    "type": "teaching-lab",
+    "name": "Central Workshop",
+    "description": "Mechanical workshop is a place where students acquire knowledge on the operation of various processes involved in manufacturing and production. The workshop is intended for training as well as prototyping for students and research labs. The workshop makes students competent in handling practical work in engineering environment by learning by doing. The workshop has various shops with state-of-theart equipment such as machine shop, foundry shop, CNC shop, welding shop and 3D printing to name a few. The workshop is supported by well-trained technical staff in their respective trades. The engineering performed in the mechanical workshop focuses on producing specialized, high-precision low-volume parts for laboratory and research work.",
+    "faculty-in-charge": [
+      13,
+      24
+    ],
+    "facility": [
+      {
+        "title": "CNC Lathe machine",
+        "image": "images/cnc_lathe.jpg",
+        "description-list": [
+          "8-Station bi-directional turret.",
+          "Programmable tailstock.",
+          "Optional C-axis and driven tools.",
+          "Hardened and ground integral guideways.",
+          "Single piece monolithic cast iron bed base structure.",
+          "Direct coupled servomotors.",
+          "Large cross section chip chutes for easy chip flow"
+        ]
+      },
+      {
+        "title": "CNC Milling Machine",
+        "image": "images/cnc_milling.jpg",
+        "description-list": [
+          "Versatile Tool Room Milling Machine with capability for milling,drilling, tapping & boring at any angle.",
+          "The machine is equipped with 3-axes AC servos and variable frequency drive for spindle with 3-axes AC servos and variable frequency drive for spindle with state-of-the art Siemens 802D CNC system. All axes fitted with LM bearings.",
+          "Equipped with 40-3000 rpm 1.5 kW spindle with variable frequency controlled ball bearings for spindle.",
+          "Can ideally be used for tool room applications and in automobile and auto ancillaries, small industry and educational & training centres."
+        ]
+      },
+      {
+        "title": "CNC Trainmaster Lathe machine",
+        "image": "images/cnc_transmitter.jpg",
+        "description-para": "An economical and user friendly PC based system to meet Training requirements of all Training Centres, Technical and Educational Institutions in CNC machine tools operation &programming. Provides a comprehensive range of CNC functions for both Vertical and Horizontal modes of operation, with a CRT monitor and many more advanced features. PC based CNC system."
+      },
+      {
+        "title": "CNC Trainmaster Milling Machine",
+        "image": "images/CNC_Trainmaster_Millin_machine.jpg",
+        "description-list": [
+          "Rectangular box construction made of weldment with sufficient ribbing for rigidity",
+          "Cross beam generously ribbed to take up extreme cutting loads.",
+          "AC Spindle motor for main drive.",
+          "LM Guides.",
+          "Compound slide comprising of Y axis and Z axis integral to the milling head is driven by AC servomotors coupled to the ballscrews through timer belt and pulleys."
+        ]
+      },
+      {
+        "title": "Conventional Lathe Machine",
+        "image": "images/Conventional_lathe_machine.jpg",
+        "description-para": "A lathe machine is a machine tool which is used to remove metals from a workpiece to give a desired shape and size. In other words it is a machine that is used to hold the workpiece to perform various metal removing operations such as turning, grooving, chamfering, knurling, facing, forming etc with the help of tools."
+      },
+      {
+        "title": "Universal Milling Machine",
+        "image": "images/umm.jpg",
+        "description-para": "A milling machine having a table fitted with all motions and a dividing head with change gears so that it can perform any type of milling operation."
+      },
+      {
+        "title": "Column and knee type milling machine",
+        "image": "images/Column&knee.jpg",
+        "description-list": [
+          "<b>1. Base:</b> It gives support and rigidity to the machine and also acts as a reservoir for the cutting fluids.",
+          "<b>2. Column: </b>The column is the main supporting frame mounted vertically on the base. The column is box shaped, heavily ribbed inside and houses all the driving mechanisms for the spindle and table feed.",
+          "<b>3. Knee:</b> The knee is a rigid casting mounted on the front face of the column. The knee moves vertically along the guide ways and this movement enables to adjust the distance between the cutter and the job mounted on the table. The adjustment is obtained manually or automatically by operating the elevating screw provided below the knee.",
+          "<b>4. Saddle:</b> The saddle rests on the knee and constitutes the intermediate part between the knee and the table. The saddle moves transversely, i.e., crosswise (in or out) on guide ways provided on the knee."
+        ]
+      },
+      {
+        "title": "Surface grinding machine",
+        "image": "images/Surface_grinding_machine.jpg",
+        "description-para": "Surface grinding machine is used to produce a smooth finish on flat surfaces. It is a widely used abrasive machining process in which a spinning wheel covered in rough particles cuts chips of metallic or nonmetallic substance from a workpiece, making a face of it flat or smooth."
+      },
+      {
+        "title": "Power Hacksaw",
+        "image": "images/power_hacksaw.jpg",
+        "description-para": "A hacksaw is a fine-toothed saw, originally and mainly made for cutting metal. The equivalent saw for cutting wood is usually called bow saw.<br> Most hacksaws are hand saws with a C-shaped frame that holds a blade under tension. Such hacksaws have a handle, usually a pistol grip, with pins for attaching a narrow disposable blade. The frames may also be adjustable to accommodate blades of different sizes. A screw or other mechanism is used to put the thin blade under tension."
+      },
+      {
+        "title": "Plasma arc cutting machine",
+        "image": "images/plasma_arc.jpg",
+        "description-para": "Plasma cutting is a process that cuts through electrically conductive materials by means of an accelerated jet of hot plasma. Typical materials cut with a plasma torchinclude steel, Stainless steel, aluminum, brass and copper, although other conductive metals may be cut as well. Plasma cutting is often used in fabrication shops,automotive repair and restoration, industrial construction, and salvage and scrapping operations. Due to the high speed and precision cuts combined with low cost, plasma cutting sees widespread use from large-scale industrial CNC applications down to small hobbyist shops."
+      },
+      {
+        "title": "Arc welding machine",
+        "image": "images/arc_welding_machine.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Spot welding machine",
+        "image": "images/spot_welding.jpg",
+        "description-para": "Spot welding is a process in which contacting metal surface points are joined by the heat obtained from resistance to electric current. It is a subset of electric resistance welding. Work-pieces are held together under pressure exerted by electrodes."
+      },
+      {
+        "title": "MIG Welding Machine",
+        "image": "images/mig_welding.jpg",
+        "description-para": "MIG welding (GMAW – Gas Metal Arc Welding) is the most common process used in home shops, small businesses, manufacturing and metal fabrication applications. Choose from single-phase Millermatic® all-in-one MIG welding machines or more powerful three-phase MIG welding systems that suit an endless variety of applications, including stainless steel and aluminum welding."
+      },
+      {
+        "title": "MIG Welding Stimulator",
+        "image": "images/mws.jpg",
+        "description-para": "The guide WELD welding simulator is a virtual reality welding simulator that enables students to rapidly refine basic welding skills, learn proper welding technique and explore welding career paths in a safe, virtual environment, without the need for consumables like metal and gas."
+      }
+    ],
+    "venue": "xyz",
+    "contact-person": {
+      "name": "Mr. Rakesh Kumar (JTS)",
+      "post": "",
+      "phone": "267018",
+      "mobile": "7814406509"
     }
+  },
+  {
+    "type": "teaching-lab",
+    "name": "Design Lab",
+    "description": "At present, Design Lab facilitates hands-on learning of SolidMechanics (ME206)concepts to 5th semester Mechanical UG students, The lab experiments are related todestructive testing of materials to predict mechanical properties.<br>It facilitate hands-on learning of Theory of machines (ME309) conceptsto 6th semester Mechanical UG students, The lab experiments validates the conceptsof kinematic and dynamic theories of machine components under motion condition.Students can be able to validate and extend the theoretical knowledge into practicalmachine applications.<br>It facilitate hands-on learning of vibration and oscillation concepts ofmachinery systems to UG students, The lab experiments validates the concepts ofvibration under forced and damped condition. Students can be able to validate andextend the theoretical knowledge into practical machine applications.The structural analysis laboratory section has been designed to facilitate the practical study ofstructural response of basic structural elements, namely,the beam, column, rigid and pin jointed frames. The experiments are partly conductedon laboratory scale models and partly using virtual simulation. The computationalfacility available with the lab supports Structural engineering MS & PhD students as well",
+    "faculty-in-charge": [
+      7,
+      26
+    ],
+    "facility": [
+      {
+        "title": "Tensometer",
+        "image": "images/tensometer.jpg",
+        "description-para": "A device for evaluating various tensile properties of a material, such <a href='https://en.wiktionary.org/wiki/Young's_modulus'>Young's modulus</a>,<a href='https://en.wiktionary.org/wiki/ultimate_tensile_strength'>ultimatetensile strengt </a> and Poisson's ratio.<br>"
+      },
+      {
+        "title": "Rockwell Hardness Tester",
+        "image": "images/rockwell_hardness.jpg",
+        "description-para": "Rockwell hardness tester is used to determine the surface hardness of thematerials.Provisions to apply a major load of 60kgf,100kgf,and 150kgf areavailable in this machine.Itdirectly calculates the rockwell hardness value uponcompletion of the test."
+      },
+      {
+        "title": "Impact Tester",
+        "image": "images/impact_testing.jpg",
+        "description-para": "This is used to study the toughness or energy absorbing properties of variousmaterials under two types of impact tests i.e Izod and charpy impact tests."
+      },
+      {
+        "title": "Simply Supported Beam setup",
+        "image": "images/supported_beam.jpg",
+        "description-para": "A simply supported beam is hinged at two ends and the load is applied at a pointbetween the two hinges."
+      },
+      {
+        "title": "Cantilever setup",
+        "image": "images/fixed_beam.jpg",
+        "description-para": "It is a type of cantilever beam setup."
+      },
+      {
+        "title": "Compression Tester for Spring",
+        "image": "images/compression_spring.jpg",
+        "description-para": "This tester is used to obtain spring stiffness and their mechanical properties."
+      },
+      {
+        "title": "Surface Roughness Tester",
+        "image": "images/Surface_Roughness_Tester.jpg",
+        "description-para": "Roughness tester shows the measured roughness depth as well as the meanroughness value in micrometers or microns."
+      },
+      {
+        "title": "Static UTM",
+        "image": "images/utm.jpg",
+        "description-para": "This machine is used to perform tensile,compression,shear and bend test.Capacityof model is 50KN"
+      },
+      {
+        "title": "Torsion Tester",
+        "image": "images/torison_tester.jpg",
+        "description-para": "This tester is used to obtain twisting moment-twist relationship of a specimenand to determine shear modulus G,yield stress in pure shear,experimentalultimate torque."
+      },
+      {
+        "title": "Euler Buckling Apparatus",
+        "image": "images/euler_bulking.jpg",
+        "description-para": "To determine the euler buckling load experimentally and compare it to theeulertheory.Also to study the effect of end conditions on the buckling load."
+      },
+      {
+        "title": "Dynamic UTM",
+        "image": "images/Dynamic_utm.jpg",
+        "description-para": "This test instruments cover a broad range of fatigue, dynamic, and statictesting applications. These applications include high-cycle fatigue, low-cyclefatigue, thermo-mechanical fatigue, fracture mechanics, crack propagation andgrowth studies, fracture toughness, bi-axial, axial-torsional, multi-axial, highstrain rate, quasi-static, creep, stress-relaxation, and other types of dynamicand static tests.Capacity of model is 250KN"
+      },
+      {
+        "title": "Diffused light Polariscope",
+        "image": "images/Diffused_Research_Polariscope.jpg",
+        "description-para": "This equipment is used to view and measure the principal stress components anddirections of principal stresses by the photoelastic method for the plane stresscondition at any given point in a photoelastic sample."
+      },
+      {
+        "title": "Stress Analysis on Thin Cylinder",
+        "image": "images/stress_analysis.jpg",
+        "description-para": "To show the linearity of strain gauges in the open end condition in a thincylinder,to fine the hoop stress and strain relationship for the cylindermaterial and to fine the longitudinal and hoop strain relationship."
+      },
+      {
+        "title": "Cam-Follower Apparatus",
+        "image": "images/cam_follower.jpg",
+        "description-para": "A cam follower, also known as a track follower,[1] is a specialized type ofroller or needle bearing designed to follow cam lobe profiles. Cam followerscome in a vast array of different configurations, however the most definingcharacteristic is how the cam follower mounts to its mating part; stud style camfollowers use a stud while the yoke style has a hole through the middle."
+      },
+      {
+        "title": "Universal Governor",
+        "image": "images/universal_governor.jpg",
+        "description-para": "A governor, or speed limiter or controller, is a device used to measure andregulate the speed of a machine, such as an engine."
+      },
+      {
+        "title": "Gyroscope",
+        "image": "images/gyroscope.jpg",
+        "description-para": "Applications of gyroscopes include inertial navigation systems, such as in theHubble Telescope, or inside the steel hull of a submerged submarine. Due totheir precision, gyroscopes are also used in gyrotheodolites to maintaindirection in tunnel mining.[4] Gyroscopes can be used to constructgyrocompasses, which complement or replace magnetic compasses (in ships,aircraft and spacecraft, vehicles in general), to assist in stability (bicycles,motorcycles, and ships) or be used as part of an inertial guidance system."
+      },
+      {
+        "title": "Journal Bearing Apparatus",
+        "image": "images/journal_bearing.jpg",
+        "description-para": "A self-contained floor standing apparatus to fully investigate the effects ofspeed viscosity and load on the pressure distribution in a journal bearing."
+      },
+      {
+        "title": "Forces at reciprocating masses setup",
+        "image": "images/force_reciprocating.jpg",
+        "description-para": "This model is used to determine the primary and secondary unbalanced forces ofreciprocating mass"
+      },
+      {
+        "title": "Epicyclic Gear Train",
+        "image": "images/Epicyclic Gear Train.jpg",
+        "description-para": "Epicyclic gearing or planetary gearing is a gear system consisting of one ormore outer gears, or planet gears, revolving about a central, or sun gear.Typically, the planet gears are mounted on a movable arm or carrier, whichitself may rotate relative to the sun gear. Epicyclic gearing systems alsoincorporate the use of an outer ring gear or annulus, which meshes with theplanet gears."
+      },
+      {
+        "title": "Fatigue Testing Machine",
+        "image": "images/fatigue_testing.jpg",
+        "description-para": "Fatigue test machines use static, dynamic, and fatigue tests to evaluate thesturdiness of raw materials, components or finished products.Fatigue tests helpto determine a test sample's life expectancy under actual service loads inreal-world applications."
+      },
+      {
+        "title": "Static & dynamic Balancing",
+        "image": "images/static_dynamic_balancing.jpg",
+        "description-para": "This is suitable for conducting experiments on static balancing and dynamicbalancing with different weights. This consists of rectangular frame of steelperfectly balance with four different blocks. A protractor scale of the disc isprovided to reach exact angular position of each weight to be measured. A linearscale provided below the frame provides the measurement of each weight along theshaft. The unit is hanging from a rigid steel frame through chain for dynamicbalancing and can be fixed rigidly for static balancing.specified ."
+      },
+      {
+        "title": "Pin & Disc Wear Apparatus",
+        "image": "images/pin_disc.jpg",
+        "description-para": "Pin on disk wear testing is a method of characterizing the coefficient offriction,frictional force and rate of wear between two materials.This testingcan simulate multiple modes of wear,includingunideirectional,bidirectional,omnidirectional and quasi rotational."
+      },
+      {
+        "title": "Slip & Creep Measurement Apparatus",
+        "image": "images/slip_creep.jpg",
+        "description-para": "Slip & Creep Measurement Apparatus. This apparatus is useful for measurement ofpower transmitted for various input power conditions with varied belt tension.Belt slip or creepalso can be measured. The apparatus consists of a variablespeed motor, driving pulley and driven pulley of equal diameters."
+      },
+      {
+        "title": "Universal vibration apparatus",
+        "image": "images/Universal Vibration Apparatus.jpg",
+        "description-para": "Whirling of Shaft apparatus is\u00a0used to determine the whirling speed of theshaft. The apparatus shows how shafts vibrate transversely and \u2018whirl\u2019 at acertain rotation frequency. This helps engineers understand possible problemswith long shafts and allow for them in their designs.The Equipment shall have the following test facility:<br>1) To measure co-efficient of friction between pulley material and differentbelt materials.<br>2) To measure power transmitted with varied belt tension and plotting a graph of\u201cTension Characteristics\u201d.<br><br>This machine is used to<br>1) Equivalent spring mass system to study the undamped free vibration.<br>2) Equivalent spring mass system to study forced calibration."
+      },
+      {
+        "title": "Vibration Fundamental Trainer",
+        "image": "images/vibration_fundamental.jpg",
+        "description-para": "The VFT is designed to perform both free and forced vibration experimentswith and without damping. The pendulum vibration module includes a rod onwhich one or more mass can be attached. This basic module is designed toteach the fundamental principles such as frequency and period, and theconcept of equivalent mass."
+      },
+      {
+        "title": "Vibration Shaker",
+        "image": "images/vibration_shaker.jpg",
+        "description-para": "Shakers are used to determine product or component performance undervibration or shock loads, detect flaws through modal analysis, verifyproduct designs."
+      },
+      {
+        "title": "Piezo Actuation Unit",
+        "image": "images/peizo_actuation.jpg",
+        "description-para": "A piezo actuator can beused to control hydraulic valves, act as asmall-volume pump or special-purpose motor, and in other applicationsrequiring movement or force"
+      }
+    ],
+    "venue": "xyz",
+    "contact-person": {
+      "name": "Dinesh Thakur",
+      "post": "Junior Lab Asst.",
+      "phone": "267241",
+      "mobile": "9418169227"
+    }
+  },
+  {
+    "type": "teaching-lab",
+    "name": "Thermo – Fluids Laboratory",
+    "description": "Thermo – fluids laboratory is intended for B. Tech Mechanical Engineering and Civil Engineering Students. <br>There are three main specializations in Mechanical Engineering – Mechanical Design, Manufacturing, Thermal – Fluids. In this laboratory, the students will perform experiments related to the Thermodynamics, Fluids Mechanics, Heat Transfer and the applied part of the above subjects. The experiments are chosen in a way that the students will perform the verification of facts, finding of the performance of devices, application of the concepts in components. <br> In the Civil Engineering, Water Resources and Hydrology is one of the main branch. Some of the experiments in the laboratory will be performed by the Civil Engineering Students. Some more experiments, exclusive for the Civil Engineering Students, are under planning phase.",
+    "faculty-in-charge": [
+      12,
+      14
+    ],
+    "facility": [
+      {
+        "title": "Bomb Calorimeter Experiment",
+        "image": "images/bomb_calorimtr.jpg",
+        "description-para": "Purpose of Bomb Calorimetry Experimentis used to determine the enthalpy ofcombustion"
+      },
+      {
+        "title": "Pipe losses experiment",
+        "image": "images/pipe_loses.jpg",
+        "description-para": "Major and minor losses associated with pipe flow in piping networks helps indetermining the pumping power requirements, material and fittings selection. Agood understanding of such losses helps engineers in designing optimum fluiddistribution systems, process plants etc. This apparatus is designed tointroduce students to major flow losses (Frictional) in Pipes."
+      },
+      {
+        "title": "Centrifugal pump characteristics experiment \u2013 parallel and series",
+        "image": "images/Centrifugal_pump.jpg",
+        "description-para": "The apparatus aims to study various Centrifugal pump Characteristics such asHead against Flow, Efficiency against Flow, Speed against Flow etc."
+      },
+      {
+        "title": "Lift and drag force measurements using a wind tunnel",
+        "image": "images/lift&drag.jpg",
+        "description-para": "The Wind tunnel was developed forexperimentation and demonstration purposes inthe fields of aerodynamics and fluid mechanics. It is a subsonic, open windtunnel with a square measurement section profile. Overall length is 4.5 mtrswith 1 mtr test section."
+      },
+      {
+        "title": "Variable speed centrifugal pump characteristics.",
+        "image": "images/Centrifugal_pump.jpg",
+        "description-para": "The apparatus aims to study various Centrifugal pump Characteristics such asHead against Flow, Efficiency against Flow, Speed against Flow etc."
+      },
+      {
+        "title": "Reynolds Experiment",
+        "image": "images/reynold.jpg",
+        "description-para": "Apparatus consists of a constant head tank and a small \u2018dye\u2019 tank. The constanthead tank has a horizontal/vertical transparent tube with a and a flow controlvalve at the discharge side. The velocity of water is varied by the flow controlvalve. When the dye is introduced then laminar or turbulent nature of the flowcan be visualized."
+      },
+      {
+        "title": "Bernoulli Experiment",
+        "image": "images/bernouli.jpg",
+        "description-para": "The apparatus consists of converging diverging circular test section. StaticPressure tapings are provided across the length of the section and velocity headis measured with the help of measuring tank. Inlet tank is made of Perspex anddischarge valve allows reading for various flow rates."
+      },
+      {
+        "title": "Concentric tube heat exchanger experiment",
+        "image": "images/concentric_tube.jpg",
+        "description-para": "The objective of this experiment is to study the working principles of aconcentric tube heat exchanger operating under parallel and counter flow."
+      },
+      {
+        "title": "Natural convection experiment",
+        "image": "images/natural_convention.jpg",
+        "description-list": [
+          "Used to determine the overall heat transfer coefficient at the surface of agiven vertical metal cylinder by the natural convection method.",
+          "Used to determine the value of Nusselt number"
+        ]
+      },
+      {
+        "title": "Critical Heat Flux Apparatus",
+        "image": "images/critical_heat_flux.jpg",
+        "description-para": "This apparatus is used to study the boiling heat transfer phenomena anddetermine critical heat flux in pool boiling of water."
+      },
+      {
+        "title": "Pin Fin Apparatus",
+        "image": "images/pin_fin.jpg",
+        "description-para": "This apparatus is used to determine the variation of temperature along thelength of the pin fin under forced convection"
+      },
+      {
+        "title": "Energy Balance of IC engine",
+        "image": "images/enery_balance_ic.jpg",
+        "description-para": "The main objective of the experiment is to measure the energy contributions tothe diesel engine, which is treated as a thermodynamics system. The energycontributions that are not measured may then be estimated from an energybalance."
+      },
+      {
+        "title": "Emission characteristics of IC engine",
+        "image": "images/Emission characteristics of IC engine.jpg",
+        "description-para": "It is used to determine the effect of compression Ratio on the performance andemissions of the engine. The objective is to determine the optimum compressionratio for the better performance and lowering the emissions."
+      },
+      {
+        "title": "Two Phase Heat Transfer",
+        "image": "images/two_phase_heat.jpg",
+        "description-para": "A two-phase heat transfer experimental setup was built for this study and atotal of many two-phase heat transfer data with different flow patterns wereobtained."
+      },
+      {
+        "title": "Unsteady State Heat Transfer",
+        "image": "images/Unsteady State Heat Transfer.jpg",
+        "description-para": "The objective of this experiment is to study unsteady state heat transfer by thelumped capacitance method and to determine and compare heat transfercoefficients with expected values."
+      },
+      {
+        "title": "Refrigerator performance experiment",
+        "image": "images/Refrigerator performance experiment.jpg",
+        "description-list": [
+          "Used to demonstrate the basic Vapour Compression Cycle of Refrigeration.",
+          "Used to study theoretical cycles and plotting of T- and P.H. charts.",
+          "Used to study the properties of refrigerant at salient point s of thecycle"
+        ]
+      },
+      {
+        "title": "Recirculating air conditioner experiment",
+        "image": "images/Recirculating air conditioner.jpg",
+        "description-list": [
+          "Demonstration of heating, cooling, humidification and dehumidification forconditioning of air.",
+          "Demonstration of constant enthalpy mixing of two air streams.",
+          "Study of working of re-circulating air conditioning.",
+          "Used to study compressor efficiency at varying functioning condition."
+        ]
+      },
+      {
+        "title": "Cooling Tower Experiment",
+        "image": "images/Cooling Tower.jpg",
+        "description-para": "This experiment is used to determine thesp.humidity,relative humidity on theincoming air."
+      }
+    ],
+    "venue": "xyz",
+    "contact-person": {
+      "name": "Amit Sharma",
+      "post": "Senior Lab Asst.",
+      "phone": "267178",
+      "mobile": "9736318448"
+    }
+  },
+  {
+    "type": "teaching-lab",
+    "name": "Energy Engineering Lab",
+    "description": "This is the only lab for M Tech students",
+    "faculty-in-charge": [
+      13,
+      20
+    ],
+    "facility": [
+      {
+        "title": "Solar Parabolic trough collector",
+        "image": "images/Solar_Parabolic_trough.jpg",
+        "description-para": "The parabolic trough reflector when used as a solar thermal energy collector isconstructed as a long parabolic reflecting mirror which is usually painted areflective silver, or made from polished aluminium, or uses mirrors whichextends linearly into the trough shape."
+      },
+      {
+        "title": "1kW Solar PV off grid system",
+        "image": "images/1kW Solar PV.jpg",
+        "description-list": [
+          "Used to study influence of the workload on the efficiency of components",
+          "Used to study influence of fluctuations in solar energy and/or electricity usage on theoverall system efficiency"
+        ]
+      },
+      {
+        "title": "1 kW solar PV on-grid system",
+        "image": "images/1 kW solar PV on-grid.jpg",
+        "description-list": [
+          "Used to study application aspects of electrical components for photovoltaic systems",
+          " Used to study efficiency and dynamic behaviour of system components in grid-connected andstand-alone operation"
+        ]
+      },
+      {
+        "title": "Electrochemical workstation to test batteries, super capacitors, Fuel",
+        "image": "images/Electrochemical workstation.jpg",
+        "description-para": "Super-capacitors are energy storage devices similar to secondary batteries.Unlike batteries, which use chemical reactions to store energy, super-capacitorsgenerally store energy through the physical separation of electrical charges.Allsuper-capacitors consist of two electrodes immersed in a conductive liquid orconductive polymer called the electrolyte. The electrodes are separated by anionic-conducting separator that prevents shorts."
+      },
+      {
+        "title": "Bomb calorimeter",
+        "image": "images/bomb_calorimtr.jpg",
+        "description-para": "Purpose of Bomb Calorimetry Experimentis used to determine the enthalpy ofcombustion"
+      },
+      {
+        "title": "Gas calorimeter",
+        "image": "images/gas_calorimtr.jpg",
+        "description-list": [
+          "Used for determination of exhaust gas thermal output power given up",
+          "Used for determination of specific heat capacity of exhaust gas"
+        ]
+      },
+      {
+        "title": "Radiation measurement equipment",
+        "image": "images/Radiation measurement equipment.jpg",
+        "description-para": "This experiment setup is used to verify stefanslaw,lamberts cosine law,lambertsdistance law."
+      },
+      {
+        "title": "Solar still",
+        "image": "images/Solar still.jpg",
+        "description-para": "A solar stilldistills water, using the heat of the Sun to evaporate water sothat it may be cooled and collected, thereby purifying it. They are used inareas where drinking water is unavailable, so that clean water is obtained fromdirty water or from plants by exposing them to sunlight."
+      },
+      {
+        "title": "Flat plate and evacuated tube solar collector",
+        "image": "images/Flat plate.jpg",
+        "description-para": "Solar Flat-Plate Collector Based system is a replica of the solar water heatingsystem designed in a form of experimental setup to help students learn andexperience different parameters of performance of Flat Plate Collector System.This system helps students in practical understanding of various technicalparameters such as Overall Heat Loss Co-efficient, Heat Removal Factor andEfficiency at different flexible input parameters like radiation, wind speedetc. The system has in built sensors which measure parameters like pressure,temperature, flow rate etc, mounted on a control unit."
+      },
+      {
+        "title": "Thermal energy storage test",
+        "image": "images/Thermal energy storage.jpg",
+        "description-para": "This system has been designed to perform TES related experiment by using PCMmaterials. As there are several types of PCM, the system has been design toperform experiment with at least two PCM separately. Provision is also kept toexamine the combine (known as cascading) effect of two PCMs in thermal energystorage. To visualize the phase changes in the material another set ofarrangement are there in the system."
+      },
+      {
+        "title": "I-V Tracer",
+        "image": "images/iv_tracer.jpg",
+        "description-list": [
+          "Study of properties of fuel oils & biomass, calorific value of Biomasssamples",
+          "Testing of Gasifier: Effect of feedstock on heat output and pollutants",
+          "Energy conservation study of IC Engine",
+          "Fabrication of photovoltaic solar cell",
+          "Performance assessment of PV modules: I-V Characteristics and Efficiency ofa Solar PV cell",
+          "Measurement of Solar Radiation and study of efficiency of a Flat PlateSolarCollector",
+          "Piezo-electric energy harvesting: comparison of conversion efficiency ofdifferent materials and effect of vibration frequency on conversionefficiency",
+          "Electrical machines characteristics",
+          "Pollutant level measurement",
+          "Boiler, Pump & motor efficiency testing",
+          "Characterization of Refrigeration system",
+          "Study of fuel cells and measurement of their efficiency",
+          "Implementation of a solar powered pump",
+          "Design and implementation of a solar powered home with 24/7 availability ofelectricity",
+          "Visit of Hydro-electric power plant<br>o Visit of Thermal power plant."
+        ]
+      }
+    ],
+    "venue": "xyz",
+    "contact-person": {
+      "name": "Amit Sharma",
+      "post": "Senior Lab Asst.",
+      "phone": "267178",
+      "mobile": "9736318448"
+    }
+  },
+  {
+    "type": "research-lab",
+    "name": "Nanofabrication for Energy Materials",
+    "description": "Nanofabrication for Energy Materials lab is designed to facilitatemanufacturing of highlyporous 1D or 2D materials for applications pertaining to fuel cell, supercapacitor, battery etc.<br>The students are mentored by two faculties- Dr.Sumit Sinha Ray and Dr. Rik Rani Koner,who bring two differentexpertise- namely, electrospinning of polymers for energy materialsproduction and chemical synthesis of metalorganic materials for further fabrication of activematerials respectively, who are collaborating for theabovementioned purpose, where a facile,cost-effective synthesis of large-scale energy materials is targeted.This lab is so far inbuilding phase with the following instrument present/ in development stage, albeit thecentralfacility, Advance Materials Research Center, is also often used for material synthesis-<br><ul><li>Fume hood</li><li>In house-built electrospinning apparatus</li><li>Analytical weighing balance</li><li>Hot air oven</li><li>Water filtration unit (in development stage)</li><li>Pool boiling set up (in development stage)</li></ul>The students are working on the following domains, some in accord with the vision of IITMandi and our very own Energy centers, however not limited to energy materials only-Development of porous 1D architecture of metal oxide for Hydrogen Evolution andOxygen Reduction studies for fuel cell applications.<br>Large scale synthesis of carbon based nanofibrous composites impregnated with metalorganic materials for energy storage and fuel cell application.Waste water treatment, water filtration and pollutant removal withsynthetic/biopolymer fiber membrane.Heat transfer via pool boiling and microchannel cooling for thermal management ofmicroelectronics.So far 8 students are involved in the said research areas, including both masters and PhDscholars. Theresearch work of this lab is heavily complimented by AMRC facilities likeFESEM, TEM, XRD, UV-Vis, TGA-DSC,FTIR, AAS, Electrochemical Work Station, XPSetc.",
+    "faculty-in-charge": [
+      20,
+      "Dr.Sumit Sinha"
+    ],
+    "research-areas": "<ul><li> Fuel cell, batteries and supercapacitor.</li><li> Waste water treatment, water filtration</li><li> Heat transfer via pool boiling and microchannel cooling</li></ul>",
+    "facility": [
+      {
+        "title": "Fume hood",
+        "image": "images/fume_hood.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "In house-built electrospinning apparatus",
+        "image": "images/In house-built.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Analytical weighing balance",
+        "image": "images/Analytical weighing balance.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Hot air oven",
+        "image": "images/hot_air_oven copy.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "In house-built solution-blowing apparatus",
+        "image": "",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Acoustics and Vibration Lab (AVL)",
+    "description": "The Acoustics and Vibration Laboratory is intended to provide state of artteachingand research facility in the area of Acoustics and Vibration. The lab will supplementUG and PG coursesand provide the hands on experience with latest experimentaltechnology used. This exposure will enhancestudent’s skills and also help them todeeply understand the subject. The lab will also provide researchfacility to PG andPhD students for pursuing advanced research topics in this area.",
+    "faculty-in-charge": [
+      2,
+      28
+    ],
+    "research-areas": "<ul><li>Acoustics and Vibration</li></ul>",
+    "facility": [
+      {
+        "title": "Acoustic Enclosure",
+        "image": "images/acoustic_enclosure.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "GRAS microphone \u2013 0.5 inch, 0.25 inch.",
+        "image": "images/GRAS microphone.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Surface Microphone",
+        "image": "images/surface_microphone.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Low noise microphone",
+        "image": "images/lownoise_microphone.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Sound Level Meter \u2013 CESVA",
+        "image": "images/Sound Level Meter.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Accelerometers \u2013 single axis, tri-axial, high temperature",
+        "image": "images/Accelerometers.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Impact hammer",
+        "image": "images/impact_hammer.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Shaker",
+        "image": "images/shaker.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Polytech Laser Vibrometer",
+        "image": "images/Polytech Laser Vibrometer.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Data Acquisition \u2013 NI",
+        "image": "",
+        "description-para": ""
+      },
+      {
+        "title": "10 Software \u2013 COMSOL",
+        "image": "",
+        "description-para": ""
+      },
+      {
+        "title": "Speakers",
+        "image": "",
+        "description-para": ""
+      },
+      {
+        "title": "Impedance tube",
+        "image": "images/impedence_tube.jpg",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Biomechanics Research Lab",
+    "description": "Biomechanics is the study of biological structuresuch as human structure,animal structure, cell structure etc. by mean of the method ofthe mechanics. It can be classified in differentfields such as plant biomechanics,sports biomechanics, injury biomechanics. Injury biomechanics is one of themostimportant aspects of the human now days, this injury can be occurred at any time dueto accident, arthritisand post traumatic disorder. The purpose of this biomechanicslaboratory is to develop world class facilities,including experimental andcomputation investigations of the human joints, fracture analysis of the bone due toaccident and designing of orthopaedic implants. Apart from the research thislaboratory also helps to gatherknowledge in biomechanics for UG and PG students.",
+    "faculty-in-charge": [
+      2,
+      18
+    ],
+    "research-areas": "<ul><li>Experimental and computation investigations of the humanjoints, fracture analysis of the bone and designing of orthopaedic implants.</li></ul>",
+    "facility": [
+      {
+        "title": "Computational facilities",
+        "image": "images/computational_facility.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "UTM (100 N) \u2013 PO released",
+        "image": "images/utm.jpg",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Nanoscale Materials & Devices Lab",
+    "description": "The main objective of the nanoscale materials & devices laboratoryat IIT Mandi is to achievecontrolled growth of various 1D, 2D materials and thin films to overcome thefundamentalchallenges in nanomanufacturing and to develop devices. Some of the ongoing projects arefocusedtowards industrial needs in the areas of nanoelectronics, nanomechanics, energy storage,smart materials andsensors. The established research laboratory will target to play a leadershiprole in the scientific communityandindustry by carrying out quality research work towards vaporphase growth of materials and developmentofdevices for optoelectronics, MEMS and sensorapplications.",
+    "faculty-in-charge": [
+      27
+    ],
+    "research-areas": "",
+    "facility": [
+      {
+        "title": "Nanoindentation",
+        "image": "images/Nanoindentation.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Chemical Vapor Deposition",
+        "image": "images/chemical_vapour.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "DC/RF Magnetron Sputtering System",
+        "image": "images/DC_RF magnetron.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Atomic Layer Deposition",
+        "image": "images/automatic_layer.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Photocurrent measurement System",
+        "image": "images/photocurrent.jpg",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Composite Design and Manufacturing Research lab",
+    "description": "The field of composites is about materials and the way they aremade in to products.Improving manufacturing technology is the greatest challenge in the field ofcomposites.When a composite material is chosen for an application principally because of theirproperties, itis natural to choose manufacturing methods to optimise those properties.The CDML will be working in primarily to work in the areas of designing andmanufacturing of compositematerials. Designing and analysis of composite materialswill be carried out using computation methods, whilethe manufacturing of the compositematerials will be carried out using various manufacturing routes such as compressionmoulding, microwaveprocessing. The CDML will allow School of Engineering, IITMandi to capitalise on its growing relationshipswith composite industry research andeducational partners. Further, with this relationship building and growthin facultyexpertise follows a need to further establish and expand School of Engineering’s coreresearch capability andexpertise to meet research and education demand in the compositeindustry for various engineering applications.",
+    "faculty-in-charge": [
+      24
+    ],
+    "research-areas": "<ul><li>Polymer composites, metal matrix composites, microwave, curing, cladding, FEM, mechanical testing.</li></ul>",
+    "facility": [
+      {
+        "title": "High temperature microwave applicator (2.2 kW, up to 1400 \u00b0C)",
+        "image": "images/high_temp_mw.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Polymer curing microwave applicator (1 kW, up to 700 \u00b0C)",
+        "image": "images/polymer_mw.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Multimode microwave applicator (0.9 kW, 300 \u00b0C)-Same as above",
+        "image": "images/polymer_mw.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Low speed diamond saw (200 RPM)",
+        "image": "images/diamond saw.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "High precision weighing balance (up to 0.1 mg)",
+        "image": "images/High precision.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Hot air oven (up to 200 \u00b0C)",
+        "image": "images/hao.jpg",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Smart Material & Structure Research Laboratory",
+    "description": "The design and implementation of smart structures necessitatetheintegration of 1) smart sensors and actuators, 2) structural analysis and design, and 3) intelligentelectronics and control techniques. The field of smart structures is one of several areas of science(i.e.,physics) and engineering where knowledge is distributed in several disciplines and requiresintegrationinto a single functional unit. The aim of Smart Materials and Structures Laboratory (SMSL) is toprovidestate-of-the-art facilities for the teaching, research and development of novel smart materialsandstructures technologies, and to design and implement smart devices for enhancing theadaptability,functionality, and precision of structural systemsCourses to be supported: Mechanics of solid (ME206), Mechanical Vibration (ME602),Introduction to smartmaterial and structure (MEXXX)",
+    "faculty-in-charge": [
+      17
+    ],
+    "research-areas": "<ul><li>Polymer composites, metal matrix composites, microwave, curing, cladding, FEM, mechanical testing.</li></ul>",
+    "facility": [
+      {
+        "title": "Piezo Sensing System",
+        "image": "images/piezo-sensing.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Piezoelectric Patches",
+        "image": "images/Piezoelectric Patches.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Active Band Pass Filter System",
+        "image": "images/Active Band Pass.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Piezo Actuation System",
+        "image": "images/Piezo Actuation.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Power Oscillator for driving VibrationGenerator",
+        "image": "images/Power Oscillator.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Charge Amplifier",
+        "image": "images/Charge Amplifier.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Voltage Amplifier",
+        "image": "images/voltage_amplifier.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Creep Testing machine",
+        "image": "images/Creep Testing.jpg",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Solar Thermal Utilization and Thermal Energy Storage Lab",
+    "description": "This lab is intended to work on thermal utilization andthermal energy storage research",
+    "faculty-in-charge": [
+      0,
+      12,
+      22
+    ],
+    "research-areas": "<ul><li>Thermal Energy.</li></ul>",
+    "facility": [
+      {
+        "title": "Solar Parabolic trough collector system",
+        "image": "images/Solar Parabolic.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Pyranometer",
+        "image": "images/Pyranometer.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Data acquisition system",
+        "image": "",
+        "description-para": ""
+      },
+      {
+        "title": "Pyrheliometer",
+        "image": "images/Pyrheliometer.jpg",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Biosensor and Biomaterial Lab",
+    "description": "The laboratory is involved in the development of novelmaterials forbiological applications such as sensing bioanalytes and drug delivery andtheranostic vehicles. This is ahighly interdisciplinary area and the research is beingdone in collaboration with various experts fromchemistry, biology, biomedicalengineering, electronics and electrical engineering both within the Instituteand outside.",
+    "faculty-in-charge": [
+      9
+    ],
+    "research-areas": "<ul><li>Materials Science & Engineering</li></ul>",
+    "facility": [
+      {
+        "title": "Electrochemical Workstation",
+        "image": "images/electrochemical_workstation.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Furnace",
+        "image": "images/furnace.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "3. pH Meter",
+        "image": "images/phmeter.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Fume hood",
+        "image": "images/fume_hood.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Hot plate",
+        "image": "images/High precision.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Synthesis setup",
+        "image": "",
+        "description-para": ""
+      },
+      {
+        "title": "Synthesis setup",
+        "image": "",
+        "description-para": ""
+      },
+      {
+        "title": "Incubator",
+        "image": "",
+        "description-para": ""
+      },
+      {
+        "title": "Vortex",
+        "image": "",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Thermoelectric Materials Laboratory",
+    "description": "In the past few decades, utilization of energy resources has highlybeen increased due to largeneed. The available natural resources are mostly being used to serve the purpose. Most of the nonrenewablenatural resources (coal, petroleum and natural gases) have limited stock, and due to very fast consumptionrate, it may not be available in next fifty years. Therefore, the need of alternate resources of energy, whichcan fulfill our requirement without affecting the ecological and environmental conditions, are in high demand.Thermoelectric (TE) materials are one of the best source of clean energy, which is efficient in conversion ofheat energy into electrical energy. There are various applications of TE materials such as electroniccomponent cooling, electricity production from waste heat of automobiles, infrared sensor, etc. Thesuitability of any materials for TE applications is decided on the basis of their thermoelectric efficiency.This thermoelectric efficiency is defined in terms of a dimensionless parameter called as thermoelectricfigure of merit ZT=α2σT/κ, where α, σ, κ and T are Seebeck coefficient, electrical conductivity, thermalconductivity and absolute temperature, respectively. Thus in order to characterize the thermoelectricmaterials one needs to know the temperature dependent behaviour of α, σ, and κ of the materials.From past five years our group is actively involve in developing low cost instruments for the characterizationof thermoelectric materials. In this direction we successfully fabricated Seebeck coefficient, resistivity andthermal conductivity measurement setups, which can provide good quality data from 300 to 625 K. We are alsosuccessful in fabricating a Z-meter which can simultaneously measure α, σ, and κ in the temperature range of300 to 625 K. We have filed a patent for this instrument. Our group is also in the process of developingvarious instruments like Vacuum Furnace, Hall-probe, Vacuum based hot-pressing system, etc., which will beuseful in studying the thermoelectric behaviour of materials and their utilization in fabrication of devices.Such efforts of developing the low cost instruments provide students a great opportunity to learn manypractical aspects of science and engineering. It reduces ourdependence to buy high cost commercialinstruments. And in long run, our consistent efforts inthe direction of developing scientific instruments areexpected to benefit the underprivileged61universities and research institutions through the transfer ofknowhow. If such efforts areencouraged, they will help in generating technical man powers in the country whichwill reduceour dependence on purchasing and maintaining the scientific instruments from abroad. Finally,itwill also help in developing useful devices for waste heat recovery and refrigeration.The main aim of thislaboratory is to provide an excellent opportunity to learn magnificence of science and technology bydeveloping scientific equipments and useful engineering devices.",
+    "faculty-in-charge": [
+      0,
+      23
+    ],
+    "research-areas": "<ul><li>Energy Materials</li></ul>",
+    "facility": [
+      {
+        "title": "Thermal conductivity measurement setup",
+        "image": "images/thermal_conductivity.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Seebeck coefficient measurement setup",
+        "image": "images/Seebeck_coefficient.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Resistivity measurement setup",
+        "image": "images/Resistivity_measurement.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Figure-of-merit measurement setup",
+        "image": "",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Functional Ceramics Laboratory",
+    "description": "We work in the area of glasses, glass-ceramicsandpolycrystalline ceramics for energy and clean environment applications. Major areas ofresearch are energystorage, energy harvesting and clean water. We seek materials basedsolutions in above mentioned areas.There are 5-6 PhD and 2-3 MS students who are using research facilities inthis lab at atime. Materials fabricated in this lab have been exploring for different aspects in otherlabssuch as smart materials laboratory, design lab as well as in other school’s labs.",
+    "faculty-in-charge": [
+      16,
+      17
+    ],
+    "research-areas": "<ul><li>Energy storage</li><li>Waste energy harvesting</li><li>Waste water treatment</li><li>Piezoelectric sensing and actuation.</li></ul>",
+    "facility": [
+      {
+        "title": "PE loop tracer",
+        "image": "images/pep_loop.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "DC transformers",
+        "image": "images/dc_transformer.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "Contact angle measurement",
+        "image": "images/contact_angle.jpg",
+        "description-para": ""
+      },
+      {
+        "title": "d33 meter",
+        "image": "images/d33meter.jpg",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  },
+  {
+    "type": "research-lab",
+    "name": "Numerical Experiment Laboratory",
+    "description": "The computational work in mechanical engineering isplaying a bigrole in many aspects as it helps to reduce the product development cycle,the failure risk, and the cost, and at the same time it improves the quality the product.However, the studentsin mechanical engineering have difficulty in visualising thatcomputational is equally important for them as it is for computer science engineers, thiscould be due to factthat there is no exclusive laboratory dedicated to computational inmechanical engineering. This laboratory would be an example for the importance ofcomputational in themechanical engineering",
+    "faculty-in-charge": [
+      12
+    ],
+    "research-areas": "<ul><li>Computatioal Fluid Dynamics and Heat Transfer.</li></ul>",
+    "facility": [
+      {
+        "title": "Desktop Computers",
+        "image": "",
+        "description-para": ""
+      }
+    ],
+    "venue": "xyz"
+  }
 ]
