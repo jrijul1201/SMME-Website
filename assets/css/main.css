@@ -154,6 +154,13 @@ section {
   margin-bottom: 40px;
   color: var(--color-secondary);
 }
+.dashboard .section-header h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--color-secondary);
+}
 
 .section-header h3 {
   text-align: center;
@@ -4373,12 +4380,48 @@ section {
 .pg-nav-item:hover h4 {
   color: white;
 }
+.image_area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:auto
+}
+#uploaded_image{
+  width: 50vh;
+  border-radius: 50%;
+  border: 6px solid rgba(var(--color-white-rgb), 0.15);
+  margin: 0 auto;
+}
+.dashboard small{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:auto
+}
+.dashboard .section-header h4{
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-primary);
+}
+.dashboard .section-header p{
+  font-size: 1.5rem;
+}
+.dashboard .profile-section .abc{
+  color: aqua;
+}
 
 .dashboard .php-email-form {
   width: 100%;
   background: var(--color-white);
 }
-
+.dashboard .php-email-form {
+  font-size:1.5rem;
+}
+.dashboard .php-email-form .dash-btn{
+  margin: 3vh 0px 0px 0px;
+}
 .dashboard .php-email-form .form-group {
   padding-bottom: 8px;
 }
@@ -4449,19 +4492,18 @@ section {
   padding: 10px 12px;
   height: 290px;
 }
-
-.dashboard .php-email-form button[type=submit] {
+/* .dashboard .php-email-form button[type=submit] {
   background: var(--color-primary);
   border: 0;
   padding: 13px 50px;
   color: var(--color-white);
   transition: 0.4s;
   border-radius: 0;
-}
+} */
 
-.dashboard .php-email-form button[type=submit]:hover {
+/* .dashboard .php-email-form button[type=submit]:hover {
   background: rgba(var(--color-primary-rgb), 0.85);
-}
+} */
 
 @-webkit-keyframes animate-loading {
   0% {
