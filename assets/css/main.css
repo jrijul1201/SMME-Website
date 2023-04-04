@@ -1327,6 +1327,7 @@ section {
 
 .features .img-fluid {
   height: 100%;
+  max-height: 650px !important;
   width: 100%;
   margin-bottom: 3%;
   object-fit: cover;
@@ -1334,6 +1335,7 @@ section {
 
 .existing-facility-lab .img-fluid {
   height: 100%;
+  max-height: 650px !important;
   width: 100%;
   margin-bottom: 3%;
   object-fit: cover;
@@ -1364,6 +1366,7 @@ section {
   justify-content: center;
   color: var(--color-secondary);
   text-align: justify;
+  padding: 50px;
 }
 
 .facility p {

@@ -219,7 +219,7 @@
                 if (element["description-para"]) {
                     para += "<p>" + element["description-para"] + "</p>";
                 }
-                var image = `<img src=${"labs/" + element["image"]} alt="" class="img-fluid">`;
+                var image = `<img src=${"labs/" + element["image"]} alt="" class="img-fluid lab-dedicated-imgs">`;
                 if (!element["image"] || element["image"] === "") image = "";
                 if (id % 2 == 0) {
                     comp += `<div id="existing-facility-lab" class="existing-facility-lab">
