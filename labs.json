@@ -105,7 +105,7 @@
     ],
     "venue": "xyz",
     "contact-person": {
-      "name": "Mr. Rakesh Kumar (JTS)",
+      "name": "Rakesh Kumar (JTS)",
       "post": "",
       "phone": "267018",
       "mobile": "7814406509"
@@ -212,7 +212,7 @@
       },
       {
         "title": "Epicyclic Gear Train",
-        "image": "images/Epicyclic Gear Train.jpg",
+        "image": "images/Epicyclic_Gear_Train.jpg",
         "description-para": "Epicyclic gearing or planetary gearing is a gear system consisting of one ormore outer gears, or planet gears, revolving about a central, or sun gear.Typically, the planet gears are mounted on a movable arm or carrier, whichitself may rotate relative to the sun gear. Epicyclic gearing systems alsoincorporate the use of an outer ring gear or annulus, which meshes with theplanet gears."
       },
       {
@@ -237,7 +237,7 @@
       },
       {
         "title": "Universal vibration apparatus",
-        "image": "images/Universal Vibration Apparatus.jpg",
+        "image": "images/Universal_Vibration_Apparatus.jpg",
         "description-para": "Whirling of Shaft apparatus is\u00a0used to determine the whirling speed of theshaft. The apparatus shows how shafts vibrate transversely and \u2018whirl\u2019 at acertain rotation frequency. This helps engineers understand possible problemswith long shafts and allow for them in their designs.The Equipment shall have the following test facility:<br>1) To measure co-efficient of friction between pulley material and differentbelt materials.<br>2) To measure power transmitted with varied belt tension and plotting a graph of\u201cTension Characteristics\u201d.<br><br>This machine is used to<br>1) Equivalent spring mass system to study the undamped free vibration.<br>2) Equivalent spring mass system to study forced calibration."
       },
       {
@@ -338,7 +338,7 @@
       },
       {
         "title": "Emission characteristics of IC engine",
-        "image": "images/Emission characteristics of IC engine.jpg",
+        "image": "images/Emission_characteristics_of_IC_engine.jpg",
         "description-para": "It is used to determine the effect of compression Ratio on the performance andemissions of the engine. The objective is to determine the optimum compressionratio for the better performance and lowering the emissions."
       },
       {
@@ -348,12 +348,12 @@
       },
       {
         "title": "Unsteady State Heat Transfer",
-        "image": "images/Unsteady State Heat Transfer.jpg",
+        "image": "images/Unsteady_State_Heat_Transfer.jpg",
         "description-para": "The objective of this experiment is to study unsteady state heat transfer by thelumped capacitance method and to determine and compare heat transfercoefficients with expected values."
       },
       {
         "title": "Refrigerator performance experiment",
-        "image": "images/Refrigerator performance experiment.jpg",
+        "image": "images/Refrigerator_performance_experiment.jpg",
         "description-list": [
           "Used to demonstrate the basic Vapour Compression Cycle of Refrigeration.",
           "Used to study theoretical cycles and plotting of T- and P.H. charts.",
@@ -362,7 +362,7 @@
       },
       {
         "title": "Recirculating air conditioner experiment",
-        "image": "images/Recirculating air conditioner.jpg",
+        "image": "images/Recirculating_air_conditioner.jpg",
         "description-list": [
           "Demonstration of heating, cooling, humidification and dehumidification forconditioning of air.",
           "Demonstration of constant enthalpy mixing of two air streams.",
@@ -372,7 +372,7 @@
       },
       {
         "title": "Cooling Tower Experiment",
-        "image": "images/Cooling Tower.jpg",
+        "image": "images/Cooling_Tower.jpg",
         "description-para": "This experiment is used to determine thesp.humidity,relative humidity on theincoming air."
       }
     ],
@@ -400,7 +400,7 @@
       },
       {
         "title": "1kW Solar PV off grid system",
-        "image": "images/1kW Solar PV.jpg",
+        "image": "images/1kW_Solar_PV.jpg",
         "description-list": [
           "Used to study influence of the workload on the efficiency of components",
           "Used to study influence of fluctuations in solar energy and/or electricity usage on theoverall system efficiency"
@@ -408,7 +408,7 @@
       },
       {
         "title": "1 kW solar PV on-grid system",
-        "image": "images/1 kW solar PV on-grid.jpg",
+        "image": "images/1_kW_solar_PV_on-grid.jpg",
         "description-list": [
           "Used to study application aspects of electrical components for photovoltaic systems",
           " Used to study efficiency and dynamic behaviour of system components in grid-connected andstand-alone operation"
@@ -416,7 +416,7 @@
       },
       {
         "title": "Electrochemical workstation to test batteries, super capacitors, Fuel",
-        "image": "images/Electrochemical workstation.jpg",
+        "image": "images/Electrochemical_workstation.jpg",
         "description-para": "Super-capacitors are energy storage devices similar to secondary batteries.Unlike batteries, which use chemical reactions to store energy, super-capacitorsgenerally store energy through the physical separation of electrical charges.Allsuper-capacitors consist of two electrodes immersed in a conductive liquid orconductive polymer called the electrolyte. The electrodes are separated by anionic-conducting separator that prevents shorts."
       },
       {
@@ -434,22 +434,22 @@
       },
       {
         "title": "Radiation measurement equipment",
-        "image": "images/Radiation measurement equipment.jpg",
+        "image": "images/Radiation_measurement_equipment.jpg",
         "description-para": "This experiment setup is used to verify stefanslaw,lamberts cosine law,lambertsdistance law."
       },
       {
         "title": "Solar still",
-        "image": "images/Solar still.jpg",
+        "image": "images/Solar_still.jpg",
         "description-para": "A solar stilldistills water, using the heat of the Sun to evaporate water sothat it may be cooled and collected, thereby purifying it. They are used inareas where drinking water is unavailable, so that clean water is obtained fromdirty water or from plants by exposing them to sunlight."
       },
       {
         "title": "Flat plate and evacuated tube solar collector",
-        "image": "images/Flat plate.jpg",
+        "image": "images/Flat_plate.jpg",
         "description-para": "Solar Flat-Plate Collector Based system is a replica of the solar water heatingsystem designed in a form of experimental setup to help students learn andexperience different parameters of performance of Flat Plate Collector System.This system helps students in practical understanding of various technicalparameters such as Overall Heat Loss Co-efficient, Heat Removal Factor andEfficiency at different flexible input parameters like radiation, wind speedetc. The system has in built sensors which measure parameters like pressure,temperature, flow rate etc, mounted on a control unit."
       },
       {
         "title": "Thermal energy storage test",
-        "image": "images/Thermal energy storage.jpg",
+        "image": "images/Thermal_energy_storage.jpg",
         "description-para": "This system has been designed to perform TES related experiment by using PCMmaterials. As there are several types of PCM, the system has been design toperform experiment with at least two PCM separately. Provision is also kept toexamine the combine (known as cascading) effect of two PCMs in thermal energystorage. To visualize the phase changes in the material another set ofarrangement are there in the system."
       },
       {
@@ -499,17 +499,17 @@
       },
       {
         "title": "In house-built electrospinning apparatus",
-        "image": "images/In house-built.jpg",
+        "image": "images/In_house-built.jpg",
         "description-para": ""
       },
       {
         "title": "Analytical weighing balance",
-        "image": "images/Analytical weighing balance.jpg",
+        "image": "images/Analytical_weighing_balance.jpg",
         "description-para": ""
       },
       {
         "title": "Hot air oven",
-        "image": "images/hot_air_oven copy.jpg",
+        "image": "images/hot_air_oven_copy.jpg",
         "description-para": ""
       },
       {
@@ -537,7 +537,7 @@
       },
       {
         "title": "GRAS microphone \u2013 0.5 inch, 0.25 inch.",
-        "image": "images/GRAS microphone.jpg",
+        "image": "images/GRAS_microphone.jpg",
         "description-para": ""
       },
       {
@@ -552,7 +552,7 @@
       },
       {
         "title": "Sound Level Meter \u2013 CESVA",
-        "image": "images/Sound Level Meter.jpg",
+        "image": "images/Sound_Level_Meter.jpg",
         "description-para": ""
       },
       {
@@ -572,7 +572,7 @@
       },
       {
         "title": "Polytech Laser Vibrometer",
-        "image": "images/Polytech Laser Vibrometer.jpg",
+        "image": "images/Polytech_Laser_Vibrometer.jpg",
         "description-para": ""
       },
       {
@@ -642,7 +642,7 @@
       },
       {
         "title": "DC/RF Magnetron Sputtering System",
-        "image": "images/DC_RF magnetron.jpg",
+        "image": "images/DC_RF_magnetron.jpg",
         "description-para": ""
       },
       {
@@ -684,12 +684,12 @@
       },
       {
         "title": "Low speed diamond saw (200 RPM)",
-        "image": "images/diamond saw.jpg",
+        "image": "images/diamond_saw.jpg",
         "description-para": ""
       },
       {
         "title": "High precision weighing balance (up to 0.1 mg)",
-        "image": "images/High precision.jpg",
+        "image": "images/High_precision.jpg",
         "description-para": ""
       },
       {
@@ -716,27 +716,27 @@
       },
       {
         "title": "Piezoelectric Patches",
-        "image": "images/Piezoelectric Patches.jpg",
+        "image": "images/Piezoelectric_Patches.jpg",
         "description-para": ""
       },
       {
         "title": "Active Band Pass Filter System",
-        "image": "images/Active Band Pass.jpg",
+        "image": "images/Active_Band_Pass.jpg",
         "description-para": ""
       },
       {
         "title": "Piezo Actuation System",
-        "image": "images/Piezo Actuation.jpg",
+        "image": "images/Piezo_Actuation.jpg",
         "description-para": ""
       },
       {
         "title": "Power Oscillator for driving VibrationGenerator",
-        "image": "images/Power Oscillator.jpg",
+        "image": "images/Power_Oscillator.jpg",
         "description-para": ""
       },
       {
         "title": "Charge Amplifier",
-        "image": "images/Charge Amplifier.jpg",
+        "image": "images/Charge_Amplifier.jpg",
         "description-para": ""
       },
       {
@@ -746,7 +746,7 @@
       },
       {
         "title": "Creep Testing machine",
-        "image": "images/Creep Testing.jpg",
+        "image": "images/Creep_Testing.jpg",
         "description-para": ""
       }
     ],
@@ -765,7 +765,7 @@
     "facility": [
       {
         "title": "Solar Parabolic trough collector system",
-        "image": "images/Solar Parabolic.jpg",
+        "image": "images/Solar_Parabolic.jpg",
         "description-para": ""
       },
       {
@@ -817,7 +817,7 @@
       },
       {
         "title": "Hot plate",
-        "image": "images/High precision.jpg",
+        "image": "images/High_precision.jpg",
         "description-para": ""
       },
       {
