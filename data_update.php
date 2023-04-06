@@ -4,6 +4,10 @@ if (!isset($_SESSION['faculty_index'])) {
   header('location:faculty.html');
 }
 $facultyIndex = $_SESSION['faculty_index'];
+
+// header("Cache-Control: no-cache, must-revalidate");
+// ini_set('opcache.enable', 0);
+
 $data = file_get_contents('faculty.json');
 $arr = json_decode($data, true);
 
@@ -81,29 +85,30 @@ if (isset($_POST['achievement'])) {
 $arr[$facultyIndex]["recognition"] = $recognitionInfo;
 
 //  Updating IRINS Publications Info
-$irinsPubInfo = [];
-if (isset($_POST['ititle'])) {
-  foreach ($_POST['ititle'] as $index => $title) {
+// $irinsPubInfo = [];
+// if (isset($_POST['ititle'])) {
+//   foreach ($_POST['ititle'] as $index => $title) {
 
-    $doi = $_POST['idoi'][$index];
-    $year = $_POST['iyear'][$index];
-    $pubDate = $_POST['ipubDate'][$index];
-    $pubType = $_POST['ipubType'][$index];
-    $pages = $_POST['ipages'][$index];
-    $pages_v2 = str_replace('-', '&#8211;', $pages);
-    $volume = $_POST['ivolume'][$index];
-    $authors = $_POST['iauthors'][$index];
-    $journal = $_POST['ijournal'][$index];
-    $scopusC = $_POST['iscopusC'][$index];
-    $crossrefC = $_POST['icrossrefC'][$index];
-    $irinsIsHidden = ($_POST['irinsIsHidden'][$index] == "on") ? true : false;
-    $temp = array('title' => $title, 'DOI' => $doi, 'year' => $year, 'publicationDate' => $pubDate, 'publicationType' => $pubType, 'pages' => $pages_v2, 'volume' => $volume, 'authors' => $authors, 'journal' => $journal, 'scopusCitations' => $scopusC, 'crossrefCitations' => $crossrefC, 'isHidden' => $irinsIsHidden);
-    $irinsPubInfo[] = $temp;
-  }
-}
-$arr[$facultyIndex]["irins_pub"] = $irinsPubInfo;
+//     $doi = $_POST['idoi'][$index];
+//     $year = $_POST['iyear'][$index];
+//     $pubDate = $_POST['ipubDate'][$index];
+//     $pubType = $_POST['ipubType'][$index];
+//     $pages = $_POST['ipages'][$index];
+//     $pages_v2 = str_replace('-', '&#8211;', $pages);
+//     $volume = $_POST['ivolume'][$index];
+//     $authors = $_POST['iauthors'][$index];
+//     $journal = $_POST['ijournal'][$index];
+//     $scopusC = $_POST['iscopusC'][$index];
+//     $crossrefC = $_POST['icrossrefC'][$index];
+//     $irinsIsHidden = ($_POST['irinsIsHidden'][$index] == "on") ? true : false;
+//     $temp = array('title' => $title, 'DOI' => $doi, 'year' => $year, 'publicationDate' => $pubDate, 'publicationType' => $pubType, 'pages' => $pages_v2, 'volume' => $volume, 'authors' => $authors, 'journal' => $journal, 'scopusCitations' => $scopusC, 'crossrefCitations' => $crossrefC, 'isHidden' => $irinsIsHidden);
+//     $irinsPubInfo[] = $temp;
+//   }
+// }
+// $arr[$facultyIndex]["irins_pub"] = $irinsPubInfo;
 
 file_put_contents("faculty.json", json_encode($arr));
 
-header('location:faculty.html');
+header("Location: logout.php");
+exit();
 ?>
