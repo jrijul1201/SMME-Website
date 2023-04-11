@@ -68,7 +68,7 @@
                 contactOrResearch += `<i class="bi bi-phone flex-shrink-0"></i>
                                         <div>
                                             <h4>Contact Person:</h4>
-                                            <p>${f["contact-person"].name}, ${f["contact-person"].post}, 01905-${f["contact-person"].phone}, +91-${f["contact-person"].mobile}</p>
+                                            <p>${f["contact-person"].name}, ${f["contact-person"].post}<br>01905-${f["contact-person"].phone}, +91-${f["contact-person"].mobile}</p>
                                         </div>`;
             }
             if (f["research-areas"]) {
@@ -219,17 +219,19 @@
                 if (element["description-para"]) {
                     para += "<p>" + element["description-para"] + "</p>";
                 }
+                var image = `<img src=${"labs/" + element["image"]} alt="" class="img-fluid lab-dedicated-imgs">`;
+                if (!element["image"] || element["image"] === "") image = "";
                 if (id % 2 == 0) {
                     comp += `<div id="existing-facility-lab" class="existing-facility-lab">
                                 <div class="container" data-aos="fade-up">
                                     <div class="tab-pane active show" id="tab-1">
                                         <div class="row gy-4">
-                                            <div class="col-lg-6 order-2 order-lg-1 facility" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="col-lg-6 order-1 order-lg-1 facility" data-aos="fade-up" data-aos-delay="100">
                                                 <h3 style="text-align: left; width: 100%">${element.title}</h3>
                                                 ${para}${list}                                                    
                                             </div>
-                                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                                <img src=${"labs/" + element["image"]} alt="" class="img-fluid">
+                                            <div class="col-lg-6 order-2 order-lg-2 text-center">
+                                                ${image}
                                             </div>
                                         </div>
                                     </div>
@@ -246,7 +248,7 @@
                                                 ${para}${list}                                                    
                                             </div>
                                             <div class="col-lg-6 order-2 order-lg-1 text-center">
-                                                <img src=${"labs/" + element["image"]} alt="" class="img-fluid">
+                                                ${image}
                                             </div>
                                         </div>
                                     </div>

@@ -1327,6 +1327,7 @@ section {
 
 .features .img-fluid {
   height: 100%;
+  max-height: 650px !important;
   width: 100%;
   margin-bottom: 3%;
   object-fit: cover;
@@ -1334,6 +1335,7 @@ section {
 
 .existing-facility-lab .img-fluid {
   height: 100%;
+  max-height: 650px !important;
   width: 100%;
   margin-bottom: 3%;
   object-fit: cover;
@@ -1364,6 +1366,7 @@ section {
   justify-content: center;
   color: var(--color-secondary);
   text-align: justify;
+  padding: 50px;
 }
 
 .facility p {
@@ -4600,7 +4603,7 @@ section {
 }
 
 .lab-tab .nav-link.spaced h4 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .lab-tab .tab-content {
@@ -4652,9 +4655,15 @@ section {
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
-  width: 100%;
+  width: 90%;
   z-index: 10000000 !important;
-  box-shadow: 0px 0 60px 0 rgba(var(--color-secondary-rgb), 0.1);
+  box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
+  margin: auto;
+  /* box-shadow: 0px 0 60px 0 rgba(var(--color-secondary-rgb), 0.1); */
+}
+
+.lab-card .service-item img {
+  height: 160px;
 }
 
 .lab-card .service-item .icon {
@@ -4669,8 +4678,10 @@ section {
 
 .lab-card .service-item h4 {
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  margin-top: 16px;
   font-size: 20px;
+  text-align: center;
 }
 
 .lab-card .service-item h4 a {
