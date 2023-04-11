@@ -175,7 +175,7 @@ $userName = $_SESSION['user_name'];
         }
 
         .delete-icon {
-            color: red;
+            color: orangered;
             cursor: pointer;
         }
     </style>
@@ -191,6 +191,7 @@ $userName = $_SESSION['user_name'];
                 degreeSelection.addEventListener("change", function() {
                     if (degreeSelection.value === "Other") {
                         degreeOther.style.display = "inline";
+                        deg
                         degreeOther.required = true;
                     } else {
                         degreeOther.style.display = "none";
@@ -215,6 +216,7 @@ $userName = $_SESSION['user_name'];
                 var id2 = other.concat(ind);
                 var input = document.getElementById(id2);
                 input.value = value;
+                input.classList.add("input-css");
                 input.style.display = "inline";
                 select.selectedIndex = options.length - 1;
             }
@@ -375,7 +377,7 @@ $userName = $_SESSION['user_name'];
                             <option value='ME'>ME</option>
                             <option value='BE'>BE</option>
                             <option value='Other'>Other</option>
-                        </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none'></td>";
+                        </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none' ></td>";
                                     echo "<script>autoSelectOption('{$ed['degree']}', '$ind', 'eduDegree', 'degreeOther' );</script>";
                                     echo "<td><input type='text' class='input-css' name='specialization[]' value='{$ed['specialization']}'></td>";
                                     echo "<td><input type='text' class='input-css' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
@@ -506,14 +508,19 @@ $userName = $_SESSION['user_name'];
                             if (isset($ipub['DOI']) && $ipub['DOI'] != 'NA') {
                                 $DOI = $ipub['DOI'];
                             }
-                            $comp = "<div class='col-md-12 plates'>
+                            $comp = "
+                            
+                            <div class='col-md-12 plates'>
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
                                                     $title <br />
+                                                    <i style='float:right' class='fa fa-trash delete-icon' onclick='deleteIRINSPub()'></i><br><br>
+                                                    <i style='float:right' class='bi bi-pencil-square delete-icon' onclick='deleteIRINSPub()'></i>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
                                                         $subtitle
                                                 </h4>
+                                                
                                                 <p class='card-text mb-auto'>
                                                     $authors
                                                 </p>
@@ -525,7 +532,9 @@ $userName = $_SESSION['user_name'];
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>";
+                                       
+                                    </div>
+                                    ";
                             echo $comp;
                         }
                         ?>
