@@ -428,6 +428,53 @@ $userName = $_SESSION['user_name'];
                         <div class="text-center header"><button type="button" class="dash-btn btn btn-getstarted" onclick="addRecognition()">Add</button></div>
                     </div>
                 </div>
+                <!-- Patent Details -->
+                <div style="overflow: scroll;" class="profile-section section-header">
+                    <h3>Patent Details</h3>
+                    <div class="row">
+                        <table id="patent-table" class="text-center">
+                            <tr>
+                                <th>Title</th>
+                                <th>Inventors</th>
+                                <th>Application No.</th>
+                                <th>Application Date</th>
+                                <th>Patent Status</th>
+                                <th>Patent No. (if granted)</th>
+                                <th>Date of grant (if granted)</th>
+                                <th>Delete Action</th>
+                            </tr>
+                            <tbody>
+                                <?php
+                                foreach ($arr[$index]["patents"] as $ind => $pt) {
+                                    echo "<tr class='edutablerow'>";
+                                    echo "<td><input type='text' class='input-css' name='title[]' value='{$pt['title']}' required></td>";
+                                    echo "<td><input type='text' class='input-css' name='inventors[]' value='{$pt['inventors']}'></td>";
+                                    echo "<td><input type='text' class='input-css' name='applicationNumber[]' value='{$pt['applicationNumber']}'></td>";
+                                    echo "<td><input type='text' class='input-css' name='applicationDate[]' value='{$pt['applicationDate']}'></td>";
+                                    echo "<td><select class='input-css' id='patentStat" . "$ind' name='patentStatus[]'>
+                            <option value='' disabled selected>Select Patent Status</option>
+                            <option value='granted'>Granted</option>
+                            <option value='FER response submitted'>FER response submitted</option>
+                            <option value='Hearing scheduled'>Hearing scheduled</option>
+                            <option value='Deemed to be withdrawn u/s 11B(4)'>Deemed to be withdrawn u/s 11B(4)</option>
+                            <option value='FER issued'>FER issued</option>
+                            <option value='Awaiting Examination'>Awaiting Examination</option>
+                            <option value='Reply not Filed Deemed to be abandoned U/s 21(1)'>Reply not Filed Deemed to be abandoned U/s 21(1)</option>
+                            <option value='Filed (Provisional)'>Filed (Provisional)</option>
+                            <option value='Other'>Other</option>
+                        </select><input type='text' id='patentStatOther" . "$ind' name='patentStatOther[]' value='' style='display:none'></td>";
+                                    echo "<script>autoSelectOption('{$pt['patentStatus']}', '$ind', 'patentStat', 'patentStatOther');</script>";
+                                    echo "<td><input type='text' class='input-css' name='patentNumber[]' value='{$pt['patentNumber']}'></td>";
+                                    echo "<td><input type='text' class='input-css' name='grantDate[]' value='{$pt['grantDate']}'></td>";
+                                    echo "<td><i class='fa fa-trash delete-icon' onclick='deletePatent()'></i></td>";
+                                    echo "</tr>";
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                        <div class="text-center header"><button type="button" class="dash-btn btn btn-getstarted" onclick="addPatent()">Add</button></div>
+                    </div>
+                </div>
                 <!-- Text Areas -->
                 <div class="profile-section section-header">
                     <div class="row">
@@ -724,6 +771,56 @@ $userName = $_SESSION['user_name'];
 
     function deleteRecognition() {
         var table = document.getElementById("recognition-table");
+
+        table.addEventListener('click', event => {
+            // Check if the clicked element is a delete button
+            if (event.target.classList.contains('delete-icon')) {
+                // Get the row to delete
+                var row = event.target.closest('tr');
+                row.remove();
+            }
+        });
+    }
+
+    function addPatent() {
+        var table = document.getElementById("patent-table");
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        var cell6 = row.insertCell(5);
+        var cell7 = row.insertCell(6);
+        var cell8 = row.insertCell(7);
+
+        
+        cell1.innerHTML = `<input type='text' class='input-css' name='title[]' required>`;
+        cell2.innerHTML = `<input type='text' class='input-css' name='inventors[]'>`;
+        cell3.innerHTML = `<input type='text' class='input-css' name='applicationNumber[]'>`;
+        cell4.innerHTML = `<input type='text' class='input-css' name='applicationDate[]'>`;
+        cell5.innerHTML = `<select name="patentStatus[]" class='input-css'>
+                            <option value='' disabled selected>Select Patent Status</option>
+                            <option value='granted'>Granted</option>
+                            <option value='FER response submitted'>FER response submitted</option>
+                            <option value='Hearing scheduled'>Hearing scheduled</option>
+                            <option value='Deemed to be withdrawn u/s 11B(4)'>Deemed to be withdrawn u/s 11B(4)</option>
+                            <option value='FER issued'>FER issued</option>
+                            <option value='Awaiting Examination'>Awaiting Examination</option>
+                            <option value='Reply not Filed Deemed to be abandoned U/s 21(1)'>Reply not Filed Deemed to be abandoned U/s 21(1)</option>
+                            <option value='Filed (Provisional)'>Filed (Provisional)</option>
+                            <option value='Other'>Other</option>
+                    </select><input type="text" name="patentStatOther[]" value="" style="display:none">`;
+        cell6.innerHTML = `<input type='text' class='input-css' name='patentNumber[]'>`;
+        cell7.innerHTML = `<input type='text' class='input-css' name='grantDate[]'>`;
+        cell8.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deletePatent()"></i>`;
+
+        showOther("patent-table");
+
+    }
+
+    function deletePatent() {
+        var table = document.getElementById("patent-table");
 
         table.addEventListener('click', event => {
             // Check if the clicked element is a delete button
