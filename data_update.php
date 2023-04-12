@@ -84,6 +84,24 @@ if (isset($_POST['achievement'])) {
 
 $arr[$facultyIndex]["recognition"] = $recognitionInfo;
 
+//  Updating Patent Info
+$patentInfo = [];
+if (isset($_POST['title'])) {
+  foreach ($_POST['title'] as $index => $title) {
+    $inventors = $_POST['inventors'][$index];
+    $applicationNumber = $_POST['applicationNumber'][$index];
+    $applicationDate = $_POST['applicationDate'][$index];
+    $patentStatus = $_POST['patentStatus'][$index];
+    $patentStatusOther = ($patentStatus == "Other") ? $_POST['patentStatOther'][$index] : $patentStatus;
+    $patentNumber = $_POST['patentNumber'][$index];
+    $grantDate = $_POST['grantDate'][$index];
+    $temp = array('applicationNumber' => $applicationNumber, 'title' => $title, 'inventors' => $inventors, 'patentStatus' => $patentStatusOther, 'patentNumber' => $patentNumber, 'applicationDate' => $applicationDate, 'grantDate' => $grantDate);
+    $patentInfo[] = $temp;
+  }
+}
+
+$arr[$facultyIndex]["patents"] = $patentInfo;
+
 //  Updating IRINS Publications Info
 // $irinsPubInfo = [];
 // if (isset($_POST['ititle'])) {
