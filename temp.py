@@ -1,41 +1,19 @@
 import json
 import sys
+import random
+import string
 
+f = open('faculty.json')
 
-f = open('pythonOut.txt', 'w')
-sys.stdout = f
+data = json.load(f)
 
-f1 = open('faculty.json')
-data1 = json.load(f1)
-f1.close()
+# print(data[0]['irins_pub'])
 
-f2 = open('userdata.json')
-data2 = json.load(f2)
-f2.close()
+for i in range(len(data)):
+    dt = data[i]['irins_pub']
+    for j in range(len(dt)):
+        res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
+        dt[j]['id'] = res
 
-data2 = data2[2]['data']
-
-for i in range(len(data1)):
-    mail = data1[i]['mail']
-    projects = ''
-    if (mail and mail != '') :
-        for j in range(len(data2)):
-            if (data2[j]['username'] == mail):
-                projects = data2[j]['projects']
-                break
-    data1[i]['projects'] = projects
-    print(data1[i]['name'], " ", projects)
-
-# print(data1)
-
-#jsonData = json.dumps(data1)
-
-
-##f = open("pythonOut.json", "w")
-#f.write(jsonData)
-
-    
-
-
-
-    
+with open('faculty.json', 'w') as outfile:
+    json.dump(data, outfile)
