@@ -344,7 +344,7 @@ $userName = $_SESSION['user_name'];
                     </div>
                 </div>
                 <!-- Educational Details -->
-                <div style="overflow: scroll;" class="profile-section section-header">
+                <div class="profile-section section-header">
                     <h3>Education Details</h3>
                     <div class="row">
                         <table id="education-table" class="text-center">
@@ -397,7 +397,7 @@ $userName = $_SESSION['user_name'];
                     </div>
                 </div>
                 <!-- Recognition Details -->
-                <div style="overflow: scroll;" class="profile-section section-header">
+                <div class="profile-section section-header">
                     <h3>Recognition Details</h3>
                     <div class="row">
                         <table id="recognition-table" class="text-center">
@@ -429,7 +429,7 @@ $userName = $_SESSION['user_name'];
                     </div>
                 </div>
                 <!-- Patent Details -->
-                <div style="overflow: scroll;" class="profile-section section-header">
+                <div class="profile-section section-header">
                     <h3>Patent Details</h3>
                     <div class="row">
                         <table id="patent-table" class="text-center">
@@ -525,7 +525,47 @@ $userName = $_SESSION['user_name'];
                             <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
                         </i></small><br>
                         <br/>
-                    <div class="row">
+                        <div class="text-center header">
+                        <button type="button" class="dash-btn btn btn-getstarted " onclick="addIRINSPub()">Add Publication</button>
+                    </div><br>
+                        <table id="irins-pub-table" class="text-center">
+                            <tr>
+                                <th>Title</th>
+                                <th>DOI</th>
+                                <th>Year</th>
+                                <th>Publication Date</th>
+                                <th>Publication Type</th>
+                                <th>pages</th>
+                                <th>Volume</th>
+                                <th>Authors</th>
+                                <th>Journal</th>
+                                <th>scopus</th>
+                                <th>CrossRef</th>
+                                <th>IsHidden</th>
+                            </tr>
+                            <tbody>
+                            </tbody>
+                            </table><br>
+                            <table id="irins-pub-original-table" class="text-center">
+                            <!-- <div class="row"> -->
+                            <tr>
+                                <th>Title</th>
+                                <th>DOI</th>
+                                <th>Year</th>
+                                <th>Publication Date</th>
+                                <th>Publication Type</th>
+                                <th>pages</th>
+                                <th>Volume</th>
+                                <th>Authors</th>
+                                <th>Journal</th>
+                                <th>scopus</th>
+                                <th>CrossRef</th>
+                                <th>IsHidden</th>
+                            </tr>
+                                <tbody>  
+
+                                <!-- </tbody>
+                            </table> -->
                         <?php
                         foreach ($arr[$index]["irins_pub"] as $ipub) {
                             $publicationType = '';
@@ -557,11 +597,11 @@ $userName = $_SESSION['user_name'];
                             }
                             $comp = "
                             
-                            <div class='col-md-12 plates'>
+                            <tr class='edutablerow' ><div class='col-md-12 plates'>
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
-                                                    $title <br />
+                                                    $title <br/>
                                                     <i style='float:right' class='fa fa-trash delete-icon' onclick='deleteIRINSPub()'></i><br><br>
                                                     <i style='float:right' class='bi bi-pencil-square delete-icon' onclick='updateIRINSPub()'></i>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
@@ -580,14 +620,16 @@ $userName = $_SESSION['user_name'];
                                             </div>
                                         </div>
                                        
-                                    </div>
+                                    </div></tr>
                                     ";
                             echo $comp;
                         }
 
-                        echo "<button>Add Publications</button>"
+                        // echo "<button>Add Publications</button>"
                         ?>
-                    </div>
+                        </tbody>
+                    </table>
+                    <!-- </div> -->
 
                     <div class="text-center header"><button type="submit" class="dash-btn btn btn-getstarted">Update Changes</button></div>
                 </div>
@@ -868,7 +910,7 @@ $userName = $_SESSION['user_name'];
     }
 
     function deleteIRINSPub() {
-        var table = document.getElementById("irins-pub-table");
+        var table = document.getElementById("irins-pub-original-table");
         var rows = table.rows;
         var lastRow = rows[rows.length - 1];
         table.deleteRow(lastRow.rowIndex);
