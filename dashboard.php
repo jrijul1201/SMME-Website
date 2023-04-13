@@ -563,7 +563,7 @@ $userName = $_SESSION['user_name'];
                                                 <h4 class='mb-1'>
                                                     $title <br />
                                                     <i style='float:right' class='fa fa-trash delete-icon' onclick='deleteIRINSPub()'></i><br><br>
-                                                    <i style='float:right' class='bi bi-pencil-square delete-icon' onclick='deleteIRINSPub()'></i>
+                                                    <i style='float:right' class='bi bi-pencil-square delete-icon' onclick='updateIRINSPub()'></i>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
                                                         $subtitle
                                                 </h4>
@@ -584,6 +584,8 @@ $userName = $_SESSION['user_name'];
                                     ";
                             echo $comp;
                         }
+
+                        echo "<button>Add Publications</button>"
                         ?>
                     </div>
 
