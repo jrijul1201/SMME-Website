@@ -178,10 +178,82 @@ $userName = $_SESSION['user_name'];
             color: orangered;
             cursor: pointer;
         }
+       
+.modal-pub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  min-height: 250px;
+  float:center;
+  /* position: absolute; */
+  /* top: 20%; */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.modal-pub .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-pub input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.modal-pub p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-pub {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-open {
+  /* position: absolute; */
+  /* bottom: 150px; */
+}
+
+.btn-close {
+  /* transform: translate(10px, -20px); */
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+/* .modal-pub {
+  z-index: 2;
+} */
+.hidden {
+  display: none;
+}
     </style>
 
     <!-- show a textbox when other degree is selected in education section -->
     <script>
+      
         function showOther(id) {
             let educationTable = document.getElementById(id);
             let degreeSelections = educationTable.getElementsByTagName("select");
@@ -231,6 +303,7 @@ $userName = $_SESSION['user_name'];
 </head>
 
 <body>
+
     <div id="head"></div>
     <?php
 
@@ -525,9 +598,46 @@ $userName = $_SESSION['user_name'];
                             <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
                         </i></small><br>
                         <br/>
-                        <div class="text-center header">
-                        <button type="button" class="dash-btn btn btn-getstarted " onclick="addIRINSPub()">Add Publication</button>
+                        <!-- <div class="text-center header"> -->
+                        <!-- <button type="button" class="dash-btn btn btn-getstarted " onclick="addIRINSPub()">Add Publication</button> -->
+                    <!-- </div><br> -->
+                    <div class="text-center header"><button type="button" class="btn-open dash-btn btn btn-getstarted" >Add Publication</button></div>
+                    <center>
+                     <section class='modal-pub hidden'>
+                    <div class='flex'>
+                        <button style='float:right' class='btn-close'>⨉</button>
                     </div><br>
+                    <div>
+                        <h4>Add Publication</h4>
+                    </div>
+                    <div class="row">
+                    <div class="col">Title
+                    <input type='text' id='title'/></div>
+                    <div class="col">  DOI
+                    <input type='text' id='doi' /></div>
+                    <div class="col"> Year
+                    <input type='text' id='year' /></div>
+                    <div class="col">Publication-Date
+                    <input type='text' id='pub_date' /></div>
+                    <div class="col">Publication-Type
+                    <input type='text' id='pub_type' /></div>
+                    <div class="col">Pages
+                    <input type='text' id='pages' /></div>
+                    <div class="col">Volume
+                    <input type='text' id='volume' /></div>
+                    <div class="col">Authors
+                    <input type='text' id='authors' /></div>
+                    <div class="col">Scopus
+                    <input type='text' id='scopus' /></div>
+                    <div class="col">CrossRef
+                    <input type='text' id='crossref' /></div>
+                    </div>
+                    <div class="text-center header"><button type="button" class="dash-btn btn btn-getstarted" >Submit</button>
+                    </section>
+                            </center>
+                    <div class='overlay-form hidden'></div>
+                   <br>
+
                         <table id="irins-pub-table" class="text-center">
                             <tr>
                                 <th>Title</th>
@@ -546,26 +656,10 @@ $userName = $_SESSION['user_name'];
                             <tbody>
                             </tbody>
                             </table><br>
-                            <table id="irins-pub-original-table" class="text-center">
-                            <!-- <div class="row"> -->
-                            <tr>
-                                <th>Title</th>
-                                <th>DOI</th>
-                                <th>Year</th>
-                                <th>Publication Date</th>
-                                <th>Publication Type</th>
-                                <th>pages</th>
-                                <th>Volume</th>
-                                <th>Authors</th>
-                                <th>Journal</th>
-                                <th>scopus</th>
-                                <th>CrossRef</th>
-                                <th>IsHidden</th>
-                            </tr>
-                                <tbody>  
+                           
 
-                                <!-- </tbody>
-                            </table> -->
+                           <div id="irins-pub" class="row">
+                          
                         <?php
                         foreach ($arr[$index]["irins_pub"] as $ipub) {
                             $publicationType = '';
@@ -574,6 +668,7 @@ $userName = $_SESSION['user_name'];
                             $authors = '';
                             $journal = '';
                             $DOI = '';
+                            $id='';
                             if (isset($ipub['title']) && $ipub['title'] != 'NA') {
                                 $title = $ipub['title'] . " ";
                             }
@@ -595,15 +690,18 @@ $userName = $_SESSION['user_name'];
                             if (isset($ipub['DOI']) && $ipub['DOI'] != 'NA') {
                                 $DOI = $ipub['DOI'];
                             }
+                            if (isset($ipub['id']) && $ipub['id'] != 'NA') {
+                                $id = $ipub['id'];
+                            }
                             $comp = "
                             
-                            <tr class='edutablerow' ><div class='col-md-12 plates'>
+                          <div id='$id' class='col-md-12 plates'>
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
                                                     $title <br/>
-                                                    <i style='float:right' class='fa fa-trash delete-icon' onclick='deleteIRINSPub()'></i><br><br>
-                                                    <i style='float:right' class='bi bi-pencil-square delete-icon' onclick='updateIRINSPub()'></i>
+                                                    <i style='float:right' class='fa fa-trash delete-icon' onclick=deleteIRINSPub('$id')></i><br><br>
+                                                    <i style='float:right' class='bi bi-pencil-square delete-icon' onclick=editIRINSPub('$id')></i>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
                                                         $subtitle
                                                 </h4>
@@ -620,16 +718,18 @@ $userName = $_SESSION['user_name'];
                                             </div>
                                         </div>
                                        
-                                    </div></tr>
+                                    </div>
+                                 
+                                                               
                                     ";
                             echo $comp;
                         }
 
                         // echo "<button>Add Publications</button>"
                         ?>
-                        </tbody>
-                    </table>
-                    <!-- </div> -->
+                        <!-- $id1="test" -->
+                      
+                    </div>
 
                     <div class="text-center header"><button type="submit" class="dash-btn btn btn-getstarted">Update Changes</button></div>
                 </div>
@@ -665,6 +765,22 @@ $userName = $_SESSION['user_name'];
 
 <!-- Cropping functionality enable script -->
 <script>
+const modal = document.querySelector(".modal-pub");
+const overlay = document.querySelector(".overlay-form");
+const openModalBtn = document.querySelector(".btn-open");
+const closeModalBtn = document.querySelector(".btn-close");
+const openModal = function () {
+  modal.classList.remove("hidden");
+//   overlay.classList.remove("hidden");
+};
+openModalBtn.addEventListener("click", openModal);
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+//   overlay.classList.add("hidden");
+};
+closeModalBtn.addEventListener("click", closeModal);
+
     $(document).ready(function() {
 
         var $modal = $('#modal');
@@ -909,16 +1025,15 @@ $userName = $_SESSION['user_name'];
 
     }
 
-    function deleteIRINSPub() {
-        var table = document.getElementById("irins-pub-original-table");
-        var rows = table.rows;
-        var lastRow = rows[rows.length - 1];
-        table.deleteRow(lastRow.rowIndex);
-        if (rows.length == 1) {
-            document.getElementById("delIPB").disabled = true;
-        }
+    function deleteIRINSPub(id) {
+        var card = document.getElementById(id).remove();
 
     }
+    function editIRINSPub(id) {
+        var card = document.getElementById(id).remove();
+
+    }
+   
 
     // this is for getting the info of all the To_Hide checkboxes
 
