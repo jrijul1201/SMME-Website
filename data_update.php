@@ -5,8 +5,8 @@ if (!isset($_SESSION['faculty_index'])) {
 }
 $facultyIndex = $_SESSION['faculty_index'];
 
-// header("Cache-Control: no-cache, must-revalidate");
-// ini_set('opcache.enable', 0);
+header("Cache-Control: no-cache, must-revalidate");
+ini_set('opcache.enable', 0);
 
 $data = file_get_contents('faculty.json');
 $arr = json_decode($data, true);
@@ -20,14 +20,9 @@ $arr[$facultyIndex]["speciality"] = $_POST['speciality'];
 $arr[$facultyIndex]["gs"] = $_POST['gslink'];
 $arr[$facultyIndex]["irins"] = $_POST['irinsid'];
 $arr[$facultyIndex]["personal_page_link"] = $_POST['pplink'];
-$arr[$facultyIndex]["publications"] = $_POST['publications'];
 $arr[$facultyIndex]["interests"] = $_POST['interests'];
-$arr[$facultyIndex]["projects"] = $_POST['projects'];
 $arr[$facultyIndex]["openings"] = $_POST['openings'];
 $arr[$facultyIndex]["experiences"] = $_POST['experiences'];
-$arr[$facultyIndex]["conferences"] = $_POST['conferences'];
-$arr[$facultyIndex]["awards"] = $_POST['awards'];
-$arr[$facultyIndex]["activity"] = $_POST['activity'];
 
 //  Updating Education Info
 $educationInfo = [];
@@ -127,6 +122,11 @@ $arr[$facultyIndex]["patents"] = $patentInfo;
 
 file_put_contents("faculty.json", json_encode($arr));
 
-header("Location: logout.php");
+echo "<script>
+alert('Changes has been updated successfully. If unable to see the changes, then clear your browser cache');
+window.location.href='logout.php';
+</script>";
+
+// header("Location: logout.php");
 exit();
 ?>
