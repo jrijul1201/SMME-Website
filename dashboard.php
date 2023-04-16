@@ -268,13 +268,17 @@ button {
             for (let i = 0; i < degreeSelections.length; i++) {
                 let degreeSelection = degreeSelections[i];
                 let degreeOther = degreeSelection.nextElementSibling;
+                console.log("d")
+                console.log(degreeSelection)
+                console.log(degreeOther)
                 degreeSelection.addEventListener("change", function() {
                     if (degreeSelection.value === "Other") {
                         degreeOther.style.display = "inline";
-                        deg
                         degreeOther.required = true;
+                        degreeSelection.classList.remove('input-css');
                     } else {
                         degreeOther.style.display = "none";
+                        degreeSelection.classList.add('input-css');
                     }
                 });
             }
@@ -443,7 +447,7 @@ button {
                                 <?php
                                 foreach ($arr[$index]["education"] as $ind => $ed) {
                                     echo "<tr class='edutablerow'>";
-                                    echo "<td><select class='input-css' id='eduDegree" . "$ind' name='degree[]' required>
+                                    echo "<td><select id='eduDegree" . "$ind' class='input-css' name='degree[]' style='display:inline;' required>
                             <option value='' disabled selected>Select a Degree</option>
                             <option value='BTech'>BTech</option>
                             <option value='BTech - MTech (Dual)'>BTech - MTech (Dual)</option>
