@@ -345,7 +345,7 @@ button {
 
             <!-- Crop Modal Code -->
 
-            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -368,7 +368,7 @@ button {
                         </div>
                         <div class="modal-footer">
                             <button type="button" id="crop" class="btn btn-primary">Crop</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" id="cancelbtn" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                         </div>
                     </div>
                 </div>
@@ -948,6 +948,10 @@ closeModalBtn.addEventListener("click", closeModal);
         }).on('hidden.bs.modal', function() {
             cropper.destroy();
             cropper = null;
+        });
+
+        $('#cancelbtn').click(function() {
+            $modal.modal('hide');
         });
 
         $('#crop').click(function() {
