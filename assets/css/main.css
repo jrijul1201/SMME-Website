@@ -278,6 +278,7 @@ section {
   opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -295,7 +296,7 @@ section {
   transition: all 0.5s;
   background-color: #fff;
   /* opacity: 0.9; */
-  z-index: 997;
+  /* z-index: 990; */
 }
 
 .header.sticked {
@@ -4492,8 +4493,9 @@ section {
 }
 
 .dashboard .php-email-form textarea {
-  padding: 10px 12px;
-  height: 290px;
+  padding: 0px 0px;
+  /* padding: 10px 12px; */
+  /* height: 290px; */
 }
 /* .dashboard .php-email-form button[type=submit] {
   background: var(--color-primary);
