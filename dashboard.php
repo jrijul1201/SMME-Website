@@ -182,6 +182,10 @@ $userName = $_SESSION['user_name'];
             color: orangered;
             cursor: pointer;
         }
+        .asteriskreq {
+            color: red;
+            font-weight: bold;
+        }
        
 /* .modal-pub {
   display: flex;
@@ -387,23 +391,23 @@ button {
                     <h3>Personal Information</h3>
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <label for="fname">Name:</label>
+                            <label for="fname">Name<span class="asteriskreq">*</span>:</label>
                             <input type="text" name="name" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
-                            <label for="phone">Phone:</label> +91-1905-
+                            <label for="phone">Phone<span class="asteriskreq">*</span>:</label> +91-1905-
                             <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
-                            <label for="address">Address:</label>
+                            <label for="address">Address<span class="asteriskreq">*</span>:</label>
                             <input type="text" name="address" class="form-control" id="address" value="<?php echo $arr[$index]["address"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
-                            <label for="post">Designation:</label>
+                            <label for="post">Designation<span class="asteriskreq">*</span>:</label>
                             <input type="text" name="post" class="form-control" id="post" value="<?php echo $arr[$index]["post"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
-                            <label for="speciality">Specialisation:</label>
+                            <label for="speciality">Specialisation<span class="asteriskreq">*</span>:</label>
                             <input type="text" name="speciality" class="form-control" id="speciality" value="<?php echo $arr[$index]["speciality"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
@@ -426,7 +430,7 @@ button {
                     <div class="row">
                         <table id="education-table" class="text-center">
                             <tr>
-                                <th>Degree</th>
+                                <th>Degree<span class="asteriskreq">*</span></th>
                                 <th>Specialization</th>
                                 <th>Start Year</th>
                                 <th>End Year</th>
@@ -479,8 +483,8 @@ button {
                     <div class="row">
                         <table id="recognition-table" class="text-center">
                             <tr>
-                                <th>Achievement</th>
-                                <th>Description</th>
+                                <th>Achievement<span class="asteriskreq">*</span></th>
+                                <th>Description<span class="asteriskreq">*</span></th>
                                 <th>Delete Action</th>
                             </tr>
                             <tbody>
@@ -495,7 +499,7 @@ button {
                             <option value='Other'>Other</option>
                         </select><input type='text' id='achieveOther" . "$ind' name='achieveOther[]' value='' style='display:none'></td>";
                                     echo "<script>autoSelectOption('{$rg['achievement']}', '$ind', 'recAchieve', 'achieveOther');</script>";
-                                    echo "<td><input type='text' class='input-css' name='description[]' value='{$rg['description']}'></td>";
+                                    echo "<td> <textarea name='text' wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description[]' required>{$rg['description']}</textarea></td>";
                                     echo "<td><i class='fa fa-trash delete-icon' onclick='deleteRecognition()'></i></td>";
                                     echo "</tr>";
                                 }
@@ -511,7 +515,7 @@ button {
                     <div class="row">
                         <table id="patent-table" class="text-center">
                             <tr>
-                                <th>Title</th>
+                                <th>Title<span class="asteriskreq">*</span></th>
                                 <th>Inventors</th>
                                 <th>Application No.</th>
                                 <th>Application Date</th>
@@ -1060,7 +1064,7 @@ closeModalBtn.addEventListener("click", closeModal);
                         <option value="Honours">Honours</option>
                         <option value="Other">Other</option>
                     </select><input type="text" name="achieveOther[]" value="" style="display:none">`;
-        cell2.innerHTML = `<input type="text" class='input-css' name="description[]">`;
+        cell2.innerHTML = ` <textarea name='text' wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description[]' required></textarea>`;
         cell3.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteRecognition()"></i>`;
         showOther("recognition-table");
 
@@ -1129,7 +1133,7 @@ closeModalBtn.addEventListener("click", closeModal);
         });
     }
 
-    function addIRINSPub() {
+    /*function addIRINSPub() {
         var table = document.getElementById("irins-pub-table");
         var row = table.insertRow(-1);
         var cell1 = row.insertCell(0);
@@ -1160,7 +1164,7 @@ closeModalBtn.addEventListener("click", closeModal);
             document.getElementById("delIPB").disabled = false;
         }
 
-    }
+    }*/
 
     function deleteIRINSPub(id) {
         var card = document.getElementById(id).remove();
