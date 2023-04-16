@@ -1,6 +1,6 @@
 [
     {
-        "name": "",
+        "name": "Atul Dhar",
         "gs": "https:\/\/scholar.google.com\/citations?user=z2UL3tsAAAAJ&hl=en&oi=ao",
         "irins": "113331",
         "phone": "267143",
@@ -41,80 +41,7 @@
             }
         ],
         "recognition": [],
-        "patents": [
-            {
-                "applicationNumber": "202011052699",
-                "title": "System For Waste Water Treatment",
-                "inventors": "Atul Dhar, Satvasheel Powar, Hemant Thakur",
-                "patentStatus": "granted",
-                "patentNumber": "386847",
-                "applicationDate": "03\/12\/2020",
-                "grantDate": "19\/01\/22"
-            },
-            {
-                "applicationNumber": "201611015638",
-                "title": "Use Of Hydrogen Produced Through Exhaust Heat Recovery For Nox Reduction",
-                "inventors": "Dr. Atul Dhar, Dr. Om Prakash Singh, Gaurav Tripathi, Priybrat Sharma",
-                "patentStatus": "granted",
-                "patentNumber": "379345",
-                "applicationDate": "05\/05\/2016",
-                "grantDate": "18\/10\/21"
-            },
-            {
-                "applicationNumber": "201821038197",
-                "title": "System For Drying Articles",
-                "inventors": "Satvasheel Powar, Atul Dhar, Prashant Saini",
-                "patentStatus": "FER response submitted",
-                "patentNumber": "",
-                "applicationDate": "09\/10\/2018",
-                "grantDate": ""
-            },
-            {
-                "applicationNumber": "338273-001",
-                "title": "Indian Design: Space Heating Fins",
-                "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
-                "patentStatus": "granted",
-                "patentNumber": "338273-001",
-                "applicationDate": "29\/01\/21",
-                "grantDate": "28\/03\/22"
-            },
-            {
-                "applicationNumber": "338274-001",
-                "title": "Indian Design: Cookstove Design Without Top Cover",
-                "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
-                "patentStatus": "granted",
-                "patentNumber": "338274-001",
-                "applicationDate": "29\/01\/21",
-                "grantDate": "02\/05\/2022"
-            },
-            {
-                "applicationNumber": "338275-001",
-                "title": "Indian Design: Cookstove Design With Top Cover",
-                "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
-                "patentStatus": "granted",
-                "patentNumber": "338275-001",
-                "applicationDate": "29\/01\/21",
-                "grantDate": "25\/04\/22"
-            },
-            {
-                "applicationNumber": "201911051725",
-                "title": "An Apparatus For Heating Or Cooking Ingredients",
-                "inventors": "Satvasheel Powar, Atul Dhar, Ankur Kaundal",
-                "patentStatus": "granted",
-                "patentNumber": "344351",
-                "applicationDate": "13\/12\/19",
-                "grantDate": "18\/08\/20"
-            },
-            {
-                "applicationNumber": "338736-001",
-                "title": "Indian Design: Foldable Solar Thermal Collector",
-                "inventors": "Satvasheel Powar, Atul Dhar, Prashant Saini",
-                "patentStatus": "Hearing scheduled",
-                "patentNumber": "",
-                "applicationDate": "08\/02\/2021",
-                "grantDate": ""
-            }
-        ],
+        "patents": [],
         "irins_pub": [
             {
                 "title": "Parametric optimization of a cesaro fins employed latent heat storage system for melting performance enhancement",

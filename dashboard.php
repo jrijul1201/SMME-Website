@@ -624,53 +624,53 @@ button {
                                         <div class="row">
                                         <div class="form-group mt-3">
                                             <textarea  style="height:12px;" type="text" class="form-control" id="title" placeholder="Title"
-                                                name="title" required rows="1"></textarea>
+                                                name="title"rows="1"></textarea>
                                         </div>
                                         </div>
                                         <div class="row">
                                         <div class="form-group mt-3 col-6">
                                             <textarea  style="height:12px;" type="text" class="form-control" id="subtitle" placeholder="Sub-title"
-                                                name="subtitle" required rows="1"></textarea>
+                                                name="subtitle" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea style="height:12px;" type="text" class="form-control" id="doi" placeholder="DOI"
-                                                name="doi" required rows="1"></textarea>
+                                                name="doi" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea style="height:12px;" type="text" class="form-control" id="year" placeholder="Year"
-                                                name="year" required rows="1"></textarea>
+                                                name="year" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                          <textarea style="height:12px;"  type="text" class="form-control" id="pub_date" placeholder="Publication Date"
-                                                name="pub_date" required rows="1"></textarea>
+                                                name="pub_date" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea style="height:12px;"  type="text" class="form-control" id="pub_type" placeholder="Publication Type"
-                                                name="pub_type" required rows="1"></textarea>
+                                                name="pub_type"  rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea style="height:12px;"  type="text" class="form-control" id="pages" placeholder="Pages"
-                                                name="pages" required rows="1"></textarea>
+                                                name="pages" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                         <textarea style="height:12px;"  type="text" class="form-control" id="volume" placeholder="Volume"
-                                                name="volume" required rows="1"></textarea>
+                                                name="volume"  rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                         <textarea style="height:12px;"  type="text" class="form-control" id="authors" placeholder="Authors"
-                                                name="authors" required rows="1"></textarea>
+                                                name="authors" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                         <textarea style="height:12px;"  type="text" class="form-control" id="journal" placeholder="Journal"
-                                                name="journal" required rows="1"></textarea>
+                                                name="journal" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                         <textarea style="height:12px;"  type="text" class="form-control" id="scopus" placeholder="Scopus"
-                                                name="scopus" required rows="1"></textarea>
+                                                name="scopus" rows="1"></textarea>
                                         </div>
                                         <center><div class="form-group mt-3 col-6">
                                         <textarea style="height:12px;"  type="text" class="form-control" id="crossref" placeholder="Crossref"
-                                                name="crossref" required rows="1"></textarea>
+                                                name="crossref"  rows="1"></textarea>
                                         </div><center>
                                         </div>
                                     </div>
@@ -752,8 +752,8 @@ button {
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
-                                                    $title <br/>
-                                                    <i style='float:right; line-height:7;' class='fa fa-sm fa-trash delete-icon' onclick=deleteIRINSPub('$id')></i><br><br>
+                                                    $title 
+                                                    <i style='float:right; padding-top: 45px;' class='fa fa-sm fa-trash delete-icon' onclick=deleteIRINSPub('$id')></i><br><br>
                                                     <button  style='float:right' type='button' class=' btn btn-getstarted' data-toggle='modal' data-target='#pubEditModal' data-whatever='@getbootstrap'> <i class='bi bi-pencil-square delete-icon'></i></button>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
                                                         $subtitle </span>
@@ -898,21 +898,6 @@ button {
 
 <!-- Cropping functionality enable script -->
 <script>
-const modal = document.querySelector(".modal-pub");
-const overlay = document.querySelector(".overlay-form");
-const openModalBtn = document.querySelector(".btn-open");
-const closeModalBtn = document.querySelector(".btn-close");
-const openModal = function () {
-  modal.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-};
-openModalBtn.addEventListener("click", openModal);
-
-const closeModal = function () {
-  modal.classList.add("hidden");
-//   overlay.classList.add("hidden");
-};
-closeModalBtn.addEventListener("click", closeModal);
 
     $(document).ready(function() {
 
