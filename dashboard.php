@@ -149,15 +149,15 @@ $userName = $_SESSION['user_name'];
         td,
         th {
             /* position: absolute; */
-            width: 200px !important;
-            height: 30px !important;
+            width: 200px ;
+            height: 30px ;
             border: 0.5px solid gray !important;
         }
 
         .input-css {
-            border: none !important;
+            border: none ;
             width: 100% !important;
-            height: 100% !important;
+            height: 100% ;
         }
 
         .php-email-form {
@@ -434,14 +434,14 @@ button {
                     <div class="row">
                         <table id="education-table" class="text-center">
                             <tr>
-                                <th>Degree<span class="asteriskreq">*</span></th>
-                                <th>Specialization</th>
-                                <th>Start Year</th>
-                                <th>End Year</th>
-                                <th>Place</th>
-                                <th>Other Info</th>
-                                <th>To Hide</th>
-                                <th>Delete Action</th>
+                                <th>Degree<span class="asteriskreq">*</span></th>                                
+                                <th style='width:5vw;'>Start Year</th>
+                                <th style='width:5vw;'>End Year</th>
+                                <th style='width:20vw;'>Specialization</th>
+                                <th style='width:30vw;'>Place</th>
+                                <th style='width:30vw;'> Other Info</th>
+                                <th style='width:5vw;'>To Hide</th>
+                                <th style='width:5vw;'>Delete Action</th>
                             </tr>
                             <tbody>
                                 <?php
@@ -464,11 +464,11 @@ button {
                             <option value='Other'>Other</option>
                         </select><input type='text' id='degreeOther" . "$ind' name='degreeOther[]' value='' style='display:none' ></td>";
                                     echo "<script>autoSelectOption('{$ed['degree']}', '$ind', 'eduDegree', 'degreeOther' );</script>";
-                                    echo "<td><input type='text' class='input-css' name='specialization[]' value='{$ed['specialization']}'></td>";
                                     echo "<td><input type='text' class='input-css' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
                                     echo "<td><input type='text' class='input-css' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                    echo "<td><input type='text' class='input-css' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></td>";
-                                    echo "<td><input type='text' class='input-css' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;'  name='specialization[]' value='{$ed['specialization']}'></textarea></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></textarea></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></textarea></td>";
                                     echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
                                     echo "<td><i class='fa fa-trash delete-icon' onclick='deleteEducation()'></i></td>";
                                     echo "</tr>";
@@ -488,7 +488,7 @@ button {
                         <table id="recognition-table" class="text-center">
                             <tr>
                                 <th>Achievement<span class="asteriskreq">*</span></th>
-                                <th>Description<span class="asteriskreq">*</span></th>
+                                <th style='width:60vw;'>Description<span class="asteriskreq">*</span></th>
                                 <th>Delete Action</th>
                             </tr>
                             <tbody>
@@ -503,7 +503,7 @@ button {
                             <option value='Other'>Other</option>
                         </select><input type='text' id='achieveOther" . "$ind' name='achieveOther[]' value='' style='display:none'></td>";
                                     echo "<script>autoSelectOption('{$rg['achievement']}', '$ind', 'recAchieve', 'achieveOther');</script>";
-                                    echo "<td> <textarea name='text' wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description[]' required>{$rg['description']}</textarea></td>";
+                                    echo "<td> <textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description[]' required>{$rg['description']}</textarea></td>";
                                     echo "<td><i class='fa fa-trash delete-icon' onclick='deleteRecognition()'></i></td>";
                                     echo "</tr>";
                                 }
@@ -631,55 +631,61 @@ button {
                                     <div class="modal-body">
                                         <div class="row">
                                         <div class="form-group mt-3">
-                                            <textarea  style="height:12px;" type="text" class="form-control" id="title" placeholder="Title"
-                                                name="title"rows="1"></textarea>
+                                            <textarea  type="text" class="form-control" id="title" placeholder="Title"
+                                                name="title"rows="2"></textarea>
                                         </div>
                                         </div>
                                         <div class="row">
                                         <div class="form-group mt-3 col-6">
-                                            <textarea  style="height:12px;" type="text" class="form-control" id="subtitle" placeholder="Sub-title"
-                                                name="subtitle" rows="1"></textarea>
-                                        </div>
-                                        <div class="form-group mt-3 col-6">
-                                            <textarea style="height:12px;" type="text" class="form-control" id="doi" placeholder="DOI"
-                                                name="doi" rows="1"></textarea>
-                                        </div>
-                                        <div class="form-group mt-3 col-6">
-                                            <textarea style="height:12px;" type="text" class="form-control" id="year" placeholder="Year"
-                                                name="year" rows="1"></textarea>
-                                        </div>
-                                        <div class="form-group mt-3 col-6">
-                                         <textarea style="height:12px;"  type="text" class="form-control" id="pub_date" placeholder="Publication Date"
-                                                name="pub_date" rows="1"></textarea>
-                                        </div>
-                                        <div class="form-group mt-3 col-6">
-                                            <textarea style="height:12px;"  type="text" class="form-control" id="pub_type" placeholder="Publication Type"
-                                                name="pub_type"  rows="1"></textarea>
-                                        </div>
-                                        <div class="form-group mt-3 col-6">
-                                            <textarea style="height:12px;"  type="text" class="form-control" id="pages" placeholder="Pages"
-                                                name="pages" rows="1"></textarea>
-                                        </div>
-                                        <div class="form-group mt-3 col-6">
-                                        <textarea style="height:12px;"  type="text" class="form-control" id="volume" placeholder="Volume"
-                                                name="volume"  rows="1"></textarea>
-                                        </div>
-                                        <div class="form-group mt-3 col-6">
-                                        <textarea style="height:12px;"  type="text" class="form-control" id="authors" placeholder="Authors"
+                                        <textarea  type="text" class="form-control" id="authors" placeholder="Authors"
                                                 name="authors" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
-                                        <textarea style="height:12px;"  type="text" class="form-control" id="journal" placeholder="Journal"
+                                            <textarea  type="text" class="form-control" id="journal" placeholder="Journal"
                                                 name="journal" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
-                                        <textarea style="height:12px;"  type="text" class="form-control" id="scopus" placeholder="Scopus"
+                                            <textarea type="text" class="form-control" id="doi" placeholder="DOI"
+                                                name="doi" rows="1"></textarea>
+                                        </div>
+                                        <div class="form-group mt-3 col-6">
+                                            <textarea type="text" class="form-control" id="year" placeholder="Year"
+                                                name="year" rows="1"></textarea>
+                                        </div>
+                                        <div class="form-group mt-3 col-6">
+                                         <textarea  type="text" class="form-control" id="pub_date" placeholder="Publication Date"
+                                                name="pub_date" rows="1"></textarea>
+                                        </div>
+                                        <!-- <div class="form-group mt-3 col-6">
+                                            <textarea  type="text" class="form-control" id="pub_type" placeholder="Publication Type"
+                                                name="pub_type"  rows="1">
+                                            </textarea>
+                                        </div> -->
+                                        <div class="form-group mt-3 col-6">
+                                            <select class='input-css' style="display:inline; border: 0.5px solid gray;"id="pub_type" name='pub_type' required>
+                                            <option value='' disabled selected>Select Publication Type</option>
+                                            <option value='Journal'>Journal</option>
+                                            <option value='Book Chapter'>Book Chapter</option>
+                                            <option value='Review'>Review</option>
+                                            <option value='Conference'>Conference</option>
+                                            <option value='Editorial'>Editorial</option></select>
+                                        </div>
+                                        <div class="form-group mt-3 col-6">
+                                            <textarea  type="text" class="form-control" id="pages" placeholder="Pages"
+                                                name="pages" rows="1"></textarea>
+                                        </div>
+                                        <div class="form-group mt-3 col-6">
+                                        <textarea  type="text" class="form-control" id="volume" placeholder="Volume"
+                                                name="volume"  rows="1"></textarea>
+                                        </div>
+                                        <div class="form-group mt-3 col-6">
+                                        <textarea  type="text" class="form-control" id="scopus" placeholder="Scopus"
                                                 name="scopus" rows="1"></textarea>
                                         </div>
-                                        <center><div class="form-group mt-3 col-6">
-                                        <textarea style="height:12px;"  type="text" class="form-control" id="crossref" placeholder="Crossref"
+                                        <div class="form-group mt-3 col-6">
+                                        <textarea  type="text" class="form-control" id="crossref" placeholder="Crossref"
                                                 name="crossref"  rows="1"></textarea>
-                                        </div><center>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -718,14 +724,11 @@ button {
                             if (isset($ipub['title']) && $ipub['title'] != 'NA') {
                                 $title = $ipub['title'] . " ";
                             }
-                            if (isset($ipub['title']) && $ipub['title'] != 'NA') {
-                                $subtitle = strtoupper($ipub['journal']);
+                            if (isset($ipub['journal']) && $ipub['journal'] != 'NA') {
+                                $journal = strtoupper($ipub['journal']);
                             }
                             if (isset($ipub['authors']) && $ipub['authors'] != 'NA') {
                                 $authors = $ipub['authors'];
-                            }
-                            if (isset($ipub['journal']) && $ipub['journal'] != 'NA') {
-                                $journal = $journal . $ipub['journal'];
                             }
                             if (isset($ipub['DOI']) && $ipub['DOI'] != 'NA') {
                                 $DOI = $DOI . $ipub['DOI'];
@@ -764,15 +767,13 @@ button {
                                                     <i style='float:right; padding-top: 45px;' class='fa fa-sm fa-trash delete-icon' onclick=deleteIRINSPub('$id')></i><br><br>
                                                     <button  style='float:right' type='button' class=' btn btn-getstarted' data-toggle='modal' data-target='#pubEditModal' data-whatever='@getbootstrap'> <i class='bi bi-pencil-square delete-icon'></i></button>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
-                                                        $subtitle </span>
+                                                        $journal </span>
                                                 </h4>
                                                 
                                                 <p class='card-text mb-auto'>
                                                     $authors
                                                 </p>
-                                                <p class='mb-auto text-muted'>
-                                                    $journal
-                                                </p>
+                                              
                                                 <p class='text-primary' style='font-size:1rem'>
                                                     <a href='https://doi.org/$DOI' target='_blank'>$DOI</a>
                                                 </p>
@@ -784,10 +785,11 @@ button {
                         <div class='modal-dialog' role='document'>
                             <div class='modal-content'>
                             <!-- <div class='modal-header'> -->
+                                
+                                <div class='flex'>
                                 <div style='margin-top:30px;'>
                                     <h4 style='color:orangered;' >Edit Publication</h4>
                                 </div>
-                                <div class='flex'>
                                     <button style='float:right'type='button' class='close' data-dismiss='modal' aria-label='Close'>
                                     <span aria-hidden='true'>&times;</span>
                                     </button>
@@ -798,55 +800,67 @@ button {
                                     <div class='modal-body'>
                                         <div class='row'>
                                         <div class='form-group mt-3'>
-                                            <textarea  style='height:12px;' type='text' class='form-control' id='title' placeholder='Title'
-                                                name='title' required rows='1'>$title</textarea>
+                                            Title
+                                            <textarea  type='text' class='form-control' id='title' placeholder='Title'
+                                                name='title' required rows='2'>$title</textarea>
                                         </div>
                                         </div>
                                         <div class='row'>
                                         <div class='form-group mt-3 col-6'>
-                                            <textarea  style='height:12px;' type='text' class='form-control' id='subtitle' placeholder='Sub-title'
-                                                name='subtitle' required rows='1'>$subtitle</textarea>
+                                        Journal
+                                            <textarea  type='text' class='form-control' id='journal' placeholder='Journal'
+                                                name='journal' required rows='2'>$journal</textarea>
                                         </div>
                                         <div class='form-group mt-3 col-6'>
-                                            <textarea style='height:12px;' type='text' class='form-control' id='doi' placeholder='DOI'
+                                        Authors
+                                        <textarea  type='text' class='form-control' id='authors' placeholder='Authors'
+                                                name='authors' required rows='2'>$authors</textarea>
+                                        </div>
+                                        <div class='form-group mt-3 col-6'>
+                                        DOI
+                                            <textarea type='text' class='form-control' id='doi' placeholder='DOI'
                                                 name='doi' required rows='1'>$DOI</textarea>
                                         </div>
                                         <div class='form-group mt-3 col-6'>
-                                            <textarea style='height:12px;' type='text' class='form-control' id='year' placeholder='Year'
+                                        Year
+                                            <textarea  type='text' class='form-control' id='year' placeholder='Year'
                                                 name='year' required rows='1'>$year</textarea>
                                         </div>
                                         <div class='form-group mt-3 col-6'>
-                                         <textarea style='height:12px;'  type='text' class='form-control' id='pub_date' placeholder='Publication Date'
+                                        Publication Date
+                                         <textarea  type='text' class='form-control' id='pub_date' placeholder='Publication Date'
                                                 name='pub_date' required rows='1'>$pubDate</textarea>
                                         </div>
                                         <div class='form-group mt-3 col-6'>
-                                            <textarea style='height:12px;'  type='text' class='form-control' id='pub_type' placeholder='Publication Type'
-                                                name='pub_type' required rows='1'>$pubType</textarea>
-                                        </div>
+                                        Publication Type
+                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='pub_type' required>
+                                        <option value='' disabled selected>Select Publication Type</option>
+                                        <option value='Journal'>Journal</option>
+                                        <option value='Book Chapter'>Book Chapter</option>
+                                        <option value='Review'>Review</option>
+                                        <option value='Conference'>Conference</option>
+                                        <option value='Editorial'>Editorial</option></select>
+                                    </div>
                                         <div class='form-group mt-3 col-6'>
-                                            <textarea style='height:12px;'  type='text' class='form-control' id='pages' placeholder='Pages'
+                                        Pages
+                                            <textarea   type='text' class='form-control' id='pages' placeholder='Pages'
                                                 name='pages' required rows='1'>$pages</textarea>
                                         </div>
                                         <div class='form-group mt-3 col-6'>
-                                        <textarea style='height:12px;'  type='text' class='form-control' id='volume' placeholder='Volume'
+                                        Volume
+                                        <textarea  type='text' class='form-control' id='volume' placeholder='Volume'
                                                 name='volume' required rows='1'>$volume</textarea>
-                                        </div>
+                                        </div>                                       
                                         <div class='form-group mt-3 col-6'>
-                                        <textarea style='height:12px;'  type='text' class='form-control' id='authors' placeholder='Authors'
-                                                name='authors' required rows='1'>$authors</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        <textarea style='height:12px;'  type='text' class='form-control' id='journal' placeholder='Journal'
-                                                name='journal' required rows='1'>$journal</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        <textarea style='height:12px;'  type='text' class='form-control' id='scopus' placeholder='Scopus'
+                                        Scopus
+                                        <textarea   type='text' class='form-control' id='scopus' placeholder='Scopus'
                                                 name='scopus' required rows='1'>$scopus</textarea>
                                         </div>
-                                        <center><div class='form-group mt-3 col-6'>
-                                        <textarea style='height:12px;'  type='text' class='form-control' id='crossref' placeholder='Crossref'
+                                        <div class='form-group mt-3 col-6'>
+                                        CrossRef
+                                        <textarea   type='text' class='form-control' id='crossref' placeholder='Crossref'
                                                 name='crossref' required rows='1'>$crossref</textarea>
-                                        </div><center>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class='modal-footer'>
