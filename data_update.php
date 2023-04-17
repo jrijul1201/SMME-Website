@@ -124,7 +124,7 @@ file_put_contents("faculty.json", json_encode($arr));
 
 echo "<script>
 alert('Changes has been updated successfully. If unable to see the changes, then clear your browser cache');
-window.location.href='logout.php';
+window.location.href='dashboard.php';
 </script>";
 
 // header("Location: logout.php");

@@ -375,7 +375,7 @@ button {
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" id="crop" class="btn btn-primary">Crop</button>
+                            <button type="button" id="crop" class="btn btn-primary">Crop & Upload</button>
                             <button type="button" id="cancelbtn" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                         </div>
                     </div>
@@ -969,6 +969,7 @@ button {
                             // console.log(data);
                             $modal.modal('hide');
                             $('#uploaded_image').attr('src', data);
+                            alert("Profile Picture changed successfully");
                         }
                     });
                 };
