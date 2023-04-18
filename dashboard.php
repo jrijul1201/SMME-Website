@@ -395,7 +395,7 @@ button {
 
             <!-- start here -->
             <!-- Personal info -->
-
+            <div style="margin-left:7vw; font-style: italic;" ><label >Fields marked with  <span class="asteriskreq">*</span> are mandatory.</label></div>
             <form action="data_update.php" method="post" id="faculty_update" enctype="multipart/form-data" role="form" class="php-email-form">
                 <div class="profile-section section-header">
                     <h3>Personal Information</h3>
@@ -624,6 +624,7 @@ button {
                        <center>
                         <div class="text-center header"><button type="button" class="dash-btn btn btn-getstarted" data-toggle="modal" data-target="#pubModal" data-whatever="@getbootstrap">Add Publication</button></div>
                         <center>
+                            <br><br>
                         <div class="modal fade" id="pubModal" tabindex="-1" role="dialog" aria-labelledby="pubModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -774,13 +775,13 @@ button {
                             }
                             $comp = "
                             
-                          <div id='$id' class='col-md-12 plates'>
+                                    <div id='$id' class='col-md-12 plates'>
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
                                                     $title 
                                                     <i style='float:right; padding-top: 45px;' class='fa fa-sm fa-trash delete-icon' onclick=deleteIRINSPub('$id')></i><br><br>
-                                                    <button  style='float:right' type='button' class=' btn btn-getstarted' data-toggle='modal' data-target='#pubEditModal' data-whatever='@getbootstrap'> <i class='bi bi-pencil-square delete-icon'></i></button>
+                                                    <button  style='float:right' type='button' class=' btn btn-getstarted' data-toggle='modal' data-target='#pubEditModal$id' data-whatever='@getbootstrap'> <i class='bi bi-pencil-square delete-icon'></i></button>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
                                                         $journal </span>
                                                 </h4>
@@ -796,99 +797,99 @@ button {
                                         </div>
                                        
                                     </div>
-                                     <div class='modal fade' id='pubEditModal' tabindex='-1' role='dialog' aria-labelledby='pubEditModalLabel' aria-hidden='true'>
-                        <div class='modal-dialog' role='document'>
-                            <div class='modal-content'>
-                            <!-- <div class='modal-header'> -->
-                                
-                                <div class='flex'>
-                                <div style='margin-top:30px;'>
-                                    <h4 style='color:orangered;' >Edit Publication</h4>
-                                </div>
-                                    <button style='float:right'type='button' class='close' data-dismiss='modal' aria-label='Close'>
-                                    <span aria-hidden='true'>&times;</span>
-                                    </button>
-                                </div><br>
-                                <!-- </div> -->
-                                <div class='modal-body'>
-                                <form class='px-4 py-3' method='post'>
-                                    <div class='modal-body'>
-                                        <div class='row'>
-                                        <div class='form-group mt-3'>
-                                            Title
-                                            <textarea  type='text' class='form-control' id='title' placeholder='Title'
-                                                name='title' required rows='2'>$title</textarea>
+                                     <div class='modal fade' id='pubEditModal$id' tabindex='-1' role='dialog' aria-labelledby='pubEditModalLabel' aria-hidden='true'>
+                                    <div class='modal-dialog' role='document'>
+                                        <div class='modal-content'>
+                                        <!-- <div class='modal-header'> -->
+                                            
+                                            <div class='flex'>
+                                            <div style='margin-top:30px;'>
+                                                <h4 style='color:orangered;' >Edit Publication</h4>
+                                            </div>
+                                                <button style='float:right'type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                                <span aria-hidden='true'>&times;</span>
+                                                </button>
+                                                </div><br>
+                                                <!-- </div> -->
+                                                <div class='modal-body'>
+                                                <form class='px-4 py-3' id='irins_edit$id' action='irins_pub_edit.php' method='post'>
+                                                    <div class='modal-body'>
+                                                        <div class='row'>
+                                                        <div class='form-group mt-3'>
+                                                            Title
+                                                            <textarea  type='text' class='form-control' id='title$id' placeholder='Title'
+                                                                name='etitle' required rows='2'>$title</textarea>
+                                                        </div>
+                                                        </div>
+                                                        <div class='row'>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Journal
+                                                            <textarea  type='text' class='form-control' id='journal$id' placeholder='Journal'
+                                                                name='ejournal' rows='2'>$journal</textarea>
+                                                        </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Authors
+                                                        <textarea  type='text' class='form-control' id='authors$id' placeholder='Authors'
+                                                                name='eauthors'rows='2'>$authors</textarea>
+                                                        </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        DOI
+                                                            <textarea type='text' class='form-control' id='doi$id' placeholder='DOI'
+                                                                name='edoi' rows='1'>$DOI</textarea>
+                                                        </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Year
+                                                            <textarea  type='text' class='form-control' id='year$id' placeholder='Year'
+                                                                name='eyear' rows='1'>$year</textarea>
+                                                        </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Publication Date
+                                                        <textarea  type='text' class='form-control' id='pub_date$id' placeholder='Publication Date'
+                                                                name='epub_date'rows='1'>$pubDate</textarea>
+                                                        </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Publication Type
+                                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epub_type' required>
+                                                        <option value='' disabled selected>Select Publication Type</option>
+                                                        <option value='Journal'>Journal</option>
+                                                        <option value='Book Chapter'>Book Chapter</option>
+                                                        <option value='Review'>Review</option>
+                                                        <option value='Conference'>Conference</option>
+                                                        <option value='Editorial'>Editorial</option></select>
+                                                    </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Pages
+                                                            <textarea   type='text' class='form-control' id='pages' placeholder='Pages'
+                                                                name='epages' rows='1'>$pages</textarea>
+                                                        </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Volume
+                                                        <textarea  type='text' class='form-control' id='volume' placeholder='Volume'
+                                                                name='evolume' rows='1'>$volume</textarea>
+                                                        </div>                                       
+                                                        <div class='form-group mt-3 col-6'>
+                                                        Scopus
+                                                        <textarea   type='text' class='form-control' id='scopus' placeholder='Scopus'
+                                                                name='escopus' rows='1'>$scopus</textarea>
+                                                        </div>
+                                                        <div class='form-group mt-3 col-6'>
+                                                        CrossRef
+                                                        <textarea   type='text' class='form-control' id='crossref' placeholder='Crossref'
+                                                                name='ecrossref' rows='1'>$crossref</textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class='modal-footer'>
+                                                    <div class='text-center'><button type='submit' style='background-color:orangered; color:white;'
+                                                            class='btn mx-auto d-block dash-btn btn btn-getstarted'>Save</button></div>
+                                                    <div class='text-center'><button style='background-color:orangered; color:white;' data-dismiss='modal'
+                                                    class='btn mx-auto d-block dash-btn btn btn-getstarted'>Close</button></div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        </div>
-                                        <div class='row'>
-                                        <div class='form-group mt-3 col-6'>
-                                        Journal
-                                            <textarea  type='text' class='form-control' id='journal' placeholder='Journal'
-                                                name='journal' required rows='2'>$journal</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        Authors
-                                        <textarea  type='text' class='form-control' id='authors' placeholder='Authors'
-                                                name='authors' required rows='2'>$authors</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        DOI
-                                            <textarea type='text' class='form-control' id='doi' placeholder='DOI'
-                                                name='doi' required rows='1'>$DOI</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        Year
-                                            <textarea  type='text' class='form-control' id='year' placeholder='Year'
-                                                name='year' required rows='1'>$year</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        Publication Date
-                                         <textarea  type='text' class='form-control' id='pub_date' placeholder='Publication Date'
-                                                name='pub_date' required rows='1'>$pubDate</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        Publication Type
-                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='pub_type' required>
-                                        <option value='' disabled selected>Select Publication Type</option>
-                                        <option value='Journal'>Journal</option>
-                                        <option value='Book Chapter'>Book Chapter</option>
-                                        <option value='Review'>Review</option>
-                                        <option value='Conference'>Conference</option>
-                                        <option value='Editorial'>Editorial</option></select>
-                                    </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        Pages
-                                            <textarea   type='text' class='form-control' id='pages' placeholder='Pages'
-                                                name='pages' required rows='1'>$pages</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        Volume
-                                        <textarea  type='text' class='form-control' id='volume' placeholder='Volume'
-                                                name='volume' required rows='1'>$volume</textarea>
-                                        </div>                                       
-                                        <div class='form-group mt-3 col-6'>
-                                        Scopus
-                                        <textarea   type='text' class='form-control' id='scopus' placeholder='Scopus'
-                                                name='scopus' required rows='1'>$scopus</textarea>
-                                        </div>
-                                        <div class='form-group mt-3 col-6'>
-                                        CrossRef
-                                        <textarea   type='text' class='form-control' id='crossref' placeholder='Crossref'
-                                                name='crossref' required rows='1'>$crossref</textarea>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class='modal-footer'>
-                                        <div class='text-center'><button style='background-color:orangered; color:white;'
-                                                class='btn mx-auto d-block dash-btn btn btn-getstarted'>Save</button></div>
-                                        <div class='text-center'><button style='background-color:orangered; color:white;' data-dismiss='modal'
-                                        class='btn mx-auto d-block dash-btn btn btn-getstarted'>Close</button></div>
-                                    </div>
-                                </form>
-                                </div>
                            
+                                    </div>
                             </div>
-                        </div>
                         </div>
                                                                
                                     ";
@@ -1227,5 +1228,6 @@ button {
         hiddenField.setAttribute('value', checkboxValue);
         this.appendChild(hiddenField);
     });
+    
 
 </script>
