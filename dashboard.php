@@ -375,8 +375,8 @@ button {
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" id="crop" class="btn btn-primary">Crop & Upload</button>
-                            <button type="button" id="cancelbtn" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" id="crop" style="background-color:orangered; color:white;" class="btn">Crop & Upload</button>
+                            <button type="button" id="cancelbtn" style="background-color:orangered; color:white;" class="btn" data-dismiss="modal">Cancel</button>
                         </div>
                     </div>
                 </div>
@@ -604,7 +604,12 @@ button {
                 </div>
                 <!-- IRINS Publications -->
 
-                <div class="profile-section section-header">
+                
+
+                    <div  style="  border-radius: 4px;  position: fixed;float:left; right: 15px;bottom: 70px;z-index: 995;background: var(--color-primary);transition: all 0.4s;"  class="text-center header"><button type="submit" style=" margin: 0vh 0px 0px 0px;" class="dash-btn btn btn-getstarted text-center header">Update Changes</button></div>
+                </div>
+            </form>
+            <div class="profile-section section-header">
                     <h3>IRINS Publications Details</h3>
                     <small  style="justify-content:center"><i>
                             <?php echo htmlspecialchars("Note: In Title, use 'sub' tag (<sub> and </sub>) for subscript eg. CO2 should be written as CO<sub>2</sub>", ENT_QUOTES); ?>
@@ -690,7 +695,7 @@ button {
                                     </div>
                                     <div class="modal-footer">
                                         <div class="text-center"><button style="background-color:orangered; color:white;"
-                                                class="btn mx-auto d-block dash-btn btn btn-getstarted">Save</button></div>
+                                               id ="save" class="btn mx-auto d-block dash-btn btn btn-getstarted">Save</button></div>
                                         <div class="text-center"><button style="background-color:orangered; color:white;" data-dismiss="modal"
                                         class="btn mx-auto d-block dash-btn btn btn-getstarted">Close</button></div>
                                     </div>
@@ -885,10 +890,6 @@ button {
                         <!-- $id1="test" -->
                       
                     </div>
-
-                    <div  style="  border-radius: 4px;  position: fixed;float:left; right: 15px;bottom: 70px;z-index: 995;background: var(--color-primary);transition: all 0.4s;"  class="text-center header"><button type="submit" style=" margin: 0vh 0px 0px 0px;" class="dash-btn btn btn-getstarted text-center header">Update Changes</button></div>
-                </div>
-            </form>
 
         </section>
 
