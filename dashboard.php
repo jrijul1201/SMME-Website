@@ -146,9 +146,15 @@ $userName = $_SESSION['user_name'];
         /* table{
             position: absolute;
         } */
-        td,
         th {
             /* position: absolute; */
+            width: 200px ;
+            height: 30px ;
+            border: 0.5px solid gray !important;
+            text-align: center;
+        }
+
+        td {
             width: 200px ;
             height: 30px ;
             border: 0.5px solid gray !important;
@@ -466,9 +472,9 @@ button {
                                     echo "<script>autoSelectOption('{$ed['degree']}', '$ind', 'eduDegree', 'degreeOther' );</script>";
                                     echo "<td><input type='text' class='input-css' name='start_year[]' value='{$ed['start_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
                                     echo "<td><input type='text' class='input-css' name='end_year[]' value='{$ed['end_year']}' pattern='\d{4}' title='Enter valid year (4-digit)'></td>";
-                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;'  name='specialization[]' value='{$ed['specialization']}'></textarea></td>";
-                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='place[]' value='{$ed['place']}' placeholder='University/College Name'></textarea></td>";
-                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='other_info[]' value='{$ed['other_info']}' placeholder='Thesis Title or Supervisor etc.'></textarea></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;'  name='specialization[]' >{$ed['specialization']}</textarea></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='place[]' placeholder='University/College Name'>{$ed['place']}</textarea></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='other_info[]' placeholder='Thesis Title or Supervisor etc.'>{$ed['other_info']}</textarea></td>";
                                     echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
                                     echo "<td><i class='fa fa-trash delete-icon' onclick='deleteEducation()'></i></td>";
                                     echo "</tr>";
@@ -632,34 +638,34 @@ button {
                                 </div><br>
                                 <!-- </div> -->
                                 <div class="modal-body">
-                                <form class="px-4 py-3" method="post">
+                                <form class="px-4 py-3" id="irins_add" action="irins_pub_update.php" method="post">
                                     <div class="modal-body">
                                         <div class="row">
                                         <div class="form-group mt-3">
                                             <textarea  type="text" class="form-control" id="title" placeholder="Title"
-                                                name="title"rows="2"></textarea>
+                                                name="ititle"rows="2"></textarea>
                                         </div>
                                         </div>
                                         <div class="row">
                                         <div class="form-group mt-3 col-6">
                                         <textarea  type="text" class="form-control" id="authors" placeholder="Authors"
-                                                name="authors" rows="1"></textarea>
+                                                name="iauthors" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea  type="text" class="form-control" id="journal" placeholder="Journal"
-                                                name="journal" rows="1"></textarea>
+                                                name="ijournal" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea type="text" class="form-control" id="doi" placeholder="DOI"
-                                                name="doi" rows="1"></textarea>
+                                                name="idoi" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea type="text" class="form-control" id="year" placeholder="Year"
-                                                name="year" rows="1"></textarea>
+                                                name="iyear" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                          <textarea  type="text" class="form-control" id="pub_date" placeholder="Publication Date"
-                                                name="pub_date" rows="1"></textarea>
+                                                name="ipubDate" rows="1"></textarea>
                                         </div>
                                         <!-- <div class="form-group mt-3 col-6">
                                             <textarea  type="text" class="form-control" id="pub_type" placeholder="Publication Type"
@@ -667,7 +673,7 @@ button {
                                             </textarea>
                                         </div> -->
                                         <div class="form-group mt-3 col-6">
-                                            <select class='input-css' style="display:inline; border: 0.5px solid gray;"id="pub_type" name='pub_type' required>
+                                            <select class='input-css' style="display:inline; border: 0.1px solid gray;"id="pub_type" name='ipubType' required>
                                             <option value='' disabled selected>Select Publication Type</option>
                                             <option value='Journal'>Journal</option>
                                             <option value='Book Chapter'>Book Chapter</option>
@@ -677,25 +683,29 @@ button {
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea  type="text" class="form-control" id="pages" placeholder="Pages"
-                                                name="pages" rows="1"></textarea>
+                                                name="ipages" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                         <textarea  type="text" class="form-control" id="volume" placeholder="Volume"
-                                                name="volume"  rows="1"></textarea>
+                                                name="ivolume"  rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                         <textarea  type="text" class="form-control" id="scopus" placeholder="Scopus"
-                                                name="scopus" rows="1"></textarea>
+                                                name="iscopusC" rows="1"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                         <textarea  type="text" class="form-control" id="crossref" placeholder="Crossref"
-                                                name="crossref"  rows="1"></textarea>
+                                                name="icrossrefC"  rows="1"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                        <label for="pubCheckBox">To Hide</label>
+                                        <input type="checkbox" id="pubCheckBox" name="pubCheckBox">
                                         </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <div class="text-center"><button style="background-color:orangered; color:white;"
-                                               id ="save" class="btn mx-auto d-block dash-btn btn btn-getstarted">Save</button></div>
+                                        <div class="text-center"><button type="submit" style="background-color:orangered; color:white;"
+                                                class="btn mx-auto d-block dash-btn btn btn-getstarted">Add</button></div>
                                         <div class="text-center"><button style="background-color:orangered; color:white;" data-dismiss="modal"
                                         class="btn mx-auto d-block dash-btn btn btn-getstarted">Close</button></div>
                                     </div>
@@ -1031,11 +1041,11 @@ button {
                         <option value="BE">BE</option>
                         <option value="Other">Other</option>
                     </select><input type="text" name="degreeOther[]" value="" style="display:none">`;
-        cell2.innerHTML = `<input type="text" class='input-css' name="specialization[]">`;
-        cell3.innerHTML = `<input type="text" class='input-css' name="start_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
-        cell4.innerHTML = `<input type="text" class='input-css' name="end_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
-        cell5.innerHTML = `<input type="text" class='input-css' name="place[]" placeholder="University/College Name">`;
-        cell6.innerHTML = `<input type="text" class='input-css' name="other_info[]" placeholder="Thesis Title or Supervisor etc.">`;
+        cell2.innerHTML = `<input type="text" class='input-css' name="start_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
+        cell3.innerHTML = `<input type="text" class='input-css' name="end_year[]" pattern="\\d{4}" title="Enter valid year (4-digit)">`;
+        cell4.innerHTML = `<textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;'  name='specialization[]' ></textarea>`;
+        cell5.innerHTML = `<textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='place[]' placeholder='University/College Name'></textarea>`;
+        cell6.innerHTML = `<textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='other_info[]' placeholder='Thesis Title or Supervisor etc.'></textarea>`;
         cell7.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
         cell8.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteEducation()"></i>`;
         showOther("education-table");
@@ -1195,15 +1205,27 @@ button {
             this.appendChild(hiddenField);
         }
 
-        var irinscheckboxes = this.querySelectorAll('input#iCheckBox');
+        // var irinscheckboxes = this.querySelectorAll('input#iCheckBox');
 
-        // Add a hidden field for each irins pub block checkbox
-        for (var i = 0; i < irinscheckboxes.length; i++) {
-            var hiddenField2 = document.createElement('input');
-            hiddenField2.setAttribute('type', 'hidden');
-            hiddenField2.setAttribute('name', 'irinsIsHidden[]');
-            hiddenField2.setAttribute('value', irinscheckboxes[i].checked ? 'on' : 'off');
-            this.appendChild(hiddenField2);
-        }
+        // // Add a hidden field for each irins pub block checkbox
+        // for (var i = 0; i < irinscheckboxes.length; i++) {
+        //     var hiddenField2 = document.createElement('input');
+        //     hiddenField2.setAttribute('type', 'hidden');
+        //     hiddenField2.setAttribute('name', 'irinsIsHidden[]');
+        //     hiddenField2.setAttribute('value', irinscheckboxes[i].checked ? 'on' : 'off');
+        //     this.appendChild(hiddenField2);
+        // }
     });
+
+    // getting isHidden checkbox value from the IRINS add form
+    document.getElementById('irins_add').addEventListener('submit', function(event) {
+        var pubcheckboxes = this.querySelectorAll('input#pubCheckBox');
+        var checkboxValue = pubcheckboxes[0].checked ? 'on' : 'off';
+        var hiddenField = document.createElement('input');
+        hiddenField.setAttribute('type', 'hidden');
+        hiddenField.setAttribute('name', 'irinsIsHidden');
+        hiddenField.setAttribute('value', checkboxValue);
+        this.appendChild(hiddenField);
+    });
+
 </script>
