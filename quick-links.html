@@ -147,6 +147,8 @@
             $(ahData).appendTo("#awards-and-honours-data");
             var rpData = f.projects;
             $(rpData).appendTo("#research-projects-data");
+            var acData = f.contributions;
+            $(rpData).appendTo("#administrative-contributions-data");
         });
     });
     $(function () {
@@ -155,6 +157,7 @@
         $.getJSON('faculty.json', function (data) {
             const f = data[idx];
             var pData = f.patents;
+            console.log(pData);
             var comp = "";
             pData?.forEach(patent => {
                 comp +=
@@ -163,44 +166,33 @@
                            <div class="col d-flex flex-column position-static plate-child">
                                <h4 class="mb-1">
                                    ${patent?.title} <br />
-                                   <span style="font-size:15px; font-style: italic;" class="text-muted">
-                                       ${patent?.subtitle}
+                                   <span style="font-size:15px; font-style: italic;" class="text-primary">
+                                       ${patent?.inventors}
                                </h4>
-                               <p class="card-text mb-auto">
-                                   ${patent?.authors}
-                               </p>
                                <div class="mb-auto text-muted">
-                                   ${patent?.journal}
+                                   Application Number: ${patent?.applicationNumber}
                                </div>
-                               <div class="text-primary">
-                                   <a href=${`https://doi.org/${patent?.DOI}`} target="_blank">${patent?.DOI}</a>
+                               <div class="mb-auto text-muted">
+                                   Filed On: ${patent?.applicationDate}
                                </div>
-                           </div>
+                               <div class="mb-auto text-muted">
+                                   Patent Status: ${patent?.patentStatus}
+                               </div>`;
+                if (patent.patentNumber && patent.patentNumber !== "") {
+                    comp += `<div class="mb-auto text-muted">
+                                   Patent Number: ${patent?.patentNumber}
+                            </div>`;
+                }
+                if (patent.grantDate && patent.grantDate !== "") {
+                    comp += `<div class="mb-auto text-muted">
+                                   Date of Grant: ${patent?.grantDate}
+                            </div>`;
+                }
+                comp += `</div>
                        </div>
                    </div>`;
             });
-
-            comp +=
-                `<div class="col-md-12 plates">
-                       <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
-                           <div class="col d-flex flex-column position-static plate-child">
-                               <h4 class="mb-1">
-                                   Acoustic Levitation Of Large Spherical Objects At Low Frequency <br />
-                                   <span style="font-size:15px; font-style: italic;" class="text-muted">
-                                       ${subtitle}
-                               </h4>
-                               <p class="card-text mb-auto">
-                                   Arpan Gupta, Saurabh Yadav
-                               </p>
-                               <div class="mb-auto text-muted">
-                                   ${journal}
-                               </div>
-                               <div class="text-primary">
-                                   <a href=${`https://doi.org/${DOI}`} target="_blank">${DOI}</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>`;
+            // console.log(comp);
             $(comp).appendTo("#patents-data");
         });
     });
