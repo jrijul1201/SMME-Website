@@ -2,25 +2,25 @@
     {
         "name": " Anju",
         "mobile": "+91-1905-267138",
-        "add": "A11.04.34, North Campus",
+        "add": "A11.04.33, North Campus",
         "mail": "seoa1@iitmandi.ac.in",
         "img": "anju.jpeg",
-        "position":"Office Assistant"
+        "position": "Office Assistant"
     },
     {
         "name": " Sumeet",
         "mobile": "+91-1905-267138",
-        "add": "A11.04.34, North Campus",
+        "add": "A11.04.33, North Campus",
         "mail": "smmeoffice@iitmandi.ac.in",
         "img": "sumeet.jpeg",
-        "position":"Office Assistant"
+        "position": "Office Assistant"
     },
     {
         "name": "Anurag Rawat",
         "mobile": "+91-9129554424",
-        "add": "A11.04.34, North Campus",
+        "add": "A11.04.33, North Campus",
         "mail": "anuragrawat@iitmandi.ac.in",
         "img": "anurag.jpeg",
-        "position":"Junior Assistant"
+        "position": "Junior Assistant"
     }
 ]
