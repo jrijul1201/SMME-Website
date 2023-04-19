@@ -24,7 +24,7 @@ $pages_v2 = str_replace('-', '&#8211;', $pages);
 $volume = $_POST['evolume'];
 $scopusC = $_POST['escopusC'];
 $crossrefC = $_POST['ecrossrefC'];
-$irinsIsHidden = false;
+$irinsIsHidden = ($_POST['irinseditIsHidden'] == "on") ? true : false;
 $temp = array('title' => $title, 'DOI' => $doi, 'year' => $year, 'publicationDate' =>$pubDate, 'publicationType' => $pubType, 'pages' => $pages_v2, 'volume' => $volume,'authors' => $authors, 'journal' => $journal, 'scopusCitations' => $scopusC,'crossrefCitations' => $crossrefC, 'isHidden' => $irinsIsHidden);
 
 
