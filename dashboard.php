@@ -777,7 +777,7 @@ button {
                         
                             $comp = "
                             
-                                    <div id='$indpub' class='col-md-12 plates'>
+                                    <div id='irinscard$indpub' class='col-md-12 plates'>
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
@@ -1191,14 +1191,39 @@ button {
     }*/
 
     function deleteIRINSPub(id) {
-        var card = document.getElementById(id).remove();
 
-    }
-    function editIRINSPub(id) {
-        var card = document.getElementById(id).remove();
+        var confirmed = confirm("Are you sure?");
 
+        if(confirmed) {
+            
+            var id1 = 'irinscard'.concat(id);
+            var card = document.getElementById(id1).remove();
+
+            var formData = new FormData();
+            formData.append('index_delete', id);
+
+             // Configure the fetch request
+            fetch('irins_pub_delete.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(function(response) {
+              if (response.ok) {
+                // Process the response from the PHP file
+                alert('Publication deleted successfully.');
+                return response.text();
+              } else {
+                throw new Error('Error: ' + response.status);
+              }
+            })
+            .then(function(responseText) {
+              console.log(responseText);
+            })
+            .catch(function(error) {
+              console.error(error);
+            });
+        } 
     }
-   
 
     // this is for getting the info of all the To_Hide checkboxes
 
