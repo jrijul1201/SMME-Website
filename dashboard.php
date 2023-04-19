@@ -677,9 +677,10 @@ button {
                                             <select class='input-css' style="display:inline; border: 0.1px solid gray;"id="pub_type" name='ipubType' required>
                                             <option value='' disabled selected>Select Publication Type</option>
                                             <option value='Journal'>Journal</option>
+                                            <option value='Article'>Article</option>
                                             <option value='Book Chapter'>Book Chapter</option>
                                             <option value='Review'>Review</option>
-                                            <option value='Conference'>Conference</option>
+                                            <option value='Conference Paper'>Conference Paper</option>
                                             <option value='Editorial'>Editorial</option></select>
                                         </div>
                                         <div class="form-group mt-3 col-6">
@@ -722,7 +723,7 @@ button {
                            <div id="irins-pub" class="row">
                           
                         <?php
-                        foreach ($arr[$index]["irins_pub"] as $ipub) {
+                        foreach ($arr[$index]["irins_pub"] as $indpub => $ipub) {
                             $publicationType = '';
                             $title = '';
                             $subtitle = '';
@@ -736,9 +737,9 @@ button {
                             $volume='';
                             $scopus='';
                             $crossref='';
-                            $id='';
+                         
                             if (isset($ipub['title']) && $ipub['title'] != 'NA') {
-                                $title = $ipub['title'] . " ";
+                                $title = $ipub['title'];
                             }
                             if (isset($ipub['journal']) && $ipub['journal'] != 'NA') {
                                 $journal = strtoupper($ipub['journal']);
@@ -753,35 +754,33 @@ button {
                                 $year = $year . $ipub['year'];
                             }
                             if (isset($ipub['publicationDate']) && $ipub['publicationDate'] != 'NA') {
-                                $pubDate = $pubDate . $ipub['publicationDate'] . ': ';
+                                $pubDate = $pubDate . $ipub['publicationDate'];
                             }
                             if (isset($ipub['publicationType']) && $ipub['publicationType'] != 'NA') {
-                                $pubType= $pubType . $ipub['publicationType'] . ': ';
+                                $pubType= $pubType . $ipub['publicationType'];
                             }
                             if (isset($ipub['volume']) && $ipub['volume'] != 'NA') {
-                                $volume = $volume . $ipub['volume'] . '; ';
+                                $volume = $volume . $ipub['volume'];
                             }
                             if (isset($ipub['pages']) && $ipub['pages'] != 'NA') {
-                                $pages = $pages . $ipub['pages'] . '; ';
+                                $pages = $pages . $ipub['pages'];
                             }
                             if (isset($ipub['scopusCitations']) && $ipub['scopusCitations'] != 'NA') {
-                                $scopus = $scopus . $ipub['scopusCitations'] . '; ';
+                                $scopus = $scopus . $ipub['scopusCitations'];
                             }
                             if (isset($ipub['crossrefCitations']) && $ipub['crossrefCitations'] != 'NA') {
-                                $crossref = $crossref . $ipub['crossrefCitations'] . '; ';
+                                $crossref = $crossref . $ipub['crossrefCitations'];
                             }                       
-                            if (isset($ipub['id']) && $ipub['id'] != 'NA') {
-                                $id = $ipub['id'];
-                            }
+                           
                             $comp = "
                             
-                                    <div id='$id' class='col-md-12 plates'>
+                                    <div id='$indpub' class='col-md-12 plates'>
                                         <div class='row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative'>
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
-                                                    $title 
-                                                    <i style='float:right; padding-top: 45px;' class='fa fa-sm fa-trash delete-icon' onclick=deleteIRINSPub('$id')></i><br><br>
-                                                    <button  style='float:right' type='button' class=' btn btn-getstarted' data-toggle='modal' data-target='#pubEditModal$id' data-whatever='@getbootstrap'> <i class='bi bi-pencil-square delete-icon'></i></button>
+                                                    $title
+                                                    <i style='float:right; padding-top: 45px;' class='fa fa-sm fa-trash delete-icon' onclick=deleteIRINSPub('$indpub')></i><br><br>
+                                                    <button  style='float:right' type='button' class=' btn btn-getstarted' data-toggle='modal' data-target='#pubEditModal$indpub' data-whatever='@getbootstrap'> <i class='bi bi-pencil-square delete-icon'></i></button>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
                                                         $journal </span>
                                                 </h4>
@@ -797,7 +796,7 @@ button {
                                         </div>
                                        
                                     </div>
-                                     <div class='modal fade' id='pubEditModal$id' tabindex='-1' role='dialog' aria-labelledby='pubEditModalLabel' aria-hidden='true'>
+                                     <div class='modal fade' id='pubEditModal$indpub' tabindex='-1' role='dialog' aria-labelledby='pubEditModalLabel' aria-hidden='true'>
                                     <div class='modal-dialog' role='document'>
                                         <div class='modal-content'>
                                         <!-- <div class='modal-header'> -->
@@ -812,49 +811,50 @@ button {
                                                 </div><br>
                                                 <!-- </div> -->
                                                 <div class='modal-body'>
-                                                <form class='px-4 py-3' id='irins_edit$id' action='irins_pub_edit.php' method='post'>
+                                                <form class='px-4 py-3' id='irins_edit$indpub' action='irins_pub_edit.php' method='post'>
                                                     <div class='modal-body'>
                                                         <div class='row'>
                                                         <div class='form-group mt-3'>
                                                             Title
-                                                            <textarea  type='text' class='form-control' id='title$id' placeholder='Title'
+                                                            <textarea  type='text' class='form-control' id='title$indpub' placeholder='Title'
                                                                 name='etitle' required rows='2'>$title</textarea>
                                                         </div>
                                                         </div>
                                                         <div class='row'>
                                                         <div class='form-group mt-3 col-6'>
                                                         Journal
-                                                            <textarea  type='text' class='form-control' id='journal$id' placeholder='Journal'
+                                                            <textarea  type='text' class='form-control' id='journal$indpub' placeholder='Journal'
                                                                 name='ejournal' rows='2'>$journal</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         Authors
-                                                        <textarea  type='text' class='form-control' id='authors$id' placeholder='Authors'
+                                                        <textarea  type='text' class='form-control' id='authors$indpub' placeholder='Authors'
                                                                 name='eauthors'rows='2'>$authors</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         DOI
-                                                            <textarea type='text' class='form-control' id='doi$id' placeholder='DOI'
+                                                            <textarea type='text' class='form-control' id='doi$indpub' placeholder='DOI'
                                                                 name='edoi' rows='1'>$DOI</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         Year
-                                                            <textarea  type='text' class='form-control' id='year$id' placeholder='Year'
+                                                            <textarea  type='text' class='form-control' id='year$indpub' placeholder='Year'
                                                                 name='eyear' rows='1'>$year</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         Publication Date
-                                                        <textarea  type='text' class='form-control' id='pub_date$id' placeholder='Publication Date'
-                                                                name='epub_date'rows='1'>$pubDate</textarea>
+                                                        <textarea  type='text' class='form-control' id='pub_date$indpub' placeholder='Publication Date'
+                                                                name='epubDate'rows='1'>$pubDate</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         Publication Type
-                                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epub_type' required>
+                                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
                                                         <option value='' disabled selected>Select Publication Type</option>
                                                         <option value='Journal'>Journal</option>
+                                                        <option value='Article'>Article</option>
                                                         <option value='Book Chapter'>Book Chapter</option>
                                                         <option value='Review'>Review</option>
-                                                        <option value='Conference'>Conference</option>
+                                                        <option value='Conference Paper'>Conference Paper</option>
                                                         <option value='Editorial'>Editorial</option></select>
                                                     </div>
                                                         <div class='form-group mt-3 col-6'>
@@ -870,12 +870,13 @@ button {
                                                         <div class='form-group mt-3 col-6'>
                                                         Scopus
                                                         <textarea   type='text' class='form-control' id='scopus' placeholder='Scopus'
-                                                                name='escopus' rows='1'>$scopus</textarea>
+                                                                name='escopusC' rows='1'>$scopus</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         CrossRef
                                                         <textarea   type='text' class='form-control' id='crossref' placeholder='Crossref'
-                                                                name='ecrossref' rows='1'>$crossref</textarea>
+                                                                name='ecrossrefC' rows='1'>$crossref</textarea>
+                                                        <input type='hidden' name='index_pub' value='$indpub'>
                                                         </div>
                                                     </div>
                                                 </div>
