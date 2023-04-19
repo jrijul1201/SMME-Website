@@ -274,9 +274,9 @@ button {
             for (let i = 0; i < degreeSelections.length; i++) {
                 let degreeSelection = degreeSelections[i];
                 let degreeOther = degreeSelection.nextElementSibling;
-                console.log("d")
-                console.log(degreeSelection)
-                console.log(degreeOther)
+                // console.log("d")
+                // console.log(degreeSelection)
+                // console.log(degreeOther)
                 degreeSelection.addEventListener("change", function() {
                     if (degreeSelection.value === "Other") {
                         degreeOther.style.display = "inline";
@@ -737,7 +737,8 @@ button {
                             $volume='';
                             $scopus='';
                             $crossref='';
-                         
+                            $isHiddenCheck = '';
+
                             if (isset($ipub['title']) && $ipub['title'] != 'NA') {
                                 $title = $ipub['title'];
                             }
@@ -771,7 +772,9 @@ button {
                             if (isset($ipub['crossrefCitations']) && $ipub['crossrefCitations'] != 'NA') {
                                 $crossref = $crossref . $ipub['crossrefCitations'];
                             }                       
-                           
+                         
+                            $isHiddenCheck = $ipub['isHidden'] ? 'checked' : '';
+                        
                             $comp = "
                             
                                     <div id='$indpub' class='col-md-12 plates'>
@@ -877,6 +880,10 @@ button {
                                                         <textarea   type='text' class='form-control' id='crossref' placeholder='Crossref'
                                                                 name='ecrossrefC' rows='1'>$crossref</textarea>
                                                         <input type='hidden' name='index_pub' value='$indpub'>
+                                                        </div>
+                                                        <div class='form-group'>
+                                                        <label for='pubeditCheckBox'>To Hide</label>
+                                                        <input type='checkbox' id='pubeditCheckBox' name='pubeditCheckBox' $isHiddenCheck>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1229,6 +1236,21 @@ button {
         hiddenField.setAttribute('value', checkboxValue);
         this.appendChild(hiddenField);
     });
-    
+
+    // Get all forms with ids that start with 'irins_edit'
+    var forms = document.querySelectorAll('[id^="irins_edit"]');
+
+    // Loop through each form and attach the submit event listener
+    forms.forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+            var pubcheckboxes = this.querySelectorAll('input#pubeditCheckBox');
+            var checkboxValue = pubcheckboxes[0].checked ? 'on' : 'off';
+            var hiddenField = document.createElement('input');
+            hiddenField.setAttribute('type', 'hidden');
+            hiddenField.setAttribute('name', 'irinseditIsHidden');
+            hiddenField.setAttribute('value', checkboxValue);
+            this.appendChild(hiddenField);
+    });
+});
 
 </script>
