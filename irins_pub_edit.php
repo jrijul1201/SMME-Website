@@ -11,6 +11,7 @@ $facultyIndex = $_SESSION['faculty_index'];
 $data = file_get_contents('faculty.json');
 $arr = json_decode($data, true);
 
+$index_pub = $_POST['index_pub'];
 $title = $_POST['etitle'];
 $authors = $_POST['eauthors'];
 $journal = $_POST['ejournal'];
@@ -26,7 +27,8 @@ $crossrefC = $_POST['ecrossrefC'];
 $irinsIsHidden = false;
 $temp = array('title' => $title, 'DOI' => $doi, 'year' => $year, 'publicationDate' =>$pubDate, 'publicationType' => $pubType, 'pages' => $pages_v2, 'volume' => $volume,'authors' => $authors, 'journal' => $journal, 'scopusCitations' => $scopusC,'crossrefCitations' => $crossrefC, 'isHidden' => $irinsIsHidden);
 
-$arr[$facultyIndex]["irins_pub"][] = $temp;
+
+$arr[$facultyIndex]["irins_pub"][$index_pub] = $temp;
 file_put_contents("faculty.json", json_encode($arr));
 
 echo "<script>
