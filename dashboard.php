@@ -315,6 +315,7 @@ button {
         window.addEventListener("load", function() {
             showOther("education-table");
             showOther("recognition-table");
+            showOther("patent-table");
         });
     </script>
 
@@ -538,8 +539,8 @@ button {
                                 <?php
                                 foreach ($arr[$index]["patents"] as $ind => $pt) {
                                     echo "<tr class='edutablerow'>";
-                                    echo "<td><input type='text' class='input-css' name='title[]' value='{$pt['title']}' required></td>";
-                                    echo "<td><input type='text' class='input-css' name='inventors[]' value='{$pt['inventors']}'></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='title[]' required> {$pt['title']}</textarea></td>";
+                                    echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='inventors[]'>{$pt['inventors']}</textarea></td>";
                                     echo "<td><input type='text' class='input-css' name='applicationNumber[]' value='{$pt['applicationNumber']}'></td>";
                                     echo "<td><input type='text' class='input-css' name='applicationDate[]' value='{$pt['applicationDate']}'></td>";
                                     echo "<td><select class='input-css' id='patentStat" . "$ind' name='patentStatus[]'>
@@ -583,13 +584,22 @@ button {
                             <textarea class="form-control"
                                 name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
                         </div> -->
+                        
                         <div class="form-group mt-3 md-6">
-                            <h3>Current Openings for research</h3>
-                            <textarea class="form-control" name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
+                            <h3>Professional Experience</h3>
+                            <textarea class="form-control" name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
                         </div>
                         <div class="form-group mt-3 md-6">
-                            <h3>Work Experiences</h3>
-                            <textarea class="form-control" name="experiences"><?php echo $arr[$index]["experiences"]; ?></textarea>
+                            <h3>Research Projects</h3>
+                            <textarea class="form-control" name="projects"><?php echo $arr[$index]["projects"]; ?></textarea>
+                        </div>
+                        <div class="form-group mt-3 md-6">
+                            <h3>Administrative Contributions</h3>
+                            <textarea class="form-control" name="contributions"><?php echo $arr[$index]["contributions"]; ?></textarea>
+                        </div>
+                        <div class="form-group mt-3 md-6">
+                            <h3>Current Openings</h3>
+                            <textarea class="form-control" name="openings"><?php echo $arr[$index]["openings"]; ?></textarea>
                         </div>
                         <!-- <div class="form-group mt-3 md-6">
                             <h3>Conferences:</h3>
@@ -675,7 +685,7 @@ button {
                                         </div> -->
                                         <div class="form-group mt-3 col-6">
                                             <select class='input-css' style="display:inline; border: 0.1px solid gray;"id="pub_type" name='ipubType' required>
-                                            <option value='' disabled selected>Select Publication Type</option>
+                                            <option value='' disabled selected>Select Publication Type<span class="asteriskreq">*</span></option>
                                             <option value='Journal'>Journal</option>
                                             <option value='Article'>Article</option>
                                             <option value='Book Chapter'>Book Chapter</option>
@@ -852,7 +862,7 @@ button {
                                                         <div class='form-group mt-3 col-6'>
                                                         Publication Type
                                                         <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
-                                                        <option value='' disabled selected>Select Publication Type</option>
+                                                        <option value='' disabled selected>Select Publication Type<span class='asteriskreq'>*</span></option>
                                                         <option value='Journal'>Journal</option>
                                                         <option value='Article'>Article</option>
                                                         <option value='Book Chapter'>Book Chapter</option>
@@ -1014,14 +1024,12 @@ button {
 </script>
 
 <script>
-    // CKEDITOR.replace("publications");
+
     CKEDITOR.replace("interests");
-    // CKEDITOR.replace("projects");
     CKEDITOR.replace("openings");
     CKEDITOR.replace("experiences");
-    // CKEDITOR.replace("conferences");
-    // CKEDITOR.replace("awards");
-    // CKEDITOR.replace("activity");
+    CKEDITOR.replace("projects");
+    CKEDITOR.replace("contributions");
 
     function addEducation() {
         var table = document.getElementById("education-table");
