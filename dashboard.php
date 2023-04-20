@@ -685,7 +685,6 @@ button {
                                             <select class='input-css' style="display:inline; border: 0.1px solid gray;"id="pub_type" name='ipubType' required>
                                             <option value='' disabled selected>Select Publication Type<span class="asteriskreq">*</span></option>
                                             <option value='Journal'>Journal</option>
-                                            <option value='Article'>Article</option>
                                             <option value='Book Chapter'>Book Chapter</option>
                                             <option value='Review'>Review</option>
                                             <option value='Conference Paper'>Conference Paper</option>
@@ -782,6 +781,97 @@ button {
                             }                       
                          
                             $isHiddenCheck = $ipub['isHidden'] ? 'checked' : '';
+
+                            $pubTypeComp = "";
+
+                            if ($pubType == 'Journal') {
+                                $pubTypeComp .= "
+                                    <div class='form-group mt-3 col-6'>
+                                        Publication Type
+                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
+                                            <option value='' disabled>Select Publication Type<span class='asteriskreq'>*</span></option>
+                                            <option value='Journal' selected>Journal</option>
+                                            <option value='Book Chapter'>Book Chapter</option>
+                                            <option value='Review'>Review</option>
+                                            <option value='Conference Paper'>Conference Paper</option>
+                                            <option value='Editorial'>Editorial</option>
+                                        </select>
+                                    </div>
+                                ";
+                            } else if ($pubType == 'Book Chapter') {
+                                $pubTypeComp .= "
+                                    <div class='form-group mt-3 col-6'>
+                                        Publication Type
+                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
+                                            <option value='' disabled >Select Publication Type<span class='asteriskreq'>*</span></option>
+                                            <option value='Journal'>Journal</option>
+                                            <option value='Book Chapter' selected>Book Chapter</option>
+                                            <option value='Review'>Review</option>
+                                            <option value='Conference Paper'>Conference Paper</option>
+                                            <option value='Editorial'>Editorial</option>
+                                        </select>
+                                    </div>
+                                ";
+                            } else if ($pubType == 'Review') {
+                                $pubTypeComp .= "
+                                    <div class='form-group mt-3 col-6'>
+                                        Publication Type
+                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
+                                            <option value='' disabled >Select Publication Type<span class='asteriskreq'>*</span></option>
+                                            <option value='Journal'>Journal</option>
+                                            <option value='Book Chapter'>Book Chapter</option>
+                                            <option value='Review' selected>Review</option>
+                                            <option value='Conference Paper'>Conference Paper</option>
+                                            <option value='Editorial'>Editorial</option>
+                                        </select>
+                                    </div>
+                                ";
+                            } else if ($pubType == 'Conference Paper') {
+                                $pubTypeComp .= "
+                                    <div class='form-group mt-3 col-6'>
+                                        Publication Type
+                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
+                                            <option value='' disabled>Select Publication Type<span class='asteriskreq'>*</span></option>
+                                            <option value='Journal'>Journal</option>
+                                            <option value='Book Chapter'>Book Chapter</option>
+                                            <option value='Review'>Review</option>
+                                            <option value='Conference Paper' selected>Conference Paper</option>
+                                            <option value='Editorial'>Editorial</option>
+                                        </select>
+                                    </div>
+                                ";
+                            }
+                            else if ($pubType == 'Editorial') {
+                                $pubTypeComp .= "
+                                    <div class='form-group mt-3 col-6'>
+                                        Publication Type
+                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
+                                            <option value='' disabled>Select Publication Type<span class='asteriskreq'>*</span></option>
+                                            <option value='Journal'>Journal</option>
+                                            <option value='Book Chapter'>Book Chapter</option>
+                                            <option value='Review'>Review</option>
+                                            <option value='Conference Paper'>Conference Paper</option>
+                                            <option value='Editorial' selected>Editorial</option>
+                                        </select>
+                                    </div>
+                                ";
+                            }
+                            else {
+                                $pubTypeComp .= "
+                                <div class='form-group mt-3 col-6'>
+                                    Publication Type
+                                    <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
+                                            <option value='' disabled selected>Select Publication Type<span class='asteriskreq'>*</span></option>
+                                            <option value='Journal'>Journal</option>
+                                            <option value='Book Chapter'>Book Chapter</option>
+                                            <option value='Review'>Review</option>
+                                            <option value='Conference Paper'>Conference Paper</option>
+                                            <option value='Editorial'>Editorial</option>
+                                    </select>
+                                </div>
+                                ";
+                            }
+                            
                         
                             $comp = "
                             
@@ -855,17 +945,7 @@ button {
                                                         <textarea  type='text' class='form-control' id='pub_date$indpub' placeholder='Publication Date'
                                                                 name='epubDate'rows='1'>$pubDate</textarea>
                                                         </div>
-                                                        <div class='form-group mt-3 col-6'>
-                                                        Publication Type
-                                                        <select class='input-css' style='height:65%; display:inline; border: 0.5px solid gray;' id='pub_type' name='epubType' required>
-                                                        <option value='' disabled selected>Select Publication Type<span class='asteriskreq'>*</span></option>
-                                                        <option value='Journal'>Journal</option>
-                                                        <option value='Article'>Article</option>
-                                                        <option value='Book Chapter'>Book Chapter</option>
-                                                        <option value='Review'>Review</option>
-                                                        <option value='Conference Paper'>Conference Paper</option>
-                                                        <option value='Editorial'>Editorial</option></select>
-                                                    </div>
+                                                        " . $pubTypeComp . "
                                                         <div class='form-group mt-3 col-6'>
                                                         Pages
                                                             <textarea   type='text' class='form-control' id='pages' placeholder='Pages'
