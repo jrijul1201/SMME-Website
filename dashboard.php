@@ -10,10 +10,10 @@ $userName = $_SESSION['user_name'];
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">-
+    <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Update Dashboard</title>puijio
+    <title>Update Dashboard</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -621,8 +621,7 @@ button {
                 <!-- IRINS Publications -->
 
                 
-
-                    <div  style="  border-radius: 4px;  position: fixed;float:left; right: 15px;bottom: 70px;z-index: 995;background: var(--color-primary);transition: all 0.4s;"  class="text-center header"><button type="submit" style=" margin: 0vh 0px 0px 0px;" class="dash-btn btn btn-getstarted text-center header">Update Changes</button></div>
+                <div class="text-center header"><button type="submit" class="dash-btn btn btn-getstarted" >Update Changes</button></div>
                 </div>
             </form>
            <div><hr style=" margin-left: 5vw; margin-right:5vw; border: 1.5px solid orangered;"></div>
@@ -655,17 +654,17 @@ button {
                                         <div class="row">
                                         <div class="form-group mt-3">
                                             <textarea  type="text" class="form-control" id="title" placeholder="Title"
-                                                name="ititle"rows="3"></textarea>
+                                                name="ititle"rows="2"></textarea>
                                         </div>
                                         </div>
                                         <div class="row">
                                         <div class="form-group mt-3 col-6">
                                         <textarea  type="text" class="form-control" id="authors" placeholder="Authors"
-                                                name="iauthors" rows="1"></textarea>
+                                                name="iauthors" rows="2"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea  type="text" class="form-control" id="journal" placeholder="Journal"
-                                                name="ijournal" rows="1"></textarea>
+                                                name="ijournal" rows="2"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea type="text" class="form-control" id="doi" placeholder="DOI"
@@ -673,7 +672,7 @@ button {
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea type="text" class="form-control" id="year" placeholder="Year"
-                                                name="iyear" rows="1"></textarea>
+                                                name="iyear" rows="2"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                          <textarea  type="text" class="form-control" id="pub_date" placeholder="Publication Date"
