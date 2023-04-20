@@ -510,7 +510,7 @@ button {
                             <option value='Other'>Other</option>
                         </select><input type='text' id='achieveOther" . "$ind' name='achieveOther[]' value='' style='display:none'></td>";
                                     echo "<script>autoSelectOption('{$rg['achievement']}', '$ind', 'recAchieve', 'achieveOther');</script>";
-                                    echo "<td> <textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description[]' required>{$rg['description']}</textarea></td>";
+                                    echo "<td> <textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description2[]' required>{$rg['description']}</textarea></td>";
                                     echo "<td><i class='fa fa-trash delete-icon' onclick='deleteRecognition()'></i></td>";
                                     echo "</tr>";
                                 }
@@ -1096,7 +1096,7 @@ button {
                         <option value="Honours">Honours</option>
                         <option value="Other">Other</option>
                     </select><input type="text" name="achieveOther[]" value="" style="display:none">`;
-        cell2.innerHTML = ` <textarea name='text' wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description[]' required></textarea>`;
+        cell2.innerHTML = ` <textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description2[]' required></textarea>`;
         cell3.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteRecognition()"></i>`;
         showOther("recognition-table");
 
