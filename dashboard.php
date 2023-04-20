@@ -625,6 +625,7 @@ button {
                     <div  style="  border-radius: 4px;  position: fixed;float:left; right: 15px;bottom: 70px;z-index: 995;background: var(--color-primary);transition: all 0.4s;"  class="text-center header"><button type="submit" style=" margin: 0vh 0px 0px 0px;" class="dash-btn btn btn-getstarted text-center header">Update Changes</button></div>
                 </div>
             </form>
+           <div><hr style=" margin-left: 5vw; margin-right:5vw; border: 1.5px solid orangered;"></div>
             <div class="profile-section section-header">
                     <h3>IRINS Publications Details</h3>
                     <small  style="justify-content:center"><i>
