@@ -624,7 +624,7 @@ button {
                 <div class="text-center header"><button type="submit" class="dash-btn btn btn-getstarted" >Update Changes</button></div>
                 </div>
             </form>
-           <div><hr style=" margin-left: 5vw; margin-right:5vw; border: 1.5px solid orangered;"></div>
+           <div><hr style=" margin-left: 5vw; margin-right:5vw; border: 1.5px dashed black;"></div>
             <div class="profile-section section-header">
                     <h3>IRINS Publications Details</h3>
                     <small  style="justify-content:center"><i>
@@ -642,11 +642,6 @@ button {
                                 <div style="margin-top:30px;">
                                     <h4 style="color:orangered;" >Add Publication</h4>
                                 </div>
-                                <div class='flex'>
-                                    <button style='float:right'type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div><br>
                                 <!-- </div> -->
                                 <div class="modal-body">
                                 <form class="px-4 py-3" id="irins_add" action="irins_pub_update.php" method="post">
@@ -818,10 +813,8 @@ button {
                                             <div style='margin-top:30px;'>
                                                 <h4 style='color:orangered;' >Edit Publication</h4>
                                             </div>
-                                                <button style='float:right'type='button' class='close' data-dismiss='modal' aria-label='Close'>
-                                                <span aria-hidden='true'>&times;</span>
-                                                </button>
-                                                </div><br>
+                                                
+                                                </div>
                                                 <!-- </div> -->
                                                 <div class='modal-body'>
                                                 <form class='px-4 py-3' id='irins_edit$indpub' action='irins_pub_edit.php' method='post'>
