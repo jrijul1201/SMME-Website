@@ -5,8 +5,8 @@ if (!isset($_SESSION['faculty_index'])) {
 }
 $facultyIndex = $_SESSION['faculty_index'];
 
-// header("Cache-Control: no-cache, must-revalidate");
-// ini_set('opcache.enable', 0);
+header("Cache-Control: no-cache, must-revalidate");
+ini_set('opcache.enable', 0);
 
 $data = file_get_contents('faculty.json');
 $arr = json_decode($data, true);

@@ -263,6 +263,9 @@ button {
 .hidden {
   display: none;
 }
+#pub-id ~ #floating-btn{
+    display:none;
+}
     </style>
 
     <!-- show a textbox when other degree is selected in education section -->
@@ -621,9 +624,9 @@ button {
                 <!-- IRINS Publications -->
 
                 
-                <div class="text-center header"><button type="submit" class="dash-btn btn btn-getstarted" >Update Changes</button></div>
-                </div>
+                <div style=" border-radius: 4px; position: fixed;float:left; right: 15px;bottom: 70px;z-index: 995;background: var(--color-primary);transition: all 0.4s;" id="floating-btn" class="text-center header"><button type="submit" style=" margin: 0vh 0px 0px 0px;" class="dash-btn btn btn-getstarted text-center header">Update Changes</button></div>
             </form>
+            <br><br><br><br>
            <div><hr style=" margin-left: 5vw; margin-right:5vw; border: 1.5px dashed black;"></div>
             <div class="profile-section section-header">
                     <h3>IRINS Publications Details</h3>
@@ -1023,6 +1026,23 @@ button {
     CKEDITOR.replace("experiences");
     CKEDITOR.replace("projects");
     CKEDITOR.replace("contributions");
+
+    window.addEventListener('scroll', function() {
+        // Get the height of the first section
+        const section1Height = document.getElementById('faculty_update').offsetHeight;
+
+        // Get the current scroll position
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+        // Check if the scroll position is greater than the height of section 1
+        if (scrollPosition > section1Height) {
+          // Hide the floating button by setting its visibility to hidden
+          document.getElementById('floating-btn').style.visibility = 'hidden';
+        } else {
+          // Show the floating button by setting its visibility to visible
+          document.getElementById('floating-btn').style.visibility = 'visible';
+        }
+    });
 
     function addEducation() {
         var table = document.getElementById("education-table");

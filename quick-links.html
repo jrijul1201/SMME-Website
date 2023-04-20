@@ -27,7 +27,7 @@
             for (pub of Object.keys(pubs)) {
                 var comp = ''
                 for (let i = 0; i < pubs[pub].length; i++) {
-                    if (!(pubs[pub].isHidden)) {
+                    if (!(pubs[pub][i].isHidden)) {
                         publicationType = ''
                         title = ''
                         subtitle = ''
@@ -40,8 +40,8 @@
                         if (pubs[pub][i].title && pubs[pub][i].title != 'NA') { title = pubs[pub][i].title + " " }
                         if (pubs[pub][i].title && pubs[pub][i].title != 'NA') { subtitle = pubs[pub][i].journal.toUpperCase() }
                         if (pubs[pub][i].authors && pubs[pub][i].authors != 'NA') { authors = pubs[pub][i].authors }
-                        if (pubs[pub][i].volume && pubs[pub][i].year != 'NA') { journal += pubs[pub][i].year + '; ' }
-                        if (pubs[pub][i].year && pubs[pub][i].volume != 'NA') { journal += pubs[pub][i].volume + ': ' }
+                        if (pubs[pub][i].volume && pubs[pub][i].volume != 'NA') { journal += pubs[pub][i].volume + '; ' }
+                        if (pubs[pub][i].year && pubs[pub][i].year != 'NA') { journal += pubs[pub][i].year + ': ' }
                         if (pubs[pub][i].pages && pubs[pub][i].pages != 'NA') { journal += pubs[pub][i].pages }
                         if (pubs[pub][i].DOI && pubs[pub][i].DOI != 'NA') { DOI = pubs[pub][i].DOI }
                         if (pubs[pub][i].crossrefCitations && pubs[pub][i].crossrefCitations != 'NA') { crossrefCitations = 'Crossref Citations: ' + pubs[pub][i].crossrefCitations }
@@ -101,7 +101,8 @@
                         duration = edu.start_year + '&#8211;' + edu.end_year;
                     }
                 }
-                eduData += `<div class="col-md-12 plates">
+                if (edu.isHidden === false) {
+                    eduData += `<div class="col-md-12 plates">
                         <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
                             <div class="col d-flex flex-column position-static plate-child">
                                 <strong class="d-inline-block mb-auto text-primary">
@@ -128,8 +129,11 @@
                             </div>
                         </div>
                     </div>`;
+                }
             }
+            
             $(eduData).appendTo("#education-data");
+            
         });
     });
 
