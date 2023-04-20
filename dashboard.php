@@ -10,10 +10,10 @@ $userName = $_SESSION['user_name'];
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8">-
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Update Dashboard</title>
+    <title>Update Dashboard</title>puijio
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -526,14 +526,14 @@ button {
                     <div class="row">
                         <table id="patent-table" class="text-center">
                             <tr>
-                                <th>Title<span class="asteriskreq">*</span></th>
-                                <th>Inventors</th>
-                                <th>Application No.</th>
+                                <th style="width:20vw;">Title<span class="asteriskreq">*</span></th>
+                                <th style="width:20vw;">Inventors</th>
+                                <th >Application No.</th>
                                 <th>Application Date</th>
                                 <th>Patent Status</th>
                                 <th>Patent No. (if granted)</th>
                                 <th>Date of grant (if granted)</th>
-                                <th>Delete Action</th>
+                                <th  style="width:5vw;">Delete Action</th>
                             </tr>
                             <tbody>
                                 <?php
@@ -654,7 +654,7 @@ button {
                                         <div class="row">
                                         <div class="form-group mt-3">
                                             <textarea  type="text" class="form-control" id="title" placeholder="Title"
-                                                name="ititle"rows="2"></textarea>
+                                                name="ititle"rows="3"></textarea>
                                         </div>
                                         </div>
                                         <div class="row">
@@ -668,7 +668,7 @@ button {
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea type="text" class="form-control" id="doi" placeholder="DOI"
-                                                name="idoi" rows="1"></textarea>
+                                                name="idoi" rows="2"></textarea>
                                         </div>
                                         <div class="form-group mt-3 col-6">
                                             <textarea type="text" class="form-control" id="year" placeholder="Year"
@@ -830,29 +830,29 @@ button {
                                                         <div class='form-group mt-3'>
                                                             Title
                                                             <textarea  type='text' class='form-control' id='title$indpub' placeholder='Title'
-                                                                name='etitle' required rows='2'>$title</textarea>
+                                                                name='etitle' required rows='3'>$title</textarea>
                                                         </div>
                                                         </div>
                                                         <div class='row'>
                                                         <div class='form-group mt-3 col-6'>
                                                         Journal
                                                             <textarea  type='text' class='form-control' id='journal$indpub' placeholder='Journal'
-                                                                name='ejournal' rows='2'>$journal</textarea>
+                                                                name='ejournal' rows='3'>$journal</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         Authors
                                                         <textarea  type='text' class='form-control' id='authors$indpub' placeholder='Authors'
-                                                                name='eauthors'rows='2'>$authors</textarea>
+                                                                name='eauthors'rows='3'>$authors</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         DOI
                                                             <textarea type='text' class='form-control' id='doi$indpub' placeholder='DOI'
-                                                                name='edoi' rows='1'>$DOI</textarea>
+                                                                name='edoi' rows='2'>$DOI</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         Year
                                                             <textarea  type='text' class='form-control' id='year$indpub' placeholder='Year'
-                                                                name='eyear' rows='1'>$year</textarea>
+                                                                name='eyear' rows='2'>$year</textarea>
                                                         </div>
                                                         <div class='form-group mt-3 col-6'>
                                                         Publication Date
@@ -1128,8 +1128,8 @@ button {
         var cell8 = row.insertCell(7);
 
         
-        cell1.innerHTML = `<input type='text' class='input-css' name='title[]' required>`;
-        cell2.innerHTML = `<input type='text' class='input-css' name='inventors[]'>`;
+        cell1.innerHTML = `<textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='title[]' required></textarea>`;
+        cell2.innerHTML = `<textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='inventors[]'></textarea>`;
         cell3.innerHTML = `<input type='text' class='input-css' name='applicationNumber[]'>`;
         cell4.innerHTML = `<input type='text' class='input-css' name='applicationDate[]'>`;
         cell5.innerHTML = `<select name="patentStatus[]" class='input-css'>
