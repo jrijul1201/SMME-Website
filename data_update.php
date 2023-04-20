@@ -71,7 +71,7 @@ $recognitionInfo = [];
 if (isset($_POST['achievement'])) {
   foreach ($_POST['achievement'] as $index => $achievement) {
     $achieveOther = ($achievement == "Other") ? $_POST['achieveOther'][$index] : $achievement;
-    $description = $_POST['description'][$index];
+    $description = $_POST['description2'][$index];
     $temp = array('achievement' => $achieveOther, 'description' => $description);
     if($description != "") {
       $recognitionInfo[] = $temp;
