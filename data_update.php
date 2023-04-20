@@ -23,6 +23,8 @@ $arr[$facultyIndex]["personal_page_link"] = $_POST['pplink'];
 $arr[$facultyIndex]["interests"] = $_POST['interests'];
 $arr[$facultyIndex]["openings"] = $_POST['openings'];
 $arr[$facultyIndex]["experiences"] = $_POST['experiences'];
+$arr[$facultyIndex]["projects"] = $_POST['projects'];
+$arr[$facultyIndex]["contributions"] = $_POST['contributions'];
 
 //  Updating Education Info
 $educationInfo = [];
