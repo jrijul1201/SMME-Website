@@ -132,6 +132,34 @@
             $(eduData).appendTo("#education-data");
         });
     });
+    
+    $(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const idx = urlParams.get('data');
+            $.getJSON('faculty.json', function (data) {
+                const f = data[idx];
+                var rData = "";
+                for (let i = 0; i < f.recognition.length; i++) {
+                    let rec = f.recognition[i];
+                    rData += `<div class="col-md-12 plates">
+                        <div class="row g-0 overflow-hidden flex-md-row mb-0 h-md-250 position-relative">
+                            <div class="col d-flex flex-column position-static plate-child">
+                                <strong class="d-inline-block mb-auto text-primary">
+                                    <h4>${rec.award}</h4>
+                                </strong>    
+                                ${rec.description !== undefined && rec.description !== "" ?
+                            `<div class="mb-auto text-muted">
+                                    ${rec.description}
+                                </div>`
+                            : ``}                           
+                            </div>
+                        </div>
+                    </div>`;
+                }
+                $(rData).appendTo("#recognition-data");
+            });
+        });
+    
     $(function () {
         const urlParams = new URLSearchParams(window.location.search);
         const idx = urlParams.get('data');
@@ -143,8 +171,8 @@
             $(coData).appendTo("#current-openings-data");
             var peData = f.experiences;
             $(peData).appendTo("#professional-experience-data");
-            var ahData = f.recognition;
-            $(ahData).appendTo("#recognition-data");
+            // var ahData = f.recognition;
+            // $(ahData).appendTo("#recognition-data");
             var rpData = f.projects;
             $(rpData).appendTo("#research-projects-data");
             var acData = f.contributions;
