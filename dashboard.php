@@ -409,8 +409,8 @@ button {
                             <input type="text" name="name" class="form-control" id="fname" value="<?php echo $arr[$index]["name"]; ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
-                            <label for="phone">Phone<span class="asteriskreq">*</span>:</label> +91-1905-
-                            <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>" required>
+                            <label for="phone">Phone:</label> +91-1905-
+                            <input type="text" name="phone" class="form-control" id="phone" value="<?php echo $arr[$index]["phone"]; ?>">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="address">Address<span class="asteriskreq">*</span>:</label>
@@ -433,7 +433,7 @@ button {
                             <input type="text" name="irinsid" class="form-control" id="irinsid" value="<?php echo $arr[$index]["irins"]; ?>">
                         </div>
                         <div class="col-md-6 form-group">
-                            <label for="pplink">Personal Page Link(if any):</label>
+                            <label for="pplink">Personal Page Link (if any):</label>
                             <input type="text" name="pplink" class="form-control" id="pplink" value="<?php echo $arr[$index]["personal_page_link"]; ?>">
                         </div>
                     </div>
