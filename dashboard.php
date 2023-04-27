@@ -1,9 +1,10 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_name'])) {
+if (!isset($_SESSION['logins'])) {
     header('location:faculty.html');
 }
-$userName = $_SESSION['user_name'];
+$userName = $_SESSION['logins'];
+
 ?>
 
 <!DOCTYPE html>
@@ -204,10 +205,10 @@ $userName = $_SESSION['user_name'];
   float:center;
   /* position: absolute; */
   /* top: 20%; */
-  background-color: white;
+  /* background-color: white;
   border: 1px solid #ddd;
   border-radius: 15px;
-}
+} */
 
 .modal-pub .flex {
   display: flex;

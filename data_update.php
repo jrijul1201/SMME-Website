@@ -125,7 +125,7 @@ $arr[$facultyIndex]["patents"] = $patentInfo;
 file_put_contents("faculty.json", json_encode($arr));
 
 echo "<script>
-alert('Changes has been updated successfully. If unable to see the changes, then clear your browser cache');
+alert('Changes have been updated successfully. If unable to see the changes, then clear your browser cache');
 window.location.href='dashboard.php';
 </script>";
 
