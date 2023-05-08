@@ -481,7 +481,7 @@ button {
                                     echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='place[]' placeholder='University/College Name'>{$ed['place']}</textarea></td>";
                                     echo "<td><textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='other_info[]' placeholder='Thesis Title or Supervisor etc.'>{$ed['other_info']}</textarea></td>";
                                     echo "<td><input type='checkbox' id='edCheckBox' name='edIsHidden[]' " . ($ed['isHidden'] ? "checked" : "") . "></td>";
-                                    echo "<td><i class='fa fa-trash delete-icon' onclick='deleteEducation()'></i></td>";
+                                    echo "<td><i class='bi bi-trash delete-icon' onclick='deleteEducation()'></i></td>";
                                     echo "</tr>";
                                 }
                                 ?>
@@ -515,7 +515,7 @@ button {
                         </select><input type='text' id='achieveOther" . "$ind' name='achieveOther[]' value='' style='display:none'></td>";
                                     echo "<script>autoSelectOption('{$rg['achievement']}', '$ind', 'recAchieve', 'achieveOther');</script>";
                                     echo "<td> <textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description2[]' required>{$rg['description']}</textarea></td>";
-                                    echo "<td><i class='fa fa-trash delete-icon' onclick='deleteRecognition()'></i></td>";
+                                    echo "<td><i class='bi bi-trash delete-icon' onclick='deleteRecognition()'></i></td>";
                                     echo "</tr>";
                                 }
                                 ?>
@@ -562,7 +562,7 @@ button {
                                     echo "<script>autoSelectOption('{$pt['patentStatus']}', '$ind', 'patentStat', 'patentStatOther');</script>";
                                     echo "<td><input type='text' class='input-css' name='patentNumber[]' value='{$pt['patentNumber']}'></td>";
                                     echo "<td><input type='text' class='input-css' name='grantDate[]' value='{$pt['grantDate']}'></td>";
-                                    echo "<td><i class='fa fa-trash delete-icon' onclick='deletePatent()'></i></td>";
+                                    echo "<td><i class='bi bi-trash delete-icon' onclick='deletePatent()'></i></td>";
                                     echo "</tr>";
                                 }
                                 ?>
@@ -881,7 +881,7 @@ button {
                                             <div class='col d-flex flex-column section-header position-static plate-child'>
                                                 <h4 class='mb-1'>
                                                     $title
-                                                    <i style='float:right; padding-top: 45px;' class='fa fa-sm fa-trash delete-icon' onclick=deleteIRINSPub('$indpub')></i><br><br>
+                                                    <i style='float:right; padding-top: 45px;' class='bi bi-trash delete-icon' onclick=deleteIRINSPub('$indpub')></i><br><br>
                                                     <button  style='float:right' type='button' class=' btn btn-getstarted' data-toggle='modal' data-target='#pubEditModal$indpub' data-whatever='@getbootstrap'> <i class='bi bi-pencil-square delete-icon'></i></button>
                                                     <span style='font-size:15px; font-style: italic;' class='text-muted'>
                                                         $journal </span>
@@ -1158,7 +1158,7 @@ button {
         cell5.innerHTML = `<textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='place[]' placeholder='University/College Name'></textarea>`;
         cell6.innerHTML = `<textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='other_info[]' placeholder='Thesis Title or Supervisor etc.'></textarea>`;
         cell7.innerHTML = `<input type="checkbox" id="edCheckBox" name="edIsHidden[]">`;
-        cell8.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteEducation()"></i>`;
+        cell8.innerHTML = `<i class='bi bi-trash delete-icon' onclick="deleteEducation()"></i>`;
         showOther("education-table");
 
     }
@@ -1191,7 +1191,7 @@ button {
                         <option value="Other">Other</option>
                     </select><input type="text" name="achieveOther[]" value="" style="display:none">`;
         cell2.innerHTML = ` <textarea wrap='soft' style='width:100%; height:100%; box-sizing:border-box; overflow:scroll; overflow-x:hidden; resize:none;' name='description2[]' required></textarea>`;
-        cell3.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deleteRecognition()"></i>`;
+        cell3.innerHTML = `<i class='bi bi-trash delete-icon' onclick="deleteRecognition()"></i>`;
         showOther("recognition-table");
 
     }
@@ -1240,7 +1240,7 @@ button {
                     </select><input type="text" name="patentStatOther[]" value="" style="display:none">`;
         cell6.innerHTML = `<input type='text' class='input-css' name='patentNumber[]'>`;
         cell7.innerHTML = `<input type='text' class='input-css' name='grantDate[]'>`;
-        cell8.innerHTML = `<i class='fa fa-trash delete-icon' onclick="deletePatent()"></i>`;
+        cell8.innerHTML = `<i class='bi bi-trash delete-icon' onclick="deletePatent()"></i>`;
 
         showOther("patent-table");
 
