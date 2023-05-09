@@ -78,6 +78,15 @@
                                             <p>${f["research-areas"]}</p>
                                         </div>`;
             }
+            $.getJSON('faculty.json', function (fac) {
+                var faculties = "";
+                f["faculty-in-charge"].forEach((el, id) => {
+                    faculties += `<p>
+                                    <a href="/dedicated.html?data=${el}"> Dr. ${fac.at(el)?.name}</a>
+                                </p>`
+                })
+                $(faculties).appendTo("#faculties");
+            })
             var comp = `<!-- ======= Lab Section ======= -->
                         <section id="lab-section" class="lab-section" style="margin-top: -60px;">
                             <!-- ======= Testimonials Section ======= -->
@@ -126,14 +135,7 @@
                                                     <i class="bi bi-person flex-shrink-0"></i>
                                                     <div>
                                                         <h4>Faculty-in-charge:</h4>
-                                                        <p>
-                                                            <a href="/faculty.html"> Himanshu Pathak
-                                                            </a>
-                                                        </p>
-                                                        <p>
-                                                            <a href="/faculty.html"> Vishal Singh Chauhan
-                                                            </a>
-                                                        </p>
+                                                        <div id="faculties"></div>
                                                     </div>
                                                 </div>
                                             </div><!-- End Info Item -->
